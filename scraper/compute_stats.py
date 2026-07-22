@@ -122,6 +122,33 @@ def compute_section_coverage(professions):
     return dict(normalized)
 
 
+def compute_corpus_kpis():
+    """Compute KPIs from corpus_raw_v2 (authoritative source)."""
+    raw_dir = BASE_DIR / "data" / "corpus_raw_v2"
+    total = 0
+    sectors = set()
+    details = 0
+    perspectives = 0
+
+    for fp in raw_dir.glob("*.json"):
+        with open(fp, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        total += 1
+        sectors.add(data.get("secteur", ""))
+        sections = data.get("sections_raw", {})
+        if len(sections) > 3:
+            details += 1
+        if any("perspective" in k.lower() for k in sections.keys()):
+            perspectives += 1
+
+    return {
+        "total_professions": total,
+        "total_sectors": len(sectors),
+        "total_with_details": details,
+        "total_with_perspectives": perspectives,
+    }
+
+
 def main():
     print("Chargement des données...")
 
@@ -132,7 +159,11 @@ def main():
         sectors = json.load(f)
 
     total = len(professions)
-    print(f"  {total} métiers, {len(sectors)} secteurs")
+    print(f"  {total} métiers, {len(sectors)} secteurs (pipeline)")
+
+    # KPIs from corpus_raw_v2 (authoritative, not pipeline)
+    kpis = compute_corpus_kpis()
+    print(f"  {kpis['total_professions']} métiers, {kpis['total_sectors']} secteurs (corpus brut)")
 
     # 1. Répartition par secteur (depuis sectors.json)
     sector_dist = []
@@ -187,17 +218,7 @@ def main():
         for name, count in prof_sectors.most_common(15)
     ]
 
-    # KPI globaux
-    kpis = {
-        "total_professions": total,
-        "total_sectors": len(sectors),
-        "total_with_details": sum(1 for p in professions if len(p.get("sections", {})) > 3),
-        "total_with_perspectives": sum(1 for p in professions if any(
-            "perspective" in " ".join(sname.split()).lower()
-            for sname in p.get("sections", {}).keys()
-        )),
-    }
-
+    # KPI globaux (from corpus_raw_v2, not pipeline)
     stats = {
         "kpis": kpis,
         "sector_distribution": sector_dist,
@@ -214,7 +235,7 @@ def main():
 
     print(f"\nStatistiques sauvegardées : {output_path}")
     print(f"  KPIs : {kpis}")
-    print(f"  Secteurs : {len(sector_dist)}")
+    print(f"  Secteurs (pipeline) : {len(sector_dist)}")
     print(f"  Niveaux d'études : {len(edu_levels)}")
     print(f"  Indicateurs marché : {len(market_data)}")
     print(f"  Sections couvertes : {len(coverage_data)}")

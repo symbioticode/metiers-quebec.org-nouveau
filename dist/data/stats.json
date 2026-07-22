@@ -1,9 +1,9 @@
 {
   "kpis": {
-    "total_professions": 413,
-    "total_sectors": 22,
-    "total_with_details": 380,
-    "total_with_perspectives": 154,
+    "total_professions": 418,
+    "total_sectors": 30,
+    "total_with_details": 385,
+    "total_with_perspectives": 160,
     "total_corpus_raw": 418,
     "total_embeddings": 7578,
     "graph_match_pct": 100.0
@@ -109,7 +109,7 @@
     },
     {
       "label": "Non spécifié",
-      "value": 25
+      "value": 32
     },
     {
       "label": "Secondaire",
@@ -127,19 +127,19 @@
     },
     {
       "label": "Manque de candidats",
-      "value": 119
+      "value": 124
     },
     {
       "label": "Débouchés disponibles",
-      "value": 37
+      "value": 38
     },
     {
       "label": "Perspectives excellentes",
-      "value": 235
+      "value": 242
     },
     {
       "label": "Perspectives favorables",
-      "value": 396
+      "value": 403
     }
   ],
   "section_coverage": [
@@ -161,31 +161,31 @@
     },
     {
       "label": "Milieu de travail",
-      "value": 285
+      "value": 289
     },
     {
       "label": "Admission",
-      "value": 176
+      "value": 183
     },
     {
       "label": "Perspectives d'emploi",
-      "value": 154
+      "value": 161
     },
     {
       "label": "Description",
-      "value": 128
+      "value": 130
     },
     {
       "label": "exigences du marché du travail",
       "value": 36
     },
     {
-      "label": "exigence du marché du travail",
-      "value": 19
+      "label": "Formation requise",
+      "value": 24
     },
     {
-      "label": "Formation requise",
-      "value": 17
+      "label": "exigence du marché du travail",
+      "value": 19
     },
     {
       "label": "données salariales",
@@ -196,15 +196,31 @@
       "value": 11
     },
     {
+      "label": "Placement",
+      "value": 8
+    },
+    {
+      "label": "Tâches et responsabilités",
+      "value": 7
+    },
+    {
+      "label": "Qualités et aptitudes",
+      "value": 7
+    },
+    {
+      "label": "Marché du travail",
+      "value": 5
+    },
+    {
       "label": "qualités et aptitudes requises",
       "value": 4
     },
     {
-      "label": "données salariale",
-      "value": 1
+      "label": "Données salariales",
+      "value": 4
     },
     {
-      "label": "Placement",
+      "label": "données salariale",
       "value": 1
     },
     {
@@ -222,6 +238,10 @@
       "value": 33
     },
     {
+      "label": "Bâtiment et construction",
+      "value": 27
+    },
+    {
       "label": "Agriculture, agroalimentaire et pêcheries",
       "value": 25
     },
@@ -231,10 +251,6 @@
     },
     {
       "label": "Éducation, enseignement et services de garde",
-      "value": 20
-    },
-    {
-      "label": "Bâtiment et construction",
       "value": 20
     },
     {
@@ -402,11 +418,11 @@
       "count": 8
     },
     {
-      "community": "Metal Manufacturing",
-      "count": 8
+      "community": "Maintenance Mechanics",
+      "count": 7
     },
     {
-      "community": "Maintenance Mechanics",
+      "community": "Metal Manufacturing",
       "count": 7
     },
     {
@@ -423,6 +439,10 @@
     },
     {
       "community": "Physics & Mathematics",
+      "count": 4
+    },
+    {
+      "community": "Construction Trades",
       "count": 4
     },
     {
@@ -447,10 +467,6 @@
     },
     {
       "community": "Furniture Manufacturing",
-      "count": 3
-    },
-    {
-      "community": "Construction Trades",
       "count": 3
     },
     {
