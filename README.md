@@ -1,118 +1,121 @@
-# Métiers Québec — Modernisation
+# Métiers Québec — Graphe de Connaissances
 
-Recréation moderne du site [metiers-quebec.org](https://www.metiers-quebec.org/), un guide éducatif québécois répertoriant plus de 1 500 métiers et professions dans 32 secteurs d'emploi.
+Modernisation du site [metiers-quebec.org](https://www.metiers-quebec.org/) en **graphe de connaissances queryable** pour chatbot RAG.
 
 ## Objectif
 
-Transformer un site vieillot (HTML frames, FrontPage 2002) en un site statique moderne, responsive, avec recherche instantanée et navigation par filtres — le tout gratuitement sur Cloudflare Pages.
+Transformer 418 fiches métier scrapées en un corpus structuré, chunké et vectorisé, connecté à un graphe de connaissances de 2566 noeuds — permettant des requêtes sémantiques précises sur les métiers québécois.
 
-## État actuel
+## Résultats Jour 2
 
-| Phase | Statut | Détails |
-|-------|--------|---------|
-| Phase 1 — Prototype | ✅ Terminé | 4 pages, design system complet |
-| Phase 2 — Scraping | ✅ Terminé | 413 métiers, 22 secteurs, 446 pages |
-| Phase 3 — Génération | ✅ Terminé | Site statique 18 Mo dans `dist/` |
-| Phase 4 — Audit | 🔄 En cours | Audit initial fait, à relancer sur site généré |
-| Phase 5 — Déploiement | ⏳ En attente | Cloudflare Pages |
+| Métrique | Valeur |
+|----------|--------|
+| Métiers scrapés | **418** (slugs uniques) |
+| Secteurs | **30** |
+| Clés de sections | **30** (sections_raw préservées, pas de mapping lossy) |
+| Chunks texte | **7 578** |
+| Embeddings | **7 578** (BAAI/bge-small-en-v1.5, 384-dim) |
+| Noeuds graphe | **2 566** (Graphify) |
+| Slugs mappés au graphe | **305** / 418 (73%) |
+| Communautés graphe | **29** |
+| Concepts coverage | **6** (salaire, formation, admission, placement, marché, qualités) |
+
+## Couverture source vs pipeline
+
+Le pipeline existant du site original ne préserve qu'une fraction des données :
+
+| Concept | Source | Pipeline | Couverture |
+|---------|--------|----------|------------|
+| admission | 418 | 169 | **40.4%** |
+| marché | 418 | 39 | 9.3% |
+| formation | 418 | 24 | 5.7% |
+| salaire | 418 | 21 | 5.0% |
+| qualités | 418 | 11 | 2.6% |
+| placement | 418 | 8 | **1.9%** |
+
+→ Le pipeline actuel perd **87-97%** des données pour 5/6 concepts. Voir `docs/kb005.md`.
 
 ## Technologies
 
 | Composant | Technologie | Justification |
 |-----------|------------|---------------|
-| Structure | HTML5 sémantique | Standard, accessibilité |
-| Style | CSS3 (custom properties, grid, flexbox) | Responsive, moderne |
-| Interaction | JavaScript vanilla | Aucune dépendance |
-| Scraping | Python + urllib + HTMLParser | Pas de pip install |
-| Génération | Python | Pas de dépendances externes |
+| Corpus | Python + urllib + HTMLParser | Scraping sans dépendances lourdes |
+| Embeddings | fastembed (BAAI/bge-small-en-v1.5) | ONNX, 33M params, gratuit, pas de PyTorch |
+| Graphe | Graphify | Extraction automatique de connaissances |
 | Hébergement | Cloudflare Pages | Gratuit, CDN global |
 
 ## Structure du projet
 
 ```
 metiers-quebec-prototype/
-├── index.html              # Prototype page d'accueil
-├── secteur.html            # Prototype secteur
-├── profession.html         # Prototype métier
-├── alpha.html              # Prototype A-Z
-├── css/style.css           # Design system
-├── js/search.js            # Recherche fuzzy
-├── scraper/
-│   ├── scrape_v2.py        # Script de scraping
-│   ├── generate.py         # Générateur de site
-│   └── fix_encoding.py     # Correction encodage
+├── scripts/
+│   ├── corpus_raw_v2.py        # Extraction corpus brut (418 slugs, 2387 sections)
+│   ├── embed_corpus.py         # Chunk + batch embedding (7578 chunks, 384-dim)
+│   ├── graph_bridge.py         # Mapping corpus → graph communities
+│   ├── coverage_split.py       # Analyse couverture source vs pipeline
+│   └── entropy_dashboard_v2.py # Dashboard stats augmenté
 ├── data/
-│   ├── professions_urls.json    # URLs de tous les métiers
-│   ├── professions_details.json # Données détaillées (21 Mo)
-│   ├── sectors.json             # Données des secteurs
-│   └── search_index.json        # Index de recherche
-├── dist/                   # Site statique généré (18 Mo)
-│   ├── index.html
-│   ├── css/style.css
-│   ├── js/search.js
-│   ├── data/search.json
-│   ├── secteur/*/index.html
-│   ├── alpha/index.html
-│   └── metier/*/index.html
-├── audit.sh                # Script d'audit automatisé
+│   ├── corpus_raw_v2/          # 418 JSON (sections_raw préservées)
+│   ├── embeddings/
+│   │   └── chunks.jsonl        # 7578 chunks avec embeddings (81 Mo)
+│   ├── graph_communities.json  # 305 slugs → communautés + voisins
+│   └── coverage_report.json    # Couverture source vs pipeline
+├── dist/                       # Site statique (31 Mo)
+│   ├── graphify-out/           # Graphe Graphify (2566 noeuds)
+│   └── data/stats.json         # Statistiques augmentées
 └── docs/
-    ├── README.md           # Ce fichier
-    ├── PLAN.md             # Plan d'exécution
-    ├── PROTOTYPE.md        # Documentation prototype
-    ├── SCRAPING.md         # Documentation scraping
-    ├── SOURCES.md          # Sources officielles de données
-    └── AUDIT.md            # Rapport d'audit
+    ├── kb005.md                # Problèmes couverture source/pipeline
+    └── kb006.md                # Choix modèle embedding
 ```
 
 ## Lancement
 
-### Site prototype (Phase 1)
+### Site statique
 
 ```bash
-cd metiers-quebec-prototype
+cd dist
 python3 -m http.server 8080
-# Ouvrir http://localhost:8080
+# http://localhost:8080
 ```
 
-### Site généré (Phase 3)
+### Génération corpus + embeddings
 
 ```bash
-cd metiers-quebec-prototype/dist
-python3 -m http.server 8080
-# Ouvrir http://localhost:8080
+# 1. Corpus brut (~30s)
+python3 scripts/corpus_raw_v2.py
+
+# 2. Coverage analysis
+python3 scripts/coverage_split.py
+
+# 3. Embeddings (~45 min, batch, reprise automatique)
+python3 scripts/embed_corpus.py
+
+# 4. Graph bridge
+python3 scripts/graph_bridge.py
+
+# 5. Dashboard stats
+python3 scripts/entropy_dashboard_v2.py
 ```
 
-### Scraping complet
+### Venv (nix-shell)
 
 ```bash
-# 1. Scraping (~3 minutes, 460 requêtes HTTP)
-python3 scraper/scrape_v2.py
-
-# 2. Génération du site
-python3 scraper/generate.py
-
-# 3. Copier les assets
-mkdir -p dist/css dist/js
-cp css/style.css dist/css/
-cp js/search.js dist/js/
-```
-
-## Audit
-
-```bash
-bash audit.sh
-# Les résultats sont dans docs/AUDIT.md
+nix-shell
+.venv/bin/python scripts/embed_corpus.py
 ```
 
 ## Sources
 
 - Site original : https://www.metiers-quebec.org/
-- Auteur original : Dany Savard (dsavard@metiers-quebec.org)
 - Données : sources publiques québécoises (OIIQ, MES, ISQ, etc.)
 - Voir `docs/SOURCES.md` pour la liste complète
 
 ## Documentation
 
-- `docs/SCRAPING.md` — Procédure de scraping et décisions techniques
-- `docs/SOURCES.md` — Sources officielles des données avec URLs
-- `docs/AUDIT.md` — Rapport d'audit du site prototype
+| Fichier | Description |
+|---------|-------------|
+| `docs/kb005.md` | Problèmes couverture source vs pipeline |
+| `docs/kb006.md` | Choix modèle embedding + coûts |
+| `docs/SCRAPING.md` | Procédure de scraping |
+| `docs/SOURCES.md` | Sources officielles des données |
+| `docs/AUDIT.md` | Rapport d'audit accessibilité |
