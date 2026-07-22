@@ -358,6 +358,10 @@
       "count": 13
     },
     {
+      "community": "General Business & Services",
+      "count": 12
+    },
+    {
       "community": "Automotive Repair",
       "count": 12
     },
@@ -370,6 +374,10 @@
       "count": 11
     },
     {
+      "community": "Arts & Entertainment",
+      "count": 11
+    },
+    {
       "community": "Forestry & Paper",
       "count": 11
     },
@@ -378,8 +386,8 @@
       "count": 11
     },
     {
-      "community": "General Business & Services",
-      "count": 10
+      "community": "Wine & Agriculture",
+      "count": 11
     },
     {
       "community": "Security & Emergency Services",
@@ -390,15 +398,27 @@
       "count": 8
     },
     {
+      "community": "Business Administration & Finance",
+      "count": 8
+    },
+    {
+      "community": "Metal Manufacturing",
+      "count": 8
+    },
+    {
       "community": "Maintenance Mechanics",
       "count": 7
     },
     {
-      "community": "Metal Manufacturing",
-      "count": 7
+      "community": "Music & Sound Production",
+      "count": 5
     },
     {
-      "community": "Arts & Entertainment",
+      "community": "Transportation & Driving",
+      "count": 4
+    },
+    {
+      "community": "Social Work & Criminology",
       "count": 4
     },
     {
@@ -406,8 +426,56 @@
       "count": 4
     },
     {
+      "community": "Chemistry & Biotech",
+      "count": 4
+    },
+    {
+      "community": "Chemical Analysis & Slaughter",
+      "count": 3
+    },
+    {
+      "community": "Agriculture & Environment",
+      "count": 3
+    },
+    {
+      "community": "Hairdressing & Aesthetics",
+      "count": 3
+    },
+    {
+      "community": "Health & Education Counseling",
+      "count": 3
+    },
+    {
+      "community": "Furniture Manufacturing",
+      "count": 3
+    },
+    {
+      "community": "Construction Trades",
+      "count": 3
+    },
+    {
       "community": "Industrial & Pharmaceutical Quality",
       "count": 3
+    },
+    {
+      "community": "Spirituality & Social Services",
+      "count": 2
+    },
+    {
+      "community": "Construction Trades (Masonry)",
+      "count": 2
+    },
+    {
+      "community": "Building Design & Construction",
+      "count": 2
+    },
+    {
+      "community": "Export and Customs Brokerage",
+      "count": 2
+    },
+    {
+      "community": "Engineering Disciplines",
+      "count": 2
     },
     {
       "community": "Medical Research & Prosthetics",
@@ -422,15 +490,147 @@
       "count": 1
     },
     {
-      "community": "Chemical Analysis & Slaughter",
-      "count": 1
-    },
-    {
-      "community": "Agriculture & Environment",
-      "count": 1
-    },
-    {
       "community": "Auto & Forestry Trades",
+      "count": 1
+    },
+    {
+      "community": "Military and Health Services",
+      "count": 1
+    },
+    {
+      "community": "Legal Professionals",
+      "count": 1
+    },
+    {
+      "community": "Jewelry and Gemology",
+      "count": 1
+    },
+    {
+      "community": "Media Production Direction",
+      "count": 1
+    },
+    {
+      "community": "Credit Analysis",
+      "count": 1
+    },
+    {
+      "community": "Refrigeration Apprentice",
+      "count": 1
+    },
+    {
+      "community": "Production Management",
+      "count": 1
+    },
+    {
+      "community": "Transport Logistics",
+      "count": 1
+    },
+    {
+      "community": "Human Resources and Talent Management",
+      "count": 1
+    },
+    {
+      "community": "Dental and Financial Services",
+      "count": 1
+    },
+    {
+      "community": "Aerospace Engineering",
+      "count": 1
+    },
+    {
+      "community": "Various Trades",
+      "count": 1
+    },
+    {
+      "community": "Boiler and Power Plant Operations",
+      "count": 1
+    },
+    {
+      "community": "Fire Protection Installation",
+      "count": 1
+    },
+    {
+      "community": "Maritime Safety and Coast Guard",
+      "count": 1
+    },
+    {
+      "community": "Hospitality and Furniture",
+      "count": 1
+    },
+    {
+      "community": "Mining & Construction",
+      "count": 1
+    },
+    {
+      "community": "Plumbing & HVAC",
+      "count": 1
+    },
+    {
+      "community": "Flooring Installation",
+      "count": 1
+    },
+    {
+      "community": "Interior Finishing",
+      "count": 1
+    },
+    {
+      "community": "Building Maintenance",
+      "count": 1
+    },
+    {
+      "community": "Psychology & Therapy",
+      "count": 1
+    },
+    {
+      "community": "Air Traffic Control",
+      "count": 1
+    },
+    {
+      "community": "Social Services and Early Childhood",
+      "count": 1
+    },
+    {
+      "community": "IT Support & Sales",
+      "count": 1
+    },
+    {
+      "community": "Clerical & Data Entry",
+      "count": 1
+    },
+    {
+      "community": "Graphic Design & Fire Safety",
+      "count": 1
+    },
+    {
+      "community": "Biology & Environmental Science",
+      "count": 1
+    },
+    {
+      "community": "Office Administration",
+      "count": 1
+    },
+    {
+      "community": "Legal & Regulatory Bodies",
+      "count": 1
+    },
+    {
+      "community": "Real Estate & Construction",
+      "count": 1
+    },
+    {
+      "community": "Natural Gas Services",
+      "count": 1
+    },
+    {
+      "community": "Building Construction and Procurement",
+      "count": 1
+    },
+    {
+      "community": "Furniture Design",
+      "count": 1
+    },
+    {
+      "community": "Museology and Archives",
       "count": 1
     },
     {
@@ -440,12 +640,28 @@
     {
       "community": "Agriculture and Aquaculture",
       "count": 1
+    },
+    {
+      "community": "Freight & Logistics",
+      "count": 1
+    },
+    {
+      "community": "Social Integration Advisor",
+      "count": 1
+    },
+    {
+      "community": "Glazing and Window Installation",
+      "count": 1
+    },
+    {
+      "community": "Mental Health & Therapy",
+      "count": 1
     }
   ],
   "graph_kpis": {
-    "total_corpus_slugs": 305,
-    "matched_to_graph": 305,
-    "total_communities": 29
+    "total_corpus_slugs": 416,
+    "matched_to_graph": 416,
+    "total_communities": 83
   },
   "embedding_kpis": {
     "total_chunks": 7578,
