@@ -2,10 +2,14 @@
 """
 graph_bridge.py — Map corpus_raw_v2 slugs → graph communities + neighbors
 
-Matching: prefix-based. For each corpus slug, find all graph nodes whose ID
-starts with "metier_" + slug ("_" or end-of-string). The shortest ID wins
-as the main node (most likely the "full page" node). Others are listed as
-related_subnodes (sub-concepts mentioned within the page).
+Algorithm: node-centric longest-prefix-wins.
+For each graph node (metier_ prefix stripped → key):
+  - Sort corpus_slugs by length descending
+  - Find the FIRST slug s (longest, most specific) such that key == s or key.startswith(s + "_")
+  - Assign this node exclusively to s
+
+This eliminates the asymmetric bug where slugs without exact-match nodes
+got contaminated by sibling sub-concepts (see docs/kb009.md — resolved).
 
 Reads:  dist/graphify-out/graph.json
         data/corpus_raw_v2/*.json
@@ -35,72 +39,48 @@ RAW_DIR = BASE_DIR / "data" / "corpus_raw_v2"
 OUT_PATH = BASE_DIR / "data" / "graph_communities.json"
 
 
-def build_slug_candidates(graph_nodes):
-    """Build {slug: [node, ...]} via prefix matching on metier_ IDs.
+def assign_nodes_to_slugs(graph, corpus_slugs):
+    """Node-centric assignment: each metier_ node goes to its longest matching slug.
 
-    A node ID like "metier_administration1" matches slug "administration1".
-    A node ID like "metier_administration1_admission_prepose" also matches
-    slug "administration1" (it's a sub-concept on that page).
+    Returns {slug: [node, ...]} with exclusive assignment.
     """
-    candidates = defaultdict(list)
-    for node in graph_nodes:
+    # Sort slugs longest-first for greedy longest-prefix matching
+    sorted_slugs = sorted(corpus_slugs, key=len, reverse=True)
+
+    slug_nodes = defaultdict(list)
+    unassigned = []
+
+    for node in graph["nodes"]:
         nid = node.get("id", "")
         if not nid.startswith("metier_"):
             continue
-        prefix = nid[len("metier_"):]  # everything after "metier_"
-        # We store all candidates; the caller picks by slug
-        candidates[prefix].append(node)
-    return candidates
+        key = nid[len("metier_"):]
 
+        # Find longest matching slug
+        assigned = False
+        for s in sorted_slugs:
+            if key == s or key.startswith(s + "_"):
+                slug_nodes[s].append(node)
+                assigned = True
+                break
+        if not assigned:
+            unassigned.append(nid)
 
-def find_candidates_for_slug(slug, prefix_map, corpus_slugs):
-    """Find all metier_ nodes matching a slug via prefix matching.
-
-    Returns (main_node, [subnodes]) where main_node has the shortest ID.
-    Collision guard: only active for slugs with an exact match in prefix_map.
-    For slugs without exact match, all prefix matches are included (best-effort,
-    may include sibling sub-concepts — see docs/kb009.md).
-    """
-    # Exact match first
-    if slug in prefix_map:
-        nodes = list(prefix_map[slug])
-        # Prefix match WITH guard (slug has its own nodes, guard is safe)
-        for key, node_list in prefix_map.items():
-            if key.startswith(slug + "_"):
-                is_sibling = any(
-                    key.startswith(s + "_") for s in corpus_slugs if s != slug
-                )
-                if not is_sibling:
-                    nodes.extend(node_list)
-    else:
-        # No exact match: include ALL prefix matches (no guard)
-        # Risk: may include sibling sub-concepts, but avoids losing data
-        nodes = []
-        for key, node_list in prefix_map.items():
-            if key.startswith(slug + "_"):
-                nodes.extend(node_list)
-
-    if not nodes:
-        return None, []
-
-    # Shortest ID wins as main node
-    nodes_sorted = sorted(nodes, key=lambda n: len(n["id"]))
-    main = nodes_sorted[0]
-    subnodes = [n["id"] for n in nodes_sorted[1:]]
-    return main, subnodes
+    return slug_nodes, unassigned
 
 
 def main():
     with open(GRAPH_PATH, "r", encoding="utf-8") as f:
         graph = json.load(f)
 
-    # Build prefix map: {node_id_without_metier_: [node, ...]}
-    prefix_map = defaultdict(list)
-    for node in graph["nodes"]:
-        nid = node.get("id", "")
-        if nid.startswith("metier_"):
-            key = nid[len("metier_"):]
-            prefix_map[key].append(node)
+    # Load corpus slugs
+    corpus_slugs = set()
+    for fp in RAW_DIR.glob("*.json"):
+        data = json.loads(fp.read_text(encoding="utf-8"))
+        corpus_slugs.add(data["slug"])
+
+    # Node-centric assignment
+    slug_nodes, unassigned = assign_nodes_to_slugs(graph, corpus_slugs)
 
     # Build link index: node_id → set of neighbor ids
     link_index = defaultdict(set)
@@ -108,13 +88,7 @@ def main():
         link_index[link["source"]].add(link["target"])
         link_index[link["target"]].add(link["source"])
 
-    # Load corpus slugs
-    corpus_slugs = set()
-    for f in RAW_DIR.glob("*.json"):
-        data = json.loads(f.read_text(encoding="utf-8"))
-        corpus_slugs.add(data["slug"])
-
-    # Build mapping
+    # Build result
     result = {}
     found = 0
     missing = []
@@ -122,15 +96,19 @@ def main():
     subnode_total = 0
 
     for slug in sorted(corpus_slugs):
-        node, subnodes = find_candidates_for_slug(slug, prefix_map, corpus_slugs)
-        if not node:
+        nodes = slug_nodes.get(slug, [])
+        if not nodes:
             missing.append(slug)
             continue
 
-        nid = node["id"]
+        # Shortest ID wins as main node
+        nodes_sorted = sorted(nodes, key=lambda n: len(n["id"]))
+        main = nodes_sorted[0]
+        subnodes = [n["id"] for n in nodes_sorted[1:]]
+
+        nid = main["id"]
         neighbors = sorted(link_index.get(nid, set()))
 
-        # Find secteur neighbor
         secteur_graph = None
         for nb in neighbors:
             if nb.startswith("secteur_"):
@@ -139,8 +117,8 @@ def main():
 
         result[slug] = {
             "graph_node_id": nid,
-            "community": node.get("community_name", "unknown"),
-            "community_id": node.get("community", -1),
+            "community": main.get("community_name", "unknown"),
+            "community_id": main.get("community", -1),
             "neighbors": neighbors,
             "neighbor_count": len(neighbors),
             "secteur_graph": secteur_graph,
@@ -157,12 +135,13 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"Graph bridge done (prefix matching):")
+    print(f"Graph bridge done (node-centric longest-prefix-wins):")
     print(f"  Corpus slugs:       {len(corpus_slugs)}")
     print(f"  Matched to graph:   {found}/{len(corpus_slugs)} ({found*100//len(corpus_slugs)}%)")
     print(f"  Missing (no node):  {len(missing)}")
     print(f"  Multi-candidate:    {multi_match} slugs ({subnode_total} subnodes)")
     print(f"  Communities:        {len(comm_count)}")
+    print(f"  Unassigned nodes:   {len(unassigned)}")
     print(f"  Output:             {OUT_PATH}")
     print()
     print("Top communities:")
@@ -170,6 +149,8 @@ def main():
         print(f"  {comm}: {cnt}")
     if missing:
         print(f"\nMissing slugs: {missing}")
+    if unassigned:
+        print(f"\nUnassigned nodes (first 10): {unassigned[:10]}")
 
 
 if __name__ == "__main__":

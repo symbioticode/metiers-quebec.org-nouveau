@@ -2234,7 +2234,6 @@
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
     "related_subnodes": [
-      "metier_infirmier_auxiliaire",
       "metier_infirmier_index_infirmier"
     ]
   },
@@ -2247,7 +2246,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_infirmier_auxiliaire_index_infirmier_auxiliaire"
+    ]
   },
   "info_gestionl": {
     "graph_node_id": "metier_info_gestionl",
@@ -3646,18 +3647,16 @@
     ]
   },
   "peintre": {
-    "graph_node_id": "metier_peintre_indl",
-    "community": "Metal Manufacturing",
-    "community_id": 9,
+    "graph_node_id": "metier_peintre_peintre_en_batiment",
+    "community": "Construction Trades",
+    "community_id": 30,
     "neighbors": [
-      "secteur_metallurgie"
+      "secteur_batiment_batiment_construction"
     ],
     "neighbor_count": 1,
-    "secteur_graph": "secteur_metallurgie",
+    "secteur_graph": "secteur_batiment_batiment_construction",
     "related_subnodes": [
-      "metier_peintre_peintre_en_batiment",
-      "metier_peintre_index_peintre_en_batiment",
-      "metier_peintre_indl_index_peintre_enduiseur_industriel"
+      "metier_peintre_index_peintre_en_batiment"
     ]
   },
   "peintre_indl": {
@@ -3669,7 +3668,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_peintre_indl_index_peintre_enduiseur_industriel"
+    ]
   },
   "perfusionnistel": {
     "graph_node_id": "metier_perfusionnistel",
@@ -6412,13 +6413,7 @@
     "neighbor_count": 1,
     "secteur_graph": "secteur_administration_administration_secretariat_informatique",
     "related_subnodes": [
-      "metier_vendeur_mecanique",
-      "metier_vendeur_index_vendeur",
-      "metier_vendeur_autos_representant_en_vente_automobile",
-      "metier_vendeur_autos_index_representant_en_vente_automobile",
-      "metier_vendeur_mecanique_index_vendeur_de_pieces_mecaniques",
-      "metier_vendeur_quincaillerie_commis_aux_produits_de_quincaillerie",
-      "metier_vendeur_quincaillerie_index_commis_aux_produits_de_quincaillerie"
+      "metier_vendeur_index_vendeur"
     ]
   },
   "vendeur_autos": {
@@ -6443,7 +6438,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_vendeur_mecanique_index_vendeur_de_pieces_mecaniques"
+    ]
   },
   "vendeur_quincaillerie": {
     "graph_node_id": "metier_vendeur_quincaillerie_commis_aux_produits_de_quincaillerie",
