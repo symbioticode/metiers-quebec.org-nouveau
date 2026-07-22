@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>orthoptiste — Métiers Québec</title>
+  <meta name="description" content="Métier orthoptiste au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/sante/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Santé
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/sante/">Santé</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Orthoptiste</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/sante/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Santé
+        </a>
+        <div class="page-header__tag">Santé</div>
+        <h1 class="page-header__title">Orthoptiste</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Santé</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>du métier d’. Un ORTHOPTISTE : Voir ci-dessous pour plus de détails.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’orthoptiste; tu seras responsable d’évaluer et traiter les déséquilibres de la vision binoculaire selon un diagnostic établi par un(e) ophtalmologiste ou un(e) optométristeafin de permettre à la personne d’avoir un meilleur alignement de ses yeux et améliorer sa vision par l'utilisation de méthodes non chirurgicales. Dans la plusieurs des cas, tu travailleras auprès d’enfants ou d’adolescents présentant des problèmes d’acuité visuelle, mais auprès d’adultes également. Tu auras pour tâches de : • Évaluer les symptômes, les troubles physiologiques et les lésions des patients (notamment au moyen d'une évaluation énergétique, d'une entrevue et d'obserEffectuer des mesures afin de déterminer la position des yeux du patient ou de la patiente en utilisant différentes techniques d’examens;vations) et selon d'autres méthodes plus modernes (prise de la tension artérielle, auscultation des poumons, tests de mobilité, examens physiques spécifiques, etc.); • Effectuer des tests spécialisés pour mesurer et évaluer les défauts de vision binoculaire ou de mouvement anormal des yeux chez les patients; • Participer au traitement non-chirurgical de la fonction visuelle du patient élaboré par un(e) ophtalmologiste ou par un(e) optométriste; • Planifier et appliquer des méthodes et plans de traitement non chirurgicaux selon les prescriptions d'un(e) ophtalmologiste; • Prescrire des exercices pour les yeux ou des régimes de pansement; • Faire un suivi de l’état du patient ou de la patiente. QUALITÉS ET APTITUDESNÉCESSAIRES : -Bonne vision -Aimer travailler avec le public et entregent car tu auras de fréquents contacts avec la clientèle - Grande capacité d’écoute, respect, patience et empathie car tu auras à faire face aux problèmes psychologiques que peuvent avoir tes clients(es) ayant une déficience visuelle -Capacité d’analyse et bon jugement pour être en mesure d’analyser le degré de vison de tes clients et analyser son problème de vision -Sens des responsabilités tu seras responsable de la qualité de tes évaluations afin que le médecin ou l’optométriste puisse élaborer un plan de traitement -Sens de l’organisation pour bien planifier tes examens -Facilité à travailler en équipe et professionnalisme car tu auras à travailler en étroite collaboration avec les optométristes, les ophtalmologistes, les opticiens et parfois, les ocularistes -Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité -Bonne connaissance de la langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité et de plus, la plupart des manuels de référence dans ce domaine sont dans cette langue PROFESSION APPARENTÉE : Aucune profession n’est apparentée à orthoptiste EMPLOYEURS POTENTIELS : -Cliniques privées d’ophtalmologie -Hôpitaux CERTIFICAT DE COMPÉTENCE : Au Canada, pour être autorisé à pratiquer en tant qu’orthoptiste, tu dois détenir obligatoirement un certificat de compétence du . PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2026 : Le salaire moyen en début de carrière était de : • 29,09 $/heure (35 hres/sem) en milieu hospitalier • 37,49 $/heure (35 hres ou 37,5/sem) en moyenne en clinique privée Sources : Guichet Emploi Canada etConseil du Trésor du Québec PORTRAIT DE LA PROFESSION ET PERSPECTIVES D'AVENIR : Selon l'Association des orthoptistes du Québec; il y avait qu'une vingtaine d'orthoptistes du Québec en 2022. L'orthoptique au Québec est règlementée par le Ministère de la Santé et des Services Sociaux. Une référence médicale est indispensable pour obtenir une consultation. Actuellement, on les retrouve en grande majorité en milieu hospitalier au sein d'hôpitaux universitaires ou affiliés universitaires, pour la plupart (dont : CHU de Québec, CHU Sainte-Justine, CUSM, CHUM, CHUS, Hôpital Maisonneuve-Rosemont, Hôpital du Sacré-Cœur, CHR de Trois-Rivières et Hôpital de Chicoutimi). Toutefois, plusieurs ophtamologistes et optométristes en pratique privée se regroupent afin de former de mégacliniques afin d'offrir des services complets en vision et prévoient embaucher des orthoptistes. Puisque la formation n'est pas offerte au Québec et que seulement 3 établissements au Canada offrent cette formation et qu'on ne compte qu'une centaine de ces professionnels au pays, la profession est une denrée rare. Quoi que limitées, de bonnes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>sont à prévoir pour ces orthoptistes. La rémunération moyenne après expérience en 2026... le revenu annuel moyen d'un(e) orthoptiste ayant 10 années d'expérience en milieu hospitalier était de 82 200 $; et le revenu annuel moyen d'un(e) orthoptiste ayant 10 années d'expérience en clinique privée était de 94 400 $. LA FORMATION : Le programme d'études en orthoptique a une durée totale de 2 ans à temps complet de jour. Une partie de la formation est théorique et comprend des cours tels que : anatomie et physiologie oculaires, test diagnostique et mesures, développement de l'enfant et développement visuel, bases en réfractométrie, maladies systémiques et désordres de la motilité oculaire, techniques fondamentales de l'examen ophtalmologique, traitement orthoptique, principes de chirurgie, notions de pharmacologie, optique ophtalmique, notions de génétique, aptitudes pour la recherche clinique, rédaction médicale, etc. Par contre, la plus partie du programme est consacrée à la formation clinique en milieu hospitalier sous la supervision d'un(e) orthoptiste d'expérience. Tu peux également suivre un programme d'une durée de 3 ans afin de rédiger un projet de thèse de maîtrise (mémoire) qui mène à l'obtention d'une maîtrise en sciences cliniques de la vision offert à Dalhousie University en Nouvelle-Écosse. ENDROITS DE FORMATION : Au Canada, Il y a seulement 4 endroits où la formation est offerte (et non offert au Québec), soit : Note : bien que la formation n'est pas offerte au Québec, une partie de la formation clinique peut se faire au (département d'ophtalmologie) à Montréal après autorisation du directeur du programme de l'établissement choisi. • à Halifax en Nouvelle-Écosse (School of Orthoptics and Ophthalmic Medical Technology) • à Saskatoon en Saskatchewan (Orthoptic clinic - Eye Care Center) • à Vancouver (conjointement avec le ) La formation offerte aux U.S.A. est à peu près organisée de la même façon que celle offerte au Canada. Elle est d’une durée de 24 mois consécutifs et elle est offerte au sein de certains hôpitaux. Pour plus de détails, consulte le site de l’. EXIGENCE D’ADMISSION : • Détenir un baccalauréat dans une discipline de la santé (ex : sciences biomédicales, biologie médicale, pharmacologie, etc)</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction textile, artisan en — Métiers Québec</title>
+  <meta name="description" content="Métier Construction textile, artisan en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/mode/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Mode et production textile
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/mode/">Mode et production textile</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Construction Textile, Artisan En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/mode/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Mode et production textile
+        </a>
+        <div class="page-header__tag">Mode et production textile</div>
+        <h1 class="page-header__title">Construction Textile, Artisan En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Mode et production textile</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que tisserand; tu auras pour tâches de concevoir et de réaliser des étoffes tissées ou tricotées pour les vêtements,pour des accessoires décoratives ou pour l’artisanat. Tu devras tout d’abord élaborer ton projet de création, par la suite tu auras à dessiner ton objet à l’aide de logiciels spécialisés en construction textile, tisser les étoffes à l’aide d’instruments manuels ou équipements mécaniques ou électroniques, tricoter les articles à l’aide d’une machine à tricoter, couper et coudre les articles tissés et tricotés et enfin, effectuer la finition. Lors de cette étape, tu auras à teindre les fibres naturelles, broder à l’aide de machines à coudre industrielles, ajouter des touches personnelles comme des dessins et autres décorations, etc. Enfin, si tu as ton propre atelier tu auras à vendre tes créations auprès de ta clientèle (particuliers, commerces de produits décoratifs pour la maison, boutiques, magasins à rayons, galeries d’art, etc). QUALITÉS ET APTITUDES NÉCESSAIRES : -Bonne vision -Très bonne perception des formes et des détails -Bonne coordination œil-main -Aptitudes en dessin -Aptitudes à travailler avec des ordinateurs car tu auras à travailler à l’aide de logiciels spécialisés en construction textile -Aptitudes à travailler avec diverses machines car tu auras à utiliser diverses machines comme : les machines à coudre, machines à tricoter, machines à broder, etc. -Très bonnes habiletés et excellente dextérité manuelles car tu auras à effectuer divers travaux de conception et de fabrication manuelle et l’aide de machines -Souci du détail, grande minutie et précision car tu auras à effectuer divers travaux de précision sur des objets fragiles -Imagination et créativité pour réaliser des objets jolis et originaux -Sens artistique et de l’esthétique pour être capable d’évaluer la qualité artistique et l’esthétique d’un objet -Autonomie et débrouillardise car tu auras à travailler seul(e) si tu es en atelier -Facilité à travailler en équipe car tu auras à collaborer avec d’autres artisans et ouvriers si tu es en industrie textile -Aimer travailler avec le public car tu auras de fréquents contacts avec la clientèle lorsque tu auras à vendre tes créations -Aptitudes pour la vente car tu auras à vendre des créations auprès de la clientèle PROFESSIONS APPARENTÉES : -Opérateur(trice) de machines à coudre industrielles -Teinturier(ère) -Tisseur(euse) EMPLOYEURS POTENTIELS : -À ton propre compte -Ateliers de construction textile -Industries du textile -Industries du vêtement EXIGENCES DES EMPLOYEURS : -Bon portfolio -Bonne connaissance des logiciels et équipements spécialisés -Polyvalence PLACEMENT : Selon les données au 31 mars 2022 : Le placement est très faible, seulement 25 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont aucun est à temps complet. Quelques répondants(es) ont choisi de poursuivre leurs études. NOMBRE DENOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 5111 Source : Ministère de l'Enseignement supérieur du Québec SALAIRE : Selon les données 2024: Le salaire moyen en début de carrière était de : - 515,00 $/semaine (40 hres/sem) au sein des PME ou à ton propre compte Sources : Ministère de l’Enseignement supérieur du Québec LE PROGRAMME D’ÉTUDES : Le Diplôme d’études collégiales en techniques des métiers d’art avec spécialisation en construction textile D.E.C. a une durée totale de 3 ansoffert à temps complet. Il comporte tout d’abord des cours communs avec les autres spécialités des techniques des métiers d’art comme dessin d’observation, théorie et pratique de la couleur, matériaux et techniques en métiers d’art, éléments de conception visuelle, dessin aux instruments, etc. Pour ce qui est des cours propres en construction textile, tu auras des cours en histoire de la construction textile, technologie des textiles, équipements en construction textile, techniques de coupe, couture et montage, techniques de base : Armure, techniques de base : Maille,techniques intermédiaires : Armure, techniques intermédiaires : Maille,techniques avancées : Armure, techniques avancées : Maille,teinture en construction textile, tapisserie haute lisse, tendance de la mode et conception de vêtements, implantation d’une entreprise artisanale en construction textile, projet de fin d’études en construction textile, etc. Ce programme vise à t’intégrer au marché du travail, mais tu pourras aussi poursuivre tes études à l’université en arts visuels (dont la majeure en arts textiles offert par Concordia), en gestion et design de mode ou en design industriel. Pour plus de détails sur ce programme, regarde la vidéo promotionnelle réalisée par le. PASSERELLES : Un programme passerelle permet aux titulaires du DEC dans une discipline en particulier de se faire reconnaître un certain nombre de crédits par une université dans cadre de son programme de baccalauréat. Par contre, aucune garantie d'admission est faite lors de la demande et aucune préférence ou priorité n'est accordée à l'admission. Pour plus de détails, consulte la Voici les ententes actuellement offertes : • l'UQAM pourra reconnaître jusqu'à 15 crédits aux titulaires de ce D.E.C. dans le cadre de son Baccalauréat en gestion et design de mode - concentration commercialisation (une note égale ou supérieure à la moyenne est nécessaire) • l'UQAM pourra reconnaître jusqu'à 15 crédits aux titulaires de ce D.E.C. dans le cadre de son Baccalauréat en arts visuels et médiatiques (sur présentation d'un relevé de notes et d'un dossier visuel) • l'UQAM pourra reconnaître aux titulaires de DEC jusqu'à 15 crédits dans le cadre de son Baccalauréat en histoire de l'art EXIGENCES D’ADMISSION : -Détenir le diplôme d’études secondaires D.E.S. STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) répondant aux conditions d'admission sont généralement admis. Admissions ouvertes de jour au trimestre d'automne seulement. ENDROITS DE FORMATION : - offert au ) possibilité de réaliser un séjour artistique en construction textile à New York regarde la du programme. - offert conjointement avec le possibilité d'effectuer un voyage culturel à l'étranger et/ou un stage à l'étranger(France, UK, Suisse, Japon, etc. selon les années) regarde la du programme.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

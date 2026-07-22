@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agneaux et moutons, technologue 
+en production d' — Métiers Québec</title>
+  <meta name="description" content="Métier Agneaux et moutons, technologue 
+en production d' au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/agriculture/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Agriculture, agroalimentaire et pêcheries
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/agriculture/">Agriculture, agroalimentaire et pêcheries</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agneaux Et Moutons, Technologue 
+En Production D'</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/agriculture/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Agriculture, agroalimentaire et pêcheries
+        </a>
+        <div class="page-header__tag">Agriculture, agroalimentaire et pêcheries</div>
+        <h1 class="page-header__title">Agneaux Et Moutons, Technologue 
+En Production D'</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Agriculture, agroalimentaire et pêcheries</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technologue en productions animales; tu seras responsable de planifier, contrôler, de coordonner et gérer les opérations des productions animales teles que : les programmes d’alimentation, élevage, de reproduction et d’amélioration des troupeaux, superviser le personnel ouvrier affecté à l’élevage et aux soins des animaux et t’assurer du bon déroulement de l’ensemble des productions. Tu seras également responsable de contrôler et de coordonner les activités financières et comptables, les approvisionnements et les ressources humaines au sein de l’entreprise, faire la promotion et la commercialisation des produits et représenter l’entreprise auprès de la clientèle. Tu travailleras en collaboration avec des agronomes, des microbiologistes et des ingénieurs agroenvironnementaux. Tu auras pour tâches de : • Superviser et surveiller des programmes d'élevage et d'autres programmes liés au bétail, et veiller à leur mise en œuvre; • Superviser ou diriger des programmes opérationnels, par exemple, en pisciculture, dans des serres et des fermes d'élevage de bestiaux; • Conseiller et renseigner les exploitants agricoles sur la fertilisation et les méthodes de culture, les récoltes, les soins des animaux et de la volaille, la prévention des maladies, etc; • Conseiller et renseigner les exploitations agricoles sur la gestion agricole, le financement des exploitations agricoles, la commercialisation et autres sujets reliés à l'agriculture; • Participer à l’élaboration des programmes d’amélioration et de reproduction des troupeaux; • Participer à l’élaboration de programmes d’alimentation animale; • Fournir du support technique nécessaire afin d’améliorer et d’optimiser la production; • Participer à la mise au point et l'application de nouvelles techniques de production; • Effectuer des activités de contrôle environnemental et de conformité des productions et rejets agricoles; • Élaborer et mettre en oeuvre des programmes et des activités permettant le développement des marchés agricoles; • Participer à la mise sur pied de nouvelles politiques de développement de l’entreprise agricole; • Tenir des registres de la production et du contrôle de la qualité. Tu pourras travailler dans l’u des secteurs agricoles des productions animales, soit : -l’industrie laitière (vaches ou chèvres laitières) -l’industrie porcine -l’industrie bovine (bovins de boucherie) -l’industrie ovine (moutons et agneaux) -L’industrie avicole (volailles : poulets, dindes, canards, autruches ou œufs de consommation ou œufs de transformation) - L'industrie des autres productions animales (ex : grands gibiers comme le cerf, le sanglier ou le wapiti) En tant qu'inspectrice ou inspecteur d'aliments et de produits agricoles; tu seras responsable de surveiller, contrôler et vérifier les les conditions de salubrité, de qualité et de conditionnement des produits agricoles et des aliments afin de s'assurer de leur conformité aux normes prescrites de production, d'entreposage et de transport. Tu devras notamment : • réaliser des travaux d’inspection dans les établissements agroalimentaires en vérifiant notamment si les bâtiments, les installations, les équipements, les outillages, les procédés, les produits utilisés ou vendus et le bien-être des animaux sont conformes aux exigences de la législation et des règlements en vigueur • visiter les bâtiments, les installations industrielles ou commerciales, certaines résidences ou tout autre lieu pour y réaliser une inspection périodique afin de détecter ou de constater les irrégularités ou les non-conformités • effectuer des prélèvements ou autres interventions d’inspection (photographies, recherches, analyses, consultation, évaluation) en lien avec les plaintes, les enquêtes, les avis de non-conformité donnés et les toxi-infections alimentaires • présenter des recommandations sur les actions à porter pour faire suite à ces inspections : saisir, confisquer, sceller, faire cesser ou restreindre les activités, prendre en charge les animaux ou prendre toute autre disposition • participer à la vérification et à l’approbation des plans et devis des bâtiments de même qu’à l’acceptation des matériaux, des appareils et des accessoires • émettre des constats d'infraction aux établissements qui ne sont pas conformes aux règlements en vigueur • agir comme personne-ressource pour la clientèle, incluant les consommateurs • etc. En tant que technicienne ou technicien en financement et assurances agricoles; tu seras responsable de participer à la promotion et à l’adhésion de la clientèle aux différents programmes d’assurances auprès des producteurs agricoles. Tu auras pour tâches de : • recueillir et analyser les données nécessaires au traitement des dossiers; • analyser les demandes de financement provenant d’entreprises agricoles; • évaluer la situation financière; • analyser les projets des propriétaires d’entreprises agricoles et déterminer le produit financier qui répond le mieux à leur demande; • effectuer des expertises sur le terrain en lien avec les réclamations; • rédiger les rapports appropriés; • appliquer les normes et les procédures relatives aux programmes d’assurances agricoles et de protection du revenu; • recommander les indemnisations nécessaires; • réaliser différentes activités de contrôle et divers suivis administratifs des demandes. APTITUDES ET QUALITÉS REQUISES : -Aptitudes en sciences (biologiques surtout, mais aussi chimiques) -Aptitudes en gestion car tu auras à coordonner du personnel, gérer les ressources et les opérations d’une entreprise agricole -Sens de l’observation et souci du détail pour être capable de déceler des problèmes lors de la production des cultures -Capacité d’analyse et de synthèseet curiosité scientifiquepour analyser les différents problèmes de production ou de gestion de l’entreprise -Minutie et précision afin d’élaborer des programmes de culture de façon précise et efficace -Sens des responsabilités car tu seras responsable de l’ensemble des opérations de l’entreprise -Sens de l’initiative et facilité à communiquer pour pouvoir soumettre clairement des conseils techniques aux agriculteurs -Sens de l’organisation pour pouvoir planifier les opérations de production des cultures -Facilité à travailler en équipe car tu auras à collaborer et à superviser des ouvriers agricoles PROFESSIONS APPARENTÉES : -Agent(e) de crédit agricole - Contremaître de ferme d'élevage -Conseiller(ère) technique en alimentation animales -Conseiller(ère) en assurances agricoles -Conseiller(ère) technique en élevage - Conseiller(ère) technique en financement agricole et assurances agricoles -Conseiller(ère) technique en production laitière -Conseiller(ère) technique en productions animales - Consultant(e) en élevage -Gérant(e) de ferme laitière, bovine, porcine, ovine ou avicole -Gérant(e) des productions animales - Inspecteur(trice) de la qualité en usine de transformation de viandes ou volailles -Inspecteur(trice) de produits agricoles - Inspecteur(trice) des aliments - Responsable d'élevage -Représentant(e) technique en productions animales - Superviseur(e) d'exploitation agricole - Superviseur(e) de la qualité en usine de transformation de viandes ou volailles ou produits marins -Technicien(ne) agricole -Technicien(ne) en agronomie - Technicien(ne) en contrôle de la qualité en usine de transformation de viandes ou volailles ou produits marins - Technicien(ne) en recherche et innovations -Technologiste conseil(le) en agriculture EMPLOYEURS POTENTIELS : -Compagnies agricoles (, , ) - Entreprises en alimentation animale - Entreprises de services agricoles -Fabricants d’aliments pour animaux -Fermes spécialisées (producteurs laitiers, bovins, porcins, ovins, chevalins et avicoles) -Firmes d’agronomes - Centres de recherche privés sans but lucratif OBNL, dont : à Saint-Mathieu-de-Beloeil en Montérégie, à Québec (et laboratoires situés à Saint-Bruno-de-Montarville, Deschambault ET Saint-Lambert-de-Lauzon), à Québec. -Cégeps et Institut de technologie agroalimentaire (enseignement technique),</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>(d'une durée de 3 à 4 mois au cours des trimestres d'été); Possibilité de réaliser un stage international rémunéré facultatif de 4 à 13 semaines (Belgique, France, Italie, Suisse, Australie, Allemagne, Pérou ou UK); Regarde la du programme; Regarde le du programme; Regarde la de l'Institut; Site du , un centre collégial de transfert de technologie rattaché à l'ITA fournissant de l'expertise auprès des PME agroalimentaires de partout au Québec dans les domaines tels que : le développement de nouveaux produits à base de viandes moins connues (agneau, chèvre, autruche, cerf rouge, sanglier, wapiti, etc.); développement de nouvelles méthodes afin de réduire les empreintes sur l'environnement dans les productions animales; évaluation sensorielle par des clients ciblés; etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

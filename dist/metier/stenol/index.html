@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Judiciaire, 
+sténographe — Métiers Québec</title>
+  <meta name="description" content="Métier Judiciaire, 
+sténographe au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/administration/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Administration, secrétariat et informatique
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/administration/">Administration, secrétariat et informatique</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Judiciaire, 
+Sténographe</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/administration/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Administration, secrétariat et informatique
+        </a>
+        <div class="page-header__tag">Administration, secrétariat et informatique</div>
+        <h1 class="page-header__title">Judiciaire, 
+Sténographe</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Administration, secrétariat et informatique</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que ssténographe officiel NON judiciaire; tu auras pour tâches de transcrire en temps réel par le biais de codes phonétiques qui sont automatiquement traduits par l'ordinateur en texte clair à l'écran, et ce, à la vitesse de la parole. On requiert tes services notamment pour les sous-titrages d’émissions de télévision ou de films, lors de congrès ou de conférences, lors de la réalisation de documents en braille pour lers personnes aveugles, etc. En tant que sténographe officiel judiciaire; tu auras pour tâches de de noter les mots à la vitesse de la prononciation au moyen de signes conventionnels et des sténogrammes, à l'occasion d'interrogatoires, de procès, de commissions rogatoires, etc. Ensuite, tu devras transcrire ses notes sténographiques en écriture courante afin de les déposer par la suite au dossier de la cour. QUALITÉS ET APTTITUDES NÉCESSAIRES : -Intérêt pour l’actualité et la culture générale -Capacité de gérer le stress et Capacité de travailler sous pression car tu auras à travailler avec grande rapidité -Facilité de concentration car tu devras rester attentif même lors de situations dérangeantes -Sens de l’organisation et bonne méthode de travailsont nécessaires pour bien planifier une charge importante de travail -Sens des responsabilités, honnêteté et discrétion car tu auras à traiter des dossiers qui peuvent être confidentiels -Autonomie et débrouillardise car tu seras souvent appelé(e) à travailler seul et tu devras être capable de régler tes problèmes -Excellente maîtrise de la langue française parlé et écrite car tu auras à transcrire dans un langage clair et précis les informations fournies -Bonne connaissance de la langue anglaise parlé et écrite (bilinguisme parfois exigé) car tu pourras avoir à transcrire des documents dans cette langue ou provenant de cette langue PROFESSIONS APPARENTÉES : -Agent(e) de bureau -Agent(e) de saisies de données - Audiotypiste - Auxiliaire en informatique (fonction publique québécoise) - Commis à la saisie (ou au traitement) de données - Commis en mécanographie (fonction publique fédérale -Commis de bureau - Commis-traducteur(trice) -Dactylographe -Opérateur(trice) d’unité de traitement de texte - Préposé(e) à l'enregistrement magnétique - Préposé(e) au traitement de textes -Rapporteur(euse) de sous-titrage -Secrétaire administratif(tive) -Secrétaire-réceptionniste -Sténographe judiciaire EMPLOYEURS POTENTIELS : -Chaînes de télévision par câble -Entreprises de post-production -Entreprises de relations publiques (lors d’organisations de congrès, d’assemblées générales d’entreprises, etc) -Gouvernements (dans différents ministères) -Organisations législatives (Assemblée nationale, Chambre des communes, Sénat)pour les sténographes judiciaires -Télédiffuseurs privés -Tribunaux (sténographes judiciaires seulement) - à ton propre compte (sténographes conventionnels et sténographes judiciaires) EXIGENCES DES EMPLOYEURS : -Excellente maîtrise de la langue française -Connaissance de l’anglais (bilinguisme parfois exigé) -Polyvalence PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données en 2024 : Il n’y a pas de « salaire de départ » puisque la plupart des sténographessonttravailleur(euses) autonomes. À titre indicatif, un sténographe officiel qui travaille à temps plein peut avoir des revenus de 50 000 $ et plus, selon le succès de son développement d’affaires et le temps qu’il consacre à son métier. autres milieux : - 20,38 $/heure (35 hres/sem) en tant qu'agent(e) de soutien aux activités judiciaires - sténographe judiciairedans la fonction publique québécoise - 22,35 $/heure (37,5 hres/sem) en tant que sténographe (autre que judiciaire)dans la fonction publique fédérale - 26,47 $/heure (37,5 hres/sem) en tant questénographe judiciairedans la fonction publique fédérale -26,62 $/heure (40 hres/sem) en moyenne en tant que sténographe judiciaire dans les cabinets d'avocats de taille moyenne -30,17 $/heure (40 hres/sem) en moyenne en tant que sténographe judiciaire dans les grands cabinets d'avocats - 33,76 $/heure (32 ou 33,5 ou 35 hres/ou 40 sem) en tant que sténographe juridique à Hydro-Québec - 37,88 $/heure (36,25 hres/sem) en tant que sténographe juridique à Énergir Sources : Ministère de l’Éducation, Conseil du trésor du Québec, Commission de la Fonction Publique du Canada, Syndicat des employés professionnels et de bureau d'Hydro-Québec, Syndicat des employés professionnels et de bureau - section locale 463 Gaz métro, conventions collectives des techniciens du Espace musique ou Première Chaîne de la SRC, Syndicat des employés de TVA et Guide salariale 2014 des professions légales Robert Half. PORTRAIT DU MÉTIER : Selon Emploi-Québe, il y a avait plus de 700 sténographes officiels au Québec en 2021. Plus de 95 % étaient des femmes. Plus de 82 % occupaient un poste à temps complet. La répartition selon le</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>d’une durée de 3 semaines (90 heures), etc EXIGENCE D’ADMISSION : -Détenir un D.E.S. ou l’équivalent ET - avoir interrompu ses études pendant au moins deux sessions consécutives ou une année scolaire OU - être visé par une entente conclue entre le collège et un employeur ou par un programme gouvernemental OU - avoir complété au moins une année d’études postsecondaires échelonnée sur une période d’un an ou plus. AUTRES EXIGENCES À L’ADMISSION : -Subir un test de connaissance en français -Subir un test de connaissance en informatique (logiciels de bureautique) -Subir un test de vitesse sur clavier (vitesse minimale de 40 mots/min) - Subir une entrevue de sélection STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) répondants aux</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>et ayant réussi tous les tests sont généralement admis ENDROITS DE FORMATION : - (rattachée à l'Institut Grasset), Montréal pour l’A.E.C.programme unique au Québec - , Montréal : formation destinée aux titulaires d'un D.E.C. seulement</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

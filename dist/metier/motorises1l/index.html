@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aide à la préparation des véhicules automobiles — Métiers Québec</title>
+  <meta name="description" content="Métier Aide à la préparation des véhicules automobiles au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/motorises/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Entretien d'équipements motorisés
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/motorises/">Entretien d'équipements motorisés</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Aide À La Préparation Des Véhicules Automobiles</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/motorises/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Entretien d'équipements motorisés
+        </a>
+        <div class="page-header__tag">Entretien d'équipements motorisés</div>
+        <h1 class="page-header__title">Aide À La Préparation Des Véhicules Automobiles</h1>
+        <p class="page-header__meta">Secondaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Entretien d'équipements motorisés</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Secondaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>du métier de . Le Diplôme d’études professionnelles en matelotage D.E.P. a une durée totale de 735 heures réparties sur 9 mois offert à temps complet seulement, principalement de jour, mais certaines portions de la formation peuvent être tenues en soirée. Ce nouveau programme unique au Canada permet d'exercer le métier de matelot tant sur le pont que dans la salle des machines de tous types de navires (cargo, croisières, traversier, etc.). ENDROIT DE FORMATION : (C.S. des Navigateurs) offert conjointement avec l' (Centre de formation en mesures d’urgences située à Lévis, Rive-Sud de Québec Pour plus de détails, consulte la page d'infos du métier de . Le programme de formation en esthétique automobile offert au a une durée totale de 38 heures à temps partiel (fins de semaine) et comprend des cours tels que : les produits et équipements utilisés en esthétique automobile, méthodes d’application, différentes techniques de dégraissage, techniques de shampoing intérieur et extérieur, teinture des tapis, sablage à l’eau et à sec, techniques de polissage des véhicules, techniques de cirage à la machine des véhicules, inspection finale, etc. Le programme de formation en esthétique automobile offert par l’ (Intégration Jeunesse Québec) a une durée totale de 7 mois à temps partiel. Il comporte des cours sur les produits et équipements utilisés en esthétique automobile, techniques de shampoing intérieur et extérieur, teinture des tapis, lavage et dégraissage du compartiment moteur, retouches de peinture à la main, techniques de polissage et cirage de la carrosserie, inspection finale, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>d’une durée de 90 heures, etc. Pour plus de détails, voir la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bonne santé car tu auras à travailler dans endroits bruyants, poussiéreux et mauvaises odeurs -Bonne tolérance au bruit, à la chaleur et à la poussière -Bonne condition et endurance physique car tu auras à travailler dans des positions inconfortables et à lever certaines charges -Minutie, précision, souci du détail car tu auras à monter, démonter et réparer des pièces délicates -Autonomie et débrouillardise car tu auras à travailler souvent seul(e) pour exécuter certaines tâches -Facilité à travailler en équipe car tu devras travailler en collaboration avec d'autres employés du département (ex : mécaniciens, carrossiers, etc.) -Entregent car tu auras à travailler auprès de la clientèle (pour certains métiers) -Être ouvert aux changements technologiques car tu devras te perfectionner ou se mettre à jour constamment (pour les métiers en entretien de véhicules tels que : préposé au service ou aide-mécanicien)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>: Un programme d'apprentissage en</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: • avoir 18 ans ou plus ET • avoir obtenu les unités de secondaire 3 en français, anglais et mathématiques OU avoir obtenu une Attestation d'équivalence de niveau de scolarité AENS OU avoir réussi le Test de développement général TDG ET • avoir interrompu tes études à temps plein depuis au moins 12 mois OU détenir un D.E.S. ou son équivalent OU • répondre aux conditions d'admissibilité de la Mesure de la formation de la main-d'œuvre d'Emploi Québec. • subir une entrevue de sélection Pour plus de détails, consultte la page d'infos du métier de. ENDROITS DE FORMATION : • (via son ) à Trois-Rivières, région Mauricie • à Donnacona, région de Québec • (section &quot;services aux entreprises&quot;) à Thetford Mines, région Chaudière-Appalaches • (via le ) à St-Jérôme, région des Laurentides • (via le) Rimouski, région Bas-St-Laurent Le Diplôme d’études professionnelles en conseil technique en entretien et réparation d'équipements motorisés D.E.P. a une durée totale de 930 heures, c’est-à-dire 31 semaines offert à temps complet. Il comporte des cours en notions d’informatique, communication avec la clientèle, travail administratif relié au service à la clientèle, information sur le groupe moteur, information sur les systèmes de refroidissement, climatisation et chauffage, information sur les systèmes d'allumage, d'alimentation, d'échappement et antipollution, information sur les systèmes de suspension, de direction et de freinage, information sur les systèmes électriques et électroniques, information sur le groupe propulseur, information sur le châssis et la carrosserie, calculs de coûts et de rendement, interprétation et transmission d'informations techniques en anglais, planification et coordination du travail d'atelier, conseils à la clientèle sur les services et les produits, service après-vente, stage en</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>pour les préposés à l'entretien des voies ferrées (aussi appelés agents d'entretien de la voie) au sein des grands transporteurs ferroviaires nationaux (CN et CP) sont actuellement caractérisées comme très limitées à stables. Cela s'explique par un bassin de travailleurs expérimentés déjà présents et un nombre limité de postes créés chaque année. L'essentiel des ouvertures de postes provient principalement des départs à la retraite. La rémunération moyenne après expérience en 2026... le revenu annuel moyen d'un(e) ouvrier(ère) à l'entretien des voies ayant 10 années d'expérience au sein de Via Rail était de 52 500 $; le revenu annuel moyen d'un(e) aide-mécanicien(e) à l'entretien des wagons ayant 10 années d'expérience au sein d'une entreprise ferroviaire régionale était de 60 400 $; le revenu annuel moyen d'un(e) aide mécanicien(ne) ou d'un(e) aide d'atelier ayant 10 années d'expérience au sein du CN (atelier de Montréal) était de 64 800 $; le revenu annuel moyen d'un(e) manœuvre classifié(e) à la gare de triage ayant 10 années d'expérience au sein de Via Rail était de 66 600 $; le revenu annuel moyen d'un(e) aide mécanicien(ne) ou d'un(e) aide d'atelier ayant 10 années d'expérience au sein de Via Rail était de 67 400 $; le revenu annuel moyen d'un(e) ouvrier(ère) à l'entretien des voies ayant 10 années d'expérience au sein du CN était de 70 000 $; et le revenu annuel moyen d'un(e) ouvrier(ère) à l'entretien des voies ayant 10 années d'expérience au sein du CP était de 79 600 $. PORTRAIT DE L'INDUSTRIE : L’industrie québécoise des services automobiles est ainsi composée de deux grands secteurs, soit les concessionnaires et marchands de véhicules ainsi que l’après-marché. Le Québec a connu d’importantes hausses des ventes de véhicules automobiles neufs depuis les dernières années. En 2016, il s'est vendu plus de 198 550 voitures pour des revenus de 5,47 milliards $ et plus de 234 600 camions légers (minifourgonnettes, véhicules utilitaires sport VUS et camionnettes) pour des revenus de 9,61 milliards $. Le parc automobile québécois compte plus de 4,8 millions de véhicules de promenade en circulation dans l'ensemble des régions du Québec, soit : 387 202 véhicules de moins d’un an, 1,7 million de véhicules de 1 à 5 ans, 1,4 million de 5 à 10 ans et un peu plus de 1 million de véhicules de plus de 11 ans En 2016, on comptait plus de 18 300 entreprises fournissant des services ou produits pour véhicules automobiles ayant généré des revenus totalisant plus de 5,19 milliards $. Parmi ces dernières, près de 47 % n'avaient pas d'employé (entreprises familiales dont seuls les membres de la famille y travaillent, entreprises dont seuls les associés ou propriétaires y travaillaient). Elles employaient plus de 98 300 travailleuses et travailleurs, soit une hausse moyenne de 3 % au cours des 3 dernières années, dont : • plus de 35 000 mécaniciens d'automobiles et camions légers • près 14 500 magasiniers et commis aux pièces • plus de 7 865 peintres-débosseleurs et carrossiers • plus de 7 375 commis aux achats et contrôle de l'inventaire • plus de 5 600 contremaîtres d'atelier de mécanique • plus de 2 600 réparateurs de freins, réparateurs de silencieux, réparateurs de suspensions et autres réparateurs • plus de 2 150 préposés au service, préposés aux pneus, préposés à la pose ou à l'entretien de pièces, graisseurs, etc. • plus de 10 100 autres employés de soutien d'atelier ou au service Bien que non inclus dans les effectifs de l'industrie, on peut aussi ajouter plus de 158 000 conseillers aux ventes, près de 44 100 préposés au service à la clientèle et près de 6 700 employés de soutien au service à la clientèle. On peut diviser cette industrie en 3 sous-secteurs, soit : • Garages et autres ateliers d'entretien et de réparation de véhicules automobiles : regroupe tous les garages, autres ateliers de mécanique, ateliers de carrosserie et de débosselage, centres de mise au point, centres de pose et d'entretien de pneus, ateliers de réparation de silencieux, ateliers de pose et de réparation de pare-brise et de composants d'automobiles, etc. Il regroupe plus de 10 900 entreprises (dont 50 % n'avaient pas d'employé) ayant généré des revenus totalisant plus de 373 millions $ et employaient près de 20 300 travailleuses et travailleurs. • Concessionnaires de véhicules automobiles : regroupe tous les concessionnaires d'automobiles neuves et d'occasion. Il comptait plus de plus de 2 500 entreprises ayant généré des revenus totalisant plus de 810 millions $ et qui employaient près de 47 000 travailleuses et travailleurs, soit : 900 concessionnaires d'autos neuves qui employaient plus de 33 500 personnes et 2500 concessionnaires d'autos d'occasion (dont 45 % n'avaient pas d'employé) qui employaient plus de 17 200 personnes. Un concessionnaire d'automobiles neuves typique emploie en moyenne 40 personnes et vend en moyenne 500 véhicules neufs par année d'une bannière en particulier. • Grossistes-marchands de véhicules automobiles et de pièces et accessoires de véhicules automobiles : regroupe tous les détaillants de pièces et accessoires pour automobiles, les centres de recyclage de véhicules, tous les distributeurs de véhicules automobiles destinés aux entreprises (messagerie, taxi, corps policiers, etc.), ainsi que les distributeurs, grossistes et importateurs de pièces et accessoires pour automobiles. Il regroupe plus de 1 380 entreprises (dont 36 % n'avaient pas d'employé) ayant généré des revenus totalisant près de 910 millions $ et employaient plus de 14 300 travailleuses et travailleurs. Un marchand d'automobiles d'occasion typique emploie en moyenne 15 personnes et vend en moyenne 250 véhicules de toutes marques par année. Un marchand de pièces et accessoires pour automobiles typique emploie en moyenne 5 personnes. Sources : Comité sectoriel de la main-d'œuvre de l'industrie des services automobiles, Industrie Canada, Statistiques Canada, Corporation des concessionnaires automobiles du Québec et Association des marchands de véhicules d'occasion du Québec. LES PROGRAMMES D’ÉTUDES : Bien qu’aucune formation n’est nécessaire pour occuper l’un de ces métiers, une formation peut t’apporter des compétences techniques dans le domaine et te permettre de mieux t’intégrer sur le marché du travail. Voici quelques exemples de programmes d’études recommandés et qui sont de courte durée : Note : pour connaître les endroits offrant les programmes D.E.P. décrits ci-dessous, consulte la page de</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

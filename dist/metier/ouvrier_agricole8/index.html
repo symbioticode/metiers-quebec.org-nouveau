@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chèvres, 
+producteur de — Métiers Québec</title>
+  <meta name="description" content="Métier Chèvres, 
+producteur de au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/agriculture/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Agriculture, agroalimentaire et pêcheries
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/agriculture/">Agriculture, agroalimentaire et pêcheries</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Chèvres, 
+Producteur De</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/agriculture/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Agriculture, agroalimentaire et pêcheries
+        </a>
+        <div class="page-header__tag">Agriculture, agroalimentaire et pêcheries</div>
+        <h1 class="page-header__title">Chèvres, 
+Producteur De</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Agriculture, agroalimentaire et pêcheries</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que productrice ou producteur laitier caprin; tu seras responsable d'exécuter des programmes d'alimentation, de soins de santé et de reproduction dans des fermes d'élevage de troupeaux chèvres laitières ou de chèvres de boucherie. Tu auras pour tâches de : • Formuler des programmes alimentaires; • Préparer les sols, semer, récolter, et entreposer les plantes et céréales servant à nourrir le troupeau; • Mettre en oeuvre des pâturages ou des programmes d'accouplement en parquets; • Effectuer des travaux d'entretien des cultures (semences, épandage de fumier, d'engrais ou de pesticides, récolte des cultures, au labour, au hersage, etc.); • Semer, fertiliser, cultiver, irriguer, pulvériser et récolter les fourrages; • Fertiliser les sols en utilisant des pesticides; • Suivre les procédures de sécurité et de bio-sécurité; • Observer le comportement du bétail; • Reconnaître et traiter certains problèmes de santé du bétail; • Manipuler et soigner les jeunes animaux; • Effectuer la traite des chèvres laitières, s'il y a lieu; • Installer et contrôler les conduites d'eau et les dispositifs d'aération et de régulation de la température dans des granges, des enclos et des poulaillers; • Faire fonctionner et entretenir l'équipement et les machines agricoles; • Nettoyer des étables, des granges, des basses-cours et des enclos. • Collaborer avec les techniciens agricoles et les agronomes afin de développer de nouveaux programmes d’alimentation, de reproduction et d’amélioration de la qualité des troupeaux; • Tenir des registres sur le rendement du bétail; • Sélectionner le bétail à vendre; • Contrôler la qualité des produits et les préparer pour la vente; • Faire l’entretien de l’outillage, des tracteurs, des bâtiments et des autres équipements agricoles; • Exécuter des tâches agricoles générales. QUALITÉS ET APTITUDESNÉCESSAIRES : -Intérêts pour le milieu agricole -Excellente santé -Excellente condition et endurance physique car tu auras à travailler de longues heures debout et à soulever différentes charges -Bonnes habiletés manuelles pour effectuer efficacement différentes tâches tels que la traite des chèvres, utiliser et entretenir les équipements et bâtiments, etc. -Grande capacité de travail car tu devras de longues heures de travail -Sens de l’observation pour être capable de déceler une anomalie sur un équipement, un problème de santé chez les animaux, etc. -Autonomie et débrouillardise car tu auras à travailler et à te débrouiller seul(e) dans plusieurs tâches -Aimer travailler en équipe car tu auras aussi à collaborer avec d’autres ouvriers agricoles dans certaines tâches PROFESSIONS APPARENTÉES : -Gérant(e) de ferme caprine (après expérience en agriculture) -Ouvrier(ère) de ferme d’élevage -Travailleur(euse) agricole EMPLOYEURS POTENTIELS : -Coopératives agricoles -Fermes commerciales -Fermes familiales EXIGENCE DES EMPLOYEURS : -Bonne connaissance du milieu agricole -Polyvalence -Mobilité -Longues heures de travail (souvent 12 hres/sem, 6 jours/sem) PLACEMENT : Selon les données disponibles au 1er juin 2019 : Note : dans le cadre du DEP en productions animales Le placement est bon, 72 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques répondants(es), soit 22 % ont bénéficié du DEP-DEC en poursuivant leurs études au collégial en gestion et technologies d'entreprise agricole. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 107605224 Note 1 : légère baisse du taux de placement par rapport aux années précédentes (était de 79 % en 2017; 78 % en 2015 et 80 % en 2013). Note 2 : légère hausse du nombre de répondants(es) poursuivant des études au collégial (était de 14 % en 2017; 17 % en 2015 et 14 % en 2013). Source : Agricarrières et Emploi Québec SALAIRE : Selon les données de 2024 : La salaire moyen en début de carrière était de : - 16,90 $/heure (40 à 50 hres/sem env en saison intensive) en moyenne en tant qu'ouvrier(ère) spécialisé(e) en élevage de chèvres laitières de chèvres de boucherie - 21,14 $/heure (50 heures/sem et +/sem env en saison intensive) en moyenne en tant que gérant(e) de ferme caprine -796,00 $/semaine (50 hres et +/sem env. en saison intenstive) en moyenne en tant que producteur(trice) caprin Note 1 : hausse de la rémunération moyenne par rapport aux années précédentes (était de 600 $ en 2022; 634 $ en 2019; 575 $ en 2017 et 595 $ en 2015). Note 2 : la qualité des récoltes varie beaucoup selon les conditions météorologiques, donc la rémunération également. Source : Agricarrières et Emploi Québec PORTRAIT DU MÉTIER : Selon Emploi-Québec; il y avait plus de 12 000 opératrices et opérateurs de machines et équipements en transformation des aliments et boissons dans l'ensemble des régions du Québec en 2022. Ils représentaient plus de 13 % de la main-d'œuvre totale de l'industrie de la transformation alimentaire québécoise. Plus de 72 % étaient des hommes. Plus de 93 % occupaient un poste à temps complet La répartition selon l'age était : • 10 % avaient moins de 25 ans • 44 % entre 25 et 44 ans • 26 % entre 45 et 54 ans • 20 % étaient agés de 55 ans ou plus Bien qu'une formation est fortement recommandée, seulement 35 % des opérateurs(trices) en transformation des aliments détenaient une formation professionnelle (tel que le DEP en opération d'équipements de production) ou technique (tel que le AEC en transformation des aliments). Bien qu'on retrouve plusieurs usines de grandes entreprises, ce sont les PME sont largement les principaux employeurs de ces opérateurs. Selon le Comité sectoriel de la main-d'oeuvre en production agricole du Québec; Plus de 57 % des emplois étaient concentrées dans les régions de la Montérégie (34 %) et de Montréal (23 %); Mais en retrouve également dans plusieurs autres régions : Laurentides (7 %), Lanaudière (7 %), Québec (5 %), Chaudière-Appalaches (5 %) et Laval (4 %). PERSPECTIVES D’AVENIR : En 2015, le secteur de la production bovine employait plus de 8 000 personnes (soit 25 % de la main-d'œuvre agricole en productions animales et 15 % de la main-d'œuvre agricole totale du Québec) dont plus de 240 ouvrières et ouvriers en production bovine autres que la main-d'œuvre familiale dans l'ensemble des régions du Québec. Il y a un grand besoin d’ouvriers et d’ouvrières spécialisés en production bovine partout en province, il fait partie des 50 métiers qui offrent les meilleures possibilités d’emplois pour les prochaines années (tant à court terme qu’à long terme). La rémunération moyenne après expérience en 2024... Le revenu annuel moyen d'un(e) ouvrier(ère) spécialisé(e) d'élevage travaillant à temps plein en saison (non propriétaire) était de 43 400 $. Le revenu annuel moyen d'un(e) producteur(trice) agricole en productions animales travaillant à temps plein à l'année gagnait en moyenne 34 000 $. Le revenu annuel moyen d'un(e) gérant(e) ou gestionnaire d'une exploitation en productions animales travaillant à temps plein en saison (non propriétaire) était de 51 3800 $. Sources : MAPAQ et Syndicat des producteurs de chèvres du Québec PORTRAIT DE L'INDUSTRIE : Au Québec, le secteur des productions animales est fort important. En 2015, Elles représentaient un chiffre d'affaires de 5,3 milliards de dollars, soit près de 20 % des recettes agricoles québécoises totales. On retrouvait plus de 32 700 producteurs au sein de près de 16 500 fermes et employaient près de 33 200 travailleuses et travailleurs, soit 61 % de tous les emplois agricoles du Québec. En 2015, l'industrie laitière québécoise a généré des recettes de plus de 2,2 milliards $, soit 28 % des recettes agricoles québécoises totales et 37 % des recettes laitières du Canada. L'industrie caprine québécoise détient 17 % du cheptel de chèvres au Canada. Le nombre d’entreprises et de chèvres est en constante progression au Québec depuis 2000. Quant au nombre de chèvres, il connaît une croissance régulière tant au niveau laitier que de la viande et du mohair. Le lait de chèvre : Selon un sondage réalisé en 2015, près de quatre Québécois sur dix mangent du fromage de chèvre, apprécié pour son goût subtil et raffiné. Concernant le lait de chèvre, la consommation est très faible : 70 ml par habitant au Québec (contre 84 litres pour le lait de vache). Elle est cependant en croissance de 10 à 15 % par année. La production laitière moyenne des troupeaux de 60 chèvres et plus est de 610 litres de lait par chèvre. En 2015, le troupeau moyen des entreprises laitières compte 235 chèvres. La production de lait de chèvre au Québec a été estimée, à près de 7 millions de litres. Plus de 90 % du lait transformé est destiné à la fabrication de fromages et 10 % au lait, yogourt et beurre de chèvre. En 2015, les revenus estimés étaient évalués à peine 30 000 $. La viande de chèvre : La viande caprine est la viande la plus consommée au monde. Le marché des chevreaux de boucherie et de viande caprine subissant une plus grande concurrence extérieure n’est comblé qu’à 50 % par la production québécoise. Au Québec, les données disponibles indiquent une consommation de viande caprine de 0,08 kg/habitant annuellement. La viande caprine est surtout consommée par les communautés ethniques. En effet, les communautés ethniques d'origine méditerranéenne sont particulièrement friandes de viande de chevreau. En 2015, les revenus estimés étaient évalués à près de 350 000 $, soit 80 % de la production canadienne. autres produits de la chèvre : Quant à la fibre de mohair qui sert notamment à la fabrication de vêtements (chandails, tuques, mitaines, foulards, etc.), de toutous en peluche et de poupées; le nombre de producteurs-transformateurs est très limité actuellement. Les produits artisanaux lui confèrent une haute valeur ajoutée surtout dans un contexte actuel d’effervescence pour l’agrotourisme. En 2015, on comptait 128 fermes caprines qui employaient quelques centaines de personnes, principalement concentrées dans les régions du Bas-St-Laurent, de la Montérégie, de Chaudière-Appalaches et Charlevoix. Consulte également le où tu auras plusieurs infos sur cette industrie, les perspectives, les types d'entreprises, etc. Sources : MAPAQ et Syndicat des producteurs de chèvres du Québec LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en production animale D.E.P. a une durée totale de 1 215 heures, c’est-à-dire 11 mois consécutifs offert à temps complet. Il couvre tous les types de productions animales (laitière, bovine, porcine, ovine, caprine, chevaline, avicole et grands gibiers). Il comporte des cours d'introduction au métier d'agriculteur(trice), santé et sécurité en milieu agricole, conduite d'un tracteur, relations professionnelles en milieu agricole, récolte, tenue des registres de production, épandage de fumiers, préparation primaire du sol, alimentation des animaux, soins aux animaux, reproduction des animaux, opérations de production animale, techniques d'oxycoupage et soudage, entretien : machinerie, équipement et outillage agricole, entretien : bâtiments et équipement agricole intégré, implantation d'une culture, entretien des cultures, ainsi qu'un stage d'intégration au marché du travail non rémunéré de 3 semaines. De plus, la plupart des établissements offrent le programme selon la formule alternance travail-études où tu auras à réaliser un stage rémunéré dans une entreprise agricole comprenant un total de 330 heures de travail en entreprise offert au trimestre d'été (inclus dans le total des heures du programme). ENTENTES D.E.P.-D.E.C. : Qu'est-ce qu'un programme DEP-DEC ? Consulte la Il permet de se faire reconnaître les acquis du D.E.P. en agriculture dans le cadre du programme de D.E.C. en gestion et technologies d'entreprise agricole - spécialisation en productions animales. Donc, tu pourras obtenir les 2 diplômes en 3 ans. Voici les ententes actuellement offertes : • : entente avec le (anciennement l'École d'agriculture de Nicolet) • : entente avec le • : entente avec le et l' • : entente avec le ÉTUDES SUPÉRIEURES : Tu pourras te diriger vers le marché du travail OU poursuivre tes études au collégial dans le cadre du programme de D.E.C. en gestion et technologies d'entreprise agricole d’une durée de 2 ans dans le cadre du programme intégré DEP-DEC permettant d’être admis en 2e année du D.E.C et ainsi l’offrir en 2 ans au lieu de 3 ans.Pour plus de détails, voir le métier de Il est également possible de poursuivre tes études dans le cadre du DEC en technologie des productions animales d'une durée de 3 ans. Cependant, aucune entente DEP-DEC n'est offerte pour ce programme. De plus, tu devras avoir complété le cours préalable suivant : CST 4e (anciennement mathématiques 426 ou 436) ou son équivalent Pour plus de détails, consulte la page de EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes AUTRE EXIGENCE À L’ADMISSION : -Détenir un permis de conduire (le permis d’apprenti est acceptable) (tous les établissements) STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) admissibles (qui répondent aux</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>) sont généralement admis. ENDROITS DE FORMATION : Infos sur l’ Est du Québec (Bas-St-Laurent, Gaspésie, Saguenay-Lac-St-Jean) : • , Alma (C.S.S. du Lac-St-Jean, région du Saguenay-Lac-St-Jean) Aussi offert en concomitance D.E.S.-D.E.P. (permettant de compléter en même temps, les cours obligatoires de 4e et/ou 5e secondaire); offert selon la formule en DUAL; qui consiste en 50 % des apprentissages à l'école (principalement la théorie) et 50 % en entreprise partenaire (formation pratique);</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>
