@@ -5,6 +5,26 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [0.4.0] - 2026-07-22
+
+### Added
+- `query_test.py` : couche d'interrogation sémantique
+  - Charge chunks.jsonl en mémoire une fois (11.1 MB embeddings)
+  - Query(question, top_k=5) : cosine similarity sur bge-small-en-v1.5
+  - Enrichissement avec graph_communities.json (métiers voisins)
+  - 10 questions test fixes avec verdicts manuels
+- `docs/kb007.md` : validation couche d'interrogation
+  - 3 correct, 4 partiels, 2 échecs, 1 hors-corpus
+  - Problèmes identifiés: pas de rejet hors-corpus, confusion métiers similaires
+- `graph_bridge.py` : prefix matching au lieu d'égalité stricte
+  - 305→416/418 slugs mappés (73%→99%)
+  - 74 slugs multi-candidats, 312 sous-nœuds conservés
+  - Seulement 2 absences réelles: commis-comptable, controleur_maritimel
+
+### Changed
+- README.md : refleté l'état réel du projet (legacy site statique, query layer terminé)
+- Avertissement perte de données en haut du README (lien kb005.md)
+
 ## [0.3.0] - 2026-07-22
 
 ### Added
@@ -12,7 +32,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
   - 7 578 chunks, 418 slugs, 81 Mo
   - Batch 64 chunks/batch, reprise automatique sur timeout
 - `graph_bridge.py` : mapping corpus → graph communities
-  - 305/418 slugs mappés (73%)
+  - 416/418 slugs mappés (99%, prefix matching)
   - 29 communautés, voisins par slug
 - `entropy_dashboard_v2.py` : dashboard stats augmenté
   - source_vs_pipeline par concept
