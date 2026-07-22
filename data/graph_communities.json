@@ -1,0 +1,3177 @@
+{
+  "LLEl": {
+    "graph_node_id": "metier_LLEl",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "index",
+      "secteur_lettres"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_lettres"
+  },
+  "administrateur": {
+    "graph_node_id": "metier_administrateur",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "alpha_index",
+      "index",
+      "secteur_administration"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_administration"
+  },
+  "administration1": {
+    "graph_node_id": "metier_administration1",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "alpha_index",
+      "index",
+      "secteur_administration"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_administration"
+  },
+  "affuteurl": {
+    "graph_node_id": "metier_affuteurl",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "agent_auto": {
+    "graph_node_id": "metier_agent_auto",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "agent_bordl": {
+    "graph_node_id": "metier_agent_bordl",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "alpha_index",
+      "index",
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "agent_clientelel": {
+    "graph_node_id": "metier_agent_clientelel",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "alpha_index",
+      "index",
+      "secteur_administration"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_administration"
+  },
+  "agent_eco-tourl": {
+    "graph_node_id": "metier_agent_eco-tourl",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "agent_faunel": {
+    "graph_node_id": "metier_agent_faunel",
+    "community": "Natural Sciences and Conservation",
+    "community_id": 102,
+    "neighbors": [
+      "alpha_index",
+      "niveau_non_specifie",
+      "secteur_nature",
+      "secteur_sciences_naturelles"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_nature"
+  },
+  "agent_renseignementl": {
+    "graph_node_id": "metier_agent_renseignementl",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "niveau_universitaire",
+      "secteur_protection",
+      "secteur_protection_publique"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_protection"
+  },
+  "agent_socio-sanl": {
+    "graph_node_id": "metier_agent_socio-sanl",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "agent_voyages": {
+    "graph_node_id": "metier_agent_voyages",
+    "community": "Tourism & Travel",
+    "community_id": 10,
+    "neighbors": [
+      "forfaitiste",
+      "guide_touristique",
+      "niveau_formation_professionnelle",
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "agriculture3l": {
+    "graph_node_id": "metier_agriculture3l",
+    "community": "Chemical Analysis & Slaughter",
+    "community_id": 89,
+    "neighbors": [
+      "alpha_index",
+      "niveau_secondaire",
+      "secteur_agriculture_agroalimentaire_pecheries"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_agriculture_agroalimentaire_pecheries"
+  },
+  "agronome": {
+    "graph_node_id": "metier_agronome",
+    "community": "Agriculture & Environment",
+    "community_id": 35,
+    "neighbors": [
+      "alpha_index",
+      "niveau_universitaire",
+      "secteur_agriculture_agroalimentaire_pecheries"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_agriculture_agroalimentaire_pecheries"
+  },
+  "aide_familiall": {
+    "graph_node_id": "metier_aide_familiall",
+    "community": "Auto & Forestry Trades",
+    "community_id": 2,
+    "neighbors": [
+      "alpha_index",
+      "niveau_formation_professionnelle",
+      "secteur_services_sociaux_juridiques"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_services_sociaux_juridiques"
+  },
+  "ambulancier": {
+    "graph_node_id": "metier_ambulancier",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "niveau_collegial",
+      "secteur_protection",
+      "secteur_protection_publique"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_protection"
+  },
+  "anal_multimedial": {
+    "graph_node_id": "metier_anal_multimedial",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "alpha_index",
+      "secteur_graphique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_graphique"
+  },
+  "analyste_informatiquel": {
+    "graph_node_id": "metier_analyste_informatiquel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "animalierl": {
+    "graph_node_id": "metier_animalierl",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "animateur_3dl": {
+    "graph_node_id": "metier_animateur_3dl",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "alpha_index",
+      "secteur_graphique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_graphique"
+  },
+  "animateur_tele": {
+    "graph_node_id": "metier_animateur_tele",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "anthropologuel": {
+    "graph_node_id": "metier_anthropologuel",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "arboriculteur": {
+    "graph_node_id": "metier_arboriculteur",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "arch_paysagiste": {
+    "graph_node_id": "metier_arch_paysagiste",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "alpha_index",
+      "secteur_nature"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_nature"
+  },
+  "architecte": {
+    "graph_node_id": "metier_architecte",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "armee1": {
+    "graph_node_id": "metier_armee1",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "armee2": {
+    "graph_node_id": "metier_armee2",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "armurier": {
+    "graph_node_id": "metier_armurier",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "arpenteurl": {
+    "graph_node_id": "metier_arpenteurl",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "artisanatl": {
+    "graph_node_id": "metier_artisanatl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "artiste_cirque": {
+    "graph_node_id": "metier_artiste_cirque",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "artistel": {
+    "graph_node_id": "metier_artistel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "ass_dentaire": {
+    "graph_node_id": "metier_ass_dentaire",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "ass_optometrie": {
+    "graph_node_id": "metier_ass_optometrie",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "ass_tech_pharmacie": {
+    "graph_node_id": "metier_ass_tech_pharmacie",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "assurances": {
+    "graph_node_id": "metier_assurances",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "assurances1l": {
+    "graph_node_id": "metier_assurances1l",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "bibliol": {
+    "graph_node_id": "metier_bibliol",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "biochimiste": {
+    "graph_node_id": "metier_biochimiste",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "bioinfol": {
+    "graph_node_id": "metier_bioinfol",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "biologiste": {
+    "graph_node_id": "metier_biologiste",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "alpha_index",
+      "secteur_nature"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_nature"
+  },
+  "biotechnol": {
+    "graph_node_id": "metier_biotechnol",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "briqueteur": {
+    "graph_node_id": "metier_briqueteur",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "carrossier": {
+    "graph_node_id": "metier_carrossier",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "chauffeur_autobusl": {
+    "graph_node_id": "metier_chauffeur_autobusl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "chauffeur_camion": {
+    "graph_node_id": "metier_chauffeur_camion",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "chauffeur_camion1": {
+    "graph_node_id": "metier_chauffeur_camion1",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "chercheur": {
+    "graph_node_id": "metier_chercheur",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "chimie1l": {
+    "graph_node_id": "metier_chimie1l",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "classeur_bois": {
+    "graph_node_id": "metier_classeur_bois",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "alpha_index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "comedien": {
+    "graph_node_id": "metier_comedien",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "comptable": {
+    "graph_node_id": "metier_comptable",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "concierge_hotell": {
+    "graph_node_id": "metier_concierge_hotell",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "conducteur_machines_plast": {
+    "graph_node_id": "metier_conducteur_machines_plast",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "cons_amenagement": {
+    "graph_node_id": "metier_cons_amenagement",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "cons_environnement": {
+    "graph_node_id": "metier_cons_environnement",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "cons_internationall": {
+    "graph_node_id": "metier_cons_internationall",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "cons_securitel": {
+    "graph_node_id": "metier_cons_securitel",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "secteur_protection"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_protection"
+  },
+  "conseiller_mode": {
+    "graph_node_id": "metier_conseiller_mode",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "controleur_aerienl": {
+    "graph_node_id": "metier_controleur_aerienl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "controleur_ferroviairel": {
+    "graph_node_id": "metier_controleur_ferroviairel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "couturier": {
+    "graph_node_id": "metier_couturier",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "cuisinier": {
+    "graph_node_id": "metier_cuisinier",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "danseurl": {
+    "graph_node_id": "metier_danseurl",
+    "community": "Arts & Entertainment",
+    "community_id": 6,
+    "neighbors": [
+      "secteur_arts"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_arts"
+  },
+  "decorateur_intl": {
+    "graph_node_id": "metier_decorateur_intl",
+    "community": "Arts & Entertainment",
+    "community_id": 6,
+    "neighbors": [
+      "alpha_index",
+      "metier_designer_int",
+      "secteur_arts"
+    ],
+    "neighbor_count": 3,
+    "secteur_graph": "secteur_arts"
+  },
+  "dentiste": {
+    "graph_node_id": "metier_dentiste",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "designer_graph": {
+    "graph_node_id": "metier_designer_graph",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "designer_ind": {
+    "graph_node_id": "metier_designer_ind",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "designer_int": {
+    "graph_node_id": "metier_designer_int",
+    "community": "Arts & Entertainment",
+    "community_id": 6,
+    "neighbors": [
+      "metier_decorateur_intl",
+      "secteur_arts"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_arts"
+  },
+  "designer_jeuxl": {
+    "graph_node_id": "metier_designer_jeuxl",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "alpha_index",
+      "secteur_graphique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_graphique"
+  },
+  "designer_mode": {
+    "graph_node_id": "metier_designer_mode",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "designer_presentationl": {
+    "graph_node_id": "metier_designer_presentationl",
+    "community": "Arts & Entertainment",
+    "community_id": 6,
+    "neighbors": [
+      "secteur_arts"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_arts"
+  },
+  "dessinateur_anim": {
+    "graph_node_id": "metier_dessinateur_anim",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "dietetiste": {
+    "graph_node_id": "metier_dietetiste",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "douanierl": {
+    "graph_node_id": "metier_douanierl",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "secteur_protection"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_protection"
+  },
+  "dynamiteur": {
+    "graph_node_id": "metier_dynamiteur",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "alpha_index",
+      "secteur_mines"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_mines"
+  },
+  "ecrivainl": {
+    "graph_node_id": "metier_ecrivainl",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "alpha_index",
+      "secteur_lettres"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_lettres"
+  },
+  "educateur_caninl": {
+    "graph_node_id": "metier_educateur_caninl",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "educateur_garderie": {
+    "graph_node_id": "metier_educateur_garderie",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "educateur_spec": {
+    "graph_node_id": "metier_educateur_spec",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "educationl": {
+    "graph_node_id": "metier_educationl",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "electricienl": {
+    "graph_node_id": "metier_electricienl",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "electromecano": {
+    "graph_node_id": "metier_electromecano",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "electronicien_bureau": {
+    "graph_node_id": "metier_electronicien_bureau",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "electrotechnique1l": {
+    "graph_node_id": "metier_electrotechnique1l",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "entraineur_chevaux": {
+    "graph_node_id": "metier_entraineur_chevaux",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "enviro3l": {
+    "graph_node_id": "metier_enviro3l",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "ergotherapeute": {
+    "graph_node_id": "metier_ergotherapeute",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "esthetique_autol": {
+    "graph_node_id": "metier_esthetique_autol",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "alpha_index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "exterminateurl": {
+    "graph_node_id": "metier_exterminateurl",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "fabric_mecanique1l": {
+    "graph_node_id": "metier_fabric_mecanique1l",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "alpha_index",
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "fleuriste": {
+    "graph_node_id": "metier_fleuriste",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "fondeur": {
+    "graph_node_id": "metier_fondeur",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "galvaniseurl": {
+    "graph_node_id": "metier_galvaniseurl",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "geographe": {
+    "graph_node_id": "metier_geographe",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "geologuel": {
+    "graph_node_id": "metier_geologuel",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "gerant_ferme": {
+    "graph_node_id": "metier_gerant_ferme",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "gest_appro": {
+    "graph_node_id": "metier_gest_appro",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "gest_appro1l": {
+    "graph_node_id": "metier_gest_appro1l",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "gest_quantifl": {
+    "graph_node_id": "metier_gest_quantifl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "gest_tour-hotell": {
+    "graph_node_id": "metier_gest_tour-hotell",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "grutier": {
+    "graph_node_id": "metier_grutier",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "horticulteur": {
+    "graph_node_id": "metier_horticulteur",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "humaines1": {
+    "graph_node_id": "metier_humaines1",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "hygieniste": {
+    "graph_node_id": "metier_hygieniste",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "infirmier": {
+    "graph_node_id": "metier_infirmier",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "infirmier_auxiliaire": {
+    "graph_node_id": "metier_infirmier_auxiliaire",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "info_gestionl": {
+    "graph_node_id": "metier_info_gestionl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "infographiste": {
+    "graph_node_id": "metier_infographiste",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "ing_agricole": {
+    "graph_node_id": "metier_ing_agricole",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "ing_automatisation": {
+    "graph_node_id": "metier_ing_automatisation",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "ing_biomedicall": {
+    "graph_node_id": "metier_ing_biomedicall",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "ing_biotechnol": {
+    "graph_node_id": "metier_ing_biotechnol",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "ing_boisl": {
+    "graph_node_id": "metier_ing_boisl",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "alpha_index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "ing_civil": {
+    "graph_node_id": "metier_ing_civil",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "ing_electricien": {
+    "graph_node_id": "metier_ing_electricien",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "ing_environnement": {
+    "graph_node_id": "metier_ing_environnement",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "ing_forestier": {
+    "graph_node_id": "metier_ing_forestier",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "alpha_index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "ing_geomatiquel": {
+    "graph_node_id": "metier_ing_geomatiquel",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "ing_industriel": {
+    "graph_node_id": "metier_ing_industriel",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "ing_informaticien": {
+    "graph_node_id": "metier_ing_informaticien",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "ing_logiciell": {
+    "graph_node_id": "metier_ing_logiciell",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "ing_maritimel": {
+    "graph_node_id": "metier_ing_maritimel",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "alpha_index",
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "ing_mecanicien": {
+    "graph_node_id": "metier_ing_mecanicien",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "ing_metallurgistel": {
+    "graph_node_id": "metier_ing_metallurgistel",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "ing_minerall": {
+    "graph_node_id": "metier_ing_minerall",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "ing_petrolel": {
+    "graph_node_id": "metier_ing_petrolel",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "ing_physicien": {
+    "graph_node_id": "metier_ing_physicien",
+    "community": "Physics & Mathematics",
+    "community_id": 95,
+    "neighbors": [
+      "secteur_physique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_physique"
+  },
+  "inst_autol": {
+    "graph_node_id": "metier_inst_autol",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "int_aventurel": {
+    "graph_node_id": "metier_int_aventurel",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "alpha_index",
+      "secteur_nature"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_nature"
+  },
+  "int_sportsl": {
+    "graph_node_id": "metier_int_sportsl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "kinesiologue": {
+    "graph_node_id": "metier_kinesiologue",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "linguistel": {
+    "graph_node_id": "metier_linguistel",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "secteur_lettres"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_lettres"
+  },
+  "machiniste": {
+    "graph_node_id": "metier_machiniste",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "alpha_index",
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "marketing1l": {
+    "graph_node_id": "metier_marketing1l",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "maroquinierl": {
+    "graph_node_id": "metier_maroquinierl",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "alpha_index",
+      "secteur_mode"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_mode"
+  },
+  "mathematicien": {
+    "graph_node_id": "metier_mathematicien",
+    "community": "Physics & Mathematics",
+    "community_id": 95,
+    "neighbors": [
+      "secteur_physique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_physique"
+  },
+  "mecanicien_agricolel": {
+    "graph_node_id": "metier_mecanicien_agricolel",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "mecanicien_ascenseurs": {
+    "graph_node_id": "metier_mecanicien_ascenseurs",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "mecanicien_auto": {
+    "graph_node_id": "metier_mecanicien_auto",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "mecanicien_bateauxl": {
+    "graph_node_id": "metier_mecanicien_bateauxl",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "alpha_index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "mecanicien_camions": {
+    "graph_node_id": "metier_mecanicien_camions",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "alpha_index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "mecanicien_industriel": {
+    "graph_node_id": "metier_mecanicien_industriel",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "mecanicien_legers": {
+    "graph_node_id": "metier_mecanicien_legers",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "mecanicien_mach_coudrel": {
+    "graph_node_id": "metier_mecanicien_mach_coudrel",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "mecanicien_machineries": {
+    "graph_node_id": "metier_mecanicien_machineries",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "med_doucesl": {
+    "graph_node_id": "metier_med_doucesl",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "medecin": {
+    "graph_node_id": "metier_medecin",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "metallurgie1": {
+    "graph_node_id": "metier_metallurgie1",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "microbio": {
+    "graph_node_id": "metier_microbio",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "mines1l": {
+    "graph_node_id": "metier_mines1l",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "mixologue": {
+    "graph_node_id": "metier_mixologue",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "alpha_index",
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "mode1l": {
+    "graph_node_id": "metier_mode1l",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "alpha_index",
+      "secteur_mode"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_mode"
+  },
+  "monteur_mecanique_aero": {
+    "graph_node_id": "metier_monteur_mecanique_aero",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "motorises1l": {
+    "graph_node_id": "metier_motorises1l",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "alpha_index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "musicienl": {
+    "graph_node_id": "metier_musicienl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "naturellel": {
+    "graph_node_id": "metier_naturellel",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "navigateur": {
+    "graph_node_id": "metier_navigateur",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "occupationsl": {
+    "graph_node_id": "metier_occupationsl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "oper_aliments": {
+    "graph_node_id": "metier_oper_aliments",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "oper_arpentage": {
+    "graph_node_id": "metier_oper_arpentage",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "oper_eauxl": {
+    "graph_node_id": "metier_oper_eauxl",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "oper_mach_for": {
+    "graph_node_id": "metier_oper_mach_for",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "oper_mach_ind": {
+    "graph_node_id": "metier_oper_mach_ind",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "oper_mineraisl": {
+    "graph_node_id": "metier_oper_mineraisl",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "oper_textilel": {
+    "graph_node_id": "metier_oper_textilel",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "operateur_imprimerie": {
+    "graph_node_id": "metier_operateur_imprimerie",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "operateur_legerl": {
+    "graph_node_id": "metier_operateur_legerl",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "operateur_machinerie": {
+    "graph_node_id": "metier_operateur_machinerie",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "operateur_papier": {
+    "graph_node_id": "metier_operateur_papier",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "operateur_pelle": {
+    "graph_node_id": "metier_operateur_pelle",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "operateur_scieriel": {
+    "graph_node_id": "metier_operateur_scieriel",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "opticien": {
+    "graph_node_id": "metier_opticien",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "optometriste": {
+    "graph_node_id": "metier_optometriste",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "orthopedagogue": {
+    "graph_node_id": "metier_orthopedagogue",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "orthoptiste": {
+    "graph_node_id": "metier_orthoptiste",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "ouvrier_agricole7": {
+    "graph_node_id": "metier_ouvrier_agricole7",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "ouvrier_composites": {
+    "graph_node_id": "metier_ouvrier_composites",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "ouvrier_cuir": {
+    "graph_node_id": "metier_ouvrier_cuir",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "ouvrier_foresterie": {
+    "graph_node_id": "metier_ouvrier_foresterie",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "ouvrier_foresterie1": {
+    "graph_node_id": "metier_ouvrier_foresterie1",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "ouvrier_paysagistel": {
+    "graph_node_id": "metier_ouvrier_paysagistel",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "ouvrier_vetements": {
+    "graph_node_id": "metier_ouvrier_vetements",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "patroniste": {
+    "graph_node_id": "metier_patroniste",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "peintre_indl": {
+    "graph_node_id": "metier_peintre_indl",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "perfusionnistel": {
+    "graph_node_id": "metier_perfusionnistel",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "physiotherapeute": {
+    "graph_node_id": "metier_physiotherapeute",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "policier": {
+    "graph_node_id": "metier_policier",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "secteur_protection"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_protection"
+  },
+  "politicologuel": {
+    "graph_node_id": "metier_politicologuel",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "pompier": {
+    "graph_node_id": "metier_pompier",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "secteur_protection"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_protection"
+  },
+  "prep_recreotourismel": {
+    "graph_node_id": "metier_prep_recreotourismel",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "prep_reprographiel": {
+    "graph_node_id": "metier_prep_reprographiel",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "prep_servicel": {
+    "graph_node_id": "metier_prep_servicel",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "alpha_index",
+      "secteur_motorises"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_motorises"
+  },
+  "prep_ski_golfl": {
+    "graph_node_id": "metier_prep_ski_golfl",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "preventionnistel": {
+    "graph_node_id": "metier_preventionnistel",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "secteur_protection"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_protection"
+  },
+  "prof_adapt_scol": {
+    "graph_node_id": "metier_prof_adapt_scol",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_anglais": {
+    "graph_node_id": "metier_prof_anglais",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_anglais1": {
+    "graph_node_id": "metier_prof_anglais1",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_arts": {
+    "graph_node_id": "metier_prof_arts",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_collegiall": {
+    "graph_node_id": "metier_prof_collegiall",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_danse": {
+    "graph_node_id": "metier_prof_danse",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_educ": {
+    "graph_node_id": "metier_prof_educ",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_francaisLS": {
+    "graph_node_id": "metier_prof_francaisLS",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_langues": {
+    "graph_node_id": "metier_prof_langues",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_musique": {
+    "graph_node_id": "metier_prof_musique",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_prescol_primaire": {
+    "graph_node_id": "metier_prof_prescol_primaire",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_professl": {
+    "graph_node_id": "metier_prof_professl",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_religion": {
+    "graph_node_id": "metier_prof_religion",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_secondaire": {
+    "graph_node_id": "metier_prof_secondaire",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_theatre": {
+    "graph_node_id": "metier_prof_theatre",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "alpha_index",
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "prof_universitel": {
+    "graph_node_id": "metier_prof_universitel",
+    "community": "Education & Teaching",
+    "community_id": 26,
+    "neighbors": [
+      "secteur_enseignement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_enseignement"
+  },
+  "protection": {
+    "graph_node_id": "metier_protection",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "secteur_protection"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_protection"
+  },
+  "receptionniste_hotel": {
+    "graph_node_id": "metier_receptionniste_hotel",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "relationniste": {
+    "graph_node_id": "metier_relationniste",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "repar_caravanes": {
+    "graph_node_id": "metier_repar_caravanes",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "repar_electronique": {
+    "graph_node_id": "metier_repar_electronique",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "repar_telecommunications": {
+    "graph_node_id": "metier_repar_telecommunications",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "repartiteur_urgencesl": {
+    "graph_node_id": "metier_repartiteur_urgencesl",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "secteur_protection"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_protection"
+  },
+  "restaurationl": {
+    "graph_node_id": "metier_restaurationl",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "sante1l": {
+    "graph_node_id": "metier_sante1l",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "sc_legalesl": {
+    "graph_node_id": "metier_sc_legalesl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "sc_med": {
+    "graph_node_id": "metier_sc_med",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "scenaristel": {
+    "graph_node_id": "metier_scenaristel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "scenel": {
+    "graph_node_id": "metier_scenel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "securite": {
+    "graph_node_id": "metier_securite",
+    "community": "Security & Emergency Services",
+    "community_id": 59,
+    "neighbors": [
+      "alpha_index",
+      "secteur_protection"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_protection"
+  },
+  "serrurier": {
+    "graph_node_id": "metier_serrurier",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "serveur": {
+    "graph_node_id": "metier_serveur",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "sociologuel": {
+    "graph_node_id": "metier_sociologuel",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "spec_STA": {
+    "graph_node_id": "metier_spec_STA",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "statisticien": {
+    "graph_node_id": "metier_statisticien",
+    "community": "Physics & Mathematics",
+    "community_id": 95,
+    "neighbors": [
+      "secteur_physique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_physique"
+  },
+  "sylviculteur": {
+    "graph_node_id": "metier_sylviculteur",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "tailleur": {
+    "graph_node_id": "metier_tailleur",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "tech_administration": {
+    "graph_node_id": "metier_tech_administration",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_aeronautiquel": {
+    "graph_node_id": "metier_tech_aeronautiquel",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_aeronefs": {
+    "graph_node_id": "metier_tech_aeronefs",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_aliments": {
+    "graph_node_id": "metier_tech_aliments",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_arch_naval": {
+    "graph_node_id": "metier_tech_arch_naval",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "tech_avionique": {
+    "graph_node_id": "metier_tech_avionique",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_biomasse": {
+    "graph_node_id": "metier_tech_biomasse",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_biomedicall": {
+    "graph_node_id": "metier_tech_biomedicall",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "tech_cartographie": {
+    "graph_node_id": "metier_tech_cartographie",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_cine-halieul": {
+    "graph_node_id": "metier_tech_cine-halieul",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "tech_composites": {
+    "graph_node_id": "metier_tech_composites",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "tech_dentaire": {
+    "graph_node_id": "metier_tech_dentaire",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_design_ind": {
+    "graph_node_id": "metier_tech_design_ind",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "tech_dietetique": {
+    "graph_node_id": "metier_tech_dietetique",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_documentationl": {
+    "graph_node_id": "metier_tech_documentationl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_eaux": {
+    "graph_node_id": "metier_tech_eaux",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_echographie": {
+    "graph_node_id": "metier_tech_echographie",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_electro_ind": {
+    "graph_node_id": "metier_tech_electro_ind",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "tech_electromenagers": {
+    "graph_node_id": "metier_tech_electromenagers",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "tech_electroniquel": {
+    "graph_node_id": "metier_tech_electroniquel",
+    "community": "Electrical & Electronics Engineering",
+    "community_id": 20,
+    "neighbors": [
+      "alpha_index",
+      "secteur_electrotechnique"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "tech_electrophysio": {
+    "graph_node_id": "metier_tech_electrophysio",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_environnement": {
+    "graph_node_id": "metier_tech_environnement",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_faune": {
+    "graph_node_id": "metier_tech_faune",
+    "community": "Recreation & Landscape",
+    "community_id": 44,
+    "neighbors": [
+      "secteur_nature"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_nature"
+  },
+  "tech_foresterie": {
+    "graph_node_id": "metier_tech_foresterie",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "alpha_index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "tech_foresterie1": {
+    "graph_node_id": "metier_tech_foresterie1",
+    "community": "Forestry & Paper",
+    "community_id": 73,
+    "neighbors": [
+      "alpha_index",
+      "secteur_foresterie"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "tech_genie_agricole": {
+    "graph_node_id": "metier_tech_genie_agricole",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_genie_civil": {
+    "graph_node_id": "metier_tech_genie_civil",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_genie_industriel": {
+    "graph_node_id": "metier_tech_genie_industriel",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "tech_genie_mecanique": {
+    "graph_node_id": "metier_tech_genie_mecanique",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "tech_geodesie": {
+    "graph_node_id": "metier_tech_geodesie",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_hotellerie": {
+    "graph_node_id": "metier_tech_hotellerie",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "tech_hygiene": {
+    "graph_node_id": "metier_tech_hygiene",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_imprimerie": {
+    "graph_node_id": "metier_tech_imprimerie",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "tech_labo_medical": {
+    "graph_node_id": "metier_tech_labo_medical",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "alpha_index",
+      "secteur_sante"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_med_nucleaire": {
+    "graph_node_id": "metier_tech_med_nucleaire",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_media": {
+    "graph_node_id": "metier_tech_media",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_menuiserie": {
+    "graph_node_id": "metier_tech_menuiserie",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_metallurgie": {
+    "graph_node_id": "metier_tech_metallurgie",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "tech_minierl": {
+    "graph_node_id": "metier_tech_minierl",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "secteur_mines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mines"
+  },
+  "tech_multimedia": {
+    "graph_node_id": "metier_tech_multimedia",
+    "community": "Multimedia & Graphic Design",
+    "community_id": 72,
+    "neighbors": [
+      "secteur_graphique"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_graphique"
+  },
+  "tech_optiquel": {
+    "graph_node_id": "metier_tech_optiquel",
+    "community": "Medical Research & Prosthetics",
+    "community_id": 58,
+    "neighbors": [
+      "non_specifie",
+      "opticien_ordonnances",
+      "sante",
+      "secteur_sante"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_ordinique": {
+    "graph_node_id": "metier_tech_ordinique",
+    "community": "Industrial & Pharmaceutical Quality",
+    "community_id": 77,
+    "neighbors": [
+      "collegial",
+      "electrotechnique",
+      "secteur_electrotechnique",
+      "technicien_electronique_optronique",
+      "technicien_genie_biomedical"
+    ],
+    "neighbor_count": 5,
+    "secteur_graph": "secteur_electrotechnique"
+  },
+  "tech_ortheses": {
+    "graph_node_id": "metier_tech_ortheses",
+    "community": "Medical Research & Prosthetics",
+    "community_id": 58,
+    "neighbors": [
+      "collegial",
+      "orthesiste_prothesiste",
+      "sante",
+      "secteur_sante",
+      "technicien_orthopedie"
+    ],
+    "neighbor_count": 5,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_papier": {
+    "graph_node_id": "metier_tech_papier",
+    "community": "Industrial & Pharmaceutical Quality",
+    "community_id": 77,
+    "neighbors": [
+      "collegial",
+      "foresterie_et_papier",
+      "secteur_foresterie",
+      "technicien_controle_qualite_papier",
+      "technicien_procedes_transformation_pate"
+    ],
+    "neighbor_count": 5,
+    "secteur_graph": "secteur_foresterie"
+  },
+  "tech_paysagiste": {
+    "graph_node_id": "metier_tech_paysagiste",
+    "community": "Landscape & Optometry",
+    "community_id": 80,
+    "neighbors": [
+      "collegial",
+      "concepteur_paysagiste",
+      "horticulteur",
+      "sciences_naturelles",
+      "secteur_nature"
+    ],
+    "neighbor_count": 5,
+    "secteur_graph": "secteur_nature"
+  },
+  "tech_pechesl": {
+    "graph_node_id": "metier_tech_pechesl",
+    "community": "Agriculture and Aquaculture",
+    "community_id": 158,
+    "neighbors": [
+      "agriculture_agroalimentaire_et_pecheries",
+      "alpha_index",
+      "collegial",
+      "pisciculteur"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": null
+  },
+  "tech_petrolel": {
+    "graph_node_id": "metier_tech_petrolel",
+    "community": "Mining & Geology",
+    "community_id": 50,
+    "neighbors": [
+      "mines_petrole_et_travaux_de_genie",
+      "non_specifie",
+      "secteur_mines",
+      "technicien_forage_petrolier"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_mines"
+  },
+  "tech_pharmacie": {
+    "graph_node_id": "metier_tech_pharmacie",
+    "community": "Industrial & Pharmaceutical Quality",
+    "community_id": 77,
+    "neighbors": [
+      "collegial",
+      "sante",
+      "secteur_sante",
+      "technicien_controle_qualite_pharma"
+    ],
+    "neighbor_count": 4,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_physique": {
+    "graph_node_id": "metier_tech_physique",
+    "community": "Physics & Mathematics",
+    "community_id": 95,
+    "neighbors": [
+      "collegial",
+      "sciences_physiques_et_mathematiques",
+      "secteur_physique",
+      "technicien_laboratoire_physique",
+      "technicien_photonique"
+    ],
+    "neighbor_count": 5,
+    "secteur_graph": "secteur_physique"
+  },
+  "tech_plastiques": {
+    "graph_node_id": "metier_tech_plastiques",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "tech_prod_animales": {
+    "graph_node_id": "metier_tech_prod_animales",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "tech_radiodiagnostic": {
+    "graph_node_id": "metier_tech_radiodiagnostic",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_readaptation": {
+    "graph_node_id": "metier_tech_readaptation",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_restauration": {
+    "graph_node_id": "metier_tech_restauration",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "tech_sante_animale": {
+    "graph_node_id": "metier_tech_sante_animale",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tech_sondage": {
+    "graph_node_id": "metier_tech_sondage",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "tech_sportsl": {
+    "graph_node_id": "metier_tech_sportsl",
+    "community": "Maintenance Mechanics",
+    "community_id": 103,
+    "neighbors": [
+      "secteur_mecanique_entr"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mecanique_entr"
+  },
+  "tech_textiles": {
+    "graph_node_id": "metier_tech_textiles",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "tech_tourisme": {
+    "graph_node_id": "metier_tech_tourisme",
+    "community": "Hospitality & Food Service",
+    "community_id": 61,
+    "neighbors": [
+      "alpha_index",
+      "secteur_restau_tourisme"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_restau_tourisme"
+  },
+  "tech_urbanismel": {
+    "graph_node_id": "metier_tech_urbanismel",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "secteur_environnement"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_environnement"
+  },
+  "tech_vetements": {
+    "graph_node_id": "metier_tech_vetements",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "techno_maritimel": {
+    "graph_node_id": "metier_techno_maritimel",
+    "community": "Plastics & Industrial Engineering",
+    "community_id": 49,
+    "neighbors": [
+      "secteur_fabric_mec"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_fabric_mec"
+  },
+  "thanatologue": {
+    "graph_node_id": "metier_thanatologue",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "theologienl": {
+    "graph_node_id": "metier_theologienl",
+    "community": "Social Sciences & Development",
+    "community_id": 91,
+    "neighbors": [
+      "secteur_humaines"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_humaines"
+  },
+  "therapeute_artl": {
+    "graph_node_id": "metier_therapeute_artl",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "therapeute_sport": {
+    "graph_node_id": "metier_therapeute_sport",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  },
+  "tisserandl": {
+    "graph_node_id": "metier_tisserandl",
+    "community": "Fashion & Textile Production",
+    "community_id": 54,
+    "neighbors": [
+      "secteur_mode"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_mode"
+  },
+  "tolier": {
+    "graph_node_id": "metier_tolier",
+    "community": "Metal Manufacturing",
+    "community_id": 9,
+    "neighbors": [
+      "secteur_metallurgie"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_metallurgie"
+  },
+  "traducteur": {
+    "graph_node_id": "metier_traducteur",
+    "community": "General Business & Services",
+    "community_id": 39,
+    "neighbors": [
+      "secteur_lettres"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_lettres"
+  },
+  "transport1l": {
+    "graph_node_id": "metier_transport1l",
+    "community": "Occupations Index",
+    "community_id": 0,
+    "neighbors": [
+      "alpha_index"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": null
+  },
+  "urbanistel": {
+    "graph_node_id": "metier_urbanistel",
+    "community": "Surveying & Environmental Engineering",
+    "community_id": 25,
+    "neighbors": [
+      "alpha_index",
+      "secteur_environnement"
+    ],
+    "neighbor_count": 2,
+    "secteur_graph": "secteur_environnement"
+  },
+  "vendeur_mecanique": {
+    "graph_node_id": "metier_vendeur_mecanique",
+    "community": "Automotive Repair",
+    "community_id": 60,
+    "neighbors": [
+      "secteur_motorises"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_motorises"
+  },
+  "veterinaire": {
+    "graph_node_id": "metier_veterinaire",
+    "community": "Health Professions",
+    "community_id": 11,
+    "neighbors": [
+      "secteur_sante"
+    ],
+    "neighbor_count": 1,
+    "secteur_graph": "secteur_sante"
+  }
+}

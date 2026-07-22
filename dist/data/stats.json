@@ -3,7 +3,10 @@
     "total_professions": 413,
     "total_sectors": 22,
     "total_with_details": 380,
-    "total_with_perspectives": 154
+    "total_with_perspectives": 154,
+    "total_corpus_raw": 418,
+    "total_embeddings": 7578,
+    "graph_match_pct": 100.0
   },
   "sector_distribution": [
     {
@@ -269,6 +272,308 @@
     {
       "label": "Restauration, hôtellerie et tourisme",
       "value": 13
+    }
+  ],
+  "source_vs_pipeline": [
+    {
+      "concept": "placement",
+      "source_count": 418,
+      "pipeline_count": 8,
+      "coverage_pct": 1.9,
+      "source_label": "Source (placement)",
+      "pipeline_label": "Pipeline (placement)"
+    },
+    {
+      "concept": "qualités",
+      "source_count": 418,
+      "pipeline_count": 11,
+      "coverage_pct": 2.6,
+      "source_label": "Source (qualités)",
+      "pipeline_label": "Pipeline (qualités)"
+    },
+    {
+      "concept": "salaire",
+      "source_count": 418,
+      "pipeline_count": 21,
+      "coverage_pct": 5.0,
+      "source_label": "Source (salaire)",
+      "pipeline_label": "Pipeline (salaire)"
+    },
+    {
+      "concept": "formation",
+      "source_count": 418,
+      "pipeline_count": 24,
+      "coverage_pct": 5.7,
+      "source_label": "Source (formation)",
+      "pipeline_label": "Pipeline (formation)"
+    },
+    {
+      "concept": "marché",
+      "source_count": 418,
+      "pipeline_count": 39,
+      "coverage_pct": 9.3,
+      "source_label": "Source (marché)",
+      "pipeline_label": "Pipeline (marché)"
+    },
+    {
+      "concept": "admission",
+      "source_count": 418,
+      "pipeline_count": 169,
+      "coverage_pct": 40.4,
+      "source_label": "Source (admission)",
+      "pipeline_label": "Pipeline (admission)"
+    }
+  ],
+  "graph_communities": [
+    {
+      "community": "Occupations Index",
+      "count": 59
+    },
+    {
+      "community": "Health Professions",
+      "count": 33
+    },
+    {
+      "community": "Education & Teaching",
+      "count": 20
+    },
+    {
+      "community": "Surveying & Environmental Engineering",
+      "count": 18
+    },
+    {
+      "community": "Electrical & Electronics Engineering",
+      "count": 15
+    },
+    {
+      "community": "Recreation & Landscape",
+      "count": 14
+    },
+    {
+      "community": "Plastics & Industrial Engineering",
+      "count": 14
+    },
+    {
+      "community": "Fashion & Textile Production",
+      "count": 13
+    },
+    {
+      "community": "Automotive Repair",
+      "count": 12
+    },
+    {
+      "community": "Mining & Geology",
+      "count": 12
+    },
+    {
+      "community": "Multimedia & Graphic Design",
+      "count": 11
+    },
+    {
+      "community": "Forestry & Paper",
+      "count": 11
+    },
+    {
+      "community": "Hospitality & Food Service",
+      "count": 11
+    },
+    {
+      "community": "General Business & Services",
+      "count": 10
+    },
+    {
+      "community": "Security & Emergency Services",
+      "count": 10
+    },
+    {
+      "community": "Social Sciences & Development",
+      "count": 8
+    },
+    {
+      "community": "Maintenance Mechanics",
+      "count": 7
+    },
+    {
+      "community": "Metal Manufacturing",
+      "count": 7
+    },
+    {
+      "community": "Arts & Entertainment",
+      "count": 4
+    },
+    {
+      "community": "Physics & Mathematics",
+      "count": 4
+    },
+    {
+      "community": "Industrial & Pharmaceutical Quality",
+      "count": 3
+    },
+    {
+      "community": "Medical Research & Prosthetics",
+      "count": 2
+    },
+    {
+      "community": "Natural Sciences and Conservation",
+      "count": 1
+    },
+    {
+      "community": "Tourism & Travel",
+      "count": 1
+    },
+    {
+      "community": "Chemical Analysis & Slaughter",
+      "count": 1
+    },
+    {
+      "community": "Agriculture & Environment",
+      "count": 1
+    },
+    {
+      "community": "Auto & Forestry Trades",
+      "count": 1
+    },
+    {
+      "community": "Landscape & Optometry",
+      "count": 1
+    },
+    {
+      "community": "Agriculture and Aquaculture",
+      "count": 1
+    }
+  ],
+  "graph_kpis": {
+    "total_corpus_slugs": 305,
+    "matched_to_graph": 305,
+    "total_communities": 29
+  },
+  "embedding_kpis": {
+    "total_chunks": 7578,
+    "unique_slugs": 418,
+    "pipeline_present_chunks": 858,
+    "pipeline_absent_chunks": 6720,
+    "avg_chunks_per_slug": 18.1
+  },
+  "section_entropy": [
+    {
+      "concept": "intro",
+      "unique_keys": 1
+    },
+    {
+      "concept": "LIENS RECOMMANDÉS",
+      "unique_keys": 1
+    },
+    {
+      "concept": "TÂCHES ET RESPONSABILITÉS",
+      "unique_keys": 1
+    },
+    {
+      "concept": "DESCRIPTION",
+      "unique_keys": 1
+    },
+    {
+      "concept": "VOIR AUSSI",
+      "unique_keys": 1
+    },
+    {
+      "concept": "EXIGENCES DU MARCHÉ DU TRAVAIL",
+      "unique_keys": 1
+    },
+    {
+      "concept": "MILIEU DE TRAVAIL",
+      "unique_keys": 1
+    },
+    {
+      "concept": "EXIGENCES D'ADMISSION",
+      "unique_keys": 1
+    },
+    {
+      "concept": "PERSPECTIVES D'EMPLOI",
+      "unique_keys": 1
+    },
+    {
+      "concept": "NIVEAU D'ÉTUDES",
+      "unique_keys": 1
+    },
+    {
+      "concept": "formation",
+      "unique_keys": 1
+    },
+    {
+      "concept": "taches",
+      "unique_keys": 1
+    },
+    {
+      "concept": "qualites",
+      "unique_keys": 1
+    },
+    {
+      "concept": "marche",
+      "unique_keys": 1
+    },
+    {
+      "concept": "placement",
+      "unique_keys": 1
+    },
+    {
+      "concept": "perspectives",
+      "unique_keys": 1
+    },
+    {
+      "concept": "admission",
+      "unique_keys": 1
+    },
+    {
+      "concept": "MILIEUX DE TRAVAIL",
+      "unique_keys": 1
+    },
+    {
+      "concept": "DONNÉES SALARIALES",
+      "unique_keys": 1
+    },
+    {
+      "concept": "EXIGENCE D'ADMISSION",
+      "unique_keys": 1
+    },
+    {
+      "concept": "EXIGENCE DU MARCHÉ DU TRAVAIL",
+      "unique_keys": 1
+    },
+    {
+      "concept": "QUALITÉS ET APTITUDES REQUISES",
+      "unique_keys": 1
+    },
+    {
+      "concept": "FORMATION REQUISE",
+      "unique_keys": 1
+    },
+    {
+      "concept": "DONNÉE SALARIALE",
+      "unique_keys": 1
+    },
+    {
+      "concept": "salaires",
+      "unique_keys": 1
+    },
+    {
+      "concept": "milieu",
+      "unique_keys": 1
+    },
+    {
+      "concept": "DONNÉES SALARIALE",
+      "unique_keys": 1
+    },
+    {
+      "concept": "description",
+      "unique_keys": 1
+    },
+    {
+      "concept": "STATISTIQUES DE PLACEMENT",
+      "unique_keys": 1
+    },
+    {
+      "concept": "FORMATION REQUIS",
+      "unique_keys": 1
     }
   ]
 }
