@@ -1,1 +1,7 @@
 public/
+.opencode/
+graphify-out/cache/
+graphify-out/2026-*/
+*.pyc
+__pycache__/
+.venv/

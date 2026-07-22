@@ -1,118 +1,99 @@
-# Métiers Québec — Modernisation
+# Métiers Québec — Nouveau
 
-Recréation moderne du site [metiers-quebec.org](https://www.metiers-quebec.org/), un guide éducatif québécois répertoriant plus de 1 500 métiers et professions dans 32 secteurs d'emploi.
+Site moderne de [metiers-quebec.org](https://www.metiers-quebec.org/), un guide éducatif québécois répertoriant 420 métiers et professions dans 30 secteurs d'emploi.
+
+**Live** : https://metiers-quebec-org.weathered-water-5f20.workers.dev/
 
 ## Objectif
 
-Transformer un site vieillot (HTML frames, FrontPage 2002) en un site statique moderne, responsive, avec recherche instantanée et navigation par filtres — le tout gratuitement sur Cloudflare Pages.
+Transformer un site vieillot (HTML frames, FrontPage 2002) en un site statique moderne, responsive, avec recherche instantanée — gratuitement sur Cloudflare Pages.
 
 ## État actuel
 
 | Phase | Statut | Détails |
 |-------|--------|---------|
-| Phase 1 — Prototype | ✅ Terminé | 4 pages, design system complet |
-| Phase 2 — Scraping | ✅ Terminé | 413 métiers, 22 secteurs, 446 pages |
-| Phase 3 — Génération | ✅ Terminé | Site statique 18 Mo dans `dist/` |
-| Phase 4 — Audit | 🔄 En cours | Audit initial fait, à relancer sur site généré |
-| Phase 5 — Déploiement | ⏳ En attente | Cloudflare Pages |
+| Phase 1 — Prototype | ✅ Terminé | Design system complet, layout sidebar/header/hero |
+| Phase 2 — Scraping | ✅ Terminé | 420 métiers, 30 secteurs |
+| Phase 3 — Génération | ✅ Terminé | 457 pages statiques |
+| Phase 4 — Audit | ✅ Terminé | 0 violation axe-core (accessibilité) |
+| Phase 5 — Déploiement | ✅ Terminé | Cloudflare Pages |
 
 ## Technologies
 
-| Composant | Technologie | Justification |
-|-----------|------------|---------------|
-| Structure | HTML5 sémantique | Standard, accessibilité |
-| Style | CSS3 (custom properties, grid, flexbox) | Responsive, moderne |
-| Interaction | JavaScript vanilla | Aucune dépendance |
-| Scraping | Python + urllib + HTMLParser | Pas de pip install |
-| Génération | Python | Pas de dépendances externes |
-| Hébergement | Cloudflare Pages | Gratuit, CDN global |
+| Composant | Technologie |
+|-----------|------------|
+| Structure | HTML5 sémantique |
+| Style | CSS3 (custom properties, grid, flexbox) |
+| Interaction | JavaScript vanilla (recherche fuzzy) |
+| Graphiques | Chart.js v4.5.0 (CDN) |
+| Scraping | Python + urllib + HTMLParser |
+| Hébergement | Cloudflare Pages (gratuit) |
 
-## Structure du projet
+## Structure
 
 ```
-metiers-quebec-prototype/
-├── index.html              # Prototype page d'accueil
-├── secteur.html            # Prototype secteur
-├── profession.html         # Prototype métier
-├── alpha.html              # Prototype A-Z
-├── css/style.css           # Design system
-├── js/search.js            # Recherche fuzzy
+├── dist/                       # Site statique (457 pages)
+│   ├── index.html              # Accueil
+│   ├── secteurs/index.html     # Liste des secteurs
+│   ├── secteur/*/index.html    # 30 pages secteur
+│   ├── metier/*/index.html     # 420 fiches emploi
+│   ├── alpha/index.html        # Index alphabétique
+│   ├── stats/index.html        # Statistiques (5 graphiques)
+│   ├── css/style.css           # Design system
+│   ├── js/search.js            # Recherche fuzzy
+│   ├── js/stats.js             # Chart.js
+│   └── data/*.json             # Données pré-calculées
 ├── scraper/
-│   ├── scrape_v2.py        # Script de scraping
-│   ├── generate.py         # Générateur de site
-│   └── fix_encoding.py     # Correction encodage
+│   ├── scrape_v2.py            # Scraper principal
+│   ├── scrape_missing.py       # Scraper complémentaire
+│   └── generate.py             # Générateur HTML
 ├── data/
-│   ├── professions_urls.json    # URLs de tous les métiers
-│   ├── professions_details.json # Données détaillées (21 Mo)
-│   ├── sectors.json             # Données des secteurs
-│   └── search_index.json        # Index de recherche
-├── dist/                   # Site statique généré (18 Mo)
-│   ├── index.html
-│   ├── css/style.css
-│   ├── js/search.js
-│   ├── data/search.json
-│   ├── secteur/*/index.html
-│   ├── alpha/index.html
-│   └── metier/*/index.html
-├── audit.sh                # Script d'audit automatisé
-└── docs/
-    ├── README.md           # Ce fichier
-    ├── PLAN.md             # Plan d'exécution
-    ├── PROTOTYPE.md        # Documentation prototype
-    ├── SCRAPING.md         # Documentation scraping
-    ├── SOURCES.md          # Sources officielles de données
-    └── AUDIT.md            # Rapport d'audit
+│   ├── professions_details.json # 420 métiers détaillés (21 Mo)
+│   └── sectors.json            # 30 secteurs
+├── docs/
+│   ├── kb001.md                # Accessibilité (axe-core)
+│   ├── kb002.md                # Dette technique fiches emploi
+│   └── kb003.md                # Déploiement Cloudflare
+├── wrangler.toml               # Config Cloudflare Pages
+├── CHANGELOG.md                # Historique des versions
+└── audit.sh                    # Script d'audit
 ```
 
-## Lancement
-
-### Site prototype (Phase 1)
+## Lancement local
 
 ```bash
-cd metiers-quebec-prototype
+cd dist
 python3 -m http.server 8080
 # Ouvrir http://localhost:8080
 ```
 
-### Site généré (Phase 3)
+## Régénération
 
 ```bash
-cd metiers-quebec-prototype/dist
-python3 -m http.server 8080
-# Ouvrir http://localhost:8080
+python3 scraper/scrape_v2.py     # Scraping (~3 min)
+python3 scraper/generate.py      # Génération HTML
 ```
 
-### Scraping complet
+## Déploiement
+
+Le déploiement est automatique : chaque push sur `main` déclenche un build Cloudflare Pages.
 
 ```bash
-# 1. Scraping (~3 minutes, 460 requêtes HTTP)
-python3 scraper/scrape_v2.py
-
-# 2. Génération du site
-python3 scraper/generate.py
-
-# 3. Copier les assets
-mkdir -p dist/css dist/js
-cp css/style.css dist/css/
-cp js/search.js dist/js/
+git add -A && git commit -m "description" && git push origin main
 ```
 
-## Audit
+Voir `docs/kb003.md` pour la configuration détaillée.
+
+## Accessibilité
+
+Audit automatisé avec axe-core : **0 violation** sur toutes les pages testées.
 
 ```bash
-bash audit.sh
-# Les résultats sont dans docs/AUDIT.md
+cd /tmp && node audit_stats.mjs
 ```
 
 ## Sources
 
 - Site original : https://www.metiers-quebec.org/
-- Auteur original : Dany Savard (dsavard@metiers-quebec.org)
+- Auteur original : Dany Savard
 - Données : sources publiques québécoises (OIIQ, MES, ISQ, etc.)
-- Voir `docs/SOURCES.md` pour la liste complète
-
-## Documentation
-
-- `docs/SCRAPING.md` — Procédure de scraping et décisions techniques
-- `docs/SOURCES.md` — Sources officielles des données avec URLs
-- `docs/AUDIT.md` — Rapport d'audit du site prototype
