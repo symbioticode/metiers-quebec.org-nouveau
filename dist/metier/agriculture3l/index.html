@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abattage d'animaux, manoeuvre en — Métiers Québec</title>
+  <meta name="description" content="Métier Abattage d'animaux, manoeuvre en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/agriculture/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Agriculture, agroalimentaire et pêcheries
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/agriculture/">Agriculture, agroalimentaire et pêcheries</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Abattage D'Animaux, Manoeuvre En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/agriculture/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Agriculture, agroalimentaire et pêcheries
+        </a>
+        <div class="page-header__tag">Agriculture, agroalimentaire et pêcheries</div>
+        <h1 class="page-header__title">Abattage D'Animaux, Manoeuvre En</h1>
+        <p class="page-header__meta">Secondaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Agriculture, agroalimentaire et pêcheries</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Secondaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>sommaire des différents équipements, maniement des commandes de direction et d'opération d'un chariot élévateur, différents aspects de la sécurité, inspection avant utilisation du chariot élévateur et démarrage, notions de mécanique et d'entretien du chario élévateur, manœuvres de base de conduite d'un chariot élévateur, manœuvres de base en manutention avec un chariot élévateur, etc. Certains établissements offrent d'autres formations comme : conduite d'un chariot élévateur avec mât télescopique, opération d'une plate-forme élévatrice (scissor lift), opération d'un élévateur à nacelle, opération d'un pont roulant, opération d'une transpalette, conduite d'un chargeur de type bobcat, conduite d'un camion-grue, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>de 450 heures, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: • avoir 16 ans ou plus ET • détenir un permis de conduire (pour la conduite d'un chariot élévateur se fait dans un lieu public) ENDROITS DE FORMATION : Plusieurs centres de formation professionnelle (mais également certains établissemens privés) offrent une formation en manutention de marchandises, informe-toi auprès de l'établissement le plus près de chez toi. En voici quelques exemples : Note : certaines de ces formations ne sont offertes qu'aux entreprises, donc vérifie également si une formation est aussi offerte aux particuliers sans emploi • (arrondissement Ville-Marie), C.S. de Montréal), région de Montréal • , Montréal (arrondissement Plateau Mont-Royal, C.S. de Montréal), région de Montréal • , Montréal (arrondissement LaSalle), C.S. Marguerite-Bourgeoys), région de Montréal • , Montréal (arrondissement Anjou, C.S. de la Pointe-de-l'Île), région de Montréal • , Montréal (arrondissement Rosemont-La Petite Patrie, C.S. English Montreal), région de Montréal offert en anglais • , Montréal (arrondissement Pierrefonds, C.S. Lester-B.-Pearson), région de Montréal,offert en anglais • (établissement privé), Montréal (arrondissement Villeray-St-Michel-Parc Extension), région de Montréal • (établissement privé), Montréal (arrondissement Pointe-aux-Trembles-Rivière-des-Prairies), région de Montréal • , Laval, région de Laval (C.S. de Laval) • , Laval, région de Laval (C.S. de Laval) • , Longueuil, région de la Montérégie (C.S. Marie-Victorin) • , Vaudreuil-Dorion, région de la Montérégie (C.S. des Trois-Lacs) • , St-Jean-sur-Richelieu, région de la Montérégie (C.S. des Hautes-Rivières) • , Granby, région de la Montérégie (C.S. du Val-des-Cerfs) • , Salaberry-de-Valleyfield, région de la Montérégie (C.S. Vallée-des-Tisserands) • , région de la Montérégie (C.S. de St-Hyacinthe) • , région de la Montérégie (C.S. de Sorel-Tracy) • , La Prairie, région de la Montérégie (C.S. des Grandes-Seigneuries) • , Ste-Julie, région de la Montérégie (C.S. des Patriotes) • (établissement privé), St-Jean-sur-Richelieu • (établissement privé), Boucherville, région de la Montérégie • (établissement privé), Delson, région de la Montérégie • (établissement privé), St-Jean-sur-Richelieu, région de la Montérégie • (établissement privé), Boucherville, région de la Montérégie • , Mirabel, région des Laurentides (C.S. de la Rivière-du-Nord) • , Mont-Laurier, région des Laurentides (C.S. des Laurentides) • , Mirabel, région des Laurentides (C.S. de la Seigneurie-des-Milles-Îles) • , Terrebonne, région de Lanaudière (C.S. des Affluents) • , Joliette, région de Lanaudière (C.S. des Samares) • (établissement privé), Terrebonne, région de Lanaudière • , Québec, région de Québec (C.S. de la Capitale) • , Québec, région de Québec (C.S. de la Capitale) • , région de Québec (C.S. de Portneuf) • (établissement privé), Québec • , Lévis, région Chaudière-Appalaches (C.S. des Navigateurs) • , Thetford Mines, région Chaudière-Appalaches (C.S. des Appalaches) • , Montmagny, région Chaudière-Appalaches (C.S. de la Côte-du-Sud) • , Ste-Claire, région Chaudière-Appalaches (C.S. de la Côte0du-Sud) • , région Chaudière-Appalaches, formation théorique offerte en ligne, formation pratique offerte en entreprise • (établissement privé), Montmagny, région Chaudière-Appalaches • , Sherbrooke, région de l'Estrie (C.S. Région-de-Sherbrooke) • , Magog, région de l'Estrie (C.S. des Sommets) • , Trois-Rivières, région de la Mauricie (C.S. du Chemin-du-Roy) • , Shawinigan, région de la Mauricie (C.S. de l'Énergie) • , Victoriaville, région du Centre-du-Québec • , Drummondville, région du Cente-du-Québec (C.S. des Chênes) • (établissement privé), Drummondville • , Saguenay, région du Saguenay-Lac-St-Jean (C.S. de Jonquière) • , Alma, région du Saguenay-Lac-St-Jean (C.S. du Lac-St-Jean) • , Rimouski, région du Bas-St-Laurent (C.S. des Phares) • , Rivière-du-Loup, région du Bas-St-Laurent (C.S. Rivière-du-Loup-Kamouraska) • ier, Rouyn-Noranda, région de l'Abitibi-Témiscamingue (C.S. de l'Or-et-des-Bois) • , Val-d'Or, région de l'Abitibi-Témiscamingue (C.S. de l'Or-et-des-Bois) • , Amos, région de l'Abitibi-Témiscamingue (C.S. Harrinana) • , Baie-Comeau, région de la Côte-Nord (C.S. de l'Estuaire) • , Sept-Iles, région de la Côte-Nord (C.S. du Fer) • , Gaspé, région de la Gaspésie (C.S. des Chic-Chocs) • , Bonaventure, région de la Gaspésie (C.S. René-Lévesque)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

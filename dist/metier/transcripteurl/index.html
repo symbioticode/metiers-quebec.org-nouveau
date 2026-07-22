@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Médical, transcripteur — Métiers Québec</title>
+  <meta name="description" content="Métier Médical, transcripteur au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/administration/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Administration, secrétariat et informatique
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/administration/">Administration, secrétariat et informatique</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Médical, Transcripteur</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/administration/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Administration, secrétariat et informatique
+        </a>
+        <div class="page-header__tag">Administration, secrétariat et informatique</div>
+        <h1 class="page-header__title">Médical, Transcripteur</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Administration, secrétariat et informatique</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que transcriptrice ou transcripteur médical; tu auras pour tâches de transrire des textes pour les différentes disciplines médicales, chirurgicales et cliniques et pour la production de résumés de dossiers médicaux, de rapports médicaux ou de protocoles opératoires. Tu pourrais aussi être appelé(e) à effectuer certaines autres tâches administratives et de bureau. QUALITÉS ET APTTITUDES NÉCESSAIRES : -Capacité de gérer le stress et Capacité de travailler sous pression car tu auras à travailler avec grande rapidité -Facilité de concentration car tu devras rester attentif même lors de situations dérangeantes -Sens de l’organisation et bonne méthode de travailsont nécessaires pour bien planifier une charge importante de travail -Sens des responsabilités, honnêteté et discrétion car tu auras à traiter des dossiers qui sont confidentiels -Autonomie et débrouillardise car tu seras souvent appelé(e) à travailler seul et tu devras être capable de régler tes problèmes -Excellente maîtrise de la langue française parlé et écrite car tu auras à transcrire dans un langage clair et précis les informations fournies -Bonne connaissance de la langue anglaise parlé et écrite (bilinguisme parfois exigé) car tu pourras avoir à transcrire des documents dans cette langue ou provenant de cette langue PROFESSIONS APPARENTÉES : -Agent(e) de bureau -Agent(e) de saisies de données - Audiotypiste médical -Commis d’unité médicale -Commis de bureau -Dactylographe -Opérateur(trice) d’unité de traitement de texte -Préposé(e) aux admissions -Secrétaire médical(e) -Secrétaire-réceptionniste EMPLOYEURS POTENTIELS : -Hôpitaux (majoritairement) -Compagnies d’assurances -Compagnies biomédicales -Compagnies pharmaceutiques -Entreprises de recherche médicale -Gouvernements (Ministères de la santé) -Laboratoires médicaux privés -À ton propre compte EXIGENCES DES EMPLOYEURS : -Excellente maîtrise de la langue française -Connaissance de l’anglais (bilinguisme parfois exigé) -Polyvalence -Travail souvent à temps partiel PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données en 2022 : Le salaire moyen en début de carrière était de : - 17,20 $/heure (40 hres/sem) dans le secteur privé - 21,63 $/heure (35 hres/sem) en moyenneen tant qu'assistant(e) de recherche en milieu hospitalier universitaire ou dans un centre de recherche universitaire en santé - 22,27 $/heure (35 hres/sem) en moyenne en tant que secrétaire médicale ou tarnscripteur(trice) médical au sein des grandes compagnies d'assurances - 22,36 $/heure (35 hres/sem) en tant que secrétaire médicale dans le réseau de la santé et des services sociaux Sources : Ministère de l’Éducation du Québec et Conseil du trésor du Québec PORTRAIT DU MÉTIER : Selon Emploi-Québec, il y a avait plus de 1 300 sténographes officiels dans le secteur médical et transcripteurs médicaux au Québec en 2021. Plus de 95 % étaient des femmes. Plus de 82 % occupaient un poste à temps complet. La répartition selon le</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>était : - 65 % travaillaient dans la réseau de la santé et des services sociaux - 18 % travaillaient au sein d'entreprises pharmaceutiques - 11 % œuvraient au sein des établissements privés de santé (CHSLD, cliniques médicales, centres de réadaptation privés, etc.) - 6 % œuvraient au sein de compagnies d'assurances PERSPECTIVES D'AVENIR : Les possibilités sont moyennes pour les prochaines années. Pour plus de détails, consulte le et le LES PROGRAMMES D’ÉTUDES : L'Attestation de spécialisation professionnelle en transcription et secrétariat médical A.S.P. a durée totale de 12 mois (1 065 heures) en formule intensive offerte par le Collège O'Sullivan de Montréal. Combinant l'ASP en secrétariat médical avec une formation complémentaire en transcription médicale, ce programme unique au Québec est destiné aux titulaires d'un D.E.P. en secrétariat ou d'une expérience pertinente dans le domaine du secrétariat. Tu apprendras la terminologie médicale très poussée tant en anatomie, en pathologie et en pharmacologie tant en français qu'en anglais, les procédures administratives dans le domaine médical et pharmaceutique, la gestion de dossiers médicaux, le traitement de données médicales, ainsi que la transcription médicale. Enfin, tu devras réaliser un stage de 3 semaines au sein d'un institution reconnue, notamment au CHUM, le partenaire du programme. L’Attestation de formation en transcription médicale a une durée totale de 300 heure à temps partiel à distance en mode asynchrone offerte par le Cégep de Rimouski. Elle comporte des cours d'introduction à la profession, terminologie médicale 1, anatomie et physiologie 1, méthodes de saisie de données, médecine clinique 1, terminologie médicale 2, anatomie et physiologie 2, saisie spécialisée de données 1, médecine clinique 2, données médico-administratives, saisie spécialisée de données, médecine clinique 3, production de documents adaptés au secteur, médecine clinique 4, projet d'intégration, ainsi qu'un stage en transcription médicale d'une durée de 4 semaines. EXIGENCES D’ADMISSION : -Détenir un D.E.P. en secrétariat ou un A.E.C. ou un D.E.C. en techniques de bureautique ou autre formation reconnue en secrétariat ou avoir une expérience pertinente dans le domaine du secrétariat sans détenir de diplôme -Avoir quitté les études depuis au moins 1 an ou avoir complété 1 année d’études postsecondaires) AUTRES EXIGENCES À L’ADMISSION : -Avoir atteint un niveau fonctionnel en anglais -Subir un test de connaissance en français -Subir un test de connaissance en informatique (bureautique) -Subir un test de clavigraphie (dactylographie minimale de 40 mots/min) STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme ENDROITS DE FORMATION : - offert en classe virtuelle (formation à distance en mode asynchrone d'une durée de 300 heures) -</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

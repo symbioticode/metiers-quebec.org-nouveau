@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art thérapeute — Métiers Québec</title>
+  <meta name="description" content="Métier Art thérapeute au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/sociaux/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Services sociaux et juridiques
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/sociaux/">Services sociaux et juridiques</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Art Thérapeute</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/sociaux/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Services sociaux et juridiques
+        </a>
+        <div class="page-header__tag">Services sociaux et juridiques</div>
+        <h1 class="page-header__title">Art Thérapeute</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Services sociaux et juridiques</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que thérapeute par la créativité; tu seras responsable d’intervenir auprès d’une clientèle spécifique (enfants, adolescents, personnes âgées, déficients intellectuels, handicapés auditifs ou visuels, déficients psychomoteurs, délinquants en réinsertion sociale, etc.) ou auprès de clientèles diverses en utilisant les arts en tant qu’approche thérapeutique. Par cette approche, tu amèneras le client à exprimer ses émotions, des peurs ou craintes, des conflits ou à évoquer des souvenirs. Tes interventions permettront d’améliorer la santé physique ou mentale de la personne ou de mieux s’intégrer ou de se réintégrer dans la société. Tu seras appelé(e) à intervenir dans des suivantes telles que : problèmes de dépendance, troubles de la communication, problèmes de comportement chez les enfants ou adolescents, prévention de la délinquance auprès des jeunes ou des adultes, personnes en processus de réintégration sociale, prévention du suicide, problèmes de solitude rencontrés chez les personnes âgées, déficients intellectuels en réadaptation visant leur intégration sociale, réintégration sociale des délinquants, interventions auprès de personnes ayant subi un choc post-traumatique lors un événement tragique (mortalité, accident, maladie), etc. Tu auras pour tâches de : • Évaluer les habiletés fonctionnels, les intérêts artistiques, les besoins et souhaits, ainsi que et les attitudes de chaque client relativement aux arts; • Élaborer des plans de traitement adaptés à la situation du patient en tenant compte des résultats de l'évaluation; • Déterminer et établir des objectifs à court et à long terme permettant de les atteindre; • Réunir les renseignements et les outils nécessaires pour aider les clients à atteindre ces objectifs; • Mettre en œuvre des programmes d'intervention répondant aux objectifs du plan de traitement; • Évaluer le plan de traitement et les objectifs du client ainsi que les programmes et activités; • Assister les clients au niveau de la participation et surveiller leurs progrès; • Passer en revue le plan d’intervention et les objectifs des clients, ainsi que modifier le plan selon les besoins. Selon la formation suivie, tu pourras te spécialiser dans l’un des 4 principaux champs de pratique en thérapie par la créativité : -Thérapie par la musique (Musicothérapie) -Thérapie par le théâtre -Thérapie par la danse -Thérapie para les arts visuels (art-thérapie) -Milieux scolaires : écoles primaires, secondaires, spéciales pour handicapés, etc -Milieux de santé : hôpitaux, CHSLD, centres de réadaptation, etc -Milieux correctionnels et réintégration : centres correctionnels communautaire, pénitenciers, etc Plusieurs</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>sont possibles : -Milieux scolaires : écoles primaires, secondaires, spéciales pour handicapés, etc -Milieux de santé : hôpitaux, CHSLD, centres de réadaptation, etc -Milieux correctionnels et réintégration : centres correctionnels communautaire, pénitenciers, etc -Milieux communautaires : organismes d’intervention auprès des délinquants, déficients intellectuels, victimes de violence, personnes âgées, prévention du suicide, etc. QUALITÉS ET APTITUDES NÉCESSAIRES : -Aimer et facilité à travailler auprès des gens et entregentcar tu auras des fréquents contacts avec le public -Grande facilité à communiquer et à écouter qui te permettra d’établir un lien avec cette personne -Imagination, créativité et spontanéité pour développer de nouvelles approches innovatrices et efficaces -Esprit d’analyse et bon jugement pour comprendre les problèmes rencontrés par cette personne -Sens de l’observation et vigilance car tu devras connaître non seulement les faiblesses mais aussi les forces de cette personne pour mieux l’aider à s’intégrer et faire un suivi efficace lors des activités thérapeutiques -Sens des responsabilités car tu seras responsable de cette personne (surtout avec les enfants) -Esprit d’initiative et autonomie pour réussir à emmener la personne à participer aux activités -Grande capacité d’adaptation à tout type de milieux et à tous types de clientèles -Sens de l’organisation pour planifier, organiser et animer différentes activités thérapeutiques -Aptitudes pour le travail en équipe car tu auras à collaborer avec plusieurs collègues selon le milieu choisi (psychologues, travailleurs sociaux, psychoéducateurs, criminologues, enseignants, ergothérapeutes, infirmiers en soins palliatifs, médecins en soins palliatifs, médecins en soins aux personnes âgées, psychiatres, audiologistes, orthophonistes, éducateurs spécialisés, intervenants sociaux, éducateurs en garderie, etc) PROFESSIONS APPARENTÉES : -Thérapeute par la danse -Thérapeute par la musique -Thérapeute par le théâtre -Thérapeute par les arts visuels EMPLOYEURS POTENTIELS : - Centres communautaires -Centres de réadaptation -Centres d’accueil pour personnes âgées - Centres de prévention (ex : centres de prévention du suicide) - Centres de traitement de la douleur -Centres de soins en santé mentale - Centres jeunesse -Centres hospitaliers de soins de longue durée CHSLD - Centres interculturels -centres de services scolaires -Hôpitaux - Maisons de transition -Organismes communautaires -Pénitenciers - Résidences privées pour aînés - Ressources résidentielles -À ton propre compte PERMIS DE PRATIQUE : Au Québec, aucun permis de pratique n'est nécessaire afin de pratiquer en tant qu'art-thérapeute ou musicothérapeute. Par contre, la plupart des employeurs (notamment ceux du réseau de la santé et des services sociaux) exigent d'être membre de l' qui a établi un code d'éthique et de déontologie de la profession. Toutefois, il est recommandé aux titulaires d'un baccalauréat répondant aux normes d'ordre professionnel de devenir membre de cet ordre, ce qui permettra d'augmenter les opportunités d'emploi (bacc en travail social, bacc en sexologie, bacc en criminologie, bacc en sciences infirmières). Depuis septembre 2012, la du Code des professions adoptée en juin 2009 qui réserve le titre et la pratique de la psychothérapie au Québec est maintenant en vigueur. Elle confirme la réserve du titre et la pratique de la psychothérapie au Québec. Les normes sont appliquées par l'Ordre des psychologues du Québec et c'est cet organisme qui émet les permis de pratique en psychothérapie. De plus, si tu aspires pratiquer la sexologie clinique (ou sexothérapie) et ainsi, intégrer la psychothérapie dans tes interventions (traitement psychologique d'un trouble mental ou des perturbations comportementales ou autres problèmes cliniques semblables); tu devras également obtenir un permis de psychothérapeute émis par l'. Donc, le titre de psychothérapeute ne peut être porté seul. Il doit être précédé du titre professionnel de la personne (par exemple : sexologue psychothérapeute). Ceci permet aux personnes qui désirent recourir à leurs services de savoir exactement quel est le profil professionnel du psychothérapeute Malheureusement, un(e) art-thérapeute qui ne détient pas un tel titre ne peut pratiquer la psychothérapie dans le cadre de ses interventions puisque la formation de niveau maîtrise en art-thérapie ne permet pas en elle-même l’accès au permis de psychothérapeute.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: -Être membre de l’association professionnelle (voir section &quot;</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

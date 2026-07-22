@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpenteur - topographe — Métiers Québec</title>
+  <meta name="description" content="Métier Arpenteur - topographe au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/environnement/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Environnement et aménagement du territoire
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/environnement/">Environnement et aménagement du territoire</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Arpenteur - Topographe</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/environnement/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Environnement et aménagement du territoire
+        </a>
+        <div class="page-header__tag">Environnement et aménagement du territoire</div>
+        <h1 class="page-header__title">Arpenteur - Topographe</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Environnement et aménagement du territoire</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’arpenteuse ou arpenteur en construction; tu auras pour tâches de collecter, transférer, calculer et mettre en plan des données d'arpentage à l’aide d’instruments spécialisés (carnet de notes électronique, station totale conventionnelle ou robotisée, récepteur GPS, logiciels de calcul, logiciels de dessin, etc.) en vue de réaliser des plans ou de délimiter les constructions projetées. Tu devras également fournir des données relatives à l’alignement, à l’altitude, à à l’alignement, à l’altitude, à de différents terrains ou types d’infrastructures (complexes industriels ou commerciaux, bâtiments, résidences, routes, infrastructures électriques ou de communications, etc.). En tant que préposé(e) aux relevés d'arpentage; tu seras responsable d'effectuer des relevés à caractère foncier (emprises routières, délimitation de propriétés privées, etc.), en nivellement géométrique et trigonométrique et tout autre travail d’arpentage requis sous la supervision d'un(e) arpenteur(trice)-géomètre. Tu auras pour tâches de : • Faire la cueillette de l’information nécessaire pour planifier les levés d’arpentage et préparer un croquis permettant de localiser les informations recueillies, et bien identifier les éléments relevés dans le carnet de notes à l’aide du bon code préétabli; • Faire la levé et de l'implantation topographique sur le terrain à l'aide d'instruments d'arpentage; • Procède au traitement de données ainsi qu'à leur mise en plan à l'aide de logiciels spécialisés; • Interpréter les plans en vue de faire le piquetage nécessaire pour l'exécution des projets; • S’assurer que les instruments sont bien calibrés et en bon état en utilisant les bases d’étalonnage au besoin; • Effectuer des levés de terrains pour déterminer l'emplacement exact et la position relative des éléments naturels (arbres par exemple) et artificiels (résidence, cabanon, entrée, etc) d'une propriété en utilisant différents outils tels que : GPS, niveaux d'arpentage, station totale, station totale robotisée, logiciels de dessin, etc; • Implanter sur le terrain les repères d'arpentage nécessaires à la réalisation des travaux et informe les responsables des travaux sur leur interprétation; • Installer de l'équipement autonome pour l'étude de circulation automobile et utilise de l'équipement manuel pour comptage à l'occasion; • Expliquer et donner toutes les informations nécessaires au responsable de l’équipe sur le terrain; • Informer la personne ou le service responsable de toute anomalie sur l'état physique des regards constatée lors des levés d'arpentage; • Vérifier si tous les éléments nécessaires ont été relevés, s’il y a eu des problèmes particuliers et, au besoin, en discuter avec l’arpenteur-géomètre responsable du dossier; • Vérifier, corriger et mettre à jour les bases de données à l'aide de divers logiciels; • Vérifier et valider l'implantation de travaux de construction réalisés par différents intervenants (Ville ou entrepreneurs); • Etc. Que ce soit pour implanter des infrastructures (réseau d'aqueduc et d'égout, réseau de distribution d'électricité, réseau de gaz naturel, routes, etc), pour la construction ou l'agrandissement d'une propriété résidentielle, commerciale, institutionnelle ou industrielle, des relevés d'arpentage sont nécessaires. Tu travailleras en étroite collaboration avec les arpenteurs-géomètres, les ingénieurs civils, les ingénieurs en géomatique, les urbanistes et les entrepreneurs en construction. QUALITÉS ET APTITUDESNÉCESSAIRES : -Aptitudes pour les calculs et la géométrie -Intérêts pour le travail en plein air en toutes saisons -Intérêts et aptitudes pour les sciences et le dessin technique -Capacité de bien comprendre des plans et devis -Capacité d’analyse et de synthèse pour être en mesure d’analyse efficacement les informations géographiques des terrains afin de les transposer sur une graphique par ordinateur -Minutie, précision et souci du détailcar tu auras à effectuer des calculs précis des mesures des terrains et de plus, tu auras à manipuler de façon exacte des instruments d’arpentage -Bonne méthode de travail car tu auras à effectuer des recherches sur les titres de propriété et y trouver le plus d’informations pertinentes à l’arpentage - Autonomie, débrouillardise et flexibilité car tu seras parfois seul(e) pour exécuter certaines tâches sur le terrain -Sens développé de l’observation car tu auras à noter toutes les particularités des terrains -Facilité de travailler en équipe car tu auras à collaborer étroitement avec d'autres arpenteurs-topographes, technologues en arpentage et arpenteurs-géomètres -Connaissances en informatique car tu auras à utiliser des logiciels spécialisés en géomatique -Bonne connaissance de l’anglais car la documentation spécialisé est généralement dans cette langue PROFESSIONS APPARENTÉES : - Aide-arpenteur(e) - Calculateur(trice) - Chaîneur(e) - Dessinateur(trice) en génie civil - Dessinateur(trice) en géodésie - Opérateur(trice) en topographie - Personne d’instruments - Préposé(e) aux relevés d’arpentage EMPLOYEURS POTENTIELS : - Compagnies forestières - Compagnies minières -Compagnies pétrolières - - Firmes d’arpenteurs géomètres - Firmes d’ingénieurs-conseils - - Municipalités - Communautés métropolitaines - MRC - (postes civils ou militaires),</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>d’une durée de 4 semaines, etc. EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes Note : il recommandé d’avoir suivi le cours maths TS ou SN 4e ou son équivalent STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme : Les candidats(es) admissibles sont généralement admis. ENDROITS DE FORMATION Demande d’admission via Internet, consulte Qu'est-ce que l' -, Saguenay (C.S.S. de la Jonquière, région du Saguenay-Lac-St-Jean) regarde la du programme; admissions à temps complet de jour à l'automne. - , Sainte-Agathe-des-Monts (C.S.S. des Laurentides, région des Laurentides) offert en enseignement individualisé; admissions à temps complet de jour à l'automne. -, St-Jean-sur-Richelieu (C.S.S. des Hautes-Rivières, région de la Montérégie) regarde la du programme; admissions à temps complet de jour à l'automne. -, Québec (C.S.S. de la Capitale, région de Québec) regarde la du programme; admissions à temps complet de jour à l'automne. -, Montréal (C.S.S..de Montréal, région de Montréal) regarde la du programme; admissions à temps complet de jour à l'automne, à l'hiver et au printemps.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>y sont très bonnes pour les prochaines années. La rémunération moyenne après expérience en 2026... le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience dans la fonction publique québécoise était de 53 500 $; le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience au sein d'une PME hors-construction (incluant les cabinets d'arpenteurs-géomètres et les firmes d'ingénieurs de taille moyenne) était de 55 500 $; le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience au sein d'une municipalité de taille moyenne était de 65 500 $; le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience au sein d'une municipalité de grande taille était de 66 200 $; le revenu annuel moyen d'un(e) technicien(ne) en géomatique (grade de caporal) détenant 10 ans d'expérience au sein des Forces canadiennes (Force régulière) était de 77 900 $; le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience au sein d'Hydro-Québec était de 80 900 $; et le revenu annuel moyen d'un(e) préposé(e) aux relevés d'arpentage détenant 10 ans d'expérience à Énergir était de 84 800 $; LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en arpentage et topographie D.E.P. a une durée totale de 1 800 heures, c’est-à-dire de 2 ans(16 mois) offert à temps complet. Il comporte des cours d'initiation à la profession, santé et sécurité sur les chantiers de construction, trigonométrie appliquée à l'arpentage, tracés de base, mesures d'angles, de distances et d'élévations, utilisation d'un ordinateur, calcul d'une polygonale, levé et mise en plan d'un terrain plat, dessin assisté par ordinateur DAO, levés altimétriques, mesures de coordonnés, conversion de données d'arpentage, calculs de données de levées de terrain, dessin d'un plan topographique, estimation de quantité de matériaux, implantation et mise en plan d'une route, implantation et mise en plan d'infrastructures souterraines, dessin de plans cadastraux, levé d'un bien-fonds et plan du certificat de localisation, piquetage d'un terrain et implantation et mise en plan d'une bâtisse, implantation en terrain difficile, ainsi qu'un stage en</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

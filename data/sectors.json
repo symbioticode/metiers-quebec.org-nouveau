@@ -1,0 +1,6352 @@
+{
+  "administration": {
+    "nom": "Administration, secrétariat et informatique",
+    "slug": "administration",
+    "metiers": [
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Métiers non spécialisés \r\n\ten administration"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Métiers non spécialisés du \r\n\tcommerce au détail et de gros"
+      },
+      {
+        "url": "/administration/../physique/actuaire.htm",
+        "nom": "Actuaire"
+      },
+      {
+        "url": "/administration/gest_appro.htm",
+        "nom": "Acheteur(euse) adjoint(e)"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Adjoint(e) \r\n\tadministratif"
+      },
+      {
+        "url": "/administration/administrateur.htm",
+        "nom": "Agent(e) d'assurance-emploi"
+      },
+      {
+        "url": "/administration/administrateur.htm",
+        "nom": "Agent(e)\r\nd’immigration"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Agent(e) de bureau"
+      },
+      {
+        "url": "/administration/agent_clientele.html",
+        "nom": "Agent(e) de centre contact-client"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Agent(e) de recouvrement"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Agent(e) de télémarketing"
+      },
+      {
+        "url": "/administration/../restau_tourisme/agent_voyages.htm",
+        "nom": "Agent(e) de voyages"
+      },
+      {
+        "url": "/administration/agent_clientele.html",
+        "nom": "Agent(e) du service à la clientèle"
+      },
+      {
+        "url": "/administration/agent_clientele.html",
+        "nom": "Agent(e) du service à la clientèle"
+      },
+      {
+        "url": "/administration/../motorises/agent_auto.htm",
+        "nom": "Agent(e) du service à la clientèle"
+      },
+      {
+        "url": "/administration/administration4.html",
+        "nom": "Agent(e) de recouvrement"
+      },
+      {
+        "url": "/administration/../humaines/cons_international.html",
+        "nom": "Agent(e) du \r\nService extérieur Canada"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Aiguilleur(euse) d'entrepôt"
+      },
+      {
+        "url": "/administration/info_gestion.htm",
+        "nom": "Analyste d'affaires"
+      },
+      {
+        "url": "/administration/comm_inter1.html",
+        "nom": "Analyste en commerce international"
+      },
+      {
+        "url": "/administration/immobilier1.html",
+        "nom": "Analyste\r\nen gestion immobilière"
+      },
+      {
+        "url": "/administration/analyste_informatique.html",
+        "nom": "Analyste en informatique"
+      },
+      {
+        "url": "/administration/gest_quantif.html",
+        "nom": "Analyste en ingénierie \r\n\tfinancière"
+      },
+      {
+        "url": "/administration/gest_quantif.html",
+        "nom": "Analyste en intelligence \r\n\td'affaires"
+      },
+      {
+        "url": "/administration/marketing1.html",
+        "nom": "Analyste en marketing"
+      },
+      {
+        "url": "/administration/grh1.html",
+        "nom": "Analyste en ressources humaines"
+      },
+      {
+        "url": "/administration/info_gestion.htm",
+        "nom": "Analyste en systèmes d’information"
+      },
+      {
+        "url": "/administration/../communication/biblio.html",
+        "nom": "Archiviste"
+      },
+      {
+        "url": "/administration/../sante/archiviste_med.htm",
+        "nom": "Archiviste médical(e)"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Auxiliaire de bibliothèque"
+      },
+      {
+        "url": "/administration/../communication/biblio.html",
+        "nom": "Bibliothécaire"
+      },
+      {
+        "url": "/administration/../sante/bioinfo.html",
+        "nom": "Bioinformaticien(ne)"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Caissier(ère) d'une institution financière"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis à l'accueil et \r\n\tréception"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis à la saisie de données"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis au classement"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis au service à clientèle"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis au service à clientèle"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis aux commandes"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis aux ressources humaines"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis-caissier(ère)"
+      },
+      {
+        "url": "/administration/commis-comptable.htm",
+        "nom": "Commis-comptable"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis d'entrepôt"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis d'épicerie ou de supermarché"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis de bibliothèque"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis de bureau"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Commis de magasin"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis de soutien administratif"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Commis des postes"
+      },
+      {
+        "url": "/administration/../nature/animalier.html",
+        "nom": "Commis-vétérinaire"
+      },
+      {
+        "url": "/administration/comptable.htm",
+        "nom": "Comptable"
+      },
+      {
+        "url": "/administration/../sociaux/cons_consommation.html",
+        "nom": "Conseiller(ère) au service à la clientèle"
+      },
+      {
+        "url": "/administration/../sociaux/cons_consommation.html",
+        "nom": "Conseiller(ère) en \r\n\tcommunication-marketing"
+      },
+      {
+        "url": "/administration/../transport/gest_transport.html",
+        "nom": "Consultant(e) logistique du transport"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Conseiller(ère) en vente de bijoux"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Conseiller(ère)\r\nen vente en lunetterie"
+      },
+      {
+        "url": "/administration/economie.html",
+        "nom": "Consultant(e)\r\nen économie"
+      },
+      {
+        "url": "/administration/../transport/transport1.html",
+        "nom": "Courtier en douanes"
+      },
+      {
+        "url": "/administration/../humaines/cons_international.html",
+        "nom": "Délégué(e)\r\ncommercial du Service Extérieur Canada"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Étalagiste"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/administration/../transport/gest_transport.html",
+        "nom": "Expert(e) conseil en transport de marchandises"
+      },
+      {
+        "url": "/administration/../protection/cons_securite.html",
+        "nom": "Expert(e) en \r\n\tcybersécurité"
+      },
+      {
+        "url": "/administration/assurances.htm",
+        "nom": "Expert(e) en sinistres"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Facteur(trice)"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Gérant(e) adjoint(e) du département d'un commerce"
+      },
+      {
+        "url": "/administration/../agriculture/gerant_ferme.htm",
+        "nom": "Gérant(e) d'une \r\n\tentreprise agricole"
+      },
+      {
+        "url": "/administration/marketing.htm",
+        "nom": "Gérant(e) de ferme"
+      },
+      {
+        "url": "/administration/finance1.htm",
+        "nom": "Gestionnaire \r\n\td'investissements"
+      },
+      {
+        "url": "/administration/finance1.htm",
+        "nom": "Gestionnaire de \r\n\tplacements"
+      },
+      {
+        "url": "/administration/assurances1.html",
+        "nom": "Gestionnaire \r\n\tde placements"
+      },
+      {
+        "url": "/administration/finance1.htm",
+        "nom": "Gestionnaire de \r\n\tportefeuille"
+      },
+      {
+        "url": "/administration/gest_appro1.html",
+        "nom": "Gestionnaire des approvisionnements"
+      },
+      {
+        "url": "/administration/gest_ind1.html",
+        "nom": "Gestionnaire des opérations de \r\n\tproduction"
+      },
+      {
+        "url": "/administration/comptable.htm",
+        "nom": "Gestionnaire des ressources \r\n\tfinancières"
+      },
+      {
+        "url": "/administration/../sociaux/cons_consommation.html",
+        "nom": "Gestionnaire \r\n\tdes services à la clientèle"
+      },
+      {
+        "url": "/administration/comm_inter1.html",
+        "nom": "Gestionnaire en commerce \r\n\tinternational"
+      },
+      {
+        "url": "/administration/finance1.htm",
+        "nom": "Gestionnaire en finance"
+      },
+      {
+        "url": "/administration/immobilier1.html",
+        "nom": "Gestionnaire en immobilier"
+      },
+      {
+        "url": "/administration/../transport/gest_transport.html",
+        "nom": "Gestionnaire en logistique du \r\n\ttransport"
+      },
+      {
+        "url": "/administration/administrateur.htm",
+        "nom": "Gestionnaire en management"
+      },
+      {
+        "url": "/administration/marketing1.html",
+        "nom": "Gestionnaire en marketing"
+      },
+      {
+        "url": "/administration/gest_ind1.html",
+        "nom": "Gestionnaire en méthodes \r\n\tquantitatives"
+      },
+      {
+        "url": "/administration/grh1.html",
+        "nom": "Gestionnaire en ressources humaines"
+      },
+      {
+        "url": "/administration/assurances1.html",
+        "nom": "Gestionnaire en services \r\n\tfinanciers et assurances"
+      },
+      {
+        "url": "/administration/info_gestion.htm",
+        "nom": "Gestionnaire en technologies de \r\n\tl'information"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Intervieweur"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Magasinier(ère)"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Manutentionnaire"
+      },
+      {
+        "url": "/administration/commerce.html",
+        "nom": "Marchandiseur(euse)"
+      },
+      {
+        "url": "/administration/../physique/mathematicien.htm",
+        "nom": "Mathématicien(ne)"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Opérateur d'unité de traitement de texte"
+      },
+      {
+        "url": "/administration/../humaines/humaines1.htm",
+        "nom": "Préposé(e) à \r\nla billetterie"
+      },
+      {
+        "url": "/administration/../humaines/humaines1.htm",
+        "nom": "Préposé(e) à la location \r\n\td'équipements de sports"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Préposé(e) à l'accueil et \r\n\tréception"
+      },
+      {
+        "url": "/administration/../sante/sante1.html",
+        "nom": "Préposé(e) à l'admission"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Préposé(e) aux réservations"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Préposé(e) aux réservations"
+      },
+      {
+        "url": "/administration/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) d'administration au \r\ncollégial"
+      },
+      {
+        "url": "/administration/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) d'informatique au \r\ncollégial"
+      },
+      {
+        "url": "/administration/tech_informatique.htm",
+        "nom": "Programmeur(e)-analyste\r\nen informatique"
+      },
+      {
+        "url": "/administration/administration1.htm",
+        "nom": "Réceptionniste"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "secrétaire"
+      },
+      {
+        "url": "/administration/../restau_tourisme/receptionniste_hotel.htm",
+        "nom": "Réceptionniste d’hôtel"
+      },
+      {
+        "url": "/administration/../restau_tourisme/receptionniste_hotel.htm",
+        "nom": "Réservationniste"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Secrétaire"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Secrétaire comptable"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Secrétaire dentaire"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Secrétaire juridique"
+      },
+      {
+        "url": "/administration/secretaire.htm",
+        "nom": "Secrétaire médicale"
+      },
+      {
+        "url": "/administration/assurances.htm",
+        "nom": "Souscripteur(trice) d'assurances"
+      },
+      {
+        "url": "/administration/soutien_info.html",
+        "nom": "Soutien technique aux utilisateurs en informatique"
+      },
+      {
+        "url": "/administration/../physique/statisticien.htm",
+        "nom": "Statisticien(ne)"
+      },
+      {
+        "url": "/administration/steno.html",
+        "nom": "Sténographe"
+      },
+      {
+        "url": "/administration/tech_administration.htm",
+        "nom": "Technicien(ne) en administration"
+      },
+      {
+        "url": "/administration/assurances.htm",
+        "nom": "Technicien(ne)\r\nen assurances et services financiers"
+      },
+      {
+        "url": "/administration/tech_bureautique.htm",
+        "nom": "Technicien(ne) en bureautique"
+      },
+      {
+        "url": "/administration/comm_inter.htm",
+        "nom": "Technicien(ne)\r\nen commerce international"
+      },
+      {
+        "url": "/administration/comptabilite.htm",
+        "nom": "Technicien(ne)\r\nen comptabilité"
+      },
+      {
+        "url": "/administration/../communication/tech_documentation.html",
+        "nom": "Technicien(ne)\r\nen documentation"
+      },
+      {
+        "url": "/administration/marketing.htm",
+        "nom": "Technicien(ne)\r\nen gestion commerciale"
+      },
+      {
+        "url": "/administration/gest_appro.htm",
+        "nom": "Technicien(ne) en gestion des \r\n\tapprovisionnements"
+      },
+      {
+        "url": "/administration/gest_ind.htm",
+        "nom": "Technicien\r\nen gestion industrielle"
+      },
+      {
+        "url": "/administration/tech_informatique.htm",
+        "nom": "Technicien(ne) en informatique"
+      },
+      {
+        "url": "/administration/../transport/tech_transport.htm",
+        "nom": "Technicien(ne) en logistique du transport"
+      },
+      {
+        "url": "/administration/grh.htm",
+        "nom": "Technicien(ne)\r\nen ressources humaines"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Vendeur-conseiller ou vendeuse-conseillère"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Vendeur(euse) de bijoux"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Vendeur(euse) de \r\n\tmeubles et produits d'ameublement"
+      },
+      {
+        "url": "/administration/../batiment/vendeur_quincaillerie.htm",
+        "nom": "euse) de pièces de quincaillerie,\r\nbois et matériaux de construction"
+      },
+      {
+        "url": "/administration/vendeur.htm",
+        "nom": "Vendeur(euse) de produits \r\nde lunetterie"
+      }
+    ],
+    "count": 131
+  },
+  "aerospatial": {
+    "nom": "Aérospatial",
+    "slug": "aerospatial",
+    "metiers": [
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "métiers non \r\n\tspécialisés en industrie aérospatiale"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "Aide-opérateur(trice) de machines d'assemblage"
+      },
+      {
+        "url": "/aerospatial/astronaute.html",
+        "nom": "Astronaute"
+      },
+      {
+        "url": "/aerospatial/../../metallurgie/galvaniseur.html",
+        "nom": "Galvaniseur(euse) de composantes aéronautiques"
+      },
+      {
+        "url": "/aerospatial/../../electrotechnique/ing_electricien.htm",
+        "nom": "ngénieur(e)-électricien(ne) \r\n(avionique)"
+      },
+      {
+        "url": "/aerospatial/ing_aerospatial.htm",
+        "nom": "Ingénieur(e)\r\nen aérospatial"
+      },
+      {
+        "url": "/aerospatial/../../physique/ing_physicien.htm",
+        "nom": "Ingénieur(e)-physicien(ne)\r\n(aéronautique)"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/ing_mecanicien.htm",
+        "nom": "Ingénieur(e)-mécanicien(ne)\r\n(aéronautique)"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/ing_mecanicien.htm",
+        "nom": "Ingénieur(e)-mécanicien(ne)\r\n(technologies spatiales)"
+      },
+      {
+        "url": "/aerospatial/../../metallurgie/ing_metallurgiste.html",
+        "nom": "Ingénieur(e) \r\n\tmétallurgiste en aérospatiale"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "Installeur(trice) d'éléments intérieurs d'aéronefs"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "Journalier(ère) ou manœuvre dans l'industrie aérospatiale"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/machiniste.htm",
+        "nom": "Machiniste en \r\n\tindustrie aérospatiale"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "Manutentionnaire d'usine"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/oper_mach_ind.htm",
+        "nom": "Opérateur(trice) \r\n\tde machines d'assemblage"
+      },
+      {
+        "url": "/aerospatial/../../metallurgie/peintre_ind.html",
+        "nom": "Peintre \r\n\td'aéronefs"
+      },
+      {
+        "url": "/aerospatial/../../transport/pilote.htm",
+        "nom": "Pilote\r\nd’aéronefs"
+      },
+      {
+        "url": "/aerospatial/../../fabric_mec/fabric_mecanique1.html",
+        "nom": "Préposé(e) aux aéronefs"
+      },
+      {
+        "url": "/aerospatial/../../bois/rembourreur.htm",
+        "nom": "Rembourreur(euse) d'aéronefs"
+      },
+      {
+        "url": "/aerospatial/../../metallurgie/soudeur.htm",
+        "nom": "Soudeur(euse)-assembleur(euse) en aérospatiale"
+      },
+      {
+        "url": "/aerospatial/tech_aeronefs.htm",
+        "nom": "Technicien(ne)\r\nen entretien des aéronefs"
+      },
+      {
+        "url": "/aerospatial/tech_avionique.htm",
+        "nom": "Technologue\r\nen avionique"
+      },
+      {
+        "url": "/aerospatial/tech_aeronautique.html",
+        "nom": "Technologue\r\nen construction aéronautique"
+      },
+      {
+        "url": "/aerospatial/../../metallurgie/tech_metallurgie.htm",
+        "nom": "Technologue en \r\n\tmétallurgie pour l'aérospatiale"
+      }
+    ],
+    "count": 24
+  },
+  "agriculture": {
+    "nom": "Agriculture, agroalimentaire et pêcheries",
+    "slug": "agriculture",
+    "metiers": [
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "métiers NON spécialisés en industrie alimentaire"
+      },
+      {
+        "url": "/agriculture/agriculture4.html",
+        "nom": "métiers NON spécialisés en production agricole"
+      },
+      {
+        "url": "/agriculture/agronome.htm",
+        "nom": "Agronome"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Aide-fromager(ère)"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Aide-opérateur(trice) de machines à \r\n\tfabriquer des aliments"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Aide-opérateur(trice) de machines à \r\n\ttransformer les aliments"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Aide-opérateur(trice) en fermentation \r\n\t(fromages)"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole6.htm",
+        "nom": "Apiculteur(trice)"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Auxilaire de laboratoire en contrôle de la \r\n\tqualité"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Boucher(ère)\r\nindustriel"
+      },
+      {
+        "url": "/agriculture/../chercheurs/chercheur3.htm",
+        "nom": "Chercheur(e) en\r\nagronomie"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Chocolatier(ère)"
+      },
+      {
+        "url": "/agriculture/tech_aliments.htm",
+        "nom": "Contrôleur(euse) de la qualité des aliments"
+      },
+      {
+        "url": "/agriculture/agriculture.htm",
+        "nom": "Coupeur(euse) de viandes ou volailles"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Cuiseur(euse) d'aliments"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Cuisinier(ère) industriel"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Découpeur(euse) de viandes"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Désosseur(euse) de viandes"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Emballeur(euse)-étiqueteur(euse) de \r\n\tproduits alimentaires"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Fournier(ère)"
+      },
+      {
+        "url": "/agriculture/gerant_ferme.htm",
+        "nom": "Gérant(e)\r\nde ferme"
+      },
+      {
+        "url": "/agriculture/ing_agricole.htm",
+        "nom": "Ingénieur(e)\r\nagricole"
+      },
+      {
+        "url": "/agriculture/ing_alimentaire.htm",
+        "nom": "Ingénieur(e)\r\nalimentaire"
+      },
+      {
+        "url": "/agriculture/tech_aliments.htm",
+        "nom": "Inspecteur(trice) des aliments"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Manœuvre en transformation des aliments"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Manutentionnaire de produits alimentaires"
+      },
+      {
+        "url": "/agriculture/../motorises/mecanicien_agricole.html",
+        "nom": "Mécanicien(ne)\r\nde machines agricoles"
+      },
+      {
+        "url": "/agriculture/oper_aliments.htm",
+        "nom": "Opérateur(trice) de machines à emballer les aliments"
+      },
+      {
+        "url": "/agriculture/oper_aliments.htm",
+        "nom": "Opérateur(trice) de machines à embouteiller"
+      },
+      {
+        "url": "/agriculture/oper_aliments.htm",
+        "nom": "Opérateur(trice) de machines de procédés\r\nindustriels en transformation des aliments&nbsp;et des boissons"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Opérateur(trice) en fermentation du fromage"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Pareur(euse) de viandes"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Pâtissier(ère) industriel"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Poisonnier(ère) industriel"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Pomiculteur(trice)"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préparateur(trice) de volailles"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) à la sanitation"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) à la réception des animaux"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) au four"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) aux ingrédients"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) aux mélanges"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Préposé(e) aux recettes"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole6.htm",
+        "nom": "Producteur(trice) \r\n\tapicole"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole8.htm",
+        "nom": "Producteur(trice) \r\n\tcaprin (chèvres)"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole9.htm",
+        "nom": "Producteur(trice) d'œufs"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole7.htm",
+        "nom": "Producteur(trice) d'ovins (moutons et \r\n\tagneaux)"
+      },
+      {
+        "url": "/agriculture/agriculture3.html",
+        "nom": "Producteur(trice) de grands \r\n\tgibiers et de ratites"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole6.htm",
+        "nom": "Producteur(trice) de miel"
+      },
+      {
+        "url": "/agriculture/ouvrier_agricole9.htm",
+        "nom": "Producteur(trice) de \r\n\tvolailles"
+      },
+      {
+        "url": "/agriculture/spéc_STA.htm",
+        "nom": "Spécialiste en \r\n\tsciences et technologie des aliments"
+      },
+      {
+        "url": "/agriculture/tech_genie_agricole.htm",
+        "nom": "Technicien(ne)\r\nen équipements agricoles"
+      },
+      {
+        "url": "/agriculture/tech_peches.html",
+        "nom": "Technicien(ne)\r\nen pêcheries"
+      },
+      {
+        "url": "/agriculture/../sante/tech_sante_animale.htm",
+        "nom": "Technicien(ne)\r\nen santé animale"
+      },
+      {
+        "url": "/agriculture/tech_prod_animales.htm",
+        "nom": "Technologue en production \r\nanimale"
+      },
+      {
+        "url": "/agriculture/tech_horticulture.htm",
+        "nom": "Technologue en production \r\nhorticole"
+      },
+      {
+        "url": "/agriculture/tech_aliments.htm",
+        "nom": "Technologue en transformation des aliments"
+      },
+      {
+        "url": "/agriculture/tech_poisson.html",
+        "nom": "Technologue en transformation des produits marins"
+      }
+    ],
+    "count": 58
+  },
+  "armee": {
+    "nom": "Armée",
+    "slug": "armee",
+    "metiers": [
+      {
+        "url": "/armee/https://www.canada.ca/fr/ministere-defense-nationale/services/emplois-fac.html",
+        "nom": "recrutement des Forces canadiennes"
+      },
+      {
+        "url": "/armee/terre.html",
+        "nom": "L’Armée de terre canadienne"
+      },
+      {
+        "url": "/armee/air.html",
+        "nom": "L'Aviation royale canadienne"
+      },
+      {
+        "url": "/armee/mer.html",
+        "nom": "La Marine royale canadienne"
+      },
+      {
+        "url": "/armee/http://www.forces.gc.ca/fr/emplois-fac-centres-de-recrutement.page",
+        "nom": "CENTRES DE RECRUTEMENT"
+      },
+      {
+        "url": "/armee/http://www.forces.gc.ca/fr/education-formation.page",
+        "nom": "Service de l’éducation et de l'instruction des Forces canadiennes"
+      },
+      {
+        "url": "/armee/http://www.cmrsj-rmcsj.forces.gc.ca/index-fra.asp",
+        "nom": "Collège militaire royal de St-Jean"
+      },
+      {
+        "url": "/armee/http://www.rcaf-arc.forces.gc.ca/fr/index.page",
+        "nom": "Aviation royale canadienne"
+      },
+      {
+        "url": "/armee/http://www.museebagotville.ca/fr/",
+        "nom": "Musée de la Défense aérienne"
+      },
+      {
+        "url": "/armee/https://www.canada.ca/fr/services/defense/fac/histoiremilitaire/museesmilitaires/musees.html",
+        "nom": "Musées militaires du Canada"
+      },
+      {
+        "url": "/armee/https://www.mil.be/fr",
+        "nom": "Défense nationale belge"
+      },
+      {
+        "url": "/armee/https://www.vbs.admin.ch/fr/home.html",
+        "nom": "Département de la Défense Suisse"
+      },
+      {
+        "url": "/armee/https://www.royalnavy.mod.uk/",
+        "nom": "Royal British \r\nArmy"
+      },
+      {
+        "url": "/armee/http://www.marina.difesa.it/en/Pagine/default.aspx",
+        "nom": "Marina Militare"
+      },
+      {
+        "url": "/armee/http://www.navy.gov.au/",
+        "nom": "Royal Australian Navy"
+      }
+    ],
+    "count": 15
+  },
+  "arts": {
+    "nom": "Arts appliquées et d'expression",
+    "slug": "arts",
+    "metiers": [
+      {
+        "url": "/arts/../communication/scene.html",
+        "nom": "métiers peu ou non \r\nspécialisés de la scène"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "métiers non spécialisés en artisanat et \r\narts appliqués"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Aide-décorateur(trice) d'intérieurs"
+      },
+      {
+        "url": "/arts/../communication/tech_media.htm",
+        "nom": "Aiguilleur(e)"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Aiguilleur(e)"
+      },
+      {
+        "url": "/arts/../communication/biblio.html",
+        "nom": "Archiviste"
+      },
+      {
+        "url": "/arts/verrier.html",
+        "nom": "Artisan(ne)\r\ndu verre"
+      },
+      {
+        "url": "/arts/artiste_cirque.htm",
+        "nom": "Artiste\r\ndu cirque"
+      },
+      {
+        "url": "/arts/../mode/imprimeur_text.html",
+        "nom": "Artisan(ne) en arts textiles"
+      },
+      {
+        "url": "/arts/artiste.html",
+        "nom": "Artiste en\r\narts visuels"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Assistant(e) accessoiriste \r\n\tde plateau"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Assistant(e) au département \r\n\tartistique"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Aide-décorateur(trice) de \r\n\tplateau ou de scène"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Assistant(e) \r\n\tmonteur(euse) (cinéma ou télé)"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Assistant(e) peintre de \r\n\tplateau ou de scène"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Art-thérapeute"
+      },
+      {
+        "url": "/arts/../graphique/anal_multimedia.html",
+        "nom": "Analyste\r\nen multimédia"
+      },
+      {
+        "url": "/arts/../lettres/ecrivain.html",
+        "nom": "Auteur(e)\r\nou écrivain(e)"
+      },
+      {
+        "url": "/arts/../communication/scenariste.html",
+        "nom": "Auteur(e)\r\nd’émissions de télévision ou de films"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Caméraman"
+      },
+      {
+        "url": "/arts/ceramiste.html",
+        "nom": "Céramiste"
+      },
+      {
+        "url": "/arts/danseur.html",
+        "nom": "Chorégraphe"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Ciseleur(euse)"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Commis-vendeur(euse) d'œuvres \r\n\td'art"
+      },
+      {
+        "url": "/arts/scenographe.htm",
+        "nom": "Concepteur(trice) de costumes"
+      },
+      {
+        "url": "/arts/scenographe.htm",
+        "nom": "Concepteur(trice) de décors"
+      },
+      {
+        "url": "/arts/../communication/concepteur_son.html",
+        "nom": "Concepteur(trice) \r\nsonore"
+      },
+      {
+        "url": "/arts/../communication/realisateur.html",
+        "nom": "Coordonnateur(trice) \r\nde production"
+      },
+      {
+        "url": "/arts/../communication/cinema.html",
+        "nom": "Coordonnateur(trice) de \r\nproduction"
+      },
+      {
+        "url": "/arts/critique.html",
+        "nom": "Critique\r\nd’art"
+      },
+      {
+        "url": "/arts/designer_int.htm",
+        "nom": "Designer\r\nd’intérieurs"
+      },
+      {
+        "url": "/arts/../mode/designer_mode.htm",
+        "nom": "Designer\r\nde mode"
+      },
+      {
+        "url": "/arts/designer_presentation.html",
+        "nom": "Designer\r\nen présentation visuelle"
+      },
+      {
+        "url": "/arts/../graphique/infographiste.htm",
+        "nom": "Designer\r\ngraphiste"
+      },
+      {
+        "url": "/arts/../graphique/designer_ind.htm",
+        "nom": "Designer\r\nindustriel"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Dessinateur(trice) artistique"
+      },
+      {
+        "url": "/arts/../communication/scenariste.html",
+        "nom": "Dramaturge"
+      },
+      {
+        "url": "/arts/../bois/ebeniste.htm",
+        "nom": "Ébéniste artisan(ne)"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Éclairagiste (télé-vidéo-cinéma)"
+      },
+      {
+        "url": "/arts/scenographe.htm",
+        "nom": "Éclairagiste\r\n(théâtre)"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Encadreur(euse)"
+      },
+      {
+        "url": "/arts/gerant_artistes.html",
+        "nom": "Gérant(e)\r\nd’artistes"
+      },
+      {
+        "url": "/arts/../graphique/infographiste.htm",
+        "nom": "GRAPHISTE"
+      },
+      {
+        "url": "/arts/humoriste.html",
+        "nom": "Humoriste"
+      },
+      {
+        "url": "/arts/../graphique/infographiste.htm",
+        "nom": "graphiste"
+      },
+      {
+        "url": "/arts/../mode/imprimeur_text.html",
+        "nom": "Imprimeur(euse) textile"
+      },
+      {
+        "url": "/arts/../graphique/infographiste.htm",
+        "nom": "Infographiste"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Lettreur(euse) d'enseignes"
+      },
+      {
+        "url": "/arts/../lettres/linguiste.html",
+        "nom": "Linguiste"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Machiniste décors"
+      },
+      {
+        "url": "/arts/../communication/museologue.html",
+        "nom": "Muséologue"
+      },
+      {
+        "url": "/arts/musicien.html",
+        "nom": "MUSICIEN(NE)"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Musicothérapeute"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Ouvrier(ère) en fabrication d'objets décoratifs"
+      },
+      {
+        "url": "/arts/photographe.htm",
+        "nom": "Photographe"
+      },
+      {
+        "url": "/arts/photographe.htm",
+        "nom": "Photographe médical"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Potier(ère)-céramiste"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Préposé(e) aux décors"
+      },
+      {
+        "url": "/arts/../enseignement/prof_arts1.htm",
+        "nom": "Professeur(e)\r\nd’art dramatique"
+      },
+      {
+        "url": "/arts/comedien.htm",
+        "nom": "comédien"
+      },
+      {
+        "url": "/arts/../enseignement/prof_arts.htm",
+        "nom": "Professeur(e)\r\nd’arts plastiques"
+      },
+      {
+        "url": "/arts/../enseignement/prof_arts1.htm",
+        "nom": "Professeur(e)\r\nde danse"
+      },
+      {
+        "url": "/arts/../enseignement/prof_musique.htm",
+        "nom": "Professeur(e)\r\nde musique"
+      },
+      {
+        "url": "/arts/../communication/concepteur_son.html",
+        "nom": "Réalisateur(trice)"
+      },
+      {
+        "url": "/arts/../communication/tech_media.htm",
+        "nom": "Recherchiste"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Recherchiste"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Régisseur(e)"
+      },
+      {
+        "url": "/arts/../communication/scenariste.html",
+        "nom": "Scénariste"
+      },
+      {
+        "url": "/arts/scenographe.htm",
+        "nom": "Scénographe"
+      },
+      {
+        "url": "/arts/artiste.html",
+        "nom": "Sculpteur(trice)"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Sculpteur(trice) de monuments funéraires"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Sellier(ère)"
+      },
+      {
+        "url": "/arts/artisanat.html",
+        "nom": "Taxidermiste"
+      },
+      {
+        "url": "/arts/../communication/tech_media.htm",
+        "nom": "Technicien(ne) du son"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "Technicien(ne)\r\ndu son"
+      },
+      {
+        "url": "/arts/../communication/tech_documentation.html",
+        "nom": "Technicien(ne) en \r\narchivistique"
+      },
+      {
+        "url": "/arts/../graphique/tech_design_ind.htm",
+        "nom": "Technicien(ne) en design industriel"
+      },
+      {
+        "url": "/arts/../graphique/tech_multimedia.htm",
+        "nom": "TECHNICIEN(NE)\r\nEN MULTIMÉDIA"
+      },
+      {
+        "url": "/arts/scenographe.htm",
+        "nom": "Technicien(ne)\r\nde scène de théâtre"
+      },
+      {
+        "url": "/arts/../graphique/tech_design_ind.htm",
+        "nom": "Technicien(ne)\r\nen design industriel"
+      },
+      {
+        "url": "/arts/../communication/tech_museologie.html",
+        "nom": "Technicien(ne)\r\nen muséologie"
+      },
+      {
+        "url": "/arts/../communication/tech_media.htm",
+        "nom": "Technicien(ne)\r\nen production radiophonique"
+      },
+      {
+        "url": "/arts/../communication/tech_tele.htm",
+        "nom": "TECHNICIEN(NE)\r\nEN TÉLÉVISION"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Thérapeute par les arts \r\ndécoratifs ou visuels"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Thérapeute par la \r\n\tdanse"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Thérapeute par la \r\n\tmusique"
+      },
+      {
+        "url": "/arts/../sociaux/therapeute_art.html",
+        "nom": "Thérapeute par le \r\n\tthéâtre"
+      },
+      {
+        "url": "/arts/../mode/tisserand.html",
+        "nom": "Tisserand(e)"
+      },
+      {
+        "url": "/arts/verrier.html",
+        "nom": "Vitrailliste"
+      }
+    ],
+    "count": 89
+  },
+  "batiment": {
+    "nom": "Bâtiment et construction",
+    "slug": "batiment",
+    "metiers": [
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "occupations de la construction (et \r\nautres métiers du bâtiment)"
+      },
+      {
+        "url": "/batiment/../environnement/oper_arpentage.htm",
+        "nom": "Aide-arpenteur(e)"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-briqueteur(euse)-maçon"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-carreleur(euse)"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-charpentier(ère)"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide des métiers du bâtiment"
+      },
+      {
+        "url": "/batiment/../electrotechnique/electrotechnique1.html",
+        "nom": "Aide-électricien(ne)"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-frigoriste"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-installateur(trice) \r\n\td'enseignes"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Aide-tuyauteur(euse)"
+      },
+      {
+        "url": "/batiment/../batiment/architecte.htm",
+        "nom": "Architecte"
+      },
+      {
+        "url": "/batiment/../environnement/arpenteur.html",
+        "nom": "Arpenteur(e)-géomètre"
+      },
+      {
+        "url": "/batiment/../batiment/briqueteur.htm",
+        "nom": "Briqueteur(euse)-maçon(ne)"
+      },
+      {
+        "url": "/batiment/../mines/dynamiteur.html",
+        "nom": "Boutefeu-foreur(euse)"
+      },
+      {
+        "url": "/batiment/../batiment/charpentier.htm",
+        "nom": "Charpentier-menuisier\r\nou charpentière-menuisière"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Chauffagiste d'appareils de \r\n\tcombustion au mazout"
+      },
+      {
+        "url": "/batiment/../batiment/cimentier.htm",
+        "nom": "Cimentier(ère)-applicateur(trice)"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Commis de chantier"
+      },
+      {
+        "url": "/batiment/../batiment/vendeur_quincaillerie.htm",
+        "nom": "Commis en matériaux \r\n\tde construction et quincaillerie"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Conducteur(trice) de camion \r\n\tléger"
+      },
+      {
+        "url": "/batiment/../transport/chauffeur_camion1.htm",
+        "nom": "Conducteur(trice) de camion moyen"
+      },
+      {
+        "url": "/batiment/../transport/chauffeur_camion.htm",
+        "nom": "Conducteur(trice) de camion lourd"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Échafaudeur(euse)"
+      },
+      {
+        "url": "/batiment/../electrotechnique/electricien.html",
+        "nom": "ÉLECTRICIEN(NE)\r\nEN CONSTRUCTION"
+      },
+      {
+        "url": "/batiment/../mines/dynamiteur.html",
+        "nom": "Foreur(euse) de \r\n\tfondations profondes"
+      },
+      {
+        "url": "/batiment/../batiment/frigoriste.htm",
+        "nom": "Frigoriste"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Gardien(ne) de chantier"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Gazfitter"
+      },
+      {
+        "url": "/batiment/../mines/geologue.html",
+        "nom": "Géologue"
+      },
+      {
+        "url": "/batiment/../batiment/ing_construction.htm",
+        "nom": "Ingénieur(e)\r\nen bâtiment"
+      },
+      {
+        "url": "/batiment/../batiment/ing_construction.htm",
+        "nom": "Ingénieur(e)\r\nen construction"
+      },
+      {
+        "url": "/batiment/../environnement/arpenteur.html",
+        "nom": "Ingénieur(e)\r\nen géomatique"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Installateur(trice) \r\n\td'enseignes"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Journalier(ère) de la \r\n\tconstruction"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Magasinier(ère) de chantier"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre en démolition"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre en échafaudage"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre en fabrication de \r\n\tmaisons préusinées"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre en fabrication de portes et \r\n\tfenêtres"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre en sciage de béton \r\n\tou d'asphalte"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre général de la \r\n\tconstruction"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Manœuvre spécialisé(e) de la \r\n\tconstruction"
+      },
+      {
+        "url": "/batiment/../batiment/mecanicien_fixes.htm",
+        "nom": "Mécanicien(ne)\r\nde machines fixes"
+      },
+      {
+        "url": "/batiment/../mecanique_entr/mecanicien_ascenseurs.htm",
+        "nom": "Mécanicien(ne) \r\nd’ascenseurs"
+      },
+      {
+        "url": "/batiment/../mecanique_entr/mecanicien_industriel.htm",
+        "nom": "MÉCANICIEN(NE) DE CHANTIER"
+      },
+      {
+        "url": "/batiment/../batiment/mecanicien_incendies.htm",
+        "nom": "Mécanicien(ne)\r\n(monteur) en protection contre les incendies"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Menuisier(ère) d'atelier"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Monteur(euse)-assembleur(euse) de portes et fenêtres"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Opérateur(trice) d'appareils \r\n\tde levage"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Opérateur(trice) d'usines \r\n\tfixes ou mobiles"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Opérateur(trice) de \r\n\tgénératrice"
+      },
+      {
+        "url": "/batiment/../mines/grutier.htm",
+        "nom": "Opérateur(trice) de \r\n\tpompe à béton"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Opérateur(trice) de pompes \r\n\tet compresseurs"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Ouvrier(ère) certifié(e) \r\n\td'entretien de bâtiments"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Ouvrier(ère) d'entetien \r\n\tgénéral de bâtiments"
+      },
+      {
+        "url": "/batiment/../batiment/peintre.htm",
+        "nom": "Peintre en\r\nbâtiment"
+      },
+      {
+        "url": "/batiment/../batiment/plombier.htm",
+        "nom": "PLOMBIER(ÈRE)"
+      },
+      {
+        "url": "/batiment/../protection/pompier.htm",
+        "nom": "POMPIER(ÈRE)"
+      },
+      {
+        "url": "/batiment/../batiment/prep_entretien.html",
+        "nom": "Préposé(e)\r\nà l’entretien de bâtiments"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Préposé(e) à l'entretien \r\n\tménager"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Préposé(e) à l'hygiène et \r\n\tsalubrité en milieu de santé"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Préposé(e) en maintenance \r\n\td'installations sportives et de bâtiments réfrigérés"
+      },
+      {
+        "url": "/batiment/../batiment/tech_gaz.html",
+        "nom": "Réparateur(trice) d'appareils au gaz naturel"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Scieur(euse) de béton ou \r\n\td'asphalte"
+      },
+      {
+        "url": "/batiment/../batiment/occupations.html",
+        "nom": "Spécialiste en branchement \r\n\td'immeubles"
+      },
+      {
+        "url": "/batiment/../environnement/tech_urbanisme.html",
+        "nom": "Technicien(ne)\r\nen aménagement et urbanisme"
+      },
+      {
+        "url": "/batiment/../batiment/tech_gaz.html",
+        "nom": "Technicien(ne) en gaz naturel"
+      },
+      {
+        "url": "/batiment/../batiment/tech_architecture.htm",
+        "nom": "TECHNOLOGUE\r\nEN ARCHITECTURE"
+      },
+      {
+        "url": "/batiment/../batiment/tech_eval_batiment.htm",
+        "nom": "Technologue en estimation et évaluation de bâtiments"
+      },
+      {
+        "url": "/batiment/../environnement/tech_geodesie.htm",
+        "nom": "Technologue\r\nen géodésie (arpentage)"
+      },
+      {
+        "url": "/batiment/../batiment/tech_mec_batiment.htm",
+        "nom": "TECHNOLOGUE\r\nEN MÉCANIQUE DU BÂTIMENT"
+      }
+    ],
+    "count": 71
+  },
+  "bois": {
+    "nom": "Bois (meubles) et matériaux connexes",
+    "slug": "bois",
+    "metiers": [
+      {
+        "url": "/bois/../portraits/bois2.html",
+        "nom": "Portrait de l’industrie du meuble et du bois ouvré"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "métiers non spécialisés"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-assembleur(euse) de menuiseries architecturales"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-assembleur(euse) de meubles"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-Assembleur(euse) de portes et fenêtres"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-ébéniste"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-opérateur(trice) de machines d'assemblage de meubles"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Aide-opérateur(trice) de machines d'assemblage de portes et fenêtres"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Assembleur(euse) de \r\n\tmatelas"
+      },
+      {
+        "url": "/bois/assembleur_pf.htm",
+        "nom": "Assembleur(euse) de portes et \r\n\tfenêtres"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Assistant(e) \r\n\tmenuisier(ère) de plateau"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Coloriste"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Conseiller(ère) en \r\n\tventes de meubles"
+      },
+      {
+        "url": "/bois/tech_menuiserie.htm",
+        "nom": "Dessinateur(trice)-concepteur(trice) de boiseries architecturales"
+      },
+      {
+        "url": "/bois/tech_meubles.htm",
+        "nom": "Dessinateur(trice)-concepteur(trice) de meubles"
+      },
+      {
+        "url": "/bois/ebeniste.htm",
+        "nom": "Ébéniste"
+      },
+      {
+        "url": "/bois/ebeniste.htm",
+        "nom": "Ébéniste \r\n\tartisan(ne)"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Emballeur(euse) \r\n\tde produits"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/bois/../fabric_mec/ing_industriel.htm",
+        "nom": "Ingénieur(e) \r\n\tindustriel"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Manœuvre en \r\n\tassemblage de meubles"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Manœuvre en fabrication d'armoires de \r\ncuisine et salle de bain"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Manoeuvre en \r\nfabrication de portes et fenêtres"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Manutentionnaire \r\n\td'usine ou d'entrepôt"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Menuisier(ère) d'atelier"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Menuisier(ère) de \r\n\tplateau"
+      },
+      {
+        "url": "/bois/monteur_meubles.htm",
+        "nom": "Opérateur(trice) de machines à \r\n\tassembler des meubles"
+      },
+      {
+        "url": "/bois/assembleur_pf.htm",
+        "nom": "Opérateur(trice) de machines à \r\n\tassembler des portes et fenêtres"
+      },
+      {
+        "url": "/bois/bois1.html",
+        "nom": "Opérateur(trice) de machines à emballer"
+      },
+      {
+        "url": "/bois/rembourreur.htm",
+        "nom": "Rembourreur(euse) d'aéronefs"
+      },
+      {
+        "url": "/bois/tech_meubles.htm",
+        "nom": "Technicien(ne) en conception de \r\n\tmeubles"
+      },
+      {
+        "url": "/bois/tech_menuiserie.htm",
+        "nom": "Technicien(ne) en ébénisterie et menuiserie architecturales"
+      },
+      {
+        "url": "/bois/../fabric_mec/tech_composites.htm",
+        "nom": "Technicien(ne)\r\nen matériaux composites"
+      },
+      {
+        "url": "/bois/tech_meubles.htm",
+        "nom": "Technicien(ne) en \r\nproduction de meubles"
+      },
+      {
+        "url": "/bois/../fabric_mec/tech_genie_industriel.htm",
+        "nom": "Technologue en génie industriel"
+      }
+    ],
+    "count": 35
+  },
+  "chimie": {
+    "nom": "Chimie et biologie",
+    "slug": "chimie",
+    "metiers": [
+      {
+        "url": "/chimie/../portraits/chimie3.html",
+        "nom": "Portrait de l’industrie pharmaceutique"
+      },
+      {
+        "url": "/chimie/../portraits/chimie4.html",
+        "nom": "Portrait de \r\n\tl'industrie biotechnologique"
+      },
+      {
+        "url": "/chimie/../superieures/et_sup2.html",
+        "nom": "répertoire des maîtrises et doctorats en sciences du génie"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "métiers \r\nnon spécialisés en industrie chimique"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Aide-opérateur(trice) d'une unité de \r\ndésencrage"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Aide-opérateur(trice) de machines à fabriquer ou transformer des produits \r\n\tchimiques"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Aide-opérateur(trice) de machines à papier ou carton"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Aide technique ou préposé(e) à l'identitié judiciaire"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Aide technique ou auxiliaire de \r\n\tlaboratoire"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Appariteur(trice) en laboratoire d'enseignement ou de recherche"
+      },
+      {
+        "url": "/chimie/biochimiste.htm",
+        "nom": "Biochimiste"
+      },
+      {
+        "url": "/chimie/../sante/bioinfo.html",
+        "nom": "Bioinformaticien(ne)"
+      },
+      {
+        "url": "/chimie/../nature/biologiste.htm",
+        "nom": "Biologiste"
+      },
+      {
+        "url": "/chimie/../physique/biophysicien.html",
+        "nom": "Biophysicien(ne)"
+      },
+      {
+        "url": "/chimie/biotechno.html",
+        "nom": "Biotechnologiste"
+      },
+      {
+        "url": "/chimie/../chercheurs/chercheur.htm",
+        "nom": "Chercheur(e)"
+      },
+      {
+        "url": "/chimie/chimiste.htm",
+        "nom": "Chimiste"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Coloriste \r\n\tindustriel"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Conducteur(trice) au raffinage de pétrole"
+      },
+      {
+        "url": "/chimie/../environnement/cons_environnement.htm",
+        "nom": "Consultant en environnement"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/chimie/sc_legales.html",
+        "nom": "Expert(e)\r\nen criminalistique"
+      },
+      {
+        "url": "/chimie/../agriculture/ing_alimentaire.htm",
+        "nom": "Ingénieur(e)\r\nalimentaire"
+      },
+      {
+        "url": "/chimie/ing_biotechno.html",
+        "nom": "Ingénieur(e)\r\nbiotechnologiste"
+      },
+      {
+        "url": "/chimie/ing_chimiste.htm",
+        "nom": "Ingénieur(e)\r\nchimiste"
+      },
+      {
+        "url": "/chimie/../foresterie/ing_bois.html",
+        "nom": "Ingénieur(e) en bois"
+      },
+      {
+        "url": "/chimie/../environnement/cons_environnement.htm",
+        "nom": "Ingénieur(e) en environnement"
+      },
+      {
+        "url": "/chimie/../mines/ing_petrole.html",
+        "nom": "Ingénieur(e)\r\nen pétrole et gaz"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Journalier(ère) ou manœuvre en industrie chimique ou pétrochimique"
+      },
+      {
+        "url": "/chimie/../fabric_mec/fabric_mecanique1.html",
+        "nom": "Journalier(ère) ou manœuvre en industrie de la plasturgie ou du caoutchouc"
+      },
+      {
+        "url": "/chimie/../foresterie/foresterie1.html",
+        "nom": "Journalier(ère) ou \r\n\tmanœuvre en industrie papetière"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Manutentionnaire \r\n\td'usine ou d'entrepôt"
+      },
+      {
+        "url": "/chimie/../foresterie/foresterie1.html",
+        "nom": "Manutentionnaire en \r\n\tpâtes et papiers"
+      },
+      {
+        "url": "/chimie/microbio.htm",
+        "nom": "Microbiologiste"
+      },
+      {
+        "url": "/chimie/../environnement/enviro3.html",
+        "nom": "Opérateur(trice) \r\n\td'une station de filtration de l'eau potable"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Opérateur(trice) d'un incinérateur à déchets"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Opérateur de machines à fabriquer ou à\r\ntransformer le caoutchouc"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Opérateur(trice) de machines de traitement de\r\nproduits chimiques"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Opérateur(trice) d’une usine de désencrage"
+      },
+      {
+        "url": "/chimie/../sante/pharmacologue.htm",
+        "nom": "Pharmacologue"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Préparateur(trice) ou préposé(e) aux matières premières"
+      },
+      {
+        "url": "/chimie/chimie1.html",
+        "nom": "Préparateur(trice) ou préposé(e) aux produits ou additifs chimiques"
+      },
+      {
+        "url": "/chimie/../environnement/tech_sterilisation.html",
+        "nom": "Préposé(e) au retraitement des dispositifs médicaux"
+      },
+      {
+        "url": "/chimie/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) \r\n\tde biologie au collégial"
+      },
+      {
+        "url": "/chimie/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) \r\nde chimie au collégial"
+      },
+      {
+        "url": "/chimie/sc_legales.html",
+        "nom": "Spécialiste\r\nen sciences légales"
+      },
+      {
+        "url": "/chimie/../sante/tech_dentaire.htm",
+        "nom": "Technicien(ne)\r\ndentaire"
+      },
+      {
+        "url": "/chimie/../environnement/tech_eaux.htm",
+        "nom": "Technicien(ne)\r\nen assainissement des eaux"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technicien(ne) en biochimie"
+      },
+      {
+        "url": "/chimie/tech_biologie.html",
+        "nom": "Technicien(ne)\r\nen biologie"
+      },
+      {
+        "url": "/chimie/tech_identite.html",
+        "nom": "Technicien(ne) en biologie judiciaire"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technicien(ne) en \r\nbiotechnologies"
+      },
+      {
+        "url": "/chimie/tech_chimie.htm",
+        "nom": "Technicien(ne)\r\nen chimie analytique"
+      },
+      {
+        "url": "/chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen criminalistique"
+      },
+      {
+        "url": "/chimie/../environnement/tech_environnement.htm",
+        "nom": "Technicien(ne) en \r\nenvironnement"
+      },
+      {
+        "url": "/chimie/../environnement/tech_hygiene.htm",
+        "nom": "Technicien(ne)\r\nen hygiène au travail"
+      },
+      {
+        "url": "/chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen identité judiciaire"
+      },
+      {
+        "url": "/chimie/../sante/tech_labo_medical.htm",
+        "nom": "Technicien(ne)\r\nen laboratoire médical"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technicien(ne) en microbiologie"
+      },
+      {
+        "url": "/chimie/../foresterie/tech_papier.htm",
+        "nom": "Technicien(ne)\r\nen papier"
+      },
+      {
+        "url": "/chimie/tech_biologie.html",
+        "nom": "Technicien(ne) en procédés biologiques"
+      },
+      {
+        "url": "/chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen sciences légales"
+      },
+      {
+        "url": "/chimie/../environnement/tech_sterilisation.html",
+        "nom": "Technicien(ne) en stérilisation des dispositifs médicaux"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technicien(ne) en toxicologie"
+      },
+      {
+        "url": "/chimie/../sante/tech_dentaire.htm",
+        "nom": "Technologue \r\ndentaire"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technologue en biochimie"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technologue en biotechnologies"
+      },
+      {
+        "url": "/chimie/../environnement/tech_environnement.htm",
+        "nom": "Technologue en environnement"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technologue en microbiologie"
+      },
+      {
+        "url": "/chimie/tech_genie_chimique.htm",
+        "nom": "Technologue\r\nen génie chimique"
+      },
+      {
+        "url": "/chimie/../environnement/tech_environnement.htm",
+        "nom": "Technologue en génie environnemental"
+      },
+      {
+        "url": "/chimie/../mines/tech_petrole.html",
+        "nom": "Technologue en génie \r\npétrolier et gazier"
+      },
+      {
+        "url": "/chimie/tech_biomasse.htm",
+        "nom": "Technologue en pâtes et papiers"
+      },
+      {
+        "url": "/chimie/techno_pharmaceutique.html",
+        "nom": "Technologue\r\nen production pharmaceutique"
+      },
+      {
+        "url": "/chimie/tech_biochimie.htm",
+        "nom": "Technologue en toxicologie"
+      },
+      {
+        "url": "/chimie/tech_genie_chimique.htm",
+        "nom": "Technologue en procédés \r\n\tindustriels"
+      },
+      {
+        "url": "/chimie/tech_biomasse.htm",
+        "nom": "Technologue en \r\n\ttransformation de la biomasse"
+      },
+      {
+        "url": "/chimie/../agriculture/tech_aliments.htm",
+        "nom": "Technologue en transformation des \r\naliments"
+      },
+      {
+        "url": "/chimie/../mode/tech_textiles.htm",
+        "nom": "Technologue\r\nen transformation des matières textiles"
+      },
+      {
+        "url": "/chimie/../foresterie/tech_foresterie1.htm",
+        "nom": "Technologue\r\nen transformation des produits forestiers"
+      },
+      {
+        "url": "/chimie/biochimiste.htm",
+        "nom": "Toxicologue"
+      }
+    ],
+    "count": 81
+  },
+  "graphique": {
+    "nom": "Communications graphiques, multimédia et imprimerie",
+    "slug": "graphique",
+    "metiers": [
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "métiers semi et non \r\nspécialisés"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Aide en infographie"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Aide opérateur(trice) de \r\n\tmachines d'imprimerie"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Aide relieur(euse)"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Aide sur presse rotative \r\n\td'imprimerie"
+      },
+      {
+        "url": "/graphique/operateur_imprimerie.htm",
+        "nom": "Assistant(e) \r\n\tpressier(ère)"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Assistant(e) \r\n\tproducteur(trice) de films d'animation"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Assistant(e) \r\n\tproducteur(trice) en multimédia"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Assistant(e) \r\n\tréalisateur(trice) de films d'animation"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Assistant(e) \r\n\tréalisateur(trice) en multimédia"
+      },
+      {
+        "url": "/graphique/operateur_imprimerie.htm",
+        "nom": "Assistant(e) \r\n\trelieur(euse)"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Bobineur(euse)"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Concepteur(trice) de \r\n\tdocuments multimédias"
+      },
+      {
+        "url": "/graphique/designer_jeux.html",
+        "nom": "Concepteur(trice) \r\nde jeux vidéo"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Concepteur(trice) de \r\n\tsites web"
+      },
+      {
+        "url": "/graphique/designer_graph.htm",
+        "nom": "Concepteur(trice) \r\ngraphiste"
+      },
+      {
+        "url": "/graphique/tech_imprimerie.htm",
+        "nom": "Conseiller(ère) en imprimerie"
+      },
+      {
+        "url": "/graphique/tech_imprimerie.htm",
+        "nom": "Coordonnateur(trice) de la \r\n\tproduction en imprimerie"
+      },
+      {
+        "url": "/graphique/anal_multimedia.html",
+        "nom": "Coordonnateur(trice) de \r\n\tprojets multimédias"
+      },
+      {
+        "url": "/graphique/designer_graph.htm",
+        "nom": "Designer graphiste"
+      },
+      {
+        "url": "/graphique/designer_ind.htm",
+        "nom": "Designer\r\nindustriel"
+      },
+      {
+        "url": "/graphique/designer_jeux.html",
+        "nom": "Designer de jeux \r\nvidéo"
+      },
+      {
+        "url": "/graphique/tech_imprimerie.htm",
+        "nom": "Estimateur(trice) en imprimerie"
+      },
+      {
+        "url": "/graphique/infographiste.htm",
+        "nom": "Graphiste"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Illustrateur(trice) 3D"
+      },
+      {
+        "url": "/graphique/infographiste.htm",
+        "nom": "Illustrateur(trice) médical"
+      },
+      {
+        "url": "/graphique/infographiste.htm",
+        "nom": "Infographiste"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Intégrateur(trice) Web"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Manœuvre en imprimerie"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Modélisateur(trice) en 3D"
+      },
+      {
+        "url": "/graphique/designer_jeux.html",
+        "nom": "Modeleur(euse) de jeux vidéo"
+      },
+      {
+        "url": "/graphique/../communication/museologue.html",
+        "nom": "Muséologue"
+      },
+      {
+        "url": "/graphique/prep_reprographie.html",
+        "nom": "Opérateur(trice) de duplicateur offset"
+      },
+      {
+        "url": "/graphique/prep_reprographie.html",
+        "nom": "Opérateur(trice) en \r\n\timpression numérique"
+      },
+      {
+        "url": "/graphique/operateur_imprimerie.htm",
+        "nom": "Pressier(ère)"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Producteur(trice) de films \r\n\td'animation"
+      },
+      {
+        "url": "/graphique/anal_multimedia.html",
+        "nom": "Producteur(trice) en multimédia"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Programmeur(euse) en \r\n\tmultimédia"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Producteur(trice) de films \r\n\td'animation"
+      },
+      {
+        "url": "/graphique/anal_multimedia.html",
+        "nom": "Réalisateur(trice) en multimédia"
+      },
+      {
+        "url": "/graphique/operateur_imprimerie.htm",
+        "nom": "Relieur(euse)"
+      },
+      {
+        "url": "/graphique/prep_reprographie.html",
+        "nom": "Reprographe"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Sérigraphiste"
+      },
+      {
+        "url": "/graphique/infographiste.htm",
+        "nom": "Technicien(ne) en arts graphiques"
+      },
+      {
+        "url": "/graphique/tech_design_ind.htm",
+        "nom": "Technicien(ne)\r\nen design industriel"
+      },
+      {
+        "url": "/graphique/tech_imprimerie.htm",
+        "nom": "Technicien(ne)\r\nen imprimerie"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Technicien(ne)\r\nen multimédia"
+      },
+      {
+        "url": "/graphique/../communication/tech_museologie.html",
+        "nom": "Technicien(ne)\r\nen muséologie"
+      },
+      {
+        "url": "/graphique/../communication/tech_tele.htm",
+        "nom": "Technicien(ne)\r\nen post-production audiovisuelle"
+      },
+      {
+        "url": "/graphique/tech_imprimerie.htm",
+        "nom": "Technologue en impression"
+      },
+      {
+        "url": "/graphique/graphique1.html",
+        "nom": "Testeur(euse) de jeux vidéo"
+      },
+      {
+        "url": "/graphique/animateur_3d.html",
+        "nom": "Textureur(euse) en \r\n\tanimation 3D"
+      },
+      {
+        "url": "/graphique/tech_multimedia.htm",
+        "nom": "Webmestre"
+      }
+    ],
+    "count": 53
+  },
+  "enseignement": {
+    "nom": "Éducation, enseignement et services de garde",
+    "slug": "enseignement",
+    "metiers": [
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "métiers non spécialisés en \r\n\tservices éducatifs"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Accompagnement d'élèves \r\nhandicapés"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Agent(e) d'intervention \r\n\tauprès des jeunes"
+      },
+      {
+        "url": "/enseignement/educateur_garderie1.htm",
+        "nom": "Aide-éducateur(trice) à \r\nl'enfance"
+      },
+      {
+        "url": "/enseignement/education.html",
+        "nom": "Aide pédagogique individuel API"
+      },
+      {
+        "url": "/enseignement/../sociaux/cons_orientation.html",
+        "nom": "Conseiller(ère) \r\n\ten information scolaire et professionnelle"
+      },
+      {
+        "url": "/enseignement/../sociaux/cons_orientation.html",
+        "nom": "Conseiller(ère)\r\nen orientation"
+      },
+      {
+        "url": "/enseignement/education.html",
+        "nom": "Conseiller(ère) pédagogique"
+      },
+      {
+        "url": "/enseignement/educateur_garderie.htm",
+        "nom": "Éducateur(trice) à la petite \r\nenfance"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Éducatrice en service \r\n\tde garde en milieu familial"
+      },
+      {
+        "url": "/enseignement/educateur_garderie1.htm",
+        "nom": "Éducateur(trice) en service de garde en milieu \r\nscolaire"
+      },
+      {
+        "url": "/enseignement/educateur_spec.htm",
+        "nom": "Éducateur(trice)\r\nspécialisée"
+      },
+      {
+        "url": "/enseignement/prof_prescol_primaire.htm",
+        "nom": "Enseignant(e)\r\nau préscolaire et au primaire"
+      },
+      {
+        "url": "/enseignement/prof_collegial.html",
+        "nom": "Enseignant(e)\r\nau collégial"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Enseignant(e)\r\nau secondaire"
+      },
+      {
+        "url": "/enseignement/prof_adapt_scol.htm",
+        "nom": "Enseignant(e)\r\nen adaptation scolaire"
+      },
+      {
+        "url": "/enseignement/prof_prescol_primaire.htm",
+        "nom": "enseignant au\r\npréscolaire et primaire"
+      },
+      {
+        "url": "/enseignement/http://www.geocities.com/metiers_quebec1/enseignement/prof_secondaire.html",
+        "nom": "Formateur(trice)\r\nen éducation aux adultes"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "enseignant au secondaire"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Moniteur(trice) en \r\n\téducation"
+      },
+      {
+        "url": "/enseignement/prof_adapt_scol.htm",
+        "nom": "Orthopédagogue"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Préposé(e) aux élèves handicapés"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Préposé(e) d'une halte-garderie"
+      },
+      {
+        "url": "/enseignement/prof_anglais.htm",
+        "nom": "Professeur(e)\r\nd’anglais langue seconde"
+      },
+      {
+        "url": "/enseignement/prof_anglais1.htm",
+        "nom": "Professeur(e) d'anglais langue maternelle"
+      },
+      {
+        "url": "/enseignement/prof_theatre.htm",
+        "nom": "Professeur(e) d'art dramatique"
+      },
+      {
+        "url": "/enseignement/prof_arts.htm",
+        "nom": "Professeur(e) d’arts plastiques"
+      },
+      {
+        "url": "/enseignement/prof_educ.htm",
+        "nom": "Professeur(e) d’éducation physique"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) d'éducation à la \r\n\tcitoyenneté et éthique"
+      },
+      {
+        "url": "/enseignement/prof_langues.htm",
+        "nom": "Professeur(e)\r\nd’une langue étrangère"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) de culture \r\n\tet société québécoise"
+      },
+      {
+        "url": "/enseignement/prof_danse.htm",
+        "nom": "Professeur(e) de danse"
+      },
+      {
+        "url": "/enseignement/prof_francaisLS.htm",
+        "nom": "Professeur(e)\r\nde français langue seconde"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) de français langue maternelle"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) de mathématiques"
+      },
+      {
+        "url": "/enseignement/prof_musique.htm",
+        "nom": "Professeur(e) de musique"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) de sciences humaines"
+      },
+      {
+        "url": "/enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) de sciences ou technologie"
+      },
+      {
+        "url": "/enseignement/prof_arts1.htm",
+        "nom": "Professeur(e) de théâtre"
+      },
+      {
+        "url": "/enseignement/prof_profess.html",
+        "nom": "Professeur(e)\r\nen enseignement professionnel ou technique"
+      },
+      {
+        "url": "/enseignement/prof_universite.html",
+        "nom": "Professeur(e)\r\nd’université"
+      },
+      {
+        "url": "/enseignement/education.html",
+        "nom": "Psychopédagogue"
+      },
+      {
+        "url": "/enseignement/../descriptions/sociaux/sociaux1.htm",
+        "nom": "Responsable d'un service \r\n\tde garde en milieu familial"
+      },
+      {
+        "url": "/enseignement/education.html",
+        "nom": "Spécialiste en sciences de l'éducation"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Surveillant(e)-éducateur(trice) d'élèves"
+      },
+      {
+        "url": "/enseignement/../sociaux/sociaux1.htm",
+        "nom": "Surveillant(e) en centre \r\n\tjeunesse"
+      }
+    ],
+    "count": 46
+  },
+  "electrotechnique": {
+    "nom": "Électrotechnique",
+    "slug": "electrotechnique",
+    "metiers": [
+      {
+        "url": "/electrotechnique/../superieures/et_sup2.html",
+        "nom": "répertoire des maîtrises et doctorats en sciences du génie"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "métiers peu ou non spécialisés"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide-électricien(ne) en \r\nconstruction"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide-électricien(ne) \r\n\td'entretien industriel"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide-électromécanicien(ne)"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide-mécanicien(ne) de \r\n\tpetits moteurs électriques"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide \r\n\tmonteur(euse)-assembleur(euse) de matériel électrique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide monteur(euse) de \r\n\tlignes"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Aide opérateur(trice) \r\n\td'équipements de production"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Assembleur(euse) de composants informatiques"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Assembleur(euse) de \r\n\tmatériel électrique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Assembleur(euse) de matériel électronique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Câbleur(euse) en réseaux structurés"
+      },
+      {
+        "url": "/electrotechnique/../chercheurs/chercheur.htm",
+        "nom": "Chercheur(e) en\r\ngénie"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Conducteur(trice) des \r\n\tinstallations d'une centrale électrique"
+      },
+      {
+        "url": "/electrotechnique/electronicien_bureau.htm",
+        "nom": "Dépanneur(euse) \r\n\td'équipements de bureautique"
+      },
+      {
+        "url": "/electrotechnique/electromecano.htm",
+        "nom": "Électricien(ne) de réseaux électriques"
+      },
+      {
+        "url": "/electrotechnique/electricien.html",
+        "nom": "ÉLECTRICIEN EN BÂTIMENT"
+      },
+      {
+        "url": "/electrotechnique/electromecano.htm",
+        "nom": "Électricien(ne) d’entretien industriel"
+      },
+      {
+        "url": "/electrotechnique/electromecano.htm",
+        "nom": "ÉLECTROMÉCANICIEN(NE) DE SYSTÈMES AUTOMATISÉS"
+      },
+      {
+        "url": "/electrotechnique/electronicien_bureau.htm",
+        "nom": "Électronicien(ne) d’entretien"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Emballeur(euse) de \r\n\tproduits électriques ou électroniques"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/electrotechnique/ing_biomedical.html",
+        "nom": "Ingénieur(e)\r\nbiomédical(e)"
+      },
+      {
+        "url": "/electrotechnique/../aerospatial/ing_aerospatial.htm",
+        "nom": "Ingénieur(e)\r\nen aérospatial"
+      },
+      {
+        "url": "/electrotechnique/ing_logiciel.html",
+        "nom": "Ingénieur(e)\r\nen logiciel"
+      },
+      {
+        "url": "/electrotechnique/ing_automatisation.htm",
+        "nom": "Ingénieur(e) en production \r\n\tautomatisée"
+      },
+      {
+        "url": "/electrotechnique/ing_electricien.htm",
+        "nom": "Ingénieur(e) électricien(ne)"
+      },
+      {
+        "url": "/electrotechnique/ing_informaticien.htm",
+        "nom": "Ingénieur(e)-informaticien(ne)"
+      },
+      {
+        "url": "/electrotechnique/../physique/ing_physicien.htm",
+        "nom": "Ingénieur(e)-physicien(ne)"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Journalier(ère) ou manœuvre \r\n\ten industrie du matériel électrique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Journalier(ère) ou manœuvre \r\n\ten industrie du matériel électronique ou informatique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Magasinier(ère) d'usine"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Manœuvre\r\nau démantèlement de systèmes ordinés (informatiques)"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Manutentionnaire \r\n\td'usine ou d'entrepôt"
+      },
+      {
+        "url": "/electrotechnique/../aerospatial/monteur_cables_aero.htm",
+        "nom": "Monteur(euse) de câbles et circuits électriques"
+      },
+      {
+        "url": "/electrotechnique/../aerospatial/monteur_cables_aero.htm",
+        "nom": "Monteur(euse) de câbles et circuits électroniques"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Opérateur(trice) de \r\n\tmachines à emballer"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Opérateur(trice) de \r\n\ttélésouffleur"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Peintre d'appareillage \r\n\télectrique ou électronique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Préposé(e) à l’entretien des\r\néquipements de plateau de tournage"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Préposé(e) aux appareils de \r\n\tcomptage électrique"
+      },
+      {
+        "url": "/electrotechnique/electrotechnique1.html",
+        "nom": "Préposé(e) aux réseaux non \r\n\treliés"
+      },
+      {
+        "url": "/electrotechnique/ing_automatisation.htm",
+        "nom": "Robotique, ingénieur \r\n\ten"
+      },
+      {
+        "url": "/electrotechnique/tech_ordinique.htm",
+        "nom": "Robotique, technologue en"
+      },
+      {
+        "url": "/electrotechnique/electronicien_bureau.htm",
+        "nom": "Technicien(ne)\r\nd’équipements de bureautique"
+      },
+      {
+        "url": "/electrotechnique/../aerospatial/tech_avionique.htm",
+        "nom": "TECHNOLOGUE EN AVIONIQUE"
+      },
+      {
+        "url": "/electrotechnique/tech_electro_ind.htm",
+        "nom": "Technologue en électrodynamique"
+      },
+      {
+        "url": "/electrotechnique/tech_electronique.html",
+        "nom": "TECHNOLOGUE EN ÉLECTRONIQUE"
+      },
+      {
+        "url": "/electrotechnique/tech_electro_ind.htm",
+        "nom": "Technologue en électronique industrielle"
+      },
+      {
+        "url": "/electrotechnique/tech_biomedical.html",
+        "nom": "Technologue\r\nen génie biomédical"
+      },
+      {
+        "url": "/electrotechnique/tech_ordinique.htm",
+        "nom": "Technologue en génie informatique"
+      },
+      {
+        "url": "/electrotechnique/tech_electro_ind.htm",
+        "nom": "Technologue en instrumentation, automatisation et robotique"
+      },
+      {
+        "url": "/electrotechnique/../fabric_mec/techno_maritime.html",
+        "nom": "Technologue\r\nen instrumentation maritime"
+      },
+      {
+        "url": "/electrotechnique/../physique/tech_physique.htm",
+        "nom": "echnologue \r\nen physique (ou génie physique)"
+      },
+      {
+        "url": "/electrotechnique/tech_ordinique.htm",
+        "nom": "Technologue en systèmes ordinés"
+      },
+      {
+        "url": "/electrotechnique/tech_electronique.html",
+        "nom": "Technologue en \r\ntélécommunications"
+      }
+    ],
+    "count": 57
+  },
+  "motorises": {
+    "nom": "Entretien d'équipements motorisés",
+    "slug": "motorises",
+    "metiers": [
+      {
+        "url": "/motorises/mecanicien_bateaux.html",
+        "nom": "Adjoint(e) à la salle des machines"
+      },
+      {
+        "url": "/motorises/agent_auto.htm",
+        "nom": "Agent(e)\r\ndu service à la clientèle"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Aide de garage"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Aide-carrossier(ère)"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Aide-mécanicien(ne) d'automobiles"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Aide-mécanicien(ne) d'équipements \r\n\tlourds"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Aide-mécanicien(ne) de véhicules \r\n\tlourds"
+      },
+      {
+        "url": "/motorises/agent_auto.htm",
+        "nom": "Aviseur(e) technique"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Chasseur(euse)"
+      },
+      {
+        "url": "/motorises/vendeur_mecanique.htm",
+        "nom": "Commis aux pièces"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Commis au service"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Conducteur(trice) d'une \r\n\tdépanneuse"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Démarreur(euse)-gareur(euse) de \r\n\tvéhicules"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Démonteur(euse) de véhicules"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Homme de cour"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Laveur(euse) de véhicules"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Livreur(euse) de pièces"
+      },
+      {
+        "url": "/motorises/mecanicien_auto.htm",
+        "nom": "Mécanicien(ne)\r\nd’automobiles"
+      },
+      {
+        "url": "/motorises/mecanicien_bateaux.html",
+        "nom": "Mécanicien(ne) d'embarcations \r\nnautiques"
+      },
+      {
+        "url": "/motorises/mecanicien_agricole.html",
+        "nom": "Mécanicien(ne)\r\nde machines agricoles"
+      },
+      {
+        "url": "/motorises/mecanicien_machineries.htm",
+        "nom": "Mécanicien(ne)\r\nde machineries lourdes"
+      },
+      {
+        "url": "/motorises/../transport/mecanicien_marine.htm",
+        "nom": "Mécanicien(ne) de navire"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Mécanicien(ne) de remorques de camions"
+      },
+      {
+        "url": "/motorises/mecanicien_legers.htm",
+        "nom": "Mécanicien(ne)\r\nde véhicules légers"
+      },
+      {
+        "url": "/motorises/mecanicien_camions.htm",
+        "nom": "Mécanicien(ne)\r\nde véhicules lourds"
+      },
+      {
+        "url": "/motorises/../mecanique_entr/tech_sports.html",
+        "nom": "Mécanicien(ne) \r\n\tde vélos"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Polisseur(euse)-ponceur(euse) de \r\n\tvéhicules"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Poseur(euse) de silencieux"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Préposé(e) à la cour"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Préposé(e) à l'entretien des voies \r\n\tferrées"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Préposé(e) à l’entretien et au service de\r\nvéhicules légers et/ou de loisirs"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Préposé(e) au service"
+      },
+      {
+        "url": "/motorises/prep_service.html",
+        "nom": "Préposé(e) aux pneus"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Receveur(euse)-expéditeur(trice)"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Remonteur(euse) de pièces de \r\n\tvéhicules"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Réparateur(trice) de wagons"
+      },
+      {
+        "url": "/motorises/../aerospatial/tech_aeronefs.htm",
+        "nom": "Technicien(ne)\r\nen entretien d’aéronefs"
+      },
+      {
+        "url": "/motorises/esthetique_auto.html",
+        "nom": "Technicien(ne)\r\nen esthétique automobile"
+      },
+      {
+        "url": "/motorises/motorises1.html",
+        "nom": "Vendeur(euse) de pneus et de roues"
+      }
+    ],
+    "count": 39
+  },
+  "foresterie": {
+    "nom": "Foresterie et papier",
+    "slug": "foresterie",
+    "metiers": [
+      {
+        "url": "/foresterie/../foresterie/foresterie1.html",
+        "nom": "métiers peu ou non spécialisé"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide en affûtage"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide emballeur(euse)"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide opérateur(trice) au blanchiment du papier"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide opérateur(trice) de machines en industrie de transformation"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide opérateur(trice) de machines en industrie papetière"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Aide sylvicole"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/chercheurs/chercheur.htm",
+        "nom": "Chercheur(e) en sciences forestières"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/agriculture/arboriculteur.htm",
+        "nom": "Élagueur(euse) ou Émondeur(euse)"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Expéditeur(trice)-receveur(euse) en industrie de transformation"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Expéditeur(trice)-receveur(euse) en industrie papetière"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/chimie/ing_chimiste.htm",
+        "nom": "Ingénieur chimiste"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/ing_bois.html",
+        "nom": "Ingénieur(e) du bois"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Journalier(ère) ou manœuvre en industrie de transformation"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Expéditeur(trice)-receveur(euse) en industrie papetière"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Manœuvre de scierie"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Manœuvre en exploitation forestière"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Manœuvre en voirie forestière"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Manœuvre en pâtes et papiers"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Manutentionnaire d'usine ou d'entrepôt"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Opérateur(trice) de machines à emballer"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/foresterie1.html",
+        "nom": "Opérateur(trice) de pont roulant"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/sylviculteur.htm",
+        "nom": "Ouvrier(ère) sylvicole"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/tech_foresterie.htm",
+        "nom": "Technicien(ne) en aménagement du patrimoine naturel"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/chimie/tech_biomasse.htm",
+        "nom": "Technologue en pâtes et papiers"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/chimie/tech_biomasse.htm",
+        "nom": "Technologue en transformation de la biomasse"
+      },
+      {
+        "url": "/foresterie/https://www.metiers-quebec.org/foresterie/tech_foresterie1.htm",
+        "nom": "Technologue en transformation des produits forestiers"
+      }
+    ],
+    "count": 27
+  },
+  "metallurgie": {
+    "nom": "Métallurgie",
+    "slug": "metallurgie",
+    "metiers": [
+      {
+        "url": "/metallurgie/../superieures/et_sup2.html",
+        "nom": "répertoire des maîtrises et doctorats en sciences du génie"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide assembleur(euse) de pièces \r\n\tou composantes métalliques"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide-ferblantier(ère) en \r\n\tconstruction"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide-ferblantier(ère) en usine"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide opérateur(trice) de machines \r\n\tà fabriquer les métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide opérateur(trice) de machines \r\n\tà transformer ou traiter les métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide opérateur(trice) de presses \r\n\tà estamper les métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide polisseur(euse) de métal"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Aide-soudeur(euse)"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Assistant(e) \r\n\tpeintre industriel"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Assembleur(euse) d'éléments de \r\n\tmétaux architecturaux"
+      },
+      {
+        "url": "/metallurgie/tolier.htm",
+        "nom": "Assembleur(euse)-tôlier(ère)"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Conducteur(trice) de four à \r\n\tfusion"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Conducteur(trice) de presse à \r\n\tforger"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Ébavureur(euse)-meuleur(euse)"
+      },
+      {
+        "url": "/metallurgie/etallurgie1.htm",
+        "nom": "Emballeur(euse) de produits"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Expéditeur(trice)-receveur(euse)"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Finisseur(euse) de pièces métalliques"
+      },
+      {
+        "url": "/metallurgie/galvaniseur.html",
+        "nom": "Galvaniseur(euse)"
+      },
+      {
+        "url": "/metallurgie/ing_metallurgiste.html",
+        "nom": "Ingénieur(e)\r\nen métallurgie"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Magasinier(ère) d'usine"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Manœuvre en fonderie artisanale"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Manœuvre en industrie de \r\n\tfabrication de produits métalliques"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Manœuvre en industrie de \r\n\ttransformation des métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Manutentionnaire d'usine ou \r\n\td'entrepôt"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Meuleur(euse)-ébavureur(euse)"
+      },
+      {
+        "url": "/metallurgie/../fabric_mec/oper_mach_ind.htm",
+        "nom": "Opérateur(trice) d'équipements de production en pliage de métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Opérateur(trice) de machines à \r\n\temballer"
+      },
+      {
+        "url": "/metallurgie/ferblantier.htm",
+        "nom": "Opérateur(trice) de machines \r\n\tà fabriquer les métaux en feuille"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Opérateur(trice) de machines \r\n\tà traiter ou fondre les métaux"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Opérateur(trice) de soudeuse \r\n\tsemi-automatique"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Opérateur(trice) en \r\n\ttraitement thermique des métaux"
+      },
+      {
+        "url": "/metallurgie/peintre_ind.html",
+        "nom": "Peintre-enduiseur(euse) industriel"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Préparateur(trice) de matériaux métalliques"
+      },
+      {
+        "url": "/metallurgie/metallurgie1.htm",
+        "nom": "Régleur(euse)-opérateur(trice) de \r\n\tpresses plieuses en tôlerie de précision"
+      },
+      {
+        "url": "/metallurgie/tolier.htm",
+        "nom": "Riveteur(euse)"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e)"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e)-assembleur(euse)"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) d'entretien"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) d'outils et matrices"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) de distribution"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) de lignes"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) de machineries lourdes"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) de pipeline"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) en chaudronnerie"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) en tuyauterie"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e) industriel"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e)-machiniste"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur(e)-mécanicien(ne)"
+      },
+      {
+        "url": "/metallurgie/soudeur.htm",
+        "nom": "Soudeur-monteur\r\nou soudeure-monteuse"
+      },
+      {
+        "url": "/metallurgie/../armee/armee1.htm",
+        "nom": "Technicien(ne) de coque \r\n\tde navire"
+      },
+      {
+        "url": "/metallurgie/../armee/armee1.htm",
+        "nom": "Technicien(ne) en matériaux"
+      },
+      {
+        "url": "/metallurgie/../armee/armee1.htm",
+        "nom": "Technicien(ne) en structures \r\n\td'aéronefs"
+      },
+      {
+        "url": "/metallurgie/tech_metallurgie.htm",
+        "nom": "Technologue\r\nen génie métallurgique"
+      }
+    ],
+    "count": 54
+  },
+  "mode": {
+    "nom": "Mode et production textile",
+    "slug": "mode",
+    "metiers": [
+      {
+        "url": "/mode/../../portraits/culturel.html",
+        "nom": "Portrait de l'industrie culturelle au Québec"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "métiers \r\nnon spécialisés"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Acheteur(euse) de vêtements"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Aide à toutes mains"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Artisan(ne) du cuir"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Artisan(ne) en arts textiles"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Assembleur(euse)-monteur(euse) \r\n\td'auvents et d'abris"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Assistant(e) acheteur(euse) de \r\n\tvêtements"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Assistant(e) costumier(ère)"
+      },
+      {
+        "url": "/mode/patroniste.htm",
+        "nom": "Assistant(e) designer"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Assistant(e) habilleur(euse)"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Assistant(e) styliste"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Buandier(ère)"
+      },
+      {
+        "url": "/mode/../../arts/scenographe.htm",
+        "nom": "Concepteur(trice) de costumes"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Conducteur(trice) d'une machine à \r\n\tbroder"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Consultant(e) en \r\n\ttendances mode"
+      },
+      {
+        "url": "/mode/tech_vetements.htm",
+        "nom": "Contrôleur(euse) de la \r\n\tqualité en production de vêtements"
+      },
+      {
+        "url": "/mode/designer_mode.htm",
+        "nom": "Costumier(ère)"
+      },
+      {
+        "url": "/mode/designer_mode.htm",
+        "nom": "Designer\r\nde mode"
+      },
+      {
+        "url": "/mode/oper_textile.html",
+        "nom": "Finisseur(euse) de produits \r\n\ttextiles"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Gérant(e) d'un commerce \r\n\tde vêtements"
+      },
+      {
+        "url": "/mode/gest_mode.html",
+        "nom": "Gestionnaire d'une \r\n\tentreprise de la mode"
+      },
+      {
+        "url": "/mode/gest_mode.html",
+        "nom": "Gestionnaire des \r\n\tapprovisionnements et de la production de vêtements"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Habilleur(euse)"
+      },
+      {
+        "url": "/mode/../../beaute/mannequin.html",
+        "nom": "Mannequin"
+      },
+      {
+        "url": "/mode/designer_mode.htm",
+        "nom": "Modéliste"
+      },
+      {
+        "url": "/mode/tailleur.htm",
+        "nom": "Modiste"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Opérateur(trice) de machines à \r\n\tcoudre industrielles"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Opérateur(trice) de machines à \r\n\ttransformer les matières textiles"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Ouvrier(ère) en fabrication de \r\n\tchaussures"
+      },
+      {
+        "url": "/mode/patroniste.htm",
+        "nom": "Patroniste"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Préposé(e) à l'entretien des \r\n\tcostumes"
+      },
+      {
+        "url": "/mode/../../bois/rembourreur.htm",
+        "nom": "Rembourreur(euse) artisanal"
+      },
+      {
+        "url": "/mode/../../bois/rembourreur.htm",
+        "nom": "Rembourreur(euse) industriel"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Représentant(e)\r\nen mode"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Sellier(ère)"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Styliste"
+      },
+      {
+        "url": "/mode/conseiller_mode.htm",
+        "nom": "Technicien(ne) en mise en \r\n\tmarché de vêtements"
+      },
+      {
+        "url": "/mode/tech_vetements.htm",
+        "nom": "Technicien(ne)\r\nen production de vêtements"
+      },
+      {
+        "url": "/mode/tech_textiles.htm",
+        "nom": "Technologue\r\nen matières textiles"
+      },
+      {
+        "url": "/mode/tech_textiles.htm",
+        "nom": "Technologue\r\nen production textile"
+      },
+      {
+        "url": "/mode/mode1.html",
+        "nom": "Teinturier(ère)-dégraisseur(euse)"
+      },
+      {
+        "url": "/mode/tisserand.html",
+        "nom": "Tisserand(e)"
+      },
+      {
+        "url": "/mode/oper_textile.html",
+        "nom": "Tricoteur(euse)"
+      }
+    ],
+    "count": 44
+  },
+  "protection": {
+    "nom": "Protection publique",
+    "slug": "protection",
+    "metiers": [
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Métiers non spécialisés en \r\n\tprotection publique"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Agent(e) \r\nde contrôle pré-embarquement"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Agent(e) de \r\n\tprotection rapprochée"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Agent(e) de \r\n\tsécurité immobilière"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Agent(e) \r\n\tde sécurité industrielle"
+      },
+      {
+        "url": "/protection/agent_correction.html",
+        "nom": "Agent(e)\r\ndes services correctionnels"
+      },
+      {
+        "url": "/protection/douanier.html",
+        "nom": "Agent(e)\r\ndes services frontaliers"
+      },
+      {
+        "url": "/protection/detective.html",
+        "nom": "Agent(e) de soutien aux \r\n\tenquêtes"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Agent(e) de soutien aux \r\n\topérations policières"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Agent(e) \r\n\tde sûreté aéroportuaire"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Agent(e) \r\n\tde sûreté portuaire"
+      },
+      {
+        "url": "/protection/agent_renseignement.html",
+        "nom": "Agent(e) du renseignement"
+      },
+      {
+        "url": "/protection/../chimie/chimie1.html",
+        "nom": "Aide technique ou \r\n\tpréposé(e) à l'identitié judiciaire"
+      },
+      {
+        "url": "/protection/ambulancier.htm",
+        "nom": "AMBULANCIER(ÈRE) PARAMÉDIC"
+      },
+      {
+        "url": "/protection/policier.htm",
+        "nom": "Constable spécial à la sécurité"
+      },
+      {
+        "url": "/protection/cons_securite.html",
+        "nom": "Consultant(e)\r\nen sécurité"
+      },
+      {
+        "url": "/protection/../sociaux/avocat.htm",
+        "nom": "avocat"
+      },
+      {
+        "url": "/protection/../sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Détective \r\n\tde magasin"
+      },
+      {
+        "url": "/protection/detective.html",
+        "nom": "Enquêteur(e) gouvernemental"
+      },
+      {
+        "url": "/protection/detective.html",
+        "nom": "Enquêteur(e)\r\nprivée"
+      },
+      {
+        "url": "/protection/../chimie/sc_legales.html",
+        "nom": "Expert(e)\r\nen criminalistique"
+      },
+      {
+        "url": "/protection/cons_securite.html",
+        "nom": "Expert(e) en \r\n\tcybercriminalité"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Garde en \r\n\tétablissement psychiatrique"
+      },
+      {
+        "url": "/protection/securite.htm",
+        "nom": "Garde du \r\n\tcorps-chauffeur(euse)"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Gardien(ne) de chantier de construction"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Gardien(ne) de sécurité"
+      },
+      {
+        "url": "/protection/douanier.html",
+        "nom": "Inspecteur(trice)\r\ndes douanes"
+      },
+      {
+        "url": "/protection/../armee/armee1.htm",
+        "nom": "Officier de police \r\n\tmilitaire"
+      },
+      {
+        "url": "/protection/../armee/armee2.htm",
+        "nom": "Officier du renseignement \r\n\tmilitaire"
+      },
+      {
+        "url": "/protection/policier.htm",
+        "nom": "POLICIER(ÈRE)"
+      },
+      {
+        "url": "/protection/../armee/armee1.htm",
+        "nom": "Policier(ère) militaire"
+      },
+      {
+        "url": "/protection/pompier.htm",
+        "nom": "Pompier(ère)"
+      },
+      {
+        "url": "/protection/../armee/armee1.htm",
+        "nom": "Pompier(ère) d'aéroport"
+      },
+      {
+        "url": "/protection/protection1.htm",
+        "nom": "Premier(ère) répondant(e)"
+      },
+      {
+        "url": "/protection/preventionniste.html",
+        "nom": "Préventionniste\r\nen sécurité incendie"
+      },
+      {
+        "url": "/protection/../sociaux/avocat.htm",
+        "nom": "Procureur(e)"
+      },
+      {
+        "url": "/protection/repartiteur_urgences.html",
+        "nom": "Répartiteur(trice)\r\ndes urgences"
+      },
+      {
+        "url": "/protection/repartiteur_urgences.html",
+        "nom": "Répondant(e) médical(e) \r\n\td'urgence"
+      },
+      {
+        "url": "/protection/../armee/armee1.htm",
+        "nom": "Spécialiste en \r\n\trenseignement militaire"
+      },
+      {
+        "url": "/protection/../chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen criminalistique"
+      },
+      {
+        "url": "/protection/../chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen identité judiciaire"
+      },
+      {
+        "url": "/protection/../armee/armee1.htm",
+        "nom": "Technicien(ne) médical"
+      }
+    ],
+    "count": 43
+  },
+  "restau_tourisme": {
+    "nom": "Restauration, hôtellerie et tourisme",
+    "slug": "restau_tourisme",
+    "metiers": [
+      {
+        "url": "/restau_tourisme/../portraits/restau_tourisme1.htm",
+        "nom": "Portrait de l'industrie de l'hôtellerie et de la restauraiton"
+      },
+      {
+        "url": "/restau_tourisme/../portraits/restau_tourisme2.htm",
+        "nom": "Portrait de l'industrie du tourisme"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "métiers non spécialisés en hôtellerie et restauration"
+      },
+      {
+        "url": "/restau_tourisme/tourisme.html",
+        "nom": "métiers non spécialisés en tourisme"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Agent d'informations touristiques"
+      },
+      {
+        "url": "/restau_tourisme/agent_bord.html",
+        "nom": "Agent(e) de bord ou commissaire de \r\nbord"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Agent(e) de commercialisation touristique"
+      },
+      {
+        "url": "/restau_tourisme/../nature/agent_eco-tour.html",
+        "nom": "Agent(e) de développement éco-touristique"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Agent(e) de développement touristique"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Agent(e) de promotion touristique"
+      },
+      {
+        "url": "/restau_tourisme/agent_voyages.htm",
+        "nom": "Agent(e) de voyages"
+      },
+      {
+        "url": "/restau_tourisme/tech_hotellerie.htm",
+        "nom": "Agent(e) du service à la clientèle hôtelière"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Agent(e) du service à la clientèle touristique"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-boucher(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-boulanger(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-cuisinier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-fromager(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide général de cuisine"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-pâtissier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Aide-traiteur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/../arts/anim_culturel.html",
+        "nom": "Animateur(trice) culturel"
+      },
+      {
+        "url": "/restau_tourisme/../nature/tech_faune.htm",
+        "nom": "Animateur(trice) en sciences naturelles"
+      },
+      {
+        "url": "/restau_tourisme/../humaines/tech_loisirs.htm",
+        "nom": "Animateur(trice) sportif"
+      },
+      {
+        "url": "/restau_tourisme/mixologue.htm",
+        "nom": "Barman ou barmaid"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Buffetier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Chasseur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Cocher(ère) professionnel(le)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Commis-débarrasseur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Commis ou préposé(e) de cafétéria"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Commis de cuisine"
+      },
+      {
+        "url": "/restau_tourisme/concierge_hotel.html",
+        "nom": "Concierge d’hôtel ou \r\nd'entreprise"
+      },
+      {
+        "url": "/restau_tourisme/agent_voyages.htm",
+        "nom": "Conseiller(ère) en voyages"
+      },
+      {
+        "url": "/restau_tourisme/../humaines/recreologue.html",
+        "nom": "Consultant(e) en loisirs"
+      },
+      {
+        "url": "/restau_tourisme/tech_restauration.htm",
+        "nom": "Coordonnateur(trice) de banquets ou réceptions"
+      },
+      {
+        "url": "/restau_tourisme/cuisinier.htm",
+        "nom": "Cuisinier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Cuisinier(ère) de navire"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Équipier(ère) de banquet"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Équipier(ère) en hôtellerie"
+      },
+      {
+        "url": "/restau_tourisme/agent_voyages.htm",
+        "nom": "Forfaitiste"
+      },
+      {
+        "url": "/restau_tourisme/../agriculture/agriculture3.html",
+        "nom": "Fromager(ère)"
+      },
+      {
+        "url": "/restau_tourisme/tech_hotellerie.htm",
+        "nom": "Gérant(e) d'hôtel"
+      },
+      {
+        "url": "/restau_tourisme/tech_restauration.htm",
+        "nom": "Gérant(e) de restaurant"
+      },
+      {
+        "url": "/restau_tourisme/gest_tour-hotel.html",
+        "nom": "Gestionnaire en tourisme"
+      },
+      {
+        "url": "/restau_tourisme/../nature/agent_eco-tour.html",
+        "nom": "Gestionnaire en tourisme d'aventure"
+      },
+      {
+        "url": "/restau_tourisme/estauration.html",
+        "nom": "Goûteur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Guide-accompagnateur de voyages"
+      },
+      {
+        "url": "/restau_tourisme/../nature/naturelle.html",
+        "nom": "Guide de chasse et pêche"
+      },
+      {
+        "url": "/restau_tourisme/../communication/tech_museologie.html",
+        "nom": "Guide de musée"
+      },
+      {
+        "url": "/restau_tourisme/../nature/tech_faune.htm",
+        "nom": "Guide-interprète de la nature"
+      },
+      {
+        "url": "/restau_tourisme/../nature/naturelle.html",
+        "nom": "Guide en tourisme d'aventure"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Guide touristique"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Hôte de restaurant"
+      },
+      {
+        "url": "/restau_tourisme/../nature/int_aventure.html",
+        "nom": "Intervenant(e) en plein air d'aventure"
+      },
+      {
+        "url": "/restau_tourisme/mixologue.htm",
+        "nom": "Mixologue"
+      },
+      {
+        "url": "/restau_tourisme/../communication/museologue.html",
+        "nom": "Muséologue"
+      },
+      {
+        "url": "/restau_tourisme/patissier.htm",
+        "nom": "Pâtissier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/tech_hotellerie.htm",
+        "nom": "Planificateur(trice) \r\n\td'événements et congrès"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Plomgeur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/poissonnier.html",
+        "nom": "Poissonnier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Portier(ère)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) à l'hébergement"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) au bar"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) au club santé"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) au service aux \r\n\tchambres"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) au service aux tables"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) aux minibars"
+      },
+      {
+        "url": "/restau_tourisme/prep_recreotourisme.html",
+        "nom": "Préposé(e) aux opérations d'un site \r\n\trécréotouristique"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Préposé(e) à l'accueil et aux \r\n\trenseignements touristiques"
+      },
+      {
+        "url": "/restau_tourisme/receptionniste_hotel.htm",
+        "nom": "Préposé(e) aux \r\n\tréservations"
+      },
+      {
+        "url": "/restau_tourisme/receptionniste_hotel.htm",
+        "nom": "Réceptionniste d'hôtel"
+      },
+      {
+        "url": "/restau_tourisme/../humaines/recreologue.html",
+        "nom": "Récréologue"
+      },
+      {
+        "url": "/restau_tourisme/agent_voyages.htm",
+        "nom": "Représentant(e) en voyages"
+      },
+      {
+        "url": "/restau_tourisme/receptionniste_hotel.htm",
+        "nom": "Réservationnsite"
+      },
+      {
+        "url": "/restau_tourisme/serveur.htm",
+        "nom": "Serveur"
+      },
+      {
+        "url": "/restau_tourisme/sommelier.html",
+        "nom": "Sommelier"
+      },
+      {
+        "url": "/restau_tourisme/serveur.htm",
+        "nom": "Steward"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Styliste culinaire"
+      },
+      {
+        "url": "/restau_tourisme/tech_restauration.htm",
+        "nom": "Technicien(ne) en gestion de la restauration"
+      },
+      {
+        "url": "/restau_tourisme/tech_hotellerie.htm",
+        "nom": "Technicien(ne) en gestion hôtelière"
+      },
+      {
+        "url": "/restau_tourisme/../humaines/tech_loisirs.htm",
+        "nom": "Technicien(ne) en loisirs"
+      },
+      {
+        "url": "/restau_tourisme/../communication/tech_museologie.html",
+        "nom": "Technicien(ne)\r\nen muséologie"
+      },
+      {
+        "url": "/restau_tourisme/tech_tourisme.htm",
+        "nom": "Technicien(ne)\r\nen tourisme"
+      },
+      {
+        "url": "/restau_tourisme/../nature/int_aventure.html",
+        "nom": "Technicien(ne)\r\nen tourisme d’aventure"
+      },
+      {
+        "url": "/restau_tourisme/tech_restauration.htm",
+        "nom": "Traiteur(euse)"
+      },
+      {
+        "url": "/restau_tourisme/restauration.html",
+        "nom": "Valet parking ou voiturier(ère)"
+      }
+    ],
+    "count": 85
+  },
+  "sante": {
+    "nom": "Santé",
+    "slug": "sante",
+    "metiers": [
+      {
+        "url": "/sante/../portraits/chimie4.html",
+        "nom": "Portrait de l'industrie biotechnologique"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "métiers \r\nnon spécialisés en santé"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "sciences médicales"
+      },
+      {
+        "url": "/sante/acupuncteur.htm",
+        "nom": "Acupuncteur(trice)"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Agent(e) de soutien administratif \r\n\tdans le réseau de la santé"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Agent(e)\r\nd’éducation socio-sanitaire"
+      },
+      {
+        "url": "/sante/../sociaux/aide_familial.html",
+        "nom": "Aide aux soins à domicile"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Aide-chiropraticien(ne)"
+      },
+      {
+        "url": "/sante/ass_optometrie.htm",
+        "nom": "Aide-optométriste"
+      },
+      {
+        "url": "/sante/tech_readaptation.htm",
+        "nom": "Aide-physiothérapeute"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Aide-podiatre"
+      },
+      {
+        "url": "/sante/infirmier_auxiliaire.htm",
+        "nom": "Aide-infirmier(ère)"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "Aide-soignant(e)"
+      },
+      {
+        "url": "/sante/../nature/animalier.html",
+        "nom": "Assistant(e) \r\n\ttechnicien(ne) en santé animale"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) technique en laboratoire \r\n\tclinique"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Anatomiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/../nature/animalier.html",
+        "nom": "Animalier(ère)"
+      },
+      {
+        "url": "/sante/../humaines/anthropologue.html",
+        "nom": "Anthropobiologiste"
+      },
+      {
+        "url": "/sante/../humaines/anthropologue.html",
+        "nom": "Anthropologue judiciaire"
+      },
+      {
+        "url": "/sante/archiviste_med.htm",
+        "nom": "Archiviste\r\nmédical(e)"
+      },
+      {
+        "url": "/sante/../arts/therapeute_art.html",
+        "nom": "Art-Thérapeute"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) administratif en \r\n\trecherche médicale"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "Préposé aux bénéficiaires"
+      },
+      {
+        "url": "/sante/ass_dentaire.htm",
+        "nom": "Assistant(e)\r\ndentaire"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Assistant(e) de recherche médicale"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) clinique en chiropratique"
+      },
+      {
+        "url": "/sante/tech_readaptation.htm",
+        "nom": "technicien en \r\nréadaptation physique"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) clinique en \r\nophtalmologie"
+      },
+      {
+        "url": "/sante/ass_optometrie.htm",
+        "nom": "Assistant(e) clinique en optométrie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) clinique en podiatrie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) en réadaptation"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Assistant(e)\r\npathologiste"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Assistant(e)\r\npathologiste médico-légal"
+      },
+      {
+        "url": "/sante/../humaines/humaines1.htm",
+        "nom": "Assistant(e) surveillant(e)-sauveteur(euse)"
+      },
+      {
+        "url": "/sante/ass_dentaire.htm",
+        "nom": "Assistant(e)\r\ntechnique en chirurgie buccale"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) technique en laboratoire de radiologie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) technique en laboratoire médical"
+      },
+      {
+        "url": "/sante/ass_dentaire.htm",
+        "nom": "Assistant(e) technique en médecine dentaire"
+      },
+      {
+        "url": "/sante/ass_tech_pharmacie.htm",
+        "nom": "Assistant(e)\r\ntechnique en pharmacie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Assistant(e) technique en radiologie"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "Assistant(e) technique en soins de santé"
+      },
+      {
+        "url": "/sante/../humaines/tech_loisirs.htm",
+        "nom": "Assistant(e) thérapeute en loisirs"
+      },
+      {
+        "url": "/sante/tech_sante_animale.htm",
+        "nom": "Assistant(e) vétérinaire"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Attaché(e) de recherche médicale"
+      },
+      {
+        "url": "/sante/audiologiste.htm",
+        "nom": "Audiologiste"
+      },
+      {
+        "url": "/sante/audioprothesiste.htm",
+        "nom": "Audioprothésiste"
+      },
+      {
+        "url": "/sante/../sociaux/aide_familial.html",
+        "nom": "Auxiliaire\r\nà domicile"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Auxiliaire aux soins\r\nd’enfants handicapés"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "préposé aux \r\nbénéficiaires"
+      },
+      {
+        "url": "/sante/../nature/animalier.html",
+        "nom": "Auxiliaire de \r\n\tclinique vétérinaire"
+      },
+      {
+        "url": "/sante/../chimie/microbio.htm",
+        "nom": "Bactériologiste"
+      },
+      {
+        "url": "/sante/../chimie/biochimiste.htm",
+        "nom": "Biochimiste clinicien(ne)"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/bioinfo.html",
+        "nom": "BIOINFORMATICIEN(NE)"
+      },
+      {
+        "url": "/sante/../chimie/sc_legales.html",
+        "nom": "Biologiste judiciaire"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Biologiste médical"
+      },
+      {
+        "url": "/sante/../physique/biophysicien.html",
+        "nom": "Biophysicien(ne)"
+      },
+      {
+        "url": "/sante/../chimie/biotechno.html",
+        "nom": "Biotechnologiste"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Brancardier(ère)"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Chargé(e) clinique de \r\n\tsécurité transfusionnelle"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Chargé(e) technique de \r\n\tsécurité transfusionnelle"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Chercheur(e)\r\nen sciences médicales"
+      },
+      {
+        "url": "/sante/chiropraticien.htm",
+        "nom": "Chiropraticien"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "vétérinaire"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "vétérinaire"
+      },
+      {
+        "url": "/sante/../sociaux/psychologue.htm",
+        "nom": "psychologue clinicien"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Commis\r\nd’unité de soins"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Commis de pharmacie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Commis de soutien administratif \r\n\tdans le réseau de la santé"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Conseiller(ère) en adaptation au travail"
+      },
+      {
+        "url": "/sante/dietetiste.htm",
+        "nom": "Conseiller(ère) en alimentation et nutrition"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Conseiller(ère) en génétique"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Conseiller(ère) en prévention de la santé au \r\ntravail"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Conseiller(ère) en promotion de la santé"
+      },
+      {
+        "url": "/sante/kinesiologue.htm",
+        "nom": "kinésiologue"
+      },
+      {
+        "url": "/sante/audiologiste.htm",
+        "nom": "Consultant(e) en réadaptation auditive"
+      },
+      {
+        "url": "/sante/kinesiologiste.htm",
+        "nom": "Consultant(e) en réadaptation physique"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Consultant(e) en santé publique"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Cytologiste"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "Dentiste"
+      },
+      {
+        "url": "/sante/denturologiste.htm",
+        "nom": "Denturologiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/dietetiste.htm",
+        "nom": "Diététiste"
+      },
+      {
+        "url": "/sante/tech_dietetique.htm",
+        "nom": "Diétothérapeute"
+      },
+      {
+        "url": "/sante/../nature/educateur_canin.html",
+        "nom": "Éducateur(trice) canin"
+      },
+      {
+        "url": "/sante/../nature/entraineur_chevaux.htm",
+        "nom": "Éleveur(euse) de chevaux"
+      },
+      {
+        "url": "/sante/thanatologue.htm",
+        "nom": "Embaumeur(euse)"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Épidémiologiste"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Épithésiste"
+      },
+      {
+        "url": "/sante/ergotherapeute.htm",
+        "nom": "Ergothérapeute"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "Garde-bébé"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Généticien(ne)"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Herboriste"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Homéopathe"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Hydrothérapeute"
+      },
+      {
+        "url": "/sante/hygieniste.htm",
+        "nom": "Hygiéniste\r\ndentaire"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Hygiéniste du travail"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Hygiéniste en soins \r\n\tdes pieds"
+      },
+      {
+        "url": "/sante/../graphique/infographiste.htm",
+        "nom": "Illustrateur(trice) médical"
+      },
+      {
+        "url": "/sante/../chimie/microbio.htm",
+        "nom": "Immunologiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/infirmier.htm",
+        "nom": "INFIRMIÈRE\r\nOU INFIRMIER"
+      },
+      {
+        "url": "/sante/infirmier_auxiliaire.htm",
+        "nom": "Infirmier-auxiliaire\r\nou infirmière-auxiliaire"
+      },
+      {
+        "url": "/sante/../electrotechnique/ing_biomedical.html",
+        "nom": "Ingénieur(e)\r\nbiomédical(e)"
+      },
+      {
+        "url": "/sante/inhalotherapeute.htm",
+        "nom": "INHALOTHÉRAPEUTE"
+      },
+      {
+        "url": "/sante/tech_dietetique.htm",
+        "nom": "technicien en diététique"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "technicien en laboratoire médical"
+      },
+      {
+        "url": "/sante/inhalotherapeute.htm",
+        "nom": "inhalothérapeute"
+      },
+      {
+        "url": "/sante/infirmier_auxiliaire.htm",
+        "nom": "infirmier auxiliaire"
+      },
+      {
+        "url": "/sante/infirmier.htm",
+        "nom": "infirmier"
+      },
+      {
+        "url": "/sante/../protection/ambulancier.htm",
+        "nom": "ambulancier"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "vétérinaire"
+      },
+      {
+        "url": "/sante/kinesiologue.htm",
+        "nom": "Kinésiologue"
+      },
+      {
+        "url": "/sante/orthotherapeute.htm",
+        "nom": "Kinésithérapeute"
+      },
+      {
+        "url": "/sante/../humaines/recreologue.html",
+        "nom": "Ludothérapeute"
+      },
+      {
+        "url": "/sante/massotherapeute.htm",
+        "nom": "Massothérapeute"
+      },
+      {
+        "url": "/sante/../arts/therapeute_art.html",
+        "nom": "Musicothérapeute"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "MÉDECIN"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Médecin-chercheur(euse)"
+      },
+      {
+        "url": "/sante/../chimie/microbio.htm",
+        "nom": "Microbiologiste"
+      },
+      {
+        "url": "/sante/../chimie/microbio.htm",
+        "nom": "Microbiologiste-immunologiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "Médecin"
+      },
+      {
+        "url": "/sante/naturotherapeute.html",
+        "nom": "Naturopathe"
+      },
+      {
+        "url": "/sante/naturotherapeute.html",
+        "nom": "Naturothérapeute"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Nutrithérapeute"
+      },
+      {
+        "url": "/sante/dietetiste.htm",
+        "nom": "Nutritionniste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/optometriste.htm",
+        "nom": "Oculiste"
+      },
+      {
+        "url": "/sante/oculariste.htm",
+        "nom": "Oculariste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/opticien.htm",
+        "nom": "Opticien(ne)\r\nd’ordonnances"
+      },
+      {
+        "url": "/sante/optometriste.htm",
+        "nom": "Optométriste"
+      },
+      {
+        "url": "/sante/tech_ortheses.htm",
+        "nom": "Orthésiste du pied"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin)"
+      },
+      {
+        "url": "/sante/orthophoniste.htm",
+        "nom": "Orthophoniste"
+      },
+      {
+        "url": "/sante/orthotherapeute.htm",
+        "nom": "Orthothérapeute"
+      },
+      {
+        "url": "/sante/orthoptiste.htm",
+        "nom": "Orthoptiste"
+      },
+      {
+        "url": "/sante/osteopathe.html",
+        "nom": "Ostéopathe"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/../protection/ambulancier.htm",
+        "nom": "PARAMÉDIC"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "vétérinaire"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Pédicure"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/perfusionniste.html",
+        "nom": "Perfusionniste clinique"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/pharmacien.htm",
+        "nom": "Pharmacien"
+      },
+      {
+        "url": "/sante/pharmacologue.htm",
+        "nom": "Pharmacologue"
+      },
+      {
+        "url": "/sante/../arts/photographe.htm",
+        "nom": "Photographe médical"
+      },
+      {
+        "url": "/sante/../physique/biophysicien.html",
+        "nom": "Physicien(ne) médical"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Physiologiste"
+      },
+      {
+        "url": "/sante/physiotherapeute.htm",
+        "nom": "Physiothérapeute"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Phytothérapeute"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/podiatre.htm",
+        "nom": "Podiatre"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) à l'admission"
+      },
+      {
+        "url": "/sante/../chimie/tech_sterilisation.html",
+        "nom": "Préposé(e) \r\n\tà la stérilisation"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) au matériel et équipement thérapeutique"
+      },
+      {
+        "url": "/sante/../chimie/tech_sterilisation.html",
+        "nom": "Préposé(e) \r\n\tau retraitement des dispositifs médicaux"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) au soutien \r\nclinique"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) aux autopsies"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "PRÉPOSÉ(E)\r\nAUX BÉNÉFICIAIRES"
+      },
+      {
+        "url": "/sante/../nature/animalier.html",
+        "nom": "Préposé(e) aux soins aux animaux"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en électrocardiographie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en électroencéphalographie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en ergothérapie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en inhalothérapie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en ophtalmologie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en orthopédie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en physiothérapie"
+      },
+      {
+        "url": "/sante/sante1.html",
+        "nom": "Préposé(e) en salle d'opération"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Professionnel(le) de recherche médicale"
+      },
+      {
+        "url": "/sante/dentiste.htm",
+        "nom": "dentiste"
+      },
+      {
+        "url": "/sante/tech_ortheses.htm",
+        "nom": "Prothésiste"
+      },
+      {
+        "url": "/sante/tech_dentaire.htm",
+        "nom": "Prothésiste en orthodontie"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/../sociaux/psychologue.htm",
+        "nom": "Psychologue clinicien(ne)"
+      },
+      {
+        "url": "/sante/../physique/biophysicien.html",
+        "nom": "Radiobiologiste"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/../protection/repartiteur_urgences.html",
+        "nom": "Répondant(e) \r\nmédical d'urgence"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/sage_femme.htm",
+        "nom": "Sage-femme"
+      },
+      {
+        "url": "/sante/../administration/secretaire.htm",
+        "nom": "Secrétaire \r\ndentaire"
+      },
+      {
+        "url": "/sante/../administration/secretaire.htm",
+        "nom": "Secrétaire médical(e)"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Spécialiste clinique en biologie \r\n\tmédicale"
+      },
+      {
+        "url": "/sante/sc_med.htm",
+        "nom": "Spécialiste en activités cliniques"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Spécialiste en évaluation des soins"
+      },
+      {
+        "url": "/sante/optometriste.htm",
+        "nom": "Spécialiste en orientation et \r\n\tmobilité"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Spécialiste en sciences \r\n\tbiologiques sanitaires"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Spécialiste en sciences \r\n\tphysiques sanitaires"
+      },
+      {
+        "url": "/sante/../chimie/sc_legales.html",
+        "nom": "Spécialiste\r\nen sciences médico-légales"
+      },
+      {
+        "url": "/sante/../humaines/humaines1.htm",
+        "nom": "Surveillant(e)-sauveteur(e) de piscines ou plages"
+      },
+      {
+        "url": "/sante/../armee/armee1.htm",
+        "nom": "technicie(nne) de bloc \r\n\topératoire"
+      },
+      {
+        "url": "/sante/tech_dentaire.htm",
+        "nom": "Technicien(ne)\r\ndentaire"
+      },
+      {
+        "url": "/sante/inhalotherapeute.htm",
+        "nom": "Technicien(ne) en anesthésie"
+      },
+      {
+        "url": "/sante/../chimie/tech_identite.html",
+        "nom": "Technicien(ne) en biologie judiciaire"
+      },
+      {
+        "url": "/sante/tech_dietetique.htm",
+        "nom": "Technicien(ne)\r\nen diététique"
+      },
+      {
+        "url": "/sante/tech_electrophysio.htm",
+        "nom": "Technicien(ne)\r\nen électrophysiologie médicale"
+      },
+      {
+        "url": "/sante/../environnement/tech_hygiene.htm",
+        "nom": "Technicien(ne)\r\nen hygiène au travail"
+      },
+      {
+        "url": "/sante/hygieniste.htm",
+        "nom": "Technicien(ne) en hygiène dentaire"
+      },
+      {
+        "url": "/sante/tech_optique.html",
+        "nom": "Technicien(ne)\r\nen laboratoire d’optique"
+      },
+      {
+        "url": "/sante/tech_dentaire.htm",
+        "nom": "Technicien(ne) en laboratoire dentaire"
+      },
+      {
+        "url": "/sante/../chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen laboratoire de médecine légale"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technicien(ne)\r\nen laboratoire médical"
+      },
+      {
+        "url": "/sante/tech_sante_animale.htm",
+        "nom": "Technicien(ne) en laboratoire vétérinaire"
+      },
+      {
+        "url": "/sante/../chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen médecine légale"
+      },
+      {
+        "url": "/sante/tech_dietetique.htm",
+        "nom": "Technicien(ne) en \r\n\tnutrition"
+      },
+      {
+        "url": "/sante/tech_ortheses.htm",
+        "nom": "Technicien(ne) en \r\n\torthopédie"
+      },
+      {
+        "url": "/sante/tech_pharmacie.htm",
+        "nom": "Technicien(ne) en \r\n\tpharmacie"
+      },
+      {
+        "url": "/sante/tech_ortheses.htm",
+        "nom": "Technicien(ne)\r\nen orthèses et prothèses orthopédiques"
+      },
+      {
+        "url": "/sante/tech_ortheses.htm",
+        "nom": "Technicien(ne) en orthopédie"
+      },
+      {
+        "url": "/sante/tech_sante_animale.htm",
+        "nom": "Technicien(ne) en pathologie animale"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technicien(ne) en pathologie \r\nhumaine"
+      },
+      {
+        "url": "/sante/../chimie/techno_pharmaceutique.html",
+        "nom": "Technicien(ne) en pharmacologie"
+      },
+      {
+        "url": "/sante/inhalotherapeute.htm",
+        "nom": "Technicien(ne) en physiologie cardio-respiratoire"
+      },
+      {
+        "url": "/sante/tech_readaptation.htm",
+        "nom": "Technicien(ne)\r\nen réadaptation physique"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technicien(ne) en recherche \r\nmédicale"
+      },
+      {
+        "url": "/sante/prep_beneficiaires.htm",
+        "nom": "technicie(nne) en salle d'opération"
+      },
+      {
+        "url": "/sante/tech_sante_animale.htm",
+        "nom": "TECHNICIEN(NE)\r\nEN SANTÉ ANIMALE"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technicien(ne) en santé communautaire"
+      },
+      {
+        "url": "/sante/../environnement/tech_hygiene.htm",
+        "nom": "technicien en \r\nhygiène du travail"
+      },
+      {
+        "url": "/sante/../chimie/tech_sterilisation.html",
+        "nom": "Technicien(ne)\r\nen stérilisation"
+      },
+      {
+        "url": "/sante/../environnement/tech_hygiene.htm",
+        "nom": "Technicien(ne) en toxicologie"
+      },
+      {
+        "url": "/sante/../armee/armee1.htm",
+        "nom": "Technicien(ne) médical"
+      },
+      {
+        "url": "/sante/tech_sante_animale.htm",
+        "nom": "Technicien(ne) vétérinaire"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technologiste médical(e)"
+      },
+      {
+        "url": "/sante/inhalotherapeute.htm",
+        "nom": "Technologue cardio-pulmonaire"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technologue en analyses biomédicales"
+      },
+      {
+        "url": "/sante/../chimie/tech_biochimie.htm",
+        "nom": "Technologue en biochimie"
+      },
+      {
+        "url": "/sante/tech_echographie.htm",
+        "nom": "Technologue en échographie \r\n\tmédicale"
+      },
+      {
+        "url": "/sante/tech_electrophysio.htm",
+        "nom": "Technologue en \r\n\télectrophysiologie médicale"
+      },
+      {
+        "url": "/sante/tech_labo_medical.htm",
+        "nom": "Technologue en hémodynamique"
+      },
+      {
+        "url": "/sante/tech_radiodiagnostic.htm",
+        "nom": "Technologue en imagerie \r\n\tmédicale"
+      },
+      {
+        "url": "/sante/tech_med_nucleaire.htm",
+        "nom": "Technologue\r\nen médecine nucléaire"
+      },
+      {
+        "url": "/sante/../chimie/tech_biochimie.htm",
+        "nom": "Technologue en \r\n\tmicrobiologie"
+      },
+      {
+        "url": "/sante/tech_dietetique.htm",
+        "nom": "Technologue en nutrition"
+      },
+      {
+        "url": "/sante/../chimie/techno_pharmaceutique.html",
+        "nom": "Technologue en production \r\npharmaceutique"
+      },
+      {
+        "url": "/sante/tech_radiodiagnostic.htm",
+        "nom": "TECHNOLOGUE\r\nEN RADIODIAGNOSTIC"
+      },
+      {
+        "url": "/sante/tech_radio_oncologie.htm",
+        "nom": "Technologue\r\nen radio oncologie"
+      },
+      {
+        "url": "/sante/thanatologue.htm",
+        "nom": "Thanatologue"
+      },
+      {
+        "url": "/sante/audiologiste.htm",
+        "nom": "Thérapeute de l’ouïe"
+      },
+      {
+        "url": "/sante/orthophoniste.htm",
+        "nom": "Thérapeute de la parole et du langage"
+      },
+      {
+        "url": "/sante/ergotherapeute.htm",
+        "nom": "Thérapeute en réadaptation fonctionnelle"
+      },
+      {
+        "url": "/sante/physiotherapeute.htm",
+        "nom": "Thérapeute en réadaptation physique"
+      },
+      {
+        "url": "/sante/therapeute_sport.htm",
+        "nom": "Thérapeute du sport"
+      },
+      {
+        "url": "/sante/../humaines/recreologue.html",
+        "nom": "Thérapeute\r\npar le loisir"
+      },
+      {
+        "url": "/sante/../arts/therapeute_art.html",
+        "nom": "Thérapeute\r\npar les arts créatifs"
+      },
+      {
+        "url": "/sante/med_douces.html",
+        "nom": "Thérapeute par le Qi-Gong"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "vétérinaire"
+      },
+      {
+        "url": "/sante/agent_socio-san.html",
+        "nom": "Toxicologue"
+      },
+      {
+        "url": "/sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sante/veterinaire.htm",
+        "nom": "Vétérinaire"
+      },
+      {
+        "url": "/sante/../sociaux/zootherapeute.htm",
+        "nom": "Zoothérapeute"
+      }
+    ],
+    "count": 280
+  },
+  "nature": {
+    "nom": "Sciences naturelles",
+    "slug": "nature",
+    "metiers": [
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "métiers non spécialisés"
+      },
+      {
+        "url": "/nature/agent_faune.html",
+        "nom": "Agent(e)\r\nde conservation de la faune"
+      },
+      {
+        "url": "/nature/agent_eco-tour.html",
+        "nom": "Agent(e)\r\nde développement éco-touristique"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Aide-horticulteur(trice)"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Aide-pépiniériste"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Aide-sylvicole"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Animateur(trice) en sciences naturelles"
+      },
+      {
+        "url": "/nature/int_aventure.html",
+        "nom": "Animateur(trice) en tourisme d'aventure"
+      },
+      {
+        "url": "/nature/arch_paysagiste.htm",
+        "nom": "Architecte\r\npaysagiste"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Assistant(e)\r\nbiologiste"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Assistant(e)\r\nentomologiste"
+      },
+      {
+        "url": "/nature/animalier.html",
+        "nom": "Assistant(e) technicien(ne) en \r\n\tsanté animale"
+      },
+      {
+        "url": "/nature/../chercheurs/chercheur.htm",
+        "nom": "Chercheur(e) en\r\nsciences naturelles"
+      },
+      {
+        "url": "/nature/biologiste.htm",
+        "nom": "Biologiste"
+      },
+      {
+        "url": "/nature/biologiste.htm",
+        "nom": "Botaniste"
+      },
+      {
+        "url": "/nature/agent_eco-tour.html",
+        "nom": "Chargé(e) de projet en \r\n\tconservation du milieu naturel"
+      },
+      {
+        "url": "/nature/animalier.html",
+        "nom": "Commis\r\nvétérinaire"
+      },
+      {
+        "url": "/nature/../environnement/cons_environnement.htm",
+        "nom": "Consultant en environnement"
+      },
+      {
+        "url": "/nature/../mines/geophysicien.htm",
+        "nom": "Consultant(e) en \r\n\tgéographie"
+      },
+      {
+        "url": "/nature/animalier.html",
+        "nom": "Contrôleur(euse) animalier"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Élagueur(euse) ou \r\n\témondeur(euse)"
+      },
+      {
+        "url": "/nature/../sante/tech_sante_animale.htm",
+        "nom": "Éleveur(euse) de chiens ou chats de \r\nrace"
+      },
+      {
+        "url": "/nature/biologiste.htm",
+        "nom": "Entomologiste"
+      },
+      {
+        "url": "/nature/entraineur_chevaux.htm",
+        "nom": "Entraîneur(e)\r\nde chevaux"
+      },
+      {
+        "url": "/nature/entraineur_chevaux.htm",
+        "nom": "Équithérapeute"
+      },
+      {
+        "url": "/nature/../environnement/exterminateur.html",
+        "nom": "Exterminateur(trice)"
+      },
+      {
+        "url": "/nature/fleuriste.htm",
+        "nom": "Fleuriste"
+      },
+      {
+        "url": "/nature/agent_faune.html",
+        "nom": "Gardien(ne)\r\nd’animaux de zoo"
+      },
+      {
+        "url": "/nature/../mines/geophysicien.htm",
+        "nom": "Géographe"
+      },
+      {
+        "url": "/nature/tech_cine-halieu.html",
+        "nom": "Gérant(e) de\r\npourvoirie"
+      },
+      {
+        "url": "/nature/agent_eco-tour.html",
+        "nom": "Gestionnaire en \r\ntourisme d'aventure"
+      },
+      {
+        "url": "/nature/int_aventure.html",
+        "nom": "Guide-accompagnateur(trice) en tourisme d'aventure"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Guide de chasse et pêche"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Guide-interprète de la nature"
+      },
+      {
+        "url": "/nature/biologiste.htm",
+        "nom": "Ichtyologiste"
+      },
+      {
+        "url": "/nature/int_aventure.html",
+        "nom": "Intervenant(e) en plein air d'aventure"
+      },
+      {
+        "url": "/nature/horticulteur.htm",
+        "nom": "Jardinier(ère) paysagiste"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Maréchal-Ferrant"
+      },
+      {
+        "url": "/nature/../chimie/microbio.htm",
+        "nom": "Microbiologiste"
+      },
+      {
+        "url": "/nature/entraineur_chevaux.htm",
+        "nom": "Moniteur(trice) d'équitation"
+      },
+      {
+        "url": "/nature/../humaines/humaines1.htm",
+        "nom": "Moniteur(trice) de ski \r\n\talpin ou de planche à neige"
+      },
+      {
+        "url": "/nature/entraineur_chevaux.htm",
+        "nom": "Moniteur(trice) de \r\n\trandonnées équestres"
+      },
+      {
+        "url": "/nature/../communication/museologue.html",
+        "nom": "Muséologue"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Maréchal-Ferrant"
+      },
+      {
+        "url": "/nature/../foresterie/sylviculteur.htm",
+        "nom": "Ouvrier(ère) sylvicole"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Palefrenier(ère) professionnel"
+      },
+      {
+        "url": "/nature/naturelle.html",
+        "nom": "Patrouilleur(euse) de \r\n\tpistes de ski"
+      },
+      {
+        "url": "/nature/../foresterie/sylviculteur.htm",
+        "nom": "Pépiniériste"
+      },
+      {
+        "url": "/nature/../agriculture/pisciculteur.html",
+        "nom": "Pisciculteur(rice)"
+      },
+      {
+        "url": "/nature/../mecanique_entr/prep_ski_golf.html",
+        "nom": "Préposé(e)\r\nà l’entretien"
+      },
+      {
+        "url": "/nature/../restau_tourisme/prep_recreotourisme.html",
+        "nom": "Préposé(e) aux \r\n\topérations d'un site récréotouristique"
+      },
+      {
+        "url": "/nature/animalier.html",
+        "nom": "Préposé(e) aux soins des animaux de compagnie \r\n\tou de recherche"
+      },
+      {
+        "url": "/nature/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) de biologie au \r\ncollégial"
+      },
+      {
+        "url": "/nature/../enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) \r\n\tde sciences (dont biologie) au secondaire"
+      },
+      {
+        "url": "/nature/animalier.html",
+        "nom": "Soigneur(euse) d'animaux"
+      },
+      {
+        "url": "/nature/tech_cine-halieu.html",
+        "nom": "Technicien(ne)\r\nen aménagement cinégétique et halieutique"
+      },
+      {
+        "url": "/nature/tech_paysagiste.htm",
+        "nom": "Technicien(ne)\r\nen aménagement paysager"
+      },
+      {
+        "url": "/nature/../agriculture/tech_peches.html",
+        "nom": "Technicien(ne) en\r\naquiculture"
+      },
+      {
+        "url": "/nature/../chimie/tech_biologie.html",
+        "nom": "Technicien(ne)\r\nen biologie"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Technicien(ne) en écologie"
+      },
+      {
+        "url": "/nature/../environnement/tech_environnement.htm",
+        "nom": "Technicien(ne) en environnement"
+      },
+      {
+        "url": "/nature/../environnement/exterminateur.html",
+        "nom": "Technicien(ne) \r\n\ten gestion parasitaire"
+      },
+      {
+        "url": "/nature/tech_paysagiste.htm",
+        "nom": "Technicien(ne) en\r\nhorticulture"
+      },
+      {
+        "url": "/nature/../chimie/tech_biologie.html",
+        "nom": "Technicien(ne) en microbiologie"
+      },
+      {
+        "url": "/nature/tech_faune.htm",
+        "nom": "Technicien(ne)\r\nen muséologie"
+      },
+      {
+        "url": "/nature/int_aventure.html",
+        "nom": "Technicien(ne)\r\nen tourisme d’aventure"
+      },
+      {
+        "url": "/nature/../sante/tech_sante_animale.htm",
+        "nom": "Technicien(ne)\r\nen santé animale"
+      },
+      {
+        "url": "/nature/tech_paysagiste.htm",
+        "nom": "Technicien(ne)\r\npépiniériste"
+      },
+      {
+        "url": "/nature/../sante/veterinaire.htm",
+        "nom": "Vétérinaire"
+      },
+      {
+        "url": "/nature/biologiste.htm",
+        "nom": "Zoologiste"
+      },
+      {
+        "url": "/nature/../sociaux/zootherapeute.htm",
+        "nom": "Zoothérapeute"
+      }
+    ],
+    "count": 71
+  },
+  "physique": {
+    "nom": "Sciences physiques et mathématiques",
+    "slug": "physique",
+    "metiers": [
+      {
+        "url": "/physique/../superieures/et_sup2.html",
+        "nom": "répertoire\r\ndes maîtrises et doctorats en sciences du génie"
+      },
+      {
+        "url": "/physique/physicien.htm",
+        "nom": "Astronome ou astrophysicien(ne)"
+      },
+      {
+        "url": "/physique/biophysicien.html",
+        "nom": "Biophysicien(ne)"
+      },
+      {
+        "url": "/physique/../chercheurs/chercheur.htm",
+        "nom": "Chercheur(e)"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Climatologue"
+      },
+      {
+        "url": "/physique/../chimie/sc_legales.html",
+        "nom": "Expert(e) en balistique"
+      },
+      {
+        "url": "/physique/../mines/geologue.html",
+        "nom": "Géologue"
+      },
+      {
+        "url": "/physique/../mines/geophysicien.htm",
+        "nom": "Géophysicien(ne)"
+      },
+      {
+        "url": "/physique/../electrotechnique/ing_biomedical.html",
+        "nom": "Ingénieur(e)\r\nbiomédical(e)"
+      },
+      {
+        "url": "/physique/../mines/ing_petrole.html",
+        "nom": "Ingénieur(e) en pétrole et gaz"
+      },
+      {
+        "url": "/physique/ing_physicien.htm",
+        "nom": "Ingénieur(e)\r\nphysicien(ne)"
+      },
+      {
+        "url": "/physique/physicien.htm",
+        "nom": "Journaliste\r\nscientifique"
+      },
+      {
+        "url": "/physique/mathematicien.htm",
+        "nom": "Mathématicien(ne)"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Météorologue"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Océanographe"
+      },
+      {
+        "url": "/physique/physicien.htm",
+        "nom": "Physicien(ne)"
+      },
+      {
+        "url": "/physique/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) de mathématiques au \r\ncollégial"
+      },
+      {
+        "url": "/physique/../enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) \r\n\tde mathématiques au secondaire"
+      },
+      {
+        "url": "/physique/../enseignement/prof_collegial.html",
+        "nom": "Professeur(e) de physique au \r\ncollégial"
+      },
+      {
+        "url": "/physique/../enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e) \r\n\tde sciences (dont physique) au secondaire"
+      },
+      {
+        "url": "/physique/../electrotechnique/ing_automatisation.htm",
+        "nom": "Robotique, ingénieur en"
+      },
+      {
+        "url": "/physique/../electrotechnique/tech_ordinique.htm",
+        "nom": "Robotique, technologue en"
+      },
+      {
+        "url": "/physique/tech_physique.htm",
+        "nom": "technologue en \r\n\tgénie physique et robotique"
+      },
+      {
+        "url": "/physique/statisticien.htm",
+        "nom": "Statisticien(ne)"
+      },
+      {
+        "url": "/physique/../chimie/tech_identite.html",
+        "nom": "Technicien(ne)\r\nen balistique"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Technicien(ne) en\r\nclimatologie"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Technicien(ne) en\r\nmétéorologie"
+      },
+      {
+        "url": "/physique/meteorologue.html",
+        "nom": "Technicien(ne) en\r\nocéanographie"
+      },
+      {
+        "url": "/physique/../mines/tech_petrole.html",
+        "nom": "Technologue en génie pétrolier"
+      },
+      {
+        "url": "/physique/tech_physique.htm",
+        "nom": "Technologue en génie physique"
+      },
+      {
+        "url": "/physique/tech_physique.htm",
+        "nom": "Technologue\r\nen physique"
+      }
+    ],
+    "count": 31
+  },
+  "sociaux": {
+    "nom": "Services sociaux et juridiques",
+    "slug": "sociaux",
+    "metiers": [
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "métiers \r\nnon spécialisés en services sociaux"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Accompagnateur(trice) de personnes \r\nhandicapées"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Accompagnateur(trice)-intervenant(e) auprès des aînés"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Adjoint(e) juridique"
+      },
+      {
+        "url": "/sociaux/../humaines/cons_international.html",
+        "nom": "Agent(e) d’immigration"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Agent(e) d’information juridique"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Agent(e) d'intégration sociale"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Agent(e)\r\nd’intervention"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Agent(e) d'intervention en milieu \r\nmédico-légal"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Agent(e) d'intervention en milieu \r\npsychiatrique"
+      },
+      {
+        "url": "/sociaux/../humaines/cons_international.html",
+        "nom": "Agent(e) de citoyenneté"
+      },
+      {
+        "url": "/sociaux/../humaines/recreologue.html",
+        "nom": "Agent(e) \r\n\tde développement de programmes en loisirs"
+      },
+      {
+        "url": "/sociaux/cons_orientation.html",
+        "nom": "Agent(e) de gestion des programmes gouvernements en emploi"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "Agent(e) de probation"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Agent(e) de recouvrement"
+      },
+      {
+        "url": "/sociaux/../protection/securite.htm",
+        "nom": "Agent(e)\r\nde la sécurité"
+      },
+      {
+        "url": "/sociaux/sexologue.htm",
+        "nom": "sexologue"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "criminologue"
+      },
+      {
+        "url": "/sociaux/psychother.html",
+        "nom": "psychothérapeute"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "psychologue"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Agent(e) des contentieux"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Agent(e) des libérations conditionnelles"
+      },
+      {
+        "url": "/sociaux/cons_orientation.html",
+        "nom": "Agent(e) de recherche sur le marché du travail"
+      },
+      {
+        "url": "/sociaux/../communication/relationniste.htm",
+        "nom": "Agent(e)\r\ndes relations publiques"
+      },
+      {
+        "url": "/sociaux/../protection/agent_correction.html",
+        "nom": "Agent(e)\r\ndes services correctionnels"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Aide-Éducateur(trice) en garderie"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Aide\r\nfamilial"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Analyste de réclamations"
+      },
+      {
+        "url": "/sociaux/int_sports.html",
+        "nom": "éducateur(trice) physique"
+      },
+      {
+        "url": "/sociaux/../arts/anim_culturel.html",
+        "nom": "animateur(trice) culturel"
+      },
+      {
+        "url": "/sociaux/animateur_pastorale.htm",
+        "nom": "Animateur(trice) à la vie \r\n\tspirituelle"
+      },
+      {
+        "url": "/sociaux/../arts/anim_culturel.html",
+        "nom": "Animateur(trice) culturel"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Animateur(trice) de groupes sociaux"
+      },
+      {
+        "url": "/sociaux/animateur_pastorale.htm",
+        "nom": "Animateur(trice) en \r\n\tengagement communautaire"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Animateur(trice) (non qualifié) en loisirs"
+      },
+      {
+        "url": "/sociaux/animateur_pastorale.htm",
+        "nom": "Animateur(trice) social"
+      },
+      {
+        "url": "/sociaux/therapeute_art.html",
+        "nom": "Art-thérapeute"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Assistant(e) juridique"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Assistant(e) \r\n\tsurveillant(e)-sauveteur(euse)"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Attaché(e) judiciaire"
+      },
+      {
+        "url": "/sociaux/aide_familial.html",
+        "nom": "Auxiliaire de soins à domicile"
+      },
+      {
+        "url": "/sociaux/aide_familial.html",
+        "nom": "Auxiliaire en santé et services \r\n\tsociaux"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Aviseur(e) légal(e)"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "AVOCAT(E)"
+      },
+      {
+        "url": "/sociaux/cons_consommation.html",
+        "nom": "Conseiller(ère) au service à la clientèle"
+      },
+      {
+        "url": "/sociaux/psychother.html",
+        "nom": "psychothérapeute"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "criminologue"
+      },
+      {
+        "url": "/sociaux/psychoeduc.htm",
+        "nom": "psychoéducateur"
+      },
+      {
+        "url": "/sociaux/trav_social.htm",
+        "nom": "travailleur social"
+      },
+      {
+        "url": "/sociaux/../sante/thanatologue.htm",
+        "nom": "Conseiller(ère) en funérailles"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "Conseiller(ère) en milieu carcéral"
+      },
+      {
+        "url": "/sociaux/../sante/thanatologue.htm",
+        "nom": "Conseiller(ère) en préarrangements \r\nfunéraires"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Conseiller(ère) juridique"
+      },
+      {
+        "url": "/sociaux/cons_travail.htm",
+        "nom": "Consultant(e) en développement organisationnel"
+      },
+      {
+        "url": "/sociaux/../humaines/recreologue.html",
+        "nom": "Consultant(e) en\r\nloisirs"
+      },
+      {
+        "url": "/sociaux/int_sports.html",
+        "nom": "Éducateur(trice) physique"
+      },
+      {
+        "url": "/sociaux/../arts/anim_culturel.html",
+        "nom": "animateur culturel"
+      },
+      {
+        "url": "/sociaux/../nature/int_aventure.html",
+        "nom": "intervenant(e) \r\n\ten plein air et tourisme d'aventure"
+      },
+      {
+        "url": "/sociaux/../sante/medecin.htm",
+        "nom": "médecin"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "avocat"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "Criminologue"
+      },
+      {
+        "url": "/sociaux/pretre.html",
+        "nom": "Diacre"
+      },
+      {
+        "url": "/sociaux/../sante/thanatologue.htm",
+        "nom": "Directeur(trice) de \r\nfunérailles"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_loisirs.htm",
+        "nom": "Éducateur(trice) en loisirs"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Éducateur(trice) en service de \r\n\tgarde en milieu scolaire"
+      },
+      {
+        "url": "/sociaux/int_sports.html",
+        "nom": "Éducateur(trice) physique"
+      },
+      {
+        "url": "/sociaux/../protection/policier.htm",
+        "nom": "policier"
+      },
+      {
+        "url": "/sociaux/../protection/policier.htm",
+        "nom": "policier"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "technicien en droit"
+      },
+      {
+        "url": "/sociaux/../protection/detective.html",
+        "nom": "Enquêteur(trice) privé(e)"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_sondage.htm",
+        "nom": "Enquêteur(e) social"
+      },
+      {
+        "url": "/sociaux/../nature/entraineur_chevaux.htm",
+        "nom": "Équithérapeute"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Examinateur(trice) de brevets"
+      },
+      {
+        "url": "/sociaux/../chimie/sc_legales.html",
+        "nom": "Expert(e) en \r\n\tcriminalistique"
+      },
+      {
+        "url": "/sociaux/../humaines/sociologue.html",
+        "nom": "Génagogue"
+      },
+      {
+        "url": "/sociaux/trav_social.htm",
+        "nom": "Gérontologue"
+      },
+      {
+        "url": "/sociaux/../humaines/recreologue.html",
+        "nom": "Gestionnaire de\r\nprogrammes de loisirs"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Greffier(ère)-adjoint(e) de \r\n\ttribunal"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Greffier(ère) de tribunal"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Greffier(ère)-audiencier(ère)"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Hôte de casino"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Huissier(ère)"
+      },
+      {
+        "url": "/sociaux/../enseignement/educateur_spec.htm",
+        "nom": "Instructeur(trice) en braille"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Interprète en langage des signes"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Intervenant(e) à l’intégration à l’emploi"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Intervenant(e) auprès des jeunes"
+      },
+      {
+        "url": "/sociaux/tech_geronto.htm",
+        "nom": "&nbsp;Intervenant(e) auprès des \r\n\tpersonnes âgées"
+      },
+      {
+        "url": "/sociaux/../enseignement/educateur_spec.htm",
+        "nom": "&nbsp;Intervenant(e) auprès des personnes handicapées"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Intervenant(e) communautaire"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "technicien en service \r\nsocial"
+      },
+      {
+        "url": "/sociaux/int_sports.html",
+        "nom": "Intervenant(e)\r\nen activité physique"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Intervenant(e) en alcoolémie"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Intervenant(e)\r\nen délinquance"
+      },
+      {
+        "url": "/sociaux/tech_geronto.htm",
+        "nom": "Intervenant(e)\r\nen gérontologie"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Intervenant(e) \r\n\ten jeu compulsif"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Intervenant(e)\r\nen milieu résidentiel"
+      },
+      {
+        "url": "/sociaux/../enseignement/educateur_spec.htm",
+        "nom": "Intervenant(e) en rééducation"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Intervenant(e) en santé mentale"
+      },
+      {
+        "url": "/sociaux/animateur_pastorale.htm",
+        "nom": "Intervenant(e) en \r\n\tsoins spirituels"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Intervenant(e) en toxicomanies"
+      },
+      {
+        "url": "/sociaux/../enseignement/educateur_spec.htm",
+        "nom": "Intervenant(e) psychosocial"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Intervenant(e) social"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Intervieweur(euse)"
+      },
+      {
+        "url": "/sociaux/../communication/journaliste.htm",
+        "nom": "JOURNALISTE"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Juge de\r\ntribunal"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Juriste d’entreprise"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Juriste en fiscalité"
+      },
+      {
+        "url": "/sociaux/therapeute_loisir.html",
+        "nom": "Ludothérapeute"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Moniteur(trice) de ski \r\n\talpin ou de planche à neige"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Notaire"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "Neuropsychologue"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Officier de liaison auprès des \r\n\tcours de justice"
+      },
+      {
+        "url": "/sociaux/../armee/armee2.htm",
+        "nom": "Officier à la sélection du personnel"
+      },
+      {
+        "url": "/sociaux/../armee/armee2.htm",
+        "nom": "Officier de police militaire"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Officier du Shérif"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Organisateur(trice) communautaire"
+      },
+      {
+        "url": "/sociaux/../enseignement/prof_adapt_scol.htm",
+        "nom": "Orthopédagogue"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Parajuriste"
+      },
+      {
+        "url": "/sociaux/pretre.html",
+        "nom": "Pasteur"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Préposé(e) à l'accueil et aux \r\n\trenseignements d'un centre de loisirs"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Préposé(e)\r\naux élèves handicapés"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Préposé(e) dans un centre d’activités"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Préposé(e) en halte-garderie"
+      },
+      {
+        "url": "/sociaux/pretre.html",
+        "nom": "Prêtre\r\ncatholique"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Procureur(e)"
+      },
+      {
+        "url": "/sociaux/../enseignement/prof_prescol_primaire.htm",
+        "nom": "PROFESSEUR(E)\r\nAU PRÉSCOLAIRE ET AU PRIMAIRE"
+      },
+      {
+        "url": "/sociaux/../enseignement/prof_secondaire.htm",
+        "nom": "Professeur(e)\r\nau secondaire"
+      },
+      {
+        "url": "/sociaux/../enseignement/prof_adapt_scol.htm",
+        "nom": "Professeur(e) d’adaptation \r\nscolaire"
+      },
+      {
+        "url": "/sociaux/../chimie/sc_legales.html",
+        "nom": "Professionnel(le) en \r\n\tcriminalistique"
+      },
+      {
+        "url": "/sociaux/psychother.htm",
+        "nom": "Psychanalyste"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "Psychologue"
+      },
+      {
+        "url": "/sociaux/../humaines/sociologue.html",
+        "nom": "Psychosociologue"
+      },
+      {
+        "url": "/sociaux/psychother.htm",
+        "nom": "Psychothérapeute"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_sondage.htm",
+        "nom": "Recherchiste en communication"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Recherchiste en droit"
+      },
+      {
+        "url": "/sociaux/../humaines/recreologue.html",
+        "nom": "Récréologue"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Responsable d'unité de vie et/ou \r\nde réadaptation"
+      },
+      {
+        "url": "/sociaux/../administration/secretaire.htm",
+        "nom": "Secrétaire juridique"
+      },
+      {
+        "url": "/sociaux/sexologue.htm",
+        "nom": "Sexologue"
+      },
+      {
+        "url": "/sociaux/sexologue.htm",
+        "nom": "Sexothérapeute"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Shérif judiciaire"
+      },
+      {
+        "url": "/sociaux/../humaines/sociologue.html",
+        "nom": "Sociologue"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "Sociothérapeute"
+      },
+      {
+        "url": "/sociaux/sexologue.htm",
+        "nom": "sexologue"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "criminologue"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "psychologue"
+      },
+      {
+        "url": "/sociaux/../chimie/sc_legales.html",
+        "nom": "Spécialiste\r\nen sciences légales"
+      },
+      {
+        "url": "/sociaux/../administration/steno.html",
+        "nom": "Sténographe judiciaire"
+      },
+      {
+        "url": "/sociaux/avocat.htm",
+        "nom": "Substitut du Procureur \r\n\tGénéral"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Surveillant(e)-éducateur(trice) d’élèves"
+      },
+      {
+        "url": "/sociaux/../humaines/humaines1.htm",
+        "nom": "Surveillant(e)-sauveteur(e) de piscines ou plages"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Technicien(ne) en \r\nassistance sociale"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "TECHNICIEN(NE) EN DROIT"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_sondage.htm",
+        "nom": "Technicien(ne) en économie domestique"
+      },
+      {
+        "url": "/sociaux/tech_droit.htm",
+        "nom": "Technicien(ne) en évaluation de dommages et \r\n\tresponsabilité civile"
+      },
+      {
+        "url": "/sociaux/tech_geronto.htm",
+        "nom": "Technicien(ne)\r\nen gérontologie"
+      },
+      {
+        "url": "/sociaux/../communication/tech_communication.htm",
+        "nom": "Technicien(ne) en \r\n\tinformation ou en communication"
+      },
+      {
+        "url": "/sociaux/tech_delinquance.htm",
+        "nom": "Technicien(ne)\r\nen intervention en délinquance"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_loisirs.htm",
+        "nom": "Technicien(ne)\r\nen loisirs"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "Technicien(ne) en psychométrie"
+      },
+      {
+        "url": "/sociaux/../enseignement/educateur_spec.htm",
+        "nom": "Technicien(ne) en \r\nréadaptation psychosociale"
+      },
+      {
+        "url": "/sociaux/../humaines/tech_sondage.htm",
+        "nom": "Technicien(ne) en recherche sociale"
+      },
+      {
+        "url": "/sociaux/tech_serv_social.htm",
+        "nom": "Technicien(ne)\r\nen service social"
+      },
+      {
+        "url": "/sociaux/../sante/thanatologue.htm",
+        "nom": "Thanatologue"
+      },
+      {
+        "url": "/sociaux/../humaines/theologien.html",
+        "nom": "Théologien(ne)"
+      },
+      {
+        "url": "/sociaux/sexologue.htm",
+        "nom": "sexologue"
+      },
+      {
+        "url": "/sociaux/criminologue.htm",
+        "nom": "criminologue"
+      },
+      {
+        "url": "/sociaux/psychother.html",
+        "nom": "psychothérapeute"
+      },
+      {
+        "url": "/sociaux/psychologue.htm",
+        "nom": "psychologue"
+      },
+      {
+        "url": "/sociaux/psychother.htm",
+        "nom": "Thérapeute familial\r\net conjugal"
+      },
+      {
+        "url": "/sociaux/psychoeduc.htm",
+        "nom": "Thérapeute en rééducation"
+      },
+      {
+        "url": "/sociaux/../nature/entraineur_chevaux.htm",
+        "nom": "Thérapeute \r\n\tpar l'équitation"
+      },
+      {
+        "url": "/sociaux/therapeute_loisir.html",
+        "nom": "Thérapeute par le loisir"
+      },
+      {
+        "url": "/sociaux/therapeute_art.html",
+        "nom": "Thérapeute par les arts"
+      },
+      {
+        "url": "/sociaux/sociaux1.htm",
+        "nom": "Travailleur(euse) communautaire"
+      },
+      {
+        "url": "/sociaux/trav_social.htm",
+        "nom": "Thérapeute familial et conjugal"
+      },
+      {
+        "url": "/sociaux/zootherapeute.htm",
+        "nom": "Zoothérapeute"
+      }
+    ],
+    "count": 177
+  },
+  "transport": {
+    "nom": "Transport",
+    "slug": "transport",
+    "metiers": [
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "métiers non \r\nspécialisés"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Agent(e) d&#39;application des règlements \r\nmunicipaux"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Agent(e) de piste d'aéroport"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Aide-chauffeur(euse) d'un \r\n\tcamion lourd"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Avitailleur(euse)"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Brigadier(ère) scolaire"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Capitaine de remorqueur"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Conducteur(trice) d'un véhicule \r\n\tléger"
+      },
+      {
+        "url": "/transport/../transport/chef_train.html",
+        "nom": "Chef\r\nde train"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Chef-adjoint(e) de train"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Conducteur(trice) d'une \r\n\tdépanneuse"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Conducteur(trice) de matériel \r\n\tferroviaire intermodal"
+      },
+      {
+        "url": "/transport/../transport/controleur_aerien.html",
+        "nom": "Contrôleur(e)\r\nde la circulation aérienne"
+      },
+      {
+        "url": "/transport/../transport/controleur_ferroviaire.html",
+        "nom": "Contrôleur(e)\r\nde la circulation ferroviaire"
+      },
+      {
+        "url": "/transport/../transport/controleur_maritime.html",
+        "nom": "Contrôleur(e)\r\nde la circulation maritime"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Débardeur (docker) portuaire"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Démarreur(euse)-gareur(euse) de \r\n\tvéhicules"
+      },
+      {
+        "url": "/transport/../transport/gest_transport.html",
+        "nom": "Gestionnaire en logistique du \r\n\ttransport"
+      },
+      {
+        "url": "/transport/../transport/matelot.html",
+        "nom": "Homme d'équipage à la passerelle"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Manutentionnaire dans \r\n\tl'industrie du camionnage"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Matelot de \r\n\tremorqueur"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Matelot de \r\n\ttraversier"
+      },
+      {
+        "url": "/transport/../transport/matelot.html",
+        "nom": "Matelot qualifié(e) de passerelle ou de \r\npont"
+      },
+      {
+        "url": "/transport/../transport/matelot.html",
+        "nom": "Matelot qualifié(e) de la salle des \r\n\tmachines"
+      },
+      {
+        "url": "/transport/../transport/chef_train.html",
+        "nom": "Mécanicien(ne)\r\nde locomotive"
+      },
+      {
+        "url": "/transport/../transport/mecanicien_marine.htm",
+        "nom": "Mécanicien(ne)\r\nde marine"
+      },
+      {
+        "url": "/transport/../transport/pilote.html",
+        "nom": "Pilote\r\nd’aéronefs"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Pilote de \r\n\tmontgolfières"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Préposé(e) à \r\n\tl'embarquement"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Préposé(e) aux services \r\n\t(train)"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Préposé(e) de gare"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Répartiteur(trice) de taxis"
+      },
+      {
+        "url": "/transport/../transport/repartiteur.html",
+        "nom": "Répartiteur(trice) en transport"
+      },
+      {
+        "url": "/transport/../transport/transport1.html",
+        "nom": "Signaleur(euse) de chantiers routiers"
+      },
+      {
+        "url": "/transport/../transport/regulateur_aerien.html",
+        "nom": "Spécialiste\r\nen information de vol"
+      },
+      {
+        "url": "/transport/../transport/tech_transport.htm",
+        "nom": "Technicien(ne)\r\nen logistique du transport"
+      },
+      {
+        "url": "/transport/../transport/matelot.html",
+        "nom": "Timonier"
+      },
+      {
+        "url": "/transport/../restau_tourisme/restauration.html",
+        "nom": "Valet parking \r\n\tou voiturier(ère)"
+      }
+    ],
+    "count": 38
+  }
+}
