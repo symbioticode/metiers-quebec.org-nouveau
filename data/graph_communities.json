@@ -22,7 +22,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_administration",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_administrateur_analyste_en_strategies_d_affaires"
+    ]
   },
   "administration1": {
     "graph_node_id": "metier_administration1",
@@ -35,7 +37,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_administration",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_administration1_admission_prepose_a_l"
+    ]
   },
   "affuteurl": {
     "graph_node_id": "metier_affuteurl",
@@ -85,7 +89,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_administration",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_agent_clientelel_agent_d_un_centre_contact_clients"
+    ]
   },
   "agent_eco-tourl": {
     "graph_node_id": "metier_agent_eco-tourl",
@@ -162,7 +168,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_agriculture_agroalimentaire_pecheries",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_agriculture3l_abattage_d_animaux_manoeuvre_en"
+    ]
   },
   "agronome": {
     "graph_node_id": "metier_agronome",
@@ -175,7 +183,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_agriculture_agroalimentaire_pecheries",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_agronome_agriculture_consultant_en"
+    ]
   },
   "aide_familiall": {
     "graph_node_id": "metier_aide_familiall",
@@ -214,7 +224,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_anal_multimedial_index_analyste_en_multimedia"
+    ]
   },
   "analyste_informatiquel": {
     "graph_node_id": "metier_analyste_informatiquel",
@@ -225,7 +237,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_analyste_informatiquel_bases_de_donnees_gestionnaire_de",
+      "metier_analyste_informatiquel_index_gestionnaire_de_bases_de_donnees"
+    ]
   },
   "anim_culturell": {
     "graph_node_id": "metier_anim_culturell_chroniqueur_culturel",
@@ -249,7 +264,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_animalierl_index_vendeur_d_animaux_et_produits_en_animalerie"
+    ]
   },
   "animateur_3dl": {
     "graph_node_id": "metier_animateur_3dl",
@@ -261,7 +278,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_animateur_3dl_index_concepteur_en_art_et_science_de_l_animation"
+    ]
   },
   "animateur_pastorale": {
     "graph_node_id": "metier_animateur_pastorale_index_conseiller_en_spiritualite_et_counseling",
@@ -284,7 +303,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_animateur_tele_animateur_en_television",
+      "metier_animateur_tele_index_animateur_en_television"
+    ]
   },
   "anthropologuel": {
     "graph_node_id": "metier_anthropologuel",
@@ -295,7 +317,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_anthropologuel_index_ethnologue"
+    ]
   },
   "arboriculteur": {
     "graph_node_id": "metier_arboriculteur",
@@ -306,7 +330,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_arboriculteur_arboriculteur",
+      "metier_arboriculteur_index_arboriculteur"
+    ]
   },
   "arch_paysagiste": {
     "graph_node_id": "metier_arch_paysagiste",
@@ -318,7 +345,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_arch_paysagiste_amenagement_paysager_consultant_en"
+    ]
   },
   "architecte": {
     "graph_node_id": "metier_architecte",
@@ -329,7 +358,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_architecte_architecte"
+    ]
   },
   "armee": {
     "graph_node_id": "metier_armee_militaire",
@@ -352,7 +383,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_armee1_blinde_soldat_du"
+    ]
   },
   "armee2": {
     "graph_node_id": "metier_armee2",
@@ -363,7 +396,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_armee2_administration_des_services_de_sante_officier_d"
+    ]
   },
   "armurier": {
     "graph_node_id": "metier_armurier",
@@ -374,7 +409,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_armurier_reparateur_darmes_a_feu"
+    ]
   },
   "arpenteurl": {
     "graph_node_id": "metier_arpenteurl",
@@ -386,7 +423,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_arpenteurl_arpenteur_e_geometre"
+    ]
   },
   "artisanatl": {
     "graph_node_id": "metier_artisanatl",
@@ -397,7 +436,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_artisanatl_aide_decorateur"
+    ]
   },
   "artiste_cirque": {
     "graph_node_id": "metier_artiste_cirque",
@@ -408,7 +449,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_artiste_cirque_acteur_de_cirque"
+    ]
   },
   "artistel": {
     "graph_node_id": "metier_artistel",
@@ -419,7 +462,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_artistel_artiste_en_arts_visuels"
+    ]
   },
   "ass_dentaire": {
     "graph_node_id": "metier_ass_dentaire",
@@ -430,7 +475,15 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ass_dentaire_index_dentiste",
+      "metier_ass_dentaire_index_secretaire",
+      "metier_ass_dentaire_index_assistant_dentaire",
+      "metier_ass_dentaire_index_hygieniste_dentaire",
+      "metier_ass_dentaire_index_auxiliaire_clinique_dentaire",
+      "metier_ass_dentaire_index_assistant_technique_prosthodontie",
+      "metier_ass_dentaire_index_assistant_technique_chirurgie_buccale"
+    ]
   },
   "ass_optometrie": {
     "graph_node_id": "metier_ass_optometrie",
@@ -442,7 +495,11 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ass_optometrie_index_opticien",
+      "metier_ass_optometrie_index_optometriste",
+      "metier_ass_optometrie_index_assistant_en_optometrie"
+    ]
   },
   "ass_tech_pharmacie": {
     "graph_node_id": "metier_ass_tech_pharmacie",
@@ -454,7 +511,14 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ass_tech_pharmacie_index_medecin",
+      "metier_ass_tech_pharmacie_index_infirmier",
+      "metier_ass_tech_pharmacie_index_pharmacien",
+      "metier_ass_tech_pharmacie_index_assistant_technique_en_pharmacie",
+      "metier_ass_tech_pharmacie_index_preparateur_produits_pharmaceutiques",
+      "metier_ass_tech_pharmacie_index_representant_produits_pharmaceutiques"
+    ]
   },
   "assurances": {
     "graph_node_id": "metier_assurances",
@@ -465,7 +529,21 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_assurances_agent_de_recouvrement",
+      "metier_assurances_index_adjoint_actuariat",
+      "metier_assurances_index_commis_assurances",
+      "metier_assurances_index_estimateur_dommages",
+      "metier_assurances_index_expert_en_assurances",
+      "metier_assurances_index_technicien_actuariat",
+      "metier_assurances_index_agent_de_recouvrement",
+      "metier_assurances_index_conseiller_assurances",
+      "metier_assurances_index_souscripteur_assurance",
+      "metier_assurances_index_representant_epargne_collective",
+      "metier_assurances_index_conseiller_en_securite_financiere",
+      "metier_assurances_index_representant_plans_bourses_etudes",
+      "metier_assurances_index_agent_courtier_assurances_multirisques"
+    ]
   },
   "assurances1l": {
     "graph_node_id": "metier_assurances1l",
@@ -476,7 +554,15 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_assurances1l_assureur_vie",
+      "metier_assurances1l_index_assureur_vie",
+      "metier_assurances1l_index_analyste_risque",
+      "metier_assurances1l_index_analyste_credit",
+      "metier_assurances1l_index_planificateur_financier",
+      "metier_assurances1l_index_administrateur_regimes_retraite",
+      "metier_assurances1l_index_enseignant_techniques_services_financiers"
+    ]
   },
   "avocat": {
     "graph_node_id": "metier_avocat_index_juge",
@@ -508,7 +594,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_bibliol_archiviste",
+      "metier_bibliol_index_archiviste",
+      "metier_bibliol_index_bibliothecaire"
+    ]
   },
   "bijoutier": {
     "graph_node_id": "metier_bijoutier_index_horloger",
@@ -539,7 +629,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_biochimiste_biochimiste",
+      "metier_biochimiste_index_chercheur",
+      "metier_biochimiste_index_professeur",
+      "metier_biochimiste_index_biochimiste",
+      "metier_biochimiste_index_technicien_laboratoire"
+    ]
   },
   "bioinfol": {
     "graph_node_id": "metier_bioinfol",
@@ -551,7 +647,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_bioinfol_bioinformaticien"
+    ]
   },
   "biologiste": {
     "graph_node_id": "metier_biologiste",
@@ -563,7 +661,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_biologiste_consultant_amenagement_faune"
+    ]
   },
   "biotechnol": {
     "graph_node_id": "metier_biotechnol",
@@ -574,7 +674,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_biotechnol_biotechnologiste",
+      "metier_biotechnol_animateur_loisirs_scientifiques",
+      "metier_biotechnol_analyste_conformite_environnementale",
+      "metier_biotechnol_assistant_recherche_biologie_cellulaire"
+    ]
   },
   "briqueteur": {
     "graph_node_id": "metier_briqueteur",
@@ -585,7 +690,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_briqueteur_briqueteur_macon",
+      "metier_briqueteur_poseur_blocs_beton",
+      "metier_briqueteur_briqueteur_euse_macon_ne",
+      "metier_briqueteur_apprenti_briqueteur_macon",
+      "metier_briqueteur_conseiller_vendeur_produits_quincaillerie"
+    ]
   },
   "carrossier": {
     "graph_node_id": "metier_carrossier",
@@ -596,7 +707,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_carrossier_peintre_automobiles",
+      "metier_carrossier_estimateur_dommages",
+      "metier_carrossier_reparateur_carrosseries",
+      "metier_carrossier_apprenti_debosseleur_automobiles"
+    ]
   },
   "charpentier": {
     "graph_node_id": "metier_charpentier_coffreur_beton",
@@ -622,7 +738,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_chauffeur_autobusl_conducteur_autobus",
+      "metier_chauffeur_autobusl_conducteur_autocar",
+      "metier_chauffeur_autobusl_conducteur_autobus_scolaire",
+      "metier_chauffeur_autobusl_instructeur_conduite_autobus"
+    ]
   },
   "chauffeur_camion": {
     "graph_node_id": "metier_chauffeur_camion",
@@ -633,7 +754,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_chauffeur_camion_conducteur_citerne",
+      "metier_chauffeur_camion_camionneur_independant",
+      "metier_chauffeur_camion_conducteur_camion_lourd",
+      "metier_chauffeur_camion_conducteur_benne_basculante"
+    ]
   },
   "chauffeur_camion1": {
     "graph_node_id": "metier_chauffeur_camion1",
@@ -644,7 +770,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_chauffeur_camion1_conducteur_camion_grue",
+      "metier_chauffeur_camion1_conducteur_camion_moyen",
+      "metier_chauffeur_camion1_conducteur_convoi_fonds",
+      "metier_chauffeur_camion1_conducteur_benne_basculante"
+    ]
   },
   "chauffeur_minibusl": {
     "graph_node_id": "metier_chauffeur_minibusl_chauffeur_minibus",
@@ -691,7 +822,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_chercheur_scientifique_recherche"
+    ]
   },
   "chimie1l": {
     "graph_node_id": "metier_chimie1l",
@@ -702,7 +835,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_chimie1l_aide_technique_identite_judiciaire",
+      "metier_chimie1l_aide_technique_en_identite_judiciaire"
+    ]
   },
   "chimiste": {
     "graph_node_id": "metier_chimiste_chimiste",
@@ -756,7 +892,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_classeur_bois_classeur_bois_debites"
+    ]
   },
   "coiffeur": {
     "graph_node_id": "metier_coiffeur_coiffeur",
@@ -784,7 +922,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_comedien_acteur_ou_comedien"
+    ]
   },
   "comm_inter": {
     "graph_node_id": "metier_comm_inter_exportations_representant_en",
@@ -851,7 +991,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_comptable_analyste_en_cout_de_revient"
+    ]
   },
   "concepteur_sonl": {
     "graph_node_id": "metier_concepteur_sonl_enregistrement_de_sons_et_sonorisation_technicien_en",
@@ -895,7 +1037,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_concierge_hotell_job"
+    ]
   },
   "conducteur_machines_plast": {
     "graph_node_id": "metier_conducteur_machines_plast",
@@ -906,7 +1050,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_conducteur_machines_plast_job"
+    ]
   },
   "cons_amenagement": {
     "graph_node_id": "metier_cons_amenagement",
@@ -917,7 +1063,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_cons_amenagement_job"
+    ]
   },
   "cons_consommationl": {
     "graph_node_id": "metier_cons_consommationl_job",
@@ -940,7 +1088,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_cons_environnement_job"
+    ]
   },
   "cons_internationall": {
     "graph_node_id": "metier_cons_internationall",
@@ -951,7 +1101,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_cons_internationall_job"
+    ]
   },
   "cons_orientationl": {
     "graph_node_id": "metier_cons_orientationl_job",
@@ -974,7 +1126,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_cons_securitel_job"
+    ]
   },
   "cons_travail": {
     "graph_node_id": "metier_cons_travail_job",
@@ -997,7 +1151,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_conseiller_mode_conseiller_en_promotion_de_produits_mode"
+    ]
   },
   "controleur_aerienl": {
     "graph_node_id": "metier_controleur_aerienl",
@@ -1030,7 +1186,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_couturier_couturier"
+    ]
   },
   "couvreur": {
     "graph_node_id": "metier_couvreur_maitre_couvreur",
@@ -1075,7 +1233,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_cuisinier_traiteur"
+    ]
   },
   "danseurl": {
     "graph_node_id": "metier_danseurl",
@@ -1086,7 +1246,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_arts",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_danseurl_chorégraphe"
+    ]
   },
   "decorateur_intl": {
     "graph_node_id": "metier_decorateur_intl",
@@ -1099,7 +1261,9 @@
     ],
     "neighbor_count": 3,
     "secteur_graph": "secteur_arts",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_decorateur_intl_amenagement_d_interieur_decorateur_en"
+    ]
   },
   "dentiste": {
     "graph_node_id": "metier_dentiste",
@@ -1144,7 +1308,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_arts",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_designer_int_technicien_en_amenagement_d_interieurs"
+    ]
   },
   "designer_jeuxl": {
     "graph_node_id": "metier_designer_jeuxl",
@@ -1178,7 +1344,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_arts",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_designer_presentationl_designer_de_l_environnement"
+    ]
   },
   "dessinateur_anim": {
     "graph_node_id": "metier_dessinateur_anim",
@@ -1189,7 +1357,22 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_dessinateur_anim_index_coloriste",
+      "metier_dessinateur_anim_index_illustrateur",
+      "metier_dessinateur_anim_index_caricaturiste",
+      "metier_dessinateur_anim_bande_dessinee_artiste_en",
+      "metier_dessinateur_anim_index_artiste_illustrateur",
+      "metier_dessinateur_anim_index_concepteur_de_decors",
+      "metier_dessinateur_anim_index_directeur_artistique",
+      "metier_dessinateur_anim_index_dessinateur_artistique",
+      "metier_dessinateur_anim_index_technicien_en_graphisme",
+      "metier_dessinateur_anim_index_dessinateur_publicitaire",
+      "metier_dessinateur_anim_index_bande_dessinee_artiste_en",
+      "metier_dessinateur_anim_index_concepteur_de_personnages",
+      "metier_dessinateur_anim_index_adjoint_a_la_direction_artistique",
+      "metier_dessinateur_anim_index_responsable_technique_de_coloration"
+    ]
   },
   "dietetiste": {
     "graph_node_id": "metier_dietetiste",
@@ -1201,7 +1384,19 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_dietetiste_index_consultant_en_nutrition",
+      "metier_dietetiste_index_consultante_en_lactation",
+      "metier_dietetiste_index_nutritionniste_clinicien",
+      "metier_dietetiste_index_agent_de_promotion_alimentaire",
+      "metier_dietetiste_index_alimentation_humaine_conseiller_en",
+      "metier_dietetiste_index_directeur_des_services_alimentaires",
+      "metier_dietetiste_index_directeur_du_controle_de_la_qualite",
+      "metier_dietetiste_index_controleur_de_la_qualite_des_aliments",
+      "metier_dietetiste_index_superviseur_du_controle_de_la_qualite",
+      "metier_dietetiste_index_agent_de_gestion_des_services_alimentaires",
+      "metier_dietetiste_index_consultant_en_gestion_des_services_alimentaires"
+    ]
   },
   "douanierl": {
     "graph_node_id": "metier_douanierl",
@@ -1213,7 +1408,15 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_douanierl_index_agent_des_accises",
+      "metier_douanierl_index_agent_d_immigration",
+      "metier_douanierl_index_agent_des_exportations",
+      "metier_douanierl_index_agent_federal_des_douanes",
+      "metier_douanierl_index_courtier_en_douanes_agree",
+      "metier_douanierl_index_inspecteur_chef_des_services_frontaliers",
+      "metier_douanierl_index_agent_des_services_frontaliers_maitre_chien"
+    ]
   },
   "dynamiteur": {
     "graph_node_id": "metier_dynamiteur",
@@ -1225,7 +1428,16 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_dynamiteur_index_foreur_de_minerai",
+      "metier_dynamiteur_index_mineur_d_extraction",
+      "metier_dynamiteur_index_boutefeu_foreur_euse",
+      "metier_dynamiteur_index_conducteur_de_foreuse",
+      "metier_dynamiteur_index_foreur_de_puits_d_eau",
+      "metier_dynamiteur_index_boutefeu_lignes_electriques",
+      "metier_dynamiteur_index_foreur_de_fondations_profondes",
+      "metier_dynamiteur_index_foreur_de_puits_de_petrole_ou_de_gaz"
+    ]
   },
   "ebeniste": {
     "graph_node_id": "metier_ebeniste_ebeniste",
@@ -1274,7 +1486,14 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_lettres",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ecrivainl_index_ecrivain",
+      "metier_ecrivainl_index_agent_litteraire",
+      "metier_ecrivainl_index_directeur_litteraire",
+      "metier_ecrivainl_index_chroniqueur_critique_litteraire",
+      "metier_ecrivainl_index_enseignant_litterature_collegial",
+      "metier_ecrivainl_index_professeur_universite_etudes_litteraires"
+    ]
   },
   "educateur_caninl": {
     "graph_node_id": "metier_educateur_caninl",
@@ -1285,7 +1504,16 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_educateur_caninl_index_maitre_chien",
+      "metier_educateur_caninl_index_eleveur_canin",
+      "metier_educateur_caninl_index_dresseur_de_chiens",
+      "metier_educateur_caninl_index_comportementaliste_canin",
+      "metier_educateur_caninl_index_entraineur_en_obeissance",
+      "metier_educateur_caninl_index_moniteur_education_canine",
+      "metier_educateur_caninl_index_instructeur_en_dressage_canin",
+      "metier_educateur_caninl_index_evaluateur_comportement_canin"
+    ]
   },
   "educateur_garderie": {
     "graph_node_id": "metier_educateur_garderie",
@@ -1296,7 +1524,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_educateur_garderie_index_jardinier_enfants",
+      "metier_educateur_garderie_index_prepose_pouponniere",
+      "metier_educateur_garderie_index_educateur_hopital_enfants",
+      "metier_educateur_garderie_index_animateur_activites_enfants",
+      "metier_educateur_garderie_index_technicien_en_education_en_garderie",
+      "metier_educateur_garderie_index_conseiller_pedagogique_petite_enfance"
+    ]
   },
   "educateur_spec": {
     "graph_node_id": "metier_educateur_spec",
@@ -1308,7 +1543,18 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_educateur_spec_educateur_rue",
+      "metier_educateur_spec_employeur_clsc",
+      "metier_educateur_spec_niveau_collegial",
+      "metier_educateur_spec_agent_intervention",
+      "metier_educateur_spec_employeur_garderies",
+      "metier_educateur_spec_technicien_interpret_lsq",
+      "metier_educateur_spec_agent_soutien_pedagogique",
+      "metier_educateur_spec_animateur_activites_educatives",
+      "metier_educateur_spec_employeur_centres_services_scolaires",
+      "metier_educateur_spec_secteur_education_enseignement_services_garde"
+    ]
   },
   "educationl": {
     "graph_node_id": "metier_educationl",
@@ -1319,7 +1565,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_educationl_niveau_universitaire",
+      "metier_educationl_conseiller_education_internationale"
+    ]
   },
   "electricienl": {
     "graph_node_id": "metier_electricienl",
@@ -1330,7 +1579,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_electricienl_niveau_non_specifie",
+      "metier_electricienl_electricien_batiment",
+      "metier_electricienl_secteur_electrotechnique"
+    ]
   },
   "electromecano": {
     "graph_node_id": "metier_electromecano",
@@ -1341,7 +1594,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_electromecano_electricien_entretien_industriel",
+      "metier_electromecano_niveau_formation_professionnelle"
+    ]
   },
   "electronicien_bureau": {
     "graph_node_id": "metier_electronicien_bureau",
@@ -1353,7 +1609,12 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_electronicien_bureau_electronicien_entretien",
+      "metier_electronicien_bureau_reparateur_appareils_bureautique",
+      "metier_electronicien_bureau_conseiller_vendeur_equipements_bureau",
+      "metier_electronicien_bureau_employeur_concessionnaires_equipements_bureau"
+    ]
   },
   "electrotechnique1l": {
     "graph_node_id": "metier_electrotechnique1l",
@@ -1365,7 +1626,10 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_electrotechnique1l_niveau_secondaire",
+      "metier_electrotechnique1l_assembleur_composantes_electroniques"
+    ]
   },
   "entraineur_chevaux": {
     "graph_node_id": "metier_entraineur_chevaux",
@@ -1376,7 +1640,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_entraineur_chevaux_cavalier",
+      "metier_entraineur_chevaux_eleveur_chevaux",
+      "metier_entraineur_chevaux_directeur_centre_equestre",
+      "metier_entraineur_chevaux_secteur_sciences_naturelles",
+      "metier_entraineur_chevaux_employeur_centres_equestres"
+    ]
   },
   "enviro3l": {
     "graph_node_id": "metier_enviro3l",
@@ -1387,7 +1657,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_enviro3l_operateur_nettoyage_industriel",
+      "metier_enviro3l_secteur_environnement_amenagement_territoire"
+    ]
   },
   "ergotherapeute": {
     "graph_node_id": "metier_ergotherapeute",
@@ -1398,7 +1671,16 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ergotherapeute_physiatre",
+      "metier_ergotherapeute_psychiatre",
+      "metier_ergotherapeute_secteur_sante",
+      "metier_ergotherapeute_neurochirurgien",
+      "metier_ergotherapeute_employeur_hospitaux",
+      "metier_ergotherapeute_educateur_specialise",
+      "metier_ergotherapeute_employeur_cliniques_privees",
+      "metier_ergotherapeute_therapeute_readaptation_occupationnelle"
+    ]
   },
   "estheticien": {
     "graph_node_id": "metier_estheticien_cosmeticien",
@@ -1432,7 +1714,14 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_esthetique_autol_index_laveur_de_vehicules",
+      "metier_esthetique_autol_index_peintre_d_automobiles",
+      "metier_esthetique_autol_index_vendeur_d_autos_usagees",
+      "metier_esthetique_autol_index_apprenti_peintre_d_automobiles",
+      "metier_esthetique_autol_index_entretien_equipements_motorises",
+      "metier_esthetique_autol_index_technicien_en_esthetique_automobile"
+    ]
   },
   "exterminateurl": {
     "graph_node_id": "metier_exterminateurl",
@@ -1443,7 +1732,19 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_exterminateurl_index_exterminateur",
+      "metier_exterminateurl_index_fumigateur_trice",
+      "metier_exterminateurl_index_piegeur_controle_vermine",
+      "metier_exterminateurl_index_piegeur_controle_animaux",
+      "metier_exterminateurl_index_operateur_controle_vermine",
+      "metier_exterminateurl_index_technicien_controle_vermine",
+      "metier_exterminateurl_index_prepose_lutte_antiparasitaire",
+      "metier_exterminateurl_index_representant_controle_vermine",
+      "metier_exterminateurl_index_environnement_amenagement_territoire",
+      "metier_exterminateurl_index_representant_service_lutte_antiparasitaire",
+      "metier_exterminateurl_index_representant_service_extermination_vermine"
+    ]
   },
   "fabric_mecanique1l": {
     "graph_node_id": "metier_fabric_mecanique1l",
@@ -1455,7 +1756,10 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_fabric_mecanique1l_index_dessin_fabrication_mecanique",
+      "metier_fabric_mecanique1l_index_operateur_machines_caoutchouc"
+    ]
   },
   "finance1": {
     "graph_node_id": "metier_finance1_index_analyste_credit",
@@ -1525,7 +1829,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_fleuriste_index_floriculteur",
+      "metier_fleuriste_index_sciences_naturelles",
+      "metier_fleuriste_index_gerant_magasin_fleurs",
+      "metier_fleuriste_index_vendeur_produits_floraux",
+      "metier_fleuriste_index_representant_produits_floraux"
+    ]
   },
   "fondeur": {
     "graph_node_id": "metier_fondeur",
@@ -1536,7 +1846,40 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_fondeur_index_fondeur",
+      "metier_fondeur_index_mouleur",
+      "metier_fondeur_index_metallurgie",
+      "metier_fondeur_index_mouleur_main",
+      "metier_fondeur_index_couleur_laiton",
+      "metier_fondeur_index_monteur_noyaux",
+      "metier_fondeur_index_operateur_cuve",
+      "metier_fondeur_index_operateur_four",
+      "metier_fondeur_index_regleur_moules",
+      "metier_fondeur_index_essayeur_metaux",
+      "metier_fondeur_index_couleur_fonderie",
+      "metier_fondeur_index_mouliste_fonderie",
+      "metier_fondeur_index_operateur_cubilot",
+      "metier_fondeur_index_mouliste_ceramiste",
+      "metier_fondeur_index_verificateur_acier",
+      "metier_fondeur_index_operateur_noyauteuse",
+      "metier_fondeur_index_fabricant_noyaux_sable",
+      "metier_fondeur_index_operateur_etuve_noyaux",
+      "metier_fondeur_index_couleur_moules_fonderie",
+      "metier_fondeur_index_regleur_machines_couler",
+      "metier_fondeur_index_inspecteur_acier_feuille",
+      "metier_fondeur_index_noyauteur_metaux_acierie",
+      "metier_fondeur_index_operateur_presse_fritter",
+      "metier_fondeur_index_operateur_machines_mouler",
+      "metier_fondeur_index_regleur_atelier_noyautage",
+      "metier_fondeur_index_operateur_machines_souffler",
+      "metier_fondeur_index_controleur_qualite_production",
+      "metier_fondeur_index_controleur_traitement_thermique",
+      "metier_fondeur_index_confectionneur_noyaux_sable_main",
+      "metier_fondeur_index_operateur_machines_transformation",
+      "metier_fondeur_index_operateur_machines_couler_pression",
+      "metier_fondeur_index_operateur_machines_transformer_metaux"
+    ]
   },
   "frigoriste": {
     "graph_node_id": "metier_frigoriste_index_apprenti_frigoriste",
@@ -1569,7 +1912,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_galvaniseurl_index_chromeur",
+      "metier_galvaniseurl_index_chantiers_navals",
+      "metier_galvaniseurl_index_peintre_industriel",
+      "metier_galvaniseurl_index_galvanoplaste_metaux",
+      "metier_galvaniseurl_index_industries_aerospatiales",
+      "metier_galvaniseurl_index_argenteur_par_pulverisation",
+      "metier_galvaniseurl_index_enduiseur_peintre_industriel",
+      "metier_galvaniseurl_index_operateur_equipement_placage",
+      "metier_galvaniseurl_index_manufacturiers_produits_metalliques",
+      "metier_galvaniseurl_index_ateliers_galvanisation_metallisation"
+    ]
   },
   "geographe": {
     "graph_node_id": "metier_geographe",
@@ -1580,7 +1934,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_geographe_index_demographe",
+      "metier_geographe_index_geographie",
+      "metier_geographe_index_sociologie",
+      "metier_geographe_index_statistiques",
+      "metier_geographe_index_anthropologie",
+      "metier_geographe_index_gouvernements"
+    ]
   },
   "geologuel": {
     "graph_node_id": "metier_geologuel",
@@ -1591,7 +1952,15 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_geologuel_index_geologue",
+      "metier_geologuel_index_firmes_geologues",
+      "metier_geologuel_index_ingenieur_geologue",
+      "metier_geologuel_index_technicien_geologie",
+      "metier_geologuel_index_societes_genie_conseil",
+      "metier_geologuel_index_compagnies_exploration_miniere",
+      "metier_geologuel_index_association_exploration_miniere"
+    ]
   },
   "gerant_artistesl": {
     "graph_node_id": "metier_gerant_artistesl_index_agent_publicite",
@@ -1622,7 +1991,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_gerant_ferme_index_agriculteur",
+      "metier_gerant_ferme_index_agent_credit_agricole",
+      "metier_gerant_ferme_index_entreprises_agricoles",
+      "metier_gerant_ferme_index_agneaux_moutons_gerant_ferme",
+      "metier_gerant_ferme_index_conseiller_assurances_agricoles",
+      "metier_gerant_ferme_agneaux_et_moutons_gerant_d_une_ferme_de_production_d"
+    ]
   },
   "gest_appro": {
     "graph_node_id": "metier_gest_appro",
@@ -1633,7 +2009,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_gest_appro_index_acheteur",
+      "metier_gest_appro_index_magasinier",
+      "metier_gest_appro_acheteur_adjoint",
+      "metier_gest_appro_index_gouvernements",
+      "metier_gest_appro_index_acheteur_adjoint",
+      "metier_gest_appro_index_pme_manufacturieres",
+      "metier_gest_appro_index_etablissements_sante",
+      "metier_gest_appro_index_agent_approvisionnements",
+      "metier_gest_appro_index_technicien_approvisionnements",
+      "metier_gest_appro_index_grandes_entreprises_manufacturieres"
+    ]
   },
   "gest_appro1l": {
     "graph_node_id": "metier_gest_appro1l",
@@ -1644,7 +2031,16 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_gest_appro1l_index_analyste_logistique",
+      "metier_gest_appro1l_index_grandes_entreprises",
+      "metier_gest_appro1l_index_acheteur_professionnel",
+      "metier_gest_appro1l_index_organisations_publiques",
+      "metier_gest_appro1l_approvisionnements_analyste_en",
+      "metier_gest_appro1l_index_firmes_ingenieurs_conseils",
+      "metier_gest_appro1l_index_approvisionnements_analyste",
+      "metier_gest_appro1l_index_directeur_approvisionnements"
+    ]
   },
   "gest_ind1l": {
     "graph_node_id": "metier_gest_ind1l_index_analyste_production",
@@ -1674,7 +2070,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_gest_quantifl_index_banques",
+      "metier_gest_quantifl_index_qualiticien",
+      "metier_gest_quantifl_index_gouvernements",
+      "metier_gest_quantifl_analyste_de_donnees",
+      "metier_gest_quantifl_index_analyste_donnees",
+      "metier_gest_quantifl_index_firmes_consultants",
+      "metier_gest_quantifl_index_analyste_operations",
+      "metier_gest_quantifl_index_compagnies_assurances",
+      "metier_gest_quantifl_index_analyste_intelligence_affaires",
+      "metier_gest_quantifl_index_conseiller_methodes_quantitatives"
+    ]
   },
   "gest_tour-hotell": {
     "graph_node_id": "metier_gest_tour-hotell",
@@ -1729,7 +2136,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_grutier_conducteur_d_une_grue"
+    ]
   },
   "horticulteur": {
     "graph_node_id": "metier_horticulteur",
@@ -1740,7 +2149,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_horticulteur_producteur_de_plantes_ornementales"
+    ]
   },
   "humaines1": {
     "graph_node_id": "metier_humaines1",
@@ -1751,7 +2162,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_humaines1_prepose_au_club_de_sante_et_spa"
+    ]
   },
   "humoristel": {
     "graph_node_id": "metier_humoristel_humoriste",
@@ -1778,7 +2191,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_hygieniste_hygieniste_dentaire"
+    ]
   },
   "immobilier": {
     "graph_node_id": "metier_immobilier_conseiller_en_prets_hypothecaires",
@@ -1818,7 +2233,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_infirmier_auxiliaire",
+      "metier_infirmier_index_infirmier"
+    ]
   },
   "infirmier_auxiliaire": {
     "graph_node_id": "metier_infirmier_auxiliaire",
@@ -1840,7 +2258,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_info_gestionl_affaires_analyste_d",
+      "metier_info_gestionl_index_affaires_analyste_d"
+    ]
   },
   "infographiste": {
     "graph_node_id": "metier_infographiste",
@@ -1851,7 +2272,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_infographiste_index_communications_graphiques_designer_en"
+    ]
   },
   "ing_aerospatial": {
     "graph_node_id": "metier_ing_aerospatial_ingenieur_en_aerospatial",
@@ -1875,7 +2298,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_agricole_agroenvironnement_ingenieur_en",
+      "metier_ing_agricole_index_agroenvironnement_ingenieur_en"
+    ]
   },
   "ing_alimentaire": {
     "graph_node_id": "metier_ing_alimentaire_genie_alimentaire_ingenieur_en",
@@ -1900,7 +2326,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_automatisation_index_automatisation_ingenieur_en"
+    ]
   },
   "ing_biomedicall": {
     "graph_node_id": "metier_ing_biomedicall",
@@ -1912,7 +2340,11 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_biomedicall_index_biomedical",
+      "metier_ing_biomedicall_index_universitaire",
+      "metier_ing_biomedicall_index_electrotechnique"
+    ]
   },
   "ing_biotechnol": {
     "graph_node_id": "metier_ing_biotechnol",
@@ -1923,7 +2355,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_biotechnol_index_biotechnologies",
+      "metier_ing_biotechnol_index_chimie_et_biologie",
+      "metier_ing_biotechnol_biotechnologies_ingenieur_en"
+    ]
   },
   "ing_boisl": {
     "graph_node_id": "metier_ing_boisl",
@@ -1935,7 +2371,11 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_boisl_index_bois",
+      "metier_ing_boisl_index_collegial",
+      "metier_ing_boisl_index_foresterie_et_papier"
+    ]
   },
   "ing_chimiste": {
     "graph_node_id": "metier_ing_chimiste_index_chimiste",
@@ -1961,7 +2401,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_civil_index_civil",
+      "metier_ing_civil_index_environnement_amenagement"
+    ]
   },
   "ing_construction": {
     "graph_node_id": "metier_ing_construction_index_construction",
@@ -1987,7 +2430,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_electricien_index_electricien"
+    ]
   },
   "ing_environnement": {
     "graph_node_id": "metier_ing_environnement",
@@ -1998,7 +2443,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_environnement_index_eaux"
+    ]
   },
   "ing_forestier": {
     "graph_node_id": "metier_ing_forestier",
@@ -2010,7 +2457,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_forestier_index_amenagement_forestier"
+    ]
   },
   "ing_geomatiquel": {
     "graph_node_id": "metier_ing_geomatiquel",
@@ -2021,7 +2470,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_geomatiquel_genie_geomatique_ingenieur"
+    ]
   },
   "ing_industriel": {
     "graph_node_id": "metier_ing_industriel",
@@ -2032,7 +2483,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_industriel_industriel_ingenieur"
+    ]
   },
   "ing_informaticien": {
     "graph_node_id": "metier_ing_informaticien",
@@ -2043,7 +2496,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_informaticien_ingenieur_informaticien"
+    ]
   },
   "ing_logiciell": {
     "graph_node_id": "metier_ing_logiciell",
@@ -2054,7 +2509,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_logiciell_ingenieur_en_logiciel"
+    ]
   },
   "ing_maritimel": {
     "graph_node_id": "metier_ing_maritimel",
@@ -2066,7 +2523,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_maritimel_architecte_naval"
+    ]
   },
   "ing_mecanicien": {
     "graph_node_id": "metier_ing_mecanicien",
@@ -2077,7 +2536,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_mecanicien_ingenieur_mecanicien"
+    ]
   },
   "ing_metallurgistel": {
     "graph_node_id": "metier_ing_metallurgistel",
@@ -2088,7 +2549,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_metallurgistel_ingenieur_en_materiaux"
+    ]
   },
   "ing_minerall": {
     "graph_node_id": "metier_ing_minerall",
@@ -2099,7 +2562,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_minerall_ingenieur_des_mines"
+    ]
   },
   "ing_petrolel": {
     "graph_node_id": "metier_ing_petrolel",
@@ -2110,7 +2575,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_petrolel_ingenieur_en_gaz_et_petrole"
+    ]
   },
   "ing_physicien": {
     "graph_node_id": "metier_ing_physicien",
@@ -2121,7 +2588,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_physique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ing_physicien_index_ingenieur_physicien"
+    ]
   },
   "inst_autol": {
     "graph_node_id": "metier_inst_autol",
@@ -2132,7 +2601,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_inst_autol_index_pare_brise_reparateur_de"
+    ]
   },
   "installateur_securite": {
     "graph_node_id": "metier_installateur_securite_reparateur_de_systemes_de_securite",
@@ -2157,7 +2628,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_int_aventurel_index_animateur_d_activites_en_tourisme_d_aventure"
+    ]
   },
   "int_sportsl": {
     "graph_node_id": "metier_int_sportsl",
@@ -2168,7 +2641,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_int_sportsl_index_conseiller_en_activite_physique"
+    ]
   },
   "journaliste": {
     "graph_node_id": "metier_journaliste_journaliste",
@@ -2192,7 +2667,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_kinesiologue_index_kinesiologue"
+    ]
   },
   "linguistel": {
     "graph_node_id": "metier_linguistel",
@@ -2203,7 +2680,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_lettres",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_linguistel_index_redacteur_en_langue_francaise"
+    ]
   },
   "machiniste": {
     "graph_node_id": "metier_machiniste",
@@ -2215,7 +2694,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_machiniste_index_ajusteur_outilleur_de_machines"
+    ]
   },
   "mannequinl": {
     "graph_node_id": "metier_mannequinl_mannequin",
@@ -2252,7 +2733,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_marketing1l_agent_de_promotion",
+      "metier_marketing1l_index_agent_de_promotion"
+    ]
   },
   "maroquinierl": {
     "graph_node_id": "metier_maroquinierl",
@@ -2264,7 +2748,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_maroquinierl_index_artisan_du_cuir"
+    ]
   },
   "matelotl": {
     "graph_node_id": "metier_matelotl_index_matelot_qualifie_de_salle_des_machines",
@@ -2288,7 +2774,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_physique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mathematicien_index_mathematicien"
+    ]
   },
   "mecanicien_agricolel": {
     "graph_node_id": "metier_mecanicien_agricolel",
@@ -2299,7 +2787,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_agricolel_index_mecanicien_de_machineries_agricoles"
+    ]
   },
   "mecanicien_ascenseurs": {
     "graph_node_id": "metier_mecanicien_ascenseurs",
@@ -2310,7 +2800,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_ascenseurs_index_reparateur_d_ascenseurs"
+    ]
   },
   "mecanicien_auto": {
     "graph_node_id": "metier_mecanicien_auto",
@@ -2321,7 +2813,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_auto_index_reparateur_d_automobiles"
+    ]
   },
   "mecanicien_bateauxl": {
     "graph_node_id": "metier_mecanicien_bateauxl",
@@ -2333,7 +2827,14 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_bateauxl_index_bateaux_mecanicien_de",
+      "metier_mecanicien_bateauxl_index_conseiller_ventes_bateaux",
+      "metier_mecanicien_bateauxl_index_reparateur_moteurs_marins",
+      "metier_mecanicien_bateauxl_index_ateliers_reparation_bateaux",
+      "metier_mecanicien_bateauxl_index_entretien_equipements_motorises",
+      "metier_mecanicien_bateauxl_index_concessionnaires_embarcations_nautique"
+    ]
   },
   "mecanicien_camions": {
     "graph_node_id": "metier_mecanicien_camions",
@@ -2345,7 +2846,14 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_camions_index_autobus_mecanicien",
+      "metier_mecanicien_camions_index_concessionnaires_camions",
+      "metier_mecanicien_camions_index_conducteur_camions_lourds",
+      "metier_mecanicien_camions_index_entretien_equipements_motorises",
+      "metier_mecanicien_camions_index_centres_reparation_vehicules_lourds",
+      "metier_mecanicien_camions_index_apprenti_mecanicien_vehicules_lourds"
+    ]
   },
   "mecanicien_fixes": {
     "graph_node_id": "metier_mecanicien_fixes_index_hopitaux",
@@ -2392,7 +2900,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_industriel_index_cfp_estuaire",
+      "metier_mecanicien_industriel_index_mecatronicien",
+      "metier_mecanicien_industriel_index_cfp_baie_james",
+      "metier_mecanicien_industriel_index_mecanicien_soudeur",
+      "metier_mecanicien_industriel_index_mecanique_entretien",
+      "metier_mecanicien_industriel_index_machines_industrielles_mecanicien"
+    ]
   },
   "mecanicien_legers": {
     "graph_node_id": "metier_mecanicien_legers",
@@ -2403,7 +2918,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_legers_index_gerant_magasin",
+      "metier_mecanicien_legers_index_ateliers_reparation",
+      "metier_mecanicien_legers_index_contremaitre_atelier",
+      "metier_mecanicien_legers_index_centres_location_equipements",
+      "metier_mecanicien_legers_index_entretien_equipements_motorises",
+      "metier_mecanicien_legers_index_mecanicien_motocyclettes_motoneiges_vtt"
+    ]
   },
   "mecanicien_mach_coudrel": {
     "graph_node_id": "metier_mecanicien_mach_coudrel",
@@ -2414,7 +2936,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_mach_coudrel_index_mecanique_entretien",
+      "metier_mecanicien_mach_coudrel_index_manufacturiers_produits_textiles",
+      "metier_mecanicien_mach_coudrel_index_machines_a_coudre_industrielles_mecanicien"
+    ]
   },
   "mecanicien_machineries": {
     "graph_node_id": "metier_mecanicien_machineries",
@@ -2425,7 +2951,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mecanicien_machineries_index_conducteur_equipement_lourd",
+      "metier_mecanicien_machineries_index_apprenti_mecanicien_chantier",
+      "metier_mecanicien_machineries_index_machineries_legeres_mecanicien",
+      "metier_mecanicien_machineries_index_entretien_equipements_motorises",
+      "metier_mecanicien_machineries_index_concessionnaires_machineries_lourdes",
+      "metier_mecanicien_machineries_index_centres_reparation_machineries_lourdes"
+    ]
   },
   "mecanicien_marine": {
     "graph_node_id": "metier_mecanicien_marine_index_transport",
@@ -2453,7 +2986,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_med_doucesl_index_herboriste",
+      "metier_med_doucesl_index_homeopathe",
+      "metier_med_doucesl_index_naturopathe",
+      "metier_med_doucesl_index_reflexologue",
+      "metier_med_doucesl_index_hypnotherapeute",
+      "metier_med_doucesl_index_phytotherapeute",
+      "metier_med_doucesl_index_nutritherapeute",
+      "metier_med_doucesl_index_hydrotherapeute",
+      "metier_med_doucesl_index_naturotherapeute",
+      "metier_med_doucesl_index_therapeute_qi_gong"
+    ]
   },
   "medecin": {
     "graph_node_id": "metier_medecin",
@@ -2464,7 +3008,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_medecin_index_medecin",
+      "metier_medecin_index_medecin_militaire",
+      "metier_medecin_index_medecin_chercheur"
+    ]
   },
   "metallurgie1": {
     "graph_node_id": "metier_metallurgie1",
@@ -2475,7 +3023,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_metallurgie1_index_forgeron"
+    ]
   },
   "microbio": {
     "graph_node_id": "metier_microbio",
@@ -2486,7 +3036,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_microbio_alimentaires_analyste_de_produits",
+      "metier_microbio_index_alimentaires_analyste_de_produits"
+    ]
   },
   "mines1l": {
     "graph_node_id": "metier_mines1l",
@@ -2497,7 +3050,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mines1l_index_conducteur_essais_puits_petrole"
+    ]
   },
   "mixologue": {
     "graph_node_id": "metier_mixologue",
@@ -2509,7 +3064,10 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mixologue_index_barman",
+      "metier_mixologue_index_mixologue"
+    ]
   },
   "mode1l": {
     "graph_node_id": "metier_mode1l",
@@ -2521,7 +3079,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_mode1l_index_buandier"
+    ]
   },
   "monteur_mecanique_aero": {
     "graph_node_id": "metier_monteur_mecanique_aero",
@@ -2532,7 +3092,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_monteur_mecanique_aero_aeronautique_monteur_mecanicien_en",
+      "metier_monteur_mecanique_aero_index_monteur_mecanicien_aeronautique"
+    ]
   },
   "monteur_meubles": {
     "graph_node_id": "metier_monteur_meubles_index_operateur_machines_meubles",
@@ -2558,7 +3121,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_motorises1l_aide_a_la_preparation_des_vehicules_automobiles"
+    ]
   },
   "musicienl": {
     "graph_node_id": "metier_musicienl",
@@ -2569,7 +3134,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_musicienl_bassiste"
+    ]
   },
   "naturellel": {
     "graph_node_id": "metier_naturellel",
@@ -2580,7 +3147,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_naturellel_palefrenier_professionnel"
+    ]
   },
   "navigateur": {
     "graph_node_id": "metier_navigateur",
@@ -2591,7 +3160,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_navigateur_capitaine_de_navire"
+    ]
   },
   "occupationsl": {
     "graph_node_id": "metier_occupationsl",
@@ -2602,7 +3173,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_occupationsl_aide_briqueteur_macon"
+    ]
   },
   "oper_aliments": {
     "graph_node_id": "metier_oper_aliments",
@@ -2613,7 +3186,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_aliments_operateur_de_machines_en_transformation_des_aliments",
+      "metier_oper_aliments_aliments_operateur_de_machines_en_transformation_des"
+    ]
   },
   "oper_arpentage": {
     "graph_node_id": "metier_oper_arpentage",
@@ -2625,7 +3201,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_arpentage_arpenteur_topographe"
+    ]
   },
   "oper_eauxl": {
     "graph_node_id": "metier_oper_eauxl",
@@ -2637,7 +3215,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_eauxl_operateur_dusine_en_assainissement_des_eaux"
+    ]
   },
   "oper_mach_for": {
     "graph_node_id": "metier_oper_mach_for",
@@ -2648,7 +3228,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_mach_for_operateur_de_machinerie_forestiere"
+    ]
   },
   "oper_mach_ind": {
     "graph_node_id": "metier_oper_mach_ind",
@@ -2659,7 +3241,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_mach_ind_index_dessin_et_fabrication_mecanique",
+      "metier_oper_mach_ind_index_conducteur_de_machines_de_production_industrielle"
+    ]
   },
   "oper_mineraisl": {
     "graph_node_id": "metier_oper_mineraisl",
@@ -2670,7 +3255,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_mineraisl_index_operateur_de_machinerie_miniere",
+      "metier_oper_mineraisl_index_mines_petrole_et_travaux_de_genie"
+    ]
   },
   "oper_textilel": {
     "graph_node_id": "metier_oper_textilel",
@@ -2681,7 +3269,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_oper_textilel_index_mode_et_production_textile",
+      "metier_oper_textilel_index_operateur_de_machines_en_construction_textile"
+    ]
   },
   "operateur_imprimerie": {
     "graph_node_id": "metier_operateur_imprimerie",
@@ -2692,7 +3283,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_imprimerie_index_operateur_de_machines_ou_presses_dimprimerie",
+      "metier_operateur_imprimerie_index_communications_graphiques_multimedia_et_imprimerie"
+    ]
   },
   "operateur_legerl": {
     "graph_node_id": "metier_operateur_legerl",
@@ -2703,7 +3297,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_legerl_index_operateur_de_machineries_legeres"
+    ]
   },
   "operateur_machinerie": {
     "graph_node_id": "metier_operateur_machinerie",
@@ -2714,7 +3310,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_machinerie_index_operateur_de_chargeuse_ou_chargeuse_pelleteuse"
+    ]
   },
   "operateur_papier": {
     "graph_node_id": "metier_operateur_papier",
@@ -2725,7 +3323,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_papier_index_foresterie_et_papier",
+      "metier_operateur_papier_index_operateur_de_machines_a_fabriquer_faconner_ou_finir_le_papier"
+    ]
   },
   "operateur_pelle": {
     "graph_node_id": "metier_operateur_pelle",
@@ -2736,7 +3337,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_pelle_index_operateur_de_pelle_mecanique"
+    ]
   },
   "operateur_scieriel": {
     "graph_node_id": "metier_operateur_scieriel",
@@ -2747,7 +3350,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_operateur_scieriel_index_operateur_de_machines_a_scier_le_bois"
+    ]
   },
   "opticien": {
     "graph_node_id": "metier_opticien",
@@ -2758,7 +3363,20 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_opticien_index_propre_compte",
+      "metier_opticien_index_centres_optique",
+      "metier_opticien_index_centres_readaptation",
+      "metier_opticien_index_laboratoires_optique",
+      "metier_opticien_index_opticien_d_ordonnances",
+      "metier_opticien_index_assistant_optometriste",
+      "metier_opticien_index_cliniques_optometristes",
+      "metier_opticien_index_cliniques_ophtalmologie",
+      "metier_opticien_index_fabricants_grossistes_optique",
+      "metier_opticien_index_technicien_laboratoire_lentilles",
+      "metier_opticien_index_representant_technique_ophtalmique",
+      "metier_opticien_index_ordre_opticiens_ordonnances_quebec"
+    ]
   },
   "optometriste": {
     "graph_node_id": "metier_optometriste",
@@ -2769,7 +3387,14 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_optometriste_index_hopitaux",
+      "metier_optometriste_index_optometriste",
+      "metier_optometriste_index_centres_optique",
+      "metier_optometriste_index_ordre_optometristes_quebec",
+      "metier_optometriste_index_specialiste_orientation_mobilite",
+      "metier_optometriste_index_specialiste_readaptation_deficience_visuelle"
+    ]
   },
   "orthopedagogue": {
     "graph_node_id": "metier_orthopedagogue",
@@ -2780,7 +3405,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_orthopedagogue_index_orthopedagogue"
+    ]
   },
   "orthoptiste": {
     "graph_node_id": "metier_orthoptiste",
@@ -2791,7 +3418,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_orthoptiste_index_orthoptiste",
+      "metier_orthoptiste_index_cliniques_privees_ophtalmologie",
+      "metier_orthoptiste_index_association_orthoptistes_quebec"
+    ]
   },
   "ouvrier_agricole": {
     "graph_node_id": "metier_ouvrier_agricole_producteur_laitier",
@@ -2905,7 +3536,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_agricole7_index_producteur_ovin",
+      "metier_ouvrier_agricole7_agneaux_et_moutons_producteur_d"
+    ]
   },
   "ouvrier_agricole8": {
     "graph_node_id": "metier_ouvrier_agricole8_chevres_producteur_de",
@@ -2929,7 +3563,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_composites_index_operateur_machines_composites"
+    ]
   },
   "ouvrier_cuir": {
     "graph_node_id": "metier_ouvrier_cuir",
@@ -2940,7 +3576,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_cuir_index_ouvrier_fabrication_chaussures"
+    ]
   },
   "ouvrier_foresterie": {
     "graph_node_id": "metier_ouvrier_foresterie",
@@ -2951,7 +3589,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_foresterie_index_ouvrier_amenagement_forestier"
+    ]
   },
   "ouvrier_foresterie1": {
     "graph_node_id": "metier_ouvrier_foresterie1",
@@ -2962,7 +3602,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_foresterie1_index_debardeur_forestier"
+    ]
   },
   "ouvrier_paysagistel": {
     "graph_node_id": "metier_ouvrier_paysagistel",
@@ -2973,7 +3615,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_paysagistel_index_ouvrier_paysager"
+    ]
   },
   "ouvrier_vetements": {
     "graph_node_id": "metier_ouvrier_vetements",
@@ -2984,7 +3628,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_ouvrier_vetements_index_machines_a_coudre_industrielle_conducteur_de"
+    ]
   },
   "patroniste": {
     "graph_node_id": "metier_patroniste",
@@ -2995,7 +3641,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_patroniste_index_mode_dessinateur_de"
+    ]
   },
   "peintre": {
     "graph_node_id": "metier_peintre_indl",
@@ -3032,7 +3680,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_perfusionnistel_index_perfusionniste"
+    ]
   },
   "photographe": {
     "graph_node_id": "metier_photographe_maitre_photographe",
@@ -3056,7 +3706,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_physiotherapeute_index_readaptation_physique_therapeute_en"
+    ]
   },
   "pisciculteurl": {
     "graph_node_id": "metier_pisciculteurl_pisciculteur",
@@ -3132,7 +3784,22 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_policier_index_collegial",
+      "metier_policier_index_gendarme_grc",
+      "metier_policier_index_patrouilleur",
+      "metier_policier_index_surete_quebec",
+      "metier_policier_index_ministere_justice",
+      "metier_policier_index_policier_militaire",
+      "metier_policier_index_protection_publique",
+      "metier_policier_index_service_police_municipal",
+      "metier_policier_index_enqueteur_criminel_police",
+      "metier_policier_index_gendarmerie_royale_canada",
+      "metier_policier_index_constable_special_securite",
+      "metier_policier_index_policier_municipal_provincial",
+      "metier_policier_index_forces_armees_canadiennes_police",
+      "metier_policier_index_accidents_de_la_route_enqueteur_aux"
+    ]
   },
   "politicologuel": {
     "graph_node_id": "metier_politicologuel",
@@ -3143,7 +3810,25 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_politicologuel_index_journalisme",
+      "metier_politicologuel_index_universitaire",
+      "metier_politicologuel_index_politicologue",
+      "metier_politicologuel_index_agent_immigration",
+      "metier_politicologuel_index_critique_politique",
+      "metier_politicologuel_index_relations_publiques",
+      "metier_politicologuel_index_enseignement_superieur",
+      "metier_politicologuel_index_administration_publique",
+      "metier_politicologuel_index_organisations_politiques",
+      "metier_politicologuel_index_agent_information_recherche",
+      "metier_politicologuel_index_sciences_techniques_humaines",
+      "metier_politicologuel_index_organisations_internationales",
+      "metier_politicologuel_index_agent_development_international",
+      "metier_politicologuel_index_agent_administration_programmes",
+      "metier_politicologuel_index_conseiller_development_communautaire",
+      "metier_politicologuel_index_enseignant_science_politique_collegial",
+      "metier_politicologuel_index_professeur_universite_science_politique"
+    ]
   },
   "pompier": {
     "graph_node_id": "metier_pompier",
@@ -3154,7 +3839,28 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_pompier_index_chef_pompier",
+      "metier_pompier_index_municipalites",
+      "metier_pompier_index_gouvernements",
+      "metier_pompier_index_sapeur_pompier",
+      "metier_pompier_index_pompier_aeroport",
+      "metier_pompier_index_agences_securite",
+      "metier_pompier_index_pompier_industrie",
+      "metier_pompier_index_grandes_industries",
+      "metier_pompier_index_pompier_temps_plein",
+      "metier_pompier_index_enqueteur_incendies",
+      "metier_pompier_index_compagnies_minieres",
+      "metier_pompier_index_compagnies_assurance",
+      "metier_pompier_index_compagnies_maritimes",
+      "metier_pompier_index_pompier_temps_partiel",
+      "metier_pompier_index_compagnies_forestieres",
+      "metier_pompier_index_agent_prevention_incendies",
+      "metier_pompier_index_societes_gestion_aeroports",
+      "metier_pompier_index_entreprises_systemes_alarme",
+      "metier_pompier_index_inspecteur_prevention_incendies",
+      "metier_pompier_index_firmes_consultants_prevention_incendies"
+    ]
   },
   "poseur_revetements": {
     "graph_node_id": "metier_poseur_revetements_index_poseur_revetements_souples",
@@ -3230,7 +3936,23 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prep_recreotourismel_index_sepaq",
+      "metier_prep_recreotourismel_index_piegeur",
+      "metier_prep_recreotourismel_index_homme_cour",
+      "metier_prep_recreotourismel_index_centres_ski",
+      "metier_prep_recreotourismel_index_parcs_canada",
+      "metier_prep_recreotourismel_index_prepose_accueil",
+      "metier_prep_recreotourismel_index_centres_plein_air",
+      "metier_prep_recreotourismel_index_parcs_attractions",
+      "metier_prep_recreotourismel_index_centres_villégiature",
+      "metier_prep_recreotourismel_index_operateur_canon_neige",
+      "metier_prep_recreotourismel_index_pourvoiries_chasse_peche",
+      "metier_prep_recreotourismel_index_conducteur_remontees_mecaniques",
+      "metier_prep_recreotourismel_index_restauration_hotellerie_tourisme",
+      "metier_prep_recreotourismel_index_operateur_machinerie_legere_entretien_sentiers",
+      "metier_prep_recreotourismel_index_prepose_operations_entretien_site_recreotouristique"
+    ]
   },
   "prep_reprographiel": {
     "graph_node_id": "metier_prep_reprographiel",
@@ -3241,7 +3963,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prep_reprographiel_index_lamineur",
+      "metier_prep_reprographiel_index_maisons_edition",
+      "metier_prep_reprographiel_index_commis_duplicateur",
+      "metier_prep_reprographiel_index_centres_photocopies",
+      "metier_prep_reprographiel_index_centres_reprogramie",
+      "metier_prep_reprographiel_index_operateur_copieur_laser",
+      "metier_prep_reprographiel_index_imprimeries_commerciales",
+      "metier_prep_reprographiel_index_operateur_impression_numerique",
+      "metier_prep_reprographiel_index_operateur_machines_imprimer_laser",
+      "metier_prep_reprographiel_index_communications_graphiques_multimedia_imprimerie"
+    ]
   },
   "prep_servicel": {
     "graph_node_id": "metier_prep_servicel",
@@ -3253,7 +3986,20 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_motorises",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prep_servicel_index_aide_garage",
+      "metier_prep_servicel_index_huileur_euse",
+      "metier_prep_servicel_index_prepose_pneus",
+      "metier_prep_servicel_index_graisseur_euse",
+      "metier_prep_servicel_index_prepose_garage",
+      "metier_prep_servicel_index_aide_mecanicien",
+      "metier_prep_servicel_index_reparateur_pneus",
+      "metier_prep_servicel_index_mecanicien_freins",
+      "metier_prep_servicel_index_poseur_silencieux",
+      "metier_prep_servicel_index_prepose_suspension",
+      "metier_prep_servicel_index_femme_homme_service",
+      "metier_prep_servicel_index_prepose_entretien_mecanique"
+    ]
   },
   "prep_ski_golfl": {
     "graph_node_id": "metier_prep_ski_golfl",
@@ -3264,7 +4010,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prep_ski_golfl_index_prepose_entretien_terrains_golf"
+    ]
   },
   "preventionnistel": {
     "graph_node_id": "metier_preventionnistel",
@@ -3275,7 +4023,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_preventionnistel_index_agent_prevention_incendies",
+      "metier_preventionnistel_index_conseiller_securite_incendie",
+      "metier_preventionnistel_index_agent_conseiller_prevention_incendies"
+    ]
   },
   "prof_adapt_scol": {
     "graph_node_id": "metier_prof_adapt_scol",
@@ -3287,7 +4039,22 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_adapt_scol_index_orthopedagogue",
+      "metier_prof_adapt_scol_index_psychopedagogue",
+      "metier_prof_adapt_scol_index_directeur_ecole",
+      "metier_prof_adapt_scol_index_educateur_garderie",
+      "metier_prof_adapt_scol_index_educateur_specialise",
+      "metier_prof_adapt_scol_index_educateur_prescolaire",
+      "metier_prof_adapt_scol_index_directeur_adjoint_ecole",
+      "metier_prof_adapt_scol_index_formateur_alphabetisation",
+      "metier_prof_adapt_scol_index_animateur_enfants_handicapes",
+      "metier_prof_adapt_scol_index_professeur_adaptation_scolaire",
+      "metier_prof_adapt_scol_index_orthopedagogue_enseignant_primaire",
+      "metier_prof_adapt_scol_index_agent_conseil_soutien_pedagogique_cpe",
+      "metier_prof_adapt_scol_index_enseignant_general_primaire_suppleance",
+      "metier_prof_adapt_scol_index_conseiller_pedagogique_adaptation_scolaire"
+    ]
   },
   "prof_anglais": {
     "graph_node_id": "metier_prof_anglais",
@@ -3299,7 +4066,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_anglais_index_professeur_anglais_langue_seconde"
+    ]
   },
   "prof_anglais1": {
     "graph_node_id": "metier_prof_anglais1",
@@ -3311,7 +4080,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_anglais1_index_professeur_anglais_langue_maternelle"
+    ]
   },
   "prof_arts": {
     "graph_node_id": "metier_prof_arts",
@@ -3323,7 +4094,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_arts_index_professeur_arts_plastiques"
+    ]
   },
   "prof_collegiall": {
     "graph_node_id": "metier_prof_collegiall",
@@ -3335,7 +4108,15 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_collegiall_index_ministere_education",
+      "metier_prof_collegiall_index_consultant_education",
+      "metier_prof_collegiall_index_conseiller_pedagogique",
+      "metier_prof_collegiall_index_agent_programmes_etudes",
+      "metier_prof_collegiall_index_aide_pedagogique_individuel",
+      "metier_prof_collegiall_index_professeur_anthropologie_collegial",
+      "metier_prof_collegiall_index_specialiste_moyens_techniques_enseignement"
+    ]
   },
   "prof_danse": {
     "graph_node_id": "metier_prof_danse",
@@ -3346,7 +4127,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_danse_index_professeur_danse"
+    ]
   },
   "prof_educ": {
     "graph_node_id": "metier_prof_educ",
@@ -3357,7 +4140,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_educ_professeur_d_education_physique"
+    ]
   },
   "prof_francaisLS": {
     "graph_node_id": "metier_prof_francaisLS",
@@ -3380,7 +4165,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_langues_allemand_professeur_d"
+    ]
   },
   "prof_musique": {
     "graph_node_id": "metier_prof_musique",
@@ -3391,7 +4178,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_musique_musique_au_primaire_ou_secondaire_professeur_de"
+    ]
   },
   "prof_prescol_primaire": {
     "graph_node_id": "metier_prof_prescol_primaire",
@@ -3402,7 +4191,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_prescol_primaire_educateur_au_prescolaire"
+    ]
   },
   "prof_professl": {
     "graph_node_id": "metier_prof_professl",
@@ -3413,7 +4204,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_professl_collegial_professeur_au"
+    ]
   },
   "prof_religion": {
     "graph_node_id": "metier_prof_religion",
@@ -3424,7 +4217,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_religion_morale_professeur_de"
+    ]
   },
   "prof_secondaire": {
     "graph_node_id": "metier_prof_secondaire",
@@ -3436,7 +4231,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_secondaire_biologie_au_secondaire_professeur_en"
+    ]
   },
   "prof_theatre": {
     "graph_node_id": "metier_prof_theatre",
@@ -3448,7 +4245,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_theatre_art_dramatique_au_primaire_ou_secondaire_professeur_en"
+    ]
   },
   "prof_universitel": {
     "graph_node_id": "metier_prof_universitel",
@@ -3459,7 +4258,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_enseignement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_prof_universitel_professeur_d_universite"
+    ]
   },
   "protection": {
     "graph_node_id": "metier_protection",
@@ -3471,7 +4272,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_protection_index_agent_de_la_paix"
+    ]
   },
   "psychoeduc": {
     "graph_node_id": "metier_psychoeduc_index_integration_sociale_conseiller_en",
@@ -3546,7 +4349,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_receptionniste_hotel_index_hotellerie_receptionniste_en"
+    ]
   },
   "regulateur_aerienl": {
     "graph_node_id": "metier_regulateur_aerienl_index_information_de_vol_specialiste_en",
@@ -3576,7 +4381,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_relationniste_affaires_publiques_conseiller_en",
+      "metier_relationniste_index_affaires_publiques_conseiller_en"
+    ]
   },
   "rembourreur": {
     "graph_node_id": "metier_rembourreur_meubles_rembourreur_de",
@@ -3600,7 +4408,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_repar_caravanes_caravanes_reparateur_de",
+      "metier_repar_caravanes_index_caravanes_reparateur_de"
+    ]
   },
   "repar_electronique": {
     "graph_node_id": "metier_repar_electronique",
@@ -3612,7 +4423,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_repar_electronique_index"
+    ]
   },
   "repar_telecommunications": {
     "graph_node_id": "metier_repar_telecommunications",
@@ -3624,7 +4437,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_repar_telecommunications_index"
+    ]
   },
   "repartiteur_urgencesl": {
     "graph_node_id": "metier_repartiteur_urgencesl",
@@ -3635,7 +4450,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_repartiteur_urgencesl_index"
+    ]
   },
   "repartiteurl": {
     "graph_node_id": "metier_repartiteurl_index",
@@ -3658,7 +4475,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_restaurationl_hebergement_touristique_prepose_a_l"
+    ]
   },
   "sante1l": {
     "graph_node_id": "metier_sante1l",
@@ -3670,7 +4489,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_sante1l_aide_perfusionniste"
+    ]
   },
   "sc_legalesl": {
     "graph_node_id": "metier_sc_legalesl",
@@ -3681,7 +4502,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_sc_legalesl_anthropologue_judiciaire"
+    ]
   },
   "sc_med": {
     "graph_node_id": "metier_sc_med",
@@ -3692,7 +4515,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_sc_med_specialiste_maladies_infectieuses"
+    ]
   },
   "scenaristel": {
     "graph_node_id": "metier_scenaristel",
@@ -3703,7 +4528,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_scenaristel_auteur_pieces_art_dramatique",
+      "metier_scenaristel_art_dramatique_auteur_de_pieces_en"
+    ]
   },
   "scenel": {
     "graph_node_id": "metier_scenel",
@@ -3714,7 +4542,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_scenel_index_aide_enregistrement_audio_spectacles",
+      "metier_scenel_aide_a_l_enregistrement_audio_et_de_spectacles"
+    ]
   },
   "scenographe": {
     "graph_node_id": "metier_scenographe_production_theatrale_technicien_en",
@@ -3765,7 +4596,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_protection",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_securite_index_agent_surete_aeroportuaire"
+    ]
   },
   "serrurier": {
     "graph_node_id": "metier_serrurier",
@@ -3776,7 +4609,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_serrurier_index_serrurier_entretien"
+    ]
   },
   "serveur": {
     "graph_node_id": "metier_serveur",
@@ -3787,7 +4622,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_serveur_index_serveur"
+    ]
   },
   "sociaux1": {
     "graph_node_id": "metier_sociaux1_index_intervenant_milieu_residentiel",
@@ -3819,7 +4656,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_sociologuel_index_sociologue"
+    ]
   },
   "soutien_infol": {
     "graph_node_id": "metier_soutien_infol_commis_aux_logiciels",
@@ -3859,7 +4698,16 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_physique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_statisticien_statisticien",
+      "metier_statisticien_analyse_programmeur",
+      "metier_statisticien_analyste_des_processus",
+      "metier_statisticien_analyste_des_methodes_et_processus",
+      "metier_statisticien_agent_de_recherche_socio_economique",
+      "metier_statisticien_analyste_en_recherche_en_statistiques",
+      "metier_statisticien_agent_de_recherche_et_planification_universites",
+      "metier_statisticien_agent_de_recherche_et_planification_socio_economique"
+    ]
   },
   "stenol": {
     "graph_node_id": "metier_stenol_audiotypiste",
@@ -3898,7 +4746,17 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_sylviculteur_elagueur",
+      "metier_sylviculteur_reboiseur",
+      "metier_sylviculteur_ouvrier_sylvicole",
+      "metier_sylviculteur_pompier_forestier",
+      "metier_sylviculteur_assistant_forestier",
+      "metier_sylviculteur_producteur_sylvicole",
+      "metier_sylviculteur_travailleur_forestier",
+      "metier_sylviculteur_conducteur_de_scarificateur",
+      "metier_sylviculteur_operateur_d_une_deroussailleuse"
+    ]
   },
   "tailleur": {
     "graph_node_id": "metier_tailleur",
@@ -3909,7 +4767,26 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tailleur_modiste",
+      "metier_tailleur_fourreur",
+      "metier_tailleur_couturier",
+      "metier_tailleur_echantillonneur",
+      "metier_tailleur_maitre_fourreur",
+      "metier_tailleur_maitre_tailleur",
+      "metier_tailleur_assistant_designer",
+      "metier_tailleur_couturier_reparateur",
+      "metier_tailleur_couturier_en_confection",
+      "metier_tailleur_retoucheur_en_confection",
+      "metier_tailleur_conseiller_en_vente_de_tissus",
+      "metier_tailleur_conseiller_en_vente_de_vetements",
+      "metier_tailleur_conseiller_en_style_vestimentaire",
+      "metier_tailleur_marchandiseur_dans_les_grands_magasins",
+      "metier_tailleur_assistant_acheteur_pour_les_importateurs",
+      "metier_tailleur_couturier_pour_le_theatre_cinema_ou_television",
+      "metier_tailleur_conseiller_en_ventes_de_vetements_hauts_de_gamme",
+      "metier_tailleur_couturier_specialise_en_vetements_hauts_de_gamme"
+    ]
   },
   "tech_administration": {
     "graph_node_id": "metier_tech_administration",
@@ -3920,7 +4797,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_administration_administration_agent_en"
+    ]
   },
   "tech_aeronautiquel": {
     "graph_node_id": "metier_tech_aeronautiquel",
@@ -3931,7 +4810,26 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_aeronautiquel_ajusteur_au_banc",
+      "metier_tech_aeronautiquel_agent_de_methodes",
+      "metier_tech_aeronautiquel_dessinateur_d_aeronefs",
+      "metier_tech_aeronautiquel_ajusteur_monteur_d_aviation",
+      "metier_tech_aeronautiquel_planificateur_de_production",
+      "metier_tech_aeronautiquel_agent_de_qualite_fabrication",
+      "metier_tech_aeronautiquel_controleur_a_l_assemblage_final",
+      "metier_tech_aeronautiquel_technicien_en_genie_aerospatial",
+      "metier_tech_aeronautiquel_banc_d_essai_aeronefs_technicien_au",
+      "metier_tech_aeronautiquel_controleur_a_l_assemblage_mecanique",
+      "metier_tech_aeronautiquel_technicien_en_fabrication_mecanique",
+      "metier_tech_aeronautiquel_technicien_en_controle_de_la_qualite",
+      "metier_tech_aeronautiquel_technicien_en_production_aeronautique",
+      "metier_tech_aeronautiquel_technicien_en_structures_aeronautiques",
+      "metier_tech_aeronautiquel_dessinateur_concepteur_de_pieces_mecaniques",
+      "metier_tech_aeronautiquel_mecanicien_d_appareillage_hydraulique_d_aviation",
+      "metier_tech_aeronautiquel_controleur_a_l_assemblage_de_l_equipement_hydraulique",
+      "metier_tech_aeronautiquel_technicien_a_l_installation_et_entretien_en_usine_des_systemes_mecaniques"
+    ]
   },
   "tech_aeronefs": {
     "graph_node_id": "metier_tech_aeronefs",
@@ -3942,7 +4840,23 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_aeronefs_mecanicien_prevoll",
+      "metier_tech_aeronefs_mecanicien_d_aeronefs",
+      "metier_tech_aeronefs_aide_technicien_d_aeronefs",
+      "metier_tech_aeronefs_chef_mecanicien_d_aeronefs",
+      "metier_tech_aeronefs_apprenti_mecanicien_d_aeronefs",
+      "metier_tech_aeronefs_mecanicien_au_banc_de_finition",
+      "metier_tech_aeronefs_accidents_aeriens_enqueteur_aux",
+      "metier_tech_aeronefs_technicien_en_genie_aerospatial",
+      "metier_tech_aeronefs_verificateur_de_moteurs_d_avions",
+      "metier_tech_aeronefs_inspecteur_en_entretien_d_aeronefs",
+      "metier_tech_aeronefs_technicien_en_banc_d_essai_moteurs",
+      "metier_tech_aeronefs_mecanicien_d_accessoires_d_aeronefs",
+      "metier_tech_aeronefs_technicien_en_revision_des_composantes_d_aeronefs",
+      "metier_tech_aeronefs_controleur_au_montage_des_equipements_des_aeronefs",
+      "metier_tech_aeronefs_technicien_au_controle_de_la_qualite_lors_de_l_entretien"
+    ]
   },
   "tech_aliments": {
     "graph_node_id": "metier_tech_aliments",
@@ -3953,7 +4867,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_aliments_index_job",
+      "metier_tech_aliments_agneaux_et_moutons_technologue_en_transformation_d"
+    ]
   },
   "tech_arch_naval": {
     "graph_node_id": "metier_tech_arch_naval",
@@ -3964,7 +4881,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_arch_naval_index_job"
+    ]
   },
   "tech_architecture": {
     "graph_node_id": "metier_tech_architecture_index_job",
@@ -4002,7 +4921,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_avionique_index_job",
+      "metier_tech_avionique_aerospatial_technologue_de_l_avionique_en"
+    ]
   },
   "tech_biochimie": {
     "graph_node_id": "metier_tech_biochimie_index_job",
@@ -4077,7 +4999,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_biomasse_index_job",
+      "metier_tech_biomasse_biomasse_technologue_en_transformation_de_la"
+    ]
   },
   "tech_biomedicall": {
     "graph_node_id": "metier_tech_biomedicall",
@@ -4089,7 +5014,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_biomedicall_index_job"
+    ]
   },
   "tech_bureautique": {
     "graph_node_id": "metier_tech_bureautique_index_job",
@@ -4136,7 +5063,12 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_cartographie_index_cartographe",
+      "metier_tech_cartographie_index_geomaticien_ne",
+      "metier_tech_cartographie_index_technologue_en_geomatique",
+      "metier_tech_cartographie_index_cartographie_technologue_en"
+    ]
   },
   "tech_chimie": {
     "graph_node_id": "metier_tech_chimie_index_analyste_en_chimie",
@@ -4174,7 +5106,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_composites_index_charge_de_projet",
+      "metier_tech_composites_index_dessinateur_concepteur",
+      "metier_tech_composites_index_fibre_de_verre_technologue_en",
+      "metier_tech_composites_index_technologue_en_fabrication_de_materiaux"
+    ]
   },
   "tech_delinquance": {
     "graph_node_id": "metier_tech_delinquance_index_educateur_social",
@@ -4200,7 +5137,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_dentaire_index_dentaire_technologiste",
+      "metier_tech_dentaire_index_technicien_dentaire_specialiste_en_ceramique",
+      "metier_tech_dentaire_index_representant_commercial_en_produits_dentaires",
+      "metier_tech_dentaire_index_technicien_dentaire_specialiste_en_orthodontie"
+    ]
   },
   "tech_design_ind": {
     "graph_node_id": "metier_tech_design_ind",
@@ -4211,7 +5153,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_design_ind_index_correcteur_de_dessin",
+      "metier_tech_design_ind_index_dessinateur_industriel",
+      "metier_tech_design_ind_index_industriel_technicien_en_design",
+      "metier_tech_design_ind_index_dessinateur_modeliste_de_produits_commerciaux"
+    ]
   },
   "tech_dietetique": {
     "graph_node_id": "metier_tech_dietetique",
@@ -4222,7 +5169,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_dietetique_index_dietotherapeute",
+      "metier_tech_dietetique_index_consultante_en_lactation",
+      "metier_tech_dietetique_index_conseiller_en_alimentation",
+      "metier_tech_dietetique_index_inspecteur_de_produits_alimentaires"
+    ]
   },
   "tech_documentationl": {
     "graph_node_id": "metier_tech_documentationl",
@@ -4233,7 +5185,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_documentationl_index_recherchiste",
+      "metier_tech_documentationl_index_bibliotechnicien",
+      "metier_tech_documentationl_archivistique_technicien_en",
+      "metier_tech_documentationl_index_archivistique_technicien_en",
+      "metier_tech_documentationl_index_agent_de_service_de_collections"
+    ]
   },
   "tech_droit": {
     "graph_node_id": "metier_tech_droit_enqueteur_aux_normes_du_travail",
@@ -4297,7 +5255,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_eaux_controle_de_la_qualite_des_eaux_technicien_en"
+    ]
   },
   "tech_echographie": {
     "graph_node_id": "metier_tech_echographie",
@@ -4308,7 +5268,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_echographie_echographie_technologue_en"
+    ]
   },
   "tech_electro_ind": {
     "graph_node_id": "metier_tech_electro_ind",
@@ -4320,7 +5282,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_electro_ind_appareillage_electrique_technologue_en"
+    ]
   },
   "tech_electromenagers": {
     "graph_node_id": "metier_tech_electromenagers",
@@ -4332,7 +5296,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_electromenagers_appareils_electromenagers_reparateur_d"
+    ]
   },
   "tech_electroniquel": {
     "graph_node_id": "metier_tech_electroniquel",
@@ -4344,7 +5310,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_electrotechnique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_electroniquel_audiovisuels_technologue_en"
+    ]
   },
   "tech_electrophysio": {
     "graph_node_id": "metier_tech_electrophysio",
@@ -4356,7 +5324,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_electrophysio_cardiologie_technicien_en"
+    ]
   },
   "tech_environnement": {
     "graph_node_id": "metier_tech_environnement",
@@ -4367,7 +5337,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_environnement_environnement_technicien_en"
+    ]
   },
   "tech_eval_batiment": {
     "graph_node_id": "metier_tech_eval_batiment_technologue_en_evaluation_et_estimation_en_batiment",
@@ -4405,7 +5377,22 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_nature",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_faune_tach",
+      "metier_tech_faune_sepaq",
+      "metier_tech_faune_collegial",
+      "metier_tech_faune_entomologiste",
+      "metier_tech_faune_sciences_naturelles",
+      "metier_tech_faune_assistant_botaniste",
+      "metier_tech_faune_assistant_biologiste",
+      "metier_tech_faune_techniques_bioecologie",
+      "metier_tech_faune_agent_conservation_faune",
+      "metier_tech_faune_agent_ressources_naturelles",
+      "metier_tech_faune_assistant_recherche_biologie",
+      "metier_tech_faune_interprete_guide_de_la_nature",
+      "metier_tech_faune_animateur_sciences_naturelles",
+      "metier_tech_faune_centres_interpretation_nature"
+    ]
   },
   "tech_foresterie": {
     "graph_node_id": "metier_tech_foresterie",
@@ -4417,7 +5404,18 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_foresterie_collegial",
+      "metier_tech_foresterie_foresterie_et_papier",
+      "metier_tech_foresterie_contremaitre_forestier",
+      "metier_tech_foresterie_compagnies_forestieres",
+      "metier_tech_foresterie_technologie_forestiere",
+      "metier_tech_foresterie_contremaitre_cartographie",
+      "metier_tech_foresterie_firmes_ingenieurs_forestiers",
+      "metier_tech_foresterie_coordonnateur_projet_amenagement_forestier",
+      "metier_tech_foresterie_amenagement_environnement_forestiers_technologue_en",
+      "metier_tech_foresterie_techniques_milieu_naturel_amenagement_ressource_forestiere"
+    ]
   },
   "tech_foresterie1": {
     "graph_node_id": "metier_tech_foresterie1",
@@ -4429,7 +5427,15 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_foresterie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_foresterie1_scieries",
+      "metier_tech_foresterie1_collegial",
+      "metier_tech_foresterie1_contremaitre_usine",
+      "metier_tech_foresterie1_controleur_qualite",
+      "metier_tech_foresterie1_foresterie_et_papier",
+      "metier_tech_foresterie1_industries_transformation_bois",
+      "metier_tech_foresterie1_bois_technologue_en_transformation_du"
+    ]
   },
   "tech_gazl": {
     "graph_node_id": "metier_tech_gazl_energir",
@@ -4460,7 +5466,16 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_genie_agricole_collegial",
+      "metier_tech_genie_agricole_dec_genie_agromecanique",
+      "metier_tech_genie_agricole_gerant_departement_pieces",
+      "metier_tech_genie_agricole_agromecanique_technologue_en_genie",
+      "metier_tech_genie_agricole_concessionnaires_machines_agricoles",
+      "metier_tech_genie_agricole_agriculture_agroalimentaire_pecheries",
+      "metier_tech_genie_agricole_ateliers_reparation_equipements_agricoles",
+      "metier_tech_genie_agricole_representant_technique_equipements_agricoles"
+    ]
   },
   "tech_genie_chimique": {
     "graph_node_id": "metier_tech_genie_chimique_collegial",
@@ -4489,7 +5504,15 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_genie_civil_collegial",
+      "metier_tech_genie_civil_firmes_ingenierie",
+      "metier_tech_genie_civil_entreprises_genie_civil",
+      "metier_tech_genie_civil_civil_technologue_en_genie",
+      "metier_tech_genie_civil_environnement_amenagement_territoire",
+      "metier_tech_genie_civil_aec_inspection_controle_travaux_publics",
+      "metier_tech_genie_civil_aec_controle_qualite_materiaux_genie_civil"
+    ]
   },
   "tech_genie_industriel": {
     "graph_node_id": "metier_tech_genie_industriel",
@@ -4500,7 +5523,15 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_genie_industriel_acheteur",
+      "metier_tech_genie_industriel_collegial",
+      "metier_tech_genie_industriel_analyste_etude_temps",
+      "metier_tech_genie_industriel_entreprises_transport",
+      "metier_tech_genie_industriel_firmes_ingenieurs_conseils",
+      "metier_tech_genie_industriel_dessin_et_fabrication_mecanique",
+      "metier_tech_genie_industriel_fabrication_industrielle_technologue_en"
+    ]
   },
   "tech_genie_mecanique": {
     "graph_node_id": "metier_tech_genie_mecanique",
@@ -4511,7 +5542,13 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_genie_mecanique_collegial",
+      "metier_tech_genie_mecanique_industries_aerospatiales",
+      "metier_tech_genie_mecanique_firmes_ingenieurs_conseils",
+      "metier_tech_genie_mecanique_dessin_et_fabrication_mecanique",
+      "metier_tech_genie_mecanique_dessinateur_concepteur_en_mecanique"
+    ]
   },
   "tech_geodesie": {
     "graph_node_id": "metier_tech_geodesie",
@@ -4522,7 +5559,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_geodesie_index_technicien_en_geomatique"
+    ]
   },
   "tech_geronto": {
     "graph_node_id": "metier_tech_geronto_index_gestionnaire_centre_hebergement_personnes_agees",
@@ -4558,7 +5597,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_hotellerie_index_gerant_d_hotel"
+    ]
   },
   "tech_hygiene": {
     "graph_node_id": "metier_tech_hygiene",
@@ -4570,7 +5611,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_hygiene_index_enqueteur_aux_accidents_du_travail"
+    ]
   },
   "tech_identitel": {
     "graph_node_id": "metier_tech_identitel_criminalistique_technicien_en",
@@ -4594,7 +5637,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_imprimerie_index_technicien_en_gestion_de_projets_en_communications_graphiques"
+    ]
   },
   "tech_informatique": {
     "graph_node_id": "metier_tech_informatique_commerce_electronique_technicien_en",
@@ -4619,7 +5664,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_labo_medical_index_assistant_pathologiste"
+    ]
   },
   "tech_mec_batiment": {
     "graph_node_id": "metier_tech_mec_batiment_index_collegial",
@@ -4651,7 +5698,17 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_med_nucleaire_index_sante",
+      "metier_tech_med_nucleaire_index_collegial",
+      "metier_tech_med_nucleaire_index_les_centres_hospitaliers",
+      "metier_tech_med_nucleaire_index_compagnies_pharmaceutiques",
+      "metier_tech_med_nucleaire_index_cliniques_medicales_privees",
+      "metier_tech_med_nucleaire_index_externe_en_technologie_medicale",
+      "metier_tech_med_nucleaire_index_technologue_en_medecine_nucleaire",
+      "metier_tech_med_nucleaire_index_representant_technique_en_produits_radiologiques",
+      "metier_tech_med_nucleaire_index_technicien_ne_en_controle_de_la_qualite_des_produits_radio_actifs"
+    ]
   },
   "tech_media": {
     "graph_node_id": "metier_tech_media",
@@ -4662,7 +5719,18 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_media_agent_de_publicite",
+      "metier_tech_media_index_universitaire",
+      "metier_tech_media_index_stations_de_radio",
+      "metier_tech_media_index_agent_de_publicite",
+      "metier_tech_media_index_agent_d_information",
+      "metier_tech_media_index_agences_de_publicite",
+      "metier_tech_media_index_annonceur_euse_en_radio",
+      "metier_tech_media_index_agences_de_relations_publiques",
+      "metier_tech_media_index_communication_documentation_et_medias",
+      "metier_tech_media_index_assistant_a_la_production_avec_experience"
+    ]
   },
   "tech_menuiserie": {
     "graph_node_id": "metier_tech_menuiserie",
@@ -4673,7 +5741,12 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_menuiserie_index_collegial",
+      "metier_tech_menuiserie_architecturale_technicien_en_menuiserie",
+      "metier_tech_menuiserie_index_bois_meubles_et_materiaux_connexes",
+      "metier_tech_menuiserie_index_technicien_en_menuiserie_architecturale"
+    ]
   },
   "tech_metallurgie": {
     "graph_node_id": "metier_tech_metallurgie",
@@ -4684,7 +5757,17 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_metallurgie_index_collegial",
+      "metier_tech_metallurgie_index_metallurgie",
+      "metier_tech_metallurgie_index_metallographe",
+      "metier_tech_metallurgie_index_chantiers_navals",
+      "metier_tech_metallurgie_index_ateliers_de_soudage",
+      "metier_tech_metallurgie_index_inspecteur_trice_en_metallurgie",
+      "metier_tech_metallurgie_index_technologue_en_fabrication_metallique",
+      "metier_tech_metallurgie_index_centres_de_recherches_publics_et_prives",
+      "metier_tech_metallurgie_index_professeur_en_enseignement_professionnel_en_metallurgie"
+    ]
   },
   "tech_meubles": {
     "graph_node_id": "metier_tech_meubles_index_collegial",
@@ -4710,7 +5793,11 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_minierl_index_collegial",
+      "metier_tech_minierl_index_technologue_minier",
+      "metier_tech_minierl_index_mines_petrole_et_travaux_de_genie"
+    ]
   },
   "tech_multimedia": {
     "graph_node_id": "metier_tech_multimedia",
@@ -4721,7 +5808,17 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_graphique",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_multimedia_index_collegial",
+      "metier_tech_multimedia_index_entreprises_de_logiciels",
+      "metier_tech_multimedia_index_entreprises_de_magazines",
+      "metier_tech_multimedia_index_entreprises_de_multimedia",
+      "metier_tech_multimedia_index_concepteur_de_sites_internet",
+      "metier_tech_multimedia_index_concepteur_trice_de_sites_web",
+      "metier_tech_multimedia_index_animateur_trice_multimedia_2d_et_3d",
+      "metier_tech_multimedia_index_concepteur_trice_de_documents_multimedia",
+      "metier_tech_multimedia_index_communications_graphiques_multimedia_et_imprimerie"
+    ]
   },
   "tech_museologiel": {
     "graph_node_id": "metier_tech_museologiel_index_collegial",
@@ -4830,7 +5927,9 @@
     ],
     "neighbor_count": 4,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_pechesl_aquaculture_technicien_en"
+    ]
   },
   "tech_petrolel": {
     "graph_node_id": "metier_tech_petrolel",
@@ -4884,7 +5983,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_plastiques_index_technologue_plasturgie"
+    ]
   },
   "tech_poissonl": {
     "graph_node_id": "metier_tech_poissonl_index_technologue_peches",
@@ -4924,7 +6025,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_prod_animales_index_technologue_productions_animales",
+      "metier_tech_prod_animales_agneaux_et_moutons_technologue_en_production_d"
+    ]
   },
   "tech_radiodiagnostic": {
     "graph_node_id": "metier_tech_radiodiagnostic",
@@ -4935,7 +6039,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_radiodiagnostic_index_technologue_radiologie"
+    ]
   },
   "tech_readaptation": {
     "graph_node_id": "metier_tech_readaptation",
@@ -4946,7 +6052,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_readaptation_index_technicien_readaptation_physique"
+    ]
   },
   "tech_restauration": {
     "graph_node_id": "metier_tech_restauration",
@@ -4957,7 +6065,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_restauration_index_gerant_restaurant"
+    ]
   },
   "tech_sante_animale": {
     "graph_node_id": "metier_tech_sante_animale",
@@ -4968,7 +6078,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_sante_animale_index_technicien_sante_animale"
+    ]
   },
   "tech_serv_social": {
     "graph_node_id": "metier_tech_serv_social_index_intervenant_integration_sociale",
@@ -4992,7 +6104,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_sondage_index_technicien_en_sondage"
+    ]
   },
   "tech_sportsl": {
     "graph_node_id": "metier_tech_sportsl",
@@ -5003,7 +6117,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mecanique_entr",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_sportsl_index_mecanicien_de_velos"
+    ]
   },
   "tech_tele": {
     "graph_node_id": "metier_tech_tele_medias_technicien_en",
@@ -5027,7 +6143,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_textiles_index_technologue_en_construction_textile"
+    ]
   },
   "tech_tourisme": {
     "graph_node_id": "metier_tech_tourisme",
@@ -5039,7 +6157,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_restau_tourisme",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_tourisme_index_accompagnateur_touristique"
+    ]
   },
   "tech_transport": {
     "graph_node_id": "metier_tech_transport_index_representant_en_transport",
@@ -5085,7 +6205,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_urbanismel_index_technicien_en_urbanisme"
+    ]
   },
   "tech_vetements": {
     "graph_node_id": "metier_tech_vetements",
@@ -5096,7 +6218,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tech_vetements_index_technicien_en_gestion_de_la_production_de_la_mode"
+    ]
   },
   "techno_maritimel": {
     "graph_node_id": "metier_techno_maritimel",
@@ -5107,7 +6231,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_fabric_mec",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_techno_maritimel_index_technologue_en_conception_maritime"
+    ]
   },
   "techno_pharmaceutiquel": {
     "graph_node_id": "metier_techno_pharmaceutiquel_technologue_en_production",
@@ -5131,7 +6257,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_thanatologue_technicien_de_salle_dautopsie"
+    ]
   },
   "theologienl": {
     "graph_node_id": "metier_theologienl",
@@ -5142,7 +6270,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_humaines",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_theologienl_theologien"
+    ]
   },
   "therapeute_artl": {
     "graph_node_id": "metier_therapeute_artl",
@@ -5153,7 +6283,10 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_therapeute_artl_art_therapeute",
+      "metier_therapeute_artl_art_dramatique_therapeute_par_l"
+    ]
   },
   "therapeute_loisirl": {
     "graph_node_id": "metier_therapeute_loisirl_therapeute_par_le_loisir",
@@ -5177,7 +6310,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_therapeute_sport_therapeute_du_sport"
+    ]
   },
   "tisserandl": {
     "graph_node_id": "metier_tisserandl",
@@ -5188,7 +6323,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_mode",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tisserandl_artisan_en_construction_textile"
+    ]
   },
   "tolier": {
     "graph_node_id": "metier_tolier",
@@ -5199,7 +6336,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_metallurgie",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_tolier_operateur_de_machines_de_fabrication_metallique"
+    ]
   },
   "traducteur": {
     "graph_node_id": "metier_traducteur",
@@ -5210,7 +6349,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_lettres",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_traducteur_interprete_de_conferences"
+    ]
   },
   "transcripteurl": {
     "graph_node_id": "metier_transcripteurl_medical_transcripteur",
@@ -5234,7 +6375,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": null,
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_transport1l_index_adjoint_a_la_salle_des_machines"
+    ]
   },
   "trav_social": {
     "graph_node_id": "metier_trav_social_index_conseiller_en_integration_sociale",
@@ -5255,7 +6398,9 @@
     ],
     "neighbor_count": 2,
     "secteur_graph": "secteur_environnement",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_urbanistel_index_consultant_en_amenagement_du_territoire"
+    ]
   },
   "vendeur": {
     "graph_node_id": "metier_vendeur_vendeur",
@@ -5335,7 +6480,9 @@
     ],
     "neighbor_count": 1,
     "secteur_graph": "secteur_sante",
-    "related_subnodes": []
+    "related_subnodes": [
+      "metier_veterinaire_veterinaire"
+    ]
   },
   "viticulteurl": {
     "graph_node_id": "metier_viticulteurl_viticulteur",

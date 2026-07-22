@@ -53,16 +53,28 @@ def build_slug_candidates(graph_nodes):
     return candidates
 
 
-def find_candidates_for_slug(slug, prefix_map):
+def find_candidates_for_slug(slug, prefix_map, corpus_slugs):
     """Find all metier_ nodes matching a slug via prefix matching.
 
     Returns (main_node, [subnodes]) where main_node has the shortest ID.
+    Collision guard: only active for slugs with an exact match in prefix_map.
+    For slugs without exact match, all prefix matches are included (best-effort,
+    may include sibling sub-concepts — see docs/kb009.md).
     """
     # Exact match first
     if slug in prefix_map:
-        nodes = prefix_map[slug]
+        nodes = list(prefix_map[slug])
+        # Prefix match WITH guard (slug has its own nodes, guard is safe)
+        for key, node_list in prefix_map.items():
+            if key.startswith(slug + "_"):
+                is_sibling = any(
+                    key.startswith(s + "_") for s in corpus_slugs if s != slug
+                )
+                if not is_sibling:
+                    nodes.extend(node_list)
     else:
-        # Prefix match: IDs that start with slug_
+        # No exact match: include ALL prefix matches (no guard)
+        # Risk: may include sibling sub-concepts, but avoids losing data
         nodes = []
         for key, node_list in prefix_map.items():
             if key.startswith(slug + "_"):
@@ -110,7 +122,7 @@ def main():
     subnode_total = 0
 
     for slug in sorted(corpus_slugs):
-        node, subnodes = find_candidates_for_slug(slug, prefix_map)
+        node, subnodes = find_candidates_for_slug(slug, prefix_map, corpus_slugs)
         if not node:
             missing.append(slug)
             continue
