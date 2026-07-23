@@ -1,0 +1,49 @@
+{
+  "code": "tech_hygiene",
+  "code_provisoire": true,
+  "noms": [
+    "Accidents du travail, enquêteur aux"
+  ],
+  "secteur": "environnement",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En devenant technicienne ou technicien en hygiène industrielle; tu seras responsable d'intervenir dans un",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": ") implique quelques déplacements à Jonquière au Saguenay Lac-Saint-Jean ou à La Pocatière dans le Bas-Saint-Laurent ou à Montréal pour des laboratoires et stage regarde la du programme offert au conjointement avec le • Organisation scientifique de la production (705 heures - 28 semaines à temps complet en présentiel de jour) OU (705 heures - 14 mois à temps partiel en présentiel de jour) comprend un stage de 4 semaines en milieu industriel offert au\n\nafin de t'assurer qu'ils respectent les normes et règlements; • Effectuer des études et des enquêtes reliées aux risques sur la santé, la sécurité et l’environnement et lors d'accidents ou d'incidents; • Rédiger des documents techniques et administratifs; • Concevoir et mettre en application des plans d’intervention en cas d’urgence; • Calibrer et utiliser divers appareils et instruments spécialisés; • Évaluer les impacts environnementaux; • Élaborer des programmes et des mesures visant à améliorer la qualité de vie au travail; • Élaborer et mettre en œuvre des programmes d'éducation et de prévention des risques à la santé et sécurité en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "description",
+      "valeur": "des liaisons chimiques, les caractéristiques des gaz ainsi que les états de la matière et les changements d’états); tu seras initié(e) aux notions de base, aux problématiques et aux grands enjeux des trois champs de la technique : protection de l’environnement, hygiène industrielle et sécurité au travail; tu apprendras à reconnaître, distinguer et observer les risques physiques, chimiques et biologiques qui sont présents dans la plupart des secteurs d'activités industriels; tu seras familiarisé(e) avec la gestion des matières dangereuses et résiduelles et de mieux cerner les besoins et le bien-fondé du contrôle des contaminants; explorer de nombreuses techniques, tu exploreras les différents outils et méthodes de communication afin de diffuser et livrer l’information en matière de santé, sécurité et hygiène au travail; tu apprendras à identifier les facteurs de risques physiologiques et ergonomiques à la santé des travailleurs(euses); tu approfondiras les notions fondamentales de la chimie appliquées à l'environnement en étudiant les grandes familles de composés organiques, leurs structures et la nomenclature; tu seras initié(e) au fonctionnement et à l’aménagement de différents procédés, ainsi qu’aux caractéristiques de l’organisation des entreprises dans différents secteurs industriels du Québec (construction, métallurgie, plasturgie, papetier, minier, transformation du bois, etc.); tu seras initié(e) aux principes et aux protocoles de base d’échantillonnage, d'analyses et d’essais en environnement et tu seras familiarisé(e) avec la législation, la réglementation et la normalisation en matière de santé, de sécurité et d’environnement au travail. Tu auras des cours tels que : mathématiques appliquées à l'environnement et santé au travail, chimie en environnement 1, introduction à l'environnement et à la sécurité, identification des risques, traitement des matières résiduelles, communication et rédaction technique,physiologie humaine, ergonomie et santé au travail, chimie en environnement 2, procédés industriels et organisation du travail, méthodes d'échantillonage et d'analyse en environnement et législation et santé, sécurité et environnement au travail. Si tu as choisi la formule enalternance travail-études ATE, tu réaliseras ton premierstage rémunéréau cours du trimestre d'été. Au cours de la deuxième année; tu seras familiarisé(e) avec la gestion de dossier particulièrement en ce qui a trait à la prévention, aux lésions professionnelles et à l’aspect financier le tout dans le respect des lois et des règlements du Québec; tu poursuivras l’étude de l’identification et du contrôle des rejets à l’environnement ainsi que des risques pour la santé et sécurité au travail en milieu industriel et initié(e) aux nouvelles formes d’organisations du travail telles que la production à valeur ajoutée, les 5S et les cellules de production; tu apprendras les modes de transmission des agents pathogènes afin d’exercer un contrôle sur ces contaminants en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "code": "transport1l",
+  "code_provisoire": true,
+  "noms": [
+    "Adjoint à la salle des machines"
+  ],
+  "secteur": "transport",
+  "faits": [
+    {
+      "champ": "description",
+      "valeur": "de la fonction de signaleur routier, identification des principales composantes des chantiers routiers, distinction des équipements obligatoires, recommandés et interdits d'un signaleur routier, choix d'un endroit sécuritaire où se positionner, comportements des automobiles, sélection des signaux et des modes de communication appropriés selon la clientèle, situations particulières, mesures d'urgences lors d'accidents et enfin, l'examen de certification. ENDROITS DE FORMATION : Note : consulte le site de l'pour la liste complète des endroits de formation. • à Montréal : centre de formation de l'Association québécois du transport et des routes AQTR,offert en ligne sur Internet (sauf l'examen de certification offert dans l'un des centres de formation ci-dessous + au bureau de l'AQTR) • à Montréal • (section \"formation continue\") à Québec, région de Québec • (section \"formation aux individus et aux entreprises\") à Québec, région de Québec • (centre de formation continue de la C.S.S. de Laval) à Laval, région de Laval • (via son) à La Prairie, région Montérégie • (section \"services aux entreprises) à Sorel-Tracy, région Montérégie • (section \"services aux entreprises) à St-Jérôme, région des Laurentides • à Mont-Laurier, région des Laurentides • (via sonsection \"cartes de compétence\") • (section \"services aux entreprises et communauté\") à Joliette, région Lanaudière • (section \"services aux entreprises\") à Thetford Mines, région Chaudière-Appalaches • (centre de formation continue et services aux entreprises de la C.S.S. du Lac-St-Jean) à Alma, région du Saguenay-Lac-St-Jean • à Sherbrooke, région Estrie • à Rivière-du-Loup, région Bas-St-Laurent • (section \"formation continue et services aux entreprises\") à Rimouski, région Bas-St-Laurent • (centre de formation continue des C.S.S. de l'Outaouais)à Gatineau, région de l'Outaouais • (C.S.S. des Chênes) à Drummondville, région Centre-du-Québec • (centre de formation continue des cégeps du Bas-St-Laurent et de la Gaspésie, section \"services aux entreprises\") à Matane, région Bas-St-Laurent",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": ").Tu apprendras notamment les pratiques d’hygiène et de propreté lors de la manipulation des aliments, le service des boissons, le service aux tables, , les opérations monétaires et la comptabilité de base, communication en langue seconde, la relation avec la clientèle, le travail en équipe, la réglementation de l’industrie ferroviaire, etc. LeProgramme de formation en matelotage générala une durée totale de200 heures réparties sur 6 semainesoffert à temps plein. Il comporte des cours la connaissance pratique en mer, sécurité au travail, premiers soins en mer – niveau élémentaire, les appareils de mouillage, techniques d'amarrage, utilisation des machines de pont, utilisation de l'outillage de manutention des marchandises (incluant échafauds, échelles et passerelles d’embarquement) et soins des cargaisons, pavillons, cordages et nœuds, poulies et palans, gréement courant et gréement dormant, communcations et procédures pour la tenue d’un quart sur la passerelle, opération des grues de pont, manœuvres de chalands et de gabares.Àce programme s'ajoute laformation sur les urgences en merdans le cadre du cours deSecourisme élémentaire en merd'une durée de 16 heures : principes généraux du secourisme en mer, notions d'anatomie et physiologie, position de la victime, victime inconsciente, techniques de réanimation, hémorragie, traitement de l'état de choc, brûlures, échaudures et accidents électriques, techniques de sauvetage et transport de la victime, autres points en lien avec les risques d'accidents en mer et évaluation. ENDROIT DE FORMATION : -(Centre de formation en mesures d’urgences située à Lévis, Rive-Sud de Québec Pour plus de détails, voir la page de. LeProgramme de formation de timoniera une durée totale de120 heures réparties sur 4 semainesoffert à temps plein. Il comporte des cours sur la tenue de la gouverne et ordre de la barre, utilisation des compas magnétique et gyroscopique, premiers soins - niveau élémentaire, ordres et instructions de la barre, veille visuelle et auditive, responsabilité liée à la veille, surveillance et tenue de quart et utilisation du système de communication.Àce programme s'ajoute laformation sur les urgences en merdans le cadre du cours deSecourisme élémentaire en merd'une durée de 16 heures : principes généraux du secourisme en mer, notions d'anatomie et physiologie, position de la victime, victime inconsciente, techniques de réanimation, hémorragie, traitement de l'état de choc, brûlures, échaudures et accidents électriques, techniques de sauvetage et transport de la victime, autres points en lien avec les risques d'accidents en mer et évaluation. ENDROIT DE FORMATION : -(Centre de formation en mesures d’urgences située à Lévis, Rive-Sud de Québec Pour plus de détails, voir la page de. L'Attestation de formation de signaleur(euse) de chantiers routiersest formation de courte durée d'une durée totale de 4,5 heuresà temps complet. Il permet d'acquérir les compétences afin de controler la circulation et assurer la sécurité aux abords d'un chantier routier. Le contenu comporte notamment :",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": true,
+    "taches": false,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

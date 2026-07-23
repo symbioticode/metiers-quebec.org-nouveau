@@ -1,0 +1,29 @@
+{
+  "code": "tech_optiquel",
+  "code_provisoire": true,
+  "noms": [
+    "Optique, technologue en laboratoire d'"
+  ],
+  "secteur": "sante",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que technicienne ou technicien en laboratoire d’optique; tu auras pour tâches de tracer, concevoir, fabriquer, percer, modifier la forme et rectifier la grandeur des lentilles ophtalmiques ou cornéennes à l'aide de divers équipements (traceur, frontofocomètre, meuleuses etc.); selon une ordonnance faite par un(e) ophtalmologiste ou un(e) optométriste et selon les caractéristiques précisées dans la commande d'un(e) opticien(ne) d'ordonnances (diamètre, décentrement requis, courbure, épaisseur, teinte, puissance, etc.). Tu devras tailler, polir et conditionner (traitements antireflets et contre les égratignures, etc.) des lentilles correctrices de la vue et les assembler et les aligner dans les montures choisies par les clients et en faire une inspection visuelle afin t'assurer de leur qualité avant leur emballage et livraison. Enfin, tu participeras également à l'entretien et à la réparation de l'équipement du laboratoire d'optique. Tu travailleras en laboratoire uniquement et aucun contact avec les clients(es), contrairement à l'opticien(ne) d'ordonnances ayant l'expertise pour poser, remplacer, ajuster et conseiller les clients dans le choix des lentilles ophtalmiques ou cornéennes et qui détient un permis de pratique d'un ordre professionnel. QUALITÉS ET APTITUDESNÉCESSAIRES : - Être à l'aise avec l'informatique et la technologie car tu devras utiliser divers logiciels de conception 3D et divers équipements spécialisés -Excellentes habiletés et dextérité manuelle pour fabriquer efficacement les lentilles -Capacité d’analyse pour être capable d’analyser et mesurer les lentilles selon besoins du client -Grande minutie, précision et souci du détail pour concevoir, réparer et ajuster de façon précise les lentilles -Sens des responsabilités car tu seras responsable de la qualité de ton travail EMPLOYEURS POTENTIELS : -Laboratoires d’optique EXIGENCES DES EMPLOYEURS : • Détenir un D.E.S. ou une formation jugée équivalente • Bonne connaissance des ordinateurs • Une bonne connaissance de l'anglais est un atout • Polyvalence SALAIRE : Selon les données de 2022 : -Le salaire moyen en début de carrière était de 14,30 $/heure (40 hres/sem) Source : : Emploi Québec PERSPECTIVES D’AVENIR : On prévoit de bonnes perspectives d’emploi au cours des prochaines années, mais les emplois sont plutôt limités. LA FORMATION : Aucune formation n’est nécessaire pour occuper ce métier. Généralement, l'employeur donnera une formation en cours d'emploi.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

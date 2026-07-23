@@ -1,0 +1,29 @@
+{
+  "code": "pisciculteurl",
+  "code_provisoire": true,
+  "noms": [
+    "pisciculteur"
+  ],
+  "secteur": "agriculture",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant qu'aquiculteur ou aquicultrice; tu auras pour tâches d’installer des structures d’élevage en mer, élever et soigner des poissons, des crustacés ou des moules, ainsi que préparer ces produits afin de les mettre en marché, soit directement au public (sur le site de la pisciculture ou dans les marchés publics pour la vente de produits frais) ou auprès des entreprises de transformation. On parle de pisciculture si tu élèves des poissons ou pénéiculture si tu élèves des crevettes de mer ou des crevettes d'eau douce ou la mytiliculture si tu élèves des moules ou pectiniculture si tu élèves des pétoncles ou l'algoculture si tu élèves des algues. QUALITÉS ET APTITUDESNÉCESSAIRES : -Intérêts pour le milieu agricole -Aimer travailler dans les milieux aquatiques (parfois en mer) -Excellente santé -Grande capacité de travail car tu auras de longues heures de travail -Autonomie et débrouillardise car tu auras à travailler et à te débrouiller seul(e) dans plusieurs tâches -Aimer travailler en équipe car tu auras aussi à collaborer avec d’autres pisciculteurs PROFESSIONS APPARENTÉES : -Aquiculteur(trice) -Préposé(e) aux établissements piscicoles -Propriétaire-exploitant(e) d’une entreprise piscicole -Travailleur(euse) d’alevinière -Travailleur(euse) maricole EMPLOYEURS POTENTIELS : -Alevinières (producteurs de moules) -Aquariums -Coopératives de pêcheries -Entreprises piscicoles -À ton propre compte EXIGENCE DES EMPLOYEURS : -Bonne connaissance du milieu agricole -Polyvalence -Mobilité -Longues heures de travail (souvent 12 hres/sem, 6 jours/sem) -Travail saisonnier PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2024 : -16,00 $/heure (50 à 60 hres/sem en saison intensive) en tant qu'ouvrier piscicole Source : Comité sectoriel de la main-d'oeuvre des pêcheries maritimes PERSPECTIVES D’AVENIR : Les perspectives varient selon la qualité des récoltes. Consulte également le Consulte également le . LE PROGRAMME D’ÉTUDES : l'École des pêcheries et de l'aquaculture du Québec ÉPAQ offre un programme de formation en pisciculture unique au Québec. Offert en formule télé-enseignement offert à distance (en 3 types : synchrome permettant de suivre des cours sur le Web; asynchrome pemettant de développer par toi-même par des clips, vidéos et exercices accessibles sur le Web et des formations pratiques dans ton milieu; présentiel permettant des apprentissages pratiques dans les installations de l'École pendant quelques jours). Par contre, certaines activités de laboratoire doivent s’effectuer dans les locaux de l’ÉPAQ et peuvent occasionner, à quelques reprises, un déplacement de quelques jours à Grande-Rivière en Gaspésie). L’étudiant qui complète avec succès un module se voit décerner un certificat émis par le collège. Au terme des quatre modules de formation, après avoir réussi l’épreuve synthèse de programme et l’épreuve uniforme de langue, tu obtiendras ton diplôme d’études collégiales en Techniques d’aquaculture. Il est structuré en 4 modules, mais pour devenir pisciculteur(trice), il faut compléter le module A, alors que le module B permettant de devenir mariculteur(trice) : Module A : élevage de poissons en eau douce : Tu exerceras des compétences liées à la production et à la gestion d'oeufs, d'individus larvaires, juvéniles et adultes, de même qu'à l'optimisation de leur grossissement en bassin, en circuit ouvert. Tu seras capable d'entretenir les systèmes d'élevage, d'analyser les rendements de production et de voir à ajuster les conditions de croissance pour satisfaire les exigences physiologiques des espèces. D'autres compétences liées au respect de l'environnement et au maintien des organismes en santé sont également impliquées. Module B : élevage de mollusques en suspension : tu pourras exercer des compétences liées au captage en mer des jeunes individus et à l'optimisation de leur grossissement sur des structures d'élevage en suspension, que tu sauras fabriquer, manoeuvrer et entretenir en mer. Les organismes élevés en suspension comprennent des moules, des pétoncles, des algues et d'autres groupes d'organismes incluant des crustacés. Enfin, tu seras capable d'analyser les rendements de production et de voir à proposer des ajustements pour améliorer les conditions de croissance des individus. D'autres compétences liées au respect de l'environnement et au maintien des organismes en santé sont également impliquées EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme ENDROIT DE FORMATION : -à Grande-Rivière programme unique au Québec, offert en formation à distance",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

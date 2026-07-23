@@ -1,0 +1,39 @@
+{
+  "code": "commercel",
+  "code_provisoire": true,
+  "noms": [
+    "Commis au soutien à l'expédition et \r\nréception"
+  ],
+  "secteur": "administration",
+  "faits": [
+    {
+      "champ": "description",
+      "valeur": "sommaire des différents équipements, maniement des commandes de direction et d'opération d'un chariot élévateur, différents aspects de la sécurité, inspection avant utilisation du chariot élévateur et démarrage, notions de mécanique et d'entretien du chario élévateur, manœuvres de base de conduite d'un chariot élévateur, manœuvres de base en manutention avec un chariot élévateur, etc. Certains établissements offrent d'autres formations comme : conduite d'un chariot élévateur avec mât télescopique, opération d'une plate-forme élévatrice (scissor lift), opération d'un élévateur à nacelle, opération d'un pont roulant, opération d'une transpalette, conduite d'un chargeur de type bobcat, conduite d'un camion-grue, etc.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "exigences_admission",
+      "valeur": ": • avoir 16 ans ou plus ET • détenir un permis de conduire (pour la conduite d'un chariot élévateur se fait dans un lieu public) ENDROITS DE FORMATION : Plusieurs centres de formation professionnelle (mais également certains établissemens privés) offrent une formation en manutention de marchandises, informe-toi auprès de l'établissement le plus près de chez toi. En voici quelques exemples : Note : certaines de ces formations ne sont offertes qu'aux entreprises, donc vérifie également si une formation est aussi offerte aux particuliers sans emploi • (arrondissement Ville-Marie), C.S. de Montréal), région de Montréal • , Montréal (arrondissement Plateau Mont-Royal, C.S. de Montréal), région de Montréal • , Montréal (arrondissement LaSalle), C.S. Marguerite-Bourgeoys), région de Montréal • , Montréal (arrondissement Anjou, C.S. de la Pointe-de-l'Île), région de Montréal • , Montréal (arrondissement Rosemont-La Petite Patrie, C.S. English Montreal), région de Montréal offert en anglais • , Montréal (arrondissement Pierrefonds, C.S. Lester-B.-Pearson), région de Montréal, offert en anglais • (établissement privé), Montréal (arrondissement Villeray-St-Michel-Parc Extension), région de Montréal • (établissement privé), Montréal (arrondissement Pointe-aux-Trembles-Rivière-des-Prairies), région de Montréal • , Laval, région de Laval (C.S. de Laval) • , Laval, région de Laval (C.S. de Laval) • , Longueuil, région de la Montérégie (C.S. Marie-Victorin) • , Vaudreuil-Dorion, région de la Montérégie (C.S. des Trois-Lacs) • , St-Jean-sur-Richelieu, région de la Montérégie (C.S. des Hautes-Rivières) • , Granby, région de la Montérégie (C.S. du Val-des-Cerfs) • , Salaberry-de-Valleyfield, région de la Montérégie (C.S. Vallée-des-Tisserands) • , région de la Montérégie (C.S. de St-Hyacinthe) • , région de la Montérégie (C.S. de Sorel-Tracy) • , La Prairie, région de la Montérégie (C.S. des Grandes-Seigneuries) • , Ste-Julie, région de la Montérégie (C.S. des Patriotes) • (établissement privé), St-Jean-sur-Richelieu • (établissement privé), Boucherville, région de la Montérégie • (établissement privé), Delson, région de la Montérégie • (établissement privé), St-Jean-sur-Richelieu, région de la Montérégie • (établissement privé), Boucherville, région de la Montérégie • , Mirabel, région des Laurentides (C.S. de la Rivière-du-Nord) • , Mont-Laurier, région des Laurentides (C.S. des Laurentides) • , Mirabel, région des Laurentides (C.S. de la Seigneurie-des-Milles-Îles) • , Terrebonne, région de Lanaudière (C.S. des Affluents) • , Joliette, région de Lanaudière (C.S. des Samares) • (établissement privé), Terrebonne, région de Lanaudière • , Québec, région de Québec (C.S. de la Capitale) • , Québec, région de Québec (C.S. de la Capitale) • , région de Québec (C.S. de Portneuf) • (établissement privé), Québec • , Lévis, région Chaudière-Appalaches (C.S. des Navigateurs) • , Thetford Mines, région Chaudière-Appalaches (C.S. des Appalaches) • , Montmagny, région Chaudière-Appalaches (C.S. de la Côte-du-Sud) • , Ste-Claire, région Chaudière-Appalaches (C.S. de la Côte0du-Sud) • , région Chaudière-Appalaches, formation théorique offerte en ligne, formation pratique offerte en entreprise • (établissement privé), Montmagny, région Chaudière-Appalaches • , Sherbrooke, région de l'Estrie (C.S. Région-de-Sherbrooke) • , Magog, région de l'Estrie (C.S. des Sommets) • , Trois-Rivières, région de la Mauricie (C.S. du Chemin-du-Roy) • , Shawinigan, région de la Mauricie (C.S. de l'Énergie) • , Victoriaville, région du Centre-du-Québec • , Drummondville, région du Cente-du-Québec (C.S. des Chênes) • (établissement privé), Drummondville • , Saguenay, région du Saguenay-Lac-St-Jean (C.S. de Jonquière) • , Alma, région du Saguenay-Lac-St-Jean (C.S. du Lac-St-Jean) • , Rimouski, région du Bas-St-Laurent (C.S. des Phares) • , Rivière-du-Loup, région du Bas-St-Laurent (C.S. Rivière-du-Loup-Kamouraska) • ier, Rouyn-Noranda, région de l'Abitibi-Témiscamingue (C.S. de l'Or-et-des-Bois) • , Val-d'Or, région de l'Abitibi-Témiscamingue (C.S. de l'Or-et-des-Bois) • , Amos, région de l'Abitibi-Témiscamingue (C.S. Harrinana) • , Baie-Comeau, région de la Côte-Nord (C.S. de l'Estuaire) • , Sept-Iles, région de la Côte-Nord (C.S. du Fer) • , Gaspé, région de la Gaspésie (C.S. des Chic-Chocs) • , Bonaventure, région de la Gaspésie (C.S. René-Lévesque)",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": false,
+    "taches": false,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": true,
+    "salaire_median": false
+  }
+}

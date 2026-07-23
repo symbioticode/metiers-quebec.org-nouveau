@@ -1,0 +1,59 @@
+{
+  "code": "cimentier",
+  "code_provisoire": true,
+  "noms": [
+    "Cimentier(ère)-applicateur(trice)"
+  ],
+  "secteur": "batiment",
+  "faits": [
+    {
+      "champ": "formation_requise",
+      "valeur": "CIMENTIER( ère)-APPLICATEUR(trice) DIPLÔME D’ÉTUDES PROFESSIONNELLES\r D.E.P. : , S aint -Eustache (C.S. de la Seigneurie des \r Mille-Îles + C. S. S. Sir Wilfrid-Laurier) français ou en anglais , aussi offert en concomitance D.E.S./D.E.P. ( permettant de compléter en même temps, les cours \r obligatoires de 4 e et/ou 5 e secondaire ) , regarde la vidéo promotionnelle du programme, français ou en anglais , véritable chantier-école d'une superficie de 270 000 pi 2 regroupant des ateliers et installations pour plus de 2 000 étudiants(es) \r dans 1 6 métiers de la construction , \r dont : ; regarde la vidéo promotionnelle du programme; regarde l a vidéo suivant et le vidéo suivant sur les étudiants en action, regarde la vidéo suivante présentant les compétences \r acquises dans le cadre du cours \"réalisation d'ouvrages de béton décoratif\" \r réalisé par des étudiants, regarde la vidéo promotionnelle de l'école, A.S.P. en gestion d'une entreprise spécialisée de la construction également offerte ,",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "taches",
+      "valeur": ": Si tu\r deviens cimentier-applicateur ou cimentière-applicatrice ; tu seras responsable de prépar er , finir et réparer des surfaces en béton et en ciment sur les planchers, les murs, les trottoirs et \r les pavages . Lire et interpréter des plans et des bleus; Élaborer des plans de travail; M ettre en place, de préparer, de finir et de réparer des surfaces de ciment\r ou de béton telles que : les planchers, les murs, les escaliers, les\r trottoirs, les terrasses, escaliers, etc. Tu auras à réaliser des revêtements\r unis ou d’ornements en ciment ou en béton ( balcons, terrasses, puits, dalles,\r agrégats, etc . ) ; A ppliquer les durcisseurs et les scellants ; A ppliquer des traitements et installer des membranes \r d'imperméabilisation et la finition d'imperméablisation \r métallique, dont la couche préservatrice ; Si tu deviens coffreur de béton ; tu seras responsable de réaliser des moules en bois appelés coffrages ayant \r la forme exacte des ouvrages à construire. Aidé d'autres ouvriers et de la \r grue, tu mettras en place le coffrage sur le chantier. Tu pourras aussi \r poser le ferraillage dans le coffrage. Tu pourras travailler principalement\r sur les grands chantiers de construction commerciale, institutionnelle et \r industrielle, mais également sur les chantiers de \r génie pour la construction de grands ouvrages comme les ponts, les châteaux \r d'eau, les barrages etc. Lire et interpréter des plans et des bleus; Élaborer des plans de travail; Sélectionner, mesurer et marquer des matériaux pour bâtir des fondations; Préparer les tracés, à l'aide d'outils à mesurer, en tenant compte des \r prescriptions des codes du bâtiment; Indiquer à l'opérateur de pompe à béton le bon endroit à vide r le béton dans le coffrage en ouvrant la \"goulette\" de la benne ; Démonter le béton une fois séché; Couper et façonner des matériaux, que l’on joint à l’aide de clous, de \r vis, d’écrous ou de colle; F abriquer des \r moules pour éléments préfabriqués comme les poteaux, dalles, escaliers \r etc. ; Préparer, s'il y a lieu, des devis pour les clients.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "qualites",
+      "valeur": ": -    Aptitudes pour les \r mathématiques, notamment la géométrie - Bonne condition et endurance physique car tu auras à travailler de longues heures debout ou dans des positions \r inconfortables -    Bonne force physique car tu auras à soulever de charges lourdes -    \r Bonne acuité visuelle et bonne coordination oeil-main -    \r Capacité de travailler dans les hauteurs et bon sens de l'équilibre - Bonnes habiletés et dextérité manuelles - Minutie, précision et souci du détail car tu auras à effectuer des\r travaux de précision - Aptitudes à travailler en équipe car tu auras à collaborer avec d’autres\r collègues ouvriers et techniciens sur le chantier PROFESSIONS\r APPARENTÉES : - Apprenti-cimentier-finisseur ou apprenti-cimentière-finisseuse (en début\r de carrière) - Cimentier-applicateur ou cimentière-applicatrice - Finisseur( euse) de béton -    Foreur(euse) de béton -    Opérateur(trice) de pompe - Ouvrier( ère) en fabrication du béton à béton -    Représentant(e) des ventes en matériaux de \r construction (produits de béton, ciment, asphalte) EMPLOYEURS\r POTENTIELS : - Cimenteries - Entreprises spécialisées en isolation - Entreprises de construction - Entreprises en rénovation -    Manufacturiers de béton ou d'asphalte -    Manufacturiers de produits en béton (meubles, \r escaliers, équipements pour terrains de jeux, etc) Voici un\r site où tu trouveras un répertoire de plus de 37 000 entrepreneurs en\r construction au Québec : Habitation.com",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "exigences_admission",
+      "valeur": ": - Polyvalence -    Mobilité un peu partout dans la province : - Soit détenir le D.E.S. - Soit avoir 16 ans et réussi les cours de français, anglais et\r mathématiques de 3 e secondaire ou leurs équivalents - Soit avoir 18 ans et posséder des connaissances équivalentes : -    Se soumettre à un questionnaire écrit d'admission en ligne \r et une entrevue écrite en ligne (ÉMOICQ, disponible sur leur site web ) : Aucun\r contingentement à ce programme Les candidats(es) répondant aux conditions \r d'admission sont généralement admis. Qu'est-ce que la concomitance \r D.E.S./D.E.P. ? - à temps complet de jour à l'automne et à l'hiver . - École des métiers et occupations de\r l’industrie de la construction ÉMOICQ (Pavillon Morse ), Québec (C. S. S. de \r la Capitale) première \r école de la construction au Québec fondée en 1945 et seconde plus grande école de la construction du Québec , véritable chantier-école réparti sur 6 sites de formation pour plus de 2 000 étudiants(es) dans 12 \r métiers de la construction ( comprenant un grand \r atelier intérieur et une grande surface extérieure pour les travaux \r pratiques de bétonnage situé sur le \r site de la rue Morse ); regarde la vidéo \r promotionnelle du programme, regarde la vidéo suivante présentant des étudiants \r en charpenterie-menuiserie et en préparation et finition du béton qui \r réalisent un projet de murets de béton; regarde la vidéo suivante présentant les compétences acquises dans le cadre du cours \"réalisation \r d'ouvrages de béton décoratif\" réalisé par des étudiants, regarde la vidéo promotionnelle de l'École, A.S.P. en gestion d'une entreprise spécialisée de la construction également offerte , à temps \r complet de jour à l’automne . - École des métiers de la\r construction de Montréal , Montréal - arrondissement Rosemont-La Petite \r Patrie (C. S. S. de Montréal) plus grande école de la construction du Québec , à temps complet de jour à l’automne et à l'hiver . LIENS\r RECOMMANDÉS : Tu désires avoir l’avis d'un cimentier-applicateur sur son métier, alors va voir\r les vidéos suivants : l'entrevue avec Maxime Joyal ; cimentier-applicateur et réalisée par le Conseil \r provincial du Québec des métiers de la construction; les entrevues avec soldat Alex Gagnon et soldat Richard Desgagnés , le premier est \r technicien en construction  au 4 e escadron de génie construction à la 3 e Escadre de Bagotville au Québec de \r l'Aviation royale canadienne et le second est technicien en construction à la 4 e escadrille de génie construction de la 8 e Escadre Trenton en Ontario de l'Aviation \r royale canadienne et réalisées par les Forces canadiennes ; la vidéo sur \"les femmes dans les métiers de la construction \" réalisée par l'ÉMOICQ . Autres : - Commission \r de la construction du Québec : site de promotion des carrières - Commission de construction du Québec : infos sur les carrières en construction, portrait de l'industrie, perspectives \r de carrières, certification et cartes de compétences, etc. - Conseil sectoriel canadien de la construction : portrait de l'industrie canadienne de la construction, infos sur les carrières \r et perspectives - Gomaison : site de l'APCHQ qui fournit des \r infos en matière de rénovation - Association de la construction du \r Québec ACQ : \r répertoire d'entreprises de la construction - Association des entrepreneurs en construction \r du Québec AECQ : répertoire d'entreprises de la construction - Construction 411 :\r annuaire très complet d’entreprises du secteur de la construction - Habitation.com :\r répertoire de plus de 37 000 entreprises du secteur de la construction\r résidentielle - Régie du bâtiment du Québec : infos générales \r sur le domaine de la construction et répertoire complet des entrepreneurs en \r construction au Québec - Société canadienne d'hypothèques et de logement \r SCHL : infos générales sur le domaine de l'habitation et de la rénovation - ASP Construction : infos \r pratiques en \r matière de santé et sécurité sur les chantiers - FTQ Construction - CSN Construction - CSD Construction - Syndicat québécois de la construction - Conseil provincial du Québec des métiers de \r la construction Retour à\r page du secteur bâtiment et construction Retour à la page\r d’accueil var PUpage=\"76001087\"; var PUprop=\"geocities\"; var yviContents='http://us.toto.geo.yahoo.com/toto?s=76001087&l=NE&b=1&t=1042644337';yviR='us';yfiEA(0); geovisit();",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": true,
+    "qualites": true,
+    "exigences_admission": true,
+    "salaire_median": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "code": "gerant_artistesl",
+  "code_provisoire": true,
+  "noms": [
+    "Organisateur d’événements culturels et corporatifs"
+  ],
+  "secteur": "arts",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que gérante ou gérant d’artistes; tu seras responsable de gérer toute la carrière d’artistes ou de groupes artistiques dans un domaine en particulier (metteurs en scène, comédiens, chanteurs, humoristes, musiciens, danseurs, animateurs radio-télé, artistes du cirque, mannequins, athlètes, etc.). Tu auras pour tâches de les présenter et de représenter auprès des producteurs et de la communauté artistique, ainsi qu’auprès du public. Tu t’occuperas de négocier les contrats pour des spectacles et les cachets qu’auront les artistes, planifier et organiser les moyens publicitaires, événements promotionnels (ex : lancements de disque), conférences de presse et autres relations avec les médias et autres événements où les artistes que tu représentes seront. Tu devras également organiser l’agenda de travail de tes artistes, leur conseiller sur toutes questions concernant leur image publique et leur travail. En résumé, si l’artiste s’occupe de tout le côté artistique de son travail, toi tu t’occuperas de tout ce qui concerne le côté administratif, juridique, publicitaire et relations avec le public. Plusieurs agents(es) et gérants(es) d'artistes sont responsables de la gestion de carrière de plusieurs artistes, certains choisissent de se concentrer vers les artistes d'un domaine en particulier (ex : artistes et groupes de musique seulement ou comédiens et acteurs seulement), alors que d'autres s'occupent d'artistes provenant de différentes disciplines artistiques. Au fait, quelle la différence entre agent(e) et gérant(e) ? Un(e) agent(e) est à l'emploi d'une agence artistique et gère les activités d'artistes de tous âges (clients) pour le compte de son employeur (l'agence). Un(e) gérant(e) est un(e) travailleur(euse) indépendant(e) qui gère les activités d'artistes pour le compte de ses clients (les artistes). APTITUDES ET QUALITÉS REQUISES : -Sens des responsabilités car tu responsable du bon déroulement du tournage d’une production vidéo, d’une publicité, d’un vidéoclip, d’une émission de radio, d’une émission de télévision ou d’un film -Sens de l’organisation et bonne méthode de travail nécessaire pour bien planifier et organiser ton travail et répartir efficacement les tâches de tes employés(es) -Sens de l’observation et ouverture d’esprit pour être ouvert à tout changement et à des concepts originaux et innovateurs -Esprit d’analyse et bon jugement pour bien analyser les situations et pour résoudre divers problèmes lors d’un tournage ou d’une diffusion -Souci du détail, de la minutie et de la précision pour t’assurer tout fonctionnement correctement sans oublier un détail -Curiosité, Sens de l’initiative et perspicacité pour être capable de proposer tes idées auprès des membres d’une équipe de production -Capacité de travailler sous pression et stress pour être capable de réagir rapidement face à une situation ou un événement imprévu (surtout si tu travailles en direct) -Aptitudes pour le travail en équipe car tu auras à collaborer à plusieurs collègues (producteurs, animateurs ou comédiens, équipe technique du plateau, équipe scénographique comme les coiffeurs, maquilleurs, accessoiristes, etc) -Aptitudes en gestion car tu auras à coordonner à gérer toutes les opérations tant artistiques que techniques d’un tournage ou d’une diffusion PROFESSIONS APPARENTÉES : -Agent(e) de promotion culturelle -Agent(e) de publicité -Agent(e) de spectacle -Agent(e) des communications -Directeur(trice) de tournée EMPLOYEURS POTENTIELS : -À ton propre compte -Agences de casting -Agences de publicité -Agences de relations publiques -Agences de tournées -Associations du domaine culturel -Entreprises de gestion artistique -Entreprises de production de spectacles ou d'événements spéciaux -Entreprises de production multimédia -Maisons d’édition -Maisons de production cinématographique -Maisons de production de disques -Maisons de production télévisuelle EXIGENCES DES EMPLOYEURS : -Excellente maîtrise du français parlé et écrit -Très bonne maîtrise de l’anglais parlé et écrit -Polyvalence -Dynamisme -Expérience dans le domaine public (relations publiques, publicité, vente, représentation, etc) est un atout PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données 2022 : -Le salaire moyen pour un(e) gérant(e) d’artistes est de 525,00 $/semaine pendant la durée d’un contrat avec les artistes concernés Note : ces données sont sous toutes réserves, car c’est difficile d’évaluer la rémunération car la majorité des gérants d’artistes travaillent à contrat ou à la pige et de plus, il varie selon les cachets obtenus par les artistes lors de leurs spectacles. PERSPECTIVES D'AVENIR : Les",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

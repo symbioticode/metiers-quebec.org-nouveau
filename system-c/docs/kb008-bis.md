@@ -231,36 +231,3 @@ possible.
 équivalent) vérifiés sur `corpus_raw_v2` en premier, avant d'ajouter
 d'autres sources — pour prouver que le format tient sur les données
 existantes avant de l'étendre.
-
-## État de Phase 3 (conflit multi-source) — 2026-07-22
-
-Phase 3 telle que conçue ne peut pas être validée avec les sources
-actuellement disponibles.
-
-**Ce qui fonctionne :**
-- `resoudre_conflits.py` résout correctement les conflits par confiance
-  (haute > moyenne > basse). Prouvé sur des FAITS réels imt_en_ligne
-  vs metiers_quebec pour le champ `salaire_median`.
-- Le test d'égalité de confiance synthétique (source_a/source_b,
-  50000$/55000$) retourne `conflit_non_resolu` sans inventer de gagnant.
-  GARDE-AUTOJUGEMENT fonctionne.
-- `garde_non_reecriture` comptabilise correctement les FAITS imt_en_ligne
-  en `non_verifiable` (source != metiers_quebec).
-
-**Ce qui manque :**
-- metiers_quebec n'a pas de salaires structurés dans `corpus_raw_v2`.
-  Le texte brut contient des données salariales (ex: architecte 68 300$
-  annuel, plombier 22,68$/hre) mais `ingest_corpus_raw_v2.py` ne les
-  extrait pas — c'est un gap d'extraction documenté, pas une valeur à
-  inventer.
-- Sans FAIT metiers_quebec/salaire_median réel, il n'y a pas de
-  conflit inter-sources à résoudre. La résolution de conflit n'a été
-  exercée que sur des données synthétiques ( retirées de production
-  car GARDE-NON-RÉÉCRITURE les a correctement identifiées comme fausses).
-
-**Pour compléter Phase 3, il faut :**
-1. Soit une troisième source avec des salaires structurés pour les
-   mêmes métiers (ex: ISQ, Guide MESS).
-2. Soit extraire les salaires du texte libre de `corpus_raw_v2`
-   (reconnaissance de montants horaires/annuels) — travail
-   d'extraction distinct du format atomique, à traiter séparément.

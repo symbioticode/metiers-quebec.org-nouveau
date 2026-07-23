@@ -1,0 +1,29 @@
+{
+  "code": "maroquinierl",
+  "code_provisoire": true,
+  "noms": [
+    "Artisan \r\ndu cuir"
+  ],
+  "secteur": "mode",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant qu’artisan(ne) maroquinier(ère); tu auras pour tâches de concevoir et de fabriquer des accessoires décoratifs ou de mode, originaux, pratiques et de luxe en cuir uniques ou en petites séries tels que : des sacs à main, des portefeuilles, des chapeaux, des casquettes, des gants, des sacs à dos, des ceintures, des mallettes, des porte-documents, des étuis, des boîtes, etc). Tu seras également appelé(e) à l’occasion de réparer ces divers articles afin de rendre dans un état comme neuf. Ensuite, tu devras vendre tes créations auprès de ta clientèle (particuliers, boutiques, magasins à rayons, commerces de produits décoratifs, magasins d’articles de bureau, galeries d’art, etc). QUALITÉS ET APTITUDES NÉCESSAIRES : -Bonne vision -Très bonne perception des formes et des détails -Bonne coordination œil-main -Aptitudes en dessin -Très bonnes habiletés et excellente dextérité manuelles car tu auras à effectuer divers travaux d’assemblage, de façonnage et de fabrication -Souci du détail, grande minutie et précision car tu auras à effectuer divers travaux de précision sur des objets fragiles -Imagination et créativité pour réaliser des objets jolis et originaux -Sens artistique et de l’esthétique pour être capable d’évaluer la qualité artistique et l’esthétique d’un objet -Autonomie et débrouillardise car tu auras à travailler seul(e) dans ton atelier -Aimer travailler avec le public car tu auras de fréquents contacts avec la clientèle lorsque tu auras à vendre tes créations -Aptitudes pour la vente car tu auras à vendre des créations auprès de la clientèle PROFESSION APPARENTÉE : - Bottier(ère) -Chapelier(ère) -Ouvrier(ère) du cuir EMPLOYEURS POTENTIELS : -À ton propre compte -Ateliers de maroquinerie -Commerces d’articles de cuir -Fabricants d’articles en cuir - Manufacturiers de chaussures EXIGENCES DES EMPLOYEURS : -Bon portfolio -Polyvalence PLACEMENT : Selon les données disponibles au 31 mars 2016 : Le placement est très bon, 80 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Seulement, 1 répondante a choisi de travailler à son propre compte en début de carrière. NOMBRE DENOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI À TEMPS COMPLET NOMBRE À LEUR COMPTE NOMBRE AUX ÉTUDES 54310 Source : Ministère de l'Éducation et de l'Enseignement supérieur. SALAIRE : Selon les données 2016: -Le salaire moyen en début de carrière était de 507,00 $/semaine (40 hres/sem) Source : Ministère de l'Éducation et de l'Enseignement supérieur. LE PROGRAMME D’ÉTUDES : Le Diplôme d’études collégiales en techniques des métiers d’art avec spécialisation en maroquinerie D.E.C. a une durée totale de 3 ansoffert à temps complet. Il comporte tout d’abord des cours communs avec les autres spécialités des techniques des métiers d’art comme dessin d’observation, théorie et pratique de la couleur, matériaux et techniques en métiers d’art, éléments de conception visuelle, dessin aux instruments, etc. Pour ce qui est des cours propres en maroquinerie, tu auras des cours en histoire de la maroquinerie, utilisation et entretien des équipements, construction de volumes souples, construction sur fût, matériaux utilisés en maroquinerie, technologie des équipements en maroquinerie, construction de volumes rigides, techniques de texturisation, techniques de coloration, implantation d’entreprise artisanale en maroquinerie, projet de fin d’études en maroquinerie, etc. Ce programme vise à t’intégrer au marché du travail, mais tu pourras aussi poursuivre tes études à l’université en arts visuels (dont la majeure en arts textiles offerte par Concordia), en gestion et design de mode, en design de l'environnement, etc. PASSERELLES : Un programme passerelle permet aux titulaires du DEC dans une discipline en particulier de se faire reconnaître un certain nombre de crédits par une université dans cadre de son programme de baccalauréat. Par contre, aucune garantie d'admission est faite lors de la demande et aucune préférence ou priorité n'est accordée à l'admission. Pour plus de détails, consulte la Voici les ententes actuellement offertes : • l'UQAM pourra reconnaître jusqu'à 15 crédits aux titulaires de ce DEC dans le cadre de son Baccalauréat en gestion et design de mode - concentration commercialisation (une note égale ou supérieure à la moyenne est nécessaire) • l'UQAM pourra reconnaître jusqu'à 15 crédits aux titulaires de ce DEC dans le cadre de son Baccalauréat en arts visuels et médiatiques (sur présentation d'un relevé de notes et d'un dossier visuel) • l'UQAM pourra reconnaître aux titulaires de ce DEC jusqu'à 15 crédits dans le cadre de son Baccalauréat en histoire de l'art. EXIGENCES D’ADMISSION : -Détenir le diplôme d’études secondaires D.E.S. STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) répondant aux conditions d'admission sont généralement admis. Admissions de jour au trimestre d'automne seulement. ENDROIT DE FORMATION : - offert conjointement avec le ), possibilité d'effectuer un voyage culturel à l'étranger et/ou un stage à l'étranger(France, UK, Suisse, Japon, etc. selon les années) programme unique au Canada",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "code": "controleur_maritimel",
+  "code_provisoire": true,
+  "noms": [
+    "Contrôleur maritime"
+  ],
+  "secteur": "transport",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant qu'officier du Service des communications et du trafic maritime pour la Garde Côtière canadienne; tu seras responsabilités de superviser la sécurité des voies navigables du Canada en communiquant avec les navires, en diffusant des bulletins météorologiques, en surveillant le trafic maritime afin d'éviter les accidents et en veillant à ce que les navires respectent les lois canadiennes et agir en tant qu'intervenant de première ligne pour les navires en détresse. Tu pourras assurer des services de communication et de trafic maritime à la Garde Côtière canadienne, bien sûr, mais également à l'industrie du transport maritime, aux divers ministères fédéraux et provinciaux, aux plaisanciers et aux pêcheurs. Tu auras pour tâches de : • Coordonner le trafic maritime en tout temps dans les voies navigables canadiennes afin de réduire les risques d'accidents; • Effectuer des interventions afin d'empêcher les collisions, les échouements et les heurts; • Surveiller de façon continue toutes les fréquences maritimes; • Répondre aux appels de détresse en mer et les transmettre à la Garde côtière et aux autres services d'urgence concernés; • Intervenir à titre d'intermédiaire entre les services de recherche et sauvetage et les navires en danger; • Assurer le lien de communication entre les navires de la Garde côtière avec les équipes à terre pour tous beAoins opérationnels. En tant que répartitrice ou répartiteur en transport maritime; tu serasresponsable de coordonner de façon efficace et sécuritaire la circulation des navires de marchandises (cargo, vraquiers, porte-conteneurs, autochargeurs, etc.)dans les voies navigables commerciales du pays (Saint-Laurent, Grands lacs, océan Arctique, etc.). Tu auras pour tâches de : • Planifier les cueillettes et les livraison; • Organiser les horaires et les déplacements et établir les itinéraires et les cédules de travail; • Répartir les chauffeurs (camions de livraison, autobus, taxis, etc.) et surveiller les parcours afin d'assurer le respect des horaires et de résoudre les problèmes opérationnels; • Recueillir toutes les données nécessaires (glaces et autres données météo, accidents et déversements, bouées de circulation défectueux, circulation dense, etc.) et deles transmettre en temps réel aux personnels navigants et de leur trouver un itinéraire alternatif afin d'optimiser la sécurité, la qualité et la rapidité du service de transport de l'entreprise; • Régler et à contrôler les mouvements, de la position, la route, la vitesse et la progression des navires de transport èa l'aide d'un système de positionnement GPS, de systèmes de gestion et répartition du trafic maritime et des informations fournies par la Garde Côtière, Transports Canada et les autres navires; • Tenir à jour un registre sur les renseignements concernant la circulation et les incidents qui sont arrivés et toutes informations pertinentes; • Tenir à jour des registres manuels et informatisés de la distance parcourue, de la consommation de carburant, des réparations et des autres dépenses, et préparer des rapports. QUALITÉS ET APTITUDES NÉCESSAIRES : -Intérêt pour le milieu narin -Très bonne vision -Très bonne ouïe -Très bonne diction : pour communiquer clairement pour tes indications aux navires -Facilité à travailler avec les ordinateurs : car ils seront des principaux outils de travail -Sens de l’organisation : pour être en mesure de planifier et de programmer efficacement les horaires et les mouvements de circulation -Sens des responsabilités car tu seras responsable de fournir les informations les plus précises et les plus pertinentes nécessaires aux navires -Bon contrôle et très bonne confiance en soi pour intervenir efficacement dans les situations d’urgences -Excellent jugement (sûr et rapide) car tes décisions devront être même temps : les meilleures, les plus sécuritaires et les plus rapides -Esprit d’analyse et synthèse car tu auras à analyser toutes les situations pour être intervenir s’il y a un problème ou une urgence -Capacité à la résolution des problèmes tu auras à résoudre divers problèmes efficacement et rapidement -Autonomie et débrouillardise pour être capable de prendre des décisions seul(e) -Être éveillé à tout changement pour être prêt à intervenir à tout moment à toute situation -Facilité à travailler sous pression et avec le stress : tu devras être capable de travailler efficacement même dans ces conditions -Facilité au travail en équipe car tu auras à collaborer constamment avec d’autres collègues (autres contrôleurs, officiers de communication à bord des navires, des représentants des services d’urgence comme la Garde Côtière) -Très bonne maîtrise de langue anglaise car la plupart des communications dans l’industrie maritime s’effectuent dans cette langue PROFESSIONS APPARENTÉES : - (Garde Côtière canadienne)formation offerte par la Garde Côtière -(Forces armées),",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

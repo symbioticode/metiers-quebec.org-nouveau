@@ -1,0 +1,39 @@
+{
+  "code": "ing_environnement",
+  "code_provisoire": true,
+  "noms": [
+    "Eaux, ingénieur des"
+  ],
+  "secteur": "environnement",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En fait, la spécialité du génie de l'environnement n'est pas une spécialité reconnue officiellement par l'Ordre des ingénieurs, elle figure plutôt comme une branche pour les autres spécialités (ex : génie civil, génie chimique, génie agricole, etc). En tant qu'ingénieure ou ingénieur en environnement, tu seras responsable de planifier, d’élaborer, de concevoir, de réaliser et de gérer des projets en lien avec la conservation et la protection de l'environnement et du développement durable. Tu auras pour tâches de : • S'entretenir avec les clients, les urbanistes, les chimistes, les microbiologistes, les autres professionnels en environnement et les autres membres de l'équipe d'ingénieurs et effectuer des recherches pour déterminer les exigences relatives à la réalisation des projets; • Planifier, élaborer et mettre en œuvre des projets de génie environnemental tels que : la décontamination de sites contaminés par des déchets agricoles ou industriels, la dépollution de plans d'eau, l'amélioration de santé et sécurité et l'hygiène industrielles, le traitement de déchets industriels, etc; • Planifier, élaborer et mettre en œuvre des projets de réhabilitation, d'agrandissement ou de construction de réseaux municipaux d'aqueduc et d'égout; • Planifier, coordonner gérer des procédés de traitement des eaux usées municipales, agricoles ou industrielles; • Élaborer des devis descriptifs et des méthodes de travaux; • Évaluer divers écomatériaux de construction et formuler des recommandations à ce sujet; • Étudier, interpréter et approuver des travaux d'arpentage nécessaires nécessaires aux ouvrages environnementaux; • Fournir des services conseils en matière de génie environnemental; • S'assurer que les plans satisfont aux lignes directrices, aux prescriptions, aux lois environnementales et à d'autres règlements; • Préparer les calendriers d'exécution et voir à ce qu'ils soient respectés; • Effectuer des études de faisabilité, des analyses économiques, des études des répercussions sur l'environnement et autres études; • Surveiller la qualité de l'air, de l'eau et du sol et élaborer des méthodes de nettoyage des sites contaminés; • Effectuer des analyses techniques des données de levés afin d'obtenir des renseignements sur la topographie, le sol, l'hydrologie et autres renseignements et rédiger des rapports; • Agir à titre de chargé de projet ou de chantier pour les travaux d'arpentage ou de construction; • Préparer des documents contractuels et étudier et évaluer des soumissions concernant des projets de construction; • Examiner et approuver des travaux de conception, des calculs et des estimations de coûts; • Superviser le travail des manœuvres des techniciens et des technologues; • Gérer les ressources et le financement nécessaire aux projets avec la collaboration des autres professionnels impliqués (urbanistes, chimistes, microbiologistes, géographes, géomaticiens, arpenteurs-géomètres, autres ingénieurs, technologues, entrepreneurs, etc.); • T’assurer du bon déroulement des travaux tout au long des projets. Il existe de nombreux secteurs où une ingénieure ou un ingénieur en environnement peut travailler, soit : • Environnement industriel : tu seras appelé(e) à coordonner et gérer des projets de décontamination des sites contaminés par des déchets industriels comme les boues, les eaux usées, les émissions gazeuses, les nettoyants industriels, les huiles industrielles, etc. Tu auras à élaborer, mettre en œuvre et gérer des programmes et des projets visant l'amélioration des procédés d'élimination, de disposition, de traitement et de gestion des déchets industriels afin de mieux respecter la qualité de l'environnement et les normes gouvernementales, améliorer la santé et la sécurité des travailleurs, mais également permettre de réduire des coûts de production à long terme par la valorisation des déchets comme par exemple comme source d'énergie. Tu auras à élaborer, mettre en œuvre et gérer des programmes et des projets d'amélioration de la santé, de l’hygiène et de la sécurité dans un",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": "au cours des trimestres d'été);",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "code": "tech_biomedicall",
+  "code_provisoire": true,
+  "noms": [
+    "Appareils biomédicaux, \r\nréparateur d'"
+  ],
+  "secteur": "electrotechnique",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que technologue en électronique médicale (aussi appelé \"technologue ou technicien en maintenance d'équipements médicaux\" ou \"technologue ou technicien en génie biomédical\"); tu seras responsable d’assurer l'installation, la mise en service, l'étalonnage, la calibration, l'entretien, le dépannage, la vérification, le fonctionnement sécuritaire, la construction et la modification des équipements électroniques de type biomédical selon les indications et normes établies au sein d’un établissement hospitalier principalement, mais aussi au sein d’autres établissements (entreprises spécialisées en entretien d’équipements biomédicaux, manufacturiers d’équipements biomédicaux, etc.). Tu auras pour tâches de : ·Installer, calibrer, configurer, ajuster, dépanner, vérifier, modifier et mettre à niveau différents appareils et équipements électroniques de type biomédical tels que : les respirateurs artificiels, les moniteurs cardiaques, les moniteurs-défibrillateurs, les appareils respiratoires, les appareils de circulation extracorporelle pour la chirurgie cardiaque, les systèmes d’imagerie médicale (dont les échographes, les électroencéphalographes, les scanners), les appareils de traitement du cancer, les appareils de microchirurgie et chirurgie assistée par ordinateur, les appareils à radio-isotopes les analyseurs de laboratoires cliniques, et autres appareils électroniques médicaux; ·Réaliser des réparations et des entretiens préventifs et de contrôle de la qualité sur les équipements médicaux; ·Conseiller les technologues et techniciens en santé sur l’utilisation adéquate et sécuritaire des équipements; ·Participer, en association avec le service de planification et d’acquisition des équipements médicaux, à l’acquisition, à l’évaluation de la désuétude, à la formation des utilisateurs et à la gestion administrative de l’inventaire et des risques liés à ces équipements; ·Rédiger des rapports techniques sur l'état de fonctionnement des appareils et équipements médicaux. QUALITÉS ET APTITUDESNÉCESSAIRES : -Bonnes habiletés manuelles et bonne dextérité manuelle pour manipuler adéquatement les pièces à réparer -Minutie, précision, souci du détail car tu auras souvent à réparer des petites pièces ou des pièces délicates -Esprit d’analyse pour analyser et trouver rapidement une défectuosité ou tout autre problème -Aimer travailler avec le public (principalement le personnel technicien en santé) car tu auras des contacts avec le public (que ce soit sur place, en atelier, en vente ou en représentation) -Connaissance de l’anglais oral et écrit : La plupart des manuels d’installation et d’entretien sont dans cette langue PROFESSIONS APPARENTÉES : -Représentant(e) en équipements biomédicaux -Technicien(ne) en installation et réparation d’équipements électroniques -Technologue en électronique -Technologue en instrumentation industrielle EMPLOYEURS POTENTIELS : -Centres hospitaliers (majoritairement0 -Centres de réadaptation -Centres de recherche médicale -Compagnies de recherche médicale -Compagnies pharmaceutiques -Entreprises spécialisées en entretien d’équipements médicaux -,",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "description",
+      "valeur": "de la ) Ensuite, il faut compléter le Certificat de 1er cycle universitaire en technologies biomédicales – instrumentation électronique offert par l’École Polytechnique de Montréal ayant une durée d’1 an offert à temps complet. Tu auras des cours en physiologie, systèmes et technologies, communication écrite et orale, introduction aux technologies biomédicales, systèmes de surveillance et de support à la vie, systèmes de laboratoire en milieu clinique, systèmes d'imagerie médicale, technologies de l'information dans le réseau de la santé, travaux pratiques en maintenance d’appareils de soins, travaux pratiques en maintenance de systèmes d’imagerie et de laboratoire clinique, stage de fin d’études en milieu hospitalier. Hors-Québec : Certains établissements de d’autres provinces offrent un programme de Diplôme technique en technologie du génie biomédical. Le Diplôme en technologie du génie biomédical offert au (Scarborough, Ontario) a une durée totale de 3 ans à temps complet. Il est offert sous 2 formules, soit en formule alternance travail-études comportant 3 périodes de stages rémunérés en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": ", ainsi que la formule régulière. Note : Informe-toi auprès du collège, il se peut que la formulae en ATE ne soit accessible qu’aux résidents de l’Alberta. Les cours sont semblables à ceux mentionnés ci-haut. ÉTUDES SUPÉRIEURES : Pour plus de détails sur les études pour devenir ingénieur biomédical, consulte la . Après complété tes études techniques, il te sera possible de poursuivre tes études à l’université dans l’un des programmes suivants : -génie électrique avec concentration en technologies de la santé offert à l’ -génie mécanique avec concentration en technologies de la santé offfert à l’ -génie de la production automatisée avec concentration en technologies de la santé offert à -génie mécanique avec concentration conception en génie biomédical offert à -bioinformatique offert à l’ et à l’ -biotechnologies offert à l’ -neural computation offert par (en Ontario) -génie électrique avec option biomédicale offert à l’ (entente par le NAIT) -génie électrique option génie biomédical offert à l’ (entente avec le BCIT) -génie électrique option génie biomédical offert à (entente avecCentennialCollege) -génie élecrique combiné avec la biophysique médicale offert à l’",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "exigences_admission",
+      "valeur": ": Pour les programmes de DEC en électrotechnique : -Détenir un D.E.S. et avoir réussi les cours suivants du secondaire ou leurs équivalents : TS ou SN 4e (anciennement mathématiques 436) ST ou ATS 4e (anciennement sciences physiques 436) Pour connaître les équivalences de l’éducation aux adultes, consulte la Pour les programmes Hors-Québec : -Détenir un D.E.S. et avoir réussi les cours suivants du secondaire ou leurs équivalents : TS ou SN 4e (anciennement mathématiques 436) ST ou ATS 4e (anciennement sciences physiques 436) Note : informe-toi auprès du collège choisi pour plus de détails Pour le Certificat de l’École Polytechnique : -Détenir un Diplôme d’études collégiales D.E.C. ou l’équivalent dans l’un des programmes suivants : Technologie de l’électronique Technologie des systèmes ordinés Technologie de l’électronique industrielle (instrumentation & automatisation) Technologie physique STATISTIQUES D'ADMISSION : Le Certificat offert à l’École Polytechnique est contingenté Les programmes de D.E.C. en électrotechnique ne sont pas contingentés (voir les pages des programmes concernés) La formule en alternance travail-études dans les collèges Hors-Québec ont des places limitées (peut-être réservées aux résidents de la province où est situé le collège, informe-toi) Les programmes sous la formule régulière à Centennial, NAIT et BCIT ne sont pas contingentés. La plupart des programmes sont ouverts au trimestre d’automne seulement. Aucune donnée disponible sur les admissions pour tous les programmes. ENDROITS DE FORMATION : - (certificat universitaire de 1er cycle en technologies biomédicales - profil avec stage) Programmes hors-Québec : - (Scarborough, Ontario),",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": true,
+    "salaire_median": false
+  }
+}

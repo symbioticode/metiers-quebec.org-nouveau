@@ -1,0 +1,39 @@
+{
+  "code": "mecanicien_mach_coudrel",
+  "code_provisoire": true,
+  "noms": [
+    "Machines à coudre \r\nindustrielles, mécanicien de"
+  ],
+  "secteur": "mecanique_entr",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant quemécanicien ou mécanicienne de machines à coudre industrielles; tu auras pour tâches d’installer, d’entretenir, mettre en marche, inspecter, de réparer et effectuer des modifications simples sur différents types de machines à coudre automatiques ou à commande numérique qui se trouvent dans les industrie textiles, dans les industries du vêtement et dans les industries du meuble rembourré. Pour plus de détails, consulte le clip vidéo suivant sur . QUALITÉS ET APTITUDESNÉCESSAIRES : -Bonnes habiletés manuelles et bonne dextérité manuelle -Minutie et précision, souci du détail car tu auras à réparer des pièces délicates -Esprit d’analyse et méthodique pour analyser une défectuosité pour trouver le problème -Sens des responsabilités car tu seras responsable du bon état et de la sécurité des équipements -Aimer travailler en équipe car tu auras à l’occasion à collaborer avec d’autres collègues (ouvriers du vêtement, couturiers industriels, techniciens de production, etc) -Connaissance de l’anglais pour comprendre les manuels d’entretien des appareils EMPLOYEURS POTENTIELS : -Manufacturiers de vêtements -Manufacturiers de produits textiles (ex : tentes, sacs en textile, toiles, etc.) - Manufacturiers de meubles rembourrés - Manufacturiers de matelas - Distributeurs de machines à coudre d’industries -Ateliers de réparation de machines à coudre d’industries EXIGENCES DES EMPLOYEURS : -Connaissance de l’anglais est un atout -Capacité de s’adapter aux nombreux changements technologiques PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2022 : Le salaire moyen en début de carrière était de - 15,30 $/heure (40 hres/sem) au sein des PME - 17,68 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de vêtements - 18,57 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de meubles rembourrés - 22,46 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de produits textiles Sources : Emploi Québec, conventions collectives des employés de plusieurs grandes industries du vêtement, conventions collectives des employés de plusieurs grandes industries du meuble et collectives des employés de plusieurs grandes industries des produits textiles. PERSPECTIVES D’AVENIR : les perspectives sont moyennes LE PROGRAMME D’ÉTUDES : Il n'existe plus de formation en réparation de machines à coudre industrielles. Le programme a été suspendu par l'École des métiers des Faubourgs de Montréal, faute d'inscriptions insuffisantes. Une formation est généralement offerte en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": "et parfois, en partenariat avec les manufacturiers.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

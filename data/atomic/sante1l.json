@@ -1,0 +1,49 @@
+{
+  "code": "sante1l",
+  "code_provisoire": true,
+  "noms": [
+    "Aide perfusionniste"
+  ],
+  "secteur": "sante",
+  "faits": [
+    {
+      "champ": "description",
+      "valeur": "du métier de . Le Certificat de formation de transcripteur médicala une durée totale de 490 heures offert à temps plein. Il comporte des cours en terminologie médicale, méthodes de doigté au clavier, révision à la grammaire française, logiciels d’applications, grammaire française avancée, transcription médicale, stage en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": "chaque semaine), les stages cliniques et un emploi rémunéré au sein du ou du , admissions à temps complet de jour ou de soirà l'automne.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "exigences_admission",
+      "valeur": ": • être citoyen canadien ou résident permanent canadien • avoir 18 ans ou plus ET • avoir obtenu les unités de secondaire 3 en français, anglais et mathématiques OU avoir obtenu une Attestation d'équivalence de niveau de scolarité AENS OU avoir réussi le Test de développement général TDG ET • avoir interrompu tes études à temps plein depuis au moins 12 mois OU détenir un D.E.S. ou son équivalent OU • répondre aux conditions d'admissibilité de la Mesure de la formation de la main-d'œuvre d'Emploi Québec. • avoir une bonne connaissance de l'anglais parlé et écrit • subir une entrevue de sélection avec le service du recrutement du CISSS ou du CIUSSS. Autres exigences : • ne pas avoir d'antécédents judiciaires • te soumettre à des examens médicaux • te faire vacciner contre certaines maladies, si ce n’est pas déjà fait Processus de sélection : • S'inscrire sur • S'inscrire sur le site de recrutement du CISSS ou du CIUSSS de ta région afin d'y déposer ta candidature ENDROITS DE FORMATION : Infos sur les pour les préposés(es) aux bénéficiaires Nord-du-Québec : - à Chibougamau (C.S.S.. de la Baie-James), offert en formule DUALE (3 jours en classe et 2 jours en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": true,
+    "taches": false,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": true,
+    "salaire_median": false
+  }
+}

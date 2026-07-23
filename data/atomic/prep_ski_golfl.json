@@ -1,0 +1,39 @@
+{
+  "code": "prep_ski_golfl",
+  "code_provisoire": true,
+  "noms": [
+    "Golf, préposé à l'entretien de \r\nterrains de"
+  ],
+  "secteur": "mecanique_entr",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que préposé(e) aux opérations et à l’entretien d’une station de ski ou d’un terrain de golf; tu auras pour tâches de faire fonctionner les différents systèmes et équipements tels que les remontées mécaniques et les machines à fabriquer la neige. Tu auras aussi à conduire et à entretenir les machineries servant à l’entretien des pistes de ski (telles que les dameuses, les surfaceuses et autres machines à chenillettes) et les terrains de golf principalement, mais aussi d'autres terrains de sport (telles que les tracteurs à gazon) et autres véhicules légers (tracteurs de tous types). QUALITÉS ET APTITUDES NÉCESSAIRES : -Bonne santé -Avoir une bonne vision -Bonne endurance physique car tu auras à travailler assis(e) de longues heures dans des conditions parfois difficiles -Bonnes dextérités manuelles pour manipuler efficacement les commandes de l’engin -Autonomie et débrouillardise car tu auras à travailler généralement seul(e) -Souci de la qualité du travail afin d'assurer la sécurité de la clientèle et optimiser la pratique de leur sport -Sens des responsabilitéscar tu auras à assurer à sécurité de tes collègues qui travailleront près des machines que tu opèreras et tu seras responsable du bon état du véhicule EMPLOYEURS POTENTIELS : -Stations de ski -Terrains de golf -Entreprises en entretien paysager -Fournisseurs d’équipements pour stations de ski - Municipalités - Organismes privés d'aménagement de sentiers - Parcs Canada - SEPAQ EXIGENCES DES EMPLOYEURS : - Polyvalence - Permis de conduire valide - Attestation SIMDUT (formation en information et sécurité des matières dangereuses et offertes dans plusieurs centres de formation professionnelles et aussi en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": ") souvent exigée -Travail en toute saison chez plusieurs employeurs - Travail saisonnier chez certains employeurs - Travail souvent le soir ou la nuit et parfois, les fins de semaine -Connaissances en mécanique de véhicules légers, un atout PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2024 : Dans le secteur privé • 15,75 $/hre (40 hres/sem)en moyenne en tant que préposé(e) à l'entretien d'un petit ou moyen terrain de golf privé • 15,75 $/hre (40 hres/sem)en moyenne en tant qu'opérateur(trice) de véhicules légers ou conducteur(trice) de remontées mécaniques ou préposé(e) à l'entretien de l'équipement d'enneignement ou opérateur(trice) de canons à neige dans les petites et moyennes stations de ski privées • 18,08 $/hre (40 hres/sem)en moyenne en tant que préposé(e) à l'entretien du terrain ou opérateur(trice) de véhicules légers dans les grands terrains de golf privés • 18,64 $/hre (40 hres/sem)en moyenne en tant que conducteur(trice) de remontées mécaniques ou préposé(e) à l'entretien de l'équipement d'enneignement ou aide-mécanicien(ne) de systèmes d'enneigement dans les grandes stations de ski privées • 19,40 $/hre (30 à 40 hres/sem)en moyenne en tant qu'opérateur(trice) de véhicules légers (petits tracteurs, etc) dans les grandes stations de ski • 19,43 $/hre (40 hres/sem)en moyenne en tant qu'opérateur(trice) de canons à neige ou autres systèmes d'enneignement dans les grandes stations de ski privées • 19,82 $/hre (40 hres/sem)en moyenne en tant qu'opérateur(trice) de machinerie légère sur chenilles ou mécanicien(ne) de systèmes d'enneigement dans les grandes stations de ski privées • 22,40 $/hre (40 hres/sem)en moyenne en tant que mécanicien(ne) d'équipements de golf au sein des grands clubs de golf privés Dans le secteur public et parapublic • 16,09 $/hre (40 hres/sem) en tant qu'opérateur(trice) de véhicules légers (petits tracteurs, dameuses, surfaceuses, etc.) à la SEPAQ • 23,87 $/hre (40 hres/sem)en moyenne en tant que préposé(e) à l'entretien des terrains de golf publics et des pistes de ski de fond publics au sein des très petites municipalités (moins de 5 000 habitants) • 24,64 $/hre (40 hres/sem)en moyenne en tant que préposé(e) à l'entretien des terrains de golf publics et des pistes de ski de fond publics au sein des petites municipalités (5 000 à 19 999 habitants) • 26,66 $/hre (38,75 ou 40 hres/sem)en moyenne en tant que préposé(e) à l'entretien des équipements sportifs extérieurs publics (terrains de golf, pistes de ski ou de motoneige, patinoires extérieures, etc.) au sein des grandes municipalités (100 000 habitants et plus) • 28,58 $/hre (38,75 ou 40 hres/sem)en moyenne en tant que préposé(e) à l'entretien des équipements sportifs extérieurs publics (terrains de golf, pistes de ski ou de motoneige, patinoires extérieures, etc.) au sein des municipalités de taille moyenne (20 000 à 99 999 habitants) Sources : Emploi Québec, Syndicat de la fonction publique du Québec - section locale SEPAQ, conventions collectives des cols bleus de la plupart des grandes municipalités, conventions collectives des cols bleus de plusieurs municipalités de taille moyenne, conventions collectives des employés de plusieurs petites municipalités, conventions collectives des employés de plusieurs très petites municipalités, conventions collectives des employés de plusieurs clubs de golf privés et conventions collectives des employés de plusieurs grandes stations de ski et centres récréotouristiques. LE PROGRAMME D’ÉTUDES : Iil n'existe pas de formation reconnue afin d'occuper ce métier. La plupart du temps, ce sont les employeurs qui forment eux-mêmes leur personnel.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "code": "chef_trainl",
+  "code_provisoire": true,
+  "noms": [
+    "Chef de train"
+  ],
+  "secteur": "transport",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que chef de train; tu seras responsable de diriger les manoeuvres de déplacements des wagons dans un centre de triage de trains de passagers ou de marchandises selon les procédures. Tu auras pour tâches de : • Atteler et dételer les wagons de passager(-ère)s et de marchandises; • Actionner et relâcher les freins à main; • Communiquer, interpréter et relayer les signaux et autres indications sur mouvement des trains auprès des coordonnateurs de la gare de triage et conducteurs de locomotives; • Assurer l'exécution des opérations conformément à la feuille de route et au code en vigueur; • Expliquer la feuille de route aux membres de l'équipage et leur transmettre des instructions; • Communiquer à l’aide signaux particuliers ou par radio avec les autres membres de l’équipe de train afin d’indiquer le sens du mouvement, l’arrêt, le serrage et le desserrage des freins à air; • Assurer la protection du personnel et de la clientèle en y installant des fusées éclairantes et des drapeaux de façon appropriée et communiquer avec les autres trains en cas d’urgence; • Former et séparer des rames de train dans le triage, et ramasser et dételer des wagons en cours de route; • Manœuvrer des aiguillages pour modifier l'itinéraire des locomotives et des wagons; • Surveiller les signaux, l'état des voies ferrées et les aiguillages; • Suivre les directives des répartiteurs(trices) sur les déplacements des trains; • Inspecter l'état des trains et du matériel roulant; • Préparer et remplir les formulaires et autres documents aux ordres de marche et et autres listes des manoeuvres • Etc. En tant que mécanicien(ne) de locomotive (aussi appelé \"ingénieur(e) de locomotive\" ou \"ingénieur de train\" ou \"opérateur de locomotive\" ou \"conducteur de train\"); tu seras responsable de conduire des locomotives diesel-électriques, des autorails, des locomotives de métro et des voitures à cabine selon les ordres de marches, les indicateurs, les signaux et les règlements ferroviaires. Tu auras pour tâches de : • Actionner les commandes des locomotives pour assurer le transport des passagers et des marchandises par chemin de fer; • Utiliser des systèmes de communication pour communiquer avec les membres de l'équipage et les employés de la régulation du trafic, • Suivre les instructions des répartiteurs(trices) lors des déplacemeants; • Rester en contact avec le préposé au trafic tout au long du parcours; • Exploiter des locomotives diesel-électriques, des wagons diesel et des voitures pilotes de voyageurs; • Assurer la conduite sécuritaire de la locomotive et le respect de l'horaire; • Vérifier l’état mécanique du train et être à l’affût des problèmes éventuels; • Contrôler les instruments mesurant la vitesse, l’ampérage, la charge de la batterie et la pression d’air; • Toujours savoir ce qui se passe avec le train et savoir comment différents éléments influencent son fonctionnement (poids des marchandises, type, accélération); • Signaler les retards ou les problèmes mécaniques; • Collaborer étroitement avec les chefs de train; • Etc. QUALITÉS ET APTITUDES NÉCESSAIRES : -Très bonne santé -Très bonne vision -Très bonne audition -Excellente condition et endurance physiques : car tu devras de longues heures debout et parfois lever des charges lourdes (chef de train) -Vigilance et jugement sûr et rapide : pour être capable d’agir rapidement et efficament afin d’éviter des accidents -Bon contrôle et très bonne confiance en soi pour intervenir efficacement dans les situations d’urgences -Sens l’observation et de la mémoire : afin de t’assurer que les déplacements se font selon indications données -Autonomie et débrouillardise : pour être capable de prendre des décisions seul(e) -Sens des responsabilités : car tu seras responsable du bon déroulement des déplacements des trains et de l’exactitude de tes signaux et indications -Facilité à travailler sous pression et avec le stress : car tu seras constamment appelé(e) à agir dans des délais courts -Facilité au travail en équipe : car tu seras en constant contact avec les autres chefs de trains, les contrôleurs de la circulation ferroviaire et les mécaniciens de locomotives -Bonne connaissance de l’anglais : c’est la langue utilisée pour les communications dans le milieu ferroviaire et de plus les manuels d’entretien sont dans cette langue (pour les mécaniciens de locomotives surtout) PROFESSIONS APPARENTÉES : -Chef de train stagiaire (en début de carrière) - Chef de train adjoint(e) - Contrôleur(e) de la circulation ferroviaire - Coordonnateur(trice) de trains (après quelques années d’expérience) - Régulateur(trice) de trains - Manoeuvre au triage des wagons - Opérateur(trice) du trafic ferroviaire - Répartiteur(trice) en transport ferroviaire - Serre-frein (second conducteur de locomotive) EMPLOYEURS POTENTIELS : Pour une liste d’entreprises, voir la section \"",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": "d'une durée de 2 semaines. EXIGENCES D’ADMISSION : -Détenir un D.E.S. ou l'équivalent ET - Avoir interrompu tes études depuis au moins 1 an (ou sessions consécutives) OU - Avoir complété au moins 2 sessions d'études post-secondaires échelonnées sur 1 an AUTRES EXIGENCES À L’ADMISSION : - Détenir un permis de conduire classe 5 valide de la SAAQ -Posséder une bonne connaissance du français tant à l’oral et à l’écrit - Connaissance usuelle de l'anglais - Connaissance de base en informatique - Subir des examens médicaux (examen médical, test d'acuité visuelle, test de perception des couleurs) - Réussir le processus de sélection (test d'agilité, test de rapports spatiaux, etc.) ENDROITS DE FORMATION : - (section étudiant adulte) Programme exclusif au Québec et unique en français en Amérique du Nord; Offert en partenariat avec les compagnies minières de la région dont ArcelorMittal; Regarde une vidéo présentant le ; admissions à temps complet de jour à l'hiver.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

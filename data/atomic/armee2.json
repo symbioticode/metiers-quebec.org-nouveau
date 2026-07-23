@@ -1,0 +1,29 @@
+{
+  "code": "armee2",
+  "code_provisoire": true,
+  "noms": [
+    "Administration des services de santé, officier d'"
+  ],
+  "secteur": "armee",
+  "faits": [
+    {
+      "champ": "description",
+      "valeur": "s de femmes officiers : Comme par exemple : • (",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": true,
+    "milieux_travail": false,
+    "taches": false,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

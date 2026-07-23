@@ -1,0 +1,29 @@
+{
+  "code": "ouvrier_cuir",
+  "code_provisoire": true,
+  "noms": [
+    "Ouvrier en fabrication de chaussures"
+  ],
+  "secteur": "mode",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que confectionneur(euse) d'articles et vêtements en cuir; tu auras pour tâches de confectionner des chaussures (souliers, sandales, mocassins, bottes, chaussures de sport, etc); divers types de vêtements en cuir (jupes, pantalons, vestes, vestons, blousons sports, etc) et divers articles en cuir (sacs à dos, sacs à main, gants, valises, accessoires mode en cuir, etc.). Tu devras également effectuer à la main ou à la machine à coudre les différentes techniques (traçage, parage, rempliage, couture, montage, finition, etc.) pour la confection d'articles de cuir. Tu auras aussi comme tâches de réparer en usine ou sur mesure ces types de chaussures, vêtements et articles de cuir. QUALITÉS ET APTITUDESNÉCESSAIRES : -Bonne vision -Bonne perception des formes et des couleurs -Bonne endurance physique car tu auras à répéter plusieurs les mêmes mouvements -Aptitudes pour dessin car tu auras à effectuer le dessin de patrons et la gradation de vêtements -Bonnes habiletés et dextérité manuelles car tu auras à effectuer des coupes, coutures et autres à l’aide de machines à coudre et autres instruments -Créativité et imagination pour réaliser et concevoir des patrons de vêtements jolis et originaux -Minutie, précision et souci du détail car tu auras à réaliser des dessins détaillés et avec précision -Sens de l’observation et l’esthétique pour pouvoir réaliser des patrons de vêtements qui attireront la clientèle par leur beauté -Autonomie et débrouillardise car tu devras être capable de travailler seul(e) dans le cadre de ton travail -Aimer travailler avec le public car tu auras à travailler auprès de la clientèle PROFESSIONS APPARENTÉES : - Artisan(ne) du cuir - Bourrelier(ère) -Conducteur(trice) de machines à piquer - Maroquinier(ère) -Ouvrier(ère) en fabrication de chaussures EMPLOYEURS POTENTIELS : -Ateliers de maroquinerie - Ateliers de selleries -Manufacturiers d’articles en cuir (valises, gants, bourses, sacs à main, etc.) -Manufacturiers de chaussures -Manufacturiers de vêtements de cuir EXIGENCE DES EMPLOYEURS : -Polyvalence PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2022 : Le salaire moyen en début de carrière était de : - 14,25 $/heure (40 hres/sem) chez la plupart des employeurs au sein des PME - 16,41 $/heure (40 hres/sem) en moyenne en tant que couturier(ère) en industrie ou coupeur(euse) au sein des grands manufacturiers de vêtements - 16,72 $/heure (40 hres/sem) en moyenne en tant qu'apprenti(e) et augmente à 18,18 $/heure en tant que couturier(ère) au sein des grands manufacturiers de meubles - 17,07 $/heure (40 hres/sem) en tant que marqueur(euse) de cuir au sein des grands manufacturiers de meubles Source : Ministère de l’Éducation du Québec PERSPECTIVES D’AVENIR : Les industries du domaine de la chaussure et du vêtement haut de gamme ont pu résister à la concurrence internationale, contrairement à l'industrie du prêt-à-porter. Certains manufacturiers québécois détiennent même une réputation mondiale pour la qualité de leurs produits (ex : Boulet, Kanuk, Genfoot, La Canadienne, etc.). La pandémie a accéléré le départ de petits joueurs et d'entreprises sans relève. Le manque de main-d'œuvre a nui aux entreprises qui voulaient répondre aux besoins nationaux en équipement de protection. Les changements d'habitudes de consommation et les difficultés des établissements de vente au détail pourraient aussi fragiliser plusieurs entreprises. Par contre, l'industrie du vêtement haut de gamme semble mieux se porter puisqu'elle a su résister à cette concurrence puisque les clients recherchent davantage des produits de haute qualité et sur mesure, ce que les entreprises asiatiques n'offrent pas, tout comme celle du vêtement spécialisé (uniformes de travail, combinaisons de sport, etc.). Bien que la formation professionnelle ne soit pas une exigence d'embauche, faute de candidats; lla plupart sont embauchés d'abord comme manœuvres et ensuite, ils sont formés par l'employeur pour opérer leurs machines. Toutefois, les besoins en effectif demeurent toutefois importants, surtout en raison d'une main-d'œuvre vieillissante — près de 40 % des travailleurs ont plus de 55 ans Donc, les perspectives pour les prochaines années sontplutôt moyennes. LE PROGRAMME D’ÉTUDES : Il n'existe plus de programme de formation dans ce domaine.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

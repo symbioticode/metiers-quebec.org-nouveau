@@ -1,0 +1,29 @@
+{
+  "code": "tech_electro_ind",
+  "code_provisoire": true,
+  "noms": [
+    "Appareillage électrique, \r\ntechnologue en"
+  ],
+  "secteur": "electrotechnique",
+  "faits": [
+    {
+      "champ": "exigences_admission",
+      "valeur": ": -D�tenir un D.E.S. et avoir r�ussi les cours suivants du secondaire ou leurs �quivalents : TS ou SN 4e OU CST 5e ST / ATS 4e OU STE ou SE 4e Note : pour conna�tre les �quivalences de pr�alables � l��ducation aux adultes, consulte la STATISTIAQUES D'ADMISSION : Aucun contingentement � ce programme Les candidats(es) admissibles (c'est-�-dire d�tenant les pr�alables requis) sont g�n�ralement admis Admissions �galement ouvertes au trimestre d'hiver dans les coll�ges suivants : • Sept-�les • Matane • Victoriavlle • Chicoutimi • Ahuntsic • Vanier ENDROITS DE FORMATION : Qu'est-ce que l� ? Est et Nord du Qu�bec : • , campus de Gasp� offert selon la formule en alternance travail-�tudes ATE � temps complet de jour, (comprenant 2 stages r�mun�r�s de 12 � 16 semaines chacun en milieu professionnel au cours des trimestres d'�t� qui s'ajoutent aux stages cr�dit�s obligatoires); NOUVEAU !",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": false,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": true,
+    "salaire_median": false
+  }
+}

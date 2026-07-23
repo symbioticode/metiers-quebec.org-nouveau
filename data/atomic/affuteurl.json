@@ -1,0 +1,39 @@
+{
+  "code": "affuteurl",
+  "code_provisoire": true,
+  "noms": [
+    "Réparateur - affûteur de scies"
+  ],
+  "secteur": "foresterie",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant qu’affûteuse ou affûteur; tu auras pour tâches d’affûter (aiguiser), entretenir et de régler différents types de scies utilisées en scierie (scies circulaires, scies alternatives, scies à ruban, couteaux d’acier, etc), d’autres outils tranchants utilisées en usine, ainsi que la machinerie de sciage et d’affûtage. Tu utiliseras divers outils et équipements tels que : une profileuse magnétique à couteaux, une affûteuse automatique à ruban, une rectifieuse de dessus et de face de la dent pour scie circulaire et à ruban, une stelliteuse de scie à ruban et scie circulaire, etc. Tu devras t’assurer de leur bon état d’utilisation afin que les scies puissent fournir une qualité maximale de coupe. QUALITÉS ET APTITUDESNÉCESSAIRES : - Bonnes habiletés et dextérité manuelles car tu devras manipuler différents outils et couteaux d'affûtage -Avoir une bonne vision - Intérêts pour la mécanique -Minutie, précision et souci du détail car tu devras effectuer les travaux d’aiguisage avec précision -Facilité à travailler en équipe car tu auras à travailleurs en collaboration avec des ouvriers PROFESSIONS APPARENTÉES : -Aiguiseur(euse) de couteaux et scies -Ajusteur(euse) de machinerie de sciage et d’affûtage EMPLOYEURS POTENTIELS : - Compagnies d'exploitation forestière -Coopératives forestières -Fabricants de parquets en bois dur - Industries du meuble -Industries papetières -Scieries, principalement EXIGENCES DES EMPLOYEURS : -Polyvalence -Travail généralement à l’année, mais parfois saisonnier PLACEMENT : Selon les données disponibles au 1er juin 2019: Le placement est bon, 63 % des répondants ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI A TEMPS COMPLET 8 5 4 Note : hausse du taux de placement par rapport aux années précédentes (était à 50 % en 2017). Source : Ministère de l’Éducation du Québec SALAIRE : Selon les données de 2024 : Le salaire moyen en début de carrière était de : - 16,00$/heure (40 hres/sem) au sein des PME - 17,68 $/heure (40 hres/sem) au sein des grands manufacturiers de meubles - 18,13 $/heure (40 hres/sem) au sein des grands transformateurs de viandes et volailles - 21,73 $/heure (40 hres/sem) au sein des PME de transformation des produits forestiers - 23,69 $/heure (40 hres/sem) au sein des grands manufacturiers de menuiseries architecturales (parquets lattés, panneaux agglomérés, etc.) - 23,40 $/heure (40 hressem) en tant qu'apprenti(e) affûteur(euse) et augmente à 26,38 $/heure en tant qu'affûteur(euse) au sein des grandes industries de transformation de produits forestiers - 26,88 $/heure (40 hressem) en tant qu'apprenti(e) affûteur(euse) et augmente à 30,08 $/heure en tant qu'affûteur(euse) au sein des grandes industries papetières Sources : Ministère de l’Éducation, conventions collectives des employés de plusieurs grandes industries de transformation alimentaire, conventions collectives des employés de plusieurs grands manufacturiers de meubles, conventions collectives des employés de plusieurs grands manufacturiers de menuiseries architecturales, conventions collectives des employés de plusieurs grandes industries de transformation des produits forestiers et conventions collectives des employés de plusieurs grandes industries papetières. PERSPECTIVES D'AVENIR : Malgré les problèmes économiques et les nombreux changements que cette industrie a subi au cours des dernieres années, de nombreuses scieries (principalement les PME) éprouvent de la difficulté à recrutement du personnel qualifié. La rémunération moyenne après expérience en 2024... le revenu annuel moyen d'un(e) affûteur(euse) détenant 10 années d'expérience au sein d'une PME était de 40 600 $; le revenu annuel moyen d'un(e) affûteur(euse) détenant 10 années d'expérience au sein d'une grande industrie de tranformation des produits forestiers était de 57 000 $; le revenu annuel moyen d'un(e) affûteur(euse) détenant 10 années d'expérience au sein d'une grand manufacturier de produits en bois (charpentes, contreplaqués, palettes, etc.) était de 57 700 $; et le revenu annuel moyen d'un(e) affûteur(euse) détenant 10 années d'expérience au sein d'une grande entreprise papetière était de 71 300 $. LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en affûtage D.E.P. a une durée totale de 900 heures, c’est-à-dire 1 an offert à temps complet. Il comporte des cours en santé et sécurité au travail, affûtage de scies circulaires, affûtage de scies à ruban, affûtage de couteaux, anomalies des outils de coupe, soudure sur scies et couteaux, tensionnage des scies, affûtage des scies au carbure et au stellite, installation des scies guidées, affûtage des outils spéciaux, alignement de la machinerie de sciage, alignement de la machinerie d’affûtage, dimensions et défauts du bois, ainsi que 2 stages en",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    },
+    {
+      "champ": "milieux_travail",
+      "valeur": "); regarde la du programme; admissions à temps complet de jour à l'automne.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": true,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

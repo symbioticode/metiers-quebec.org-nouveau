@@ -1,0 +1,29 @@
+{
+  "code": "mannequinl",
+  "code_provisoire": true,
+  "noms": [
+    "Mannequin"
+  ],
+  "secteur": "beaute",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": En tant que mannequin, tu auras pour tâches de présenter des modèles de la collection vestimentaire ou de prêt-à-porter d’un designer ou d’une chaîne de magasins afin d'en faire la promotion de l'habillement, des accessoires de mode ou des produits de beauté. Tu feras des défilés de mode, des présentations lors de galas, des apparitions lors de publicités télévisées, des apparitions lors de vidéos corporatifs ou publicitaires, des apparitions photos pour des catalogues de magasins ou même pour des magazines de mode et beauté. Tu peux également effectuer la représentation d'un personnage destiné à une oeuvre artistique, photographique ou picturale. Ce métier ne se limite pas qu'à se promener sur un podium de présentation ou s'installer pour une séance de photographies en démontrant ton plus beau sourire. Loin de là ... Le métier nécessite une excellente santé, bien davantage qu'un corps mince et bien fait. Le rythme de vie exige une santé saine et équilibrée pouvant supporter le stress, les longues heures de travail et la fatigue, des changements de température constants lors de prises de vue extérieures, etc. Puisque le travail est très exigeant physique et un stress constant, une excellente condition et endurance physique est également nécessaire. Lors de séances de photographies extérieures, tu seras soumis à des décalages climatiques (présentation de la mode d'hiver présentation de la mode d'été en hiver et inversement). De nombreuses apparitions sont effectuées devant le public, donc tu devras être constamment à ton aise et à ta pleine forme, même si viens d'effectuer des heures d'essais vestimentaires et de nombreuses prises de photographies dans les dernières heures ! APTITUDES ET QUALITÉS REQUISES : -Être passionné(e) par le monde de la mode -Très bonne santé -Bonne condition physique (surtout de l’endurance) car tu auras à travailler de très longues heures, avec de la fatigue et parfois du stress -Grande facilité à communiquer et entregent car tu seras à établir des photos avec toutes sortes de personnes -Grande imagination et créativité pour présenter les vêtements de façon originale et créative -Sens de l’initiative et de l’audaceafin d’être avant-gardiste dans tes présentations et apparitions -Grande discipline, maturité et autonomie pour savoir ce que tu as à faire des séances de photos ou de vidéos -Sens de l’organisation et bonne gestion du temps pour être de planifier et de gérer ton temps (car le métier exige plusieurs heures de travail) -Capacité de gérer efficacement ton stress car parfois tu auras à te dépêcher à terminer une séance de photos pour publication -Facilité à travailler en équipe car tu devras travailler avec la collaboration de plusieurs personnes (designers, stylistes, habilleurs, coiffeurs, maquilleurs, photographes ou caméramans, chorégraphes, autres mannequins, etc) -Grande facilité d’adaptation car tu pourrais être appelé(e) à travailler dans toutes sortes de milieux EMPLOYEURS POTENTIELS : Généralement un(e) mannequin travaille à son propre compte (travailleur-euse autonome à contrat ou à la pige) EXIGENCES DE L’EMPLOI : -Avoir du talent (c’est le talent qui pourra t’apporter le succès.....) -Bon porte-folio -Grande polyvalence -Grande disponibilité -Longues heures de travail -Horaires de travail flexibles -Travail très exigeant mentalement et physiquement et souvent stressant -Travail à contrat ou à la pige -Bilinguisme parfois nécessaire -Mobilité pour voyager un peu partout dans le monde (PARFOIS) -Être associé(e) avec une agence est énormément à avoir des contrats sérieux SALAIRE : Le salaire est très variable selon ton talent, le type de contrat et la durée de ce dernier. Aucune",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}

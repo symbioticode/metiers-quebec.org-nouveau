@@ -1,0 +1,29 @@
+{
+  "code": "repar_caravanes",
+  "code_provisoire": true,
+  "noms": [
+    "Caravanes, réparateur de"
+  ],
+  "secteur": "batiment",
+  "faits": [
+    {
+      "champ": "taches",
+      "valeur": ": Si tu deviens une technicienne ou un technicien en entretien de caravanes; tu auras pour tâches d’installer, entretenir et de réparer des caravanes de tous modèles et de tous gabarits (que ce soit des roulottes ou autres véhicules récréatifs conventionnels ou hauts de gamme utilisés pour le camping ou des roulottes de travail utilisées sur les chantiers de construction, en y effectuant des travaux de menuiserie, de plomberie, d’électricité, de soudage, d’entretien et de réparation du système d’alimentation en gaz et des appareils fonctionnant au gaz propane, des appareils électriques et autres travaux nécessaires dans les caravanes. Enfin, tu seras appelé(e) à installer des accessoires, réparer et modifier les composantes de caravanes. QUALITÉS ET APTITUDES NÉCESSAIRES : -Bonnes habiletés et dextérité manuelles car tu auras à effectuer divers travaux manuels (menuiserie, plomberie, soudage, etc) -Minutie, précision et souci du détail car tu auras à effectuer des travaux de précision -Capacité de travailler sous pression car tu devras respecter des délais précis pour effectuer les travaux PROFESSION APPARENTÉE : -Préposé(e) à l’entretien de caravanes EMPLOYEURS POTENTIELS : -Concessionnaires de caravanes -Ateliers de réparation de caravanes -À ton propre compte EXIGENCES DES EMPLOYEURS : -Polyvalence -Connaissance de l’anglais, un atout SALAIRE : Selon les données en 2022 : Le salaire moyen en début de carrière était de 14,25 $/heure (40 hres/sem) PERSPECTIVES D'AVENIR : Bien que ce métier soit saisonnier, les ventes de véhicules et roulottes de camping ont grimpé au cours des dernières, ce qui fera augmenter les besoins en main-d'oeuvre afin d'en assurer leur entretien. Il y a également des roulottes qui sont utilisés dans d'autres secteurs, notamment dans l'industrie de la construction.",
+      "origine": {
+        "source": "metiers_quebec",
+        "date_captee": "2026-07-22",
+        "methode": "scraping",
+        "confiance": "moyenne"
+      }
+    }
+  ],
+  "completude": {
+    "description": false,
+    "milieux_travail": false,
+    "taches": true,
+    "formation_requise": false,
+    "qualites": false,
+    "exigences_admission": false,
+    "salaire_median": false
+  }
+}
