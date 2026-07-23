@@ -167,100 +167,18 @@ s'appliquent à n'importe quel `champ`, sans code spécial par type de donnée.
   pas leur dépositaire — il peut être reconstruit avec un autre modèle
   d'embedding sans jamais toucher au format atomique.
 
-## Emprunts validés depuis PCCD / RKA / DUO
+## Emprunts et invariants dérivés
 
-Revue du corpus élargi (PCCD_Doc1_Hypothesis_v0_5, SYNAPSE_Architecture_v0_1,
-DUO_Fondements_Theoriques_v0_1, RKA_Formalisation_v4) pour vérifier si des
-invariants déjà formalisés ailleurs dans l'écosystème s'appliquent sans
-alourdir kb008-bis. Quatre éléments retenus, traduits dans notre nomenclature
-(FAIT/GARDE/ORIGINE/CODE) — aucun nouvel acronyme importé.
+Quatre GARDES dérivées de PCCD/RKA/DUO, formalisées dans kb012 §2 :
+- GARDE-AUTOJUGEMENT (PCCD INV-01 / RKA-INV-01)
+- GARDE-NON-RÉÉCRITURE (PCCD INV-08 / RKA-INV-08)
+- Fraîcheur (DUO axiome D5)
+- GARDE-IRRÉVERSIBILITÉ (DUO axiome D4)
 
-### GARDE-AUTOJUGEMENT (source : PCCD INV-01 / RKA-INV-01)
+## Voir aussi
 
-Une source ne fixe jamais elle-même sa propre `confiance`. Si `imt_en_ligne`
-et `metiers_quebec` divergent sur un `salaire_median`, la GARDE de résolution
-de conflit — pas l'un des deux ingesteurs — tranche. Un ingesteur ne fait que
-proposer un FAIT avec son ORIGINE ; il ne se prononce jamais sur sa propre
-fiabilité relative aux autres sources.
-
-### GARDE-NON-RÉÉCRITURE (source : PCCD INV-08 / RKA-INV-08)
-
-`valeur` d'un FAIT ne doit jamais s'écarter sémantiquement de la source
-brute (`sources_raw` / `corpus_raw_v2`). Toute normalisation (nettoyage de
-newlines, extraction depuis texte scrapé) doit rester vérifiable par
-comparaison directe avec le brut — pas de paraphrase ou d'interprétation
-introduite silencieusement lors de l'ingestion.
-
-### Fraîcheur (source : DUO — axiome D5)
-
-Un FAIT non reconfirmé perd sa validité présumée avec le temps. On n'ajoute
-pas de champ à remplir manuellement — `perimee` est **dérivé**, pas stocké :
-
-```
-perimee(FAIT) = (aujourd'hui - FAIT.origine.date_captee) > seuil(FAIT.champ)
-```
-
-Seuils par défaut, ajustables : `salaire_median` périmé après 1 an,
-`description`/`formation` après 3 ans (contenu plus stable). Sans ce calcul,
-un salaire de 2023 non marqué se présenterait comme aussi valide qu'un
-salaire de 2026 — DUO nomme précisément ce silence comme une fausse
-déclaration de validité permanente.
-
-### GARDE-IRRÉVERSIBILITÉ (source : DUO — axiome D4)
-
-Jamais d'écrasement en place d'un FAIT existant. Une nouvelle donnée pour le
-même `code` + `champ` s'ajoute comme un nouveau FAIT avec sa propre
-`date_captee` ; l'ancien reste présent dans la liste. La GARDE de résolution
-de conflit (voir GARDE-AUTOJUGEMENT) choisit lequel exposer en priorité —
-mais aucun FAIT n'est supprimé ou modifié rétroactivement. Le design en liste
-de FAITS le permettait déjà ; cette GARDE le rend obligatoire, pas seulement
-possible.
-
-## Ce qui a été examiné et écarté
-
-| Écarté | Raison |
-|---|---|
-| Cascade N0/N1/N2 (PCCD/RKA/SYNAPSE) | Conçue pour la navigation IA sur un corpus hétérogène en croissance continue. Sur 420 fiches statiques, `completude` + GARDES suffisent — pas de hiérarchie de lecture à construire. |
-| 8 statuts épistémiques RKA (PENDING…VOID) | `confiance` + `completude` couvrent le besoin réel. Le vocabulaire à 8 états sert à tracer des désaccords théoriques entre agents sur des hypothèses, pas des écarts entre ISQ et un scraping. |
-| SYNAPSE (couches, exocortex, TIE) | Résout l'agrégation inter-projets multi-agents. Site C a une seule source de vérité — pas de couche d'agrégation supplémentaire à construire par-dessus le format atomique lui-même. |
-| DUO — distinction connaissance/croyance/décision | Pertinente pour de la connaissance organisationnelle contestée entre acteurs. Une fiche métier est une donnée factuelle sourcée, pas une croyance d'acteur — la distinction n'apporte rien ici. |
-
-## Prochaine étape suggérée
-
-Écrire les GARDES comme tests automatisés (`scripts/gardes.py` ou
-équivalent) vérifiés sur `corpus_raw_v2` en premier, avant d'ajouter
-d'autres sources — pour prouver que le format tient sur les données
-existantes avant de l'étendre.
-
-## État de Phase 3 (conflit multi-source) — 2026-07-22
-
-Phase 3 telle que conçue ne peut pas être validée avec les sources
-actuellement disponibles.
-
-**Ce qui fonctionne :**
-- `resoudre_conflits.py` résout correctement les conflits par confiance
-  (haute > moyenne > basse). Prouvé sur des FAITS réels imt_en_ligne
-  vs metiers_quebec pour le champ `salaire_median`.
-- Le test d'égalité de confiance synthétique (source_a/source_b,
-  50000$/55000$) retourne `conflit_non_resolu` sans inventer de gagnant.
-  GARDE-AUTOJUGEMENT fonctionne.
-- `garde_non_reecriture` comptabilise correctement les FAITS imt_en_ligne
-  en `non_verifiable` (source != metiers_quebec).
-
-**Ce qui manque :**
-- metiers_quebec n'a pas de salaires structurés dans `corpus_raw_v2`.
-  Le texte brut contient des données salariales (ex: architecte 68 300$
-  annuel, plombier 22,68$/hre) mais `ingest_corpus_raw_v2.py` ne les
-  extrait pas — c'est un gap d'extraction documenté, pas une valeur à
-  inventer.
-- Sans FAIT metiers_quebec/salaire_median réel, il n'y a pas de
-  conflit inter-sources à résoudre. La résolution de conflit n'a été
-  exercée que sur des données synthétiques ( retirées de production
-  car GARDE-NON-RÉÉCRITURE les a correctement identifiées comme fausses).
-
-**Pour compléter Phase 3, il faut :**
-1. Soit une troisième source avec des salaires structurés pour les
-   mêmes métiers (ex: ISQ, Guide MESS).
-2. Soit extraire les salaires du texte libre de `corpus_raw_v2`
-   (reconnaissance de montants horaires/annuels) — travail
-   d'extraction distinct du format atomique, à traiter séparément.
+- **kb012** : implémentation concrète des GARDES, algorithme de résolution
+  de conflits, résultats de validation, état de Phase 3
+- **scripts/gardes.py** : les cinq GARDES en Python stdlib
+- **scripts/test_gardes.py** : 17 tests unitaires
+- **scripts/smoke_test_atomique.py** : validation bout-en-bout
