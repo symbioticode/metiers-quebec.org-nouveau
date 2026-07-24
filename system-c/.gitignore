@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node (dukascopy-node, npm global)
+node_modules/
+.npm-global/
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+
+# Environnement
+.env
+*.log
+
+public/
+.opencode/
+.venv/
+*.pyc
+__pycache__/
+
+# Graphify internal cache (re-runable, not source of truth)
+dist/graphify-out/.graphify_*
+dist/graphify-out/cache/
+dist/graphify-out/2026-*/
+dist/graphify-out/*.sig
+
+# Embeddings (large, regenerable)
+data/embeddings/
+claudemem_log/
