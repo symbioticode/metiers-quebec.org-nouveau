@@ -1,0 +1,25 @@
+{
+  "cnp": "21222",
+  "nom_metier": "Spécialistes en informatique",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "imt_en_ligne": {
+      "url": "https://www.quebec.ca/emploi/informer-metier-profession/explorer-metiers-professions/21222-specialistes-en-informatique",
+      "texte_brut": "Spécialistes en informatique\n\nAnalystes et consultants / consultantes en informatique\n\nDéterminer et documenter les besoins informatiques des utilisateur(-trice)s.\nConcevoir, utiliser et maintenir des bases de données et des applications.\nFaire des recommandations sur des problèmes liés aux systèmes informatiques.\nOptimiser l'efficacité et la qualité des logiciels.\nAnalyser les couts de développement, d'utilisation et d'optimisation des systèmes.\nParticiper au développement, à la mise en place et à la réalisation de stratégies en matière informatique.\nConseiller les responsables de l'informatique au sein d'entreprises.\nPréparer des présentations et des rapports écrits basés sur la recherche, la collecte et l'analyse de données de plusieurs sources.\nConcevoir et optimiser des algorithmes.\n\nAnalystes en assurance de la qualité des systèmes informatiques\n\nOptimiser l'efficacité et la qualité des logiciels.\nConcevoir et mettre en oeuvre des procédures liées au cycle de vie des logiciels.\nConseiller les responsables de l'informatique au sein d'entreprises.\n\nVérificateurs / vérificatrices de systèmes\n\nEffectuer des révisions indépendantes pour évaluer les pratiques en assurance de la qualité, les produits logiciels et les systèmes d'information.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "guichet_emplois": {
+      "url": "https://www.guichetemplois.gc.ca/rapportmarche/profession/22490/QC",
+      "texte_brut": "Tâches et fonctions\nVoici les tâches et activités principales que les Spécialistes en informatique doivent effectuer, et certaines des exigences physiques que celles-ci impliquent :\n\nconcevoir, développer, tester, mettre en oeuvre et superviser les systèmes informatiques;\ncollecter et analyser les données pour identifier les domaines à améliorer au sein des infrastructures informatiques de l'organisation;\nexaminer les systèmes de technologies de l'information (TI) et les processus internes existants;\nconcevoir, mettre en oeuvre et appliquer les politiques et les procédures liées au cycle de vie des logiciels afin d'optimiser l'efficacité, le rendement et la qualité des logiciels et des systèmes d'information et de garantir que tous les systèmes et processus répondent aux normes de l'organisation et aux exigences des utilisateurs;\ndévelopper des procédures et des tests d'assurance qualité pour le développement et l'amélioration des systèmes existants et des nouveaux systèmes;\nidentifier, analyser et documenter les anomalies et assurer la réalisation des correctifs appropriés;\neffectuer des tâches d'entretien préventif sur les systèmes informatiques et les équipements périphériques.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "noc_oasis": {
+      "url": "https://www23.statcan.gc.ca/imdb/p3VD_f.pl?Function=getVD&TVD=1322554&CVD=1322870&CPV=21222&CST=01052021&CLV=5&MLV=5",
+      "texte_brut": "Fonctions principales\nCe groupe exerce une partie ou l'ensemble des fonctions suivantes :\n\nconcevoir, développer, tester, mettre en oeuvre et superviser les systèmes informatiques;\ncollecter et analyser les données pour identifier les domaines à améliorer au sein des infrastructures informatiques de l'organisation;\nexaminer les systèmes de technologies de l'information (TI) et les processus internes existants;\nconcevoir, mettre en oeuvre et appliquer les politiques et les procédures liées au cycle de vie des logiciels afin d'optimiser l'efficacité, le rendement et la qualité des logiciels et des systèmes d'information et de garantir que tous les systèmes et processus répondent aux normes de l'organisation et aux exigences des utilisateurs;\ndévelopper des procédures et des tests d'assurance qualité pour le développement et l'amélioration des systèmes existants et des nouveaux systèmes;\nidentifier, analyser et documenter les anomalies et assurer la réalisation des correctifs appropriés;\neffectuer des tâches d'entretien préventif sur les systèmes informatiques et les équipements périphériques.",
+      "extraction_reussie": true,
+      "notes": "Page StatCan NOC 2021 utilisée car noc.esdc.gc.ca bloquait les requêtes webfetch"
+    }
+  }
+}

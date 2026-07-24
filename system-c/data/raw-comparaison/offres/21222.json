@@ -1,0 +1,49 @@
+{
+  "cnp": "21222",
+  "nom_metier": "Spécialistes en informatique",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "jobillico": {
+      "offres": [
+        {
+          "id": "16865571",
+          "employeur": "Ciao",
+          "titre": "Analyste en informatique",
+          "ville": "Québec",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/ciao/analyste-en-informatique/16865571",
+          "texte_brut": "C'est notamment par les compétences de notre équipe et l'engagement envers nos clients qu'on réussit à nous démarquer. Ciao est une entreprise spécialisée en développement de logiciels et en services technologiques. Nous offrons des services de développement d'applications web et mobiles, de conseil en technologies et de transformation numérique.",
+          "extraction_reussie": true,
+          "notes": "Texte d'extrait de la page de recherche - la page complète nécessite JavaScript"
+        },
+        {
+          "id": "16999996",
+          "employeur": "Micrologic",
+          "titre": "Analyste informatique",
+          "ville": "Montréal",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/micrologic/analyste-informatique/16999996",
+          "texte_brut": "Micrologic est à la recherche de professionnels expérimentés dans le domaine des technologies de l'information.",
+          "extraction_reussie": true,
+          "notes": "Texte d'extrait de la page de recherche - la page complète nécessite JavaScript"
+        },
+        {
+          "id": "17337443",
+          "employeur": "Centre de services scolaire des Grandes-Seigneuries",
+          "titre": "Analyste spécialisé(e) en informatique – (Analyste d'affaires)",
+          "ville": "La Prairie",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/centre-de-services-scolaire-des-grandes-seigneurie/analyste-specialise-e-en-informatique-analyste-d-affaires-/17337443",
+          "texte_brut": "Le Centre de services scolaire des Grandes-Seigneuries recherche une ou un analyste spécialisé(e) en informatique – analyste d'affaires.",
+          "extraction_reussie": true,
+          "notes": "Texte d'extrait de la page de recherche - la page complète nécessite JavaScript"
+        }
+      ]
+    },
+    "jobboom": {
+      "offres": [],
+      "notes": "jobboom.com utilise du JavaScript pour afficher les offres - les pages search retournent 404 ou du HTML sans les offres."
+    },
+    "emploisdecadres": {
+      "offres": [],
+      "notes": "emploisdecadres.com bloque les requêtes webfetch (404 ou vérification bot)."
+    }
+  }
+}

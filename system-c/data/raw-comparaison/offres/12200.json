@@ -1,0 +1,29 @@
+{
+  "cnp": "12200",
+  "nom_metier": "Techniciens et techniciennes en comptabilité",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "jobillico": {
+      "offres": [],
+      "notes": "Les recherches jobillico pour comptable n'ont pas produit d'offres correspondant directement au titre 'technicien comptable' (12200). Les résultats retournés étaient pour des postes de contrôleur financier, analyste financier, ou comptable - catégories différentes."
+    },
+    "jobboom": {
+      "offres": [
+        {
+          "id": "Furneco_International",
+          "employeur": "Furneco International Inc.",
+          "titre": "Comptable",
+          "ville": "Québec",
+          "url": "https://www.jobboom.com/fr/emploi/furneco-international-inc./_lfr?id=GE13708",
+          "texte_brut": "L'offre d'emploi Furneco International Inc. n'a pas pu être extraite - la page retourne 0 résultat(s) trouvé(s). L'annonce a probablement expirée.",
+          "extraction_reussie": false,
+          "notes": "Page jobboom retourne 0 résultats - offre expirée ou supprimée"
+        }
+      ]
+    },
+    "emploisdecadres": {
+      "offres": [],
+      "notes": "emploisdecadres.com bloque les requêtes webfetch (404 ou vérification bot)."
+    }
+  }
+}

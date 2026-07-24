@@ -1,0 +1,29 @@
+{
+  "cnp": "72300",
+  "nom_metier": "Plombiers",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "jobillico": {
+      "offres": [
+        {
+          "id": "16654752",
+          "employeur": "Groupe Noël inc.",
+          "titre": "Plombiers",
+          "ville": "Québec",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/groupe-noel-inc/plombiers/16654752",
+          "texte_brut": "ATTENTION NOUS N'EMBAUCHONS QUE DES COMPAGNONS PRÉSENTEMENT - CARTES CCQ EXIGÉES\n\nRejoindre Groupe Noël, c'est intégrer:\n- Un leader reconnu en mécanique du bâtiment;\n- L'une des plus grandes entreprises de la région de Québec;\n- Une équipe compétente et des gestionnaires attentifs;\n- Des conditions de travail à la hauteur de vos attentes;\n- Une stabilité d'emploi avec des défis stimulants !\n\nTes principales responsabilités dans notre équipe:\n- Effectuer l'installation des systèmes de tuyauterie, de chauffage et de refroidissement sur les projets ;\n- Effectuer des modifications ou des réparations sur des systèmes déjà installés ;\n- Appliquer les règles de santé et sécurité au travail en tout temps;\n- Effectue toutes autres tâches connexes à la demande de son supérieur immédiat ;\n- Assiste son supérieur immédiat et ses collègues de travail dans l'exercice de leurs fonctions, lorsque requis ;\n- Maintenir une attitude positive et faire régner un climat de travail harmonieux, respectueux et sain ;\n- Assure un lien de collaboration, disponibilité et flexibilité avec les autres services de l'entreprise ;\n- S'assure d'avoir un environnement de travail propre et sécuritaire.\n\nLe/La Tuyauteur(se) devra avoir les compétences suivantes :\n- Carte de la CCQ (compagnon) ;\n- DEP en plomberie/chauffage.",
+          "extraction_reussie": true,
+          "notes": ""
+        }
+      ]
+    },
+    "jobboom": {
+      "offres": [],
+      "notes": "jobboom.com utilise du JavaScript pour afficher les offres - les pages search retournent 404 ou du HTML sans les offres. Les URLs individuelles d'offres ne sont pas accessibles sans JS."
+    },
+    "emploisdecadres": {
+      "offres": [],
+      "notes": "emploisdecadres.com est un site de cadres/executifs - ne contient pas d'offres pour plombier."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cnp": "31301",
+  "nom": "infirmière",
+  "jobboom": {
+    "offres": [
+      {
+        "titre": "Infirmier / infirmière auxiliaire en RPA",
+        "url": "https://www.jobboom.com/fr/offre-emploi/infirmier-infirmiere-auxiliaire-en-rpa_servirplus_p3634850",
+        "taches_verbatim": "Tu recherches un emploi dynamique rempli de défis stimulants ? Servirplus, entreprise privée spécialisée dans les services de santé et services psychosociaux, est l’entreprise idéale pour mettre ton talent à profit. Elle recherche présentement un(e) infirmier(ère) auxiliaire pour un remplacement du lundi au vendredi de jour (7h à 15h ou 8h à 16h à ta convenance) La RPA est située sur la rue de Montmartre, à Québec (G1K 1E2). Rémunération : 31 $/h Le mandat débute maintenant et se poursuit jusqu'à la mi septembre. Joins toi à notre belle équipe!"
+      },
+      {
+        "titre": "Infirmières et infirmiers clinicien(ne)s",
+        "url": "https://www.jobboom.com/fr/offre-emploi/infirmieres-et-infirmiers-cliniciennes_services-de-gestion-quantum-ltee_p3575943",
+        "taches_verbatim": "Poste : infirmières et infirmiers clinicien(ne)s Lieu de travail : Montréal Salaire : 49 $ to 50 $ Nous sommes actuellement à la recherche d’infirmières et infirmiers pour combler plusieurs postes dans différents établissements de la grande région des Laurentides. Plusieurs besoins sont à pourvoir dans divers secteurs, offrant des opportunités variées selon votre expérience et vos champs d’intérêt. Exigences : - DEC ou BAC en sciences infirmières - Permis valide de l’Ordre des infirmières et infirmiers du Québec (OIIQ) - Minimum d’un (1) an d’expérience pertinente - Certification RCR à jour - Vaccination à jour Profil recherché : - Autonomie et jugement clinique - Capacité à travailler en équipe multidisciplinaire - Sens de l’organisation et des priorités - Professionnalisme et approche humaine auprès des patients Vous souhaitez relever de nouveaux défis dans un environnement stimulant ? Faites-nous parvenir votre candidature dès maintenant à l’adresse recrutementmtl@alternacare.ca. Numéros de permis CNESST : AP-2000116 et AR-2000108 Toutes les candidatures sont examinées par notre équipe de recrutement, et les décisions d’embauche sont prises par des personnes. Nous pouvons également utiliser des outils dotés d’intelligence artificielle pour soutenir certaines étapes du processus d’examen des candidatures."
+      },
+      {
+        "titre": "Infirmières et infirmiers clinicien(ne)s",
+        "url": "https://www.jobboom.com/fr/offre-emploi/infirmieres-et-infirmiers-cliniciennes_services-de-gestion-quantum-ltee_p3575942",
+        "taches_verbatim": "Poste : infirmières et infirmiers clinicien(ne)s Lieu de travail : Montréal Salaire : 49 $ to 50 $ Nous sommes actuellement à la recherche d’infirmières et infirmiers pour combler plusieurs postes dans différents établissements de la grande région des Laurentides. Plusieurs besoins sont à pourvoir dans divers secteurs, offrant des opportunités variées selon votre expérience et vos champs d’intérêt. Exigences : - DEC ou BAC en sciences infirmières - Permis valide de l’Ordre des infirmières et infirmiers du Québec (OIIQ) - Minimum d’un (1) an d’expérience pertinente - Certification RCR à jour - Vaccination à jour Profil recherché : - Autonomie et jugement clinique - Capacité à travailler en équipe multidisciplinaire - Sens de l’organisation et des priorités - Professionnalisme et approche humaine auprès des patients Vous souhaitez relever de nouveaux défis dans un environnement stimulant ? Faites-nous parvenir votre candidature dès maintenant à l’adresse recrutementmtl@alternacare.ca. Numéros de permis CNESST : AP-2000116 et AR-2000108 Toutes les candidatures sont examinées par notre équipe de recrutement, et les décisions d’embauche sont prises par des personnes. Nous pouvons également utiliser des outils dotés d’intelligence artificielle pour soutenir certaines étapes du processus d’examen des candidatures."
+      }
+    ],
+    "nb": 3
+  },
+  "emploisdecadres": {
+    "offres": [],
+    "nb": 0,
+    "echec": true,
+    "cause": "Cloudflare ou 0 offre"
+  }
+}

@@ -1,18 +1,15 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
-  # Version Python unique — garantit que venv et shell parlent le même Python
-  python = pkgs.python311;  # aligner sur le venv existant (3.11)
+  python = pkgs.python311;
 
   pythonEnv = python.withPackages (ps: with ps; [
-    numpy
-    pandas
-    scipy
-    matplotlib
     requests
+    beautifulsoup4
     pyyaml
     python-dateutil
     pytz
+    pytest
   ]);
 in
 pkgs.mkShell {
@@ -25,9 +22,10 @@ pkgs.mkShell {
     pkgs.openssl
     pkgs.cacert
 
-    # dukascopy-node — Node.js requis (npm global local, nix store read-only)
-    pkgs.nodejs_20
-    pkgs.nodePackages.npm
+    # Scraping headless — Chromium système, pas le binaire Playwright bundlé
+    # (incompatible NixOS : liens dynamiques attendus dans /usr, absents ici)
+    pkgs.chromium
+    pkgs.nodejs_20  # requis par playwright CLI même en usage Python
   ];
 
   shellHook = ''
@@ -36,18 +34,13 @@ pkgs.mkShell {
     export NIX_SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
     export SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
 
-    # ── dukascopy-node : PATH persistant ──────────────────────────────────────
-    # Le nix store est read-only → npm install -g doit écrire dans $HOME.
-    # Ce bloc est exécuté à chaque entrée dans nix-shell pour que le binaire
-    # dukascopy-node soit toujours accessible dans PATH.
-    export NPM_GLOBAL="$HOME/.npm-global"
-    mkdir -p "$NPM_GLOBAL"
-    npm config set prefix "$NPM_GLOBAL" 2>/dev/null || true
-    export PATH="$NPM_GLOBAL/bin:$PATH"
+    # Playwright : utiliser le Chromium système plutôt que télécharger un binaire
+    # (le nix store est read-only, le téléchargement standard de playwright échoue)
+    export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+    export PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH="${pkgs.chromium}/bin/chromium"
 
     VENV_DIR=".venv"
 
-    # Recréer le venv si la version Python a changé
     if [ -d "$VENV_DIR" ]; then
       VENV_PY=$("$VENV_DIR/bin/python" --version 2>&1 | cut -d' ' -f2)
       NIX_PY=$(python --version 2>&1 | cut -d' ' -f2)
@@ -64,37 +57,19 @@ pkgs.mkShell {
 
     source "$VENV_DIR/bin/activate"
     pip install --upgrade pip setuptools wheel --quiet
-
-    # yfinance : version sans curl_cffi (requests natif) - aligné avec pyproject.toml
-    pip install --quiet "yfinance>=1.3.0,<2.0.0"
-    pip install --quiet pytest
-
-    # mif-dqf : installé explicitement — ne pas commenter cette ligne
-    pip install --quiet mif-dqf
+    pip install --quiet playwright pytest
 
     export PYTHONPATH="$(pwd):$PYTHONPATH"
 
     PY="$VENV_DIR/bin/python"
     echo ""
-    echo "📊 Dépendances :"
-    $PY -c "import numpy;   print('   ✓ numpy:',   numpy.__version__)"   2>/dev/null || echo "   ✗ numpy"
-    $PY -c "import pandas;  print('   ✓ pandas:',  pandas.__version__)"  2>/dev/null || echo "   ✗ pandas"
-    $PY -c "import yfinance; print('   ✓ yfinance:', yfinance.__version__)" 2>/dev/null || echo "   ✗ yfinance"
-    $PY -c "import dqf;     print('   ✓ mif-dqf:', dqf.__version__)"     2>/dev/null || echo "   ✗ mif-dqf"
-
-    # dukascopy-node — IMPORTANT : --help (exit 0), pas --version (exit 1, bug upstream)
-    if npx dukascopy-node --help &>/dev/null; then
-      DUKA_VER=$(npm list -g dukascopy-node --depth=0 2>/dev/null \
-        | grep dukascopy-node | tr -d ' ' | cut -d@ -f2)
-      echo "   ✓ node:           $(node --version)"
-      echo "   ✓ dukascopy-node: ''${DUKA_VER:-installé}"
-    else
-      echo "   ✗ node:           $(node --version 2>/dev/null || echo 'absent')"
-      echo "   ✗ dukascopy-node  (absent — exécuter : bash setup_dukascopy_nixos_fixed.sh)"
-    fi
+    echo "📊 Dépendances système-c :"
+    $PY -c "import requests; print('   ✓ requests:', requests.__version__)" 2>/dev/null || echo "   ✗ requests"
+    $PY -c "import playwright; print('   ✓ playwright: ok')" 2>/dev/null || echo "   ✗ playwright"
+    echo "   ✓ chromium:  ${pkgs.chromium}/bin/chromium"
 
     echo ""
-    echo "✅ Environnement prêt — Python: $($PY --version)"
+    echo "✅ Environnement system-c prêt — Python: $($PY --version)"
   '';
 
   PYTHON_KEYRING_BACKEND = "keyring.backends.null.Keyring";

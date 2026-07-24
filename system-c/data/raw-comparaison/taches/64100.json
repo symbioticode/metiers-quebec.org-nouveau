@@ -1,0 +1,25 @@
+{
+  "cnp": "64100",
+  "nom_metier": "Vendeurs/vendeuses et décorateurs-étalagistes/décoratrices-étalagistes en commerce de détail",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "imt_en_ligne": {
+      "url": "https://www.quebec.ca/emploi/informer-metier-profession/explorer-metiers-professions/64100-vendeurs-vendeuses-et-decorateurs-etalagistes-decoratrices-etalagistes-commerce-de-detail",
+      "texte_brut": "Vendeurs / vendeuses et décorateurs-étalagistes / décoratrices-étalagistes - commerce de détail\n\nAccueillir la clientèle et gagner sa confiance.\nDiscuter des produits ou des services recherchés par la clientèle et lui en conseiller.\nRenseigner la clientèle sur l'utilisation et l'entretien des marchandises.\nDécrire les prix, les modalités de crédit et d'échange, les garanties et les dates de livraison.\nRédiger les contrats de vente ou de location.\nPréparer les marchandises et les présenter d'une manière attrayante.\nRecevoir les paiements et effectuer les transactions par voie électronique, s'il y a lieu.\nGérer la marchandise, les inventaires et les commandes de marchandises.\nAssurer le service après-vente.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "guichet_emplois": {
+      "url": "https://www.guichetemplois.gc.ca/rapportmarche/profession/20599/QC",
+      "texte_brut": "Tâches et fonctions\nVoici les tâches et activités principales que les Vendeurs/vendeuses et décorateurs-étalagistes/décoratrices-étalagistes en commerce de détail doivent effectuer, et certaines des exigences physiques que celles-ci impliquent :\n\nVendeurs\naccueillir les clients et discuter des caractéristiques, de la qualité et de la quantité des marchandises ou des services qu'ils désirent acheter ou louer;\nrenseigner les clients sur l'utilisation et l'entretien des marchandises, et les conseiller sur les produits ou services spécialisés;\nestimer ou indiquer des prix, préciser des modalités de crédit et d'échange, des garanties et des dates de livraison;\npréparer les marchandises à vendre ou à louer;\npréparer des contrats de vente ou de location, et accepter des paiements en espèces, par chèque, par carte de crédit ou par débit automatique;\naider à l'étalage des marchandises;\ntenir à jour des registres des ventes pour l'inventaire;\nse servir des systèmes informatisés de tenue d'inventaire et de commande de stocks;\neffectuer, au besoin, des transactions par le biais du commerce électronique.\n\nDécorateurs - étalagistes\nCréer et réalisent des décors, des vitrines et des présentoirs intérieurs;\nAssembler les présentoirs de vente pour promouvoir les produits, les événements promotionnels et les changements saisonniers;\nS'assurer que l'affichage visuel est conforme aux normes et directives de la marque, y compris la culture, l'image et les marchés cibles de l'entreprise;\nCréer et aménagent la luminosité des vitrines et étalages de manière à produire une atmosphère visuelle.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "noc_oasis": {
+      "url": "https://www23.statcan.gc.ca/imdb/p3VD_f.pl?Function=getVD&TVD=1322554&CVD=1322870&CPV=64100&CST=01052021&CLV=5&MLV=5",
+      "texte_brut": "Fonctions principales\nCe groupe exerce une partie ou l'ensemble des fonctions suivantes :\n\nVendeurs\n\naccueillir les clients et discuter des caractéristiques, de la qualité et de la quantité des marchandises ou des services qu'ils désirent acheter ou louer;\nrenseigner les clients sur l'utilisation et l'entretien des marchandises, et les conseiller sur les produits ou services spécialisés;\nestimer ou indiquer des prix, préciser des modalités de crédit et d'échange, des garanties et des dates de livraison;\npréparer les marchandises à vendre ou à louer;\npréparer des contrats de vente ou de location, et accepter des paiements en espèces, par chèque, par carte de crédit ou par débit automatique;\naider à l'étalage des marchandises;\ntenir à jour des registres des ventes pour l'inventaire;\nse servir des systèmes informatisés de tenue d'inventaire et de commande de stocks;\neffectuer, au besoin, des transactions par le biais du commerce électronique.\n\nDécorateurs - étalagistes\n\nCréer et réalisent des décors, des vitrines et des présentoirs intérieurs;\nAssembler les présentoirs de vente pour promouvoir les produits, les événements promotionnels et les changements saisonniers;\nS'assurer que l'affichage visuel est conforme aux normes et directives de la marque, y compris la culture, l'image et les marchés cibles de l'entreprise;\nCréer et aménagent la luminosité des vitrines et étalages de manière à produire une atmosphère visuelle.\n\nLes vendeurs - commerce de détail peuvent se spécialiser et agir à titre de conseiller en systèmes de divertissement au foyer, en informatique et dans d'autres gammes de produits et services.",
+      "extraction_reussie": true,
+      "notes": "Page StatCan NOC 2021 utilisée car noc.esdc.gc.ca bloquait les requêtes webfetch"
+    }
+  }
+}
