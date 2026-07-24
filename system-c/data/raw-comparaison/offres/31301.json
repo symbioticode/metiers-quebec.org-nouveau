@@ -1,30 +1,39 @@
 {
   "cnp": "31301",
-  "nom": "infirmière",
-  "jobboom": {
-    "offres": [
-      {
-        "titre": "Infirmier / infirmière auxiliaire en RPA",
-        "url": "https://www.jobboom.com/fr/offre-emploi/infirmier-infirmiere-auxiliaire-en-rpa_servirplus_p3634850",
-        "taches_verbatim": "Tu recherches un emploi dynamique rempli de défis stimulants ? Servirplus, entreprise privée spécialisée dans les services de santé et services psychosociaux, est l’entreprise idéale pour mettre ton talent à profit. Elle recherche présentement un(e) infirmier(ère) auxiliaire pour un remplacement du lundi au vendredi de jour (7h à 15h ou 8h à 16h à ta convenance) La RPA est située sur la rue de Montmartre, à Québec (G1K 1E2). Rémunération : 31 $/h Le mandat débute maintenant et se poursuit jusqu'à la mi septembre. Joins toi à notre belle équipe!"
-      },
-      {
-        "titre": "Infirmières et infirmiers clinicien(ne)s",
-        "url": "https://www.jobboom.com/fr/offre-emploi/infirmieres-et-infirmiers-cliniciennes_services-de-gestion-quantum-ltee_p3575943",
-        "taches_verbatim": "Poste : infirmières et infirmiers clinicien(ne)s Lieu de travail : Montréal Salaire : 49 $ to 50 $ Nous sommes actuellement à la recherche d’infirmières et infirmiers pour combler plusieurs postes dans différents établissements de la grande région des Laurentides. Plusieurs besoins sont à pourvoir dans divers secteurs, offrant des opportunités variées selon votre expérience et vos champs d’intérêt. Exigences : - DEC ou BAC en sciences infirmières - Permis valide de l’Ordre des infirmières et infirmiers du Québec (OIIQ) - Minimum d’un (1) an d’expérience pertinente - Certification RCR à jour - Vaccination à jour Profil recherché : - Autonomie et jugement clinique - Capacité à travailler en équipe multidisciplinaire - Sens de l’organisation et des priorités - Professionnalisme et approche humaine auprès des patients Vous souhaitez relever de nouveaux défis dans un environnement stimulant ? Faites-nous parvenir votre candidature dès maintenant à l’adresse recrutementmtl@alternacare.ca. Numéros de permis CNESST : AP-2000116 et AR-2000108 Toutes les candidatures sont examinées par notre équipe de recrutement, et les décisions d’embauche sont prises par des personnes. Nous pouvons également utiliser des outils dotés d’intelligence artificielle pour soutenir certaines étapes du processus d’examen des candidatures."
-      },
-      {
-        "titre": "Infirmières et infirmiers clinicien(ne)s",
-        "url": "https://www.jobboom.com/fr/offre-emploi/infirmieres-et-infirmiers-cliniciennes_services-de-gestion-quantum-ltee_p3575942",
-        "taches_verbatim": "Poste : infirmières et infirmiers clinicien(ne)s Lieu de travail : Montréal Salaire : 49 $ to 50 $ Nous sommes actuellement à la recherche d’infirmières et infirmiers pour combler plusieurs postes dans différents établissements de la grande région des Laurentides. Plusieurs besoins sont à pourvoir dans divers secteurs, offrant des opportunités variées selon votre expérience et vos champs d’intérêt. Exigences : - DEC ou BAC en sciences infirmières - Permis valide de l’Ordre des infirmières et infirmiers du Québec (OIIQ) - Minimum d’un (1) an d’expérience pertinente - Certification RCR à jour - Vaccination à jour Profil recherché : - Autonomie et jugement clinique - Capacité à travailler en équipe multidisciplinaire - Sens de l’organisation et des priorités - Professionnalisme et approche humaine auprès des patients Vous souhaitez relever de nouveaux défis dans un environnement stimulant ? Faites-nous parvenir votre candidature dès maintenant à l’adresse recrutementmtl@alternacare.ca. Numéros de permis CNESST : AP-2000116 et AR-2000108 Toutes les candidatures sont examinées par notre équipe de recrutement, et les décisions d’embauche sont prises par des personnes. Nous pouvons également utiliser des outils dotés d’intelligence artificielle pour soutenir certaines étapes du processus d’examen des candidatures."
-      }
-    ],
-    "nb": 3
-  },
-  "emploisdecadres": {
-    "offres": [],
-    "nb": 0,
-    "echec": true,
-    "cause": "Cloudflare ou 0 offre"
+  "nom_metier": "Infirmières et infirmiers autorisés / infirmiers psychiatriques",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "jobillico": {
+      "offres": [
+        {
+          "id": "16194985",
+          "employeur": "Multi Options Nursing",
+          "titre": "Infirmier",
+          "ville": "Québec",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/multi-options-nursing.hPpbSg/infirmier/16194985",
+          "texte_brut": "Infirmier / Infirmière\n\n==> Fais la différence partout au Québec\n\nTu cherches un nouveau défi en soins infirmiers ?\nDécouvre des mandats flexibles, valorisants et adaptés à ton rythme de vie.\n\nAvec MON+, tu choisis où, quand et comment tu veux travailler — partout au Québec.\n\nTu veux exercer ta passion tout en gardant le contrôle sur ton horaire ?\n\nChez MON+, nous avons des mandats qui s'adaptent à ta réalité — dans plusieurs centres hospitaliers à travers le Québec :\n- Outaouais\n- Bas-Saint-Laurent\n- Gaspésie\n- Abitibi-Témiscamingue\n- Côte-Nord\n- Baie-James\n\nPourquoi rejoindre MON+ ?\n- Tu choisis tes quarts et tes disponibilités — la flexibilité, c'est toi qui la décides !\n- On est là pour toi, 24 h/24, 7 j/7 — parce que ton bien-être, c'est aussi notre priorité.\n- Un salaire compétitif et des conditions avantageuses — ton travail mérite la meilleure reconnaissance.\n- Mandats variés : de 1 semaine à 6 mois, avec possibilité de prolongation.\n- Accueil et orientation personnalisés pour chaque mandat.\n\nDes opportunités dans plusieurs départements:\n- Bloc opératoire\n- Urgence\n- Soins intensifs\n- Obstétrique / salle d'accouchement\n- Psychiatrie / santé mentale\n- Gériatrie / CHSLD\n- Hémodialyse\n- Soins à domicile\n\nCe que tu feras au quotidien:\n- Offrir des soins infirmiers de qualité et empreints d'humanité.\n- Évaluer la condition physique et psychologique des patients.\n- Assurer le triage et l'évaluation initiale selon les besoins.\n- Collaborer avec les médecins et les équipes soignantes pour établir des plans de soins adaptés.\n- Administrer les traitements et médicaments prescrits.\n- Réagir rapidement en situation d'urgence.\n- Créer un climat de confiance et de compassion avec les patients et leurs proches.\n\nProfil recherché / Compétences générales\n- BAC ou DEC en soins infirmiers\n- Membre en règle de l'OIIQ\n- Autorisation légale de travailler au Canada\n- Minimum 1 an d'expérience dans un centre hospitalier situé au Québec\n- Autonomie, sens de l'initiative et flexibilité dans le travail\n- RCR à jour (obligatoire)",
+          "extraction_reussie": true,
+          "notes": ""
+        },
+        {
+          "id": "17204914",
+          "employeur": "CHSLD Côté-Jardins inc.",
+          "titre": "Infirmier / Infirmière",
+          "ville": "Québec",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/chsld-cote-jardins-inc/infirmier-infirmiere/17204914",
+          "texte_brut": "Le Centre d'hébergement et de soins de longue durée Côté-Jardins inc., possède deux installations à Saint-Augustin-de-Desmaures et à Sainte-Foy. Il accueille des adultes en perte d'autonomie fonctionnelle ou psychosociale).\n\nNotre installation Côté Jardins à Sainte Foy est actuellement à la recherche d'infirmiers/ infirmières pour compléter ses équipes !\n- Poste volant temps plein de nuit\n- Poste volant temp plein de jour (volant 2 établissements)\n- Poste volant temp plein de soir (volant 2 établissements)\n\nCe que nous vous offrons :\n- Disponibilités exigées sur un seul quart de travail, : Jour (7h00 à 15h15), Soir (15h à 23h15) ou Nuit (23h à 7h15)\n- Salaire compétitif selon vos expériences;\n- Reconnaissance salariale de vos années de service;\n- Stationnements gratuits ou rabais offerts sur votre carte d'autobus\n- Repas à prix réduits\n- Assurance collective BENEVA\n- Régime de retraite RREGOP\n- 4 semaines de vacances\n- 9,6 jours de maladie payés et 13 congés fériés payés par année\n- Accès gratuit à des formations exclusives en partenariat avec Philippe Voyer\n- Équipe de gestionnaires présente et à l'écoute\n- Milieu familial et chaleureux, favorisant la continuité des soins et le développement d'un lien de confiance avec nos résidents\n\nTÂCHES ET RESPONSABILITÉS:\n- Évaluer la condition physique et mentale des résidents;\n- Exercer la surveillance nécessaire pour assurer la sécurité et la qualité des soins aux résidents;\n- Prendre des décisions en matière de soins et de traitements infirmiers ou selon une ordonnance collective;\n- Créer et maintenir des interactions entre la famille et le résidant afin de favoriser leur implication dans la prise de décision;\n- Assurer le suivi des informations;\n- Exercer le rôle de coach auprès des membres de l'équipe de soins (veiller à la qualité des soins, exercer un leadership clinique, agir à titre de personne-ressource, susciter la motivation des employés sous sa responsabilité et les soutenir au besoin, tant sur le plan personnel que professionnel).\n\nQUALIFICATIONS:\n- Être membre de l'OIIQ,\n- Détenir un DEC ou BAC en soins infirmiers\n- Sens du leadership, sens de l'organisation recherché\n- Expérience avec la clientèle en perte d'autonomie: un atout",
+          "extraction_reussie": true,
+          "notes": ""
+        }
+      ]
+    },
+    "jobboom": {
+      "offres": [],
+      "notes": "jobboom.com utilise du JavaScript pour afficher les offres - les pages search retournent 404 ou du HTML sans les offres. Les URLs individuelles d'offres ne sont pas accessibles sans JS."
+    },
+    "emploisdecadres": {
+      "offres": [],
+      "notes": "emploisdecadres.com est un site de cadres/executifs - ne contient pas d'offres pour infirmière. Toutes les tentatives de recherche ont échoué (404)."
+    }
   }
 }
