@@ -1,0 +1,182 @@
+{
+  "version": "8.0",
+  "date": "2005-06",
+  "source_url": "https://www.onetcenter.org/dl_files/db_80.zip",
+  "internal_filenames": {
+    "work_activities": "db_80/WorkActivity.txt",
+    "task_statements": "db_80/Tasks.txt",
+    "green_task_statements": null,
+    "occupation_data": "db_80/onetsoc_data.txt"
+  },
+  "n_gwa": 41,
+  "gwa": [
+    {
+      "id": "4.A.1.a.1",
+      "label": "Getting Information"
+    },
+    {
+      "id": "4.A.1.a.2",
+      "label": "Monitor Processes, Materials, or Surroundings"
+    },
+    {
+      "id": "4.A.1.b.1",
+      "label": "Identifying Objects, Actions, and Events"
+    },
+    {
+      "id": "4.A.1.b.2",
+      "label": "Inspecting Equipment, Structures, or Material"
+    },
+    {
+      "id": "4.A.1.b.3",
+      "label": "Estimating the Quantifiable Characteristics of Products, Events, or Information"
+    },
+    {
+      "id": "4.A.2.a.1",
+      "label": "Judging the Qualities of Things, Services, or People"
+    },
+    {
+      "id": "4.A.2.a.2",
+      "label": "Processing Information"
+    },
+    {
+      "id": "4.A.2.a.3",
+      "label": "Evaluating Information to Determine Compliance with Standards"
+    },
+    {
+      "id": "4.A.2.a.4",
+      "label": "Analyzing Data or Information"
+    },
+    {
+      "id": "4.A.2.b.1",
+      "label": "Making Decisions and Solving Problems"
+    },
+    {
+      "id": "4.A.2.b.2",
+      "label": "Thinking Creatively"
+    },
+    {
+      "id": "4.A.2.b.3",
+      "label": "Updating and Using Relevant Knowledge"
+    },
+    {
+      "id": "4.A.2.b.4",
+      "label": "Developing Objectives and Strategies"
+    },
+    {
+      "id": "4.A.2.b.5",
+      "label": "Scheduling Work and Activities"
+    },
+    {
+      "id": "4.A.2.b.6",
+      "label": "Organizing, Planning, and Prioritizing Work"
+    },
+    {
+      "id": "4.A.3.a.1",
+      "label": "Performing General Physical Activities"
+    },
+    {
+      "id": "4.A.3.a.2",
+      "label": "Handling and Moving Objects"
+    },
+    {
+      "id": "4.A.3.a.3",
+      "label": "Controlling Machines and Processes"
+    },
+    {
+      "id": "4.A.3.a.4",
+      "label": "Operating Vehicles, Mechanized Devices, or Equipment"
+    },
+    {
+      "id": "4.A.3.b.1",
+      "label": "Interacting With Computers"
+    },
+    {
+      "id": "4.A.3.b.2",
+      "label": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment"
+    },
+    {
+      "id": "4.A.3.b.4",
+      "label": "Repairing and Maintaining Mechanical Equipment"
+    },
+    {
+      "id": "4.A.3.b.5",
+      "label": "Repairing and Maintaining Electronic Equipment"
+    },
+    {
+      "id": "4.A.3.b.6",
+      "label": "Documenting/Recording Information"
+    },
+    {
+      "id": "4.A.4.a.1",
+      "label": "Interpreting the Meaning of Information for Others"
+    },
+    {
+      "id": "4.A.4.a.2",
+      "label": "Communicating with Supervisors, Peers, or Subordinates"
+    },
+    {
+      "id": "4.A.4.a.3",
+      "label": "Communicating with Persons Outside Organization"
+    },
+    {
+      "id": "4.A.4.a.4",
+      "label": "Establishing and Maintaining Interpersonal Relationships"
+    },
+    {
+      "id": "4.A.4.a.5",
+      "label": "Assisting and Caring for Others"
+    },
+    {
+      "id": "4.A.4.a.6",
+      "label": "Selling or Influencing Others"
+    },
+    {
+      "id": "4.A.4.a.7",
+      "label": "Resolving Conflicts and Negotiating with Others"
+    },
+    {
+      "id": "4.A.4.a.8",
+      "label": "Performing for or Working Directly with the Public"
+    },
+    {
+      "id": "4.A.4.b.1",
+      "label": "Coordinating the Work and Activities of Others"
+    },
+    {
+      "id": "4.A.4.b.2",
+      "label": "Developing and Building Teams"
+    },
+    {
+      "id": "4.A.4.b.3",
+      "label": "Training and Teaching Others"
+    },
+    {
+      "id": "4.A.4.b.4",
+      "label": "Guiding, Directing, and Motivating Subordinates"
+    },
+    {
+      "id": "4.A.4.b.5",
+      "label": "Coaching and Developing Others"
+    },
+    {
+      "id": "4.A.4.b.6",
+      "label": "Provide Consultation and Advice to Others"
+    },
+    {
+      "id": "4.A.4.c.1",
+      "label": "Performing Administrative Activities"
+    },
+    {
+      "id": "4.A.4.c.2",
+      "label": "Staffing Organizational Units"
+    },
+    {
+      "id": "4.A.4.c.3",
+      "label": "Monitoring and Controlling Resources"
+    }
+  ],
+  "n_tasks": 7184,
+  "n_green_tasks": null,
+  "n_occupations": 1167,
+  "anomalies": []
+}
