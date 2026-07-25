@@ -1,7 +1,7 @@
 # Audit CNP × appellations
 
-- **19 vérifications** au total
-- **6 correspondances exactes** + **8 partielles** + **5 échecs**
+- **28 vérifications** au total
+- **6 correspondances exactes** + **10 partielles** + **12 échecs**
 
 Matrice source: qualificationsquebec.com (516 professions)
 Date de l'audit: 2026-07-24
@@ -54,6 +54,9 @@ Date de l'audit: 2026-07-24
 
 - ✅ **nom_metier**: "Plombiers" [partielle] → `Plombiers/plombières`
 - ✅ **offre.jobillico.titre**: "Plombiers" [partielle] → `Plombiers/plombières`
+- ❌ **offre.jobboom.titre**: "Commis à la plomberie" [aucune]
+- ❌ **offre.jobboom.titre**: "Commis à la plomberie" [aucune]
+- ❌ **offre.jobboom.titre**: "coordonnateur à l'entrepôt / Warehouse coordinator" [aucune]
 
 ### CNP 21222 — Spécialistes en informatique
 - **Appellation officielle Q2**: Spécialistes en informatique
@@ -63,6 +66,9 @@ Date de l'audit: 2026-07-24
 - ✅ **offre.jobillico.titre**: "Analyste en informatique" [exacte] → `analyste en informatique`
 - ✅ **offre.jobillico.titre**: "Analyste informatique" [partielle] → `analyste informatique en simulation`
 - ❌ **offre.jobillico.titre**: "Analyste spécialisé(e) en informatique – (Analyste d'affaires)" [aucune]
+- ❌ **offre.jobboom.titre**: "Analyste Support Dynamics" [aucune]
+- ❌ **offre.jobboom.titre**: "Technicien à la Paye" [aucune]
+- ❌ **offre.jobboom.titre**: "Coordonnateur(trice) aux ventes techniques et achats" [aucune]
 
 ### CNP 64100 — Vendeurs et vendeuses de commerce de détail et décorateurs-étalagistes/décoratrices-étalagistes
 - **Appellation officielle Q2**: Vendeurs/vendeuses et décorateurs-étalagistes/décoratrices-étalagistes en commerce de détail
@@ -78,3 +84,6 @@ Date de l'audit: 2026-07-24
 
 - ❌ **nom_metier**: "Techniciens et techniciennes en comptabilité" [aucune]
 - ✅ **offre.jobboom.titre**: "Comptable" [partielle] → `teneur/teneuse de livres-comptables`
+- ✅ **offre.jobboom.titre**: "Technicien en comptabilité / Accounting Technician" [partielle] → `technicien/technicienne en comptabilité`
+- ❌ **offre.jobboom.titre**: "Technicien-ne en comptabilité" [aucune]
+- ✅ **offre.jobboom.titre**: "Technicien en comptabilité immobilière - mode hybride / Property Accounting Technician - Hybrid" [partielle] → `technicien/technicienne en comptabilité`
