@@ -47,7 +47,7 @@
     },
     "40020": {
       "cnp": "40020",
-      "appellation_principale": "Administrateurs/administratrices &#8211; enseignement postsecondaire et formation professionnelle",
+      "appellation_principale": "Administrateurs/administratrices – enseignement postsecondaire et formation professionnelle",
       "slug": "administrateurs-administratrices-enseignement-postsecondaire-et-formation-professionnelle",
       "autres_appellations": []
     },
@@ -71,19 +71,19 @@
     },
     "13100": {
       "cnp": "13100",
-      "appellation_principale": "Agents/agentes d&rsquo;administration",
+      "appellation_principale": "Agents/agentes d’administration",
       "slug": "agents-agentes-dadministration",
       "autres_appellations": []
     },
     "43202": {
       "cnp": "43202",
-      "appellation_principale": "Agents/agentes d&rsquo;application de règlements municipaux et autres agents/agentes de réglementation",
+      "appellation_principale": "Agents/agentes d’application de règlements municipaux et autres agents/agentes de réglementation",
       "slug": "agents-agentes-dapplication-de-reglements-municipaux-et-autres-agents-agentes-de-reglementation",
       "autres_appellations": []
     },
     "12104": {
       "cnp": "12104",
-      "appellation_principale": "Agents/agentes d&rsquo;assurance-emploi et du revenu",
+      "appellation_principale": "Agents/agentes d’assurance-emploi et du revenu",
       "slug": "agents-agentes-dassurance-emploi-et-du-revenu",
       "autres_appellations": []
     },
@@ -167,7 +167,7 @@
     },
     "63100": {
       "cnp": "63100",
-      "appellation_principale": "Agents/agentes et courtiers/courtières d&rsquo;assurance",
+      "appellation_principale": "Agents/agentes et courtiers/courtières d’assurance",
       "slug": "agents-agentes-et-courtiers-courtieres-dassurance",
       "autres_appellations": []
     },
@@ -311,7 +311,7 @@
     },
     "41201": {
       "cnp": "41201",
-      "appellation_principale": "Assistants/assistantes d&rsquo;enseignement et de recherche au niveau postsecondaire",
+      "appellation_principale": "Assistants/assistantes d’enseignement et de recherche au niveau postsecondaire",
       "slug": "assistants-assistantes-denseignement-et-de-recherche-au-niveau-postsecondaire",
       "autres_appellations": []
     },
@@ -419,7 +419,7 @@
     },
     "95109": {
       "cnp": "95109",
-      "appellation_principale": "Autres manoeuvres des services de transformation, de fabrication et d&rsquo;utilité publique",
+      "appellation_principale": "Autres manoeuvres des services de transformation, de fabrication et d’utilité publique",
       "slug": "autres-manoeuvres-des-services-de-transformation-de-fabrication-et-dutilite-publique",
       "autres_appellations": []
     },
@@ -449,7 +449,7 @@
     },
     "64409": {
       "cnp": "64409",
-      "appellation_principale": "Autres préposés/préposées aux services d&rsquo;information et aux services à la clientèle",
+      "appellation_principale": "Autres préposés/préposées aux services d’information et aux services à la clientèle",
       "slug": "autres-preposes-preposees-aux-services-dinformation-et-aux-services-a-la-clientele",
       "autres_appellations": []
     },
@@ -485,7 +485,7 @@
     },
     "73209": {
       "cnp": "73209",
-      "appellation_principale": "Autres réparateurs/réparatrices et préposés/préposées à l&rsquo;entretien",
+      "appellation_principale": "Autres réparateurs/réparatrices et préposés/préposées à l’entretien",
       "slug": "autres-reparateurs-reparatrices-et-preposes-preposees-a-lentretien",
       "autres_appellations": []
     },
@@ -533,7 +533,7 @@
     },
     "63201": {
       "cnp": "63201",
-      "appellation_principale": "Bouchers/bouchères &#8211; commerce de gros et de détail",
+      "appellation_principale": "Bouchers/bouchères – commerce de gros et de détail",
       "slug": "bouchers-boucheres-commerce-de-gros-et-de-detail",
       "autres_appellations": []
     },
@@ -551,31 +551,31 @@
     },
     "00011": {
       "cnp": "00011",
-      "appellation_principale": "Cadres supérieurs/cadres supérieures &#8211; administration publique",
+      "appellation_principale": "Cadres supérieurs/cadres supérieures – administration publique",
       "slug": "cadres-superieurs-cadres-superieures-administration-publique",
       "autres_appellations": []
     },
     "00014": {
       "cnp": "00014",
-      "appellation_principale": "Cadres supérieurs/cadres supérieures &#8211; commerce, radiotélédiffusion et autres services",
+      "appellation_principale": "Cadres supérieurs/cadres supérieures – commerce, radiotélédiffusion et autres services",
       "slug": "cadres-superieurs-cadres-superieures-commerce-radiotelediffusion-et-autres-services",
       "autres_appellations": []
     },
     "00015": {
       "cnp": "00015",
-      "appellation_principale": "Cadres supérieurs/cadres supérieures &#8211; construction, transport, production et services d&rsquo;utilité publique",
+      "appellation_principale": "Cadres supérieurs/cadres supérieures – construction, transport, production et services d’utilité publique",
       "slug": "cadres-superieurs-cadres-superieures-construction-transport-production-et-services-dutilite-publique",
       "autres_appellations": []
     },
     "00013": {
       "cnp": "00013",
-      "appellation_principale": "Cadres supérieurs/cadres supérieures &#8211; santé, enseignement, services sociaux et communautaires et associations mutuelles",
+      "appellation_principale": "Cadres supérieurs/cadres supérieures – santé, enseignement, services sociaux et communautaires et associations mutuelles",
       "slug": "cadres-superieurs-cadres-superieures-sante-enseignement-services-sociaux-et-communautaires-et-associations-mutuelles",
       "autres_appellations": []
     },
     "00012": {
       "cnp": "00012",
-      "appellation_principale": "Cadres supérieurs/cadres supérieures &#8211; services financiers, communications et autres services aux entreprises",
+      "appellation_principale": "Cadres supérieurs/cadres supérieures – services financiers, communications et autres services aux entreprises",
       "slug": "cadres-superieurs-cadres-superieures-services-financiers-communications-et-autres-services-aux-entreprises",
       "autres_appellations": []
     },
@@ -641,7 +641,7 @@
     },
     "51121": {
       "cnp": "51121",
-      "appellation_principale": "Chefs d&rsquo;orchestre, compositeurs/compositrices et arrangeurs/arrangeuses",
+      "appellation_principale": "Chefs d’orchestre, compositeurs/compositrices et arrangeurs/arrangeuses",
       "slug": "chefs-dorchestre-compositeurs-compositrices-et-arrangeurs-arrangeuses",
       "autres_appellations": []
     },
@@ -653,7 +653,7 @@
     },
     "40041": {
       "cnp": "40041",
-      "appellation_principale": "Chefs et officiers supérieurs/officières supérieures des services d&rsquo;incendie",
+      "appellation_principale": "Chefs et officiers supérieurs/officières supérieures des services d’incendie",
       "slug": "chefs-et-officiers-superieurs-officieres-superieures-des-services-dincendie",
       "autres_appellations": []
     },
@@ -677,7 +677,7 @@
     },
     "94123": {
       "cnp": "94123",
-      "appellation_principale": "Classeurs/classeuses de bois d&rsquo;oeuvre et autres vérificateurs/vérificatrices et classeurs/classeuses dans la transformation du bois",
+      "appellation_principale": "Classeurs/classeuses de bois d’oeuvre et autres vérificateurs/vérificatrices et classeurs/classeuses dans la transformation du bois",
       "slug": "classeurs-classeuses-de-bois-doeuvre-et-autres-verificateurs-verificatrices-et-classeurs-classeuses-dans-la-transformation-du-bois",
       "autres_appellations": []
     },
@@ -707,13 +707,13 @@
     },
     "14403": {
       "cnp": "14403",
-      "appellation_principale": "Commis aux achats et au contrôle de l&rsquo;inventaire",
+      "appellation_principale": "Commis aux achats et au contrôle de l’inventaire",
       "slug": "commis-aux-achats-et-au-controle-de-linventaire",
       "autres_appellations": []
     },
     "14201": {
       "cnp": "14201",
-      "appellation_principale": "Commis de banque, d&rsquo;assurance et d&rsquo;autres services financiers",
+      "appellation_principale": "Commis de banque, d’assurance et d’autres services financiers",
       "slug": "commis-de-banque-dassurance-et-dautres-services-financiers",
       "autres_appellations": []
     },
@@ -761,13 +761,13 @@
     },
     "73301": {
       "cnp": "73301",
-      "appellation_principale": "Conducteurs/conductrices d&rsquo;autobus et opérateurs/opératrices de métro et autres transports en commun",
+      "appellation_principale": "Conducteurs/conductrices d’autobus et opérateurs/opératrices de métro et autres transports en commun",
       "slug": "conducteurs-conductrices-dautobus-et-operateurs-operatrices-de-metro-et-autres-transports-en-commun",
       "autres_appellations": []
     },
     "73400": {
       "cnp": "73400",
-      "appellation_principale": "Conducteurs/conductrices d&rsquo;équipement lourd",
+      "appellation_principale": "Conducteurs/conductrices d’équipement lourd",
       "slug": "conducteurs-conductrices-dequipement-lourd",
       "autres_appellations": []
     },
@@ -779,13 +779,13 @@
     },
     "74205": {
       "cnp": "74205",
-      "appellation_principale": "Conducteurs/conductrices de machinerie d&rsquo;entretien public et personnel assimilé",
+      "appellation_principale": "Conducteurs/conductrices de machinerie d’entretien public et personnel assimilé",
       "slug": "conducteurs-conductrices-de-machinerie-dentretien-public-et-personnel-assimile",
       "autres_appellations": []
     },
     "83110": {
       "cnp": "83110",
-      "appellation_principale": "Conducteurs/conductrices de machines d&rsquo;abattage d&rsquo;arbres",
+      "appellation_principale": "Conducteurs/conductrices de machines d’abattage d’arbres",
       "slug": "conducteurs-conductrices-de-machines-dabattage-darbres",
       "autres_appellations": []
     },
@@ -827,13 +827,13 @@
     },
     "72406": {
       "cnp": "72406",
-      "appellation_principale": "Constructeurs/constructrices et mécaniciens/mécaniciennes d&rsquo;ascenseurs",
+      "appellation_principale": "Constructeurs/constructrices et mécaniciens/mécaniciennes d’ascenseurs",
       "slug": "constructeurs-constructrices-et-mecaniciens-mecaniciennes-dascenseurs",
       "autres_appellations": []
     },
     "41403": {
       "cnp": "41403",
-      "appellation_principale": "Consultant réglementé &#8211; consultante réglementée en immigration",
+      "appellation_principale": "Consultant réglementé – consultante réglementée en immigration",
       "slug": "consultant-reglemente-consultante-reglementee-en-immigration",
       "autres_appellations": []
     },
@@ -935,7 +935,7 @@
     },
     "52121": {
       "cnp": "52121",
-      "appellation_principale": "Designers d&rsquo;intérieur et décorateurs/décoratrices d&rsquo;intérieur",
+      "appellation_principale": "Designers d’intérieur et décorateurs/décoratrices d’intérieur",
       "slug": "designers-dinterieur-et-decorateurs-decoratrices-dinterieur",
       "autres_appellations": []
     },
@@ -989,49 +989,49 @@
     },
     "60020": {
       "cnp": "60020",
-      "appellation_principale": "Directeurs/directrices &#8211; commerce de détail et de gros",
+      "appellation_principale": "Directeurs/directrices – commerce de détail et de gros",
       "slug": "directeurs-directrices-commerce-de-detail-et-de-gros",
       "autres_appellations": []
     },
     "50011": {
       "cnp": "50011",
-      "appellation_principale": "Directeurs/directrices &#8211; édition, cinéma, radiotélédiffusion et arts de la scène",
+      "appellation_principale": "Directeurs/directrices – édition, cinéma, radiotélédiffusion et arts de la scène",
       "slug": "directeurs-directrices-edition-cinema-radiotelediffusion-et-arts-de-la-scene",
       "autres_appellations": []
     },
     "10019": {
       "cnp": "10019",
-      "appellation_principale": "Directeurs/directrices d&rsquo;autres services administratifs",
+      "appellation_principale": "Directeurs/directrices d’autres services administratifs",
       "slug": "directeurs-directrices-dautres-services-administratifs",
       "autres_appellations": []
     },
     "10029": {
       "cnp": "10029",
-      "appellation_principale": "Directeurs/directrices d&rsquo;autres services aux entreprises",
+      "appellation_principale": "Directeurs/directrices d’autres services aux entreprises",
       "slug": "directeurs-directrices-dautres-services-aux-entreprises",
       "autres_appellations": []
     },
     "40021": {
       "cnp": "40021",
-      "appellation_principale": "Directeurs/directrices d&rsquo;école et administrateurs/administratrices de programmes d&rsquo;enseignement aux niveaux primaire et secondaire",
+      "appellation_principale": "Directeurs/directrices d’école et administrateurs/administratrices de programmes d’enseignement aux niveaux primaire et secondaire",
       "slug": "directeurs-directrices-decole-et-administrateurs-administratrices-de-programmes-denseignement-aux-niveaux-primaire-et-secondaire",
       "autres_appellations": []
     },
     "10030": {
       "cnp": "10030",
-      "appellation_principale": "Directeurs/directrices d&rsquo;entreprises de télécommunications",
+      "appellation_principale": "Directeurs/directrices d’entreprises de télécommunications",
       "slug": "directeurs-directrices-dentreprises-de-telecommunications",
       "autres_appellations": []
     },
     "10021": {
       "cnp": "10021",
-      "appellation_principale": "Directeurs/directrices de banque, du crédit et d&rsquo;autres services de placements",
+      "appellation_principale": "Directeurs/directrices de banque, du crédit et d’autres services de placements",
       "slug": "directeurs-directrices-de-banque-du-credit-et-dautres-services-de-placements",
       "autres_appellations": []
     },
     "50010": {
       "cnp": "50010",
-      "appellation_principale": "Directeurs/directrices de bibliothèques, des archives, de musées et de galeries d&rsquo;art",
+      "appellation_principale": "Directeurs/directrices de bibliothèques, des archives, de musées et de galeries d’art",
       "slug": "directeurs-directrices-de-bibliotheques-des-archives-de-musees-et-de-galeries-dart",
       "autres_appellations": []
     },
@@ -1043,13 +1043,13 @@
     },
     "80010": {
       "cnp": "80010",
-      "appellation_principale": "Directeurs/directrices de l&rsquo;exploitation des ressources naturelles et de la pêche",
+      "appellation_principale": "Directeurs/directrices de l’exploitation des ressources naturelles et de la pêche",
       "slug": "directeurs-directrices-de-lexploitation-des-ressources-naturelles-et-de-la-peche",
       "autres_appellations": []
     },
     "70012": {
       "cnp": "70012",
-      "appellation_principale": "Directeurs/directrices de l&rsquo;exploitation et de l&rsquo;entretien d&rsquo;immeubles",
+      "appellation_principale": "Directeurs/directrices de l’exploitation et de l’entretien d’immeubles",
       "slug": "directeurs-directrices-de-lexploitation-et-de-lentretien-dimmeubles",
       "autres_appellations": []
     },
@@ -1091,7 +1091,7 @@
     },
     "10020": {
       "cnp": "10020",
-      "appellation_principale": "Directeurs/directrices des assurances, de l&rsquo;immobilier et du courtage financier",
+      "appellation_principale": "Directeurs/directrices des assurances, de l’immobilier et du courtage financier",
       "slug": "directeurs-directrices-des-assurances-de-limmobilier-et-du-courtage-financier",
       "autres_appellations": []
     },
@@ -1103,19 +1103,19 @@
     },
     "20011": {
       "cnp": "20011",
-      "appellation_principale": "Directeurs/directrices des services d&rsquo;architecture et de sciences",
+      "appellation_principale": "Directeurs/directrices des services d’architecture et de sciences",
       "slug": "directeurs-directrices-des-services-darchitecture-et-de-sciences",
       "autres_appellations": []
     },
     "60031": {
       "cnp": "60031",
-      "appellation_principale": "Directeurs/directrices des services d&rsquo;hébergement",
+      "appellation_principale": "Directeurs/directrices des services d’hébergement",
       "slug": "directeurs-directrices-des-services-dhebergement",
       "autres_appellations": []
     },
     "90011": {
       "cnp": "90011",
-      "appellation_principale": "Directeurs/directrices des services d&rsquo;utilité publique",
+      "appellation_principale": "Directeurs/directrices des services d’utilité publique",
       "slug": "directeurs-directrices-des-services-dutilite-publique",
       "autres_appellations": []
     },
@@ -1211,13 +1211,13 @@
     },
     "22311": {
       "cnp": "22311",
-      "appellation_principale": "Électroniciens/électroniciennes d&rsquo;entretien (biens domestiques et commerciaux)",
+      "appellation_principale": "Électroniciens/électroniciennes d’entretien (biens domestiques et commerciaux)",
       "slug": "electroniciens-electroniciennes-dentretien-biens-domestiques-et-commerciaux",
       "autres_appellations": []
     },
     "14100": {
       "cnp": "14100",
-      "appellation_principale": "Employés/employées de bureau &#8211; soutien général",
+      "appellation_principale": "Employés/employées de bureau – soutien général",
       "slug": "employes-employees-de-bureau-soutien-general",
       "autres_appellations": []
     },
@@ -1247,7 +1247,7 @@
     },
     "53123": {
       "cnp": "53123",
-      "appellation_principale": "Ensembliers/ensemblières de théâtre, dessinateurs/dessinatrices de mode, concepteurs/conceptrices d&rsquo;expositions et autres concepteurs/conceptrices artistiques",
+      "appellation_principale": "Ensembliers/ensemblières de théâtre, dessinateurs/dessinatrices de mode, concepteurs/conceptrices d’expositions et autres concepteurs/conceptrices artistiques",
       "slug": "ensembliers-ensemblieres-de-theatre-dessinateurs-dessinatrices-de-mode-concepteurs-conceptrices-dexpositions-et-autres-concepteurs-conceptrices-artistiques",
       "autres_appellations": []
     },
@@ -1259,19 +1259,19 @@
     },
     "82030": {
       "cnp": "82030",
-      "appellation_principale": "Entrepreneurs/entrepreneuses de services agricoles et surveillants/surveillantes d&rsquo;exploitations agricoles",
+      "appellation_principale": "Entrepreneurs/entrepreneuses de services agricoles et surveillants/surveillantes d’exploitations agricoles",
       "slug": "entrepreneurs-entrepreneuses-de-services-agricoles-et-surveillants-surveillantes-dexploitations-agricoles",
       "autres_appellations": []
     },
     "72014": {
       "cnp": "72014",
-      "appellation_principale": "Entrepreneurs/entrepreneuses et contremaîtres/contremaîtresses des autres métiers de la construction et des services de réparation et d&rsquo;installation",
+      "appellation_principale": "Entrepreneurs/entrepreneuses et contremaîtres/contremaîtresses des autres métiers de la construction et des services de réparation et d’installation",
       "slug": "entrepreneurs-entrepreneuses-et-contremaitres-contremaitresses-des-autres-metiers-de-la-construction-et-des-services-de-reparation-et-dinstallation",
       "autres_appellations": []
     },
     "72021": {
       "cnp": "72021",
-      "appellation_principale": "Entrepreneurs/entrepreneuses et contremaîtres/contremaîtresses des équipes d&rsquo;opérateurs d&rsquo;équipement lourd",
+      "appellation_principale": "Entrepreneurs/entrepreneuses et contremaîtres/contremaîtresses des équipes d’opérateurs d’équipement lourd",
       "slug": "entrepreneurs-entrepreneuses-et-contremaitres-contremaitresses-des-equipes-doperateurs-dequipement-lourd",
       "autres_appellations": []
     },
@@ -1307,13 +1307,13 @@
     },
     "82031": {
       "cnp": "82031",
-      "appellation_principale": "Entrepreneurs/entrepreneuses et superviseurs/superviseures des services de l&rsquo;aménagement paysager, de l&rsquo;entretien des terrains et de l&rsquo;horticulture",
+      "appellation_principale": "Entrepreneurs/entrepreneuses et superviseurs/superviseures des services de l’aménagement paysager, de l’entretien des terrains et de l’horticulture",
       "slug": "entrepreneurs-entrepreneuses-et-superviseurs-superviseures-des-services-de-lamenagement-paysager-de-lentretien-des-terrains-et-de-lhorticulture",
       "autres_appellations": []
     },
     "82021": {
       "cnp": "82021",
-      "appellation_principale": "Entrepreneurs/entrepreneuses et surveillants/surveillantes du forage et des services reliés à l&rsquo;extraction de pétrole et de gaz",
+      "appellation_principale": "Entrepreneurs/entrepreneuses et surveillants/surveillantes du forage et des services reliés à l’extraction de pétrole et de gaz",
       "slug": "entrepreneurs-entrepreneuses-et-surveillants-surveillantes-du-forage-et-des-services-relies-a-lextraction-de-petrole-et-de-gaz",
       "autres_appellations": []
     },
@@ -1373,7 +1373,7 @@
     },
     "72501": {
       "cnp": "72501",
-      "appellation_principale": "Foreurs/foreuses de puits d&rsquo;eau",
+      "appellation_principale": "Foreurs/foreuses de puits d’eau",
       "slug": "foreurs-foreuses-de-puits-deau",
       "autres_appellations": []
     },
@@ -1385,7 +1385,7 @@
     },
     "83101": {
       "cnp": "83101",
-      "appellation_principale": "Foreurs/foreuses et personnel de mise à l&rsquo;essai et des autres services reliés à l&rsquo;extraction de pétrole et de gaz",
+      "appellation_principale": "Foreurs/foreuses et personnel de mise à l’essai et des autres services reliés à l’extraction de pétrole et de gaz",
       "slug": "foreurs-foreuses-et-personnel-de-mise-a-lessai-et-des-autres-services-relies-a-lextraction-de-petrole-et-de-gaz",
       "autres_appellations": []
     },
@@ -1397,7 +1397,7 @@
     },
     "44100": {
       "cnp": "44100",
-      "appellation_principale": "Gardiens/gardiennes d&rsquo;enfants en milieu familial",
+      "appellation_principale": "Gardiens/gardiennes d’enfants en milieu familial",
       "slug": "gardiens-gardiennes-denfants-en-milieu-familial",
       "autres_appellations": []
     },
@@ -1415,19 +1415,19 @@
     },
     "40011": {
       "cnp": "40011",
-      "appellation_principale": "Gestionnaires de la fonction publique &#8211; analyse économique, élaboration de politiques et administration de programmes",
+      "appellation_principale": "Gestionnaires de la fonction publique – analyse économique, élaboration de politiques et administration de programmes",
       "slug": "gestionnaires-de-la-fonction-publique-analyse-economique-elaboration-de-politiques-et-administration-de-programmes",
       "autres_appellations": []
     },
     "40012": {
       "cnp": "40012",
-      "appellation_principale": "Gestionnaires de la fonction publique &#8211; élaboration de politiques en matière d&rsquo;éducation et administration de programmes",
+      "appellation_principale": "Gestionnaires de la fonction publique – élaboration de politiques en matière d’éducation et administration de programmes",
       "slug": "gestionnaires-de-la-fonction-publique-elaboration-de-politiques-en-matiere-deducation-et-administration-de-programmes",
       "autres_appellations": []
     },
     "40010": {
       "cnp": "40010",
-      "appellation_principale": "Gestionnaires de la fonction publique &#8211; élaboration de politiques et administration de programmes sociaux et de santé",
+      "appellation_principale": "Gestionnaires de la fonction publique – élaboration de politiques et administration de programmes sociaux et de santé",
       "slug": "gestionnaires-de-la-fonction-publique-elaboration-de-politiques-et-administration-de-programmes-sociaux-et-de-sante",
       "autres_appellations": []
     },
@@ -1475,7 +1475,7 @@
     },
     "64322": {
       "cnp": "64322",
-      "appellation_principale": "Guides d&rsquo;activités récréatives et sportives de plein air",
+      "appellation_principale": "Guides d’activités récréatives et sportives de plein air",
       "slug": "guides-dactivites-recreatives-et-sportives-de-plein-air",
       "autres_appellations": []
     },
@@ -1487,7 +1487,7 @@
     },
     "14405": {
       "cnp": "14405",
-      "appellation_principale": "Horairistes de trajets et d&rsquo;équipages",
+      "appellation_principale": "Horairistes de trajets et d’équipages",
       "slug": "horairistes-de-trajets-et-dequipages",
       "autres_appellations": []
     },
@@ -1684,13 +1684,13 @@
     },
     "21321": {
       "cnp": "21321",
-      "appellation_principale": "Ingénieurs/ingénieures d&rsquo;industrie et de fabrication",
+      "appellation_principale": "Ingénieurs/ingénieures d’industrie et de fabrication",
       "slug": "ingenieurs-ingenieures-dindustrie-et-de-fabrication",
       "autres_appellations": []
     },
     "21332": {
       "cnp": "21332",
-      "appellation_principale": "Ingénieurs/ingénieures de l&rsquo;extraction et du raffinage du pétrole",
+      "appellation_principale": "Ingénieurs/ingénieures de l’extraction et du raffinage du pétrole",
       "slug": "ingenieurs-ingenieures-de-lextraction-et-du-raffinage-du-petrole",
       "autres_appellations": []
     },
@@ -1726,13 +1726,13 @@
     },
     "22233": {
       "cnp": "22233",
-      "appellation_principale": "Inspecteur / Inspectrice en bâtiments d&rsquo;habitation",
+      "appellation_principale": "Inspecteur / Inspectrice en bâtiments d’habitation",
       "slug": "inspecteur-inspectrice-en-batiment",
       "autres_appellations": []
     },
     "22231": {
       "cnp": "22231",
-      "appellation_principale": "Inspecteurs/inspectrices d&rsquo;ingénierie et officiers/officières de réglementation",
+      "appellation_principale": "Inspecteurs/inspectrices d’ingénierie et officiers/officières de réglementation",
       "slug": "inspecteurs-inspectrices-dingenierie-et-officiers-officieres-de-reglementation",
       "autres_appellations": []
     },
@@ -1744,7 +1744,7 @@
     },
     "72420": {
       "cnp": "72420",
-      "appellation_principale": "Installateurs/installatrices de brûleurs à l&rsquo;huile et à combustibles solides",
+      "appellation_principale": "Installateurs/installatrices de brûleurs à l’huile et à combustibles solides",
       "slug": "installateurs-installatrices-de-bruleurs-a-lhuile-et-a-combustibles-solides",
       "autres_appellations": []
     },
@@ -1786,7 +1786,7 @@
     },
     "72100": {
       "cnp": "72100",
-      "appellation_principale": "Machinistes et vérificateurs/vérificatrices d&rsquo;usinage et d&rsquo;outillage",
+      "appellation_principale": "Machinistes et vérificateurs/vérificatrices d’usinage et d’outillage",
       "slug": "machinistes-et-verificateurs-verificatrices-dusinage-et-doutillage",
       "autres_appellations": []
     },
@@ -1798,13 +1798,13 @@
     },
     "64300": {
       "cnp": "64300",
-      "appellation_principale": "Maîtres d&rsquo;hôtel et hôtes/hôtesses",
+      "appellation_principale": "Maîtres d’hôtel et hôtes/hôtesses",
       "slug": "maitres-dhotel-et-hotes-hotesses",
       "autres_appellations": []
     },
     "75212": {
       "cnp": "75212",
-      "appellation_principale": "Manoeuvres à l&rsquo;entretien des travaux publics",
+      "appellation_principale": "Manoeuvres à l’entretien des travaux publics",
       "slug": "manoeuvres-a-lentretien-des-travaux-publics",
       "autres_appellations": []
     },
@@ -1858,7 +1858,7 @@
     },
     "95102": {
       "cnp": "95102",
-      "appellation_principale": "Manoeuvres dans le traitement des produits chimiques et les services d&rsquo;utilité publique",
+      "appellation_principale": "Manoeuvres dans le traitement des produits chimiques et les services d’utilité publique",
       "slug": "manoeuvres-dans-le-traitement-des-produits-chimiques-et-les-services-dutilite-publique",
       "autres_appellations": []
     },
@@ -1870,19 +1870,19 @@
     },
     "85111": {
       "cnp": "85111",
-      "appellation_principale": "Manoeuvres de forage et d&rsquo;entretien des puits de pétrole et de gaz, et personnel assimilé",
+      "appellation_principale": "Manoeuvres de forage et d’entretien des puits de pétrole et de gaz, et personnel assimilé",
       "slug": "manoeuvres-de-forage-et-dentretien-des-puits-de-petrole-et-de-gaz-et-personnel-assimile",
       "autres_appellations": []
     },
     "85102": {
       "cnp": "85102",
-      "appellation_principale": "Manoeuvres de l&rsquo;aquaculture et de la mariculture",
+      "appellation_principale": "Manoeuvres de l’aquaculture et de la mariculture",
       "slug": "manoeuvres-de-laquaculture-et-de-la-mariculture",
       "autres_appellations": []
     },
     "85120": {
       "cnp": "85120",
-      "appellation_principale": "Manoeuvres de l&rsquo;exploitation forestière",
+      "appellation_principale": "Manoeuvres de l’exploitation forestière",
       "slug": "manoeuvres-de-lexploitation-forestiere",
       "autres_appellations": []
     },
@@ -1942,7 +1942,7 @@
     },
     "72401": {
       "cnp": "72401",
-      "appellation_principale": "Mécaniciens/mécaniciennes d&rsquo;équipement lourd",
+      "appellation_principale": "Mécaniciens/mécaniciennes d’équipement lourd",
       "slug": "mecaniciens-mecaniciennes-dequipement-lourd",
       "autres_appellations": []
     },
@@ -1978,19 +1978,19 @@
     },
     "72404": {
       "cnp": "72404",
-      "appellation_principale": "Mécaniciens/mécaniciennes et contrôleurs/contrôleuses d&rsquo;aéronefs",
+      "appellation_principale": "Mécaniciens/mécaniciennes et contrôleurs/contrôleuses d’aéronefs",
       "slug": "mecaniciens-mecaniciennes-et-controleurs-controleuses-daeronefs",
       "autres_appellations": []
     },
     "72410": {
       "cnp": "72410",
-      "appellation_principale": "Mécaniciens/mécaniciennes et réparateurs/réparatrices de véhicules automobiles, de camions et d&rsquo;autobus",
+      "appellation_principale": "Mécaniciens/mécaniciennes et réparateurs/réparatrices de véhicules automobiles, de camions et d’autobus",
       "slug": "mecaniciens-mecaniciennes-et-reparateurs-reparatrices-de-vehicules-automobiles-de-camions-et-dautobus",
       "autres_appellations": []
     },
     "22313": {
       "cnp": "22313",
-      "appellation_principale": "Mécaniciens/mécaniciennes, techniciens/techniciennes et contrôleurs/contrôleuses d&rsquo;avionique et d&rsquo;instruments et d&rsquo;appareillages électriques d&rsquo;aéronefs",
+      "appellation_principale": "Mécaniciens/mécaniciennes, techniciens/techniciennes et contrôleurs/contrôleuses d’avionique et d’instruments et d’appareillages électriques d’aéronefs",
       "slug": "mecaniciens-mecaniciennes-techniciens-techniciennes-et-controleurs-controleuses-davionique-et-dinstruments-et-dappareillages-electriques-daeronefs",
       "autres_appellations": []
     },
@@ -2026,19 +2026,19 @@
     },
     "83100": {
       "cnp": "83100",
-      "appellation_principale": "Mineurs/mineuses d&rsquo;extraction et de préparation, mines souterraines",
+      "appellation_principale": "Mineurs/mineuses d’extraction et de préparation, mines souterraines",
       "slug": "mineurs-mineuses-dextraction-et-de-preparation-mines-souterraines",
       "autres_appellations": []
     },
     "93200": {
       "cnp": "93200",
-      "appellation_principale": "Monteurs/monteuses d&rsquo;aéronefs et contrôleurs/contrôleuses de montage d&rsquo;aéronefs",
+      "appellation_principale": "Monteurs/monteuses d’aéronefs et contrôleurs/contrôleuses de montage d’aéronefs",
       "slug": "monteurs-monteuses-daeronefs-et-controleurs-controleuses-de-montage-daeronefs",
       "autres_appellations": []
     },
     "72302": {
       "cnp": "72302",
-      "appellation_principale": "Monteurs/monteuses d&rsquo;installations au gaz",
+      "appellation_principale": "Monteurs/monteuses d’installations au gaz",
       "slug": "monteurs-monteuses-dinstallations-au-gaz",
       "autres_appellations": []
     },
@@ -2056,13 +2056,13 @@
     },
     "94211": {
       "cnp": "94211",
-      "appellation_principale": "Monteurs/monteuses et contrôleurs/contrôleuses d&rsquo;autres produits en bois",
+      "appellation_principale": "Monteurs/monteuses et contrôleurs/contrôleuses d’autres produits en bois",
       "slug": "monteurs-monteuses-et-controleurs-controleuses-dautres-produits-en-bois",
       "autres_appellations": []
     },
     "94202": {
       "cnp": "94202",
-      "appellation_principale": "Monteurs/monteuses et contrôleurs/contrôleuses dans la fabrication de matériel, d&rsquo;appareils et d&rsquo;accessoires électriques",
+      "appellation_principale": "Monteurs/monteuses et contrôleurs/contrôleuses dans la fabrication de matériel, d’appareils et d’accessoires électriques",
       "slug": "monteurs-monteuses-et-controleurs-controleuses-dans-la-fabrication-de-materiel-dappareils-et-daccessoires-electriques",
       "autres_appellations": []
     },
@@ -2134,25 +2134,25 @@
     },
     "14112": {
       "cnp": "14112",
-      "appellation_principale": "Opérateurs/opératrices d&rsquo;équipement d&rsquo;éditique et personnel assimilé",
+      "appellation_principale": "Opérateurs/opératrices d’équipement d’éditique et personnel assimilé",
       "slug": "operateurs-operatrices-dequipement-deditique-et-personnel-assimile",
       "autres_appellations": []
     },
     "94150": {
       "cnp": "94150",
-      "appellation_principale": "Opérateurs/opératrices d&rsquo;équipement d&rsquo;impression sans plaque",
+      "appellation_principale": "Opérateurs/opératrices d’équipement d’impression sans plaque",
       "slug": "operateurs-operatrices-dequipement-dimpression-sans-plaque",
       "autres_appellations": []
     },
     "94110": {
       "cnp": "94110",
-      "appellation_principale": "Opérateurs/opératrices d&rsquo;installations de traitement des produits chimiques",
+      "appellation_principale": "Opérateurs/opératrices d’installations de traitement des produits chimiques",
       "slug": "operateurs-operatrices-dinstallations-de-traitement-des-produits-chimiques",
       "autres_appellations": []
     },
     "92101": {
       "cnp": "92101",
-      "appellation_principale": "Opérateurs/opératrices d&rsquo;installations du traitement de l&rsquo;eau et des déchets",
+      "appellation_principale": "Opérateurs/opératrices d’installations du traitement de l’eau et des déchets",
       "slug": "operateurs-operatrices-dinstallations-du-traitement-de-leau-et-des-dechets",
       "autres_appellations": []
     },
@@ -2206,13 +2206,13 @@
     },
     "94107": {
       "cnp": "94107",
-      "appellation_principale": "Opérateurs/opératrices de machines d&rsquo;autres produits métalliques",
+      "appellation_principale": "Opérateurs/opératrices de machines d’autres produits métalliques",
       "slug": "operateurs-operatrices-de-machines-dautres-produits-metalliques",
       "autres_appellations": []
     },
     "94106": {
       "cnp": "94106",
-      "appellation_principale": "Opérateurs/opératrices de machines d&rsquo;usinage",
+      "appellation_principale": "Opérateurs/opératrices de machines d’usinage",
       "slug": "operateurs-operatrices-de-machines-dusinage",
       "autres_appellations": []
     },
@@ -2248,7 +2248,7 @@
     },
     "94205": {
       "cnp": "94205",
-      "appellation_principale": "Opérateurs/opératrices de machines et contrôleurs/contrôleuses dans la fabrication d&rsquo;appareils électriques",
+      "appellation_principale": "Opérateurs/opératrices de machines et contrôleurs/contrôleuses dans la fabrication d’appareils électriques",
       "slug": "operateurs-operatrices-de-machines-et-controleurs-controleuses-dans-la-fabrication-dappareils-electriques",
       "autres_appellations": []
     },
@@ -2284,19 +2284,19 @@
     },
     "84110": {
       "cnp": "84110",
-      "appellation_principale": "Opérateurs/opératrices de scies à chaîne et d&rsquo;engins de débardage",
+      "appellation_principale": "Opérateurs/opératrices de scies à chaîne et d’engins de débardage",
       "slug": "operateurs-operatrices-de-scies-a-chaine-et-dengins-de-debardage",
       "autres_appellations": []
     },
     "65211": {
       "cnp": "65211",
-      "appellation_principale": "Opérateurs/opératrices et préposés/préposées aux sports, aux loisirs et dans les parcs d&rsquo;attractions",
+      "appellation_principale": "Opérateurs/opératrices et préposés/préposées aux sports, aux loisirs et dans les parcs d’attractions",
       "slug": "operateurs-operatrices-et-preposes-preposees-aux-sports-aux-loisirs-et-dans-les-parcs-dattractions",
       "autres_appellations": []
     },
     "32100": {
       "cnp": "32100",
-      "appellation_principale": "Opticiens/opticiennes d&rsquo;ordonnances",
+      "appellation_principale": "Opticiens/opticiennes d’ordonnances",
       "slug": "opticiens-opticiennes-dordonnances",
       "autres_appellations": []
     },
@@ -2332,7 +2332,7 @@
     },
     "74200": {
       "cnp": "74200",
-      "appellation_principale": "Ouvriers/ouvrières de gares de triage et à l&rsquo;entretien de la voie ferrée",
+      "appellation_principale": "Ouvriers/ouvrières de gares de triage et à l’entretien de la voie ferrée",
       "slug": "ouvriers-ouvrieres-de-gares-de-triage-et-a-lentretien-de-la-voie-ferree",
       "autres_appellations": []
     },
@@ -2344,7 +2344,7 @@
     },
     "53125": {
       "cnp": "53125",
-      "appellation_principale": "Patronniers/patronnières de produits textiles et d&rsquo;articles en cuir et en fourrure",
+      "appellation_principale": "Patronniers/patronnières de produits textiles et d’articles en cuir et en fourrure",
       "slug": "patronniers-patronnieres-de-produits-textiles-et-darticles-en-cuir-et-en-fourrure",
       "autres_appellations": []
     },
@@ -2356,13 +2356,13 @@
     },
     "73112": {
       "cnp": "73112",
-      "appellation_principale": "Peintres et décorateurs/décoratrices (sauf décorateurs/décoratrices d&rsquo;intérieur)",
+      "appellation_principale": "Peintres et décorateurs/décoratrices (sauf décorateurs/décoratrices d’intérieur)",
       "slug": "peintres-et-decorateurs-decoratrices-sauf-decorateurs-decoratrices-dinterieur",
       "autres_appellations": []
     },
     "94213": {
       "cnp": "94213",
-      "appellation_principale": "Peintres, enduiseurs/enduiseuses et opérateurs/opératrices de procédés dans le finissage du métal &#8211; secteur industriel",
+      "appellation_principale": "Peintres, enduiseurs/enduiseuses et opérateurs/opératrices de procédés dans le finissage du métal – secteur industriel",
       "slug": "peintres-enduiseurs-enduiseuses-et-operateurs-operatrices-de-procedes-dans-le-finissage-du-metal-secteur-industriel",
       "autres_appellations": []
     },
@@ -2380,31 +2380,31 @@
     },
     "74204": {
       "cnp": "74204",
-      "appellation_principale": "Personnel d&rsquo;entretien des services publics",
+      "appellation_principale": "Personnel d’entretien des services publics",
       "slug": "personnel-dentretien-des-services-publics",
       "autres_appellations": []
     },
     "73200": {
       "cnp": "73200",
-      "appellation_principale": "Personnel d&rsquo;installation, d&rsquo;entretien et de réparation d&rsquo;équipement résidentiel et commercial",
+      "appellation_principale": "Personnel d’installation, d’entretien et de réparation d’équipement résidentiel et commercial",
       "slug": "personnel-dinstallation-dentretien-et-de-reparation-dequipement-residentiel-et-commercial",
       "autres_appellations": []
     },
     "65320": {
       "cnp": "65320",
-      "appellation_principale": "Personnel de blanchisseries et d&rsquo;établissements de nettoyage à sec et personnel assimilé",
+      "appellation_principale": "Personnel de blanchisseries et d’établissements de nettoyage à sec et personnel assimilé",
       "slug": "personnel-de-blanchisseries-et-detablissements-de-nettoyage-a-sec-et-personnel-assimile",
       "autres_appellations": []
     },
     "65210": {
       "cnp": "65210",
-      "appellation_principale": "Personnel de soutien en services d&rsquo;hébergement, de voyage et en services de montage d&rsquo;installation",
+      "appellation_principale": "Personnel de soutien en services d’hébergement, de voyage et en services de montage d’installation",
       "slug": "personnel-de-soutien-en-services-dhebergement-de-voyage-et-en-services-de-montage-dinstallation",
       "autres_appellations": []
     },
     "12111": {
       "cnp": "12111",
-      "appellation_principale": "Personnel en gestion de l&rsquo;information sur la santé",
+      "appellation_principale": "Personnel en gestion de l’information sur la santé",
       "slug": "personnel-en-gestion-de-linformation-sur-la-sante",
       "autres_appellations": []
     },
@@ -2452,7 +2452,7 @@
     },
     "12103": {
       "cnp": "12103",
-      "appellation_principale": "Planificateurs/planificatrices de congrès et d&rsquo;événements",
+      "appellation_principale": "Planificateurs/planificatrices de congrès et d’événements",
       "slug": "planificateurs-planificatrices-de-congres-et-devenements",
       "autres_appellations": []
     },
@@ -2497,7 +2497,7 @@
     },
     "73113": {
       "cnp": "73113",
-      "appellation_principale": "Poseurs/poseuses de revêtements d&rsquo;intérieur",
+      "appellation_principale": "Poseurs/poseuses de revêtements d’intérieur",
       "slug": "poseurs-poseuses-de-revetements-dinterieur",
       "autres_appellations": []
     },
@@ -2515,13 +2515,13 @@
     },
     "65310": {
       "cnp": "65310",
-      "appellation_principale": "Préposés/préposées à l&rsquo;entretien ménager et au nettoyage &#8211; travaux légers",
+      "appellation_principale": "Préposés/préposées à l’entretien ménager et au nettoyage – travaux légers",
       "slug": "preposes-preposees-a-lentretien-menager-et-au-nettoyage-travaux-legers",
       "autres_appellations": []
     },
     "74203": {
       "cnp": "74203",
-      "appellation_principale": "Préposés/préposées à la pose et à l&rsquo;entretien des pièces mécaniques d&rsquo;automobiles et de camions et équipements lourds",
+      "appellation_principale": "Préposés/préposées à la pose et à l’entretien des pièces mécaniques d’automobiles et de camions et équipements lourds",
       "slug": "preposes-preposees-a-la-pose-et-a-lentretien-des-pieces-mecaniques-dautomobiles-et-de-camions-et-equipements-lourds",
       "autres_appellations": []
     },
@@ -2587,7 +2587,7 @@
     },
     "64314": {
       "cnp": "64314",
-      "appellation_principale": "Réceptionnistes d&rsquo;hôtel",
+      "appellation_principale": "Réceptionnistes d’hôtel",
       "slug": "receptionnistes-dhotel",
       "autres_appellations": []
     },
@@ -2599,7 +2599,7 @@
     },
     "41405": {
       "cnp": "41405",
-      "appellation_principale": "Recherchistes, experts-conseils/expertes-conseils et agents/agentes de programmes en politiques de l&rsquo;enseignement",
+      "appellation_principale": "Recherchistes, experts-conseils/expertes-conseils et agents/agentes de programmes en politiques de l’enseignement",
       "slug": "recherchistes-experts-conseils-expertes-conseils-et-agents-agentes-de-programmes-en-politiques-de-lenseignement",
       "autres_appellations": []
     },
@@ -2623,7 +2623,7 @@
     },
     "53100": {
       "cnp": "53100",
-      "appellation_principale": "Registraires, restaurateurs/restauratrices, interprètes et autres travailleurs/travailleuses dans les domaines apparentés des musées et des galeries d&rsquo;art",
+      "appellation_principale": "Registraires, restaurateurs/restauratrices, interprètes et autres travailleurs/travailleuses dans les domaines apparentés des musées et des galeries d’art",
       "slug": "registraires-restaurateurs-restauratrices-interpretes-et-autres-travailleurs-travailleuses-dans-les-domaines-apparentes-des-musees-et-des-galeries-dart",
       "autres_appellations": []
     },
@@ -2635,7 +2635,7 @@
     },
     "72421": {
       "cnp": "72421",
-      "appellation_principale": "Réparateurs/réparatrices et préposés/préposées à l&rsquo;entretien d&rsquo;appareils",
+      "appellation_principale": "Réparateurs/réparatrices et préposés/préposées à l’entretien d’appareils",
       "slug": "reparateurs-reparatrices-et-preposes-preposees-a-lentretien-dappareils",
       "autres_appellations": []
     },
@@ -2647,7 +2647,7 @@
     },
     "64400": {
       "cnp": "64400",
-      "appellation_principale": "Représentants/représentantes au service à la clientèle &#8211; institutions financières",
+      "appellation_principale": "Représentants/représentantes au service à la clientèle – institutions financières",
       "slug": "representants-representantes-au-service-a-la-clientele-institutions-financieres",
       "autres_appellations": []
     },
@@ -2659,7 +2659,7 @@
     },
     "64101": {
       "cnp": "64101",
-      "appellation_principale": "Représentants/représentantes des ventes et des comptes &#8211; commerce de gros (non-technique)",
+      "appellation_principale": "Représentants/représentantes des ventes et des comptes – commerce de gros (non-technique)",
       "slug": "representants-representantes-des-ventes-et-des-comptes-commerce-de-gros-non-technique",
       "autres_appellations": []
     },
@@ -2695,13 +2695,13 @@
     },
     "65200": {
       "cnp": "65200",
-      "appellation_principale": "Serveurs/serveuses d&rsquo;aliments et de boissons",
+      "appellation_principale": "Serveurs/serveuses d’aliments et de boissons",
       "slug": "serveurs-serveuses-daliments-et-de-boissons",
       "autres_appellations": []
     },
     "65220": {
       "cnp": "65220",
-      "appellation_principale": "Soigneurs/soigneuses d&rsquo;animaux et travailleurs/travailleuses en soins des animaux",
+      "appellation_principale": "Soigneurs/soigneuses d’animaux et travailleurs/travailleuses en soins des animaux",
       "slug": "soigneurs-soigneuses-danimaux-et-travailleurs-travailleuses-en-soins-des-animaux",
       "autres_appellations": []
     },
@@ -2713,7 +2713,7 @@
     },
     "22232": {
       "cnp": "22232",
-      "appellation_principale": "Spécialistes de l&rsquo;hygiène et de la sécurité au travail",
+      "appellation_principale": "Spécialistes de l’hygiène et de la sécurité au travail",
       "slug": "specialistes-de-lhygiene-et-de-la-securite-au-travail",
       "autres_appellations": []
     },
@@ -2731,7 +2731,7 @@
     },
     "62100": {
       "cnp": "62100",
-      "appellation_principale": "Spécialistes des ventes techniques &#8211; commerce de gros",
+      "appellation_principale": "Spécialistes des ventes techniques – commerce de gros",
       "slug": "specialistes-des-ventes-techniques-commerce-de-gros",
       "autres_appellations": []
     },
@@ -2802,7 +2802,7 @@
     },
     "12012": {
       "cnp": "12012",
-      "appellation_principale": "Superviseurs/superviseures de commis de bibliothèque, de correspondanciers et d&rsquo;autres commis à l&rsquo;information",
+      "appellation_principale": "Superviseurs/superviseures de commis de bibliothèque, de correspondanciers et d’autres commis à l’information",
       "slug": "superviseurs-superviseures-de-commis-de-bibliotheque-de-correspondanciers-et-dautres-commis-a-linformation",
       "autres_appellations": []
     },
@@ -2814,7 +2814,7 @@
     },
     "12011": {
       "cnp": "12011",
-      "appellation_principale": "Superviseurs/superviseures de commis de finance et d&rsquo;assurance",
+      "appellation_principale": "Superviseurs/superviseures de commis de finance et d’assurance",
       "slug": "superviseurs-superviseures-de-commis-de-finance-et-dassurance",
       "autres_appellations": []
     },
@@ -2832,25 +2832,25 @@
     },
     "62022": {
       "cnp": "62022",
-      "appellation_principale": "Superviseurs/superviseures des services d&rsquo;hébergement, de voyages, de tourisme et des services connexes",
+      "appellation_principale": "Superviseurs/superviseures des services d’hébergement, de voyages, de tourisme et des services connexes",
       "slug": "superviseurs-superviseures-des-services-dhebergement-de-voyages-de-tourisme-et-des-services-connexes",
       "autres_appellations": []
     },
     "62023": {
       "cnp": "62023",
-      "appellation_principale": "Superviseurs/superviseures des services d&rsquo;information et des services à la clientèle",
+      "appellation_principale": "Superviseurs/superviseures des services d’information et des services à la clientèle",
       "slug": "superviseurs-superviseures-des-services-dinformation-et-des-services-a-la-clientele",
       "autres_appellations": []
     },
     "62010": {
       "cnp": "62010",
-      "appellation_principale": "Superviseurs/superviseures des ventes &#8211; commerce de détail",
+      "appellation_principale": "Superviseurs/superviseures des ventes – commerce de détail",
       "slug": "superviseurs-superviseures-des-ventes-commerce-de-detail",
       "autres_appellations": []
     },
     "12013": {
       "cnp": "12013",
-      "appellation_principale": "Superviseurs/superviseures du personnel de coordination de la chaîne d&rsquo;approvisionnement, du suivi et des horaires",
+      "appellation_principale": "Superviseurs/superviseures du personnel de coordination de la chaîne d’approvisionnement, du suivi et des horaires",
       "slug": "superviseurs-superviseures-du-personnel-de-coordination-de-la-chaine-dapprovisionnement-du-suivi-et-des-horaires",
       "autres_appellations": []
     },
@@ -2862,19 +2862,19 @@
     },
     "92023": {
       "cnp": "92023",
-      "appellation_principale": "Surveillants/surveillantes dans la fabrication d&rsquo;autres produits métalliques et de pièces mécaniques",
+      "appellation_principale": "Surveillants/surveillantes dans la fabrication d’autres produits métalliques et de pièces mécaniques",
       "slug": "surveillants-surveillantes-dans-la-fabrication-dautres-produits-metalliques-et-de-pieces-mecaniques",
       "autres_appellations": []
     },
     "92021": {
       "cnp": "92021",
-      "appellation_principale": "Surveillants/surveillantes dans la fabrication de matériel électronique et d&rsquo;appareils électriques",
+      "appellation_principale": "Surveillants/surveillantes dans la fabrication de matériel électronique et d’appareils électriques",
       "slug": "surveillants-surveillantes-dans-la-fabrication-de-materiel-electronique-et-dappareils-electriques",
       "autres_appellations": []
     },
     "92022": {
       "cnp": "92022",
-      "appellation_principale": "Surveillants/surveillantes dans la fabrication de meubles et d&rsquo;accessoires",
+      "appellation_principale": "Surveillants/surveillantes dans la fabrication de meubles et d’accessoires",
       "slug": "surveillants-surveillantes-dans-la-fabrication-de-meubles-et-daccessoires",
       "autres_appellations": []
     },
@@ -2922,25 +2922,25 @@
     },
     "92011": {
       "cnp": "92011",
-      "appellation_principale": "Surveillants/surveillantes dans le raffinage du pétrole, dans le traitement du gaz et des produits chimiques et dans les services d&rsquo;utilité publique",
+      "appellation_principale": "Surveillants/surveillantes dans le raffinage du pétrole, dans le traitement du gaz et des produits chimiques et dans les services d’utilité publique",
       "slug": "surveillants-surveillantes-dans-le-raffinage-du-petrole-dans-le-traitement-du-gaz-et-des-produits-chimiques-et-dans-les-services-dutilite-publique",
       "autres_appellations": []
     },
     "82020": {
       "cnp": "82020",
-      "appellation_principale": "Surveillants/surveillantes de l&rsquo;exploitation des mines et des carrières",
+      "appellation_principale": "Surveillants/surveillantes de l’exploitation des mines et des carrières",
       "slug": "surveillants-surveillantes-de-lexploitation-des-mines-et-des-carrieres",
       "autres_appellations": []
     },
     "82010": {
       "cnp": "82010",
-      "appellation_principale": "Surveillants/surveillantes de l&rsquo;exploitation forestière",
+      "appellation_principale": "Surveillants/surveillantes de l’exploitation forestière",
       "slug": "surveillants-surveillantes-de-lexploitation-forestiere",
       "autres_appellations": []
     },
     "72022": {
       "cnp": "72022",
-      "appellation_principale": "Surveillants/surveillantes de l&rsquo;imprimerie et du personnel assimilé",
+      "appellation_principale": "Surveillants/surveillantes de l’imprimerie et du personnel assimilé",
       "slug": "surveillants-surveillantes-de-limprimerie-et-du-personnel-assimile",
       "autres_appellations": []
     },
@@ -2994,7 +2994,7 @@
     },
     "52100": {
       "cnp": "52100",
-      "appellation_principale": "Techniciens/techniciennes dans les bibliothèques et les services d&rsquo;archives publiques",
+      "appellation_principale": "Techniciens/techniciennes dans les bibliothèques et les services d’archives publiques",
       "slug": "techniciens-techniciennes-dans-les-bibliotheques-et-les-services-darchives-publiques",
       "autres_appellations": []
     },
@@ -3065,13 +3065,13 @@
     },
     "22312": {
       "cnp": "22312",
-      "appellation_principale": "Techniciens/techniciennes et mécaniciens/mécaniciennes d&rsquo;instruments industriels",
+      "appellation_principale": "Techniciens/techniciennes et mécaniciens/mécaniciennes d’instruments industriels",
       "slug": "techniciens-techniciennes-et-mecaniciens-mecaniciennes-dinstruments-industriels",
       "autres_appellations": []
     },
     "22114": {
       "cnp": "22114",
-      "appellation_principale": "Techniciens/techniciennes et spécialistes de l&rsquo;aménagement paysager et de l&rsquo;horticulture",
+      "appellation_principale": "Techniciens/techniciennes et spécialistes de l’aménagement paysager et de l’horticulture",
       "slug": "techniciens-techniciennes-et-specialistes-de-lamenagement-paysager-et-de-lhorticulture",
       "autres_appellations": []
     },
@@ -3215,7 +3215,7 @@
     },
     "84100": {
       "cnp": "84100",
-      "appellation_principale": "Travailleurs/travailleuses d&rsquo;entretien et de soutien des mines souterraines",
+      "appellation_principale": "Travailleurs/travailleuses d’entretien et de soutien des mines souterraines",
       "slug": "travailleurs-travailleuses-dentretien-et-de-soutien-des-mines-souterraines",
       "autres_appellations": []
     },
@@ -3245,7 +3245,7 @@
     },
     "84101": {
       "cnp": "84101",
-      "appellation_principale": "Travailleurs/travailleuses du forage et de l&rsquo;entretien des puits de pétrole et de gaz et personnel assimilé",
+      "appellation_principale": "Travailleurs/travailleuses du forage et de l’entretien des puits de pétrole et de gaz et personnel assimilé",
       "slug": "travailleurs-travailleuses-du-forage-et-de-lentretien-des-puits-de-petrole-et-de-gaz-et-personnel-assimile",
       "autres_appellations": []
     },
@@ -3257,7 +3257,7 @@
     },
     "72301": {
       "cnp": "72301",
-      "appellation_principale": "Tuyauteurs/tuyauteuses, monteurs/monteuses d&rsquo;appareils de chauffage et poseurs/poseuses de gicleurs",
+      "appellation_principale": "Tuyauteurs/tuyauteuses, monteurs/monteuses d’appareils de chauffage et poseurs/poseuses de gicleurs",
       "slug": "tuyauteurs-tuyauteuses-monteurs-monteuses-dappareils-de-chauffage-et-poseurs-poseuses-de-gicleurs",
       "autres_appellations": []
     },
