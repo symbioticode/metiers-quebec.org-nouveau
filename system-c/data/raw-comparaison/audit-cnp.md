@@ -87,3 +87,18 @@ Date de l'audit: 2026-07-24
 - ✅ **offre.jobboom.titre**: "Technicien en comptabilité / Accounting Technician" [partielle] → `technicien/technicienne en comptabilité`
 - ❌ **offre.jobboom.titre**: "Technicien-ne en comptabilité" [aucune]
 - ✅ **offre.jobboom.titre**: "Technicien en comptabilité immobilière - mode hybride / Property Accounting Technician - Hybrid" [partielle] → `technicien/technicienne en comptabilité`
+
+---
+
+## Vérification post-récupération (données non vues par l'audit initial)
+
+_4 offres Jobillico récupérées le 2026-07-24. Titres passés dans `cnp_check()` immédiatement après extraction, sans pré-validation._
+
+| # | CNP | ID | Employeur | Titre récupéré | cnp_check() | Appellation officielle Q2 |
+|---|-----|----|-----------|----------------|-------------|--------------------------|
+| 1 | 31301 | 16194985 | Multi Options Nursing | Infirmier | ✅ partielle → `Infirmiers autorisés/infirmières autorisées et infirmiers psychiatriques autorisés/infirmières psychiatriques autorisées` | Infirmiers autorisés/infirmières autorisées et infirmiers psychiatriques autorisés/infirmières psychiatriques autorisées |
+| 2 | 31301 | 17204914 | CHSLD Côté-Jardins inc. | Infirmier / Infirmière | ✅ partielle → `infirmier/infirmière` | Infirmiers autorisés/infirmières autorisées et infirmiers psychiatriques autorisés/infirmières psychiatriques autorisées |
+| 3 | 64100 | 17323190 | Magasin Latulippe | Vendeur - Conseiller(ère) à la vente - Département de l'archerie | ❌ aucune | Vendeurs/vendeuses et décorateurs-étalagistes/décoratrices-étalagistes en commerce de détail |
+| 4 | 64100 | 17332109 | RONA | Conseiller vendeur - Peinture | ❌ aucune | Vendeurs/vendeuses et décorateurs-étalagistes/décoratrices-étalagistes en commerce de détail |
+
+**Résultat : 2/4 validées** (les 2 infirmiers matchent partiellement). Les 2 vendeurs détail n'ont aucune correspondance dans la matrice Q2 — les titres d'emplois réels divergent des appellations officielles.
