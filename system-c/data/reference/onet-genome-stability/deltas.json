@@ -1,5 +1,5 @@
 {
-  "method": "ΔGWA net = nouveaux IDs - IDs retirés entre deux releases consécutives échantillonnées (pas nécessairement adjacentes dans la numérotation O*NET réelle — voir échantillonnage documenté dans extract_onet_genome_stability.py). ΔGWA churn = |ajouts| + |retraits| (renommages à ID identique exclus, listés séparément). Ratio = |Δtasks| / churn_GWA (et idem occupations) ; 'inf' si churn_GWA = 0, ce qui est le cas observé pour toutes les périodes de cet échantillon (voir data).",
+  "method": "ΔGWA net = nouveaux IDs - IDs retirés entre deux releases consécutives échantillonnées (pas nécessairement adjacentes dans la numérotation O*NET réelle — voir échantillonnage documenté dans extract_onet_genome_stability.py). ΔGWA churn = |ajouts| + |retraits| (renommages à ID identique exclus, listés séparément). Ratio = |Δtasks| / churn_GWA (et idem occupations), avec 3 cas distincts : ratio numérique si churn_GWA > 0 ; 'Infinity' si churn_GWA = 0 et Δ != 0 (churn GWA nul pendant que Tasks/Occupations bougent — le cas informatif pour l'hypothèse 4) ; null si churn_GWA = 0 ET Δ = 0 (forme indéterminée 0/0, non assimilable à 0 ni à l'infini).",
   "periods": [
     {
       "from": "5.0",
@@ -29,7 +29,7 @@
       "d_tasks": 3962,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "8.0",
@@ -59,7 +59,7 @@
       "d_tasks": 3813,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "12.0",
@@ -89,7 +89,7 @@
       "d_tasks": 103,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "15.0",
@@ -119,7 +119,7 @@
       "d_tasks": 100,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "19.0",
@@ -134,7 +134,7 @@
       "d_tasks": 37,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "20.0",
@@ -149,7 +149,7 @@
       "d_tasks": 36,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "21.0",
@@ -164,7 +164,7 @@
       "d_tasks": 46,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "22.0",
@@ -179,7 +179,7 @@
       "d_tasks": 24,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "23.0",
@@ -194,7 +194,7 @@
       "d_tasks": 99,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "25.0",
@@ -249,7 +249,7 @@
       "d_tasks": -469,
       "d_occupations": 0,
       "ratio_tasks_per_gwa_churn": Infinity,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_occupations_per_gwa_churn": null
     },
     {
       "from": "29.0",
@@ -263,8 +263,8 @@
       "d_gwa_churn": 0,
       "d_tasks": 0,
       "d_occupations": 0,
-      "ratio_tasks_per_gwa_churn": 0.0,
-      "ratio_occupations_per_gwa_churn": 0.0
+      "ratio_tasks_per_gwa_churn": null,
+      "ratio_occupations_per_gwa_churn": null
     }
   ],
   "anomalies": []

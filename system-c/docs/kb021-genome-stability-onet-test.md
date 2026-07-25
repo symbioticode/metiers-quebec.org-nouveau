@@ -78,21 +78,42 @@ Table complète des deltas par période : `data/reference/onet-genome-stability/
 | Période | ΔGWA net | ΔGWA churn | ΔTasks | ΔOccupations | ratio Tasks/GWAchurn | ratio Occ/GWAchurn |
 |---|---|---|---|---|---|---|
 | 5.0 → 6.0 | 0 | 0 | 2290 | 1 | inf | inf |
-| 6.0 → 8.0 | 0 | 0 | 3962 | 0 | inf | 0.0 |
+| 6.0 → 8.0 | 0 | 0 | 3962 | 0 | inf | indéterminé (0/0) |
 | 8.0 → 10.0 | 0 | 0 | 3625 | -218 | inf | inf |
-| 10.0 → 12.0 | 0 | 0 | 3813 | 0 | inf | 0.0 |
+| 10.0 → 12.0 | 0 | 0 | 3813 | 0 | inf | indéterminé (0/0) |
 | 12.0 → 14.0 | 0 | 0 | 3739 | 153 | inf | inf |
-| 14.0 → 15.0 | 0 | 0 | 103 | 0 | inf | 0.0 |
+| 14.0 → 15.0 | 0 | 0 | 103 | 0 | inf | indéterminé (0/0) |
 | 15.0 → 17.0 | 0 | 0 | 929 | 8 | inf | inf |
-| 17.0 → 19.0 | 0 | 0 | 100 | 0 | inf | 0.0 |
-| 19.0 → 20.0 | 0 | 0 | 37 | 0 | inf | 0.0 |
-| 20.0 → 21.0 | 0 | 0 | 36 | 0 | inf | 0.0 |
-| 21.0 → 22.0 | 0 | 0 | 46 | 0 | inf | 0.0 |
-| 22.0 → 23.0 | 0 | 0 | 24 | 0 | inf | 0.0 |
-| 23.0 → 25.0 | 0 | 0 | 99 | 0 | inf | 0.0 |
+| 17.0 → 19.0 | 0 | 0 | 100 | 0 | inf | indéterminé (0/0) |
+| 19.0 → 20.0 | 0 | 0 | 37 | 0 | inf | indéterminé (0/0) |
+| 20.0 → 21.0 | 0 | 0 | 36 | 0 | inf | indéterminé (0/0) |
+| 21.0 → 22.0 | 0 | 0 | 46 | 0 | inf | indéterminé (0/0) |
+| 22.0 → 23.0 | 0 | 0 | 24 | 0 | inf | indéterminé (0/0) |
+| 23.0 → 25.0 | 0 | 0 | 99 | 0 | inf | indéterminé (0/0) |
 | 25.0 → 27.0 | 0 | 0 | -470 | -94 | inf | inf |
-| 27.0 → 29.0 | 0 | 0 | -469 | 0 | inf | 0.0 |
-| 29.0 → 30.3 | 0 | 0 | 0 | 0 | 0.0 | 0.0 |
+| 27.0 → 29.0 | 0 | 0 | -469 | 0 | inf | indéterminé (0/0) |
+| 29.0 → 30.3 | 0 | 0 | 0 | 0 | indéterminé (0/0) | indéterminé (0/0) |
+
+**Corrigendum (post-publication)** : une vérification externe a trouvé que
+`calc_onet_genome_stability.py` encodait à tort `0.0` pour les périodes où
+ΔGWAchurn = 0 ET Δ(Tasks ou Occupations) = 0 simultanément (forme
+indéterminée 0/0), en contradiction avec la convention documentée dans le
+champ `method` du fichier (qui prévoyait déjà "inf" pour ΔGWAchurn=0 avec
+Δ≠0, mais ne traitait pas explicitement le cas Δ=0). Corrigé : ce cas encode
+désormais `null` ("indéterminé (0/0)"), distinct des deux autres états
+(ratio numérique, `Infinity`). Concrètement : **11 des 16 périodes** sont
+indéterminées pour le ratio Occupations (pas 1 seule comme la version
+précédente de ce rapport le disait), et **1 période** (29.0 → 30.3) l'est
+aussi pour le ratio Tasks — cette dernière période a ΔTasks = 0 ET
+ΔOccupations = 0 simultanément (18 796 tâches et 1 016 occupations
+identiques entre les deux releases, un plateau réel dans la donnée, pas une
+erreur d'extraction). La conclusion du verdict ci-dessous n'est pas
+affectée : ΔGWAchurn reste 0 sur les 16 périodes, et ΔTasks est non-nul sur
+15 des 16 périodes (la seule exception étant un plateau, pas un contre-
+exemple) — le signal central du test (fonctions atomiques figées pendant
+que les tâches bougent) est inchangé, seule la métrique secondaire
+`ratio_occupations_per_gwa_churn` était mal encodée dans 10 lignes
+supplémentaires.
 
 **ΔGWA churn (ajouts + retraits par ID) = 0 sur les 16 périodes**, du premier
 au dernier point (2003-2026). Le seul mouvement observé dans la couche GWA
@@ -118,9 +139,14 @@ révisions de la taxonomie SOC elle-même.
 
 ## Verdict
 
-Le ratio |ΔTasks|/ΔGWAchurn (et |ΔOccupations|/ΔGWAchurn) est **infini** dans
-15 des 16 périodes (division par zéro : le dénominateur, ΔGWA churn, est nul
-partout sauf la dernière période où les deux termes sont nuls). Ce n'est pas
+Le ratio |ΔTasks|/ΔGWAchurn est **infini** dans 15 des 16 périodes (division
+par zéro : le dénominateur, ΔGWA churn, est nul partout ; ΔTasks lui-même
+n'est nul que sur la dernière période, 29.0 → 30.3, qui devient indéterminée
+0/0). Le ratio |ΔOccupations|/ΔGWAchurn est infini dans seulement 5 des 16
+périodes et indéterminé (0/0) dans les 11 autres, car ΔOccupations est
+lui-même nul plus souvent que ΔTasks sur cet échantillon (voir corrigendum
+ci-dessus) — le signal reste net sur Tasks, plus mitigé sur Occupations.
+Ce n'est pas
 un artefact du calcul : c'est la donnée elle-même — sur cet échantillon
 particulier de 17 releases O*NET couvrant 2003-2026, **le nombre de Work
 Activities/GWA n'a jamais changé** (41 tout du long, hors renommages

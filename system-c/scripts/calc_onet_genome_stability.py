@@ -40,9 +40,15 @@ def load(version: str) -> dict:
 
 
 def ratio(delta_num, delta_den):
+    """Retourne un ratio, ou une des deux formes distinctes de non-calculabilité :
+    - "Infinity" si le dénominateur est nul mais pas le numérateur (churn GWA
+      nul pendant que Tasks/Occupations bougent — le cas informatif pour
+      l'hypothèse 4).
+    - None si numérateur ET dénominateur sont nuls (0/0, forme
+      indéterminée — ne rien affirmer, ni 0 ni infini)."""
     if delta_den == 0:
         if delta_num == 0:
-            return 0.0
+            return None
         return float("inf")
     return round(delta_num / delta_den, 2)
 
@@ -98,9 +104,11 @@ def main():
             "échantillonnées (pas nécessairement adjacentes dans la numérotation O*NET "
             "réelle — voir échantillonnage documenté dans extract_onet_genome_stability.py). "
             "ΔGWA churn = |ajouts| + |retraits| (renommages à ID identique exclus, listés "
-            "séparément). Ratio = |Δtasks| / churn_GWA (et idem occupations) ; 'inf' si "
-            "churn_GWA = 0, ce qui est le cas observé pour toutes les périodes de cet "
-            "échantillon (voir data)."
+            "séparément). Ratio = |Δtasks| / churn_GWA (et idem occupations), avec 3 cas "
+            "distincts : ratio numérique si churn_GWA > 0 ; 'Infinity' si churn_GWA = 0 et "
+            "Δ != 0 (churn GWA nul pendant que Tasks/Occupations bougent — le cas informatif "
+            "pour l'hypothèse 4) ; null si churn_GWA = 0 ET Δ = 0 (forme indéterminée 0/0, "
+            "non assimilable à 0 ni à l'infini)."
         ),
         "periods": periods,
         "anomalies": anomalies,
@@ -114,11 +122,14 @@ def main():
         "| Période | ΔGWA net | ΔGWA churn (add/rem) | ΔTasks | ΔOccupations | ratio Tasks/GWAchurn | ratio Occ/GWAchurn |",
         "|---|---|---|---|---|---|---|",
     ]
+    def fmt_ratio(r):
+        return "indéterminé (0/0)" if r is None else r
+
     for p in periods:
         lines.append(
             f"| {p['from']} ({p['from_date']}) -> {p['to']} ({p['to_date']}) "
             f"| {p['d_gwa_net']} | {p['d_gwa_churn']} | {p['d_tasks']} | {p['d_occupations']} "
-            f"| {p['ratio_tasks_per_gwa_churn']} | {p['ratio_occupations_per_gwa_churn']} |"
+            f"| {fmt_ratio(p['ratio_tasks_per_gwa_churn'])} | {fmt_ratio(p['ratio_occupations_per_gwa_churn'])} |"
         )
     lines.append("")
     lines.append("## Renommages à ID identique détectés (hors churn)")
