@@ -1,35 +1,26 @@
 #!/usr/bin/env python3
-"""Extrait l'index alphabétique des appellations d'emploi
-(data/reference/cnp2021-appellations-index.json) depuis l'index alphabétique
-du PDF français de la CNP 2021, converti en Markdown.
+"""Extrait l'index des appellations d'emploi
+(data/reference/cnp2021-appellations-index.json) depuis
+cnp_2021_version_1.0_-_elements.csv (Statistique Canada), lignes de type
+"Tous les exemples".
 
-Source : ~/Projects/50_JOBSAID/jobpulse/CNP/12-583-x2021001-fra.md
+Source : ~/Projects/50_JOBSAID/jobpulse/CNP/cnp_2021_version_1.0_-_elements.csv
 
-Format des entrées dans le markdown : "**CODE** appellation - contexte",
-parfois précédé d'une puce "- ", parfois sans puce et concaténé sur la même
-ligne que l'entrée suivante (mise en page à colonnes du PDF d'origine, perdue
-à la conversion). On extrait donc chaque paire (code, texte) par une regex
-qui borne le texte au prochain code en gras, plutôt que par découpage ligne à
-ligne.
+Remplace une première version qui minait cette table depuis l'index
+alphabétique du PDF français converti en markdown (voir historique git).
+Le CSV est la source officielle, structurée, et couvre les 516 groupes de
+base sans les artefacts de mise en page du PDF — à privilégier conformément
+au principe déjà appliqué à cnp2021-structure.json.
 """
+import csv
 import json
-import re
 import sys
 from pathlib import Path
 
-SRC = Path.home() / "Projects/50_JOBSAID/jobpulse/CNP/12-583-x2021001-fra.md"
+SRC = Path.home() / "Projects/50_JOBSAID/jobpulse/CNP/cnp_2021_version_1.0_-_elements.csv"
 OUT = Path(__file__).resolve().parent.parent / "data/reference/cnp2021-appellations-index.json"
 
-INDEX_HEADER = "# **Index alphabétique**"
-ENTRY_RE = re.compile(r'\*\*(\d{5})\*\*\s*([^\*]*?)(?=\*\*\d{5}\*\*|\Z)', re.DOTALL)
-
-
-def clean_text(raw: str) -> str:
-    s = raw.strip()
-    s = re.sub(r'^-\s*', '', s)
-    s = s.split('\n')[0].strip()
-    s = re.sub(r'\s+', ' ', s)
-    return s
+TYPE_APPELLATIONS = "Tous les exemples"
 
 
 def main():
@@ -37,45 +28,44 @@ def main():
         print(f"ERREUR: source introuvable: {SRC}", file=sys.stderr)
         sys.exit(1)
 
-    full = SRC.read_text(encoding="utf-8")
-    idx = full.find(INDEX_HEADER)
-    if idx == -1:
-        print("ERREUR: section 'Index alphabétique' introuvable dans le markdown", file=sys.stderr)
-        sys.exit(1)
-    section = full[idx:]
-
     entries = []
     anomalies = []
     seen = set()
-    for m in ENTRY_RE.finditer(section):
-        code = m.group(1)
-        text = clean_text(m.group(2))
-        if not text:
-            anomalies.append(f"code {code}: texte vide après nettoyage")
-            continue
-        if "Statistique Canada" in text or text.startswith("#"):
-            anomalies.append(f"code {code}: bruit résiduel détecté: {text[:60]!r}")
-            continue
-        if " - " in text:
-            appellation, contexte = text.split(" - ", 1)
-            appellation = appellation.strip()
-            contexte = contexte.strip() or None
-        else:
-            appellation, contexte = text, None
+    with SRC.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+        for i, row in enumerate(reader, start=2):
+            type_element = (row.get("Nom du type d’élément Français") or "").strip()
+            if type_element != TYPE_APPELLATIONS:
+                continue
 
-        key = (appellation, code, contexte)
-        if key in seen:
-            continue
-        seen.add(key)
-        entries.append({
-            "appellation": appellation,
-            "cnp": code,
-            "contexte": contexte,
-        })
+            code = (row.get("Code de la CNP v1.0") or "").strip()
+            texte = (row.get("Description d’élément Français") or "").strip()
+
+            if not code or not texte:
+                anomalies.append(f"ligne {i}: code ou texte manquant: {row}")
+                continue
+
+            if " - " in texte:
+                appellation, contexte = texte.split(" - ", 1)
+                appellation = appellation.strip()
+                contexte = contexte.strip() or None
+            else:
+                appellation, contexte = texte, None
+
+            key = (appellation, code, contexte)
+            if key in seen:
+                anomalies.append(f"ligne {i}: doublon exact ignoré: {key}")
+                continue
+            seen.add(key)
+            entries.append({
+                "appellation": appellation,
+                "cnp": code,
+                "contexte": contexte,
+            })
 
     out = {
-        "source": "12-583-x2021001-fra.pdf (Statistique Canada) — index alphabétique, converti en markdown",
-        "description": "Table appellation d'emploi -> code CNP 2021 (5 chiffres), extraite de l'index alphabétique du PDF français. Le contexte est la précision entre tirets quand elle existe.",
+        "source": "cnp_2021_version_1.0_-_elements.csv (Statistique Canada), lignes 'Tous les exemples'",
+        "description": "Table appellation d'emploi -> code CNP 2021 (5 chiffres), extraite du CSV officiel des éléments de classe. Le contexte est la précision entre tirets quand elle existe.",
         "total_entrees": len(entries),
         "entrees": entries,
     }
