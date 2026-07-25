@@ -4,7 +4,7 @@
     "description": "Répertoire des sites web gouvernementaux et institutionnels québécois et canadiens qui produisent des données sur l'emploi, les métiers et la formation pour l'emploi au Québec. Inclut les sources offrant des données via API ou formats ouverts (CSV, XLSX).",
     "generated": "2026-07-21",
     "version": "1.0",
-    "nb_sources": 16
+    "nb_sources": 17
   },
   "sources": [
     {
@@ -167,6 +167,18 @@
       "formats": ["HTML", "XML"],
       "api_disponible": false,
       "api_notes": "WordPress REST API (wp-json) existe mais endpoint /profession retourne 401 (non autorisé). RSS feed vide. Sitemap XML disponible (/profession-sitemap.xml) avec URL de toutes les professions.",
+      "actif": true
+    },
+    {
+      "id": 17,
+      "nom": "Classification nationale des professions (CNP) 2021 v1.0",
+      "url": "https://ouvert.canada.ca/data/fr/dataset/1feee3b5-8068-4dbb-b361-180875837593",
+      "type": "federal",
+      "description": "Jeu de données officiel de la CNP 2021 v1.0 publié sur le portail de données ouvertes du Canada, administré par Statistique Canada (EDSC). Contient la structure hiérarchique à 5 chiffres (nouveau depuis 2021, remplace le système à 4 chiffres), les éléments de classification et les niveaux de compétences FEER (formation, études, expérience, responsabilités). Ressources disponibles : guide interactif HTML, guide PDF et fichiers CSV de structure et d'éléments, en français et en anglais. Source canonique de référence pour tous les codes CNP utilisés dans system-c.",
+      "formats": ["CSV", "HTML", "PDF"],
+      "api_disponible": false,
+      "api_notes": "Données téléchargeables via ouvert.canada.ca (CKAN). Fichiers CSV : structure de classification et éléments. Pas d'API REST directe sur ce jeu de données spécifique. La version interactive HTML est hébergée sur statcan.gc.ca (/fr/sujets/norme/cnp/2021/indexV1).",
+      "licence": "Licence du gouvernement ouvert - Canada (Statistique Canada)",
       "actif": true
     }
   ]
