@@ -1,0 +1,202 @@
+# kb021 — Test longitudinal externe de l'hypothèse 4 (O*NET, 2003-2026)
+
+Ce document est un test de données, distinct de `docs/kb021.md` (qui reste la
+formulation de l'hypothèse elle-même, DRAFT, non modifiée par ce travail). Il
+fournit la preuve longitudinale que kb021 identifiait comme manquante :
+observer le taux de nouveauté des fonctions atomiques sur plusieurs vagues
+réelles dans le temps, en utilisant un référentiel externe déjà longitudinal
+(piste explicitement notée dans kb021 : « comparer contre un référentiel
+externe déjà longitudinal, ex. O*NET »).
+
+## Méthode
+
+**Source** : O*NET Database releases, https://www.onetcenter.org/db_releases.html
+(licence CC BY 4.0, US DOL/ETA). Chaque release publie des fichiers texte
+plats incluant :
+- **Work Activities / GWA** — ~41 « Generalized Work Activities », le proxy le
+  plus proche du concept de « fonction atomique » testé par l'hypothèse 4
+  (verbes d'action génériques : « Getting Information », « Analyzing Data or
+  Information »...).
+- **Task Statements** — ~19 000 tâches granulaires par occupation, la couche
+  volatile (équivalent fonctionnel des titres de métiers/tâches).
+- **Occupation Data** — les codes O*NET-SOC couverts.
+
+**Échantillonnage** : 17 releases sur les ~55 listées (5.0 à 30.3, avril 2003
+à mai 2026), soit environ 1 point par an sur 2003-2015 puis des points
+supplémentaires autour des deux révisions majeures connues (transition SOC
+2000→2010 entre v10 et v14 ; transition SOC 2010→2018 entre v21 et v23) et
+autour de l'apparition/disparition des « Green Task Statements » (v17-v23).
+Ce choix priorise l'étalement sur toute la période 2003-2026 plutôt qu'une
+couverture dense récente, conformément à la consigne. **Ce n'est pas
+exhaustif** : 38 releases sur 55 n'ont pas été extraites — voir « Anomalies et
+limites » ci-dessous pour ce que cela implique.
+
+Toutes les 17 releases échantillonnées se sont révélées **téléchargeables**
+(200 OK, zips texte) au moment de l'exécution (25/07/2026) via les URLs
+`https://www.onetcenter.org/dl_files/db_XX.zip` (releases anciennes) et
+`https://www.onetcenter.org/dl_files/database/db_XX_Y_text.zip` (releases
+depuis ~v20.1). Aucune release testée n'a été indisponible.
+
+**Scripts** :
+- `scripts/extract_onet_genome_stability.py` — télécharge (cache local),
+  extrait GWA (IDs+labels complets), compte des tâches, compte des
+  occupations par release. Sortie : `data/reference/onet-genome-stability/<version>.json`
+  (un par release) + `_combined.json`.
+- `scripts/calc_onet_genome_stability.py` — calcule, pour chaque paire de
+  releases consécutives échantillonnées, ΔGWA (net et "churn" = ajouts +
+  retraits par ID, renommages à ID identique isolés séparément), ΔTasks,
+  ΔOccupations, et les ratios |ΔTasks|/churn_GWA et |ΔOccupations|/churn_GWA.
+  Sortie : `data/reference/onet-genome-stability/deltas.json` + `deltas.md`.
+
+## Résultats bruts (nombres d'abord)
+
+17 points temporels, 16 périodes.
+
+| Release | Date | GWA | Tasks | Occupations |
+|---|---|---|---|---|
+| 5.0 | 2003-04 | 41 | 932 | 1166 |
+| 6.0 | 2004-07 | 41 | 3222 | 1167 |
+| 8.0 | 2005-06 | 41 | 7184 | 1167 |
+| 10.0 | 2006-06 | 41 | 10809 | 949 |
+| 12.0 | 2007-06 | 41 | 14622 | 949 |
+| 14.0 | 2009-06 | 41 | 18361 | 1102 |
+| 15.0 | 2010-07 | 41 | 18464 | 1102 |
+| 17.0 | 2012-07 | 41 | 19393 | 1110 |
+| 19.0 | 2014-07 | 41 | 19493 | 1110 |
+| 20.0 | 2015-08 | 41 | 19530 | 1110 |
+| 21.0 | 2016-08 | 41 | 19566 | 1110 |
+| 22.0 | 2017-08 | 41 | 19612 | 1110 |
+| 23.0 | 2018-08 | 41 | 19636 | 1110 |
+| 25.0 | 2020-08 | 41 | 19735 | 1110 |
+| 27.0 | 2022-08 | 41 | 19265 | 1016 |
+| 29.0 | 2024-08 | 41 | 18796 | 1016 |
+| 30.3 | 2026-05 | 41 | 18796 | 1016 |
+
+Table complète des deltas par période : `data/reference/onet-genome-stability/deltas.md`
+(reproduite intégralement ci-dessous).
+
+| Période | ΔGWA net | ΔGWA churn | ΔTasks | ΔOccupations | ratio Tasks/GWAchurn | ratio Occ/GWAchurn |
+|---|---|---|---|---|---|---|
+| 5.0 → 6.0 | 0 | 0 | 2290 | 1 | inf | inf |
+| 6.0 → 8.0 | 0 | 0 | 3962 | 0 | inf | 0.0 |
+| 8.0 → 10.0 | 0 | 0 | 3625 | -218 | inf | inf |
+| 10.0 → 12.0 | 0 | 0 | 3813 | 0 | inf | 0.0 |
+| 12.0 → 14.0 | 0 | 0 | 3739 | 153 | inf | inf |
+| 14.0 → 15.0 | 0 | 0 | 103 | 0 | inf | 0.0 |
+| 15.0 → 17.0 | 0 | 0 | 929 | 8 | inf | inf |
+| 17.0 → 19.0 | 0 | 0 | 100 | 0 | inf | 0.0 |
+| 19.0 → 20.0 | 0 | 0 | 37 | 0 | inf | 0.0 |
+| 20.0 → 21.0 | 0 | 0 | 36 | 0 | inf | 0.0 |
+| 21.0 → 22.0 | 0 | 0 | 46 | 0 | inf | 0.0 |
+| 22.0 → 23.0 | 0 | 0 | 24 | 0 | inf | 0.0 |
+| 23.0 → 25.0 | 0 | 0 | 99 | 0 | inf | 0.0 |
+| 25.0 → 27.0 | 0 | 0 | -470 | -94 | inf | inf |
+| 27.0 → 29.0 | 0 | 0 | -469 | 0 | inf | 0.0 |
+| 29.0 → 30.3 | 0 | 0 | 0 | 0 | 0.0 | 0.0 |
+
+**ΔGWA churn (ajouts + retraits par ID) = 0 sur les 16 périodes**, du premier
+au dernier point (2003-2026). Le seul mouvement observé dans la couche GWA
+est 6 renommages cosmétiques à ID identique (v25.0 → v27.0), sans ajout ni
+retrait :
+
+- `4.A.1.a.2` : « Monitor Processes, Materials, or Surroundings » → « Monitoring... »
+- `4.A.1.b.2` : « Inspecting Equipment, Structures, or Material » → « ...Materials »
+- `4.A.2.a.1` : « Judging the Qualities of Things, Services, or People » → « ...Objects, Services... »
+- `4.A.3.b.1` : « Interacting With Computers » → « Working with Computers »
+- `4.A.4.a.3` : « Communicating with Persons Outside Organization » → « ...People Outside the Organization »
+- `4.A.4.b.6` : « Provide Consultation and Advice to Others » → « Providing Consultation... »
+
+Aucun de ces changements n'altère le sens de la fonction ; ce sont des
+reformulations de style éditorial (temps verbal, singulier/pluriel,
+synonyme), pas des créations ou suppressions de fonction.
+
+Pendant la même période, Task Statements varie de 932 (2003) à un pic de
+19 735 (2020) puis redescend à 18 796 (2024-2026) — amplitude de plusieurs
+milliers de tâches par période sur les premières années (jusqu'à +3 962 entre
+deux releases), et Occupations varie entre 949 et 1 167 codes SOC selon les
+révisions de la taxonomie SOC elle-même.
+
+## Verdict
+
+Le ratio |ΔTasks|/ΔGWAchurn (et |ΔOccupations|/ΔGWAchurn) est **infini** dans
+15 des 16 périodes (division par zéro : le dénominateur, ΔGWA churn, est nul
+partout sauf la dernière période où les deux termes sont nuls). Ce n'est pas
+un artefact du calcul : c'est la donnée elle-même — sur cet échantillon
+particulier de 17 releases O*NET couvrant 2003-2026, **le nombre de Work
+Activities/GWA n'a jamais changé** (41 tout du long, hors renommages
+cosmétiques sans changement d'ID), alors que le nombre de tâches et
+d'occupations a fluctué de manière continue et parfois importante.
+
+Au sens strict de la règle fixée en amont de cette tâche (« ratio >>1
+consistant sur presque toutes les périodes » = corroboration), le résultat
+observé est un cas limite du côté favorable à l'hypothèse : le ratio n'est
+pas seulement >>1, il est indéfini par nullité du dénominateur — la couche
+GWA n'a tout simplement pas bougé sur toute la fenêtre observée, ce qui est
+la version la plus forte possible du signal recherché.
+
+**Cela corrobore la prédiction testable de kb021 sur ce référentiel externe et
+cet échantillon de releases : le nombre de fonctions atomiques réellement
+nouvelles croît beaucoup plus lentement (dans ce cas : zéro) que le nombre de
+titres/tâches, sur 23 ans et 55 versions O*NET (échantillonnées).**
+
+Cette conclusion doit néanmoins être lue avec les limites suivantes,
+substantielles, avant d'être généralisée (voir section suivante) — en
+particulier le fait qu'O*NET, contrairement à la CNP/aux titres de métiers du
+monde réel, **fige délibérément sa liste de GWA par construction
+méthodologique** (le modèle de contenu O*NET a été conçu autour d'un nombre
+fixe de dimensions génériques dès l'origine) ; ce résultat teste donc la
+stabilité *d'un cadre déjà construit pour être stable*, pas la stabilité
+spontanée de fonctions atomiques observées dans un corpus de métiers non
+pré-structuré (ce que faisait kb020, sur un tout petit échantillon,
+avec un résultat plus mitigé).
+
+## Anomalies et limites (à lire avant toute citation de ce document)
+
+- **Échantillonnage, pas exhaustivité** : 17 releases sur ~55 réellement
+  listées (2003-2026) ont été extraites — environ 31 %. Toutes les 17
+  choisies étaient téléchargeables sans exception ; rien n'indique que les
+  38 non extraites auraient donné un résultat différent, mais ce n'est pas
+  vérifié. Le choix a favorisé l'étalement (1 point/an + points de révision
+  taxonomique) plutôt que la densité récente, par consigne explicite — donc
+  potentiellement moins sensible à des changements GWA très locaux dans le
+  temps (une modification introduite puis retirée entre deux releases
+  échantillonnées ne serait pas détectée).
+- **Structure interne des fichiers non stable — gérée, mais à noter** : le
+  nom de fichier interne pour les GWA change de `WorkActivity.txt`
+  (releases ≤ v8.0) à `Work Activities.txt` (v10.0+) ; celui des tâches de
+  `Tasks.txt` (≤ v12.0) à `Task Statements.txt` (v14.0+) ; celui des
+  occupations de `onetsoc_data.txt` à `Occupation Data.txt`. Le script gère
+  ces variantes par normalisation du nom (voir docstring
+  `extract_onet_genome_stability.py`), et aucune anomalie de parsing n'a été
+  levée sur les 17 releases (voir `anomalies` vide dans chaque JSON
+  individuel et dans `_combined.json`).
+- **« Green Task Statements » (v17.0-v23.0)** : un fichier de tâches
+  spécifiques à l'économie verte apparaît en v17.0 (1 373 tâches) et
+  disparaît après v23.0 (dernière valeur observée : 1 386 en v23.0, absent
+  en v25.0+). Ce fichier est compté séparément (`n_green_tasks`) et n'est
+  **pas** additionné à `n_tasks` pour ne pas introduire une discontinuité
+  artificielle dans la série Tasks — mais cela signifie que le total réel de
+  granularité tâches sur cette fenêtre est en fait légèrement plus élevé que
+  la colonne ΔTasks ne le montre pour ces 5 releases.
+- **Le modèle GWA est par construction figé, pas observé comme stable** :
+  contrairement au comptage CNP/titres de métiers, la liste des ~41 GWA fait
+  partie de l'architecture originelle du modèle O*NET (le "Content Model")
+  et n'est pas censée s'étendre — un ajout de GWA impliquerait une révision
+  de fond du modèle lui-même, pas un ajustement de routine. Le résultat "0
+  churn" est donc en partie garanti par la conception du référentiel choisi
+  comme proxy, ce qui limite la force de la généralisation vers "toute
+  fonction atomique de travail est stable" — l'hypothèse 4 teste une
+  propriété plus large que ce que ce référentiel particulier peut, par
+  construction, réfuter.
+- **Transitions SOC 2000→2010 et 2010→2018 non isolées finement** : les
+  variations d'Occupations (949 en 2006-2007, 1102-1110 en 2009-2020, 1016
+  depuis 2022) reflètent des refontes de la taxonomie SOC elle-même, pas
+  uniquement l'apparition de nouveaux métiers — ce document ne distingue pas
+  les deux causes (limite reconnue, pas résolue ici).
+- **Aucun test statistique formel** : ce document rapporte des comptes et
+  ratios bruts, pas un test d'hypothèse avec seuil de significativité — le
+  verdict ci-dessus est qualitatif, fondé sur l'ampleur de l'écart observé
+  (0 vs milliers), pas sur un calcul de p-value.
+- **`docs/kb021.md` n'est pas modifié par ce document** — conformément à la
+  consigne, la décision de mettre à jour les questions ouvertes de kb021.md
+  à la lumière de ces résultats revient à Andrei, pas à cette tâche.
