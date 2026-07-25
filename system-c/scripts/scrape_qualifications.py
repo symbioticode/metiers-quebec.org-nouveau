@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Scrape qualificationsquebec.com for all CNP×appellations data via AJAX API."""
 
+import html as html_module
 import json
 import os
 import re
@@ -37,6 +38,7 @@ def fetch_all_professions():
     professions = []
     for slug, title, cnp in items:
         title = re.sub(r"<[^>]+>", "", title).strip()
+        title = html_module.unescape(title)
         professions.append({"slug": slug, "appellation": title, "cnp": cnp})
 
     print(f"  Total professions: {len(professions)}")
@@ -61,6 +63,7 @@ def fetch_profession_page(slug):
         items = re.findall(r"<li[^>]*>(.*?)</li>", m.group(1), re.DOTALL)
         for item in items:
             clean = re.sub(r"<[^>]+>", "", item).strip()
+            clean = html_module.unescape(clean)
             if clean:
                 appellations.append(clean)
     return appellations

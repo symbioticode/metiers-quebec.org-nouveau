@@ -106,6 +106,28 @@ class TestCNPCheck(unittest.TestCase):
         r = cnp_check("64100", "infirmier", self.matrice)
         self.assertFalse(r["valide"])
 
+    # --- FIX 1: empty/whitespace/None ---
+    def test_empty_string_never_valid(self):
+        r = cnp_check("72300", "", self.matrice)
+        self.assertFalse(r["valide"])
+        self.assertEqual(r["type_correspondance"], "aucune")
+
+    def test_whitespace_only_never_valid(self):
+        r = cnp_check("72300", "   \t  ", self.matrice)
+        self.assertFalse(r["valide"])
+        self.assertEqual(r["type_correspondance"], "aucune")
+
+    def test_none_terme_no_crash(self):
+        r = cnp_check("72300", None, self.matrice)
+        self.assertFalse(r["valide"])
+        self.assertEqual(r["type_correspondance"], "aucune")
+
+    # --- FIX 4: singularize naive ---
+    def test_singular_matches_plural_officielle(self):
+        r = cnp_check("32101", "Infirmière auxiliaire", self.matrice)
+        self.assertTrue(r["valide"])
+        self.assertEqual(r["type_correspondance"], "partielle")
+
 
 if __name__ == "__main__":
     unittest.main()

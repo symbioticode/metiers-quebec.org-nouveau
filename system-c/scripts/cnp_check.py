@@ -33,6 +33,28 @@ def _normalize(text):
     return " ".join(without_accents.lower().split())
 
 
+def _singularize_naive(text):
+    """Naive French singularization: strip trailing 'x' or 's' from each word."""
+    words = text.split()
+    result = []
+    for w in words:
+        if w.endswith("eaux"):
+            result.append(w[:-1])
+        elif w.endswith("x"):
+            result.append(w[:-1])
+        elif w.endswith("s"):
+            result.append(w[:-1])
+        else:
+            result.append(w)
+    return " ".join(result)
+
+
+def _contains_as_phrase(needle, haystack):
+    """Word-boundary match: needle is found as a complete phrase in haystack."""
+    pattern = r"(?<!\w)" + re.escape(needle) + r"(?!\w)"
+    return re.search(pattern, haystack) is not None
+
+
 def _build_all_appellations(prof):
     """Return normalized list: [appellation_principale] + autres_appellations."""
     terms = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
@@ -77,7 +99,15 @@ def cnp_check(cnp, terme_recherche, matrice=None):
     if prof is None:
         return result
 
+    if terme_recherche is None or not isinstance(terme_recherche, str):
+        result["type_correspondance"] = "aucune"
+        return result
+
     norm_search = _normalize(terme_recherche)
+    if not norm_search:
+        result["type_correspondance"] = "aucune"
+        return result
+    norm_singular = _singularize_naive(norm_search)
     all_norm = _build_all_appellations(prof)
 
     # Exact match
@@ -89,10 +119,21 @@ def cnp_check(cnp, terme_recherche, matrice=None):
         result["matched_term"] = terms_raw[idx]
         return result
 
-    # Partial match: substring or slash-separated variant matching
+    # Partial match: word-boundary or slash-separated variant matching
     for i, norm_app in enumerate(all_norm):
-        # Direct substring check (search in appellation or vice versa)
-        if norm_search in norm_app or norm_app in norm_search:
+        norm_app_sing = _singularize_naive(norm_app)
+
+        # Direct word-boundary check (both directions, both singular/normal)
+        matched = False
+        for needle in (norm_search, norm_singular):
+            for haystack in (norm_app, norm_app_sing):
+                if _contains_as_phrase(needle, haystack) or _contains_as_phrase(haystack, needle):
+                    matched = True
+                    break
+            if matched:
+                break
+
+        if matched:
             terms_raw = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
             result["valide"] = True
             result["type_correspondance"] = "partielle"
@@ -100,31 +141,36 @@ def cnp_check(cnp, terme_recherche, matrice=None):
             return result
 
         # Slash-separated variants: expand "X/Y context" → ["X context", "Y context"]
-        # Find the common suffix after the slash group
         slash_match = re.match(r"(.+?)(/\S+)(.*)", norm_app)
         if slash_match:
-            prefix = slash_match.group(1)  # e.g. "mecanicien"
-            slash_part = slash_match.group(2)  # e.g. "/mecanicienne"
-            suffix = slash_match.group(3)  # e.g. " en plomberie"
+            prefix = slash_match.group(1)
+            slash_part = slash_match.group(2)
+            suffix = slash_match.group(3)
             variants_raw = [prefix, slash_part.lstrip("/")]
             expanded = [f"{v}{suffix}".strip() for v in variants_raw]
             for exp in expanded:
-                if norm_search in exp or exp in norm_search:
-                    terms_raw = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
-                    result["valide"] = True
-                    result["type_correspondance"] = "partielle"
-                    result["matched_term"] = terms_raw[i]
-                    return result
+                exp_sing = _singularize_naive(exp)
+                for needle in (norm_search, norm_singular):
+                    for haystack in (exp, exp_sing):
+                        if _contains_as_phrase(needle, haystack) or _contains_as_phrase(haystack, needle):
+                            terms_raw = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
+                            result["valide"] = True
+                            result["type_correspondance"] = "partielle"
+                            result["matched_term"] = terms_raw[i]
+                            return result
         else:
             # No slash pattern — check each variant independently
             variants = [v.strip() for v in norm_app.split("/")]
             for v in variants:
-                if norm_search in v or v in norm_search:
-                    terms_raw = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
-                    result["valide"] = True
-                    result["type_correspondance"] = "partielle"
-                    result["matched_term"] = terms_raw[i]
-                    return result
+                v_sing = _singularize_naive(v)
+                for needle in (norm_search, norm_singular):
+                    for haystack in (v, v_sing):
+                        if _contains_as_phrase(needle, haystack) or _contains_as_phrase(haystack, needle):
+                            terms_raw = [prof["appellation_principale"]] + prof.get("autres_appellations", [])
+                            result["valide"] = True
+                            result["type_correspondance"] = "partielle"
+                            result["matched_term"] = terms_raw[i]
+                            return result
 
     return result
 
