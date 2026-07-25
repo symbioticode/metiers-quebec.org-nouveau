@@ -200,3 +200,124 @@ avec un résultat plus mitigé).
 - **`docs/kb021.md` n'est pas modifié par ce document** — conformément à la
   consigne, la décision de mettre à jour les questions ouvertes de kb021.md
   à la lumière de ces résultats revient à Andrei, pas à cette tâche.
+
+## Test complémentaire — la CNP montre-t-elle le même patron que O*NET ?
+
+**Question posée** : le résultat O*NET ci-dessus (GWA figées pendant que
+Tasks/Occupations bougent de plusieurs ordres de grandeur) pourrait être un
+artefact générique de toute hiérarchie à faible cardinalité au sommet — pas
+une propriété spécifique aux "fonctions atomiques". Ce test vérifie si le
+même patron apparaît dans une hiérarchie n'ayant aucun lien avec O*NET ni
+avec une prétention d'atomicité : la Classification nationale des
+professions (CNP), en comparant sa seule transition longitudinale
+disponible aujourd'hui, CNP2016 v1.0 → CNP2021 v1.0.
+
+**GARDE — une seule transition = un seul point de contraste.** CNP2026
+n'est pas publiée avant décembre 2026 : il n'existe qu'un seul intervalle
+observable actuellement. Ce qui suit ne permet **pas** de conclure sur un
+taux de stabilité de la CNP dans le temps — seulement sur un contraste
+ponctuel CNP vs O*NET, sur une fenêtre de temps comparable (2016-2021 pour
+la CNP ; le test O*NET couvre 2003-2026).
+
+Script : `scripts/compare_cnp2016_to_cnp2021_structure.py`. Sources :
+`data/reference/cnp2021-structure.json` (structure officielle CNP2021, CSV
+StatCan) et `data/reference/cnp2016-to-cnp2021-mapping.json` (table de
+correspondance code à code, 585 lignes). **Limite de source** : aucun CSV
+de structure CNP2016 équivalent au CSV structure CNP2021 n'a été trouvé
+dans le repo ni en ligne — seuls les comptes agrégés officiels du sommet
+CNP2016 v1.0 (page d'introduction StatCan) ont pu être confirmés (10 grandes
+catégories, 40 grands groupes, 140 groupes intermédiaires, 500 groupes de
+base). Les libellés exacts des 10 grandes catégories CNP2016 n'ont pas été
+vérifiés un à un contre ceux de CNP2021 : seule l'égalité numérique du
+sommet est établie ici, pas l'identité de contenu — signalé comme limite,
+pas lissé.
+
+### Chiffres bruts
+
+| Niveau | CNP2016 | CNP2021 | Δ |
+|---|---|---|---|
+| Grande catégorie (sommet) | 10 | 10 | 0 |
+| Grand groupe | 40 | 45 | +5 |
+| Niveau(x) intermédiaire(s) | 140 (1 niveau) | 89 + 162 (2 niveaux) | non comparable terme à terme |
+| Groupe de base (feuille) | 500 | 516 | +16 |
+
+Répartition des 585 lignes de la table de correspondance par type de
+changement (une ligne peut porter plusieurs étiquettes GSIM ; classée ici
+par la catégorie la plus structurelle qu'elle porte) :
+
+| Type de changement | Lignes |
+|---|---|
+| Renommage/recodage seul (aucune fusion/scission/transfert) | 429 |
+| Transfert (reclassement sans fusion ni scission) | 72 |
+| Scission (breakdown / split off) | 68 |
+| Fusion (merger / take-over) | 16 |
+
+**Note de lecture** : la quasi-totalité des 585 lignes porte un changement
+de code ET un changement de nom (VC1 + VC2), parce que le passage de 4 à 5
+chiffres a mécaniquement forcé un recodage de chaque groupe de base — que
+son contenu ait changé ou non. Ceci gonfle artificiellement l'apparence de
+"tout a changé" si on lit seulement la colonne code ; la colonne
+type_changement isole les vrais changements structurels (fusion/scission/
+transfert = 156 lignes sur 585, le reste étant recodage/renommage sans
+changement de contenu identifiable dans la donnée disponible).
+
+Le CSV de structure CNP2021 (`cnp2021-structure.json`) confirme
+indépendamment 45 grands groupes / 89 sous-grands groupes / 162 sous-groupes
+/ 516 groupes de base pour la version 2021 — cohérent avec les comptes
+dérivés du fichier de mapping.
+
+### Verdict du test complémentaire
+
+**Le sommet de la CNP (grande catégorie, 10 éléments) est resté aussi
+stable que les GWA d'O*NET sur cette fenêtre** : 10 → 10, zéro changement
+numérique. C'est cohérent avec l'hypothèse que la stabilité observée côté
+O*NET n'est pas un artefact isolé — un autre référentiel indépendant, sans
+lien de conception avec O*NET, montre la même stabilité à son sommet.
+
+**Mais le changement structurel majeur annoncé par CNP2021 (introduction du
+FEER, 5e chiffre) ne se produit PAS au sommet — il se produit aux niveaux
+intermédiaires** (1 niveau intermédiaire en 2016 → 2 niveaux distincts en
+2021, rendant toute comparaison terme à terme à ce niveau non valide, donc
+non tentée ici) et, dans une moindre mesure, à la feuille (500 → 516 groupes
+de base, dont 156 changements structurels réels sur 585 lignes de mapping).
+Le sommet reste petit et stable ; c'est le milieu et la base de la
+hiérarchie qui absorbent le changement de modèle — un patron qui, à ce
+stade avec un seul point de données, ressemble à celui d'O*NET (sommet
+figé, reste mobile) plutôt qu'à un contre-exemple.
+
+**Ce que ce résultat ne tranche pas** : avec un seul intervalle observé, on
+ne peut pas distinguer "toute hiérarchie a un sommet stable par
+construction (petite cardinalité = change rarement, presque par
+définition mathématique)" de "les fonctions/catégories les plus abstraites
+sont intrinsèquement plus stables". Le test reste compatible avec H4a
+("le sommet de toute hiérarchie est structurellement stable, indépendamment
+du fait qu'il s'agisse de fonctions atomiques ou non") au moins autant
+qu'avec H4b ("les fonctions atomiques de travail en particulier ont une
+propriété de stabilité au-delà de ce que la taille du sommet expliquerait
+seule"). Ce test complémentaire ne permet donc pas de trancher entre H4a et
+H4b — il montre seulement que le contraste CNP/O*NET ne va pas dans le sens
+qui aurait infirmé H4a (un sommet CNP qui aurait bougé pendant que le
+sommet O*NET restait figé aurait été un signal contre la généricité de H4a ;
+ce n'est pas ce qu'on observe).
+
+### Anomalies et limites (test complémentaire)
+
+- **Un seul point de données longitudinal** (CNP2016→CNP2021) : aucune
+  conclusion sur un taux de stabilité dans le temps n'est possible, ici ou
+  ailleurs dans ce document, avec cette seule transition.
+- **CNP2016 et CNP2021 ne sont pas structurellement comparables terme à
+  terme** : passage de 4 à 5 chiffres, introduction du FEER en
+  remplacement du niveau de compétence, et ajout d'un niveau hiérarchique
+  entier (sous-grand groupe / sous-groupe distincts là où 2016 n'a qu'un
+  "groupe intermédiaire"). Cette difficulté de mapping est documentée
+  comme un résultat en soi, pas lissée en forçant une correspondance 1:1
+  artificielle.
+- **Absence de CSV de structure CNP2016 officiel** : les comptes du sommet
+  CNP2016 (10/40/140/500) proviennent d'une page d'introduction StatCan,
+  pas d'un fichier structuré comparable au CSV CNP2021 utilisé partout
+  ailleurs dans ce projet — une donnée moins fiable que le reste de ce
+  rapport, signalée comme telle.
+- **`docs/kb021.md` n'est pas modifié par ce test non plus** — la mise à
+  jour des questions ouvertes de kb021.md, si elle a lieu, doit attendre
+  à la fois ce test ET le test bottom-up (point 2 de la feuille de route),
+  et reste une décision d'Andrei.
