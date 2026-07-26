@@ -1,0 +1,714 @@
+{
+  "description": "Corpus brut de fonctions atomiques candidates, recopiées telles quelles depuis kb019, kb020 et le test bottom-up second-wave — aucune reformulation ni fusion manuelle. Sert d'entrée au clustering (cluster_atomic_functions.py) pour le test H4b de kb021 (émergence d'un alphabet par clustering vs imposition d'une liste de catégories a priori).",
+  "n_fonctions_total": 88,
+  "n_fonctions_wave_a": 55,
+  "n_fonctions_wave_b": 33,
+  "n_metiers_wave_a": 16,
+  "n_metiers_wave_b": 11,
+  "entrees": [
+    {
+      "fonction": "évaluer une sortie générée par un système contre des critères de qualité",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 0
+    },
+    {
+      "fonction": "comparer deux réponses et classer une préférence",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 1
+    },
+    {
+      "fonction": "annoter/étiqueter des données de sortie",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 2
+    },
+    {
+      "fonction": "détecter des biais/erreurs dans une sortie de système",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 3
+    },
+    {
+      "fonction": "rédiger des instructions/prompts de test",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 4
+    },
+    {
+      "fonction": "documenter des cas limites (edge cases) et rédiger un rapport de correction",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 5
+    },
+    {
+      "fonction": "ajuster des paramètres/règles d'un système",
+      "metier": "Coach IA — lecture (a)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 6
+    },
+    {
+      "fonction": "évaluer une performance individuelle",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 7
+    },
+    {
+      "fonction": "transférer une compétence",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 8
+    },
+    {
+      "fonction": "élaborer un plan de développement personnel",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 9
+    },
+    {
+      "fonction": "animer une séance de suivi individuel",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 10
+    },
+    {
+      "fonction": "utiliser un outil logiciel dans sa pratique professionnelle",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 11
+    },
+    {
+      "fonction": "consigner/documenter une progression",
+      "metier": "Coach IA — lecture (c)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 12
+    },
+    {
+      "fonction": "expliquer un concept technique à un public non-technique",
+      "metier": "Coach IA — lecture (d)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 13
+    },
+    {
+      "fonction": "former à l'utilisation d'un outil logiciel",
+      "metier": "Coach IA — lecture (d)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 14
+    },
+    {
+      "fonction": "évaluer le niveau de maîtrise d'un outil chez un individu",
+      "metier": "Coach IA — lecture (d)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 15
+    },
+    {
+      "fonction": "concevoir un programme de formation",
+      "metier": "Coach IA — lecture (d)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 16
+    },
+    {
+      "fonction": "accompagner un changement organisationnel (adoption)",
+      "metier": "Coach IA — lecture (d)",
+      "source": "kb019",
+      "wave": "a",
+      "date": "2026 (kb019)",
+      "id": 17
+    },
+    {
+      "fonction": "concevoir une instruction textuelle structurée",
+      "metier": "Prompt Engineer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 18
+    },
+    {
+      "fonction": "tester itérativement une sortie générée",
+      "metier": "Prompt Engineer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 19
+    },
+    {
+      "fonction": "documenter un patron de requête réutilisable",
+      "metier": "Prompt Engineer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 20
+    },
+    {
+      "fonction": "comparer deux réponses et classer une préférence",
+      "metier": "AI Trainer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 21
+    },
+    {
+      "fonction": "annoter des données d'entraînement",
+      "metier": "AI Trainer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 22
+    },
+    {
+      "fonction": "ajuster des paramètres de modèle",
+      "metier": "AI Trainer",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 23
+    },
+    {
+      "fonction": "évaluer les impacts éthiques/sociaux d'un système",
+      "metier": "AI Ethicist",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 24
+    },
+    {
+      "fonction": "rédiger des lignes directrices de conformité",
+      "metier": "AI Ethicist",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 25
+    },
+    {
+      "fonction": "conseiller une organisation sur un risque réglementaire",
+      "metier": "AI Ethicist",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 26
+    },
+    {
+      "fonction": "superviser une interaction entre opérateur et système automatisé",
+      "metier": "Coordinateur humain-machine",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 27
+    },
+    {
+      "fonction": "arbitrer une décision entre recommandation machine et jugement humain",
+      "metier": "Coordinateur humain-machine",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 28
+    },
+    {
+      "fonction": "assembler des composants logiciels préconstruits sans écrire de code",
+      "metier": "Product Builder no-code",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 29
+    },
+    {
+      "fonction": "configurer une logique métier dans une interface visuelle",
+      "metier": "Product Builder no-code",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 30
+    },
+    {
+      "fonction": "négocier des limites de consentement avec des interprètes",
+      "metier": "Coordinateur d'intimité",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 31
+    },
+    {
+      "fonction": "chorégraphier une scène à contenu sensible",
+      "metier": "Coordinateur d'intimité",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 32
+    },
+    {
+      "fonction": "assurer une médiation entre production et acteurs sur un tournage",
+      "metier": "Coordinateur d'intimité",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 33
+    },
+    {
+      "fonction": "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle",
+      "metier": "Technicien en bioproduction",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 34
+    },
+    {
+      "fonction": "contrôler la qualité d'un lot biologique",
+      "metier": "Technicien en bioproduction",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 35
+    },
+    {
+      "fonction": "documenter un dossier de lot pharmaceutique",
+      "metier": "Technicien en bioproduction",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 36
+    },
+    {
+      "fonction": "réaliser un geste de soin technique standardisé au domicile d'un patient",
+      "metier": "Intervenant médico-technique à domicile",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 37
+    },
+    {
+      "fonction": "installer/entretenir un équipement médical à domicile",
+      "metier": "Intervenant médico-technique à domicile",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 38
+    },
+    {
+      "fonction": "transmettre une observation clinique à une équipe soignante",
+      "metier": "Intervenant médico-technique à domicile",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 39
+    },
+    {
+      "fonction": "assembler des éléments préfabriqués en atelier (hors chantier)",
+      "metier": "Ouvrier de la construction modulaire hors site",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 40
+    },
+    {
+      "fonction": "monter une structure modulaire en bois ou en acier",
+      "metier": "Ouvrier de la construction modulaire hors site",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 41
+    },
+    {
+      "fonction": "contrôler la conformité d'un module avant expédition",
+      "metier": "Ouvrier de la construction modulaire hors site",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 42
+    },
+    {
+      "fonction": "conduire une ligne de production automatisée",
+      "metier": "Pilote de ligne de production de batteries de véhicules électriques",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 43
+    },
+    {
+      "fonction": "contrôler la qualité de composants électriques en série",
+      "metier": "Pilote de ligne de production de batteries de véhicules électriques",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 44
+    },
+    {
+      "fonction": "ajuster des paramètres de procédé de fabrication",
+      "metier": "Pilote de ligne de production de batteries de véhicules électriques",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 45
+    },
+    {
+      "fonction": "évaluer l'état et la valeur résiduelle d'un objet/matériau",
+      "metier": "Technicien valoriste du réemploi",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 46
+    },
+    {
+      "fonction": "démonter ou remettre en état un bien pour réemploi",
+      "metier": "Technicien valoriste du réemploi",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 47
+    },
+    {
+      "fonction": "orienter un flux de matière vers une filière de valorisation",
+      "metier": "Technicien valoriste du réemploi",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 48
+    },
+    {
+      "fonction": "construire un modèle virtuel synchronisé avec un système physique",
+      "metier": "Spécialiste en jumeau numérique",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 49
+    },
+    {
+      "fonction": "intégrer des flux de données de capteurs dans une simulation",
+      "metier": "Spécialiste en jumeau numérique",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 50
+    },
+    {
+      "fonction": "utiliser une simulation pour prédire une défaillance",
+      "metier": "Spécialiste en jumeau numérique",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 51
+    },
+    {
+      "fonction": "mesurer l'empreinte environnementale d'une infrastructure informatique",
+      "metier": "Responsable Green IT",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 52
+    },
+    {
+      "fonction": "définir une politique de sobriété numérique",
+      "metier": "Responsable Green IT",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 53
+    },
+    {
+      "fonction": "piloter un projet de réduction de consommation énergétique de systèmes IT",
+      "metier": "Responsable Green IT",
+      "source": "kb020",
+      "wave": "a",
+      "date": "2024-2025 (kb020)",
+      "id": 54
+    },
+    {
+      "fonction": "piloter une stratégie d'approvisionnement en énergie",
+      "metier": "Responsable en approvisionnement et performance énergétiques",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 55
+    },
+    {
+      "fonction": "auditer la performance énergétique d'une installation",
+      "metier": "Responsable en approvisionnement et performance énergétiques",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 56
+    },
+    {
+      "fonction": "négocier un contrat d'approvisionnement énergétique",
+      "metier": "Responsable en approvisionnement et performance énergétiques",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 57
+    },
+    {
+      "fonction": "réaliser une inspection technique préliminaire d'un véhicule endommagé",
+      "metier": "Préparateur technique d'actes d'expertise automobile",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 58
+    },
+    {
+      "fonction": "documenter un rapport de préparation pour expert",
+      "metier": "Préparateur technique d'actes d'expertise automobile",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 59
+    },
+    {
+      "fonction": "chiffrer une estimation de réparation",
+      "metier": "Préparateur technique d'actes d'expertise automobile",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 60
+    },
+    {
+      "fonction": "surveiller des sources de renseignement sur les menaces informatiques",
+      "metier": "Expert en renseignement et investigation sur les cybermenaces",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 61
+    },
+    {
+      "fonction": "investiguer un incident de cybersécurité",
+      "metier": "Expert en renseignement et investigation sur les cybermenaces",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 62
+    },
+    {
+      "fonction": "produire un rapport de renseignement sur une menace émergente",
+      "metier": "Expert en renseignement et investigation sur les cybermenaces",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 63
+    },
+    {
+      "fonction": "mesurer une empreinte carbone d'un site industriel",
+      "metier": "Expert en décarbonation et performance environnementale",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 64
+    },
+    {
+      "fonction": "élaborer un plan de décarbonation",
+      "metier": "Expert en décarbonation et performance environnementale",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 65
+    },
+    {
+      "fonction": "conseiller une organisation sur une trajectoire de réduction d'émissions",
+      "metier": "Expert en décarbonation et performance environnementale",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 66
+    },
+    {
+      "fonction": "auditer l'empreinte environnementale d'un tournage",
+      "metier": "Coordinateur écoproduction audiovisuelle et cinéma",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 67
+    },
+    {
+      "fonction": "mettre en œuvre des pratiques de réduction de déchets sur un plateau",
+      "metier": "Coordinateur écoproduction audiovisuelle et cinéma",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 68
+    },
+    {
+      "fonction": "coordonner des fournisseurs pour des choix éco-responsables de production",
+      "metier": "Coordinateur écoproduction audiovisuelle et cinéma",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 69
+    },
+    {
+      "fonction": "concevoir une architecture d'orchestration multi-agents",
+      "metier": "AI Agent Architect",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 70
+    },
+    {
+      "fonction": "définir des garde-fous de performance pour un système autonome",
+      "metier": "AI Agent Architect",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 71
+    },
+    {
+      "fonction": "superviser la collaboration entre plusieurs agents IA",
+      "metier": "AI Agent Architect",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 72
+    },
+    {
+      "fonction": "simuler une attaque adversariale contre un modèle",
+      "metier": "AI Security & Red Teaming Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 73
+    },
+    {
+      "fonction": "documenter une vulnérabilité découverte",
+      "metier": "AI Security & Red Teaming Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 74
+    },
+    {
+      "fonction": "recommander un correctif de sécurité pour un système IA",
+      "metier": "AI Security & Red Teaming Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 75
+    },
+    {
+      "fonction": "analyser comment un contenu est cité par un moteur de génération de réponse",
+      "metier": "GEO/AEO Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 76
+    },
+    {
+      "fonction": "adapter la structure d'un contenu pour maximiser sa citabilité par une IA",
+      "metier": "GEO/AEO Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 77
+    },
+    {
+      "fonction": "mesurer la visibilité d'une marque dans des réponses générées",
+      "metier": "GEO/AEO Specialist",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 78
+    },
+    {
+      "fonction": "former des équipes à l'adoption d'un outil IA",
+      "metier": "AI Enablement & Literacy Lead",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 79
+    },
+    {
+      "fonction": "accompagner un changement organisationnel lié à l'IA",
+      "metier": "AI Enablement & Literacy Lead",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 80
+    },
+    {
+      "fonction": "concevoir un programme de littératie IA",
+      "metier": "AI Enablement & Literacy Lead",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 81
+    },
+    {
+      "fonction": "définir une stratégie d'adoption de l'IA à l'échelle de l'organisation",
+      "metier": "Chief AI Officer / CAIO",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 82
+    },
+    {
+      "fonction": "arbitrer des priorités d'investissement technologique",
+      "metier": "Chief AI Officer / CAIO",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 83
+    },
+    {
+      "fonction": "superviser la gouvernance éthique d'une organisation en matière d'IA",
+      "metier": "Chief AI Officer / CAIO",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 84
+    },
+    {
+      "fonction": "auditer la qualité d'un jeu de données destiné à l'entraînement d'un modèle",
+      "metier": "AI Data Governance Manager",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 85
+    },
+    {
+      "fonction": "définir une politique de gouvernance des données",
+      "metier": "AI Data Governance Manager",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 86
+    },
+    {
+      "fonction": "assurer la conformité réglementaire d'un pipeline de données",
+      "metier": "AI Data Governance Manager",
+      "source": "second-wave",
+      "wave": "b",
+      "date": "2026 (second-wave)",
+      "id": 87
+    }
+  ]
+}
