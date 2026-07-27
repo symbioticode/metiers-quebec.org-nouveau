@@ -14,6 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from cnp_sha_check import cnp_sha_check, sha_lookup, load_table, _normalize, _sha1  # noqa: E402
+from build_sha_table import _expand_slash_variants  # version corrigée (dedup)  # noqa: E402
 
 table = load_table()
 
@@ -89,29 +90,7 @@ for t in ["infirmière auxiliaire", "infirmier auxiliaire", "infirmières auxili
     r = cnp_sha_check("32101", t, table)
     print(repr(t), "-> valide=", r["valide"], "type=", r["type_correspondance"])
 
-section("CAS 6 (suite) — sweep exhaustif : bug de construction dans l'expansion '/' (build_sha_table.py)")
-
-
-def _expand_slash_variants(norm_app):
-    results = [norm_app]
-    if "/" not in norm_app:
-        return results
-    slash_match = re.match(r"(.+?)(/\S+)(.*)", norm_app)
-    if slash_match:
-        prefix = slash_match.group(1)
-        slash_part = slash_match.group(2)
-        suffix = slash_match.group(3)
-        v1 = f"{prefix}{suffix}".strip()
-        v2 = f"{slash_part.lstrip('/')}{suffix}".strip()
-        for v in (v1, v2):
-            if v and v not in results:
-                results.append(v)
-    else:
-        parts = [v.strip() for v in norm_app.split("/")]
-        for part in parts:
-            if part and part not in results:
-                results.append(part)
-    return results
+section("CAS 6 (suite) — sweep exhaustif : vérification post-correction dans build_sha_table.py")
 
 
 matrix = json.load(open(Path(__file__).parent.parent / "data" / "reference" / "cnp-appellations-officielles.json", encoding="utf-8"))
