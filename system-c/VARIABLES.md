@@ -39,3 +39,26 @@ existantes — ça ne prouve toujours pas l'émergence *naturelle* d'un
 alphabet depuis un corpus brut (le clustering non supervisé, lui, le
 ferait) ; H4b resterait donc partiellement non testée même en cas de
 CORROBORÉE ici.
+
+---
+
+## Amendement 1 — correction langue (avant tout résultat, aucun embedding généré à ce stade)
+
+**Erreur de fait dans la version initiale** : le protocole pré-enregistrait
+une comparaison "français GWA ↔ français ESCO", mais le corpus GWA fourni
+(data/reference/onet-genome-stability/) est en anglais — artefact O*NET
+natif, jamais traduit dans ce projet.
+
+**Correction** : Sprint 2 compare GWA anglais ↔ ESCO English (labels
+anglais du même dump ESCO v1.2.1, disponibles via l'API/le CSV en
+sélectionnant language=en). Traduire les GWA introduirait la qualité de
+traduction comme variable non contrôlée — contraire à la rigueur exigée
+ailleurs dans ce projet.
+
+**Conséquence pour l'objectif de généralisabilité multilingue** : ce
+test seul ne valide PAS que la méthode fonctionne pour toutes les
+langues. Un sprint séparé, après clôture de celui-ci, réplique le même
+protocole en français (CSV téléchargé manuellement, hors API, par
+Andrei) pour mesurer la stabilité du taux de couverture entre langues —
+c'est ce deuxième sprint, pas celui-ci, qui répond à l'exigence
+d'agnosticisme linguistique.
