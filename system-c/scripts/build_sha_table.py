@@ -44,33 +44,51 @@ def _expand_slash_variants(norm_app: str) -> list[str]:
          "infirmier itinerant",
          "infirmiere itinerante"]
 
-    Utilise la même logique de regex que cnp_check.py pour cohérence.
-    Inclut toujours la forme complète (non-expansée) en premier.
+    Utilise la regex préfixe/suffixe, puis corrige les duplications de mots
+    consécutifs causées par un suffixe ne couvrant pas tout le mot féminin.
     """
     results = [norm_app]  # la forme complète est toujours incluse
 
     if "/" not in norm_app:
         return results
 
-    # Tenter le motif préfixe/variante+suffixe (même regex que cnp_check)
+    # Tenter le motif préfixe/variante+suffixe
     slash_match = re.match(r"(.+?)(/\S+)(.*)", norm_app)
     if slash_match:
         prefix = slash_match.group(1)
         slash_part = slash_match.group(2)
         suffix = slash_match.group(3)
+
+        # Variante 1 : préfixe + suffixe (masculine)
         v1 = f"{prefix}{suffix}".strip()
+        # Variante 2 : mot après / + suffixe (feminine)
         v2 = f"{slash_part.lstrip('/')}{suffix}".strip()
+
+        # Corriger les duplications dans v1 (ex: "auxiliaires auxiliaires" → "auxiliaires")
+        v1 = _deduplicate_consecutive_words(v1)
+
         for v in (v1, v2):
             if v and v not in results:
                 results.append(v)
     else:
-        # Pas de motif préfixe/suffixe — splitter directement sur "/"
         parts = [v.strip() for v in norm_app.split("/")]
         for part in parts:
             if part and part not in results:
                 results.append(part)
 
     return results
+
+
+def _deduplicate_consecutive_words(text: str) -> str:
+    """Supprime les mots consécutifs identiques (ex: 'auxiliaires auxiliaires' → 'auxiliaires')."""
+    words = text.split()
+    if len(words) < 2:
+        return text
+    deduped = [words[0]]
+    for w in words[1:]:
+        if w != deduped[-1]:
+            deduped.append(w)
+    return " ".join(deduped)
 
 
 def _sha1(text: str) -> str:
