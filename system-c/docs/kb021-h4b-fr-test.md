@@ -124,4 +124,50 @@ ultérieure). Corpus ESCO utilisé : `data/reference/esco/skills_fr.csv`
 
 ## Verdict proposé
 
-*(à remplir — voir commit "verdict proposé — H4b-FR")*
+**INDÉTERMINÉE (candidat)**, selon les seuils pré-enregistrés dans
+VARIABLES.md : couverture 80.49%, entre 70% et 90%.
+
+Application mécanique des seuils de clôture fixés avant résultat : les
+41 GWA (anglais), comparés aux 13 960 skills ESCO françaises
+(`preferredLabel`), trouvent un meilleur match à similarité cosinus
+≥ 0.75 pour 33/41 (80.49%). Ni sous le plancher de 70% (RÉFUTÉE), ni au-
+dessus du plafond de 90% (CORROBORÉE) — le protocole conclut à
+INDÉTERMINÉE, diagnostic §5 méthodologie avant reformulation.
+
+**Marge de reproductibilité EN/FR (spécifique à ce sprint)** : le
+résultat de référence H4b-EN (65.85%) définissait une marge de ±10
+points (55.85%–75.85%) pour juger si l'écart anglais/français relève du
+bruit de mesure. 80.49% est **hors de cette marge** (+4.64 points
+au-dessus du plafond de 75.85%) : la couverture en français est plus
+élevée qu'en anglais, l'écart n'est pas du bruit — c'est un résultat en
+soi, à diagnostiquer plutôt qu'à ignorer, conformément à la question
+fermée de ce sprint. Ce diagnostic n'est pas fait ici (il appartient au
+Sprint 4 commun, cf. Garde-fou) ; il est seulement constaté.
+
+**Qualificatifs à porter avant d'acter ce verdict au niveau du projet**
+(pas des ajustements post-hoc du seuil — celui-ci reste 0.75/70%/90% tel
+que fixé — mais des limites de portée du test qui affectent
+l'interprétation du chiffre) :
+
+1. **Ce n'est toujours pas un test franco-français symétrique.** Les GWA
+   restent en anglais ; seul ESCO est en français. Un écart favorable au
+   français pourrait refléter une meilleure adéquation lexicale
+   fortuite entre GWA-anglais et ESCO-français pour ce corpus précis,
+   pas une propriété générale du modèle multilingue.
+2. **Corpus ESCO de taille différente entre les deux sprints** : 13 960
+   lignes valides ici (CSV officiel complet) vs 13 094 en anglais dans
+   H4b-EN (API, 1 groupe inaccessible + ~391 concepts manquants sans
+   explication). Le corpus français est donc plus complet — un
+   contributeur possible, non isolé ici, à l'écart constaté.
+3. **Une seule paire embedding/seuil testée**, comme dans H4b-EN — la
+   sensibilité du chiffre au choix du modèle d'embedding n'est pas
+   évaluée dans ce sprint.
+4. **Rapport aux autres chantiers** : ni `kb021.md`, ni
+   `kb021-h4b-clustering-test.md`, ni le fichier de résultat H4b-EN
+   (`kb021-h4b-esco-test.md`, autre branche) n'ont été consultés pour
+   produire ce résultat, conformément au garde-fou. Le seul chiffre de
+   référence utilisé (65.85%) provient de VARIABLES.md, transmis comme
+   donnée pré-enregistrée pour définir la marge de reproductibilité.
+
+Aucune modification de VARIABLES.md, des seuils, ni du corpus n'a été
+faite après observation du résultat.
