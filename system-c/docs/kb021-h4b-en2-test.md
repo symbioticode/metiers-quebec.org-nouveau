@@ -121,4 +121,47 @@ que H4b-EN et H4b-FR). Corpus ESCO utilisé : `data/reference/esco/skills_en.csv
 
 ## Verdict proposé
 
-*(à remplir — voir commit "verdict proposé — H4b-EN2")*
+**CORPUS SANS EFFET**, selon les seuils d'interprétation pré-enregistrés
+dans VARIABLES.md : couverture EN2 = 68.29%, dans la plage
+[55.85%, 75.85%] (±10pt autour de 65.85%, le chiffre EN original via
+API partielle).
+
+Application mécanique des seuils fixés avant résultat : avec un corpus
+ESCO anglais rendu aussi complet que le corpus français (13 939 concepts
+uniques via CSV officiel, contre 13 094 via l'API partiellement en
+échec), la couverture reste proche du chiffre EN original (68.29% vs
+65.85%, +2.44 points) et **hors** de la plage [70.85%, 90.13%] qui
+aurait confirmé un artefact de récupération de données. La complétude du
+corpus n'explique donc pas l'écart observé entre EN (65.85%) et FR
+(80.49%) : ce dernier reste, à ce stade, un signal potentiellement
+linguistique plutôt qu'un artefact de données manquantes côté anglais.
+
+**Qualificatifs à porter avant d'acter ce verdict au niveau du projet**
+(pas des ajustements post-hoc des seuils — ceux-ci restent tels que
+fixés — mais des limites de portée qui affectent l'interprétation) :
+
+1. **Ce sprint isole la complétude du corpus, pas d'autres facteurs.**
+   "CORPUS SANS EFFET" signifie que *cette* variable-là (nombre de
+   concepts ESCO disponibles) n'explique pas l'écart EN/FR. Cela ne
+   confirme pas positivement que la langue est la cause — seulement que
+   la complétude du corpus est écartée comme cause probable. D'autres
+   facteurs possibles (couverture du CSV FR différente en nature, pas
+   seulement en volume ; biais du modèle d'embedding vis-à-vis du
+   français vs l'anglais) ne sont pas testés ici.
+2. **Léger delta positif non nul** (68.29% vs 65.85% EN original,
+   +2.44 points) : dans le sens attendu si la complétude avait un effet
+   partiel, mais l'amplitude reste largement à l'intérieur de la marge
+   ±10pt — donc non distinguable du bruit de mesure selon le protocole
+   pré-enregistré.
+3. **Dédoublonnage du CSV** : `skills_en.csv` contenait 13 960 lignes
+   brutes pour 13 939 URIs uniques (21 doublons). Un même skill listé
+   deux fois n'aurait pas changé le résultat (le meilleur match par GWA
+   est invariant à la duplication d'une entrée), mais le nombre de
+   concepts distincts rapporté ci-dessus utilise le total dédoublonné.
+4. **Garde-fou respecté** : ni `kb021-h4b-esco-test.md` (H4b-EN) ni
+   `kb021-h4b-fr-test.md` (H4b-FR) n'ont été consultés ; seuls les deux
+   chiffres de référence (65.85% et 80.49%) transmis via VARIABLES.md
+   ont servi à définir les plages d'interprétation.
+
+Aucune modification de VARIABLES.md, des seuils, ni du corpus n'a été
+faite après observation du résultat.
