@@ -1,0 +1,21 @@
+Étape 4 (lecture seule, aucune modification/merge/suppression) — inventaire des 3 branches inconnues, exécuté le 2026-07-27 :
+
+1. origin/claude/fix-search-json-integration-lfmhya
+   Dernier commit : 28a5645 — "fix(search): charger l'index réel data/search.json au lieu du prototype hardcodé"
+   Auteur : Claude <noreply@anthropic.com>
+   Date : 2026-07-27 05:29:29 +0000
+   Commits en avance sur phase2-systemc : 1
+
+2. origin/experimental/kb0XX-migration-sens-structure
+   Dernier commit : 6dae2ae — "docs(kb002): audit indépendant Big Pickle — mapping generate.py, mêmes chiffres que CCW à 0.1pt"
+   Auteur : symbioticode <corail.synergia@proton.me>
+   Date : 2026-07-27 03:31:45 -0400
+   Commits en avance sur phase2-systemc : 3
+
+3. origin/experimental/scrape-v2-hardening
+   Dernier commit : bdedfd9 — "feat(scraper): détection générique titres + liens tolérants + multi-appellations + fix secteurs JS"
+   Auteur : symbioticode <corail.synergia@proton.me>
+   Date : 2026-07-27 12:55:53 -0400
+   Commits en avance sur phase2-systemc : 4
+
+Aucune action effectuée sur ces branches (pas de merge, pas de suppression, pas de modification). Andrei tranchera à son réveil.
