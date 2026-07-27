@@ -1,0 +1,297 @@
+{
+  "model": "paraphrase-multilingual-mpnet-base-v2",
+  "n_gwa": 41,
+  "n_esco_skills": 13960,
+  "threshold": 0.75,
+  "n_covered": 33,
+  "coverage_pct": 80.48780487804879,
+  "results": [
+    {
+      "gwa_id": "4.A.1.a.1",
+      "gwa_label": "Getting Information",
+      "best_match_uri": "http://data.europa.eu/esco/skill/696e3b5b-8b61-45af-ae4c-3ab700f197ec",
+      "best_match_label": "extraction de l’information",
+      "cosine_similarity": 0.8875054717063904
+    },
+    {
+      "gwa_id": "4.A.1.a.2",
+      "gwa_label": "Monitoring Processes, Materials, or Surroundings",
+      "best_match_uri": "http://data.europa.eu/esco/skill/c09dce1b-e198-487e-b63f-934e10a4c181",
+      "best_match_label": "surveiller la production d’une installation",
+      "cosine_similarity": 0.7922516465187073
+    },
+    {
+      "gwa_id": "4.A.1.b.1",
+      "gwa_label": "Identifying Objects, Actions, and Events",
+      "best_match_uri": "http://data.europa.eu/esco/skill/c08ec608-48cd-4cd5-ac39-171fce1c0ce5",
+      "best_match_label": "évaluer des évènements",
+      "cosine_similarity": 0.6064279079437256
+    },
+    {
+      "gwa_id": "4.A.1.b.2",
+      "gwa_label": "Inspecting Equipment, Structures, or Materials",
+      "best_match_uri": "http://data.europa.eu/esco/skill/94747ff4-603d-47d4-9780-bf53be41e190",
+      "best_match_label": "inspecter des équipements industriels",
+      "cosine_similarity": 0.8712903261184692
+    },
+    {
+      "gwa_id": "4.A.1.b.3",
+      "gwa_label": "Estimating the Quantifiable Characteristics of Products, Events, or Information",
+      "best_match_uri": "http://data.europa.eu/esco/skill/9af1bd12-01bd-4d6a-947b-69e64f23150a",
+      "best_match_label": "traiter des informations qualitatives",
+      "cosine_similarity": 0.6807068586349487
+    },
+    {
+      "gwa_id": "4.A.2.a.1",
+      "gwa_label": "Judging the Qualities of Objects, Services, or People",
+      "best_match_uri": "http://data.europa.eu/esco/skill/786a74d6-7ecd-44d5-ae4f-87ff02fe3dbf",
+      "best_match_label": "évaluer un caractère",
+      "cosine_similarity": 0.6330171823501587
+    },
+    {
+      "gwa_id": "4.A.2.a.2",
+      "gwa_label": "Processing Information",
+      "best_match_uri": "http://data.europa.eu/esco/skill/3181325d-0590-4c6e-8db1-8278427c18ff",
+      "best_match_label": "analyser des processus d'information",
+      "cosine_similarity": 0.8395025730133057
+    },
+    {
+      "gwa_id": "4.A.2.a.3",
+      "gwa_label": "Evaluating Information to Determine Compliance with Standards",
+      "best_match_uri": "http://data.europa.eu/esco/skill/1b3fc0e0-c6f9-45fc-9c6e-14bbba662979",
+      "best_match_label": "élaborer des normes d’information",
+      "cosine_similarity": 0.782185435295105
+    },
+    {
+      "gwa_id": "4.A.2.a.4",
+      "gwa_label": "Analyzing Data or Information",
+      "best_match_uri": "http://data.europa.eu/esco/skill/2b92a5b2-6758-4ee3-9fb4-b6387a55cc8f",
+      "best_match_label": "effectuer une analyse de données",
+      "cosine_similarity": 0.8744047284126282
+    },
+    {
+      "gwa_id": "4.A.2.b.1",
+      "gwa_label": "Making Decisions and Solving Problems",
+      "best_match_uri": "http://data.europa.eu/esco/skill/adc6dc11-3376-467b-96c5-9b0a21edc869",
+      "best_match_label": "résoudre les problèmes",
+      "cosine_similarity": 0.8236668109893799
+    },
+    {
+      "gwa_id": "4.A.2.b.2",
+      "gwa_label": "Thinking Creatively",
+      "best_match_uri": "http://data.europa.eu/esco/skill/c624c6a3-b0ba-4a31-a296-0d433fe47e41",
+      "best_match_label": "avoir un esprit créatif",
+      "cosine_similarity": 0.9269684553146362
+    },
+    {
+      "gwa_id": "4.A.2.b.3",
+      "gwa_label": "Updating and Using Relevant Knowledge",
+      "best_match_uri": "http://data.europa.eu/esco/skill/a38e54a1-0922-4e8f-92a6-4f028d7d569f",
+      "best_match_label": "tenir à jour ses connaissances professionnelles",
+      "cosine_similarity": 0.6868178844451904
+    },
+    {
+      "gwa_id": "4.A.2.b.4",
+      "gwa_label": "Developing Objectives and Strategies",
+      "best_match_uri": "http://data.europa.eu/esco/skill/4e0076f7-155d-4e2a-a058-39097de48420",
+      "best_match_label": "transposer la stratégie en actions et objectifs",
+      "cosine_similarity": 0.8479903936386108
+    },
+    {
+      "gwa_id": "4.A.2.b.5",
+      "gwa_label": "Scheduling Work and Activities",
+      "best_match_uri": "http://data.europa.eu/esco/skill/f6c7b7a5-6194-45a2-8791-9609c897b1a0",
+      "best_match_label": "prendre en considération les fuseaux horaires dans l'exécution du travail",
+      "cosine_similarity": 0.7894853949546814
+    },
+    {
+      "gwa_id": "4.A.2.b.6",
+      "gwa_label": "Organizing, Planning, and Prioritizing Work",
+      "best_match_uri": "http://data.europa.eu/esco/skill/01755f08-4df4-4cf0-8d22-08f94cad68b5",
+      "best_match_label": "organiser le travail",
+      "cosine_similarity": 0.8826749324798584
+    },
+    {
+      "gwa_id": "4.A.3.a.1",
+      "gwa_label": "Performing General Physical Activities",
+      "best_match_uri": "http://data.europa.eu/esco/skill/c86dab1d-2ef6-4a05-b8da-d9312262ef36",
+      "best_match_label": "exercer un entraînement physique",
+      "cosine_similarity": 0.8764942288398743
+    },
+    {
+      "gwa_id": "4.A.3.a.2",
+      "gwa_label": "Handling and Moving Objects",
+      "best_match_uri": "http://data.europa.eu/esco/skill/b6bdf202-524f-475d-b813-2aa9af005c37",
+      "best_match_label": "déplacer des objets",
+      "cosine_similarity": 0.881410539150238
+    },
+    {
+      "gwa_id": "4.A.3.a.3",
+      "gwa_label": "Controlling Machines and Processes",
+      "best_match_uri": "http://data.europa.eu/esco/skill/188048ff-18bf-43c4-a1a0-7adb6e68f421",
+      "best_match_label": "contrôler le fonctionnement de machines",
+      "cosine_similarity": 0.9179630279541016
+    },
+    {
+      "gwa_id": "4.A.3.a.4",
+      "gwa_label": "Operating Vehicles, Mechanized Devices, or Equipment",
+      "best_match_uri": "http://data.europa.eu/esco/skill/8efb6150-2c43-4109-b3cd-41c3451698ea",
+      "best_match_label": "entretenir des équipements mécaniques",
+      "cosine_similarity": 0.8214402198791504
+    },
+    {
+      "gwa_id": "4.A.3.b.1",
+      "gwa_label": "Working with Computers",
+      "best_match_uri": "http://data.europa.eu/esco/skill/3c6fe585-7d12-4315-b579-e30c042088ce",
+      "best_match_label": "utiliser des systèmes d’ingénierie assistés par ordinateur",
+      "cosine_similarity": 0.7901996374130249
+    },
+    {
+      "gwa_id": "4.A.3.b.2",
+      "gwa_label": "Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",
+      "best_match_uri": "http://data.europa.eu/esco/skill/465af498-53b1-4e04-9f49-7458afb59274",
+      "best_match_label": "concevoir des équipements utilitaires",
+      "cosine_similarity": 0.8316189646720886
+    },
+    {
+      "gwa_id": "4.A.3.b.4",
+      "gwa_label": "Repairing and Maintaining Mechanical Equipment",
+      "best_match_uri": "http://data.europa.eu/esco/skill/c4fe78ae-8fef-4aa6-b767-146ed2b40198",
+      "best_match_label": "réparer des équipements industriels",
+      "cosine_similarity": 0.8603487014770508
+    },
+    {
+      "gwa_id": "4.A.3.b.5",
+      "gwa_label": "Repairing and Maintaining Electronic Equipment",
+      "best_match_uri": "http://data.europa.eu/esco/skill/e487f6f8-854d-4210-9658-4196f07cc209",
+      "best_match_label": "réparer des composants électroniques",
+      "cosine_similarity": 0.8718805313110352
+    },
+    {
+      "gwa_id": "4.A.3.b.6",
+      "gwa_label": "Documenting/Recording Information",
+      "best_match_uri": "http://data.europa.eu/esco/skill/6451e645-67b5-4cc7-aafd-fab19629fa82",
+      "best_match_label": "archiver la documentation relative à l'œuvre",
+      "cosine_similarity": 0.7939780950546265
+    },
+    {
+      "gwa_id": "4.A.4.a.1",
+      "gwa_label": "Interpreting the Meaning of Information for Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/b01444aa-6f62-4b7d-ab30-4385a9148580",
+      "best_match_label": "techniques de réflexion personnelle fondées sur le retour d’information",
+      "cosine_similarity": 0.7182657122612
+    },
+    {
+      "gwa_id": "4.A.4.a.2",
+      "gwa_label": "Communicating with Supervisors, Peers, or Subordinates",
+      "best_match_uri": "http://data.europa.eu/esco/skill/91be6910-bd67-4e1f-95b0-32513b399b24",
+      "best_match_label": "communiquer les problèmes à ses supérieurs",
+      "cosine_similarity": 0.839766800403595
+    },
+    {
+      "gwa_id": "4.A.4.a.3",
+      "gwa_label": "Communicating with People Outside the Organization",
+      "best_match_uri": "http://data.europa.eu/esco/skill/73e3598d-e01d-4cbd-b786-cd85bf54395c",
+      "best_match_label": "communiquer avec d’autres personnes importantes pour les usagers",
+      "cosine_similarity": 0.783098578453064
+    },
+    {
+      "gwa_id": "4.A.4.a.4",
+      "gwa_label": "Establishing and Maintaining Interpersonal Relationships",
+      "best_match_uri": "http://data.europa.eu/esco/skill/73a023d0-888c-4d89-87e4-a03e84395da8",
+      "best_match_label": "développer des relations thérapeutiques",
+      "cosine_similarity": 0.7309690117835999
+    },
+    {
+      "gwa_id": "4.A.4.a.5",
+      "gwa_label": "Assisting and Caring for Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/17a3dd28-5d74-48de-b0ad-b1f7ca3c5d33",
+      "best_match_label": "apporter son aide dans des situations d’urgence",
+      "cosine_similarity": 0.7707304954528809
+    },
+    {
+      "gwa_id": "4.A.4.a.6",
+      "gwa_label": "Selling or Influencing Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/0c0488b3-fca5-4deb-865b-8dc605c3d909",
+      "best_match_label": "argumentaire de vente",
+      "cosine_similarity": 0.7330061793327332
+    },
+    {
+      "gwa_id": "4.A.4.a.7",
+      "gwa_label": "Resolving Conflicts and Negotiating with Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/96de2e86-e287-41f2-88ab-15a2343afc6f",
+      "best_match_label": "résoudre les conflits",
+      "cosine_similarity": 0.8920868039131165
+    },
+    {
+      "gwa_id": "4.A.4.a.8",
+      "gwa_label": "Performing for or Working Directly with the Public",
+      "best_match_uri": "http://data.europa.eu/esco/skill/dffed0c4-0de5-437c-90d6-a1619eacc05e",
+      "best_match_label": "parler de son œuvre en public",
+      "cosine_similarity": 0.6692479848861694
+    },
+    {
+      "gwa_id": "4.A.4.b.1",
+      "gwa_label": "Coordinating the Work and Activities of Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/d4b2fc0b-8ebf-4691-9d84-15c73c506a8b",
+      "best_match_label": "coordonner des activités de ramonage",
+      "cosine_similarity": 0.8417874574661255
+    },
+    {
+      "gwa_id": "4.A.4.b.2",
+      "gwa_label": "Developing and Building Teams",
+      "best_match_uri": "http://data.europa.eu/esco/skill/b19e0820-a96f-4c0a-a724-3c056180c1b3",
+      "best_match_label": "construire un esprit d’équipe",
+      "cosine_similarity": 0.8860623836517334
+    },
+    {
+      "gwa_id": "4.A.4.b.3",
+      "gwa_label": "Training and Teaching Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/699e7c26-6502-4e78-a823-3656ff5a5b8b",
+      "best_match_label": "instruire autrui",
+      "cosine_similarity": 0.8948034048080444
+    },
+    {
+      "gwa_id": "4.A.4.b.4",
+      "gwa_label": "Guiding, Directing, and Motivating Subordinates",
+      "best_match_uri": "http://data.europa.eu/esco/skill/d5145a9a-602e-40bf-b3e1-f04cf9c3ef86",
+      "best_match_label": "principes de leadership",
+      "cosine_similarity": 0.7801935076713562
+    },
+    {
+      "gwa_id": "4.A.4.b.5",
+      "gwa_label": "Coaching and Developing Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/87439d9b-b537-4f90-a00a-3ec3bbfec5d1",
+      "best_match_label": "coacher des jeunes",
+      "cosine_similarity": 0.8571103811264038
+    },
+    {
+      "gwa_id": "4.A.4.b.6",
+      "gwa_label": "Providing Consultation and Advice to Others",
+      "best_match_uri": "http://data.europa.eu/esco/skill/045f71e6-0699-4169-8a54-9c6b96f3174d",
+      "best_match_label": "conseiller d’autres personnes",
+      "cosine_similarity": 0.8804885149002075
+    },
+    {
+      "gwa_id": "4.A.4.c.1",
+      "gwa_label": "Performing Administrative Activities",
+      "best_match_uri": "http://data.europa.eu/esco/skill/ab986bc4-df92-4351-9ac1-aa75af943cf7",
+      "best_match_label": "effectuer des tâches administratives",
+      "cosine_similarity": 0.956717848777771
+    },
+    {
+      "gwa_id": "4.A.4.c.2",
+      "gwa_label": "Staffing Organizational Units",
+      "best_match_uri": "http://data.europa.eu/esco/skill/9df34bc3-25d4-4452-a896-4d19b94ef896",
+      "best_match_label": "gérer l’administration du personnel",
+      "cosine_similarity": 0.8240631818771362
+    },
+    {
+      "gwa_id": "4.A.4.c.3",
+      "gwa_label": "Monitoring and Controlling Resources",
+      "best_match_uri": "http://data.europa.eu/esco/skill/911e13ee-1eec-4243-88c8-3c08a3681a19",
+      "best_match_label": "gérer des ressources",
+      "cosine_similarity": 0.7898425459861755
+    }
+  ]
+}

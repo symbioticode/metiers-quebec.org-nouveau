@@ -1,7 +1,7 @@
 # KB021 — H4b-FR : réplication translinguistique GWA (EN) ↔ ESCO skills (FR)
 
 **Branche** : experimental/h4b-esco-fr-replication
-**Statut** : méthode pré-enregistrée, résultat non encore produit.
+**Statut** : résultat produit.
 
 ## Question fermée
 
@@ -71,8 +71,57 @@ clôture indépendante des deux branches.
 
 ## Résultat
 
-*(à remplir après exécution — voir commit "résultat — H4b-FR")*
+Couverture : **33/41 = 80.49%** au seuil de similarité cosinus ≥ 0.75.
+
+JSON brut : `data/reference/esco/h4b-fr-results.json` (même structure que
+`h4b-esco-results.json` de H4b-EN pour comparaison automatisée
+ultérieure). Corpus ESCO utilisé : `data/reference/esco/skills_fr.csv`
+(13 960 lignes valides, colonne `preferredLabel`).
+
+| GWA (EN) | Meilleur match ESCO (FR) | Similarité cosinus | ≥0.75 |
+|---|---|---|---|
+| Performing Administrative Activities | effectuer des tâches administratives | 0.957 | oui |
+| Thinking Creatively | avoir un esprit créatif | 0.927 | oui |
+| Controlling Machines and Processes | contrôler le fonctionnement de machines | 0.918 | oui |
+| Training and Teaching Others | instruire autrui | 0.895 | oui |
+| Resolving Conflicts and Negotiating with Others | résoudre les conflits | 0.892 | oui |
+| Getting Information | extraction de l'information | 0.888 | oui |
+| Developing and Building Teams | construire un esprit d'équipe | 0.886 | oui |
+| Organizing, Planning, and Prioritizing Work | organiser le travail | 0.883 | oui |
+| Handling and Moving Objects | déplacer des objets | 0.881 | oui |
+| Providing Consultation and Advice to Others | conseiller d'autres personnes | 0.880 | oui |
+| Performing General Physical Activities | exercer un entraînement physique | 0.876 | oui |
+| Analyzing Data or Information | effectuer une analyse de données | 0.874 | oui |
+| Repairing and Maintaining Electronic Equipment | réparer des composants électroniques | 0.872 | oui |
+| Inspecting Equipment, Structures, or Materials | inspecter des équipements industriels | 0.871 | oui |
+| Repairing and Maintaining Mechanical Equipment | réparer des équipements industriels | 0.860 | oui |
+| Coaching and Developing Others | coacher des jeunes | 0.857 | oui |
+| Developing Objectives and Strategies | transposer la stratégie en actions et objectifs | 0.848 | oui |
+| Coordinating the Work and Activities of Others | coordonner des activités de ramonage | 0.842 | oui |
+| Communicating with Supervisors, Peers, or Subordinates | communiquer les problèmes à ses supérieurs | 0.840 | oui |
+| Processing Information | analyser des processus d'information | 0.840 | oui |
+| Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment | concevoir des équipements utilitaires | 0.832 | oui |
+| Staffing Organizational Units | gérer l'administration du personnel | 0.824 | oui |
+| Making Decisions and Solving Problems | résoudre les problèmes | 0.824 | oui |
+| Operating Vehicles, Mechanized Devices, or Equipment | entretenir des équipements mécaniques | 0.821 | oui |
+| Documenting/Recording Information | archiver la documentation relative à l'œuvre | 0.794 | oui |
+| Monitoring Processes, Materials, or Surroundings | surveiller la production d'une installation | 0.792 | oui |
+| Working with Computers | utiliser des systèmes d'ingénierie assistés par ordinateur | 0.790 | oui |
+| Monitoring and Controlling Resources | gérer des ressources | 0.790 | oui |
+| Scheduling Work and Activities | prendre en considération les fuseaux horaires dans l'exécution du travail | 0.789 | oui |
+| Communicating with People Outside the Organization | communiquer avec d'autres personnes importantes pour les usagers | 0.783 | oui |
+| Evaluating Information to Determine Compliance with Standards | élaborer des normes d'information | 0.782 | oui |
+| Guiding, Directing, and Motivating Subordinates | principes de leadership | 0.780 | oui |
+| Assisting and Caring for Others | apporter son aide dans des situations d'urgence | 0.771 | oui |
+| Selling or Influencing Others | argumentaire de vente | 0.733 | non |
+| Establishing and Maintaining Interpersonal Relationships | développer des relations thérapeutiques | 0.731 | non |
+| Interpreting the Meaning of Information for Others | techniques de réflexion personnelle fondées sur le retour d'information | 0.718 | non |
+| Updating and Using Relevant Knowledge | tenir à jour ses connaissances professionnelles | 0.687 | non |
+| Estimating the Quantifiable Characteristics of Products, Events, or Information | traiter des informations qualitatives | 0.681 | non |
+| Performing for or Working Directly with the Public | parler de son œuvre en public | 0.669 | non |
+| Judging the Qualities of Objects, Services, or People | évaluer un caractère | 0.633 | non |
+| Identifying Objects, Actions, and Events | évaluer des évènements | 0.606 | non |
 
 ## Verdict proposé
 
-*(à remplir après résultat — voir commit "verdict proposé — H4b-FR")*
+*(à remplir — voir commit "verdict proposé — H4b-FR")*
