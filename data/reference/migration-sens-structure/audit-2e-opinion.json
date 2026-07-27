@@ -1,0 +1,58 @@
+{
+  "audit": "2e opinion indépendante — structure du site live vs corpus stocké",
+  "timestamp": "2026-07-27",
+  "author": "Claude Code Web",
+  "independence_note": "Lecture indépendante (docs/audit-claude-code-web-structure-site.md §1-4) effectuée avant toute lecture de scraper/scrape_v2.py, scripts/corpus_raw_v2.py, ou de tout résultat de Big Pickle sur cette branche. Aucun résultat de Big Pickle n'était présent sur la branche au moment de la rédaction.",
+  "big_pickle_convergence": {
+    "status": "non_disponible",
+    "reason": "Aucun fichier attribuable à Big Pickle n'était présent sur experimental/kb0XX-migration-sens-structure au moment de ce travail. Score de convergence non calculable. À compléter dès que le résultat de Big Pickle est accessible sur la branche.",
+    "matching_only": [],
+    "claude_code_web_only": [],
+    "big_pickle_only": []
+  },
+  "ecarts": [
+    {
+      "id": "S1",
+      "classification": "structurel",
+      "titre": "Secteur \"Études multidisciplinaires\" absent du corpus",
+      "site_live": "31 secteurs listés dans le menu déroulant de accueil.html",
+      "corpus_stocke": "30 secteur_nom distincts dans data/corpus_raw_v2/*.json (420 fichiers) ; seul manquant : \"Études multidisciplinaires\"",
+      "cause_confirmee": "scraper/scrape_v2.py::scrape_sectors attend une URL de secteur au format /{slug}/{slug}.htm(l) ; l'URL réelle de ce secteur est /autres-pages/multi.html, hors convention -> page jamais visitée, marquée SKIP.",
+      "preuve": "comptage direct des secteur_nom distincts sur les 420 fichiers de data/corpus_raw_v2/, comparé à la liste exacte lue dans accueil.html (site live)"
+    },
+    {
+      "id": "S2",
+      "classification": "structurel",
+      "titre": "Perte de liens vers des fiches métier à cause du texte de lien imbriqué dans <span>",
+      "site_live": "104 balises <a href>...</a> sur batiment/batiment.htm (compté indépendamment)",
+      "corpus_stocke": "73/104 liens capturés par scrape_v2.py::scrape_sectors (regex [^<]+ exige un texte de lien sans balise imbriquée) ; 31 liens perdus (~30%), incluant tailleur_pierres.html",
+      "cause_confirmee": "regex r'<a\\s+href=\"([^\"]+)\"[^>]*>([^<]+)</a>' ne matche pas <a href=\"...\"><span ...>Texte</span></a>",
+      "preuve": "comparaison directe des 104 <a>...</a> (DOTALL) vs 73 matches du regex du scraper, sur le même fichier batiment.htm téléchargé indépendamment. Contre-exemple : protection/protection.htm, 45/45 liens capturés (0 perte) — taux non uniforme entre pages.",
+      "note": "explique concrètement l'absence de data/corpus_raw_v2/tailleur_pierres*.json malgré un lien direct existant depuis batiment.htm — la page fondatrice du projet (kb010) n'est scrapée nulle part dans le corpus actuel"
+    },
+    {
+      "id": "S3",
+      "classification": "structurel",
+      "titre": "Liste fermée de 15 regex de titres de section dans scrape_v2.py — reproduction du mécanisme kb002",
+      "site_live": "protection/ambulancier.htm contient au moins 20 sections réelles (lues indépendamment, §2.3 du doc) : QUALITÉS ET APTITUDES, PROFESSIONS APPARENTÉES, EMPLOYEURS POTENTIELS, CARTE DE COMPÉTENCE, PLACEMENT, SALAIRE, PORTRAIT, PERSPECTIVES D'AVENIR, sous-section préhospitalière, LE PROGRAMME D'ÉTUDES, AUTRES EXIGENCES D'ADMISSION, CRITÈRES DE SÉLECTION, ENDROITS DE FORMATION, etc.",
+      "corpus_stocke": "data/corpus_raw_v2/ambulancier.json ne contient que 7 clés : intro, LIENS RECOMMANDÉS, TÂCHES ET RESPONSABILITÉS, VOIR AUSSI, EXIGENCES DU MARCHÉ DU TRAVAIL, MILIEU DE TRAVAIL, EXIGENCES D'ADMISSION",
+      "cause_confirmee": "scraper/scrape_v2.py::ProfessionParserV2.parse_sections utilise 15 regex fixes (section_patterns, ligne 202) via re.split ; tout titre réel non matché est fusionné dans la section précédente. SALAIRE (titre réel) ne matche pas DONNÉES SALARIALES (regex attendue) ; PLACEMENT ne matche pas STATISTIQUES DE PLACEMENT ; PERSPECTIVES D'AVENIR ne matche pas PERSPECTIVES D'EMPLOI ; PROFESSIONS APPARENTÉES, CARTE DE COMPÉTENCE, CRITÈRES DE SÉLECTION n'ont aucune regex correspondante.",
+      "preuve": "comparaison directe entre les clés de data/corpus_raw_v2/ambulancier.json et les titres de section lus indépendamment sur protection/ambulancier.htm (curl brut)",
+      "voir_aussi": "docs/audit-fidelite-template-2026.md — mesure complète de ce mécanisme sur les 420 fiches, avec chiffres de couverture par section"
+    },
+    {
+      "id": "S4",
+      "classification": "structurel",
+      "titre": "Pages regroupant plusieurs appellations de métier sous une seule URL, traitées comme un seul métier",
+      "site_live": "batiment/occupations.html (titre réel : \"métiers non spécialisés en construction\") regroupe plusieurs appellations distinctes sur une seule page",
+      "corpus_stocke": "data/corpus_raw_v2/occupationsl.json existe, avec nom = \"Aide briqueteur-maçon\" — une seule appellation retenue pour représenter toute la page groupée ; les autres appellations bundlées ne sont pas des entrées distinctes",
+      "cause_confirmee": "scrape_professions() traite 1 URL = 1 entrée ; pas de détection de pages multi-métiers",
+      "preuve": "lecture indépendante du <title> de occupations.html (\"métiers non spécialisés en construction\") vs contenu de occupationsl.json (nom singulier)"
+    }
+  ],
+  "ecarts_semantiques": {
+    "status": "hors_perimetre",
+    "note": "Non audités en profondeur — l'effort de cette 2e opinion a porté sur la structure (étape 1 du brief). Un audit sémantique fin nécessiterait un échantillon plus large que les 4 pages lues (docs/audit-claude-code-web-structure-site.md §2)."
+  },
+  "avertissement_instant_de_comparaison": "Aucune garantie que Big Pickle a lu le site live au même instant que cet audit. Les en-têtes HTTP Last-Modified observés (2026-03 à 2026-06 sur les 3 pages échantillonnées) montrent un site activement maintenu — un écart trouvé par un seul des deux audits peut refléter un site qui a changé entre les deux passages, pas uniquement une différence de méthode de lecture."
+}
