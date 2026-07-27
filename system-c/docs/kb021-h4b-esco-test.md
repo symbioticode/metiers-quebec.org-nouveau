@@ -1,7 +1,7 @@
 # KB021 — H4b-ESCO : correspondance sémantique GWA ↔ ESCO skills
 
 **Branche** : experimental/h4b-esco-onet-closure
-**Statut** : méthode pré-enregistrée, résultat non encore produit.
+**Statut** : résultat produit (voir Amendement 1 ci-dessous, langue EN/EN).
 
 ## Question fermée
 
@@ -13,19 +13,47 @@ large et stable, plutôt qu'une taxonomie isolée ?
 ## Méthode (fixée avant tout résultat)
 
 - **Corpus GWA** : 41 O*NET Generalized Work Activities,
-  `data/reference/onet-genome-stability/` (branche phase2-systemc).
-- **Corpus ESCO** : dump officiel v1.2.1 (déc. 2025), 13 890 concepts
-  skills/knowledge/competence, CSV, langue française, téléchargé
-  directement depuis https://esco.ec.europa.eu/en/use-esco/download
-  (pas de miroir tiers). Licence CC BY 4.0.
+  `data/reference/onet-genome-stability/30.3.json` (release la plus
+  récente, branche phase2-systemc). Labels en anglais (artefact O*NET
+  natif, jamais traduit).
+- **Corpus ESCO** : ESCO v1.2.1, skills member concepts, récupérés via
+  l'API REST officielle (`https://ec.europa.eu/esco/api/`), scheme
+  `concept-scheme/member-skills`, traversée récursive de la hiérarchie
+  (S/K/L/A → groupes → skills feuilles), langue anglaise. **13 094
+  skills récupérés** sur 13 485 annoncés par l'API (13 890 dans
+  VARIABLES.md, chiffre du CSV officiel) : 1 groupe (`skill/S1.5.3`)
+  inaccessible (erreur serveur 500 côté ESCO, persistante,
+  indépendante de la langue — non contournable), le reste de l'écart
+  (~391 concepts) n'est pas expliqué et reste une limite documentée de
+  cette extraction. Licence CC BY 4.0.
 - **Modèle d'embedding** : `paraphrase-multilingual-mpnet-base-v2`
-  (Sentence-Transformers) — choisi pour comparaison français↔français,
-  exécution locale (pas d'appel API externe, pas de fuite de données).
-- **Calcul** : embeddings des 41 GWA et des 13 890 skills ESCO,
-  similarité cosinus, meilleur match ESCO retenu par GWA.
+  (Sentence-Transformers), exécution locale (pas d'appel API externe
+  pour l'inférence, pas de fuite de données).
+- **Calcul** : embeddings normalisés des 41 GWA et des 13 094 skills
+  ESCO, similarité cosinus, meilleur match ESCO retenu par GWA.
 - **Métrique de couverture** : % des 41 GWA dont le meilleur match ESCO
   a une similarité ≥ 0.75 (seuil choisi arbitrairement mais fixé ici,
   non ajusté après résultat).
+
+## Amendement 1 — correction langue (voir VARIABLES.md)
+
+Le protocole initial pré-enregistrait une comparaison français↔français.
+Erreur de fait : le corpus GWA fourni est en anglais uniquement. Correction
+actée dans VARIABLES.md avant tout résultat : comparaison **GWA anglais ↔
+ESCO anglais** (labels anglais du même dump ESCO v1.2.1, récupérés via
+l'API en `language=en`). Ce test ne valide donc pas l'agnosticisme
+linguistique de la méthode — un sprint séparé en français est prévu après
+clôture de celui-ci.
+
+## Écart au protocole — source ESCO via API plutôt que CSV
+
+VARIABLES.md prescrivait un CSV téléchargé manuellement depuis
+`esco.ec.europa.eu/en/use-esco/download`. Ce formulaire exige une adresse
+courriel pour recevoir le lien de téléchargement (inscription), ce qui
+sortait du périmètre autonome de ce test. Écart validé : utilisation de
+l'API REST officielle ESCO (même source, même version v1.2.1, pas de
+miroir tiers), avec la limite de couverture documentée ci-dessus
+(13 094/13 890, ~94.3%).
 
 ## Seuils de clôture (pré-enregistrés)
 
@@ -56,8 +84,57 @@ partiellement non testée même en cas de CORROBORÉE ici.
 
 ## Résultat
 
-*(à remplir après exécution — voir commit "résultat — H4b-ESCO")*
+Couverture : **27/41 = 65.85%** au seuil de similarité cosinus ≥ 0.75.
+
+JSON brut : `data/reference/esco/h4b-esco-results.json`
+(41 GWA, meilleur match ESCO, score, + métadonnées de run).
+Corpus ESCO utilisé : `data/reference/esco/esco-skills-en.json` (13 094
+skills, labels anglais).
+
+| GWA | Meilleur match ESCO | Similarité cosinus | ≥0.75 |
+|---|---|---|---|
+| Thinking Creatively | think creatively | 0.968 | oui |
+| Repairing and Maintaining Mechanical Equipment | maintain mechanical equipment | 0.904 | oui |
+| Developing and Building Teams | team building | 0.904 | oui |
+| Repairing and Maintaining Electronic Equipment | maintain electronic equipment | 0.892 | oui |
+| Getting Information | information extraction | 0.881 | oui |
+| Working with Computers | use a computer | 0.865 | oui |
+| Processing Information | analyse information processes | 0.862 | oui |
+| Scheduling Work and Activities | follow work schedule | 0.861 | oui |
+| Performing General Physical Activities | assist in performing physical exercises | 0.856 | oui |
+| Coaching and Developing Others | develop a coaching style | 0.851 | oui |
+| Inspecting Equipment, Structures, or Materials | inspect industrial equipment | 0.848 | oui |
+| Analyzing Data or Information | analyse information processes | 0.839 | oui |
+| Controlling Machines and Processes | operate automated process control | 0.839 | oui |
+| Providing Consultation and Advice to Others | consultation methods | 0.815 | oui |
+| Guiding, Directing, and Motivating Subordinates | exert a goal-oriented leadership role towards colleagues | 0.813 | oui |
+| Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment | design hardware | 0.810 | oui |
+| Organizing, Planning, and Prioritizing Work | work in an organised manner | 0.808 | oui |
+| Operating Vehicles, Mechanized Devices, or Equipment | operation of transport equipment | 0.807 | oui |
+| Training and Teaching Others | advise on teaching methods | 0.805 | oui |
+| Evaluating Information to Determine Compliance with Standards | follow interpreting quality standards | 0.796 | oui |
+| Monitoring and Controlling Resources | manage resources | 0.796 | oui |
+| Resolving Conflicts and Negotiating with Others | handle conflicts | 0.794 | oui |
+| Staffing Organizational Units | personnel management | 0.789 | oui |
+| Communicating with Supervisors, Peers, or Subordinates | communicate problems to senior colleagues | 0.789 | oui |
+| Monitoring Processes, Materials, or Surroundings | monitor processing environment conditions | 0.784 | oui |
+| Performing Administrative Activities | execute administration | 0.784 | oui |
+| Making Decisions and Solving Problems | make decisions | 0.759 | oui |
+| Documenting/Recording Information | write batch record documentation | 0.749 | non |
+| Developing Objectives and Strategies | develop strategy to solve problems | 0.741 | non |
+| Establishing and Maintaining Interpersonal Relationships | maintain working relationships | 0.737 | non |
+| Performing for or Working Directly with the Public | speak about your work in public | 0.725 | non |
+| Communicating with People Outside the Organization | communicate professionally with colleagues in other fields | 0.721 | non |
+| Coordinating the Work and Activities of Others | work in an organised manner | 0.714 | non |
+| Assisting and Caring for Others | assist community | 0.712 | non |
+| Updating and Using Relevant Knowledge | maintain updated professional knowledge | 0.695 | non |
+| Estimating the Quantifiable Characteristics of Products, Events, or Information | observe products' behaviour | 0.686 | non |
+| Handling and Moving Objects | supervise artefact movement | 0.679 | non |
+| Selling or Influencing Others | demonstrate motivation for sales | 0.672 | non |
+| Interpreting the Meaning of Information for Others | communicate by use of interpretation in social services | 0.664 | non |
+| Identifying Objects, Actions, and Events | determine event objectives | 0.647 | non |
+| Judging the Qualities of Objects, Services, or People | characteristics of services | 0.564 | non |
 
 ## Verdict proposé
 
-*(à remplir après résultat — voir commit "verdict proposé — H4b-ESCO")*
+*(à remplir — voir commit "verdict proposé — H4b-ESCO")*
