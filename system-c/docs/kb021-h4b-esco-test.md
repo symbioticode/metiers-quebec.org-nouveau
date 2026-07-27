@@ -137,4 +137,41 @@ skills, labels anglais).
 
 ## Verdict proposé
 
-*(à remplir — voir commit "verdict proposé — H4b-ESCO")*
+**RÉFUTÉE (candidat)**, selon les seuils pré-enregistrés dans
+VARIABLES.md : couverture 65.85% < 70%.
+
+Application mécanique du seuil de clôture fixé avant résultat : les 41
+GWA O*NET, comparés aux 13 094 skills ESCO récupérées (labels anglais,
+via API), ne trouvent un meilleur match à similarité cosinus ≥ 0.75 que
+pour 27/41 (65.85%). Sous le plancher de 70%, le protocole conclut à
+RÉFUTÉE plutôt qu'INDÉTERMINÉE.
+
+**Qualificatifs à porter avant d'acter ce verdict au niveau du projet**
+(pas des ajustements post-hoc du seuil — le seuil reste 0.75/70%/90% tel
+que fixé — mais des limites de portée du test qui affectent
+l'interprétation du chiffre) :
+
+1. **Ce n'est pas le test prévu.** VARIABLES.md prévoyait français↔
+   français ; ce résultat est anglais↔anglais (Amendement 1). Le test
+   français reste à faire (sprint séparé, CSV fourni par Andrei) avant
+   de considérer H4b-ESCO comme close dans une langue quelconque.
+2. **Couverture ESCO incomplète** : 13 094/13 890 concepts (94.3%),
+   1 groupe inaccessible pour raison technique documentée, ~391
+   concepts manquants sans explication trouvée. Un score de couverture
+   calculé sur l'ensemble complet pourrait différer légèrement (plus de
+   candidats potentiels → coverage ne peut que monter ou rester égale,
+   jamais baisser) mais l'écart est trop petit pour expliquer 65.85%
+   vs 70%.
+3. **Une seule paire embedding/seuil testée.** Le protocole interdit
+   d'ajuster le seuil après résultat (respecté), mais ne dit rien sur
+   la sensibilité du chiffre au choix du modèle d'embedding — un autre
+   modèle multilingue pourrait donner une couverture différente. Ce
+   n'est pas un ajustement post-hoc du test actuel, mais un diagnostic
+   à documenter au §5 méthodologie si le statut INDÉTERMINÉE ou une
+   reformulation sont un jour envisagés pour ce chantier.
+4. **Rapport au test clustering (TF-IDF, kb021-h4b-clustering-test.md)**
+   : non consulté ici, conformément au garde-fou. Le rapprochement des
+   deux résultats est prévu au Sprint 4, pas avant.
+
+Aucune modification de VARIABLES.md, du seuil, ni du corpus n'a été
+faite après observation du résultat.
