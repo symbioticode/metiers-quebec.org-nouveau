@@ -1,23 +1,87 @@
 # Rapport d'audit — branches vs `phase2-systemc`
 
 **Date** : 2026-07-26
-**Branche de référence** : `phase2-systemc` (`1750d49`)
+**Branche de référence** : `phase2-systemc` (`5f6b09e` — après merge)
 **Commande de fetch** : `git fetch origin '+refs/heads/*:refs/remotes/origin/*' --prune`
 
 ---
 
-## Partie A — Commits pushed sur `phase2-systemc`
+## État final (`git ls-remote origin`, 2026-07-26)
 
-| # | SHA | Message |
+| Branche | SHA | Statut |
 |---|---|---|
-| 1 | `3515a61` | `docs(gouvernance): plan-cloture-hypotheses.md — protocole de clôture des hypothèses` |
-| 2 | `1750d49` | `docs(gouvernance): methodologie-agentique-system-c.md — cycle de sprint et rôles agentiques` |
-
-Remote confirmé : `1750d49` = `refs/heads/phase2-systemc` ✅
+| `main` | `ebee422` | inchangée |
+| `phase2-systemc` | `5f6b09e` | merge kb021 effectué |
+| `archive/cnp-sha-check-pending` | `9fb0002` | renommée depuis `experimental/cnp-sha-check` |
+| `archive/system-c-tentative-1` | — | supprimée |
+| `experimental/cnp-sha-check` | — | supprimée (→ `archive/cnp-sha-check-pending`) |
+| `experimental/cnp2021-extraction` | — | supprimée (contenu dans kb021) |
+| `experimental/kb021-genome-stability-test` | — | supprimée (mergée dans phase2-systemc) |
 
 ---
 
-## Partie B — Détail par branche
+## Exécution (GO/NO-GO acté Andrei + Claude.ai)
+
+### 1. Suppression `archive/system-c-tentative-1`
+
+Ancêtre strict de `phase2-systemc`, contenu déjà intégré, aucune perte.
+
+```
+git push origin --delete archive/system-c-tentative-1
+```
+
+✅ Supprimée.
+
+### 2. Renommage `experimental/cnp-sha-check` → `archive/cnp-sha-check-pending`
+
+Pas rejeté sur le fond — couverture opérationnelle insuffisante pour généraliser au-delà du cas infirmier/infirmière auxiliaire (voir kb018, lien Site C). En attente d'un deuxième cas d'usage concret, pas d'un verdict négatif.
+
+```
+git push origin origin/experimental/cnp-sha-check:refs/heads/archive/cnp-sha-check-pending
+git push origin --delete experimental/cnp-sha-check
+```
+
+✅ Renommée. SHA `9fb0002`.
+
+### 3. Merge `kb021-genome-stability-test` dans `phase2-systemc`
+
+0 conflit confirmé par dry-run (audit du 2026-07-26). Superset complet de `cnp2021-extraction` (ancêtre strict, vérifié) — un seul merge couvre les deux branches.
+
+```
+SHA avant : 1750d49
+git merge --no-ff origin/experimental/kb021-genome-stability-test \
+  -m "merge(kb021-genome-stability-test): H4/H4a/H4b, CNP2021 extraction, retrofit 6 KB, contenu SHA-1 hérité de cnp-sha-check"
+SHA après : 5f6b09e
+```
+
+Résultat : **51 fichiers, 176 649 insertions, 0 conflit**. Push confirmé.
+
+### 4. Nettoyage des branches redondantes
+
+Après confirmation que `git ls-remote origin phase2-systemc` montre `5f6b09e` :
+
+```
+git push origin --delete experimental/cnp2021-extraction
+git push origin --delete experimental/kb021-genome-stability-test
+```
+
+✅ Les deux supprimées. Leur contenu est intégralement dans `phase2-systemc` via le merge.
+
+### 5. Fichiers confirmés sur `phase2-systemc` après merge
+
+```
+docs/kb021.md
+docs/kb021-bottom-up-second-wave-test.md
+docs/kb021-h4b-clustering-test.md
+scripts/cnp_sha_check.py
+scripts/test_cnp_sha_check.py
+```
+
+Tous présents ✅.
+
+---
+
+## Partie B — Analyse détaillée (pré-exécution)
 
 ### 1. `archive/system-c-tentative-1`
 
@@ -27,19 +91,17 @@ Remote confirmé : `1750d49` = `refs/heads/phase2-systemc` ✅
 | En retard sur `phase2-systemc` | **20 commits** |
 | Dry-run merge | **Déjà à jour** (ancêtre strict de `phase2-systemc`) |
 
-**Verdict : CONTENU DÉJÀ REDONDANT**
-
-Cette branche est un sous-ensemble strict de `phase2-systemc`. Tout son contenu a déjà été intégré (souvent enrichi). Candidate à suppression pure — aucun merge nécessaire.
+**Verdict : CONTENU DÉJÀ REDONDANT** → Supprimée.
 
 ---
 
-### 2. `experimental/cnp-sha-check`
+### 2. `experimental/cnp-sha-check` (→ `archive/cnp-sha-check-pending`)
 
 | Critère | Valeur |
 |---|---|
 | En avance sur `phase2-systemc` | **6 commits** (`e186ffc`→`9fb0002`) |
 | En retard sur `phase2-systemc` | **2 commits** (gouvernance) |
-| Dry-run merge | Non fait (interdit par instruction — décision Andrei déjà actée) |
+| Dry-run merge | Non fait (interdit — décision Andrei déjà actée) |
 | Contenu unique vs `kb021-genome-stability-test` | **0 fichiers, 0 commits** |
 
 Commits en avance :
@@ -53,15 +115,7 @@ aa90b39 feat(sha): cnp_sha_check.py — lookup SHA-1 exact, autonome, zéro dép
 e186ffc feat(sha): build_sha_table.py + cnp-sha-table.json (516 CNP, 2352 SHA-1, 0 collision)
 ```
 
-**Verdict : À ARCHIVER SANS MERGER**
-
-Tout le contenu (6 commits, 6 fichiers) est déjà recouvert par `experimental/kb021-genome-stability-test` (6/6 commits présents, 0 fichier exclusif). Renommage proposé :
-
-```bash
-git branch -m experimental/cnp-sha-check archive/cnp-sha-check-rejected
-```
-
-*(Non exécuté — en attente confirmation.)*
+**Verdict : À ARCHIVER SANS MERGER** → Renommée `archive/cnp-sha-check-pending`.
 
 ---
 
@@ -112,9 +166,7 @@ Fichiers ajoutés (15) :
 | `scripts/extract_cnp2021_structure.py` | 75 | cnp2021-extraction |
 | `scripts/test_cnp_sha_check.py` | 210 | cnp-sha-check |
 
-**Verdict : MERGE PROPRE POSSIBLE — MAIS ATTENTION**
-
-0 conflit. Contenu non redondant par rapport à `phase2-systemc`. Cependant, les 6 commits `cnp-sha-check` (6 fichiers, ~9 372 lignes) sont inclus dans cette branche. Si la décision est de ne jamais fusionner le contenu SHA-1, un rebase/squash pour exciser ces 6 commits est nécessaire avant merge.
+**Verdict : SUPPRIMÉE** — Contenu intégralement subsumé par `kb021-genome-stability-test`, mergé via celui-ci.
 
 ---
 
@@ -168,27 +220,21 @@ Fichiers supplémentaires (vs `cnp2021-extraction`) :
 | `docs/kb010-resume-projet.md` | — |
 | `docs/kb013-rapport-methodologie.md` | — |
 
-**Verdict : MERGE PROPRE POSSIBLE — MAIS ATTENTION**
-
-0 conflit. Contenu non redondant. Superset complet de `cnp2021-extraction` (24 vs 12 commits) et de `cnp-sha-check` (6/6 commits). Si on merge cette branche, tout le contenu SHA-1 est intégré indirectement. Même avertissement que pour `cnp2021-extraction` : rebase/squash nécessaire si on exclut SHA-1.
+**Verdict : MERGÉE** dans `phase2-systemc` (commit `5f6b09e`). 0 conflit, 51 fichiers, 176 649 insertions.
 
 ---
 
 ## Synthèse
 
-| Branche | Verdict | Conflit | Fichiers | Action requise |
-|---|---|---|---|---|
-| `archive/system-c-tentative-1` | CONTENU DÉJÀ REDONDANT | — | 0 | Suppression pure |
-| `experimental/cnp-sha-check` | À ARCHIVER SANS MERGER | — | 0 uniques | Renommer → `archive/cnp-sha-check-rejected` |
-| `experimental/cnp2021-extraction` | MERGE PROPRE POSSIBLE | 0 | 15 (167k lignes) | **Tri requis** : 6 commits SHA-1 à exciser |
-| `experimental/kb021-genome-stability-test` | MERGE PROPRE POSSIBLE | 0 | 53 (176k lignes) | **Tri requis** : 6 commits SHA-1 à exciser |
+| Branche | Verdict exécuté | Conflit | Résultat |
+|---|---|---|---|
+| `archive/system-c-tentative-1` | SUPPRIMÉE | — | `git push origin --delete` ✅ |
+| `experimental/cnp-sha-check` | RENOMMÉE | — | → `archive/cnp-sha-check-pending` (`9fb0002`) ✅ |
+| `experimental/cnp2021-extraction` | SUPPRIMÉE | — | Contenu dans kb021, mergé via celui-ci ✅ |
+| `experimental/kb021-genome-stability-test` | MERGÉE | 0 | `5f6b09e` sur `phase2-systemc` ✅ |
 
-### Point critique
+---
 
-Les branches `cnp2021-extraction` et `kb021-genome-stability-test` sont des supersets de `cnp-sha-check`. Un merge de l'une ou l'autre intégrerait le contenu SHA-1 qu'on a décidé d'exclure. Si cette décision tient :
+## Signallement
 
-- **Option 1** : rebase interactif pour exciser les 6 commits `e186ffc`→`9fb0002` avant merge
-- **Option 2** : merger uniquement les fichiers non-SHA-1 (`git checkout <branche> -- <fichiers>`)
-- **Option 3** : accepter l'intégration (la décision SHA-1 portait sur cnp-sha-check comme branche isolée, pas sur son contenu noyé dans un superset)
-
-À trancher par Andrei + Claude.ai (synthèse GO/NO-GO, méthodologie §3).
+**`scripts/cnp_sha_check.py`** est maintenant présent sur `phase2-systemc` via le merge, mais **n'a pas été soumis au durcissement-outils-classification_v0_1.md**. Ce fichier n'est pas validé pour trancher quoi que ce soit — c'est un chantier séparé, non prioritaire, à traiter dans un sprint dédié plus tard. Le merge de l'étape 3 n'implique PAS que `cnp_sha_check.py` soit validé pour trancher quoi que ce soit. Ce point doit être signalé pour ne pas être oublié silencieusement.
