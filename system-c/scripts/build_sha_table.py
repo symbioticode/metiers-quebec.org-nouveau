@@ -58,7 +58,17 @@ def _expand_slash_variants(norm_app: str) -> list[str]:
         prefix = slash_match.group(1)
         slash_part = slash_match.group(2)
         suffix = slash_match.group(3)
-        v1 = f"{prefix}{suffix}".strip()
+        # Cas où le premier mot après "/" ne couvre pas tout le préfixe
+        # partagé (ex. "infirmier spécialiste/infirmière spécialiste en
+        # soins respiratoires") : le mot final du préfixe se retrouve
+        # répété au début du suffixe. Retirer cette seule répétition
+        # immédiate avant de reconstruire v1 — ne touche que ce motif
+        # précis, sans réinterpréter le reste du suffixe.
+        prefix_mots = prefix.split()
+        suffix_mots = suffix.strip().split()
+        if prefix_mots and suffix_mots and prefix_mots[-1] == suffix_mots[0]:
+            suffix_mots = suffix_mots[1:]
+        v1 = " ".join(prefix_mots + suffix_mots).strip()
         v2 = f"{slash_part.lstrip('/')}{suffix}".strip()
         for v in (v1, v2):
             if v and v not in results:
