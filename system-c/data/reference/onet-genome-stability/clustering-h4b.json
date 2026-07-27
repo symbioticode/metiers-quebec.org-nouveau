@@ -1,0 +1,2271 @@
+{
+  "method": "TF-IDF char_wb n-grammes (3,5) + AgglomerativeClustering (linkage=average, metric=cosine, n_clusters=None, distance_threshold=T). Seuils pré-enregistrés avant tout résultat: [0.5, 0.6, 0.7].",
+  "n_fonctions_a": 55,
+  "n_fonctions_full": 88,
+  "n_metiers_a": 16,
+  "n_metiers_full": 27,
+  "par_seuil": {
+    "0.5": {
+      "k_clusters_a": 52,
+      "k_clusters_full": 81,
+      "croissance_clusters_pct": 55.8,
+      "croissance_metiers_pct": 68.8,
+      "clusters_a_detail": {
+        "47": [
+          "évaluer une sortie générée par un système contre des critères de qualité"
+        ],
+        "1": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "51": [
+          "annoter/étiqueter des données de sortie"
+        ],
+        "36": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "37": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "38": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction"
+        ],
+        "0": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "48": [
+          "évaluer une performance individuelle"
+        ],
+        "33": [
+          "transférer une compétence"
+        ],
+        "31": [
+          "élaborer un plan de développement personnel"
+        ],
+        "40": [
+          "animer une séance de suivi individuel"
+        ],
+        "49": [
+          "utiliser un outil logiciel dans sa pratique professionnelle"
+        ],
+        "32": [
+          "consigner/documenter une progression"
+        ],
+        "43": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "35": [
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "42": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "46": [
+          "concevoir un programme de formation"
+        ],
+        "41": [
+          "accompagner un changement organisationnel (adoption)"
+        ],
+        "23": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "18": [
+          "tester itérativement une sortie générée"
+        ],
+        "39": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "28": [
+          "annoter des données d'entraînement"
+        ],
+        "26": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "50": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "44": [
+          "conseiller une organisation sur un risque réglementaire"
+        ],
+        "45": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "20": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "17": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "22": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "19": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "34": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "16": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "8": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "24": [
+          "contrôler la qualité d'un lot biologique"
+        ],
+        "29": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "15": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "25": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "27": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "9": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "7": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "21": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "3": [
+          "conduire une ligne de production automatisée"
+        ],
+        "13": [
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "30": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "12": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "11": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "10": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "4": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "14": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "6": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique"
+        ],
+        "5": [
+          "définir une politique de sobriété numérique"
+        ],
+        "2": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ]
+      },
+      "clusters_full_detail": {
+        "71": [
+          "évaluer une sortie générée par un système contre des critères de qualité"
+        ],
+        "8": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "70": [
+          "annoter/étiqueter des données de sortie"
+        ],
+        "55": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "67": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "72": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction"
+        ],
+        "1": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "74": [
+          "évaluer une performance individuelle"
+        ],
+        "69": [
+          "transférer une compétence"
+        ],
+        "75": [
+          "élaborer un plan de développement personnel"
+        ],
+        "61": [
+          "animer une séance de suivi individuel"
+        ],
+        "77": [
+          "utiliser un outil logiciel dans sa pratique professionnelle"
+        ],
+        "42": [
+          "consigner/documenter une progression"
+        ],
+        "59": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "48": [
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "68": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "4": [
+          "concevoir un programme de formation",
+          "concevoir un programme de littératie IA"
+        ],
+        "3": [
+          "accompagner un changement organisationnel (adoption)",
+          "accompagner un changement organisationnel lié à l'IA"
+        ],
+        "66": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "40": [
+          "tester itérativement une sortie générée"
+        ],
+        "53": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "80": [
+          "annoter des données d'entraînement"
+        ],
+        "63": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "58": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "78": [
+          "conseiller une organisation sur un risque réglementaire"
+        ],
+        "34": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "43": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "52": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "47": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "54": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "44": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "46": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "60": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "76": [
+          "contrôler la qualité d'un lot biologique"
+        ],
+        "38": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "65": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "45": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "51": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "23": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "26": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "64": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "57": [
+          "conduire une ligne de production automatisée"
+        ],
+        "73": [
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "41": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "37": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "62": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "35": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "28": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "18": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "2": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique",
+          "auditer l'empreinte environnementale d'un tournage"
+        ],
+        "79": [
+          "définir une politique de sobriété numérique"
+        ],
+        "29": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ],
+        "0": [
+          "piloter une stratégie d'approvisionnement en énergie",
+          "négocier un contrat d'approvisionnement énergétique"
+        ],
+        "33": [
+          "auditer la performance énergétique d'une installation"
+        ],
+        "30": [
+          "réaliser une inspection technique préliminaire d'un véhicule endommagé"
+        ],
+        "21": [
+          "documenter un rapport de préparation pour expert"
+        ],
+        "49": [
+          "chiffrer une estimation de réparation"
+        ],
+        "36": [
+          "surveiller des sources de renseignement sur les menaces informatiques"
+        ],
+        "50": [
+          "investiguer un incident de cybersécurité"
+        ],
+        "16": [
+          "produire un rapport de renseignement sur une menace émergente"
+        ],
+        "31": [
+          "mesurer une empreinte carbone d'un site industriel"
+        ],
+        "25": [
+          "élaborer un plan de décarbonation"
+        ],
+        "39": [
+          "conseiller une organisation sur une trajectoire de réduction d'émissions"
+        ],
+        "20": [
+          "mettre en œuvre des pratiques de réduction de déchets sur un plateau"
+        ],
+        "32": [
+          "coordonner des fournisseurs pour des choix éco-responsables de production"
+        ],
+        "56": [
+          "concevoir une architecture d'orchestration multi-agents"
+        ],
+        "22": [
+          "définir des garde-fous de performance pour un système autonome"
+        ],
+        "19": [
+          "superviser la collaboration entre plusieurs agents IA"
+        ],
+        "12": [
+          "simuler une attaque adversariale contre un modèle"
+        ],
+        "24": [
+          "documenter une vulnérabilité découverte"
+        ],
+        "27": [
+          "recommander un correctif de sécurité pour un système IA"
+        ],
+        "9": [
+          "analyser comment un contenu est cité par un moteur de génération de réponse"
+        ],
+        "17": [
+          "adapter la structure d'un contenu pour maximiser sa citabilité par une IA"
+        ],
+        "11": [
+          "mesurer la visibilité d'une marque dans des réponses générées"
+        ],
+        "15": [
+          "former des équipes à l'adoption d'un outil IA"
+        ],
+        "14": [
+          "définir une stratégie d'adoption de l'IA à l'échelle de l'organisation"
+        ],
+        "13": [
+          "arbitrer des priorités d'investissement technologique"
+        ],
+        "7": [
+          "superviser la gouvernance éthique d'une organisation en matière d'IA"
+        ],
+        "6": [
+          "auditer la qualité d'un jeu de données destiné à l'entraînement d'un modèle"
+        ],
+        "5": [
+          "définir une politique de gouvernance des données"
+        ],
+        "10": [
+          "assurer la conformité réglementaire d'un pipeline de données"
+        ]
+      },
+      "stabilite_par_cluster_a": [
+        {
+          "cluster_a_id": 47,
+          "taille": 1,
+          "cluster_full_correspondant": 71,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 1,
+          "taille": 2,
+          "cluster_full_correspondant": 8,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 51,
+          "taille": 1,
+          "cluster_full_correspondant": 70,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 36,
+          "taille": 1,
+          "cluster_full_correspondant": 55,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 37,
+          "taille": 1,
+          "cluster_full_correspondant": 67,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 38,
+          "taille": 1,
+          "cluster_full_correspondant": 72,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 0,
+          "taille": 3,
+          "cluster_full_correspondant": 1,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 48,
+          "taille": 1,
+          "cluster_full_correspondant": 74,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 33,
+          "taille": 1,
+          "cluster_full_correspondant": 69,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 31,
+          "taille": 1,
+          "cluster_full_correspondant": 75,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 40,
+          "taille": 1,
+          "cluster_full_correspondant": 61,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 49,
+          "taille": 1,
+          "cluster_full_correspondant": 77,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 32,
+          "taille": 1,
+          "cluster_full_correspondant": 42,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 43,
+          "taille": 1,
+          "cluster_full_correspondant": 59,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 35,
+          "taille": 1,
+          "cluster_full_correspondant": 48,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 42,
+          "taille": 1,
+          "cluster_full_correspondant": 68,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 46,
+          "taille": 1,
+          "cluster_full_correspondant": 4,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 41,
+          "taille": 1,
+          "cluster_full_correspondant": 3,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 23,
+          "taille": 1,
+          "cluster_full_correspondant": 66,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 18,
+          "taille": 1,
+          "cluster_full_correspondant": 40,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 39,
+          "taille": 1,
+          "cluster_full_correspondant": 53,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 28,
+          "taille": 1,
+          "cluster_full_correspondant": 80,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 26,
+          "taille": 1,
+          "cluster_full_correspondant": 63,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 50,
+          "taille": 1,
+          "cluster_full_correspondant": 58,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 44,
+          "taille": 1,
+          "cluster_full_correspondant": 78,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 45,
+          "taille": 1,
+          "cluster_full_correspondant": 34,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 20,
+          "taille": 1,
+          "cluster_full_correspondant": 43,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 17,
+          "taille": 1,
+          "cluster_full_correspondant": 52,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 22,
+          "taille": 1,
+          "cluster_full_correspondant": 47,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 19,
+          "taille": 1,
+          "cluster_full_correspondant": 54,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 34,
+          "taille": 1,
+          "cluster_full_correspondant": 44,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 16,
+          "taille": 1,
+          "cluster_full_correspondant": 46,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 8,
+          "taille": 1,
+          "cluster_full_correspondant": 60,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 24,
+          "taille": 1,
+          "cluster_full_correspondant": 76,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 29,
+          "taille": 1,
+          "cluster_full_correspondant": 38,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 15,
+          "taille": 1,
+          "cluster_full_correspondant": 65,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 25,
+          "taille": 1,
+          "cluster_full_correspondant": 45,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 27,
+          "taille": 1,
+          "cluster_full_correspondant": 51,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 9,
+          "taille": 1,
+          "cluster_full_correspondant": 23,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 7,
+          "taille": 1,
+          "cluster_full_correspondant": 26,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 21,
+          "taille": 1,
+          "cluster_full_correspondant": 64,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 3,
+          "taille": 1,
+          "cluster_full_correspondant": 57,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 13,
+          "taille": 1,
+          "cluster_full_correspondant": 73,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 30,
+          "taille": 1,
+          "cluster_full_correspondant": 41,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 12,
+          "taille": 1,
+          "cluster_full_correspondant": 37,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 11,
+          "taille": 1,
+          "cluster_full_correspondant": 62,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 10,
+          "taille": 1,
+          "cluster_full_correspondant": 35,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 4,
+          "taille": 1,
+          "cluster_full_correspondant": 28,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 14,
+          "taille": 1,
+          "cluster_full_correspondant": 18,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 6,
+          "taille": 1,
+          "cluster_full_correspondant": 2,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 5,
+          "taille": 1,
+          "cluster_full_correspondant": 79,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 2,
+          "taille": 1,
+          "cluster_full_correspondant": 29,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        }
+      ],
+      "n_clusters_a_parfaitement_stables_purete_1": 52,
+      "n_clusters_a_eclates_sur_plusieurs_clusters_full": 0,
+      "purete_moyenne": 1.0
+    },
+    "0.6": {
+      "k_clusters_a": 49,
+      "k_clusters_full": 76,
+      "croissance_clusters_pct": 55.1,
+      "croissance_metiers_pct": 68.8,
+      "clusters_a_detail": {
+        "47": [
+          "évaluer une sortie générée par un système contre des critères de qualité"
+        ],
+        "3": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "2": [
+          "annoter/étiqueter des données de sortie",
+          "annoter des données d'entraînement"
+        ],
+        "36": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "37": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "38": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction"
+        ],
+        "6": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "48": [
+          "évaluer une performance individuelle"
+        ],
+        "33": [
+          "transférer une compétence"
+        ],
+        "31": [
+          "élaborer un plan de développement personnel"
+        ],
+        "40": [
+          "animer une séance de suivi individuel"
+        ],
+        "0": [
+          "utiliser un outil logiciel dans sa pratique professionnelle",
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "32": [
+          "consigner/documenter une progression"
+        ],
+        "43": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "42": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "46": [
+          "concevoir un programme de formation"
+        ],
+        "41": [
+          "accompagner un changement organisationnel (adoption)"
+        ],
+        "23": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "18": [
+          "tester itérativement une sortie générée"
+        ],
+        "39": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "26": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "24": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "44": [
+          "conseiller une organisation sur un risque réglementaire"
+        ],
+        "45": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "20": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "35": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "22": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "19": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "34": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "16": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "17": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "1": [
+          "contrôler la qualité d'un lot biologique",
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "29": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "15": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "25": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "27": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "9": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "7": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "21": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "8": [
+          "conduire une ligne de production automatisée"
+        ],
+        "30": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "12": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "11": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "10": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "4": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "14": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "28": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique"
+        ],
+        "5": [
+          "définir une politique de sobriété numérique"
+        ],
+        "13": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ]
+      },
+      "clusters_full_detail": {
+        "71": [
+          "évaluer une sortie générée par un système contre des critères de qualité"
+        ],
+        "17": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "70": [
+          "annoter/étiqueter des données de sortie"
+        ],
+        "55": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "67": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "72": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction"
+        ],
+        "4": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "74": [
+          "évaluer une performance individuelle"
+        ],
+        "69": [
+          "transférer une compétence"
+        ],
+        "75": [
+          "élaborer un plan de développement personnel"
+        ],
+        "61": [
+          "animer une séance de suivi individuel"
+        ],
+        "1": [
+          "utiliser un outil logiciel dans sa pratique professionnelle",
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "42": [
+          "consigner/documenter une progression"
+        ],
+        "59": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "68": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "9": [
+          "concevoir un programme de formation",
+          "concevoir un programme de littératie IA"
+        ],
+        "8": [
+          "accompagner un changement organisationnel (adoption)",
+          "accompagner un changement organisationnel lié à l'IA"
+        ],
+        "66": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "40": [
+          "tester itérativement une sortie générée"
+        ],
+        "53": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "5": [
+          "annoter des données d'entraînement",
+          "auditer la qualité d'un jeu de données destiné à l'entraînement d'un modèle"
+        ],
+        "63": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "58": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "2": [
+          "conseiller une organisation sur un risque réglementaire",
+          "conseiller une organisation sur une trajectoire de réduction d'émissions"
+        ],
+        "34": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "43": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "52": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "47": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "54": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "44": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "46": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "60": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "0": [
+          "contrôler la qualité d'un lot biologique",
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "38": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "65": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "45": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "51": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "48": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "26": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "64": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "57": [
+          "conduire une ligne de production automatisée"
+        ],
+        "41": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "37": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "62": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "35": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "28": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "18": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "6": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique",
+          "auditer l'empreinte environnementale d'un tournage"
+        ],
+        "3": [
+          "définir une politique de sobriété numérique",
+          "définir une politique de gouvernance des données"
+        ],
+        "29": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ],
+        "11": [
+          "piloter une stratégie d'approvisionnement en énergie",
+          "négocier un contrat d'approvisionnement énergétique"
+        ],
+        "33": [
+          "auditer la performance énergétique d'une installation"
+        ],
+        "30": [
+          "réaliser une inspection technique préliminaire d'un véhicule endommagé"
+        ],
+        "21": [
+          "documenter un rapport de préparation pour expert"
+        ],
+        "49": [
+          "chiffrer une estimation de réparation"
+        ],
+        "73": [
+          "surveiller des sources de renseignement sur les menaces informatiques"
+        ],
+        "50": [
+          "investiguer un incident de cybersécurité"
+        ],
+        "16": [
+          "produire un rapport de renseignement sur une menace émergente"
+        ],
+        "31": [
+          "mesurer une empreinte carbone d'un site industriel"
+        ],
+        "25": [
+          "élaborer un plan de décarbonation"
+        ],
+        "20": [
+          "mettre en œuvre des pratiques de réduction de déchets sur un plateau"
+        ],
+        "32": [
+          "coordonner des fournisseurs pour des choix éco-responsables de production"
+        ],
+        "56": [
+          "concevoir une architecture d'orchestration multi-agents"
+        ],
+        "22": [
+          "définir des garde-fous de performance pour un système autonome"
+        ],
+        "39": [
+          "superviser la collaboration entre plusieurs agents IA"
+        ],
+        "12": [
+          "simuler une attaque adversariale contre un modèle"
+        ],
+        "24": [
+          "documenter une vulnérabilité découverte"
+        ],
+        "27": [
+          "recommander un correctif de sécurité pour un système IA"
+        ],
+        "19": [
+          "analyser comment un contenu est cité par un moteur de génération de réponse"
+        ],
+        "36": [
+          "adapter la structure d'un contenu pour maximiser sa citabilité par une IA"
+        ],
+        "23": [
+          "mesurer la visibilité d'une marque dans des réponses générées"
+        ],
+        "15": [
+          "former des équipes à l'adoption d'un outil IA"
+        ],
+        "14": [
+          "définir une stratégie d'adoption de l'IA à l'échelle de l'organisation"
+        ],
+        "13": [
+          "arbitrer des priorités d'investissement technologique"
+        ],
+        "7": [
+          "superviser la gouvernance éthique d'une organisation en matière d'IA"
+        ],
+        "10": [
+          "assurer la conformité réglementaire d'un pipeline de données"
+        ]
+      },
+      "stabilite_par_cluster_a": [
+        {
+          "cluster_a_id": 47,
+          "taille": 1,
+          "cluster_full_correspondant": 71,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 3,
+          "taille": 2,
+          "cluster_full_correspondant": 17,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 2,
+          "taille": 2,
+          "cluster_full_correspondant": 70,
+          "purete": 0.5,
+          "nb_clusters_full_touches": 2
+        },
+        {
+          "cluster_a_id": 36,
+          "taille": 1,
+          "cluster_full_correspondant": 55,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 37,
+          "taille": 1,
+          "cluster_full_correspondant": 67,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 38,
+          "taille": 1,
+          "cluster_full_correspondant": 72,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 6,
+          "taille": 3,
+          "cluster_full_correspondant": 4,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 48,
+          "taille": 1,
+          "cluster_full_correspondant": 74,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 33,
+          "taille": 1,
+          "cluster_full_correspondant": 69,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 31,
+          "taille": 1,
+          "cluster_full_correspondant": 75,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 40,
+          "taille": 1,
+          "cluster_full_correspondant": 61,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 0,
+          "taille": 2,
+          "cluster_full_correspondant": 1,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 32,
+          "taille": 1,
+          "cluster_full_correspondant": 42,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 43,
+          "taille": 1,
+          "cluster_full_correspondant": 59,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 42,
+          "taille": 1,
+          "cluster_full_correspondant": 68,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 46,
+          "taille": 1,
+          "cluster_full_correspondant": 9,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 41,
+          "taille": 1,
+          "cluster_full_correspondant": 8,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 23,
+          "taille": 1,
+          "cluster_full_correspondant": 66,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 18,
+          "taille": 1,
+          "cluster_full_correspondant": 40,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 39,
+          "taille": 1,
+          "cluster_full_correspondant": 53,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 26,
+          "taille": 1,
+          "cluster_full_correspondant": 63,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 24,
+          "taille": 1,
+          "cluster_full_correspondant": 58,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 44,
+          "taille": 1,
+          "cluster_full_correspondant": 2,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 45,
+          "taille": 1,
+          "cluster_full_correspondant": 34,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 20,
+          "taille": 1,
+          "cluster_full_correspondant": 43,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 35,
+          "taille": 1,
+          "cluster_full_correspondant": 52,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 22,
+          "taille": 1,
+          "cluster_full_correspondant": 47,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 19,
+          "taille": 1,
+          "cluster_full_correspondant": 54,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 34,
+          "taille": 1,
+          "cluster_full_correspondant": 44,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 16,
+          "taille": 1,
+          "cluster_full_correspondant": 46,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 17,
+          "taille": 1,
+          "cluster_full_correspondant": 60,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 1,
+          "taille": 2,
+          "cluster_full_correspondant": 0,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 29,
+          "taille": 1,
+          "cluster_full_correspondant": 38,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 15,
+          "taille": 1,
+          "cluster_full_correspondant": 65,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 25,
+          "taille": 1,
+          "cluster_full_correspondant": 45,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 27,
+          "taille": 1,
+          "cluster_full_correspondant": 51,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 9,
+          "taille": 1,
+          "cluster_full_correspondant": 48,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 7,
+          "taille": 1,
+          "cluster_full_correspondant": 26,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 21,
+          "taille": 1,
+          "cluster_full_correspondant": 64,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 8,
+          "taille": 1,
+          "cluster_full_correspondant": 57,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 30,
+          "taille": 1,
+          "cluster_full_correspondant": 41,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 12,
+          "taille": 1,
+          "cluster_full_correspondant": 37,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 11,
+          "taille": 1,
+          "cluster_full_correspondant": 62,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 10,
+          "taille": 1,
+          "cluster_full_correspondant": 35,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 4,
+          "taille": 1,
+          "cluster_full_correspondant": 28,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 14,
+          "taille": 1,
+          "cluster_full_correspondant": 18,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 28,
+          "taille": 1,
+          "cluster_full_correspondant": 6,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 5,
+          "taille": 1,
+          "cluster_full_correspondant": 3,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 13,
+          "taille": 1,
+          "cluster_full_correspondant": 29,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        }
+      ],
+      "n_clusters_a_parfaitement_stables_purete_1": 48,
+      "n_clusters_a_eclates_sur_plusieurs_clusters_full": 1,
+      "purete_moyenne": 0.99
+    },
+    "0.7": {
+      "k_clusters_a": 47,
+      "k_clusters_full": 71,
+      "croissance_clusters_pct": 51.1,
+      "croissance_metiers_pct": 68.8,
+      "clusters_a_detail": {
+        "0": [
+          "évaluer une sortie générée par un système contre des critères de qualité",
+          "tester itérativement une sortie générée"
+        ],
+        "8": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "2": [
+          "annoter/étiqueter des données de sortie",
+          "annoter des données d'entraînement"
+        ],
+        "36": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "37": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "38": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction"
+        ],
+        "6": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "1": [
+          "évaluer une performance individuelle",
+          "animer une séance de suivi individuel"
+        ],
+        "33": [
+          "transférer une compétence"
+        ],
+        "31": [
+          "élaborer un plan de développement personnel"
+        ],
+        "3": [
+          "utiliser un outil logiciel dans sa pratique professionnelle",
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "32": [
+          "consigner/documenter une progression"
+        ],
+        "43": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "42": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "46": [
+          "concevoir un programme de formation"
+        ],
+        "41": [
+          "accompagner un changement organisationnel (adoption)"
+        ],
+        "23": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "39": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "26": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "24": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "44": [
+          "conseiller une organisation sur un risque réglementaire"
+        ],
+        "45": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "20": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "35": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "22": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "40": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "34": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "16": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "17": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "4": [
+          "contrôler la qualité d'un lot biologique",
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "29": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "15": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "25": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "27": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "19": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "7": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "21": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "18": [
+          "conduire une ligne de production automatisée"
+        ],
+        "30": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "12": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "11": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "10": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "9": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "14": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "28": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique"
+        ],
+        "5": [
+          "définir une politique de sobriété numérique"
+        ],
+        "13": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ]
+      },
+      "clusters_full_detail": {
+        "0": [
+          "évaluer une sortie générée par un système contre des critères de qualité",
+          "tester itérativement une sortie générée"
+        ],
+        "17": [
+          "comparer deux réponses et classer une préférence",
+          "comparer deux réponses et classer une préférence"
+        ],
+        "70": [
+          "annoter/étiqueter des données de sortie"
+        ],
+        "55": [
+          "détecter des biais/erreurs dans une sortie de système"
+        ],
+        "67": [
+          "rédiger des instructions/prompts de test"
+        ],
+        "1": [
+          "documenter des cas limites (edge cases) et rédiger un rapport de correction",
+          "documenter un rapport de préparation pour expert"
+        ],
+        "10": [
+          "ajuster des paramètres/règles d'un système",
+          "ajuster des paramètres de modèle",
+          "ajuster des paramètres de procédé de fabrication"
+        ],
+        "9": [
+          "évaluer une performance individuelle",
+          "animer une séance de suivi individuel"
+        ],
+        "69": [
+          "transférer une compétence"
+        ],
+        "2": [
+          "élaborer un plan de développement personnel",
+          "élaborer un plan de décarbonation"
+        ],
+        "3": [
+          "utiliser un outil logiciel dans sa pratique professionnelle",
+          "former à l'utilisation d'un outil logiciel"
+        ],
+        "42": [
+          "consigner/documenter une progression"
+        ],
+        "59": [
+          "expliquer un concept technique à un public non-technique"
+        ],
+        "68": [
+          "évaluer le niveau de maîtrise d'un outil chez un individu"
+        ],
+        "19": [
+          "concevoir un programme de formation",
+          "concevoir un programme de littératie IA"
+        ],
+        "8": [
+          "accompagner un changement organisationnel (adoption)",
+          "accompagner un changement organisationnel lié à l'IA"
+        ],
+        "66": [
+          "concevoir une instruction textuelle structurée"
+        ],
+        "53": [
+          "documenter un patron de requête réutilisable"
+        ],
+        "12": [
+          "annoter des données d'entraînement",
+          "auditer la qualité d'un jeu de données destiné à l'entraînement d'un modèle"
+        ],
+        "63": [
+          "évaluer les impacts éthiques/sociaux d'un système"
+        ],
+        "58": [
+          "rédiger des lignes directrices de conformité"
+        ],
+        "5": [
+          "conseiller une organisation sur un risque réglementaire",
+          "conseiller une organisation sur une trajectoire de réduction d'émissions"
+        ],
+        "34": [
+          "superviser une interaction entre opérateur et système automatisé"
+        ],
+        "43": [
+          "arbitrer une décision entre recommandation machine et jugement humain"
+        ],
+        "52": [
+          "assembler des composants logiciels préconstruits sans écrire de code"
+        ],
+        "47": [
+          "configurer une logique métier dans une interface visuelle"
+        ],
+        "54": [
+          "négocier des limites de consentement avec des interprètes"
+        ],
+        "44": [
+          "chorégraphier une scène à contenu sensible"
+        ],
+        "46": [
+          "assurer une médiation entre production et acteurs sur un tournage"
+        ],
+        "60": [
+          "conduire un procédé de fermentation/culture cellulaire à l'échelle industrielle"
+        ],
+        "6": [
+          "contrôler la qualité d'un lot biologique",
+          "contrôler la qualité de composants électriques en série"
+        ],
+        "38": [
+          "documenter un dossier de lot pharmaceutique"
+        ],
+        "65": [
+          "réaliser un geste de soin technique standardisé au domicile d'un patient"
+        ],
+        "45": [
+          "installer/entretenir un équipement médical à domicile"
+        ],
+        "51": [
+          "transmettre une observation clinique à une équipe soignante"
+        ],
+        "48": [
+          "assembler des éléments préfabriqués en atelier (hors chantier)"
+        ],
+        "26": [
+          "monter une structure modulaire en bois ou en acier"
+        ],
+        "64": [
+          "contrôler la conformité d'un module avant expédition"
+        ],
+        "57": [
+          "conduire une ligne de production automatisée"
+        ],
+        "41": [
+          "évaluer l'état et la valeur résiduelle d'un objet/matériau"
+        ],
+        "37": [
+          "démonter ou remettre en état un bien pour réemploi"
+        ],
+        "62": [
+          "orienter un flux de matière vers une filière de valorisation"
+        ],
+        "35": [
+          "construire un modèle virtuel synchronisé avec un système physique"
+        ],
+        "28": [
+          "intégrer des flux de données de capteurs dans une simulation"
+        ],
+        "18": [
+          "utiliser une simulation pour prédire une défaillance"
+        ],
+        "14": [
+          "mesurer l'empreinte environnementale d'une infrastructure informatique",
+          "auditer l'empreinte environnementale d'un tournage"
+        ],
+        "7": [
+          "définir une politique de sobriété numérique",
+          "définir une politique de gouvernance des données"
+        ],
+        "29": [
+          "piloter un projet de réduction de consommation énergétique de systèmes IT"
+        ],
+        "11": [
+          "piloter une stratégie d'approvisionnement en énergie",
+          "négocier un contrat d'approvisionnement énergétique"
+        ],
+        "33": [
+          "auditer la performance énergétique d'une installation"
+        ],
+        "61": [
+          "réaliser une inspection technique préliminaire d'un véhicule endommagé"
+        ],
+        "49": [
+          "chiffrer une estimation de réparation"
+        ],
+        "4": [
+          "surveiller des sources de renseignement sur les menaces informatiques",
+          "produire un rapport de renseignement sur une menace émergente"
+        ],
+        "50": [
+          "investiguer un incident de cybersécurité"
+        ],
+        "31": [
+          "mesurer une empreinte carbone d'un site industriel"
+        ],
+        "20": [
+          "mettre en œuvre des pratiques de réduction de déchets sur un plateau"
+        ],
+        "32": [
+          "coordonner des fournisseurs pour des choix éco-responsables de production"
+        ],
+        "56": [
+          "concevoir une architecture d'orchestration multi-agents"
+        ],
+        "22": [
+          "définir des garde-fous de performance pour un système autonome"
+        ],
+        "39": [
+          "superviser la collaboration entre plusieurs agents IA"
+        ],
+        "25": [
+          "simuler une attaque adversariale contre un modèle"
+        ],
+        "24": [
+          "documenter une vulnérabilité découverte"
+        ],
+        "27": [
+          "recommander un correctif de sécurité pour un système IA"
+        ],
+        "40": [
+          "analyser comment un contenu est cité par un moteur de génération de réponse"
+        ],
+        "36": [
+          "adapter la structure d'un contenu pour maximiser sa citabilité par une IA"
+        ],
+        "23": [
+          "mesurer la visibilité d'une marque dans des réponses générées"
+        ],
+        "15": [
+          "former des équipes à l'adoption d'un outil IA"
+        ],
+        "30": [
+          "définir une stratégie d'adoption de l'IA à l'échelle de l'organisation"
+        ],
+        "13": [
+          "arbitrer des priorités d'investissement technologique"
+        ],
+        "16": [
+          "superviser la gouvernance éthique d'une organisation en matière d'IA"
+        ],
+        "21": [
+          "assurer la conformité réglementaire d'un pipeline de données"
+        ]
+      },
+      "stabilite_par_cluster_a": [
+        {
+          "cluster_a_id": 0,
+          "taille": 2,
+          "cluster_full_correspondant": 0,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 8,
+          "taille": 2,
+          "cluster_full_correspondant": 17,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 2,
+          "taille": 2,
+          "cluster_full_correspondant": 70,
+          "purete": 0.5,
+          "nb_clusters_full_touches": 2
+        },
+        {
+          "cluster_a_id": 36,
+          "taille": 1,
+          "cluster_full_correspondant": 55,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 37,
+          "taille": 1,
+          "cluster_full_correspondant": 67,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 38,
+          "taille": 1,
+          "cluster_full_correspondant": 1,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 6,
+          "taille": 3,
+          "cluster_full_correspondant": 10,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 1,
+          "taille": 2,
+          "cluster_full_correspondant": 9,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 33,
+          "taille": 1,
+          "cluster_full_correspondant": 69,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 31,
+          "taille": 1,
+          "cluster_full_correspondant": 2,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 3,
+          "taille": 2,
+          "cluster_full_correspondant": 3,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 32,
+          "taille": 1,
+          "cluster_full_correspondant": 42,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 43,
+          "taille": 1,
+          "cluster_full_correspondant": 59,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 42,
+          "taille": 1,
+          "cluster_full_correspondant": 68,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 46,
+          "taille": 1,
+          "cluster_full_correspondant": 19,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 41,
+          "taille": 1,
+          "cluster_full_correspondant": 8,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 23,
+          "taille": 1,
+          "cluster_full_correspondant": 66,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 39,
+          "taille": 1,
+          "cluster_full_correspondant": 53,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 26,
+          "taille": 1,
+          "cluster_full_correspondant": 63,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 24,
+          "taille": 1,
+          "cluster_full_correspondant": 58,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 44,
+          "taille": 1,
+          "cluster_full_correspondant": 5,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 45,
+          "taille": 1,
+          "cluster_full_correspondant": 34,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 20,
+          "taille": 1,
+          "cluster_full_correspondant": 43,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 35,
+          "taille": 1,
+          "cluster_full_correspondant": 52,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 22,
+          "taille": 1,
+          "cluster_full_correspondant": 47,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 40,
+          "taille": 1,
+          "cluster_full_correspondant": 54,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 34,
+          "taille": 1,
+          "cluster_full_correspondant": 44,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 16,
+          "taille": 1,
+          "cluster_full_correspondant": 46,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 17,
+          "taille": 1,
+          "cluster_full_correspondant": 60,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 4,
+          "taille": 2,
+          "cluster_full_correspondant": 6,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 29,
+          "taille": 1,
+          "cluster_full_correspondant": 38,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 15,
+          "taille": 1,
+          "cluster_full_correspondant": 65,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 25,
+          "taille": 1,
+          "cluster_full_correspondant": 45,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 27,
+          "taille": 1,
+          "cluster_full_correspondant": 51,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 19,
+          "taille": 1,
+          "cluster_full_correspondant": 48,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 7,
+          "taille": 1,
+          "cluster_full_correspondant": 26,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 21,
+          "taille": 1,
+          "cluster_full_correspondant": 64,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 18,
+          "taille": 1,
+          "cluster_full_correspondant": 57,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 30,
+          "taille": 1,
+          "cluster_full_correspondant": 41,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 12,
+          "taille": 1,
+          "cluster_full_correspondant": 37,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 11,
+          "taille": 1,
+          "cluster_full_correspondant": 62,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 10,
+          "taille": 1,
+          "cluster_full_correspondant": 35,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 9,
+          "taille": 1,
+          "cluster_full_correspondant": 28,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 14,
+          "taille": 1,
+          "cluster_full_correspondant": 18,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 28,
+          "taille": 1,
+          "cluster_full_correspondant": 14,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 5,
+          "taille": 1,
+          "cluster_full_correspondant": 7,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        },
+        {
+          "cluster_a_id": 13,
+          "taille": 1,
+          "cluster_full_correspondant": 29,
+          "purete": 1.0,
+          "nb_clusters_full_touches": 1
+        }
+      ],
+      "n_clusters_a_parfaitement_stables_purete_1": 46,
+      "n_clusters_a_eclates_sur_plusieurs_clusters_full": 1,
+      "purete_moyenne": 0.989
+    }
+  }
+}
