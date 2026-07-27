@@ -228,3 +228,33 @@ Aucun FAIT n'entre dans data/atomic/ sans provenir d'un commit d'ingestion trac�
 *Document vivant. Toute modification à ce protocole suit la même
 discipline qu'il impose aux hypothèses : pas de changement silencieux,
 un commit, une justification.*
+
+---
+
+## Amendement 1 (2026-07-27) — deux leçons empiriques
+
+**Séparation seuil/résultat, y compris temporellement.** H4a a été
+corroborée avec un seuil et un résultat committés dans le même commit —
+la séparation en deux commits distincts (déjà pratiquée depuis) ne
+suffit pas si les deux sont poussés ensemble sans qu'une vérification
+indépendante ait eu le temps de contester le seuil avant de voir le
+résultat. Règle ajoutée : le commit de seuil doit être poussé et,
+idéalement, laissé visible au moins le temps d'un aller-retour avant que
+le commit de résultat ne soit produit — même par la même instance.
+
+**Le balayage exhaustif doit dépasser la question posée.** Le Cas 6 du
+durcissement `cnp_sha_check.py` (kb022) visait à tester singulier vs
+pluriel sur un exemple ciblé ; le balayage exhaustif de toute la matrice
+(516 CNP, pas un échantillon) a révélé un bug de construction sans
+rapport direct avec la question testée. Règle ajoutée : tout test
+d'audit ou de durcissement doit inclure, en plus du cas ciblé, un
+balayage exhaustif du domaine complet quand le domaine est fini et de
+taille raisonnable (ici : 516 CNP) — pas seulement le cas qui a motivé
+le test.
+
+**Promotion explicite (2026-07-27).** Le Sprint 4/5 de tout chantier
+d'hypothèse doit produire, comme livrable vérifiable, un commit qui
+modifie le document canonique de l'hypothèse (`kbXXX.md`) lui-même — pas
+seulement un fichier satellite de sprint. Un résultat vérifié qui ne
+modifie pas le document canonique n'est pas considéré comme clos, quel
+que soit son niveau de vérification par ailleurs.
