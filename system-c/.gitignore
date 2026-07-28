@@ -31,3 +31,4 @@ dist/graphify-out/*.sig
 # Embeddings (large, regenerable)
 data/embeddings/
 claudemem_log/
+data/reference/esco/*.zip
