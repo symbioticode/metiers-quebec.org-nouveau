@@ -1,0 +1,205 @@
+{
+  "index_live_urls": 570,
+  "corpus_avant": 485,
+  "deja_presents": 522,
+  "accessibles": {
+    "armee/sante.htm": {
+      "path": "../armee/sante.html",
+      "noms": 1
+    },
+    "fabric_mecanique/conducteur_machines_plast.htm": {
+      "path": "../fabric_mec/conducteur_machines_plast.htm",
+      "noms": 1
+    },
+    "fabric_mecanique/dessinateur_industriel.htm": {
+      "path": "../fabric_mec/dessinateur_industriel.html",
+      "noms": 1
+    },
+    "fabric_mecanique/oper_mach_ind.htm": {
+      "path": "../fabric_mec/oper_mach_ind.htm",
+      "noms": 2
+    },
+    "fabric_mecanique/tech_arch_naval.html": {
+      "path": "../fabric_mec/tech_arch_naval.htm",
+      "noms": 1
+    },
+    "fabric_mecanique/tech_genie_mecanique.htm": {
+      "path": "../fabric_mec/tech_genie_mecanique.htm",
+      "noms": 1
+    },
+    "fabric_mecanique/tech_plastiques.htm": {
+      "path": "../fabric_mec/tech_plastiques.htm",
+      "noms": 1
+    },
+    "mecanique_entretien/mecanicien_ascenseurs.htm": {
+      "path": "../mecanique_entr/mecanicien_ascenseurs.htm",
+      "noms": 1
+    },
+    "mecanique_entretien/tech_sports.htm": {
+      "path": "../mecanique_entr/tech_sports.html",
+      "noms": 1
+    },
+    "restau_tour/agent_voyages.htm": {
+      "path": "../restau_tourisme/agent_voyages.htm",
+      "noms": 3
+    },
+    "restau_tour/agent_voyages.html": {
+      "path": "../restau_tourisme/agent_voyages.htm",
+      "noms": 3
+    },
+    "restau_tour/cuisinier.htm": {
+      "path": "../restau_tourisme/cuisinier.htm",
+      "noms": 2
+    },
+    "restau_tour/gest_tour-hotel.html": {
+      "path": "../restau_tourisme/gest_tour-hotel.html",
+      "noms": 6
+    },
+    "restau_tour/patissier.htm": {
+      "path": "../restau_tourisme/patissier.htm",
+      "noms": 2
+    },
+    "restau_tour/poissonnier.html": {
+      "path": "../restau_tourisme/poissonnier.html",
+      "noms": 1
+    },
+    "restau_tour/restauration.html": {
+      "path": "../restau_tourisme/restauration.html",
+      "noms": 2
+    },
+    "restau_tour/serveur.htm": {
+      "path": "../restau_tourisme/serveur.htm",
+      "noms": 2
+    },
+    "restau_tour/sommelier.html": {
+      "path": "../restau_tourisme/sommelier.html",
+      "noms": 1
+    },
+    "restau_tour/tech_hotellerie.htm": {
+      "path": "../restau_tourisme/tech_hotellerie.htm",
+      "noms": 5
+    },
+    "restau_tour/tech_restauration.htm": {
+      "path": "../restau_tourisme/tech_restauration.htm",
+      "noms": 3
+    },
+    "restau_tour/tech_tourisme.htm": {
+      "path": "../restau_tourisme/tech_tourisme.htm",
+      "noms": 5
+    }
+  },
+  "morts": {
+    "administration/commis_comptable.htm": [
+      "commis-comptable"
+    ],
+    "administration/commis_comptable.html": [
+      "commis-comptable"
+    ],
+    "agriculture/agriculture2.html": [
+      "Fromager"
+    ],
+    "arch_paysagiste.htm": [
+      "Architecte paysagiste"
+    ],
+    "arts/gerant_artiste.htm": [
+      "Agent d’artistes",
+      "Agent de spectacles",
+      "Artistes, gérant d'"
+    ],
+    "arts/gerant_artiste.html": [
+      "Imprésario",
+      "Spectacles, agent de",
+      "Spectacles, producteur de"
+    ],
+    "chimie/oper_eaux.html": [
+      "Opérateur de station de traitement des eaux"
+    ],
+    "chimie/operateur_papier.htm": [
+      "Opérateur de blanchisseuse à papier",
+      "Opérateur de machines à fabriquer le papier",
+      "Opérateur de machines à finir le papier"
+    ],
+    "chimie/tech_sterilisation.html": [
+      "Stérilisation, technicien en",
+      "Technicien en stérilisation"
+    ],
+    "electrotechnique/ing_aerospatial.htm": [
+      "Ingénieur en avionique"
+    ],
+    "environnement/tech_arpentage.htm": [
+      "Arpentage, technologue en"
+    ],
+    "foresterie/operateur_scie.html": [
+      "Opérateur de scie principale",
+      "Opérateur de scies multilames pour billes",
+      "Opérateur de séchoir à bois",
+      "Opérateur de scie"
+    ],
+    "graphique/design_ind.html": [
+      "designer industriel"
+    ],
+    "humaines/recreologue.htm": [
+      "Loisirs, gestionnaire en"
+    ],
+    "humaines/recreologue.html": [
+      "Directeur des loisirs",
+      "Loisirs, coordonnateur de",
+      "Producteur d'événements sportifs",
+      "Programmation culturelle, coordonnateur \r\nd'activités en",
+      "Programmation sportive, coordonnateur \r\nd'activités en",
+      "Récréologue"
+    ],
+    "humaines/tech_loisirs.htm": [
+      "Activité physique, animateur en",
+      "Activité physique, moniteur en",
+      "Activités de plein air, animateur en",
+      "Animateur en loisirs",
+      "Golf, moniteur de",
+      "Intervenant en loisirs",
+      "Intervenant en sports",
+      "Loisirs, technicien en",
+      "Moniteur de sports",
+      "Organisateur de loisirs",
+      "technicien en loisirs",
+      "Technicien en loisirs"
+    ],
+    "mode/patronnier.html": [
+      "Dessinateur de patrons"
+    ],
+    "motorises/mecanicien_autos.htm": [
+      "Automobiles, mécanicien d'"
+    ],
+    "nature/tech_biologiste.html": [
+      "Technicien en biologie"
+    ],
+    "nature/tech_cine_halieu.htm": [
+      "Aménagement cynégétique et halieutique, technicien en"
+    ],
+    "nature/tech_sante_animale.html": [
+      "Éleveur de chiens, de chats ou oiseaux"
+    ],
+    "physique/tech_physicien.htm": [
+      "Physique, technologue en"
+    ],
+    "restau_tourisme/gest_tour_hotel.html": [
+      "Directeur d’hôtel",
+      "Directeur de restaurant",
+      "Directeur du service d’hébergement"
+    ],
+    "sante/kinesiologiste.htm": [
+      "Sciences de l’activité physique, spécialiste en"
+    ],
+    "sante/tech_ophtalmo.html": [
+      "technologue en ophtalmologie"
+    ],
+    "sante/techno_ophtalmo.html": [
+      "Technologue en ophtalmologie"
+    ],
+    "transport/regulateur_vol.htm": [
+      "Opérateur des communications aériennes"
+    ]
+  },
+  "scrapes_reussis": 21,
+  "scrapes_erreurs": [],
+  "corpus_apres": 506
+}
