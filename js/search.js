@@ -1,97 +1,17 @@
 (function() {
-  const METIERS = [
-    { name: "Infirmière ou Infirmier", secteur: "Santé", url: "profession.html" },
-    { name: "Infirmier auxiliaire", secteur: "Santé", url: "profession.html" },
-    { name: "Médecin", secteur: "Santé", url: "profession.html" },
-    { name: "Pharmacien", secteur: "Santé", url: "profession.html" },
-    { name: "Dentiste", secteur: "Santé", url: "profession.html" },
-    { name: "Physiothérapeute", secteur: "Santé", url: "profession.html" },
-    { name: "Ergothérapeute", secteur: "Santé", url: "profession.html" },
-    { name: "Audiologiste", secteur: "Santé", url: "profession.html" },
-    { name: "Optométriste", secteur: "Santé", url: "profession.html" },
-    { name: "Chiropraticien", secteur: "Santé", url: "profession.html" },
-    { name: "Podiatre", secteur: "Santé", url: "profession.html" },
-    { name: "Diététiste", secteur: "Santé", url: "profession.html" },
-    { name: "Sage-femme", secteur: "Santé", url: "profession.html" },
-    { name: "Vétérinaire", secteur: "Santé", url: "profession.html" },
-    { name: "Massothérapeute", secteur: "Santé", url: "profession.html" },
-    { name: "Technicien en laboratoire médical", secteur: "Santé", url: "profession.html" },
-    { name: "Technologue en imagerie médicale", secteur: "Santé", url: "profession.html" },
-    { name: "Technicien ambulancier paramédic", secteur: "Santé", url: "profession.html" },
-    { name: "Préposé aux bénéficiaires", secteur: "Santé", url: "profession.html" },
-    { name: "Technicien en santé animale", secteur: "Santé", url: "profession.html" },
-    { name: "Informaticien", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Analyste informatique", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Développeur web", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Gestionnaire de projet informatique", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Administrateur de bases de données", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Technicien en informatique", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Administrateur réseau", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Secrétaire médical", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Comptable", secteur: "Administration & Informatique", url: "profession.html" },
-    { name: "Électricien", secteur: "Électrotechnique", url: "profession.html" },
-    { name: "Électromécanicien", secteur: "Électrotechnique", url: "profession.html" },
-    { name: "Ingénieur électricien", secteur: "Électrotechnique", url: "profession.html" },
-    { name: "Technicien en électronique", secteur: "Électrotechnique", url: "profession.html" },
-    { name: "Mécanicien d'avions", secteur: "Aérospatial", url: "profession.html" },
-    { name: "Technicien en aérospatiale", secteur: "Aérospatial", url: "profession.html" },
-    { name: "Ingénieur aérospatial", secteur: "Aérospatial", url: "profession.html" },
-    { name: "Soudeur", secteur: "Métallurgie", url: "profession.html" },
-    { name: "Mécanicien industriel", secteur: "Mécanique d'entretien", url: "profession.html" },
-    { name: "Mécanicien d'automobiles", secteur: "Mécanique d'entretien", url: "profession.html" },
-    { name: "Plombier", secteur: "Bâtiment & Construction", url: "profession.html" },
-    { name: "Menuisier", secteur: "Bâtiment & Construction", url: "profession.html" },
-    { name: "Maçon", secteur: "Bâtiment & Construction", url: "profession.html" },
-    { name: "Couvreur", secteur: "Bâtiment & Construction", url: "profession.html" },
-    { name: "Peintre en bâtiment", secteur: "Bâtiment & Construction", url: "profession.html" },
-    { name: "Professeur d'école", secteur: "Éducation & Enseignement", url: "profession.html" },
-    { name: "Enseignant au collégial", secteur: "Éducation & Enseignement", url: "profession.html" },
-    { name: "Professeur d'université", secteur: "Éducation & Enseignement", url: "profession.html" },
-    { name: "Éducateur en services de garde", secteur: "Éducation & Enseignement", url: "profession.html" },
-    { name: "Technicien en chimie analytique", secteur: "Chimie & Biologie", url: "profession.html" },
-    { name: "Biochimiste", secteur: "Chimie & Biologie", url: "profession.html" },
-    { name: "Biologiste", secteur: "Chimie & Biologie", url: "profession.html" },
-    { name: "Technicien en pharmacie", secteur: "Chimie & Biologie", url: "profession.html" },
-    { name: "Policier", secteur: "Protection publique", url: "profession.html" },
-    { name: "Pompier", secteur: "Protection publique", url: "profession.html" },
-    { name: "Agent de la paix", secteur: "Protection publique", url: "profession.html" },
-    { name: "Technicien en prévention sécurité", secteur: "Protection publique", url: "profession.html" },
-    { name: "Chauffeur de camion", secteur: "Transport", url: "profession.html" },
-    { name: "Technicien en transport aérien", secteur: "Transport", url: "profession.html" },
-    { name: "Conducteur de train", secteur: "Transport", url: "profession.html" },
-    { name: "Cuisinier", secteur: "Restauration & Tourisme", url: "profession.html" },
-    { name: "Chef cuisinier", secteur: "Restauration & Tourisme", url: "profession.html" },
-    { name: "Technicien en environnement", secteur: "Environnement & Aménagement", url: "profession.html" },
-    { name: "Architecte paysagiste", secteur: "Environnement & Aménagement", url: "profession.html" },
-    { name: "Graphiste", secteur: "Communication & Multimédia", url: "profession.html" },
-    { name: "Infographiste", secteur: "Communication & Multimédia", url: "profession.html" },
-    { name: "Technicien en documentation", secteur: "Communication & Multimédia", url: "profession.html" },
-  ];
+  var SEARCH_INDEX_URL = '/data/search.json';
+  var searchIndexPromise = null;
 
-  const SECTEURS = [
-    { name: "Santé", url: "secteur.html" },
-    { name: "Administration & Informatique", url: "secteur.html" },
-    { name: "Bâtiment & Construction", url: "secteur.html" },
-    { name: "Électrotechnique", url: "secteur.html" },
-    { name: "Aérospatial", url: "secteur.html" },
-    { name: "Éducation & Enseignement", url: "secteur.html" },
-    { name: "Chimie & Biologie", url: "secteur.html" },
-    { name: "Protection publique", url: "secteur.html" },
-    { name: "Dessin & Fabrication mécanique", url: "secteur.html" },
-    { name: "Environnement & Aménagement", url: "secteur.html" },
-    { name: "Communication & Multimédia", url: "secteur.html" },
-    { name: "Restauration & Tourisme", url: "secteur.html" },
-    { name: "Métallurgie", url: "secteur.html" },
-    { name: "Mécanique d'entretien", url: "secteur.html" },
-    { name: "Transport", url: "secteur.html" },
-    { name: "Foresterie & Papier", url: "secteur.html" },
-    { name: "Lettres & Langues", url: "secteur.html" },
-    { name: "Mines & Pétrole", url: "secteur.html" },
-    { name: "Mode & Textile", url: "secteur.html" },
-    { name: "Sciences naturelles", url: "secteur.html" },
-    { name: "Services sociaux & Juridiques", url: "secteur.html" },
-    { name: "Soins esthétiques & Beauté", url: "secteur.html" },
-  ];
+  function loadSearchIndex() {
+    if (!searchIndexPromise) {
+      searchIndexPromise = fetch(SEARCH_INDEX_URL)
+        .then(function(res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        });
+    }
+    return searchIndexPromise;
+  }
 
   function fuzzyMatch(query, text) {
     query = query.toLowerCase();
@@ -104,19 +24,24 @@
     return qi === query.length;
   }
 
-  function search(query) {
+  function search(query, entries) {
     if (!query || query.length < 2) return [];
     var results = [];
-    SECTEURS.forEach(function(s) {
-      if (fuzzyMatch(query, s.name)) {
-        results.push({ type: "secteur", name: s.name, url: s.url });
+    var seenSecteurs = {};
+
+    entries.forEach(function(e) {
+      if (!seenSecteurs[e.secteur] && fuzzyMatch(query, e.secteur_nom)) {
+        seenSecteurs[e.secteur] = true;
+        results.push({ type: 'secteur', name: e.secteur_nom, url: '/secteur/' + e.secteur + '/' });
       }
     });
-    METIERS.forEach(function(m) {
-      if (fuzzyMatch(query, m.name)) {
-        results.push({ type: "metier", name: m.name, desc: m.secteur, url: m.url });
+
+    entries.forEach(function(e) {
+      if (fuzzyMatch(query, e.nom)) {
+        results.push({ type: 'metier', name: e.nom, desc: e.secteur_nom, url: '/metier/' + e.slug + '/' });
       }
     });
+
     return results.slice(0, 15);
   }
 
@@ -138,6 +63,10 @@
     container.innerHTML = html;
   }
 
+  function renderError(container) {
+    container.innerHTML = '<div class="search-results__empty">Recherche indisponible pour le moment. Veuillez réessayer plus tard.</div>';
+  }
+
   function setupSearch(inputId, resultsId) {
     var input = document.getElementById(inputId);
     var results = document.getElementById(resultsId);
@@ -148,9 +77,14 @@
         results.classList.remove('active');
         return;
       }
-      var found = search(q);
-      renderResults(results, found);
-      results.classList.add('active');
+      loadSearchIndex().then(function(entries) {
+        var found = search(q, entries);
+        renderResults(results, found);
+        results.classList.add('active');
+      }).catch(function() {
+        renderError(results);
+        results.classList.add('active');
+      });
     });
     input.addEventListener('focus', function() {
       if (this.value.trim().length >= 2) {
