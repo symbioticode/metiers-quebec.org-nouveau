@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrôle de la qualité des pâtes et 
+papiers, technicien en — Métiers Québec</title>
+  <meta name="description" content="Métier Contrôle de la qualité des pâtes et 
+papiers, technicien en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/foresterie/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Foresterie et papier
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/foresterie/">Foresterie et papier</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Contrôle De La Qualité Des Pâtes Et 
+Papiers, Technicien En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/foresterie/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Foresterie et papier
+        </a>
+        <div class="page-header__tag">Foresterie et papier</div>
+        <h1 class="page-header__title">Contrôle De La Qualité Des Pâtes Et 
+Papiers, Technicien En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Foresterie et papier</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technologue en pâtes et papiers; tu seras responsable dee superviser, coordonner, contrôler et assurer le bon déroulement des procédés de transformation du bois et des procédés de fabrication de la pâte, du papier et du carton. En production; tu devras vérifier le bon fonctionnement des instruments et des équipements du procédé; prendre des mesures de pression, de température et de débit et rédiger les rapports nécessaires sur le déroulement de la production. Tu travailleras en collaboration avec les opérateurs, les mécaniciens d'entretien et les machinistes afin de t'assurer du bon déroulement de l'ensemble des opérations de procédés de transformation ou de fabrication des produits de pâte, de papier ou de carton. En contrôle de la qualité; tu auras à prélever des échantillons dans le processus de production et effectuer des analyses et des tests en laboratoires pour vérifier et contrôler la qualité des produits fabriqués. QUALITÉS ET APTITUDESNÉCESSAIRES : -Aptitudes en mathématiques et en sciences -Intérêts pour le milieu industrielm les technologies en lien avec le papier et le carton et pour les enjeux environnementaux -Bonne condition et endurance physique car tu auras à travailler de longues heures debout en usine -Bonnes habiletés manuelles car tu devras manipuler des échantillons délicats pour des tests et des produits chimiques de toutes sortes -Capacité d’analyse et de synthèse et sens logique pour être capable d’analyser et de résoudre des problèmes reliés aux procédés de transformation -Minutie, précision et souci du détail car tu devras t’assurer de la qualité des produits transformés -Bonne méthode de travail et gestion du temps car tu auras à planifier les activités de production -Sens de l’observation pour observer et détecter des anomalies dans le processus de production -Sens des responsabilités car tu seras responsable du bon déroulement des opérations de transformation et du personnel de l’usin -Sens de l’initiative car tu devras prendre des décisions seul(e) lorsqu’il y a des problèmes -Facilité à travailler en équipe car tu auras à collaborer avec d’autres technologues, avec de nombreux ouvriers d’usine (allant des manœuvres, des opérations de machines, des machinistes, des mécaniciens industriels, etc.) et des ingénieurs - Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec les membres de l' équipe de production, ainsi que pour rédiger des rapports techniques - Bonne connaissance de la langue langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec les membres de l' équipe de production, ainsi que pour rédiger des rapports techniques PROFESSIONS APPARENTÉES : -Essayeur(euse) en laboratoire - Superviseur(e) de production - Superviseur(e) d'une usine de désencrage - Superviseur(e) du contrôle de la qualité - Technicien(ne) en contrôle de la qualité -Technicien(ne) en papier - Technicien(ne) en procédés de transformation de la pâte -Vérificateur(trice) de papier -Technicien(ne) en contrôle de la qualité des produits -Représentant(e) technique en produits papetiers - Technicien(ne) en laboratoire de recherche et développement EMPLOYEURS POTENTIELS : -Industries papetières (Domtar, Kruger, Cascades, Tembec, Produits forestiers Résolus, etc.) -Industries chimiques (produits ménagers, produits chimiques industriels, etc.) -Industries pétrochimiques (caoutchouc, plastiques, peinture, etc.) EXIGENCES DES EMPLOYEURS : -Connaissance de l’anglais (certains exigent le bilinguisme) -Polyvalence -Facilité d’adaptation aux nombreux changements technologiques -Certains employeurs exigent d’être membre de l’Ordre des technologues professionnels AFFILIATION À UNE ASSOCIATION PROFESSIONNELLE : Il est possible de devenir membre de l’. L’obtention du titre professionnel T.P. te permettra d’accéder à certains postes-clés en entreprise et obtenir une reconnaissance dans la profession PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2024 : Le salaire moyen en début de carrière était de : - 24,68 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) aux opérations ou technicien(ne) aux procédés ou technicien(ne) en contrôle de la qualité au sein des PME - 33,89 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) aux opérations ou technicien(ne) aux procédés au sein des grands manufacturiers de produits papetiers - 34,58 $/heure (40 hres/sem) en moyenne en tant que planificateur(trice) de production au sein des grands manufacturiers de produits papetiers - 34,66 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) en contrôle de la qualité ou technicien(ne) en laboratoire au sein des grands manufacturiers de produits papetiers Sources : Ministère de l'Enseignement supérieur du Québec, Cégep de Trois-Rivières et conventions collectives des employés de plusieurs grandes industries papetières. PERSPECTIVES D’AVENIR : La majorité des entreprises papetières appartiennent à de grandes multinationales qui effectuent des rationalisations dans leurs usines et ferment les moins rentables afin de devenir plus concurrentiel dans le marché mondial. Ce sont principalement les usines qui fabriquent du papier journal ou du papier tout usage qui deviennent de moins en moins rentables. Même là, certains emplois spécialisés sont encore nécessaires même si la production est diminuée dont les technologues en contrôle de la qualité, les technologues en planification de la production et les technologues en maintenance industrielle. Or, les usines qui fabriquent du papier hygiénique, du papier fin et spécialisé, des emballages alimentaires et des emballages en carton fonctionnement très bien. Avec plus de 68 usines qui emploient plus de 17 200 travailleuses et travailleurs que l'on retrouve au Québec, ce n'est les emplois qui manquent au sein de cette industrie. Donc, ce n'est pas demain que cette industrie cessera d'exister au Québec .... On y fabrique : du papier pour les soins personnels et de beauté (papier hygiénique, serviettes et tampons hygiéniques, napperons et essuie-tout); emballages en papier (principalement pour les produits alimentaires tels que les viandes, poissons et fruits et légumes et l'emballage de divers produits industriels délicats); papier d'impression (couché, non couché, etc.); papiers spéciaux et de sécurité (pour les beaux-arts, pour le graphisme, papier de sécurité pour passeports, chèques, contrats, etc.); carton caisse (pour les emballages commerciaux de toutes sortes dont les objets fragiles ou des matériaux difformes); carton plat (pour l'isolation en construction de bâtiments ou accessoires pour la fabrication de meubles, l'encadrement et la reliure); papier d'édition (livres, magazines, etc.); papiers commerciaux (enveloppes, étiquettes, affiches, dépliants, etc. et autres fournitures de bureau, même s'ils sont moins utilisés qu'auparavant, ils sont toujours en usage dans la plupart des entreprises) et enfin, le papier journal (voué à disparaitre, mais encore utilisé, mais volume moins important). Actuellement, l'âge moyen actuel d'un travailleur de l'industrie papetière est de 52 ans, donc un grand nombre devront prendre leur retraite au cours des prochaines années et devront être remplacés, même ils ne le sont pas tous. Il ne faut pas oublier, que le Québec est l'un des grands producteurs de papiers au monde et qu'il y a plus de 50 usines papetières dans la province et ne fermeront pas toutes dans les prochaines années. Mais, plusieurs autres industries chimiques et pétrochimiques emploient ces technologues qui possèdent leurs expertises nécessaires en transformation et en production de produits chimiques et en maintenance industrielle car les diplômés(es) en technologie du génie chimique et en techniques des procédés chimiques ne suffisent pas à la demande. La rémunération moyenne après expérience en 2024 : le salaire annuel moyen d'un(e) superviseur(e) de production détenant 10 années d'expérience au sein d'une PME était de 62 200 $; t le salaire annuel moyen d'un(e) planificateur(trice) de production détenant 10 années d'expérience au sein d'une grande industrie papetière était de 82 000 $. le salaire annuel moyen d'un(e) technicien(ne) en contrôle de la qualité détenant 10 années d'expérience au sein d'une grande industrie papetière était de 80 400 $; et le salaire annuel moyen d'un(e) technicien(ne) en procédés détenant 10 années d'expérience au sein d'une grande industrie papetière était de 82 200 $; LE PROGRAMME D’ÉTUDES : Le Diplôme d’études collégiales en technologie des procédés et valorisation des pâtes et papiers D.E.C. a une durée totale de 3 ans offert à temps complet. CE PROGRAMME EST SUSPENDU !. Consulte les détails sur les programmes de Le Diplôme d’études collégialesen technologie des procédés industriels et environnement D.E.C. a une durée totale de 3 ansoffert à temps complet de jour seulement. Consulte la page de . ÉTUDES SUPÉRIEURES : Le programme a pour but de t’intégrer au marché du travail, mais il te sera également possible de poursuivre tes études à l’université l’un des programmes suivants : -Bacc en génie du bois -Bacc en génie biotechnologique -Bacc en génie chimique -Bacc en chimie PASSERELLES : (</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

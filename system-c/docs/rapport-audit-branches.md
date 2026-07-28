@@ -115,8 +115,17 @@ aa90b39 feat(sha): cnp_sha_check.py — lookup SHA-1 exact, autonome, zéro dép
 e186ffc feat(sha): build_sha_table.py + cnp-sha-table.json (516 CNP, 2352 SHA-1, 0 collision)
 ```
 
-**Verdict : À ARCHIVER SANS MERGER** → Renommée `archive/cnp-sha-check-pending`.
-
+**Verdict : À ARCHIVER SANS MERGER** → Renommée `archive/cnp-sha-check-pending`
+(pas `-rejected`). Raison précise : le problème n'est pas que la
+proposition est mauvaise — le hachage exact fonctionne, prouvé sur le
+cas fondateur (31301/32101) et durci depuis (`kb022-durcissement-sha-check.md`).
+Le problème est une couverture opérationnelle trop étroite : un seul cas
+d'usage concret validé ne suffit pas à justifier une généralisation vers
+`phase2-systemc`. Question de *portée*, pas de *qualité* — même
+distinction que kb018 vs kb010/kb013 (invariance syntaxique exacte vs
+sémantique tolérante), deux fils volontairement non fusionnés tant qu'un
+deuxième cas d'usage concret ne le justifie pas. Condition de sortie du
+statut `pending` : ce deuxième cas d'usage, pas un délai.
 ---
 
 ### 3. `experimental/cnp2021-extraction`
@@ -235,6 +244,18 @@ Fichiers supplémentaires (vs `cnp2021-extraction`) :
 
 ---
 
-## Signallement
+## Signalement
 
 **`scripts/cnp_sha_check.py`** est maintenant présent sur `phase2-systemc` via le merge, mais **n'a pas été soumis au durcissement-outils-classification_v0_1.md**. Ce fichier n'est pas validé pour trancher quoi que ce soit — c'est un chantier séparé, non prioritaire, à traiter dans un sprint dédié plus tard. Le merge de l'étape 3 n'implique PAS que `cnp_sha_check.py` soit validé pour trancher quoi que ce soit. Ce point doit être signalé pour ne pas être oublié silencieusement.
+
+---
+
+## Leçon méthodologique — pourquoi le dry-run reste obligatoire même sur un rapport jugé fiable
+
+Lors de ce ménage, un rapport d'audit produit par agent (Big Pickle)
+s'est révélé exact sur presque tous les points, sauf un écart mineur de
+comptage de fichiers (53 annoncés vs 51 recomptés indépendamment, sans
+conséquence sur le verdict). Sans conséquence ici — mais c'est le
+dry-run rejoué et le recomptage indépendant qui l'ont détecté, pas la
+qualité de rédaction du rapport. Aucun rapport d'agent n'est traité
+comme suffisant sans ce recalcul, quelle que soit sa rigueur apparente.

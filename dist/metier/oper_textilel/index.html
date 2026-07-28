@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction textile, opérateur de machines 
+en — Métiers Québec</title>
+  <meta name="description" content="Métier Construction textile, opérateur de machines 
+en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/mode/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Mode et production textile
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/mode/">Mode et production textile</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Construction Textile, Opérateur De Machines 
+En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/mode/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Mode et production textile
+        </a>
+        <div class="page-header__tag">Mode et production textile</div>
+        <h1 class="page-header__title">Construction Textile, Opérateur De Machines 
+En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Mode et production textile</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’opératrice ou opérateur de machines en production textile; tu seras responsable de faire fonctionner des machines (bisoteurs de tapis, machines à coudre industrielle, machines à broder, machines à visiter le tissu, machines à confectionner les charlottes,machines d'emballage pour textiles en rouleau, tendeurs, tendeurs à lanterne, tendeurs d'arrimage, surjeteuses automatiques, thermoscelleuses, ourdissoirs, presses, systèmes de découpe au laser, etc.) qui servent à transformer les filés et les fils en produits tissés, non tissés et tricotés tels que des étoffes, des dentelles, des tapis, des cordes, des matelas, des tissus industriels, des articles de bonneterie, des tricots ou des tissus à piquer et à broder. Tu auras pour tâches de : ·Monter des métiers à tisser et d'autres machines de traitement des produits textiles; ·Étudier des patrons et préparer des métiers à tisser pour obtenir les motifs désirés; ·Faire fonctionner des métiers à tisser pour fabriquer, avec des filés et des fils, des tissus ou d'autres produits textiles; ·Faire fonctionner des machines servant à faire de la corde, des ficelles ou des filets; ·Faire fonctionner des barillets de machines à tricoter pour fabriquer des tricots, des articles de bonneterie ou d'autres produits ·Faire fonctionner des machines servant à fabriquer des tapis tuftés, des tapis feutres aiguilletés et d'autres machines servant à fabriquer des produits textiles; ·Faire fonctionner de grosses machines automatiques à aiguilles multiples afin de broder du matériel ou de coudre des rouleaux d'étoffe de plusieurs couches pour fabriquer des produits au mètre, des édredons ou des housses de matelas; ·Surveiller les machines et vérifier les tissus ou les produits pour veiller à ce qu'ils ne présentent aucun défaut et à ce que l'équipement fonctionne correctement; ·Régler des machines; ·Rechercher la cause des problèmes, prendre des mesures correctives et effectuer des réparations mineures; ·Nettoyer et lubrifier des machines et assurer leur entretien courant; ·Remplir et tenir à jour des rapports de production. En tant qu’opératrice ou opérateur de machines en transformation du textile; tu seras responsable de faire fonctionner des machines (machines à texturer, machines à filer, machines à tisser, machines à tricoter, machines de préparation des fibres, machines de tissage à rapières, etc.) servant à préparer les fibres textiles; filer, tordre les fils et les filés et blanchir, teindre ou finir les filés, les fils, les tissus ou d'autres produits textiles. Tu auras pour tâches de : ·Faire fonctionner et alimenter les machines qui servent à laver, à malaxer, à mélanger, à ramasser, à carder, à napper, à peigner ou à étirer les fibres et les fils de laine; ·Faire fonctionner les ourdissoirs, les broches, les bobinoirs ou les renvideurs; ·Faire fonctionner diverses machines servant à blanchir, à teindre, à apprêter ou à finir les tissus, les fils, les filés ou d'autres produits textiles; ·Mélanger les teintures ou les produits chimiques selon les formules prescrites; ·Faire fonctionner les machines qui impriment des motifs sur les produits textiles; ·Surveiller les aires de travail, examiner les produits finis afin de déceler les défauts et d'assurer la conformité aux normes de qualité; ·Régler des machines; ·Rechercher la cause des problèmes, prendre des mesures correctives et effectuer des réparations mineures; ·Nettoyer et lubrifier des machines et assurer leur entretien courant; ·Remplir et tenir à jour des rapports de production. QUALITÉS ET APTITUDESNÉCESSAIRES : -Avoir une bonne vision -Bonne perception des formes -Très bonnes habiletés manuelles car tu auras à opérer les différentes commandes de machines -Minutie, précision et souci du détail car tu auras à effectuer des opérations de production de façon minutieuse -Sens de l’observation pour être capable de déceler des anomalies sur la machine ou des défauts de fabrication -Sens des responsabilités car tu seras responsable des opérations à l’aide de ta machine -Autonomie et débrouillardise pour être en mesure de régler seul(e) les problèmes lors de l’opération d’une machine -Facilité à travailler en équipe car tu auras à travailler avec la collaboration de d’autres ouvriers et avec des techniciens de production PROFESSIONS APPARENTÉES : -Opérateur(trice) de blanchiement -Opérateur(trice) au banc de finition -Opérateur(trice) au banc de teinture -Opérateur(trice) au coffre de vaporisation -Opérateur(trice) d'aiguilleteuse -Opérateur(trice) de bobineuse automatique -Opérateur(trice) de bobineuse conventionnelle -Opérateur(trice) de bobinoir -Opérateur(trice) de brodeuse automatique -Opérateur(trice) de brodeuse conventionnelle -Opérateur(trice) de calandeuse -Opérateur(trice) de carde -Opérateur(trice) de canetière automatique -Opérateur(trice) de centrifugeuse à textile -Opérateur(trice) de continu à filer -Opérateur(trice) de continu à retordre -Opérateur(trice) de machine à brosser -Opérateur(trice) de lidder -Opérateur(trice) de foulard -Tisseur(euse) -Tresseur(euse) -Tricoteur(euse) EMPLOYEURS POTENTIELS : -Manufacturiers de produits textiles -Usines de tissus EXIGENCES DES EMPLOYEURS : -Polyvalence -Facilité d’adaptation aux changements technologiques PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2022 Le salaire moyen en début de carrière était de : Le salaire moyen en début de carrière était de : - 16,00 $/heure (40 hres/sem) en moyenne au sein des PME - 20,55 $/heure (40 hres/sem) en moyenne au sein des grands manufacturiers de produits textiles Sources : Emploi-Québec et conventions collectives des employés de plusieurs grands manufacturiers de produits textiles. PORTRAIT DU MÉTIER : Selon Emploi-Québec; il y avait plus de 2 000 opératrices et opérateurs de machines à traiter les fils, les fibres textiles, les cuirs et les peaux; Ainsi que plus de 1 000 tisseurs(euses), tricoteurs(euses) et opérateurs(trices) de machines à fabriquer des produits en textile;dans l'ensemble du Québec en 2018. Plus de 57 % étaient des hommes, alors que les femmes représentaient 43 %. Plus de 93 % occupaient un poste à temps complet. Près de 20 % de la main-d'œuvre provient des personnes immigrantes. La répartition selon l'âge était : ·8 % avaient moins de 25 ans ·33 % avaient entre 25 et 44 ans ·29 % étaient âgés entre 45 et 54 ans ·30 % étaient âgés de 55 ans ou plus PERSPECTIVES D’AVENIR : On a annoncé la mort du textile avec l’arrivée de la Chine, il y a une vingtaine d’années. Ce qui est faux. Il y a du textile au Québec, du textile très technique. Seulement 15 % à 20 % des entreprises produisent des tissus pour le milieu vestimentaire. Les autres occupent différents marchés : bâtiment, ameublement, industriel, médical, environnement, sécurité, protection, transport, etc. Lorsqu'on parle de textiles spécialisés, on y inclut par exemple : des garnitures intérieures pour aéronefs, des textiles rembourrés pour véhicules, des sacs d'emballage pour produits industriels, des tapis haute résistance, des courroies en matières textiles, des matériaux textiles pour les toitures, des géotextiles pour la protection des drains ou ouvrages de drainage, des géotextiles pour la séparation des remblais, des géotextiles pour la protection de la fondation de routes, chaussées ou voies ferrées, etc. Bien que cette industrie soit constituée majoritairement de PME, quelques grands manufacturiers sont également présents au Québec tels que : Avianor dans les Laurentides (fauteuils et garnitures intérieures pour aéronefs), Texel en Chaudière-Appalaches(géotextiles), Soprema dans le Centre-du-Québec(géotextiles), Beaulieu Canada en Montérégie(tapis et carpettes), Tapis Venture en en Chaudière-Appalaches(tapis et carpettes), Albany International en Montérégie (feutres textiles pour l'industrie des pâtes et papiers), Georges Courey de Laval (literie pour institutions), MIP de Montréal (literie pour institutions et articles d'incontinence), etc Pour ce qui est de l'industrie de la transformation des matières textiles (filage, cordage, tissage, tricotage, etc.), on y retrouve plus d'une quarantaine d'entreprises de transformation de fabrication de tissus larges et tricots partout au Québec, principalement des PME. On retrouve également quelques importants employeurs comme Filspec en Estrie, Rayonese Textile dans les Laurentides, Victor Textile en Chaudière-Appalaches, Stedfast en Montérégie, Calko Canada à Montréal et Tapis Venture en Montérégie. Bien que la formation soit disparue, faute de candidats; il y a encore des entreprises qui fonctionnent bien et qui ont besoin d'opératrices et d'opérateurs pour leurs machines. Par contre, La plupart sont embauchés d'abord comme manœuvres et ensuite, ils sont formés par l'employeur pour opérer leurs machines. Toutefois, Compte tenu des départs à la retraite et de l’arrivée denouveaux travailleurs dans le secteur, il est permis decroire qu’un plus grand nombre d’employés possèdentun certificat ou un diplôme d’études secondairesqu’auparavant. Fait intéressant et important à mentonner, cette industrie a une grande ouverte pour l'embauche de personnes immigrantes, de personnes présentant un handicap (physique, sensoriel ou intellectuel), les personnes marginalisées ou judiciarisées, ainsi que les personnes dite expérimentées (semi- retraités, retraités et autres séniors de plus de 50 ans en recherche d'emploi). Selon l’enquête réalisée en 2020 par le Comité sectoriel de main-d’oeuvre de l’industrie du textile du Québec (CSMO) révèle que 70 % des employeurs ayant répondu au sondage Web estiment que plus de la moitié de leurs employés sont âgés de 45 ans et plus. En 2022, il manquerait environ 500 postes vacants dans l’industrie du textile selon ce même organisme,; et ce, malgré la baisse du nombre d’entreprises dans le secteur. Il n’y a pas de relève pour tous les travailleurs(euses) qui partent à la retraite. Donc, de bonnes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>sont à prévoir au cours des prochaines années pour les opérateurs(trices) de machines en production textile. En 2022, un(e) opérateur(trice) de machines à coudre industrielle ayant 10 années d'expérience au sein d'une PME gagnait en moyenne 33 300 $; et un(e) opérateur(trice) de machines à coudre industrielle ayant 10 années d'expérience au sein d'un grand manufacturier de produits textiles gagnait en moyenne 47 000 $. LE PROGRAMME D’ÉTUDES : Il n'existe plus de formation professionnelle pour ce métier</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machinerie forestière, opérateur de — Métiers Québec</title>
+  <meta name="description" content="Métier Machinerie forestière, opérateur de au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/foresterie/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Foresterie et papier
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/foresterie/">Foresterie et papier</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Machinerie Forestière, Opérateur De</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/foresterie/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Foresterie et papier
+        </a>
+        <div class="page-header__tag">Foresterie et papier</div>
+        <h1 class="page-header__title">Machinerie Forestière, Opérateur De</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Foresterie et papier</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’opérateur ou opératrice de machines d’abattage forestier; tu seras chargé(e) d'opérer différents types de machines forestières (telles que : abatteuse-façonneuse sur roues, abatteuse-façonneuse sur chenilles, porteur-autochargeur à 4 ou 6 roues motrices, etc.) afin d'exécuter des travaux pour abattre, débusquer et traiter les arbres sur un chantier forestier. Tu devras effectuer diverses tâches d’abattage, de façonnage, de débardage et de transport du bois à l’aide de ces machines pour des fins d’exploitation forestière. Tu auras également à faire l’entretien et le dépannage de ces machines afin de t’assurer de leur bon état de fonctionnement et pour assurer la sécurité de tes collègues. En tant qu’opérateur ou opératrice de machines en voirie forestière; tu seras chargé(e) d'opérer des machines de voirie forestière (telles que : tracteurs forestiers, abatteuses, ébrancheuses, chargeuses à grappin, débardeurs, débusqueuses, fendeuses, treuils forestiers, béliers mécaniques, pelles hydrauliques, bouteurs, etc.) afin d’exécuter des travaux de construction et d’entretien de chemins forestiers, d’exploitation des forêts et autres travaux connexes. Tu auras également à faire l’entretien et le dépannage de ces machines afin de t’assurer de leur bon état de fonctionnement et pour assurer la sécurité de tes collègues. QUALITÉS ET APTITUDES NÉCESSAIRES : -Avoir une bonne vision -Bonne endurance physique car tu auras à travailler assis(e) de longues heures -Bonnes dextérités manuelles pour manipuler efficacement les commandes de l’engin -Autonomie et débrouillardise car tu auras à travailler généralement seul(e) -tu seras responsable du bon état du véhicule -Aptitudes à travailler en équipe car tu auras à travailler en collaboration avec d’autres collègues ouvriers, opérateurs d'engins et techniciens sur les chantiers forestiers PROFESSIONS APPARENTÉES : -Conducteur(trice) de tracteur forestier -Débardeur(euse) en forêt -Opérateur(trice) de machinerie forestière (abatteuse-tronçonneuse, abatteuse-façonneuse, porteur-autochargeur, etc) -Opérateur(trice) d’engins de chantiers de construction (chargeuse, bouteur, pelle hydraulique, etc) EMPLOYEURS POTENTIELS : -Compagnies forestières -Coopératives forestières -Offices de producteurs de bois -conventions collectives de producteurs de bois EXIGENCES DES EMPLOYEURS : -Polyvalence -Mobilité essentielle en régions éloignées -Travail en toute saison PLACEMENT : Selon les données disponibles au 1er juin 2019: En abattage et tronçonnage : Le placement est faible, seulement 47 % des répondants ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques autres répondants(es), soit 10% ont complété leurs études par un D.E.P. en mécanique d'engins de chantier. En voirie forestière : Le placement est bon, 62 % des répondants ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques autres répondants(es), soit 10 % ont complété leurs études par un D.E.P. en mécanique d'engins de chantier. PROGRAMME NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES abattage et tronçonnage 87 37 35 9 voirie forestière 223 125 121 22 Note 1 : baissedu taux de placement en abattage et tronçonnage par rapport aux années précédentes (était de 56 % en 2017; 50 % en 2015 et51 % en 2013). Note 2 : hausse du taux de placement en voirie forestière par rapport aux années précédentes (était de 51 % en 2017; 45 % en 2015 et53 % en 2013). Sources : Ministère de l’Éducation du Québec SALAIRE : Selon les données de 2024 : La salaire moyen en début de carrière était de : -22,00$/heure (50 hres/sem) en moyenne en tant qu'opérateur(trice) de machinerie en voirie forestière au sein des PME -21,00 $/heure (50 hres/sem) en moyenne en tant qu'opérateur(trice) de machinerie d'abattage au sein des PME -23,44 $/heure (40 hres/sem) en moyenne en tant qu'opérateur(trice) dechargeuse au sein des grandes industries de transformation de produits forestiers -23,54 $/heure (40 hres/sem) en moyenne en tant qu'opérateur(trice) de machinerie au sein des grandes industries de transformation de produits forestiers -30,97 $/heure (40 à 50 hres/sem) en moyenne en tant qu'opérateur(trice) de débusqueuse au sein des grandes entreprises d'exploitation forestière -31,92 $/heure (40 à 50 hres/sem)en moyenne en tant qu'opérateur(trice) de machines d'abattage (abatteuse, ébrancheuse, etc.) au sein des grandes entreprises d'exploitation forestière -32,09 $/heure (40 à 50 hres/sem)en moyenne en tant qu'opérateur(trice) de machines de voirie forestière (chargeuse, niveleuse, transporteur) au sein des grandes entreprises d'exploitation forestière -33,90 $/heure en tant qu'opérateur(trice) de tracteur D6 et moins ou d'un tracteur de mise en forme au sein des grandes entreprises d'exploitation forestière Note : hausse de la moyenne salariale en abattage forestier par rapport aux années précédentes (était de 19,10 $ en 2022; 17,95 $ en 2019; 17,55 $ en 2017 et19,90 $ en 2015). Note : hausse de la moyenne salariale en voirie forestière par rapport aux années précédentes (était de 23,28 $ en 2022; 21,63 $ en 2019; 21,65 $ en 2017 et21,95 $ en 2015). Sources : Ministère de l’Éducation du Québec, conventions collectives des employés de plusieurs grandes entreprises d'exploitation, conventions collectives des employés de plusieurs grandes industries de transformation et conventions collectives des employés de plusieurs grandes industries papetières. PORTRAIT DES MÉTIERS : Selon Emploi-Québec; il y avait plus de 13000 opératrices et opérateurs de machines d'entretien des chemins forestiers; Ainsi que plus de 1500 opératrices et opérateurs de machines d'abattage d'arbres dans l'ensemble du Québec en 2022. Plus de 95 % étaient des hommes. Plus de 97 % occupaient un poste à temps complet Plus de 64 % travaillaient une partie de l'année seulement (33 à 36 semaines en moyenne), alors que 36 % travaillaient à l'année. La répartition selon l'âge était : ·9 % avaient moins de 25 ans ·18 % avaient entre 25 et 34 ans ·20 % étaient âgés entre 35 et 44 ans ·23 % étaient âgés entre 45 et 54 ans ·25 % étaient âgés entre 55 et 64 ans ·5 % étaient âgés de 65 ou plus PERSPECTIVES D'AVENIR : Malgré le fait qu’il s’agisse d’un secteur saisonnier, le nombre d’heures annuelles moyennes travaillées dans le secteur forestier était supérieur à celui de l’ensemble des industries au Québec (1924 heures vs 1599 heures).. Selon une étude réalisée par le Comité sectoriel de la main-d'oeuvre en aménagement forestier du Québec en 2021; plus de 58 % des entreprises répondantes ont affirmé avoir beaucoup de difficultés à recrutement de la main-d'oeuvre tant en aménagement qu'en exploitation. Plus de 30 % des travailleurs(euses) forestiers sont âgés de 55 ans et prendront leur retraite au cours des prochaines années, ce qui laissera de nombreux postes à combler. Elle estime que près d'une centaine d'opérateurs(trices) de machines d'abattage d'arbres et plus d'une vingtaine d'opérateurs(trices) de machines en voirie forestière seront nécessaires afin de combler les postes actuellement vacants et les départs à la retraite au sein des entreprises répondantes au cours des prochaines années. Regarde les vidéos promotionnelles suivantes sur les activités &quot;&quot; destinés aux étudiants(es) de secondaire 3, 4 et 5 afin de leur permettre ddécouvrir les métiers de cette industrie et organisée par le Comité sectoriel de la main-d'œuvre en aménagement forestier du Québec et Formabois, 2 organismes de promotion des carrières de l'industrie forestière et qui se déroulent dans plusieurs régions du Québec. Donc, les</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>, etc. Note : la formation théorique se déroule le jour, tu apprendras à opérer les machines pendant le jour et le soir, mais lors des stages tu effectueras des quarts de jour et des quarts de soir et/ou nuit. Donc, tu devras être assurer ta disponibilité pour cette période. Pour plus de détails sur ce programme regarde : §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par le; §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par le . Le Diplôme d’études professionnelles en conduite de machinerie en voirie forestière D.E.P. a une durée totale de 630 heures, c’est-à-dire de 21 semaines (5 mois) à temps plein. Tu auras des cours sur les normes de construction des chemins forestiers, l’entretien des engins de voirie forestière, la conduite d’une pelle hydraulique, la conduite d’un bouteur, la lutte contre les incendies de forêt, la mise en forme d’un chemin forestier, la construction de ponceaux, la construction et l’entretien de la surface de roulement d’un chemin forestier, l’exploitation d’un banc d’emprunt, etc. Note : tu apprendras à opérer les machines pendant le jour, mais lors des stages tu effectueras des quarts de jour et des quarts de soir et/ou nuit. Donc, tu devras être assurer ta disponibilité pour cette période. Pour plus de détails sur ce programme, regarde les vidéos suivants : §la vidéo promotionnelle réalisée par le; §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par le; §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par le ; §la vidéo promotionnelle réalisée par l'; §la vidéo promotionnelle du double DEP en transport par camion / DEP en conduite de machinerie en voirie forestière réalisée par Les Productions AH pour l' (conjointement avec le CFP de Portneuf et le Centre de formation en transport de Charlesbourg). EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes AUTRE EXIGENCE D’ADMISSION: Pour le D.E.P. en voirie forestière : - Détenir un permis de conduire valide classe 5 (probatoire ou régulier) (tous les centres) - Subir un test de sélection (CFP Harricana) - Subir une entrevue de sélection (École forestière de La Tuque) Pour le D.E.P. en abattage et tronçonnage des bois : - Subir un test de sélection (CFP Harricana) STATISTIQUES D’ADMISSION : Aucun contingentement à ces programmes Les candidats(es) qui répondent aux</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>sont généralement admis Toutefois, il y a un test de sélection au CFP Harricana : inscris-toi le plus tôt possible. ENDROITS DE FORMATION : Demande d'admission via Internet, consulte Infos sur l’ Infos sur l’ Pour le D.E.P. en abattage et façonnage des bois : Note : la formation théorique se déroule le jour, mais la formation pratique se déroule en partie de jour et l'autre partie de soir. • , Pavillon de la Foresterie, Forestville (C.S.S. de l’Estuaire, Côte-Nord) regarde la du programme; admissions à temps complet de jour à l'automne. • , campus de la Foresterie, Causapscal (près d'Amqui), (C.S.S. ds Monts-et-des-Marées, région du Bas-Saint-Laurent) double D.E.P. en abattage et tronçonnage des bois + voirie forestière seulement; regarde la du programme; admissions à temps complet de jour à l'hiver et à l'été. • , campus de la Foresterie, Causapscal (près d'Amqui), (C.S.S. ds Monts-et-des-Marées, région du Bas-Saint-Laurent) double D.E.P. en abattage et tronçonnage des bois + voirie forestière seulement; regarde la du programme; admissions à temps complet de jour à l'hiver et à l'été. • (C.S.S. du Fleuve-et-des-Lacs, région du Bas-Saint-Laurent), offert conjointement avec le CFPRO offert à Dégelis; double D.E.P. en aménagement des ressources fauniques et forestières seulement;</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>au cours des prochaines années sontbonnes pour les opérateurs(trices) de machines de voirie forestière. La rémunération moyenne après expérience en 2024... (moyenne de 33 semaines) un(e) opérateur(trice) de machines d'abattage d'arbres ouayant 10 années d'expérience au sein d'une PME en exploitation forestière gagnait en moyenne 51 500 $; un(e) opérateur(trice) de machines en voirie forestière ouayant 10 années d'expérience au sein d'une PME en exploitation forestière gagnait en moyenne 58 800 $; un(e)opérateur(trice) de machines d'abattage d'arbres ouayant 10 années d'expérience au sein d'une grande entreprise en exploitation forestière gagnait en moyenne 67 000 $; et un(e)opérateur(trice) de machines en voirie forestière ayant 10 années d'expérience au sein d'une grande entreprise en exploitation forestière gagnait en moyenne 67 400 $. LES PROGRAMMES D’ÉTUDES : Le Diplôme d’études professionnelles en abattage et façonnage des bois D.E.P. a une durée totale de 840 heures, c’est-à-dire 28 semaines (6 mois) à temps plein. Tu auras des cours en santé et sécurité au travail, foresterie et modalités d’intervention, techniques de secourisme en forêt, procédés de récolte des bois et optimisation du rendement, techniques d’oxycoupage, soudage et brasage, entretien préventif et dépannage d’engins, entretien et dépannage d’une tête multifonctionnelle, la conduite de porteurs autochargeurs, la conduite d’abatteuses-façonneuses, le débardage de billes, techniques d’abattage d’arbres avec l’abatteuse-façonneuse, stage de 4 semaines en</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

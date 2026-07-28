@@ -1,0 +1,15 @@
+./data/atomic-fait-schema.json
+./docs/kb008-bis.md
+./docs/kb012.md
+./docs/kb013-rapport-methodologie.md
+./scripts/gardes.py
+./scripts/ingest_imt_manuel.py
+./scripts/resoudre_conflits.py
+./scripts/smoke_test_atomique.py
+./system-c/data/atomic-fait-schema.json
+./system-c/docs/kb008-bis.md
+./system-c/GLOSSAIRE.md
+./system-c/JOUR_4_5_6.md
+./system-c/README.md
+./system-c/scripts/gardes.py
+./system-c/scripts/smoke_test_atomique.py

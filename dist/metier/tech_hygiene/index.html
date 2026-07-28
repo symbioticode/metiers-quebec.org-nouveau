@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accidents du travail, enquêteur aux — Métiers Québec</title>
+  <meta name="description" content="Métier Accidents du travail, enquêteur aux au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/environnement/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Environnement et aménagement du territoire
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/environnement/">Environnement et aménagement du territoire</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Accidents Du Travail, Enquêteur Aux</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/environnement/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Environnement et aménagement du territoire
+        </a>
+        <div class="page-header__tag">Environnement et aménagement du territoire</div>
+        <h1 class="page-header__title">Accidents Du Travail, Enquêteur Aux</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Environnement et aménagement du territoire</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>des liaisons chimiques, les caractéristiques des gaz ainsi que les états de la matière et les changements d’états); tu seras initié(e) aux notions de base, aux problématiques et aux grands enjeux des trois champs de la technique : protection de l’environnement, hygiène industrielle et sécurité au travail; tu apprendras à reconnaître, distinguer et observer les risques physiques, chimiques et biologiques qui sont présents dans la plupart des secteurs d'activités industriels; tu seras familiarisé(e) avec la gestion des matières dangereuses et résiduelles et de mieux cerner les besoins et le bien-fondé du contrôle des contaminants; explorer de nombreuses techniques, tu exploreras les différents outils et méthodes de communication afin de diffuser et livrer l’information en matière de santé, sécurité et hygiène au travail; tu apprendras à identifier les facteurs de risques physiologiques et ergonomiques à la santé des travailleurs(euses); tu approfondiras les notions fondamentales de la chimie appliquées à l'environnement en étudiant les grandes familles de composés organiques, leurs structures et la nomenclature; tu seras initié(e) au fonctionnement et à l’aménagement de différents procédés, ainsi qu’aux caractéristiques de l’organisation des entreprises dans différents secteurs industriels du Québec (construction, métallurgie, plasturgie, papetier, minier, transformation du bois, etc.); tu seras initié(e) aux principes et aux protocoles de base d’échantillonnage, d'analyses et d’essais en environnement et tu seras familiarisé(e) avec la législation, la réglementation et la normalisation en matière de santé, de sécurité et d’environnement au travail. Tu auras des cours tels que : mathématiques appliquées à l'environnement et santé au travail, chimie en environnement 1, introduction à l'environnement et à la sécurité, identification des risques, traitement des matières résiduelles, communication et rédaction technique,physiologie humaine, ergonomie et santé au travail, chimie en environnement 2, procédés industriels et organisation du travail, méthodes d'échantillonage et d'analyse en environnement et législation et santé, sécurité et environnement au travail. Si tu as choisi la formule enalternance travail-études ATE, tu réaliseras ton premierstage rémunéréau cours du trimestre d'été. Au cours de la deuxième année; tu seras familiarisé(e) avec la gestion de dossier particulièrement en ce qui a trait à la prévention, aux lésions professionnelles et à l’aspect financier le tout dans le respect des lois et des règlements du Québec; tu poursuivras l’étude de l’identification et du contrôle des rejets à l’environnement ainsi que des risques pour la santé et sécurité au travail en milieu industriel et initié(e) aux nouvelles formes d’organisations du travail telles que la production à valeur ajoutée, les 5S et les cellules de production; tu apprendras les modes de transmission des agents pathogènes afin d’exercer un contrôle sur ces contaminants en</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En devenant technicienne ou technicien en hygiène industrielle; tu seras responsable d'intervenir dans un</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>) implique quelques déplacements à Jonquière au Saguenay Lac-Saint-Jean ou à La Pocatière dans le Bas-Saint-Laurent ou à Montréal pour des laboratoires et stage regarde la du programme offert au conjointement avec le • Organisation scientifique de la production (705 heures - 28 semaines à temps complet en présentiel de jour) OU (705 heures - 14 mois à temps partiel en présentiel de jour) comprend un stage de 4 semaines en milieu industriel offert au</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>au cours des prochaines années au sein de cette industrie. L'industrie minière québécoise : Le Québec est l’un des 10 territoires miniers les plus explorés au monde. Depuis le début des années 90, la moitié des mines ont commencé à être exploitées ce qui a permis au Québec de connaître une des plus grandes croissance de son industrie minière de toute son histoire. De plus, un grand nombre de géologues actuellement en emploi sont âgés et devront prendre leur retraite dans les prochaines années. Pour toutes ces raisons, les perspectives de découvertes nouvelles et par le fait même des emplois pour des spécialistes des mines sont excellentes pour les 10 prochaines années. Maintenant, les exploitations minières du Québec représentent plus de 60 % de tous les minerais exploités au Canada. Le sous-sol québécois est constitué à 90 % de roches précambriennes du Bouclier canadien. Il s’agit d’un ensemble géologique réputé mondialement pour ses gisements d’or, de cuivre, de zinc, de nickel, de fer et d’ilménite. Le Québec recèle aussi un potentiel minéral significatif pour des gisements d’autres substances, telles ceux du Mont Wright (fer) à Fermont, du Lac Tio (fer et titane) à Havre-Saint-Pierre, de Niobec (niobium) au Saguenay, de Stratmin (graphite) à Mont-Laurier, Raglan (nickel-cuivre) en Ungava et de Renard (diamant) au nord du Québec. Par ailleurs, les secteurs miniers bien établis, tels ceux de Val-d’Or, Rouyn-Noranda, Matagami et Chibougamau, recèlent toujours d’importants gisements, notamment en profondeur. Parmi les ressources minérales exploitées, on retrouve : • les minéraux métalliques : or : près de 35 500 kg ont été extraites pour des revenus de plus de 1,86 milliards en 2013; nickel : plus de 32 100 tonnes ont été extraites pour des revenus de plus de 497 millions $; cuivre : plus de 31 800 tonnes ont été extraites pour des revenus de plus de 240 millions $ en 2013; fer : plus de 22 800 kilotonnes ont été extraites pour des revenus plus de 134 millions $ la même année; zinc : plus de 130 000 tonnes ont été extraites pour des revenus de près de 256 millions $; argent : plus de 118 000 tonnes été extraites pour des revenus de plus de 93,1 millions $; mais également : le niobium, le magnésium,le palatine, le sélénium et la tellure. • les minéraux non métalliques : (le charbon, le sable, le gravier, la pierre architecturale, incluant, le graphite, le titane, le quartz ou la silice, mais aussi le soufre, le sel, la tourbe, le mica, la stéatité et la chrysolite). pierre architecturale (incluant le granit, le calcaire, l'ardoise etdes le marbre) : plus de 42 400 kilotonnes ont été extraites pour des revenus totalisant plus de 496 millions $ en 2013; diamant : plus de 654 000 carats ont été extraites pour des revenus totalisant plus de 403,5 millions $ la même année; ciment : plus de 2 400 kilotonnes ont été exploitées pour des revenus de plus de 329,4 millions $; sable et gravier : plus de 22500 kilotonnes ont été exploitées pour des revenus de plus de 118 millions $; tourbe : plus de 370 kilotonnes ont été exploitées pour des revenus plus de 73,3 millions $; silice (quartz) : près de 660 kilotonnes ont été extraites pour des revenus de 43,7 millions $; sel : des revenus totalisant 54 millions $ pour la seule mine de sel au pays. Pour ce qui des minéraux en exploration (la découverte de gîtes détenant potentiellement des ressources), il y a : • les minerais métalliques (des métaux non ferreux rares comme : la tantale, le lithium, le béryllium, le zirconium, le hafnium, le germanium, le gallium, ainsi que l’yttrium et le scandium); • les minerais non métalliques (pierres gemmes comme : le diamant, mais également l'aigue-marine, l'apatite, le quartz enfumé, la labradorite, la cordiérite, la pyope, l'amazonite, la gaspéite, la scapolite, etc.). En 2015, l'ensemble de l'industrie minière a généré des revenus de 5,8 milliards, regroupait une cinquantaine d'entreprises et employait plus de 45 600 personnes. En ce qui concerne le secteur de l'exploitation et du traitement des minerais, on y retrouvait 21 compagnies d'exploitation minière qui employaient plus de 13 600 travailleuses et travailleurs. Près de 30 % de la main-d’œuvre de l’industrie minière devrait prendre sa retraite au cours des cinq prochaines années. Cet important besoin de main-d’œuvre pose aussi le défi d’intégrer rapidement un grand nombre de travailleurs aux particularités de l’emploi dans le secteur minier. Sources : Comité sectoriel de la main-d'œuvre en environnement du Québec - Enviro-Compétences, Comité sectoriel de la main-d'œuvre en métallurgie du Québec et Comité sectoriel de la main-d'œuvre des mines du Québec. LE PROGRAMME D’ÉTUDES :</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

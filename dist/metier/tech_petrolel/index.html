@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaz et pétrole, technologue en — Métiers Québec</title>
+  <meta name="description" content="Métier Gaz et pétrole, technologue en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/mines/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Mines, pétrole et travaux de génie
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/mines/">Mines, pétrole et travaux de génie</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Gaz Et Pétrole, Technologue En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/mines/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Mines, pétrole et travaux de génie
+        </a>
+        <div class="page-header__tag">Mines, pétrole et travaux de génie</div>
+        <h1 class="page-header__title">Gaz Et Pétrole, Technologue En</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Mines, pétrole et travaux de génie</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technologue en génie pétrolier, tu auras la possibilité de travailler dans l’un des 2 secteurs suivants : En extraction pétrolière : tu auras pour tâches de superviser et de coordonner en chantier les opérations d’exploitationd’hydrocarbures (pétrole, gaz naturel) et le personnel affecté à celles-ci. Tu y effectueras également des travaux d’arpentage des terrains, de ventilation, de contrôle des travaux de forage des puits, planification et organisation de l’hygiène et de la sécurité sur le chantier, la planification et la supervision des opérations de forage et de dynamitage, etc. En raffinage du pétrole : tu auras pour tâches de contrôler et assurer le bon déroulement des procédés de de transformation et de raffinage des produits pétroliers et de ses dérivés dans une raffinerie. Tu devras t’assurer du bon fonctionnement des équipements et rédiger les rapports nécessaires sur le déroulement de la production. Parfois, tu auras à effectuer des analyses et des tests en laboratoires pour vérifier et contrôler la qualité des produits raffinés ou transformés. Également, tu participeras avec d’autres techniciens et des ingénieurs la mise au point et au développement de nouveaux procédés de transformation raffinage de produits pétroliers et leurs dérivés pour différents usages. QUALITÉS ET APTITUDESNÉCESSAIRES : -Capacité d’analyse et de synthèse et sens logique pour analyser les différents problèmes en production -Sens des responsabilités car tu seras responsable des opérations -bonne méthode de travail et gestion du temps car tu auras à planifier les activités de production -Sens de l’observation pour observer et détecter des anomalies dans le processus de production -Sens de l’initiative car tu devras prendre des décisions seul(e) lorsqu’il y a des problèmes -Facilité à travailler en équipe car tu auras à collaborer avec d’autres techniciens et des ingénieurs chimistes et pétroliers PROFESSIONS APPARENTÉES : -Contremaître ou contremaîtresse des opérations de forage -Planificateur(trice) de production -Représentant(e) technique en produits pétroliers -Technicien(ne) au contrôle de la qualité -Technicien(ne) en arpentage -Technicien(ne) en forage pétrolier -Technicien(ne) en géochimie pétrolière -Technicien(ne) en géophysique pétrolière -Technicien(ne) en pétrologie -Technologue en transformation du pétrole EMPLOYEURS POTENTIELS : -Compagnies d’exploration pétrolières -Compagnies pétrolières (raffineries et services techniques) -Centres de recherches -Firmes de consultants -Gouvernement du Canada (Ministère des Ressources naturelles) EXIGENCES DES EMPLOYEURS : -Connaissance de l’anglais (certains exigent le bilinguisme) -Polyvalence -Mobilité nécessaire dans les régions d’exploitation pétrolière pour travailler dans ce secteur -Facilité d’adaptation aux nombreux changements technologiques -Certains employeurs exigent d’être membre de l’Ordre des technologues professionnels AFFILIATION À UNE ASSOCIATION PROFESSIONNELLE : Il est possible de devenir membre de l’ si tu décides de pratiquer au Québec. L’obtention du titre professionnel T.P. te permettra d’accéder à certains postes-clés en entreprise et obtenir une reconnaissance dans la profession. Par contre, dans les autres provinces, il n'existe pas d'association professionnelle pour des technologues. PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2024: Le salaire moyen en début de carrière était de : - 25,60 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) ou technologue en génie pétrolier au sein des PME en forage pétrolier (hors-Québec) - 31,09 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) aux opérations - niveau apprenti(e) et augmente à 35,09 $/heure en tant que technicien(ne) aux opérations ou technicien(ne) aux procédés ou technicien(ne) en contrôle de la qualité - niveau débutant sein des grandes entreprises en raffinage pétrolier (Québec et hors-Québec) - 38,99 $/heure (36,25 hres/sem) en tant que technicien(ne) de projets ou technicien(ne) en gestion et design du réseau ou technicien(ne) d'ingénierie à Énergir (anciennement &quot;Gaz métro&quot;) - 44,71 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) aux opérations - niveau apprenti(e) et augmente à 49,20 $/heure en tant que technicien(ne) aux opérations - niveau débutant sein des grandes entreprises d'exploitation gazière ou pétrolière (hors-Québec) Sources : conventions collectives des employés de plusieurs grandes compagnies pétrolières, Syndicat des employés professionnels, techniques et de bureau d'Énergir et Conseil canadien des ressources humaines de l'industrie du pétrole. PERSPECTIVES D’AVENIR : Il y a de bonnes possibilités d’emplois dans ce domaine, sauf que la majorité des postes disponibles sont situés à l’extérieur du Québec. Malgré tout, il y a quelques emplois disponibles au Québec dans les raffineries et au sein des services techniques des compagnies pétrolières. Pour plus de détails, consulte le où tu auras des infos sur les carrières au sein de cette industrie et profil de ce secteur économique LE PROGRAMME D’ÉTUDES : Note : ce programme n’est pas offert au Québec Le Diplôme en technologie du génie pétrolier a une durée totale de 2 ans offert à temps complet (NAIT) ou 3 ans offert à temps complet (North Atlantic). Il comporte des cours en santé et sécurité en industrie, géologie pétrolière, introduction au génie pétrolier, chimie du pétrole, mécanique des fluides, résistance des matériaux, planification et contrôle des opérations deforage des puits de pétrole, utilisation et entretien des équipements de forage, techniques de forage de puits pétroliers, propriétés et caractéristiques chimiques et physiques du pétrole, du gaz naturel et de leurs dérivés, sécurité et manipulation des produits pétroliers, optimisation de la production de pétrole et de gaz naturel, planification et contrôle de la transformation et raffinage du pétrole, procédés de rétablissement chimique du pétrole, génie des réservoirs pétroliers, contrôle de la qualité des produits pétroliers, impacts des produits pétroliers et des dérivés sur l’environnement, planification et évaluation de projets de forage, stage en industrie pétrolière, etc. Le programme a pour but de t’intégrer au marché du travail, mais il te sera également possible de poursuivre tes études à l’université soit au baccalauréat en génie pétrolier, génie chimique et pétrolier, génie chimique ou génie physique. EXIGENCES D’ADMISSION : -Détenir un D.E.S. et avoir réussi les cours suivants du secondaire ou leurs équivalents : TS ou SN 5e (anciennement mathématiques 536) Physique 5e (anciennement physique 534 ou 584) Chimie 5e (anciennement chimie 534 ou 584) STATISTIQUES D’ADMISSION : Aucune donnée disponible ENDROITS DE FORMATION: Note : ce programme n’est pas offert au Québec -, St-John (Terre-Neuve) -, Edmonton (Alberta)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

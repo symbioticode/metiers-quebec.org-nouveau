@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appareils électroniques 
+audiovidéos, réparateur d' — Métiers Québec</title>
+  <meta name="description" content="Métier Appareils électroniques 
+audiovidéos, réparateur d' au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/electrotechnique/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Électrotechnique
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/electrotechnique/">Électrotechnique</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Appareils Électroniques 
+Audiovidéos, Réparateur D'</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/electrotechnique/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Électrotechnique
+        </a>
+        <div class="page-header__tag">Électrotechnique</div>
+        <h1 class="page-header__title">Appareils Électroniques 
+Audiovidéos, Réparateur D'</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Électrotechnique</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'électronicienne ou électronicien d'entretien; tu auras pour tâches d’effectuer l’installation, l’entretien et la réparation de divers types d’appareils électrodomestiques (tels que téléviseurs, amplificateurs, caméscopes, tablettes électroniques, baladeurs numériques, bluetooth, lecteurs blueray, lecteurs DVD, lecteurs MP3, enregistreurs numériques, agendas électroniques, assistants personnels PDA, dictionnaires électroniques, livres électroniques, radios, appareils photo numériques, systèmes de son, systèmes de cinéma maison, projecteurs, antennes paraboliques numériques, certains périphériques d'ordinateurs domestiques, etc.); les systèmes électroniques audiovisuels commerciaux et institutionnels (équipements d'éclairage de scène, systèmes de sonorisation pour scènes ou salles, générateurs atmosphériques de brume ou brouillard, systèmes pour effets spéciaux, systèmes de téléconférence, équipements de vidéosurveillance, etc.); ainsi que des instruments de musique électriques et électroniques dont les guitares électriques, les claviers numériques (synthétiseurs), les drum électroniques, les échantillonneurs, les consoles de mixage, etc. Tu travailleras principalement dans un atelier, mais également chez les clients. Tu pourrais également obtenir un poste de vendeur(euse)-conseiller(ère) de ces appareils notamment dans les commerces spécialisés ou certains grands magasins. Dans ce cas, tu devras être en mesure d’aider le client ou la cliente afin d’obtenir l’appareil qu’il ou elle recherche et le ou la conseiller sur le produit qui répondra le mieux à ses besoins. Tu pourras également effectuer le montage et l'entretien des différents équipements de sonorisation, d'éclairage, de projection et autres équipements audiovisuels que l'on retrouve sur des scènes intérieures ou extérieures de spectacles. QUALITÉS ET APTITUDESNÉCESSAIRES : - Bonne compréhension de plans électriques -Bonnes habiletés manuelles et bonne dextérité manuelle car tu auras à effectuer des réparations de toutes sortes -Capacité d’analyse pour analyser et trouver rapidement une défectuosité ou tout autre problème -Minutie et précision et souci du détail car tu auras souvent à réparer les petites pièces ou des pièces délicates - Autonomie et débrouillardise car tu devras résoudre seul(e) les problèmes lorsque tu seras chez les clients -Entregent et facililté à travailler avec le public car tu devras rendre chez les clients pour faire votre travail - Très bonne maîtrise de la langue française car tu devras expliquer clairement et professionnellement certaines notions de base du fonctionnement des appareils auprès des clients -Connaissance de l’anglais oral et écrit : lorsque tu auras à te rendre chez un client qui ne parle que l’anglais pour l’oral et alors que l’écrit est nécessaire pour comprendre les manuels d’entretien des appareils souvent dans cette langue PROFESSIONS APPARENTÉES : -Vendeur-conseiller ou vendeuse-conseillère en appareils électroniques -Dépanneur(euse) d’appareils électrodomestiques - Réparateur(trice) d'appareils audio vidéo (lecteurs DVD, caméscopes, etc) - Réparateur(trice) d'instruments de musique électriques -Réparateur(trice) de récepteurs radio -Réparateur(trice) de matériel audio -Réparateur(trice) à la production d’appareils électroniques -Réparateur(trice) de téléviseurs -Réparateur(trice) de matériel photographique -Représentant(e) en appareils électroniques pour des fabricants - (Forces armées) formation offerte par les Forces - (Forces armées) formation offerte par les Forces EMPLOYEURS POTENTIELS : -Ateliers de réparation d’appareils électroniques - Commerces d'instruments de musique ayant un atelier de réparation - Commerces de matériel informatique - Commerces de matériel photographique -Commerces spécialisés en électronique (Futureshop, Best Buy, Bureau en gros, Brault &amp; Martineau, Tanguay électronique, Dumoulin électronique, etc) -Compagnies de télécommunications (Bell, Vidéotron, Northern, Rogers A &amp; T, etc) -Fabricants et grossistes d’appareils électroniques - Fabricants d'instruments de musique -,</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>de 3 semaines. PERFECTIONNEMENT ET ÉTUDES SUPÉRIEURES : Un programme d'A.S.P. en liaison en réseau d'équipement de bureautique d'une durée de 450 heures à temps plein est offert au : • , Montréal (C.S.S. Marguerite-Bourgeoys), région de Montréal Si tu le désires, tu pourras poursuivre tes études au niveau collégial dans le cadre du (spécialisation ordinateurs, télécommunications ou audiovisuels) ou du . Il existe aussi plusieurs programmes d'AEC en électronique, pour plus de détails, consulte la page de . EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoiréussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents ET poursuivra sa formation générale en concomitance avec sa formation professionnelle pour obtenir les unités de 4e secondaire qui lui manquent en langue d’enseignement, en langue seconde et en mathématiques -Soit avoir 18 ans et posséder des connaissances équivalentes STATISTIQUES D’ADMISSION : Ce programme n’est pas contingenté Les candidats(es) répondant aux conditions d'admission sont généralement admis. ENDROITS DE FORMATION : Demande d’admission via Internet, consulte Qu'est-ce que l’ ? - (Pavillon du Vieux-Sherbrooke), Sherbrooke (C.S.S. Région-de-Sherbrooke) offert enenseignement individualisé (selon ton rythme d'apprentissage) en présentiel en classe et en atelier, aussi offert en concomitance D.E.S./D.E.P. (permettant de compléter en même temps, les cours obligatoires de 4e et/ou 5e secondaire), regarde la (et le ) du programme, admissions à temps complet de jour à l’automne et à l’hiver. -, Lévis (C.S.S. des Navigateurs) NOUVEAU ! et exclusif dans l'Est du Québec; offert enenseignement individualisé (selon ton rythme d'apprentissage) en présentiel en classe et en atelier, ET en alternance travail-études (avec possibilité d'un stage rémunéré); aussi offert en concomitance D.E.S./D.E.P. (permettant de compléter en même temps, les cours obligatoires de 4e et/ou 5e secondaire), regarde la du programme, admissions à temps complet de jour à l’automne et à l'hiver. une A.S.P. en représentation et une A.S.P. en lancement d'une entreprise sont également offertes. - (anciennement le CFP Compétences 2000), Laval (C.S.S. de Laval, région de Laval) offert enenseignement individualisé (selon ton rythme d'apprentissage) en présentiel en classe et en atelier, offert en formule intensive sur 12 mois (sans arrêt estival), regarde la (et le ) du programme, admissions à temps complet de jour à l’automne. -, Montréal - arrondissement Saint-Laurent (C.S.S. Marguerite-Bourgoys, région de Montréal) offert en enseignement traditionnel en groupe-classe et en atelier, A.S.P. en domotique également offerte (exclusif au Québec), admissions à temps complet de jour à l’automne et à hiver.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>. De bonnes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>sont à prévoir pour ce métier au cours des prochaines années. La rémunération moyenne après expérience en 2026 ... le revenu annuel moyen d'un(e) technicien(ne) d'entretien d'appareils électroniques ayant 10 années d'expérience au sein d'une PME était de 58 200 $. le revenu annuel moyen d'un(e) électronicien(ne) d'entretien ayant 10 années d'expérience dans le réseau hospitalier était de 59 200 $; le revenu annuel moyen d'un(e) représentant(e) au support technique à la clientèle détenant 10 années d'expérience au sein d'une grande entreprise de téécommunications était de 66 500 $; le revenu annuel moyen d'un(e) régulateur(trice) technique des équipements de jeux électroniques ayant 10 années d'expérience à la Société des casinos du Québec était de 70 100 $; le revenu annuel moyen d'un(e) opérateur(trice) de détecteurs électroniques navals ou d'un(e) opérateur(trice) de sonar d'un(e) opérateur(trice) d'équipements d'information de combat naval détenant 10 années d'expérience (au grade de &quot;matelot 1re classe&quot;) au sein de la Marine royale canadienne était de 77 900 $; le revenu annuel moyen d'un(e) cyberopérateur(trice) ou d'un(e) spécialiste en renseignement d'origine électromagnétique détenant 10 années d'expérience (au grade de &quot;caporal&quot; ou &quot;matelot 1re classe&quot;) au sein des Forces canadiennes (Armée, Marine ou Aviation) était de 77 900 $; le revenu annuel moyen d'un(e) opérateur(trice) de détecteurs électroniques aéroportés ou d'un(e) technicien(ne) en systèmes d'information et de télécommunications aérospatiales détenant 10 années d'expérience (au grade de &quot;caporal&quot;) au sein de l'Aviation royale canadienne était de 77 900 $; et le revenu annuel moyen d'un(e) opérateur(trice) de transmissions ou d'un(e) spécialiste en systèmes d'information et de communications de l'Armée ou d'un(e) technicien(ne) en électronique et optronique détenant 10 années d'expérience (au grade de &quot;caporal&quot;) au sein de l'Armée canadienne était de 77 900 $. LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en réparation et service en électroniquea une durée total de 1 800 heures, c’est-à-dire 2 ans (16 mois) à temps complet de jour seulement. Il comporte des cours sur les circuits à courant continu, circuits à courant alternatif, circuits à semi-conducteurs, remplacement de composants, circuits logiques, circuits à microprocesseurs, installation de l'équipement informatique, installation de l'équipement électronique domestique, entretien de l'équipement informatique, remplacement de composants d'un circuit imprimé, problèmes d'alimentation linéaire, problèmes d'alimentation à découpage, problèmes d'amplification de signal, problèmes de traitement d'ondes radio, problèmes de microcontrôleurs et microprocesseurs, problèmes d'aservissement, problèmes d'affichage, réparation de l'équipement informatique, réparation d'unéquipement audiovisuel professionnel, réparation d'un équipement de télécommunication, problèmes de commandes de moteurs électriques, réparation des circuits électroniques d'un équipement lié à la santé et au bien-être (ex : exerciseurs), réparation des circuits électroniques d'un équipement motorisé électrique (chaise électrique, bicyclette électrique, etc.), réparation des circuits électroniques d'un équipement industriel, ainsi que la réalisation d'un stage d'intégration au</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

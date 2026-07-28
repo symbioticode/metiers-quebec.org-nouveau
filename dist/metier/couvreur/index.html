@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maître couvreur — Métiers Québec</title>
+  <meta name="description" content="Métier Maître couvreur au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/batiment/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Bâtiment et construction
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/batiment/">Bâtiment et construction</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Maître Couvreur</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/batiment/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Bâtiment et construction
+        </a>
+        <div class="page-header__tag">Bâtiment et construction</div>
+        <h1 class="page-header__title">Maître Couvreur</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Bâtiment et construction</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: Si tu deviens couvreur ou couvreuse; tu auras pour tâches d’appliquer et de poser des revêtements sur des différents types de toits (feutres saturés d'asphalte, bitume chaud et gravier, membranes élastomères liquides, thermoplastiques comme le PVC, différents types de bardeaux, etc.). Tu devras appliquer des procédés de levage, de manutention, de dégarnissage, d'imperméabilisation, de fixation, d'épandage et de soudage des membranes. Tu devras aussi remettre à neuf les toits et effectuer les réparations nécessaires liées à l’imperméabilisation des toitures et préparer le support aux toittures. Tu pourrais travailler soit sur les chantiers de construction résidentielle, soit en contruction commerciale et institutionelle, soit en construction industrielle ou soit en rénovation résidentielle et commerciale. QUALITÉS ET APTITUDES NÉCESSAIRES : -Bonne condition physique -Bonnes habiletés et dextérité manuelles -Minutie, précision et souci du détail car tu auras à effectuer des travaux de précision -Aptitudes à travailler en équipe car tu auras à collaborer avec d’autres collègues ouvriers et techniciens sur le chantier PROFESSIONS APPARENTÉES -Apprenti-couvreur(euse) (en début de carrière) -Couvreur(euse) de bardeaux de bois -Couvreur(euse) en asphalte EMPLOYEURS POTENTIELS : -Entreprises spécialisées en toiture -Entreprises de construction -Entreprises en rénovation -Forces armées Canadiennes (voir section professions apparentées) -À ton propre compte Voici un site où tu trouveras un répertoire de plus de 37 000 entrepreneurs en construction au Québec :</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: -Détenir ta carte de compétence est obligatoire, en début de carrière tu travailleras en tant qu’apprenti et tu n’obtiendras ta carte de compagnon seulement après avoir accumulé un minimum de 2 000 heures de travail comme apprenti. Voir les détails auprès de la . -Travail saisonnier sur les chantiers de construction - Etre prêt à travailler dans des endroits bruyants, chauds ou poussiéreux EXIGENCE DES EMPLOYEURS : -Polyvalence ASSOCIATION PROFESSIONNELLE : Si tu le désires, tu pourras devenir membre de l’. PLACEMENT : Selon les données disponibles au 1er juin 2019 : Le placement est bon, 70 % des répondants(es) ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques autres répondants(es), soit 6 % ont décidé de compléter un autre D.E.P. dans un métier de la construction afin d'augmenter les possibilités d'emploi. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI à TEMPS COMPLET NOMBRE AUX ÉTUDES3221172 Note 1 : légèe baisse du taux de placement par rapport aux années précédentes (était de 70 % en 2017; 74 % en 2015 et 57 % en 2013). Note 2 : prendre en considération que seulement 40 % des diplômés(es) ont répondu à cette enquête. Source : Ministère de l’Éducation du Québec SALAIRE : Selon les données de 2026 : Le salaire moyen en début de carrière était de : -31,75 $/hre (40 à 50 hres/sem) en tant qu’apprenti et ensuite augmente à45,36 $ en tant que compagnon dans le secteur de la construction ou rénovation résidentielle légère - 33,47 $/hre (40 à 50 hres/sem) en tant qu’apprenti et ensuite augmente à47,81 $ en tant que compagnon dans le secteur de la construction ou rénovation résidentielle lourde -35,84 $/hre (40 à 50 hres/sem) en tant qu’apprenti et ensuite augmente à51,20 $ en tant que compagnon dans la construction ou rénovation commerciale, industrielle et institutionnelle - 38,39 $/hre (40 à 50 hres/sem) en tant qu’apprenti et ensuite augmente à54,84 $ en tant que compagnon dans le secteur de la construction industrielle lourde Note : Cependant, le revenu annuel moyen pour un apprenti au cours de la première anée était de 20 700 $ (légère baisse par rapport aux années précédentes : était de 20 700 $ en 2024; 18 400 $ en 2022 et 21 800 $ en 2019). Source : Commission de la Construction du Québec PORTRAIT DU MÉTIER: Selon la Commission de la construction du Québec; on y comptait 6 559 couvreurs(euses) (dont 3 205 apprentis et 3 354 compagnons) actifs dans l’industrie de la construction dans l'ensemble du Québec en 2025 Il y avait 1 019 employeurs qui employaient des couvreurs(euses) (soit 40 de plus qu'en 2022). Ce sont 707 nouveaux apprentis qui ont foulé les chantiers au cours de cette année (soit 131 de plus qu'en 2022). C’est au-dessus de la moyenne annuelle des dernières années qui était de 548. On dénombrait un total de 144 femmes (93 apprenties et 13 compagnons), soit : 38 de plus qu'en 2022; 93 de plus qu'en 2019 et 114 de plus qu'en 2015. Ce métier a l'une des plus faibles proportions de diplômés, puisque seulement 11 % des couvreurs détenant une formation en pose de revêtements de toitures. Près de 1 000 coureurs(euses) étaient des immigrants ou provenaient de minorités visibles (soit près de 15 %), alors qu'ils représentaient que 8 % de l'ensemble des métiers de la construction. Les autochtones ne représentaient que 0,66 % du corps de métier (soit environ une quarantaine de personnes). L'âge moyen d'un(e) apprenti(e) était de 31 ans et d'un(e) compagnon(ne) était de 42 ans. La répartition selon le groupe d'âge était : • mons de 30 ans : 11 % • entre 30 et 34 ans : 26 % • entre 35 et 44 ans : 32 % • entre 45 et 54 ans : 13 % • entre 55 et 64 ans : 17 % • 65 ans et plus : 1 % Où retrouve-t-on le plus de couvreurs(euses) ? Plus de 82 % d’entre-eux travaillent sur les chantiers de construction commerciale et institutionnelle (immeubles à bureaux, immeubles à logement, commerces, écoles, garderies, résidences pour personnes âgées, etc.); près de 15 % travaillent sur les chantiers de construction résidentielle légère (bâtiments résidentiels) et lourde (condominiums, immeubles locatifs de moins de 6 logements, projets domiciliaires); alors que seulement 2 % travaillent sur les chantiers de construction industrielle (usines, ateliers de fabrication) et rarement, sur les chantiers de génie civil (infrastructures routières), soit moins de 1 %. La proportion par région était de : 32 % travailaient dans les régions de Laval, Lanaudière ou Laurentides, 20 % travaillaient en Montérégie, 14 % travaillaient dans les régions de Québec ou Chaudière-Appalaches, 9 % travaillaient sur l'Île de Montréal, 8 % travaillaient en Mauricie et Centre-du-Québec, 6 % travaillaient en Outaouais, 4 % travaillaient en Estrie, 2 % travaillaient au Saguenay-Lac-Saint-Jean, 2 % travaillaient dans le Bas-Saint-Laurent, moins de 2 % travaillaient dans une autre région. (source : Commission de la construction du Québec) PERSPECTIVES D’AVENIR: Les perspectives d’avenir pour tous les métiers de la construction, varient beaucoup selon la santé économique de l’industrie de la construction. Certaines années peuvent être excellentes pour les emplois avec de nombreux projets, alors que pour d’autres années sont moins bonnes. Les perspectives d’emploi pour ce métier sont excellentes. Même si la demande pour ce métier est stable, la très faible disponibilité, le roulement très élevé et le nombre de nouveaux diplômés insuffisants créent des besoins de travailleurs sur le marché. Il est pertinent de noter que ce métier est fortement affecté par la saisonnalité du travail, puisque les travaux se font à l’extérieur. Une part importante de l’activité de ce métier est faite dans le secteur institutionnel et commercial. Au cours des prochaines années, on prévoit que l’activité dans ce secteur continuera de croître et d’offrir un volume élevé de travail. L’industrie de la construction a connu une excellente année en 2025. À moyen terme, le nombre de personnes salariées demeurera élevé. Les perspectives professionnelles sont excellentes pour l’ensemble des salariés et des salariées de la construction, et les besoins de recrutement seront encore importants. Le secteur institutionnel et commercial a amorcé une tendance à la baisse depuis quelques mois déjà, et celle-ci se poursuivra dans les 3 prochaines années. Malgré les intentions du gouvernement de rehausser les investissements dans les infrastructures institutionnelles, celles-ci ne permettront pas de compenser l’incertitude économique apparue depuis janvier dernier. Mais tout n’est pas noir pour autant; la portion du résidentiel en hauteur, qui est déclarée dans ce secteur, reprendra de la vigueur avec des taux d’intérêt plus favorables. Le secteur résidentiel a connuune reprise marquée et un sommet historique pour le logement locatif en 2025 suite à un creu connu en 2024, propulsés par la baisse des taux d'intérêt et la stabilisation des coûts de construction. Cela représente une hausse de 22,9 % par rapport aux résultats de l'année 2024 et un record absolu de 43 506 logements locatifs ont été amorcés, soit une hausse de 22 % sur le précédent record de 2021. Le locatif accapare ainsi 80 % du marché résidentiel global. Toutefois, les constructions de maisons unifamiliales représentent un creux historique avec seulement 15 % du total des mises en chantier. Les mises en chantier ont repris de la vigueur et permettront aux heures travaillées de remonter. À moyen terme, comme l’offre de propriétés est insuffisante et que les taux d’intérêt devraient aider, la construction neuve de nouveaux logements reviendra donc en force et le besoin de nouvelle main d’œuvre sera encore crucial. Malgré ce ralentissement général, la demande reste soutenue dans les domaines suivants : en réhabilitation et rénovation de bâtiments existants, les secteurs de la construction institutionnelle (écoles, CPE, CHSLD, maisons des aînés, hôpitaux) et résidentielle, ainsi que dans la réalisation de projets de performance énergétique et bâtiments durables. Un(e) apprenti(e) travaille en moyenne 500 à 800 heures par année, En 2026, le revenu annuel moyen d'un(e) apprenti(e) était de 20 700 $. Alors que 73 % des couvreurs(euses) ont travaillé au moins 500 heures. En 2026, le revenu annuel moyenne d'un(e) compagnon était de 69 500 $. Un(e) compagnon travaille en moyenne 1 100 à 1 600 heures par année. (source : Commission de la construction du Québec) LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en pose de revêtements de toitures D.E.P.a une durée totale de 645 heures (5 mois) offert à temps plein. Il comporte des cours d'initiation au métier et à l'industrie de la construction, santé et sécurité sur les chantiers de construction, sélection des matériaux, évaluation de la quantité de matériaux, exécution des travaux de base, interprétation des plans et devis, pose de revêtements - toits à versants, revêtements en asphalte et gravier, membranes mono couches, membres élastomères et réparation d'un revêtement. Note : Puisque ce métier nécessite une période d'apprentissage sur des chantiers (apprenti), il ne comporte pas de stage. EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. -Soit avoir 16 ans et réussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes AUTRE</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: - Se soumettre à un questionnaire écrit d'admission en ligne et une entrevue écrite en ligne (ÉMOICQ, disponible sur leur site web) STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) répondant aux conditions d'admission sont généralement admis. ENDROITS DE FORMATION : Demande d’admission via Internet, consulte Qu'est-ce que l' ? -, Laval (C.S.S. de Laval, région de Laval) véritable chantier-école doté d'ateliers et d'équipements à la fine pointe : laboratoire de circuits, atelier de câblage, atelier de moteurs électriques, atelier de chauffage et systèmes incendie, atelier d'automates programmables, atelier de domotique (regarde le ), regarde la du programme, regarde la du centre, A.S.P. en gestion d'une entreprise spécialisée de la construction également offerte, admissions à temps complet de jour à l’automne. - , Châteauguay (C.S.S. des Grandes-Seigneuries, région de la Montérégie) offert en enseignement individualisé (selon ton rythme d'apprentissage), regarde la du programme, A.S.P. en gestion d'une entreprise spécialisée de la construction également offerte au CFP Pierre-Dupuy à Longueuil, admissions à temps complet de jour avec entrées continues tout au long de l'année scolaire. - (Pavillon St-Fidèle), Québec (C.S.S. de la Capitale, région de Québec) première école de la construction au Québec fondée en 1945 et seconde plus grande école de la construction du Québec, véritable chantier-école réparti sur 6 sites de formation pour plus de 2 000 étudiants(es) dans 12 métiers de la construction (comprenant un atelier intérieur et un atelier extérieur de revêtements de toitures bien aménagéssitués sur le site St-Fidèle); regarde la du programme, regarde la présentant des étudiants dans le cadre de leur cours &quot;pose de membranes thermoplastiques&quot;, regarde la de l'École, A.S.P. en gestion d'une entreprise spécialisée de la construction également offerte, admissions à temps complet de jour à l’automne.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

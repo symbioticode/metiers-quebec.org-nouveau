@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exterminateur — Métiers Québec</title>
+  <meta name="description" content="Métier Exterminateur au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/environnement/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Environnement et aménagement du territoire
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/environnement/">Environnement et aménagement du territoire</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Exterminateur</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/environnement/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Environnement et aménagement du territoire
+        </a>
+        <div class="page-header__tag">Environnement et aménagement du territoire</div>
+        <h1 class="page-header__title">Exterminateur</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Environnement et aménagement du territoire</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technicienne ou technicien en gestion parasitaire (anciennement appelé &quot;exterminateur&quot;); tu auras pour tâches d'inspecter l'intérieur et l'extérieur des immeubles afin de déceler une infestation de vermine, vaporisent des substances chimiques afin de tuer des insectes, des rongeurs et autres vermines nuisibles et destructrices, ou placent des traquenards afin de capturer et d'enlever les animaux. Tu devras notamment inspecter l'intérieur et l'extérieur des immeubles, à des intervalles réguliers ou à la demande du propriétaire de l'immeuble, afin de déceler des signes d'infestation; déterminer le genre de traitement requis et remettre aux clients une évaluation des coûts; préparer et vaporiser un mélange chimique aux endroits infestés en utilisant un vaporisateur mécanique ou électrique afin de tuer les insectes, les rongeurs et les autres vermines; fumiger des bâtiments (résidences, magasins, restaurants, hôtels, entrepôts, écoles, hôpitaux, usines, bâtiments agricoles, etc.); installer des traquenards afin de capturer et d'enlever des animaux tels que mouffettes ou ratons-laveurs; installer des barrières de contrôle d'animaux tels que des bandes d'aiguilles, des filets et autres appareils pour garder les animaux hors des propriétés; nettoyer les endroits où se tient la vermine en utilisant des râteaux, des pelles, des balais ou des balais laveurs; ainsi que donner des conseils aux clients sur la façon de prévenir les infestations. APTITUDES ET QUALITÉS REQUISES : -Aptitudes en sciences biologiques et naturelles -Intérêts pour les animaux, l’environnement -Aimer travailler autant au grand air qu'à l'intérieur -Ne pas avoir d'allergies -Ne souffrir de claustrophie et d'entomophobie -Bonne condition et endurance physique car tu auras à grimper dans les greniers, sur les toitures, dans des espaces restreints, etc. -Curiosité scientifique pour être appelé(e) à mieux connaître le mode de vie et les comportements des insectes et rongeurs -Sens de l’observation pour observer le comportements des animaux -Capacité d’analyse et de synthèse pour être en mesure d’analyse et de résoudre divers problèmes d'infestations selon le type de vermine, le type de milieu, etc. -Bon jugement pour être en mesure d’identifierles situations ou événements qui devenir dangereux ou s’aggraver -Autonomie, initiative et débrouillardise pour être en mesure de régler seul(e) des problèmes dans certaines situations -Souci du travail bien fait car tu devras réaliser un travail de qualité -Aimer travailler avec le public car tu seras constamment en contacts avec le public -Facilité à communiquer et entregent car tu auras à communiquer avec des personnes dans des situations pas toujours agréables -Sens des responsabilités car tu seras responsable d’assurer la sécurité tant des membres de ton équipe et des usagers de l'immeuble en fumigation et l'entourage -Facilité à travailler en équipe car tu auras à travailler en collaboration avec des collègues de manière coordonnée -Facilité d’adaptation à divers milieux car tu pourrais être appelé(e) à travailler autant dans une résidence, dans un restaurant, un magasin d'alimentation, une école, un hôpital ou une usine PROFESSIONS APPARENTÉES : - Exterminateur(trice) - Fumigateur(trice) - Opérateur(trice) au contrôle de la vermine - Piégeur(euse) au contrôle de la vermine - Piégeur(euse) au contrôle des animaux - Préposé(e) à la lutte antiparasitaire - Représentant(e) au contrôle de la vermine - Représentant(e) de service de lutte antiparasitaire - Représentant(e) de service d'extermination de la vermine - Technicien(ne) au contrôle de la vermine EMPLOYEURS POTENTIELS : - Entreprises de contrôle et de gestion parasitaire, majoritairement - Coopératives agricoles - Compagnies forestières - Pourvoieries - A ton propre compte (travailleur autonome) EXIGENCES DES EMPLOYEURS : - obtenir un permis en utilisation et manipulation de pesticides délivré par le . Pour obtenir le permis d'exterminateur résidentiel, tu devras suivre le cours &quot;utilisation des pesticides - tronc commun&quot; comprenant environ 50 heures d'études et offert à distance, ainsi que réussir les examens &quot;utilisation des pesticides - tronc commun&quot; et &quot;utilisation des pesticides - application pour l'extermination&quot; du Ministère - Détenir un permis de conduire souvent exigé - Connaissance de l'anglais est un atout -Disponibilité - Mobilité un peu partout dans la région desservie par l'employeur - Horaires de travail variables (jours/soirs et parfois la nuit lors de situations d'urgence dans certains batiments comme les hôpitaux ou les restaurants) - Travail à l'année, bien que surtout saisonnier - Formation professionnelle ou technique dans un domaine approprié est un atout SALAIRE : Selon les données en 2026 : Le salaire moyen en début de carrière était de: - 18,80 $/heure (40hres/sem) en moyenne au seindes grands clubs de golf - 19,70 $/heure (40 à 50 hres/sem) en moyenneau sein des PME en gestion parasitaire - 22,23 $/heure (40hres/sem) en moyenne au sein des municipalités de petite taille (moins de 25 000 habitants) - 28,14 $/heure (4hres/sem) en moyenne au sein des municipalités de taille moyenne (25 000 à 99 999 habitants) - 32,33 $/heure (40hres/sem) en moyenne au sein des municipalités de grande taille (100 000 habitants et plus) Note : légère hausse de la moyenne salariale par rapport aux années précédentes au sein des PME (était de 18,42 $ en 2024, 17,50 $ en 2022 et 16,00 $ en 2019). Sources : Emploi-Québec PORTRAIT DU MÉTIER : Selon Emploi-Québec; il y avait plus de 900 exterminateurs(trices), fumigateurs(trices), préposés(es) au contrôle et à l'extermination de la vermine et techniciennes et techniciens en gestion parasitaire dans l'ensemble des régions du Québec en 2025. Plus de 86 % étaient des hommes. Plus de 90 % occupaient un emploi à temps complet Plus de 28 % étaient des travailleurs autonomes (étaient 25 % en 2022). Seulement 7 % étaient des immigrants, mais pourrait en accueille davantage. Plus de 39 % détenaient un certificat, une attestation ou un diplôme d'études de métiers (tels que l'A.E.P. en gestion parasitaire ou le D.E.P. en ressources fauniques); 23 % détenaient un diplôme d'études secondaires D.E.S.; 17 % détenaient un diplôme collégial (ex : D.E.C. en techniques du milieu naturel ou D.E.C. en techniques de bioécologie ou D.E.C. en sciences de la nature); 16 % n'avaient pas complété leurs études secondaires et moins de 5 % détenaient un diplôme universitaire (ex : biologie ou écologie). La répartition selon l'âge était : • moins de 25 ans : 12 % • entre 25 et 44 ans : 41 % • entre 45 et 54 ans : 21 % • 55 ans et + : 25 % La répartition selon le</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>d'une durée de 2 à 4 mois chacun (alternance travail-études). Note : le nom et le contenu des cours peuvent différer selon les cégeps, mais les objectifs de formation restent les mêmes. EXIGENCES D’ADMISSION : Pour l'A.E.P. - Avoir obtenu au moins les unités de 3e secondaire ou l’équivalent en langue d’enseignement, en langue seconde et en mathématique - OU avoir obtenu une attestation d’équivalence de niveau de scolarité (AENS) - OU avoir réussi le test de développement général (TDG) avec ou sans préalable spécifique ET - Avoir interrompu ses études à temps plein pendant au moins douze mois; ou avoir 18 ans au moment de l’entrée en formation - OU avoir obtenu un diplôme d’études secondaires (DES) ou un diplôme d’études professionnelles (DEP) ou leur équivalent - OU satisfaire aux normes d’admissibilité de la Mesure de la formation de la main-d’œuvre d’Emploi-Québec Pour le D.E.P. -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalentset et suivre en même temps que les études de DEP les unités manquantes suivantes de secondaire 4 : Mathématiques, français, anglais -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes Pour le D.E.C en techniques de bioécologie -Soit détenirun D.E.S. et avoir réussi les cours suivants ou leurs équivalents : mathématiques 436 sciences physiques 436 -Soit détenir un D.E.P. en aménagement de la faune ou en protection de territoires fauniques ou l’équivalent Pour le D.E.C en techniques du milieu naturel -Détenir un D.E.S. ou un D.E.P. et avoir réussi le cours suivants ou leurs équivalents : mathématiques CST 5e ou TS 4e ou SN 4e ou 426 ou son équivalent -Soit détenir un D.E.P. en aménagement de la faune ou en protection de territoires fauniques ou l’équivalent Pour le D.E.C en environnement, hygiène et sécurité au travail -Détenir un D.E.S. et avoir réussi les cours suivants du secondaire ou leurs équivalents : TS ou SN 4eOU CST 5e STE ou SE 4e AUTRES EXIGENCES PARTICULIÈRES À L’ADMISSION : Pour le D.E.P. • Détenir un permis de conduire valide (tous les centres) • Détenir un certificat de chasseur valide (tous les centres) • Subir des tests de sélection (École forestière de La Tuque, CFP La Baie) • Subir une entrevue écrite disponible sur le site de l'École (École de foresterie de Duchesnay) Tech en bioécologie : -Répondre à un questionnaire (Sainte-Foy) Tech du milieu naturel : -Aucune autre exigence STATISTIQUES D’ADMISSION : Ces programmes ne sont pas contingentés Les candidats(es) admissibles (c'est-à-dire détenant les préalables requis) sont généralement admis. ENDROITS DE FORMATION : Demande d’admission via Internet, consulte le Pour l'A.E.P. : - , Québec (C.S.S. des Premières Seigneuries), région de Québec Pour le D.E.P. : -, campus de la Foresterie, Causapscal (près d'Amqui), (C.S.S. des Monts-et-des-Marées, Bas-St-Laurent) double DEP en aménagment faunique et forestier offert au campus de Causapscal et Dégelis, admissions de jour à l'automne -, Amos (C.S.S. Harricana, Abitibi-Témiscamingue) admissions de jour à l'automne -, Pavillon La Baie, Saguenay (C.S.S. des Rives-du-Saguenay) offert en alternance travail-études, admissions de jour à l’hiver et à l'été -, Mont-Laurier (C.S.S. Pierre-Neveu, Laurentides) double DEP en aménagement faunique et forestier également offert, admissions de jour à l'automne et à l’hiver -, Sainte-Catherine-de-la-Jacques-Cartier(C.S.S. de la Capitale, région de Québec)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>pour les techniciens en gestion parasitaire au Québec sont actuellement très favorables et présentent de belles opportunités d'évolution. En 2026, le salaire annuel moyen d'un(e) technicien(ne) en gestion parasitaire ayant 10 années d'expérience au sein d'une PME était de 48 800 $. SourceEmploi-Québec LES PROGRAMMES D’ÉTUDES : Bien qu'une formation d'exterminateur ne soit pas obligatoire et que l'on puisse se former de façon autodidacte ou en</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

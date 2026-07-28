@@ -1,0 +1,4202 @@
+{
+  "/../agriculture/agriculture3.html": [
+    "Abattage d'animaux, manoeuvre en",
+    "Aide\r\nen production laitière",
+    "Aide en production ovine",
+    "Aide\r\nen production porcine",
+    "Aviculteur",
+    "Boucher industriel",
+    "Boulanger industriel",
+    "Bovins de boucherie, ouvrier à \r\nl'abattage de",
+    "Chevaux, producteur de",
+    "Fumeur de viandes",
+    "Machines à emballer, opérateur de",
+    "Machines à embouteiller, opérateur de",
+    "Machines à fabriquer des aliments, \r\nopérateur de",
+    "Machines à traiter le lait, opérateur \r\nde",
+    "Machines de production alimentaire, \r\nopérateur de",
+    "Machines de transformation des \r\naliments, opérateur de",
+    "Manœuvre en\r\ntransformation des aliments",
+    "Oeufs, producteur d'",
+    "Opérateur d'appareils de traitement du lait",
+    "Opérateur de machines à embouteiller",
+    "Opérateur de machines à fabriquer des \r\naliments",
+    "Opérateur de machines à traiter le \r\nlait",
+    "Opérateur de machines en transformation ou fabrication des aliments et des \r\nboissons",
+    "Ouvrier agricole spécialisé en \r\nproduction avicole",
+    "Ouvrier agricole spécialisé en \r\nproduction chevaline",
+    "Ouvrier agricole spécialisé en \r\nproduction d'oeufs de consommation",
+    "Ouvrier agricole spécialisé en \r\nproduction ovine",
+    "Ovins, producteur d'",
+    "Pâtissier industriel",
+    "Producteur avicole",
+    "Producteur d'oeufs de consommation",
+    "Producteur d'ovins",
+    "Producteur de chevaux",
+    "Producteur de volailles",
+    "Transformation des aliments, \r\nmanoeuvre en",
+    "Transformation des aliments, \r\nopérateur de machines de",
+    "Transformation des produits marins, manoeuvre en"
+  ],
+  "/../restau_tourisme/tech_tourisme.htm": [
+    "Accompagnateur touristique",
+    "Accueil touristique, préposé à l'",
+    "Conseiller\r\nen produits et services touristiques",
+    "Conseiller en promotion \r\ntouristique",
+    "Développement et commercialisation de produits du voyage, agent de",
+    "Information touristique, agent d'",
+    "Promotion touristique, agent de",
+    "Représentant en voyages",
+    "Technicien en gestion du tourisme",
+    "Technicien en tourisme",
+    "Tourisme, conseiller en produits et services en",
+    "Tourisme, guide - accompagnateur en",
+    "Tourisme, technicien en"
+  ],
+  "/../agriculture/ouvrier_agricole5.htm": [
+    "Acériculteur",
+    "producteur  \r\nacéricole",
+    "Ouvrier agricole spécialisé en acériculture",
+    "Producteur acéricole",
+    "Serriculteur"
+  ],
+  "/../administration/gest_ind1.html": [
+    "Acheteur",
+    "Gestion de la production \r\nindustrielle, conseiller en",
+    "Gestion industrielle, analyste en",
+    "Gestionnaire en opérations et \r\nproduction"
+  ],
+  "/../administration/gest_appro.htm": [
+    "Acheteur-adjoint",
+    "Agent des achats",
+    "Approvisionnements, technicien en"
+  ],
+  "/../humaines/tech_loisirs.htm": [
+    "Activité physique, animateur en",
+    "Activité physique, moniteur en",
+    "Activités de plein air, animateur en",
+    "Animateur en loisirs",
+    "Golf, moniteur de",
+    "Intervenant en loisirs",
+    "Intervenant en sports",
+    "Loisirs, technicien en",
+    "Moniteur de sports",
+    "Organisateur de loisirs",
+    "technicien en loisirs",
+    "Technicien en loisirs"
+  ],
+  "/../sociaux/int_sports.html": [
+    "Activité physique, conseiller en",
+    "Éducateur physique",
+    "Entraîneur sportif",
+    "Instructeur en sports",
+    "Intervenant en activité physique",
+    "intervenant en sports",
+    "Organisateur d'événements sportifs"
+  ],
+  "/../nature/int_aventure.html": [
+    "animateur d'activités en tourisme \r\nd'aventure",
+    "Alpiniste professionnel",
+    "Guide en tourisme d'aventure",
+    "Interprète (Guide) en tourisme d'aventure",
+    "Intervenant en tourisme d'aventure",
+    "Parachutiste professionnel",
+    "Tourisme\r\nd’aventure, guide en"
+  ],
+  "/../arts/artiste_cirque.htm": [
+    "Acrobate",
+    "Acteur de cirque",
+    "Artiste du cirque",
+    "Cirque, artiste du",
+    "Clown",
+    "Équilibriste",
+    "Interprète en cirque",
+    "Trapéziste"
+  ],
+  "/../arts/scenographe.htm": [
+    "Accessoiriste",
+    "Concepteur d’éclairages",
+    "Concepteur de décors ou costumes",
+    "Costumier",
+    "Décorateur de scènes",
+    "Décors, concepteur de",
+    "Designer de théâtre",
+    "Directeur de plateau",
+    "Éclairagiste",
+    "scénographe",
+    "Peintre-décorateur de scènes",
+    "Production théâtrale, technicien en",
+    "Régisseur de scène",
+    "Scène, technicien de",
+    "Scénographe",
+    "Technicien d'éclairage",
+    "Technicien de scène",
+    "Technicien de son",
+    "Technicien en effets spéciaux",
+    "Théâtre, concepteur de décors ou costumes de",
+    "Théâtre, technicien de scène de"
+  ],
+  "/../aerospatial/tech_aeronefs.htm": [
+    "Accidents aériens, enquêteur aux",
+    "Entretien d’aéronefs, technicien en",
+    "MÉCANICIEN D’AÉRONEFS",
+    "Systèmes aéronautiques, technologue \r\nen design de",
+    "TECHNICIEN EN ENTRETIEN D’AÉRONEFS",
+    "Technicien en structures d'aéronefs",
+    "Technologue en entretien d'aéronefs"
+  ],
+  "/../protection/policier.htm": [
+    "Accidents de la route, enquêteur aux",
+    "Agent \r\nfédéral de police GRC",
+    "policier",
+    "Enquêteur de police",
+    "Patrouilleur (policier)",
+    "POLICIER"
+  ],
+  "/../environnement/tech_hygiene.htm": [
+    "Accidents du travail, enquêteur aux",
+    "Environnement, hygiène et sécurité \r\nau travail, technicien en",
+    "Hygiène du travail, technicien en",
+    "Inspecteur en environnement",
+    "Inspecteur en santé et sécurité au \r\ntravail",
+    "Santé et sécurité au travail, technicien en",
+    "Technicien en dépollution",
+    "technicien en environnement et \r\nhygiène au travail",
+    "Technicien en hygiène industrielle",
+    "Technologue en assainissement et \r\nsécurité industriels",
+    "technicien en hygiène et sécurité au \r\ntravail"
+  ],
+  "/../arts/comedien.htm": [
+    "ACTEUR OU COMÉDIEN",
+    "acteur ou \r\ncomédien",
+    "Art dramatique, animateur en",
+    "Assistant metteur en scène",
+    "COMÉDIEN  OU ACTEUR",
+    "Interprète en théâtre",
+    "comédien",
+    "Théâtre, \r\ncomédien au",
+    "Théâtre, \r\ncritique de",
+    "Théâtre, \r\nmetteur en scène de"
+  ],
+  "/../physique/actuaire.htm": [
+    "Actuaire"
+  ],
+  "/../sante/acupuncteur.htm": [
+    "Acupuncteur"
+  ],
+  "/../enseignement/prof_adapt_scol.htm": [
+    "Adaptation scolaire, professeur en",
+    "ENSEIGNANT EN ADAPTATION SCOLAIRE",
+    "Professeur en adaptation scolaire"
+  ],
+  "/../administration/tech_bureautique.htm": [
+    "technicien en bureautique",
+    "Bureautique, technicien en",
+    "Coordination du travail de bureau, technicien en",
+    "TECHNICIEN EN BUREAUTIQUE"
+  ],
+  "/../administration/secretaire.htm": [
+    "secrétaire",
+    "Agent de secrétariat",
+    "Dentaire, secrétaire",
+    "Juridique, secrétaire",
+    "Médical, secrétaire",
+    "ecrétaire",
+    "SECRÉTAIRE"
+  ],
+  "/../transport/transport1.html": [
+    "Adjoint à la salle des machines",
+    "Agent \r\nde piste d'aéroport",
+    "Avitailleur avion",
+    "Capitaine de remorqueur",
+    "Contrôleur de la circulation dans un tunnel",
+    "Cuisinier de\r\nnavire",
+    "Débardeur portuaire",
+    "Homme\r\nd’équipage ou de passerelle",
+    "Mécanicien de manœuvres",
+    "Montgolfières, pilote de",
+    "Pilote de montgolfières",
+    "Signaleur de chantiers routiers"
+  ],
+  "/../administration/analyste_informatique.html": [
+    "Administrateur de systèmes informatiques",
+    "ANALYSTE EN INFORMATIQUE",
+    "Architecte de réseaux informatiques",
+    "Bases de données, gestionnaire de",
+    "Conseiller en informatique",
+    "Designer de logiciels",
+    "Gestionnaire de bases de données",
+    "Informatique, analyste en",
+    "Informatique, consultant en",
+    "Informatique (sécurité), \r\nspécialiste en",
+    "Logiciels, analyste ou \r\nconcepteur de",
+    "Ordinateurs, analyste en",
+    "Réseautique, analyste en",
+    "Systèmes informatiques, \r\nanalyste de"
+  ],
+  "/../administration/administrateur.htm": [
+    "Administrateur",
+    "administrateur",
+    "Analyste en gestion d'entreprise",
+    "Analyste en stratégies d'affaires",
+    "Citoyenneté, agent de",
+    "Commerce électronique, consultant \r\nen",
+    "Commerce électronique, \r\ngestionnaire en",
+    "Commerce international, \r\ngestionnaire en",
+    "Comptabilité, gestionnaire en",
+    "Conseiller en commerce électronique",
+    "Conseiller en création ou \r\ndémarrage d'entreprises",
+    "Conseiller en développement organisationnel",
+    "Conseiller en gestion d'entreprises",
+    "Conseiller en management",
+    "Consultant en relève d'entreprise",
+    "Entreprise, gestionnaire d'une",
+    "Gestionnaire",
+    "Gestionnaire en management",
+    "Immigration, agent d'",
+    "Management, consultant en",
+    "Relève d'entreprise, consultant en",
+    "Stratégie d'affaires, analyste en",
+    "Vérificateur fiscal"
+  ],
+  "/../administration/comptable.htm": [
+    "comptable",
+    "Analyste en coût de revient",
+    "Comptable",
+    "Contrôleur des finances",
+    "Contrôle interne (finances), agent de",
+    "Coût de revient, analyste en",
+    "Fiscaliste",
+    "Trésorier",
+    "Vérificateur - comptable"
+  ],
+  "/../administration/tech_administration.htm": [
+    "Administration, agent en",
+    "Administration, technicien en",
+    "Agent d’administration",
+    "Gérant d'un marché \r\nd'alimentation",
+    "Marché d'alimentation, \r\ngérant d'un",
+    "Technicien en administration",
+    "Technicien en gestion",
+    "Technicien en gestion industrielle",
+    "technicien en administration"
+  ],
+  "/../armee/armee2.htm": [
+    "Administration des services de santé, officier d'",
+    "Artillerie, officier d'",
+    "Blindé, officier du",
+    "Contrôle aérospatial, officier du",
+    "Directeur musical",
+    "Génie aérospatial, officier du",
+    "Génie de \r\ncombat, soldat du",
+    "Génie de \r\nl'air, officier du",
+    "Génie de la construction, officier du",
+    "Génie des communications et de l'électronique, \r\nofficier du",
+    "Génie des \r\nsystèmes de combat naval",
+    "Génie des \r\nsystèmes de mécanique navale, officier du",
+    "Génie \r\nélectrique et mécanique, officier du",
+    "Génie \r\nélectronique et des communications, officier du",
+    "Génie \r\nmaritime, officier du",
+    "Génie \r\nmécanique et génie électrique, officier du",
+    "Génie \r\nmilitaire, officier du",
+    "Infanterie, officier d'",
+    "Logistique, \r\nofficier de",
+    "Marine, officier du génie en mécanique de",
+    "Maritime, officier du génie des systèmes de combat",
+    "Musique, \r\nofficier de",
+    "Navigateur aérien",
+    "Navigateur",
+    "Officier d’artillerie de campagne",
+    "Officier d’artillerie de défense aérienne",
+    "Officier d’infanterie",
+    "Officier de la logistique",
+    "Officier de la navigation aérienne",
+    "Officier de la sélection du personnel",
+    "Officier de la police militaire",
+    "Officier de la sécurité",
+    "Officier de logistique",
+    "Officier de navigation",
+    "Officier des blindés",
+    "Officier des soins infirmiers",
+    "Officier des \r\ntransmissions",
+    "Officier du contrôle aérospatial",
+    "Officier du \r\ndéveloppement de l'instruction",
+    "Officier du droit militaire",
+    "Officier du génie aérospatial",
+    "Officier du génie de combat",
+    "Officier du génie de construction",
+    "Officier du \r\ngénie des systèmes de combat naval",
+    "Officier du \r\ngénie des systèmes de mécanique navale",
+    "Officier du génie électrique et du génie mécanique terrestre",
+    "Officier du génie électronique et des communications",
+    "Officier du génie maritime",
+    "Officier du génie militaire",
+    "Officier mécanicien de marine",
+    "Officier médecin",
+    "Officier navigateur aérien",
+    "Officier-pilote",
+    "Pilote militaire",
+    "Sciences \r\nbiologiques",
+    "Sélection du \r\npersonnel, officier de la",
+    "Services de \r\nsanté, officier d'administration des",
+    "Soins \r\ninfirmiers, officier des",
+    "Transmissions, officier des"
+  ],
+  "/../administration/administration1.htm": [
+    "Admission, préposé à l'",
+    "Agent de bureau",
+    "Bibliothèque, commis de",
+    "Billetterie, préposé à la",
+    "Bureau, agent ou commis de",
+    "Commis au classement de \r\ndocuments",
+    "Commis au service à la clientèle",
+    "Commis aux ressources humaines",
+    "Commis de banque ou caisse populaire",
+    "Commis de bibliothèque",
+    "Commis de bureau",
+    "Commis de soutien administratif",
+    "Magasinier",
+    "Préposé à l'accueil",
+    "Préposé à l'admission",
+    "Préposé à la billetterie",
+    "Préposé aux réservations",
+    "Produits alimentaires, commis \r\nvendeur de",
+    "Réceptionniste",
+    "Réservations, agent ou préposé \r\naux",
+    "Téléphoniste"
+  ],
+  "/../transport/controleur_aerien.html": [
+    "Aérien, contrôleur",
+    "Aiguilleur de vol",
+    "Contrôleur aérien",
+    "Transport aérien, contrôleur du"
+  ],
+  "/../aerospatial/monteur_cables_aero.htm": [
+    "Aéronautique, assembleur de câbles et circuits en",
+    "Assembleur de câbles et circuits en aérospatiale",
+    "Monteur de câbles et circuits en aérospatial"
+  ],
+  "/../aerospatial/monteur_mecanique_aero.htm": [
+    "Aéronautique, monteur - \r\nmécanicien en",
+    "Aérospatial, monteur - mécanicien en",
+    "Mécanique aéronautique, \r\nmonteur en",
+    "Monteur en mécanique aérospatiale"
+  ],
+  "/../aerospatial/tech_aeronautique.html": [
+    "Aéronautique, technologue en construction",
+    "Aérospatial, technologue en génie",
+    "Banc d'essai (aéronefs), technicien au",
+    "Construction aéronautique, technologue en",
+    "Dessinateur - concepteur en \r\naérospatial",
+    "Génie aérospatial, technologue en",
+    "technologue en \r\nconstruction aéronautique",
+    "Technologue en aéronautique",
+    "Technologue en conception \r\naéronautique",
+    "Technologue en construction aéronautique",
+    "Technologue en génie aérospatial"
+  ],
+  "/../armee/armee1.htm": [
+    "Aéronautiques, technicien des systèmes",
+    "Ambulancier militaire",
+    "Approvisionnements, technicien en",
+    "Armement terrestre, technicien en",
+    "Armement naval, technicien en",
+    "Artilleur de campagne",
+    "Artilleur en défense aérienne",
+    "Avioniques, technicien des systèmes",
+    "Blindé, soldat du",
+    "Chercheur en communications",
+    "Commis au soutien à la gestion des ressources",
+    "commis du soutien à la gestion des \r\nressources",
+    "commis du soutien à la gestion des ressources",
+    "Commis des postes",
+    "Communicateur  naval",
+    "Construction, technicien en",
+    "Contrôle \r\naérospatial, opérateur en",
+    "Coque, \r\ntechnicien de",
+    "Électricien de marine",
+    "Électronicien naval",
+    "Fantassin",
+    "Imagerie et \r\nphotographie, technicien en",
+    "Infanterie, soldat d'",
+    "technicien en approvisionnements",
+    "Manoeuvrier",
+    "Mécanicien de marine",
+    "Mécanicien de véhicules",
+    "Médical, \r\ntechnicien",
+    "Météorologie, \r\ntechnicien en",
+    "Mouvements \r\nde transport, technicien des",
+    "Munitions, technicien de",
+    "Musicien",
+    "Opérateur \r\nd'équipements de combat naval",
+    "Opérateur de radars",
+    "Opérateur de détecteurs électroniques navals",
+    "Opérateur des communications aériennes",
+    "Opérateur des communications et transmissions terrestres",
+    "Opérateur des communications navales",
+    "Opérateur des équipements d’information de combat naval",
+    "Opérateur des \r\néquipements de combat naval",
+    "Opérateur des transmisisons",
+    "Opérateur en contrôle aérospatial",
+    "Photographie \r\net imagerie, technicien en",
+    "Recherche et sauvetage, technicien en",
+    "Régulateur de vol",
+    "Répartiteur \r\nen transport",
+    "Sapeur",
+    "Soldat d’artillerie de campagne",
+    "Soldat d’artillerie de défense aérienne",
+    "Soldat d’infanterie",
+    "Soldat des blindés",
+    "Soldat du génie de combat",
+    "Steward",
+    "Systèmes aéronautiques, technicien de",
+    "Technicien d'armement terrestre",
+    "Technicien d’armes navales",
+    "Technicien de coque",
+    "Technicien de véhicules",
+    "Technicien de groupes électrogènes",
+    "Technicien de munitions",
+    "Technicien des mouvements de transport",
+    "opérateur des transmissions",
+    "Technicien en approvisionnements",
+    "Technicien en armement terrestre",
+    "Technicien en armement naval",
+    "Technicien en construction",
+    "Technicien en distribution électrique",
+    "Technicien en eau, produits pétroliers et environnement",
+    "Technicien en électronique et \r\noptronique",
+    "Technicien en imagerie et photographie",
+    "Technicien en matériaux",
+    "Technicien en météorologie",
+    "Technicien en munitions",
+    "Technicien en optronique et électronique",
+    "Technicien en photographie et imagerie",
+    "Technicien en plomberie-chauffage",
+    "Technicien en réfrigération et mécanique",
+    "Technicien en structures d'aéronefs",
+    "Technicien en systèmes aéronautiques",
+    "Technicien en systèmes avioniques",
+    "Technicien en systèmes de conduite de tir",
+    "Technicien en systèmes d’information et de communications terrestres",
+    "Technicien en systèmes d’information et télécommunications aérospatiales",
+    "Technicien médical",
+    "Transmissions, opérateur des"
+  ],
+  "/../aerospatial/ing_aerospatial.htm": [
+    "Aérospatial, ingénieur en",
+    "ingénieur en aérospatial",
+    "Génie aérospatial, ingénieur en",
+    "Ingénieur en aérospatial",
+    "Spatiales (technologies), ingénieur \r\nen"
+  ],
+  "/../aerospatial/monteur_structures_aero.html": [
+    "Aérospatial, monteur de structures en"
+  ],
+  "/../aerospatial/tech_avionique.htm": [
+    "Aérospatial, technologue de \r\nl'avionique en",
+    "Avionique, technologue en",
+    "Calibreur en avionique",
+    "Instruments avioniques, réparateur d'",
+    "Instruments de bord d'aéronefs, technicien des",
+    "technologue en \r\navionique",
+    "Technicien d'instruments de bord",
+    "Technicien en avionique",
+    "Technicien en systèmes avioniques"
+  ],
+  "/../administration/info_gestion.html": [
+    "Affaires, analyste d'",
+    "Analyste d'affaires",
+    "Analyste en technologies de \r\nl'information",
+    "Intelligence d'affaires, analyste \r\nen",
+    "Systèmes d'information, \r\ngestionnaire de",
+    "Technologies de l'information, \r\nanalyste en"
+  ],
+  "/../communication/relationniste.htm": [
+    "Affaires \r\npubliques, conseiller en",
+    "Agent des relations publiques",
+    "ANIMATEUR(TRICE) DE COMMUNAUTÉ WEB",
+    "Communications, consultant en",
+    "Médias, conseiller en relations \r\navec relations avec les",
+    "relationniste",
+    "Presse, agent des relations de",
+    "Relationniste",
+    "Relations publiques, conseiller en"
+  ],
+  "/../foresterie/affuteur.html": [
+    "Affûteur",
+    "Réparateur - affûteur de scies"
+  ],
+  "/../arts/gerant_artiste.htm": [
+    "Agent d’artistes",
+    "Agent de spectacles",
+    "Artistes, gérant d'"
+  ],
+  "/../administration/assurances.htm": [
+    "Agent d’assurances",
+    "Agent de recouvrement",
+    "Assurance de dommages, agent d'",
+    "Assurance de personnes, agent d'",
+    "Assurances, technicien en",
+    "Cambiste",
+    "Commis au crédit personnel",
+    "Commis aux prêts hypothécaires",
+    "Commis aux rentes et régimes de retraite",
+    "Commis d'assurances",
+    "technicien en services financiers",
+    "Courtier en assurances",
+    "Courtier en placements",
+    "Épargne, représentant en",
+    "Examinateur de réclamations \r\nd'assurance",
+    "Expert en sinistres",
+    "Finance, technicien en",
+    "Fonds communs de placement, représentant en",
+    "Recouvrement (assurances), agent de",
+    "Régimes de retraite, représentant en",
+    "Représentant d'assurances",
+    "Représentant en épargne",
+    "Représentant en fonds de placements",
+    "Représentant en \r\nrentes et régimes de retraite",
+    "Représentant en services financiers",
+    "Sinistres, expert en",
+    "Souscripteur d'assurances",
+    "Tarificateur d'assurances",
+    "Technicien en assurances",
+    "TECHNICIEN EN FINANCE",
+    "Technicien en services financiers",
+    "Vendeur d'assurances"
+  ],
+  "/../administration/immobilier.htm": [
+    "Agent d’immeubles",
+    "Agent immobilier",
+    "Conseiller en prêts hypothécaires",
+    "Courtier en hypothèques",
+    "Courtier en immobilier",
+    "Hypothèques, courtier en",
+    "Hypothèques, représentant en",
+    "Immobilier, agent en",
+    "Immobilier, courtier en",
+    "Prêts hypothécaires, conseiller en",
+    "Prêts hypothécaires, représentant en",
+    "Représentant en \r\nprêts hypothécaires"
+  ],
+  "/../sociaux/tech_droit.htm": [
+    "Agent d’information juridique",
+    "Agent des brevets",
+    "Assistant juridique",
+    "Droit, technicien en",
+    "Enquêteur aux normes du travail",
+    "Examinateur de titres de propriété",
+    "Greffier ou greffier-audiencier",
+    "Huissier",
+    "Juridique, assistant",
+    "Juridique, technicien",
+    "Parajuriste",
+    "Recherchiste en droit",
+    "Shérif judiciaire",
+    "Technicien en droit",
+    "Technicien juridique"
+  ],
+  "/../enseignement/educateur_spec.htm": [
+    "Agent(e) d’intervention",
+    "ÉDUCATEUR SPÉCIALISÉE",
+    "Intégration sociale, intervenant en",
+    "Interprète en langage des signes",
+    "Intervenant en déficience",
+    "Intervenant psychosocial",
+    "éducateur spécialisé",
+    "Technicien en éducation spécialisée"
+  ],
+  "/../administration/agent_clientele.html": [
+    "Agent d'un centre \r\ncontact-clients",
+    "Agent(e) du service à la clientèle",
+    "Conseiller au service à la \r\nclientèle",
+    "agent du service à la \r\nclientèle"
+  ],
+  "/../restau_tourisme/agent_bord.htm": [
+    "Agent de bord"
+  ],
+  "/../administration/secretaire.html": [
+    "secrétaire"
+  ],
+  "/../administration/commis_comptable.html": [
+    "commis-comptable"
+  ],
+  "/../nature/agent_faune.html": [
+    "Agent de conservation de la faune",
+    "agent de conservation de la faune"
+  ],
+  "/../arts/anim_culturel.html": [
+    "Agent de développement culturel",
+    "Animateur culturel",
+    "Chroniqueur culturel",
+    "Culturel, animateur",
+    "Culturel, chroniqueur",
+    "animateur culturel"
+  ],
+  "/../nature/agent_eco-tour.html": [
+    "Agent de développement éco-touristique",
+    "Aménagement récréo-touristique, \r\nconsultant en",
+    "Chargé de projet en conservation de \r\nmilieux naturels",
+    "Patrimoine naturel, chargé de projet en \r\nconservation du"
+  ],
+  "/../administration/finance1.htm": [
+    "Agent de gestion financière",
+    "Conseiller en gestion financière",
+    "Conseiller en placements pour entreprises",
+    "Finance, analyste en",
+    "Finance, conseiller en",
+    "Gestionnaire en finance",
+    "Placements pour entreprises, conseiller en",
+    "Planificateur financier",
+    "Services financiers pour entreprises, \r\nconseiller en"
+  ],
+  "/../protection/protection.htm": [
+    "Agent de la paix",
+    "Paix, agent de la"
+  ],
+  "/../sociaux/tech_delinquance.htm": [
+    "Agent de libération conditionnelle",
+    "Agent de probation",
+    "Criminologie, technicien en",
+    "Délinquance, technicien en",
+    "Intervenant en délinquance",
+    "Intervention en milieu carcéral",
+    "Intervention\r\nen toxicomanie",
+    "Réinsertion sociale, intervenant en",
+    "Technicien d'intervention en \r\ndélinquance",
+    "Technicien en intervention en délinquance",
+    "Toxicomanies, intervenant en"
+  ],
+  "/../sociaux/cons_orientation.html": [
+    "conseiller en orientation",
+    "Conseiller en orientation",
+    "Orientation, conseiller en",
+    "Travail, conseiller en intégration au"
+  ],
+  "/../sociaux/psychologue.htm": [
+    "psychologue",
+    "Neuropsychologue",
+    "Psychologue",
+    "Psychologue clinicien",
+    "Psychosociologue"
+  ],
+  "/../administration/grh1.html": [
+    "conseiller en ressources humaines",
+    "Agent \r\nde recrutement",
+    "Analyste des emplois",
+    "Conseiller en ressources humaines",
+    "Gestion des ressources humaines, \r\nconseiller en",
+    "Gestionnaire en ressources humaines",
+    "Recrutement de personnel, agent de",
+    "Ressources humaines, conseiller en",
+    "Sélection du personnel, agent ou conseiller en"
+  ],
+  "/../protection/preventionniste.html": [
+    "Agent de prévention des incendies",
+    "Prévention des incendies, agent ou \r\nconseiller en",
+    "Protection-incendie, conseiller en",
+    "Sécurité - incendie, inspecteur en",
+    "Technicien en prévention des incendies",
+    "Technicien en sécurité - incendie"
+  ],
+  "/../administration/marketing1.html": [
+    "Agent de promotion",
+    "Analyste des marchés",
+    "Conseiller en marketing",
+    "Conseiller en publicité",
+    "Gestionnaire en marketing",
+    "Marketing, analyste en",
+    "Marketing, consultant en",
+    "Mise en marché, agent ou conseiller en",
+    "Promotion et développement de \r\nproduits, conseiller en",
+    "Publicité, conseiller en"
+  ],
+  "/../communication/tech_media.htm": [
+    "Agent de publicité",
+    "ANIMATEUR EN RADIO",
+    "Annonceur-présenteur",
+    "Assistant réalisateur",
+    "Assistant producteur",
+    "agent de publicité",
+    "Création publicitaire, producteur en",
+    "Documentaliste",
+    "Information, technicien en",
+    "Médias, technicien en",
+    "Production radiophonique, technicien en",
+    "médias, technicien en",
+    "Publicités, technicien en production \r\nde",
+    "Recherchiste en journalisme",
+    "Recherchiste en radio ou publicité",
+    "Rédacteur publicitaire",
+    "Secrétaire de rédaction",
+    "technicien en média",
+    "Technicien de son",
+    "Technicien en information",
+    "Technicien en médias (radio ou publicité)",
+    "Technicien en radiotélédiffusion",
+    "technicien \r\nen médias-publicité"
+  ],
+  "/../administration/comptabilite.htm": [
+    "Agent de recouvrement",
+    "Caissier dans une institution \r\nfinancière",
+    "Commis à la paye",
+    "technicien en comptabilité",
+    "Comptabilité, technicien en",
+    "Courtier en valeurs mobilières",
+    "Paye, commis à la",
+    "Paye, technicien à la",
+    "Recouvrement (finance ou comptabilité), agent de",
+    "Taxes d'accises, agent de",
+    "technicien en vérification fiscale",
+    "TECHNICIEN EN COMPTABILITÉ",
+    "Vérification fiscale, technicien en"
+  ],
+  "/../sociaux/psychologue.html": [
+    "psychologue"
+  ],
+  "/../sante/agent_socio-san.html": [
+    "Agent de santé publique",
+    "Biostatisticien",
+    "Conseiller en santé publique",
+    "Épidémiologiste",
+    "Hygiéniste du travail",
+    "Santé communautaire, agent ou conseiller \r\nen",
+    "Santé environnementale et santé au \r\ntravail, conseiller en",
+    "Santé et sécurité au travail, conseiller \r\nen",
+    "agent de santé publique"
+  ],
+  "/../protection/securite.htm": [
+    "Agent de sécurité",
+    "Agent de sûreté \r\naéroportuaire",
+    "agent de sécurité",
+    "Enquêtes\r\nen sécurité privée",
+    "Patrouilleur (sécurité)",
+    "Protection et sécurité, agent en",
+    "Protection et sécurité aéroportuaire, agent \r\nde",
+    "Sécurité, agent de",
+    "Sécurité et protection aéroportuaire, agent \r\nde",
+    "Sûreté aéroportuaire, agent de"
+  ],
+  "/../humaines/tech_sondage.htm": [
+    "Agent de sondages",
+    "Enquêteur social",
+    "technicien en sondage",
+    "Recherche, enquête et sondage, technicien en",
+    "Recherche sociale, technicien en",
+    "Technicien de recherche, enquête et \r\nsondage",
+    "Technicien en collecte d'information",
+    "Technicien en recherche sociale",
+    "Technicien en sondage",
+    "Technicien en statistiques"
+  ],
+  "/../transport/chef_train.html": [
+    "Agent de triage",
+    "Chef de train",
+    "Conducteur d'un train ou métro",
+    "Mécanicien de locomotive",
+    "Métro, opérateur de",
+    "Opérateur de métro",
+    "Train, chef de",
+    "chef de train"
+  ],
+  "/../restau_tourisme/agent_voyages.htm": [
+    "Agent de voyages",
+    "Commercialisation des voyages, agent de promotion en",
+    "Conseiller(ère) en voyages",
+    "Forfaitiste",
+    "Vendeur de produits et services en voyages",
+    "technicien en tourisme et voyages"
+  ],
+  "/../protection/agent_correction.html": [
+    "Agent des services correctionnels"
+  ],
+  "/../restau_tourisme/receptionniste_hotel.htm": [
+    "réceptionniste d’hôtel",
+    "Hôtellerie, \r\nréceptionniste en",
+    "Préposé à l'accueil",
+    "Réceptionniste d’hôtel"
+  ],
+  "/../restau_tourisme/tech_hotellerie.htm": [
+    "technicien en hôtellerie",
+    "Gérant d'hôtel",
+    "Hôtel, gérant d'un",
+    "Hôtel, maître d'",
+    "Hôtellerie, technicien en gestion de l'",
+    "Hôtels, coordonnateur en gestion d'événements et congrès d'",
+    "Technicien en gestion hôtelière",
+    "Technicien en hôtellerie"
+  ],
+  "/../motorises/agent_auto.htm": [
+    "Agent(e) du service à la clientèle",
+    "Aviseur technique",
+    "Conseiller au service à la clientèle",
+    "Service-conseil à la clientèle en équipements motorisés, agent du"
+  ],
+  "/../sociaux/tech_geronto.htm": [
+    "Agent\r\nen géronto-gériatrie",
+    "Centre d'hébergement pour personnes âgées, \r\ngestionnaire d'un",
+    "Géronto-gériatrie,\r\nagent en",
+    "Gérontologie, technicien en",
+    "Hébergement pour personnes âgées, gestion \r\nd'un centre",
+    "Intervenant en gérontologie",
+    "Résidence pour personnes âgées, \r\ngestionnaire d'une",
+    "Technicien en gérontologie"
+  ],
+  "/../humaines/cons_international.html": [
+    "conseiller en relations internationales",
+    "Conseiller en développement \r\ninternational",
+    "Conseiller en relations internationales",
+    "International \r\n(développement), conseiller en",
+    "Internationales \r\n(études ou relations), conseiller en",
+    "Mondialisation et développement \r\ninternational, conseiller en",
+    "Relations internationales, conseiller en"
+  ],
+  "/../sociaux/avocat.htm": [
+    "avocat",
+    "Avocat",
+    "Aviseur légal",
+    "Conseiller \r\njuridique",
+    "Juge",
+    "Substitut du Procureur Général"
+  ],
+  "/../sociaux/trav_social.htm": [
+    "travailleur social",
+    "Intégration sociale, conseiller en",
+    "Service social, travailleur en",
+    "Thérapeute conjugal et familial",
+    "Travailleur social"
+  ],
+  "/../protection/douanier.html": [
+    "Agent \r\nfédéral des douanes",
+    "Douanier"
+  ],
+  "/../protection/agent_renseignement.html": [
+    "Agent fédéral du \r\nrenseignement et de sécurité"
+  ],
+  "/../protection/cons_securite.html": [
+    "Conseiller en sécurité",
+    "Cybercriminalité, \r\nspécialiste en",
+    "Cybersécurité, \r\nspécialiste en",
+    "Prévention de la criminalité, \r\nconsultant en",
+    "Protection et sécurité, consultant en"
+  ],
+  "/../lettres/ecrivain.html": [
+    "Agent \r\nlittéraire",
+    "Auteur \r\nou écrivain",
+    "Compositeur littéraire",
+    "Conseiller littéraire",
+    "Critique littéraire",
+    "Écrivain",
+    "Littéraire, agent",
+    "spécialiste en \r\nlittérature"
+  ],
+  "/../agriculture/gerant_ferme.htm": [
+    "Agneaux et moutons, gérant d'une ferme \r\nde production d'",
+    "Agricole, conseiller en crédit",
+    "Agricole, gérant de production",
+    "Agricole, technicien",
+    "Assurances agricoles, technicien en",
+    "Bovins de boucherie, gérant d'une \r\nferme de",
+    "Conseiller en crédit agricole",
+    "Crédit agricole, conseiller en",
+    "Entreprise agricole, gérant d'une",
+    "Exploitant d'une entreprise agricole",
+    "Gérant de ferme",
+    "Ovins, gérant d'une ferme d'",
+    "Porcs, gérant d'une ferme de",
+    "Producteur agricole",
+    "Production agricole, gérant de",
+    "Productions animales, gérant d'une ferme de",
+    "Productions horticoles, gérant d'une \r\nferme de",
+    "gérant de ferme"
+  ],
+  "/../agriculture/ouvrier_agricole7.htm": [
+    "Agneaux et moutons, producteur d'",
+    "Moutons, producteur de"
+  ],
+  "/../agriculture/tech_prod_animales.htm": [
+    "Agneaux et moutons, technologue \r\nen production d'",
+    "technologue en productions animales",
+    "Alimentation animale, conseiller technique en",
+    "Animales, technologue en productions",
+    "Bovins de boucherie, technologue \r\nen production de",
+    "Lait, technologue en production \r\nde",
+    "Ovins, technologue en production \r\nd'",
+    "Porcs, technologue en production \r\nde",
+    "Production animale, technologue \r\nen",
+    "Productions animales, technologue en",
+    "technologue en productions \r\nanimales",
+    "Technicien en productions animales",
+    "Technologue en production \r\nanimale",
+    "Zootechnicien"
+  ],
+  "/../agriculture/tech_aliments.htm": [
+    "Agneaux et moutons, technologue en \r\ntransformation d'",
+    "Alimentaires, technicien en analyse \r\nde produits",
+    "Aliments, technologue en transformation des",
+    "Analyses de produits alimentaires, \r\ntechnicien en",
+    "Bovins de boucherie, technologue en \r\ntransformation de",
+    "Contrôle de la qualité des aliments, \r\ntechnicien en",
+    "Fruits et légumes, technologue en \r\ntransformation de",
+    "Génie alimentaire, technologue en",
+    "Inspecteur des produits agricoles et alimentaires",
+    "Lait, technologue en transformation \r\ndu",
+    "Légumes et fruits, technologue en \r\ntransformation de",
+    "Ovins, technologue en transformation \r\nd'",
+    "Porcs, technologue en transformation de",
+    "Production alimentaire, technologue en",
+    "Produits alimentaires, analyste de",
+    "Technicien en contrôle de la qualité",
+    "Technicien en production alimentaire",
+    "technologue des \r\naliments",
+    "Technicien en tranformation des aliments",
+    "Technologue en génie alimentaire",
+    "Technologue en génie de la production \r\nalimentaire",
+    "Technologue en procédés alimentaires",
+    "Technologue en production alimentaire",
+    "Technologue en transformation des aliments",
+    "Transformation des aliments, technologue en",
+    "Vérificateur d'aliments"
+  ],
+  "/../agriculture/ouvrier_agricole1.htm": [
+    "producteur \r\nde bovins",
+    "Bovins de boucherie, producteur de",
+    "Ouvrier agricole spécialisée en production porcine",
+    "Producteur de bovins de boucheries"
+  ],
+  "/../agriculture/ouvrier_agricole2.htm": [
+    "producteur de porcs",
+    "Ouvrier agricole spécialisé en production bovine",
+    "Porcs, producteur de",
+    "Producteur de porcs"
+  ],
+  "/../agriculture/ouvrier_agricole3.htm": [
+    "producteur de fruits et légumes",
+    "Fruits et légumes, producteur de",
+    "Horticulture, producteur en",
+    "Légumes et fruits, producteur de",
+    "Ouvrier agricole spécialisé en production horticole et maraîchère",
+    "Pomiculteur",
+    "Producteur de fruits et légumes",
+    "Producteur horticole",
+    "Producteur maraîcher"
+  ],
+  "/../agriculture/ouvrier_agricole4.htm": [
+    "producteur de \r\ncéréales",
+    "Céréales, producteur de",
+    "Fourrages, producteur de",
+    "Grandes cultures, producteur de",
+    "Ouvrier agricole spécialisé en production de cultures commerciales",
+    "Ouvrier agricole spécialisé en production de grandes cultures",
+    "Producteur de céréales et fourrages",
+    "Producteur de cultures \r\ncommerciales"
+  ],
+  "/../agriculture/ouvrier_agricole6.htm": [
+    "producteur apicole",
+    "Apiculteur",
+    "Ouvrier agricole spécialisé en apiculture",
+    "Producteur apicole"
+  ],
+  "/../agriculture/ouvrier_agricole.htm": [
+    "producteur laitier",
+    "Bovins laitiers, producteur de",
+    "Lait, producteur de",
+    "Ouvrier agricole spécialisé en production laitière",
+    "Producteur de lait",
+    "Producteur laitier"
+  ],
+  "/../agriculture/arboriculteur.htm": [
+    "arboriculteur",
+    "Arboriculteur",
+    "Ouvrier agricole spécialisé en arboriculture",
+    "Producteur arboricole"
+  ],
+  "/../agriculture/pisciculteur.html": [
+    "pisciculteur",
+    "Aquaculteur",
+    "Ouvrier agricole spécialisé en \r\naquiculture",
+    "Pisciculteur",
+    "Producteur aquicole"
+  ],
+  "/../agriculture/viticulteur.html": [
+    "viticulteur",
+    "Viticulteur",
+    "Producteur viticole",
+    "Vigneron"
+  ],
+  "/../agriculture/tech_horticulture.htm": [
+    "technologue en productions horticoles",
+    "Agroenvironnement, technologue en",
+    "Agroforesterie, technologue en",
+    "Céréeales, technologue en \r\nproduction de",
+    "Fruits et légumes, technologue en \r\nproduction de",
+    "Horticulture, technologue de la \r\nproduction en",
+    "Légumes et fruits, technologue en \r\nproduction de",
+    "Production horticole, technologue \r\nen",
+    "Productions horticoles, technologue en",
+    "technologue en productions \r\nhorticoles",
+    "Technicien en productions horticoles",
+    "Technologue en horticulture \r\nlégumière et fruitière",
+    "Technologue en production \r\nhorticole",
+    "Technologue en production \r\nvégétale"
+  ],
+  "/../agriculture/agronome.htm": [
+    "Agriculture, consultant en",
+    "agronome",
+    "Agronome",
+    "Assurances agricoles, conseiller en",
+    "Production agricole, consultant en"
+  ],
+  "/../agriculture/ing_agricole.htm": [
+    "Agroenvironnement, \r\ningénieur en",
+    "Bioressources, \r\ningénieur en",
+    "Génie agroenvironnemental, ingénieur en",
+    "Génie agricole, ingénieur en",
+    "Génie agroenvironnemental, ingénieur \r\nen",
+    "Génie des bioressources, ingénieur en",
+    "Ingénieur agricole",
+    "Ingénieur agroenvironnemental",
+    "Ingénieur en bioressources"
+  ],
+  "/../agriculture/tech_genie_agricole.htm": [
+    "Agromécanique, technologue en \r\ngénie",
+    "Équipements agricoles, représentant en",
+    "Équipements agricoles, \r\ntechnologue en",
+    "Génie agroenvironnemental, technologue en",
+    "Génie agricole, technologue en",
+    "Génie agromécanique, technologue en",
+    "Représentant en équipements agricoles",
+    "Technicien en équipments agricoles",
+    "Technologue en génie agricole"
+  ],
+  "/../agriculture/ing_alimentaire.htm": [
+    "ingénieur alimentaire",
+    "Aliments, ingénieur des",
+    "Génie alimentaire, ingénieur en",
+    "Ingénieur alimentaire",
+    "Production alimentaire, ingénieur en"
+  ],
+  "/../restau_tour/tech_tourisme.htm": [
+    "Agrotourisme, animateur en",
+    "tourisme, technicien en",
+    "Mise en valeur de produits touristiques, agent de",
+    "Organisateur d'activités ou événements touristiques",
+    "Représentant en produits et services \r\ntouristiques"
+  ],
+  "/../communication/scene.html": [
+    "Aide à \r\nl’enregistrement audio et de spectacles",
+    "Aide régisseur de plateau",
+    "Assistant aux effets spéciaux",
+    "Assistant cadreur",
+    "Assistant régisseur de plateau",
+    "Bruiteur",
+    "habilleur",
+    "Opérateur de télésouffleur",
+    "Perchiste",
+    "Préposé à l'entretien des équipements de plateau",
+    "Scène, assistant technique de"
+  ],
+  "/../motorises/motorises1.html": [
+    "Aide à la préparation des véhicules automobiles",
+    "Aide en carrosserie",
+    "Aide mécanicien d'engins de chantier",
+    "Mécanicien de\r\nremorques de camions",
+    "Poseur de silencieux",
+    "Préposé à l'entretien des voies ferrées",
+    "Préposé à l’entretien et au service de \r\nvéhicules légers et/ou de loisirs",
+    "Réparateur de remorques de camions",
+    "Réparateur de wagons",
+    "Salle des machines, matelot qualifié de \r\nla"
+  ],
+  "/../batiment/occupations.html": [
+    "Aide briqueteur-maçon",
+    "Aide carreleur",
+    "Aide charpentier",
+    "Aide électricien",
+    "Aide ferblantier",
+    "Aide mécanicien de chantier",
+    "Aide monteur à terre",
+    "Aide tuyauteur",
+    "Aide vitrier",
+    "Appareils de levage, opérateur d'",
+    "Béton (pompe à), opérateur de",
+    "Branchement d'immeubles, spécialiste en",
+    "Chauffagiste en mécanique d’appareils de combustion au mazout",
+    "Chauffeur d'un camion de construction",
+    "Commis de chantier",
+    "Compresseurs et pompes, opérateur de",
+    "Concasseur de pierres et de gravier, \r\nopérateur de",
+    "Construction, occupations de la",
+    "Épisseur de câbles aériens",
+    "Épisseur de câbles souterrains",
+    "Gazfitter",
+    "Génératrice, opérateur de",
+    "Installateur d'enseignes",
+    "Journalier de chantier",
+    "Machineries lourdes, homme de service sur",
+    "Magasinier de chantier",
+    "Manoeuvre de chantier",
+    "Manœuvre en démolition",
+    "Manœuvre en fabrication de maisons pré-usinées",
+    "Manoeuvre en plantage de poteaux",
+    "Monteur - mécanicien de portes et \r\nfenêtres",
+    "Monteur - poseur de panneaux de \r\nsignalisation",
+    "Opérateur d'appareils de levage",
+    "Opérateur d'usines fixes ou mobiles",
+    "Opérateur de compresseur",
+    "Opérateur de génératrice",
+    "Opérateur de pompes et compresseurs",
+    "Ouvrier d'entretien \r\ngénéral d'immeubles",
+    "Spécialiste en branchement d'immeubles"
+  ],
+  "/../arts/artisanat.html": [
+    "Aide décorateur",
+    "Art, conseiller en vente d'oeuvres et produits \r\nd'",
+    "Ciseleur",
+    "Encadreur",
+    "Galerie d'art, conseiller en vente de produits \r\nen",
+    "Sellier",
+    "Taxidermiste"
+  ],
+  "/../motorises/prep_service.html": [
+    "Aide de garage et d'atelier de \r\nmécanique",
+    "Aide mécanicien d'automobiles",
+    "Aide mécanicien de véhicules lourds",
+    "Assistant mécanicien",
+    "Préposé au service (automobile)",
+    "Préposé aux pneus",
+    "Service automobile, préposé au"
+  ],
+  "/../sociaux/sociaux1.htm": [
+    "Aide\r\néducatrice à la petite enfance",
+    "Intervenant en milieu résidentiel",
+    "Intervieweur"
+  ],
+  "/../sociaux/aide_familial.html": [
+    "Aide familial",
+    "Assistant familial",
+    "Auxiliaire à domicile"
+  ],
+  "/../sante/sante1.html": [
+    "Aide perfusionniste",
+    "Aide \r\ntechnique en laboratoire clinique",
+    "Assistant en chiropratique",
+    "Assistant en podiatrie",
+    "Assistant \r\nen radiologie",
+    "Assistant \r\nen réadaptation",
+    "Assistant \r\ntechnique en soins de santé",
+    "Chiropratique, assistant en",
+    "Commis en \r\npharmacie",
+    "Pharmacie, \r\ncommis en",
+    "Podiatrie, \r\nassistant en"
+  ],
+  "/../chimie/chimie1.html": [
+    "Aide technique en identité judiciaire",
+    "Aide technique en laboratoire (environnement",
+    "Conducteur au raffinage de pétrole",
+    "Conducteur de machines à fabriquer les produits de caoutchouc",
+    "Laboratoire, aide technique en",
+    "Machines à transformer les produits chimiques, \r\nopérateur de",
+    "Machines de traitement de produits chimiques, \r\nopérateur de",
+    "Opérateur de machines de traitement des produits chimiques",
+    "Ouvrier \r\nspécialisé à la préparation des produits chimiques",
+    "Traitement des produits chimiques, opérateur de \r\nmachines de",
+    "Transformation des produits chimiques, \r\nopérateur de machines de",
+    "Transformation du caoutchouc, opérateur de machines de"
+  ],
+  "/../communication/tech_tele.html": [
+    "Aiguilleur"
+  ],
+  "/../transport/controleur_ferroviaire.html": [
+    "Aiguilleur",
+    "Contrôleur ferroviaire",
+    "Trains, contrôleur de la \r\ncirculation de",
+    "Transport ferroviaire \r\ncontrôleur du"
+  ],
+  "/../administration/comm_inter.htm": [
+    "Ajusteur de comptes de devises étrangères",
+    "Commerce international, technicien en",
+    "Exportations, représentant en",
+    "Représentant en commerce international",
+    "Représentant en exportations",
+    "Représentant commercial à l'étranger",
+    "Technicien en commerce international"
+  ],
+  "/../fabric_mec/machiniste.htm": [
+    "Ajusteur - outilleur de machines",
+    "Machines d'usinage, opérateur de",
+    "Machines-outils à commande numérique, \r\nrégleur et conducteur de",
+    "Machiniste industriel",
+    "Machiniste - soudeur",
+    "Matriceur",
+    "Opéarateur de machines d'usinage",
+    "Outilleur",
+    "Régleur-conducteur de machines-outils à commande numérique",
+    "Régleur - conducteur de tours",
+    "Machiniste",
+    "machiniste"
+  ],
+  "/../chimie/microbio.htm": [
+    "Alimentaires, analyste de produits",
+    "Analyste de produits alimentaires",
+    "Bactériologiste",
+    "Biologiste judiciaire",
+    "Immunologiste",
+    "Microbiologiste",
+    "Mycologue",
+    "microbiologiste",
+    "Sciences de l'environnement, \r\nspécialiste en",
+    "Virologiste"
+  ],
+  "/../sante/dietetiste.htm": [
+    "Alimentation (humaine), conseiller en",
+    "Conseiller en alimentation",
+    "Diététiste",
+    "Nutritionniste"
+  ],
+  "/../agriculture/oper_aliments.htm": [
+    "Aliments, opérateur de machines en \r\ntransformation des",
+    "Distillateur",
+    "Opérateur de machines de \r\ntransformation des aliments"
+  ],
+  "/../agriculture/spec_STA.htm": [
+    "Aliments, spécialiste en sciences et technologie des",
+    "Sciences et technologie des aliments, spécialiste en"
+  ],
+  "/../sante/medecin.htm": [
+    "médecin",
+    "MÉDECIN"
+  ],
+  "/../enseignement/prof_langues.htm": [
+    "Allemand, professeur d'",
+    "Arabe, professeur d'",
+    "Chinois, professeur de",
+    "Espagnol, professeur d'",
+    "Italien, professeur d'",
+    "Langues étrangères, professeur de",
+    "Maître de langues",
+    "Professeur de langue étrangère"
+  ],
+  "/../protection/ambulancier.htm": [
+    "AMBULANCIER",
+    "Paramédic",
+    "Recherche et sauvetage, technicien en",
+    "TECHNICIEN AMBULANCIER",
+    "Technicien paramédic"
+  ],
+  "/../nature/tech_cine_halieu.htm": [
+    "Aménagement cynégétique et halieutique, technicien en"
+  ],
+  "/../arts/decorateur_int.html": [
+    "Aménagement d'intérieur, décorateur en",
+    "Aménagement d'intérieur, conseiller en \r\nvente de produits d'",
+    "Conseiller en ventes de produits de décoration",
+    "Décorateur d’intérieurs"
+  ],
+  "/../arts/designer_int.htm": [
+    "Aménagement d’intérieurs, designer en",
+    "Aménagement d’intérieurs, technicien en",
+    "Concepteur d’aménagements intérieurs",
+    "designer d’intérieurs",
+    "DESIGNER D’INTÉRIEUR",
+    "Technicien en aménagement d'intérieurs",
+    "Technicien en design d'intérieurs"
+  ],
+  "/../nature/biologiste.htm": [
+    "Aménagement de la faune, consultant en",
+    "Bioécologiste",
+    "Biologiste",
+    "Entomologiste",
+    "Zoologiste"
+  ],
+  "/../nature/tech_faune.htm": [
+    "Aménagement de la faune, technicien en",
+    "Éco-interprétation, animateur-guide en",
+    "Interprète (Guide) de la nature",
+    "Interprète (Guide) du patrimoine",
+    "Milieu naturel, guide - interprète du",
+    "Naturel, guide - interprète du milieu",
+    "Technicien de la faune et de la flore",
+    "Technicien du milieu naturel",
+    "Technicien en aménagement de la faune",
+    "Technicien en écologie",
+    "technicien de la faune",
+    "Technicien en gestion de la faune",
+    "Technicien en zoologie",
+    "Technologue en zoologie"
+  ],
+  "/../environnement/urbaniste.html": [
+    "Aménagement du territoire et \r\ndéveloppement régional, consultant en",
+    "Aménagement et urbanisme, consultant \r\nen",
+    "Développement régional, \r\nconseiller en",
+    "Urbaniste"
+  ],
+  "/../foresterie/ing_forestier.htm": [
+    "Aménagement et environnement forestiers, ingénieur en",
+    "Aménagement récréo-forestier, \r\nconseiller en",
+    "Foresterie, ingénieur en",
+    "Forestier, conseiller en aménagement",
+    "Génie forestier, ingénieur en",
+    "Ingénieur en foresterie",
+    "Ingénieur forestier",
+    "Opérations forestières, ingénieur en",
+    "Production forestière, ingénieur en"
+  ],
+  "/../foresterie/tech_foresterie.htm": [
+    "Aménagement et environnement forestiers, technologue en",
+    "Aménagement récréo-forestier, technicien en",
+    "Foresterie, technologue en",
+    "Génie forestier, technologue en",
+    "foresterie, technicien en",
+    "Technicien en aménagement forestier",
+    "Technicien en foresterie",
+    "Technicien en sylviculture",
+    "Technologiste forestier",
+    "Technologue en foresterie",
+    "Technologue en génie forestier",
+    "Technologue en sciences forestières"
+  ],
+  "/../environnement/tech_urbanisme.html": [
+    "Aménagement et urbanisme, technicien en",
+    "Technicien en aménagement et urbanisme",
+    "Technicien en urbanisme",
+    "Urbanisme, technicien en"
+  ],
+  "/../nature/arch_paysagiste.htm": [
+    "Aménagement paysager, consultant en",
+    "architecte paysagiste",
+    "Paysage, architecte du"
+  ],
+  "/../nature/tech_paysagiste.htm": [
+    "Aménagement paysager, technicien en",
+    "Concepteur d’aménagements paysagers",
+    "Entretien d’espaces verts, préposé à l'",
+    "Horticulture, conseiller en vente de produits en",
+    "Horticulture, technologue en",
+    "Paysage, technologue en aménagement du",
+    "Technicien en aménagement paysager",
+    "Technicien en horticulture",
+    "Technicien paysagiste",
+    "Technologue en botanique",
+    "Technologue en horticulture ornementale"
+  ],
+  "/../sante/tech_labo_medical.htm": [
+    "Analyses biomédicales, technologue en",
+    "Assistant pathologiste",
+    "laboratoire médical, technologue en",
+    "Laboratoire médical, technologue en",
+    "Pathologie, assistant en",
+    "Pathologie, technicien en",
+    "technologie en analyses biomédicales",
+    "Technicien de laboratoire médical",
+    "Technicien en hématologie",
+    "Technicien en laboratoire médical",
+    "Technologiste médical",
+    "Technologue en analyses biomédicales",
+    "Technologue en cytologie",
+    "Technologue en laboratoire médical",
+    "technologue en analyses \r\nbiomédicales"
+  ],
+  "/../administration/gest_quantif.html": [
+    "Analyste de données",
+    "Analyste en intelligence \r\nd'affaires",
+    "Gestionnaire en méthodes \r\nquantitatives"
+  ],
+  "/../graphique/anal_multimedia.html": [
+    "Analyste en multimédia",
+    "Arts numériques, analyste en",
+    "Chargé de projet en multimédia",
+    "analyste en multimédia",
+    "Création en multimédia interactif, \r\nproducteur en",
+    "Intégration multimédia, analyste en",
+    "Multimédia, concepteur en",
+    "Multimédia, producteur en",
+    "Producteur en multimédia"
+  ],
+  "/../humaines/politicologue.html": [
+    "Analyste en politique",
+    "Critique politique",
+    "Politicologue",
+    "politicologue",
+    "Science politique, conseiller en"
+  ],
+  "/../sante/sc_med.htm": [
+    "Anatomiste",
+    "Biologiste cellulaire ou moléculaire",
+    "Biologiste médical",
+    "Chercheur en médecine",
+    "Infectieuses (maladies), spécialiste en",
+    "Médical, biologiste",
+    "Médicales, spécialiste en sciences",
+    "Neurobiologiste",
+    "Neurologiques, spécialiste en sciences",
+    "Pharmacologue",
+    "Physiologiste",
+    "Sciences biopharmaceutiques, \r\nspécialiste en",
+    "Sciences cliniques, spécialiste \r\nen",
+    "Sciences de la réadaptation, \r\nconsultant en",
+    "Sciences des radiations, \r\nspécialiste en",
+    "Sciences \r\nmédicales, spécialiste en",
+    "Sciences neurologiques, spécialiste en",
+    "spécialiste en sciences médicales"
+  ],
+  "/../sante/dentiste.htm": [
+    "dentiste",
+    "Dentiste"
+  ],
+  "/../sante/veterinaire.htm": [
+    "vétérinaire",
+    "Médecin vétérinaire",
+    "Vétérinaire"
+  ],
+  "/../enseignement/prof_anglais1.htm": [
+    "Anglais langue maternelle (au \r\nsecondaire), professeur en"
+  ],
+  "/../enseignement/prof_anglais.htm": [
+    "Anglais langue seconde, professeur en",
+    "professeur d'anglais langue \r\nseconde"
+  ],
+  "/../sante/tech_sante_animale.htm": [
+    "Animale, technicien en santé",
+    "Pathologie \r\nvétérinaire, technicien en",
+    "Santé animale, technicien en",
+    "Technicien de laboratoire vétérinaire",
+    "Technicien en laboratoire vétérinaire",
+    "TECHNICIEN EN SANTE ANIMALE",
+    "Technologue en santé animale"
+  ],
+  "/../nature/animalier.html": [
+    "Animalier",
+    "Conseiller en ventes d'animaux",
+    "Vendeur \r\nd'animaux et produits en animalerie"
+  ],
+  "/../graphique/designer_jeux.html": [
+    "ANIMATEUR EN JEU VIDÉO",
+    "Concepteur de jeux  vidéo",
+    "DESIGNER DE JEUX",
+    "Jeux vidéo, designer ou concepteur en",
+    "Jeux vidéo, producteur de",
+    "Modélisateur de jeux vidéo",
+    "Ordinateurs, concepteur de jeux pour",
+    "Producteur en jeu vidéo",
+    "Programmeur en jeu vidéo",
+    "designer de jeux vidéo",
+    "Technicien en design de jeux vidéo",
+    "Technologue en conception de jeux \r\nvidéo",
+    "Testeur de jeux vidéo",
+    "Vérificateur de jeux vidéos"
+  ],
+  "/../graphique/tech_multimedia.htm": [
+    "ANIMATEUR EN MULTIMÉDIA",
+    "Concepteur d’applications multimédias et sites web",
+    "Concepteur de sites Internet",
+    "Conseiller\r\nen commercialisation de production multimédia",
+    "Designer de sites web",
+    "Designer en production multimédia",
+    "Designer multimédia",
+    "Designer web",
+    "Développeur de sites web",
+    "Développement multimédia, technicien en",
+    "multimédia, technicien en",
+    "Intégration multimédia, \r\n\r\ntechnicien en",
+    "Multimédia, designer en",
+    "Multimédia, programmeur en",
+    "Multimédia, technicien en",
+    "Multimédias, Conseiller en commercialisation de produits",
+    "Programmeur en multimédia",
+    "Rédacteur en multimédia",
+    "Scénariste en multimédia",
+    "TECHNICIEN EN MULTIMÉDIA",
+    "Testeur de produits multimédias",
+    "Vérificateur de produits multimédias",
+    "Webdesigner",
+    "Webmestre"
+  ],
+  "/../communication/animateur_tele.htm": [
+    "ANIMATEUR EN TÉLÉVISION",
+    "Assistant réalisateur",
+    "Assistant producteur",
+    "Producteur en nouveaux médias (web \r\ntélé)",
+    "Producteur en télévision"
+  ],
+  "/../sociaux/animateur_pastorale.htm": [
+    "Animateur en vie spirituelle",
+    "Aumônier",
+    "Spiritualité et counseling, \r\nconseiller en"
+  ],
+  "/../graphique/animateur_3d.html": [
+    "ANIMATEUR EN 3D",
+    "Art et science de \r\nl'animation, concepteur en",
+    "Dessinateur d'animation",
+    "Multimédia, animateur en 3D",
+    "animateur en 3D",
+    "Technicien en animation 3D"
+  ],
+  "/../enseignement/prof_collegial.html": [
+    "Anthropologie (au collégial), professeur d'",
+    "Art dramatique (au collégial), professeur en",
+    "Arts plastiques (au collégial), professeur en",
+    "Arts visuels (au collégial), \r\nprofesseur en",
+    "Biologie (au collégial), professeur en",
+    "Chimie (au collégial), professeur en",
+    "Collégial, professeur au",
+    "Communication (au collégial), professeur en",
+    "Comptabilité (au collégial), professeur en",
+    "Danse (au collégal), professeur de",
+    "Économique (au collégial), professeur en",
+    "Éducation physique (au collégial), professeur d'",
+    "Enseignant au collégial (pré-universitaire)",
+    "Espagnol, professeur d'",
+    "Français langue maternelle, \r\nprofesseur de",
+    "Français langue seconde, \r\nprofesseur de",
+    "Géographie (au collégial), professeur en",
+    "Géologie (au collégial), professeur en",
+    "Histoire (au collégial), \r\nprofesseur d'",
+    "Informatique au collégial, professeur en",
+    "Littérature anglaise (au \r\ncollégial), professeur de",
+    "Littérature française (au \r\ncollégial), professeur de",
+    "Mathématiques au collégial, professeur de",
+    "Musique au collégial, professeur de",
+    "Professeur au collégial (pré-universitaire)",
+    "Psychologie (au collégial), professeur de",
+    "Religion (au collégial), professeur de",
+    "Science politique au collégial, \r\nprofesseur de",
+    "Sociologie (au collégial), professeur de",
+    "Théâtre au collégial, professeur \r\nde",
+    "Théologie (au collégial), professeur de"
+  ],
+  "/../humaines/anthropologue.html": [
+    "Anthropologue",
+    "Archéologue",
+    "Ethnologue",
+    "anthropologue"
+  ],
+  "/../chimie/sc_legales.html": [
+    "Anthropologue judiciaire",
+    "spécialiste en sc légales",
+    "Criminalistique, expert en",
+    "Judiciaires (sciences), expert en",
+    "Légales (sciences), professionnel en",
+    "Sciences judiciaires, professionnel en"
+  ],
+  "/../communication/tech_museologie.html": [
+    "Antiquaire",
+    "technicien en muséologie",
+    "Muséologie, technicien en",
+    "Recherchiste en muséologie",
+    "Restaurateur de biens de collection",
+    "Technicien en muséologie"
+  ],
+  "/../electrotechnique/tech_electro_ind.htm": [
+    "Appareillage électrique, \r\ntechnologue en",
+    "Automatisation et instrumentation industrielles, technologue en",
+    "Contrôleur de systèmes \r\nélectroniques",
+    "Dessinateur - concepteur \r\nd'équipements et systèmes électriques",
+    "Électrodynamique, technologue en",
+    "Électronique industrielle, technologue en",
+    "Génie de la production \r\nautomatisée, technologue en",
+    "électronique industrielle, technologue en",
+    "Instrumentation et automatisation, technologue en",
+    "Machines automatisées, \r\nprogrammeur de",
+    "Ordinateurs industriels, programmeur de",
+    "technologue \r\nen électronique industrielle",
+    "Régulateur à la consommation",
+    "Robotique, instrumentation et automatisation, technologue de l’",
+    "Technicien d'essais \r\nélectriques",
+    "Technicien en distribution \r\nélectrique",
+    "Technicien en électricité",
+    "Technicien en électrodynamique",
+    "Technicien en \r\nélectrotechnique",
+    "technologue en \r\nautomatisation industrielle",
+    "Technologue en conception \r\nélectrique",
+    "Technologue en électrodynamique",
+    "Technologue en électronique industrielle",
+    "Technologue en essais \r\nélectriques",
+    "Technologue en génie de la \r\nproduction automatisée",
+    "technologue en électronique industrielle",
+    "Technologue en instrumentation et automatisation",
+    "Technologue en production \r\nélectrique",
+    "Technologue en robotique",
+    "Vendeur - technicien de \r\nmatériel électrique"
+  ],
+  "/../electrotechnique/tech_biomedical.html": [
+    "Appareils biomédicaux, \r\nréparateur d'",
+    "Biomédical, technologue en \r\ngénie",
+    "Électronique biomédicale, technologue en",
+    "Génie biomédical, technologue en",
+    "Réparateur d'équipements \r\nbiomédicaux",
+    "Technicien en électronique \r\nbiomédicale",
+    "Technicien en génie \r\nbiomédical",
+    "Technologue en génie biomédical"
+  ],
+  "/../electrotechnique/electronicien_bureau.htm": [
+    "Appareils de bureautique, \r\nréparateur d'",
+    "Dépanneur d’équipements de bureautique",
+    "Électromécanicien de machines de bureau",
+    "électromécanicien de machines de bureau",
+    "Réparateur d'équipements \r\nde bureautique",
+    "Réparateur d'équipements \r\ninformatiques",
+    "Réparateur de caisses \r\nenregistreuses",
+    "Réparateur de matériel \r\ninformatique",
+    "Technicien en entretien \r\nd’équipements de bureautique"
+  ],
+  "/../electrotechnique/repar_telecommunications.htm": [
+    "Appareils de \r\ntélécommunications, réparateur d'",
+    "Installateur et réparateur d’équipements de télécommunications",
+    "Réparateur d’appareils téléphoniques",
+    "Réparateur d'équipements de télécommunication",
+    "Télécommunications, réparateur d’équipements en",
+    "Téléviseurs, \r\nréparateur de"
+  ],
+  "/../electrotechnique/tech_electromenagers.htm": [
+    "Appareils \r\nélectroménagers, réparateur d'",
+    "Dépanneur d'appareils \r\nélectroménagers",
+    "Électroménagers, réparateur d’appareils",
+    "Réparateur d’appareils électroménagers",
+    "Réparateur en électroménagers",
+    "Technicien en électroménagers"
+  ],
+  "/../electrotechnique/repar_electronique.htm": [
+    "Appareils électroniques \r\naudiovidéos, réparateur d'",
+    "Audiovisuels, réparateur \r\nd'appareils",
+    "Installateur et réparateur d’appareils électroniques audiovidéos",
+    "RÉPARATEUR D’APPAREILS ÉLECTRONIQUES DOMESTIQUES",
+    "Réparateur d'appareils \r\nphotographiques",
+    "Réparateur de matériel \r\naudiovisuel",
+    "Réparateur de téléviseurs et lecteur de DVD",
+    "réparateur \r\nd'appareils électroniques"
+  ],
+  "/../administration/gest_appro1.html": [
+    "Approvisionnements, analyste en",
+    "Gestion des approvisionnements, \r\nconseiller en",
+    "Gestionnaire en approvisionnements"
+  ],
+  "/../agriculture/tech_peches.html": [
+    "Aquaculture, technicien en",
+    "Exploitant d'un navire de pêches",
+    "Officier de bateau de pêche",
+    "Pêcheries, consultant en",
+    "Technicien en aquiculture",
+    "Technicien en pêcheries",
+    "Technologue en aquiculture"
+  ],
+  "/../batiment/architecte.htm": [
+    "Architecte"
+  ],
+  "/../bois/tech_menuiserie.htm": [
+    "Architecturale, technicien en menuiserie",
+    "Concepteur en menuiserie architecturale",
+    "Ébénisterie, technicien en",
+    "Menuiserie architecturale, technicien en"
+  ],
+  "/../electrotechnique/ing_logiciel.html": [
+    "ingénieur en logiciel",
+    "Génie logiciel, ingénieur en",
+    "Ingénieur en logiciel",
+    "Logiciel, ingénieur en",
+    "ingénieur \r\nen logiciel"
+  ],
+  "/../fabric_mec/ing_maritime.html": [
+    "Architecte naval",
+    "Bateaux, concepteur de",
+    "Génie maritime, ingénieur en",
+    "Génie naval, ingénieur en",
+    "Ingénieur maritime",
+    "Maritime, ingénieur",
+    "Naval, architecte"
+  ],
+  "/../arch_paysagiste.htm": [
+    "Architecte paysagiste"
+  ],
+  "/../fabric_mecanique/tech_arch_naval.html": [
+    "Architecture navale, technicien en"
+  ],
+  "/../batiment/tech_architecture.htm": [
+    "Architecture, technologue en",
+    "Dessinateur -  concepteur en \r\narchitecture",
+    "technologue en architecture",
+    "technologue en \r\narchitecture",
+    "Technicien en architecture",
+    "Technologue en architecture",
+    "Technologue en conception en \r\narchitecture"
+  ],
+  "/../communication/biblio.html": [
+    "Archiviste",
+    "Bibliothécaire",
+    "bibliothécaire",
+    "Information documentaire, gestionnaire de \r\nservices d'",
+    "Information (sciences de l'), spécialiste \r\nen",
+    "Sciences de l’information, spécialiste en"
+  ],
+  "/../sante/archiviste_med.htm": [
+    "Archiviste médical"
+  ],
+  "/../communication/tech_documentation.html": [
+    "Archivistique, technicien en",
+    "Assistant archiviste",
+    "Bibliotechnicien",
+    "Catalogueur",
+    "Commis de librairie",
+    "Commis en documentation",
+    "Documentaliste",
+    "Documentation, technicien en",
+    "Librairie, commis-vendeur en",
+    "Recherchiste en documentation",
+    "Technicien en archivistique",
+    "Technicien en documentation",
+    "Technicien \r\nen gestion de documents",
+    "Vendeur en librairie"
+  ],
+  "/../metallurgie/poseur_armatures.htm": [
+    "Armatures de béton, poseur d’",
+    "Ferrailleur",
+    "Poseur d’armatures de béton"
+  ],
+  "/../mecanique_entr/armurier.htm": [
+    "Armurier",
+    "Réparateur d’armes à feu"
+  ],
+  "/../environnement/arpenteur.html": [
+    "Arpenteur-géomètre"
+  ],
+  "/../environnement/oper_arpentage.htm": [
+    "Arpenteur - topographe",
+    "Arpentage, aide en",
+    "Arpentage, préposé aux relevés d'",
+    "Arpentage topographe",
+    "Géodésie, aide en",
+    "Homme d'instruments",
+    "Opérateur en arpentage",
+    "Préposé aux relevés d'arpentage"
+  ],
+  "/../environnement/tech_arpentage.htm": [
+    "Arpentage, technologue en"
+  ],
+  "/../communication/scenariste.html": [
+    "Art dramatique, auteur de pièces en",
+    "Auteur d’émissions de télévision ou de films",
+    "Humour, auteur de textes en",
+    "Scénariste - dialoguiste",
+    "Scripte"
+  ],
+  "/../enseignement/prof_theatre.htm": [
+    "Art dramatique (au primaire ou \r\nsecondaire), professeur en",
+    "Théâtre au primaire ou au secondaire, \r\nprofesseur de"
+  ],
+  "/../arts/therapeute_art.html": [
+    "Art dramatique, thérapeute par l'"
+  ],
+  "/../arts/critique.html": [
+    "critique d'art",
+    "critique \r\nd'art",
+    "Critique culturel(le)",
+    "Critique d'art",
+    "Historien de l'art"
+  ],
+  "/../arts/artiste.html": [
+    "artiste en arts visuels",
+    "Art interdisciplinaire, artiste en",
+    "Artisan du bois",
+    "Artiste en \r\narts visuels",
+    "Arts numériques, artiste en",
+    "Arts \r\nvisuels, artiste en",
+    "Beaux-arts, artiste en",
+    "Bois, sculpteur de",
+    "Cyerbart/intermédia, artiste en",
+    "Dessinateur (artiste)",
+    "artiste en arts visuels)",
+    "Illustrateur en arts visuels",
+    "Métiers d'art, artisan en",
+    "Peintre \r\n(artiste)",
+    "Sculpteur sur bois"
+  ],
+  "/../sociaux/therapeute_art.html": [
+    "Art thérapeute",
+    "Danse, thérapeute par la",
+    "Musicothérapeute",
+    "Musique, thérapeute par la",
+    "Théâtre, thérapeute par le",
+    "Thérapeute par la créativité"
+  ],
+  "/../mode/maroquinier.html": [
+    "Artisan \r\ndu cuir",
+    "Chapelier",
+    "Maroquinier"
+  ],
+  "/../arts/verrier.html": [
+    "Artisan du verre",
+    "Fibre de verre, lamineur de",
+    "Graveur de verre",
+    "Polisseur de verre",
+    "Souffleur de verre",
+    "Verrier",
+    "Vitrailliste"
+  ],
+  "/../enseignement/prof_arts.htm": [
+    "Arts plastiques (au primaire ou au \r\nsecondaire), professeur en"
+  ],
+  "/../mecanique_entretien/mecanicien_ascenseurs.htm": [
+    "Ascenseurs, mécanicien d’"
+  ],
+  "/../environnement/oper_eaux.html": [
+    "Assainissement des eaux, opérateur d'usine en",
+    "Eaux, opérateur d'usine de traitement des",
+    "Machines de traitement des eaux, \r\nopérateur de",
+    "Opérateur d'une station de traitement \r\ndes eaux",
+    "Opérateur d'une usine de traitement des eaux potables",
+    "Opérateur de machines de traitement \r\ndes eaux",
+    "Traitement des eaux, opérateur d'une usine de"
+  ],
+  "/../environnement/tech_eaux.htm": [
+    "Assainissement des eaux, technologue en",
+    "Contrôle de la qualité des eaux, \r\ntechnicien en",
+    "Eaux, technologue en assainissement des",
+    "Inspecteur en assainissement des eaux",
+    "Technicien de laboratoire des eaux",
+    "Technicien en assainissement des eaux",
+    "Technicien en contrôle de la qualité",
+    "Technologue en assainissement des eaux",
+    "Technologue en génie des eaux",
+    "technologue en assainissement des eaux",
+    "Technologue en hydrologie",
+    "Traitement des eaux, technologue en"
+  ],
+  "/../electrotechnique/electrotechnique1.html": [
+    "Assembleur de composantes \r\nélectroniques",
+    "Assemblage\r\nde composantes informatiques",
+    "Câbleur en réseaux \r\nstructurés",
+    "Câbles \r\nélectroniques, monteur de",
+    "Centrale hydroélectrique, opération des \r\ninstallations d'une",
+    "Conducteur d’installations d’une centrale \r\nhydroélectriques",
+    "Conducteur d'installations d'une centrale hydro-électrique",
+    "Démantèlement de systèmes ordinés, manoeuvre en",
+    "Fabrication électronique, \r\nassembleur de composantes en",
+    "Installations d’une centrale hydroélectriques, \r\nopérateur d'",
+    "Manoeuvre\r\nen démantèlement de systèmes ordinés",
+    "Monteur de câbles \r\nélectroniques",
+    "Opérateur d’installations d’une centrale \r\nhydroélectriques",
+    "Réparateur d'équipements de \r\nplateau de tournage"
+  ],
+  "/../metallurgie/metallurgie1.htm": [
+    "Assembleur\r\nde pièces métalliques",
+    "Forgeron",
+    "Manoeuvre en fabrication de produits \r\nmétalliques",
+    "Manoeuvre en fonderie"
+  ],
+  "/../metallurgie/assembleur_struct_metal.htm": [
+    "Assembleur de structures métalliques"
+  ],
+  "/../sante/ass_dentaire.htm": [
+    "Assistant dentaire",
+    "Dentaire, assistant"
+  ],
+  "/../sante/ass_optometrie.htm": [
+    "Assistant en optométrie",
+    "Optométrie, \r\nassistant en"
+  ],
+  "/../sante/ass_tech_pharmacie.htm": [
+    "Assistant en pharmacie",
+    "Assistant technique en pharmacie",
+    "assistant en pharmacie",
+    "Pharmacie, assistant technique en"
+  ],
+  "/../sante/tech_radiodiagnostic.htm": [
+    "technologue en radiologie",
+    "Imagerie médicale (radiologie), \r\ntechnologue en",
+    "Radiodiagnostic, technologue en",
+    "Technicien en radiodiagnostic",
+    "technologue en radiodiagnostic",
+    "Technologue en radiologie diagnostique"
+  ],
+  "/../sante/tech_readaptation.htm": [
+    "technicien en rédaptation physique",
+    "Physiothérapie, technologue en",
+    "Réadaptation physique, technicien en",
+    "Technicien en réadaptation physique",
+    "Thérapeute en réadaptation physique"
+  ],
+  "/../sociaux/tech_serv_social.htm": [
+    "Assistant social",
+    "Intégration sociale, intervenant en",
+    "Intervention en milieu communautaire",
+    "Organisateur communautaire",
+    "Relation d’aide en milieu communautaire, conseiller en",
+    "Service social, technicien en",
+    "Technicien en service social",
+    "Travail social, technicien en"
+  ],
+  "/../administration/assurances1.html": [
+    "Assurances, analyste ou conseiller en",
+    "Assureur - vie",
+    "Conseiller en placements pour particuliers",
+    "Conseiller en sécurité financière",
+    "Conseiller financier",
+    "Gestionnaire en assurances et \r\nservices financiers",
+    "Hypothèques, conseiller en",
+    "Placements pour particuliers, conseiller en",
+    "Régimes de retraite, conseiller en",
+    "Sécurité financière, conseiller en",
+    "Services financiers pour particuliers, conseiller en",
+    "Services financiers, technicien en"
+  ],
+  "/../administration/assurances.html": [
+    "Assurances, agent ou courtier en",
+    "Commis en finance"
+  ],
+  "/../physique/physicien.htm": [
+    "Astronome",
+    "Astrophysicien",
+    "Océanographe",
+    "Physicien"
+  ],
+  "/../sante/audiologiste.htm": [
+    "Audiologiste"
+  ],
+  "/../sante/audioprothesiste.htm": [
+    "Audioprothésiste"
+  ],
+  "/../electrotechnique/tech_electronique.html": [
+    "Audiovisuels, technologue en",
+    "Électronique, technologue en",
+    "électronique, technologue en",
+    "Inspecteur d'appareils de \r\njeux",
+    "technologue en \r\nélectronique",
+    "technologue \r\nen électronique",
+    "Technicien d'entretien en \r\ntélédiffusion",
+    "Technicien en audiovisuel",
+    "Technicien en \r\ncâblodistribution",
+    "TECHNICIEN EN ÉLECTRONIQUE",
+    "Technicien en équipements \r\naudiovisuels",
+    "technologue en électronique",
+    "Technicien en télécommunications",
+    "Technologue en \r\ncâblodistribution",
+    "TECHNOLOGUE EN ÉLECTRONIQUE",
+    "Télécommunications, technologue en",
+    "Vendeur - technicien de \r\nmatériel électronique"
+  ],
+  "/../transport/chauffeur_autobus.html": [
+    "Autobus, conducteur d'un",
+    "Chauffeur d’un autobus",
+    "Conducteur d’un autobus",
+    "Transport routier de passagers, \r\nconducteur d'un véhicule de"
+  ],
+  "/../motorises/mecanicien_camions.htm": [
+    "Autobus, mécanicien d'",
+    "Camions, mécanicien de",
+    "Mécanicien d'autobus",
+    "Mécanicien de camions",
+    "Mécanicien de véhicules lourds",
+    "Réparateur de camions et d'autobus",
+    "Transport routier, mécanicien de \r\nvéhicules de",
+    "Véhicules lourds, \r\nmécanicien de"
+  ],
+  "/../motorises/esthetique_auto.html": [
+    "Automobile (esthétique), technicien \r\nen",
+    "Esthéticien d'automobiles"
+  ],
+  "/../administration/vendeur_autos.htm": [
+    "Automobiles, conseiller en vente d'",
+    "Conseiller en ventes d’automobiles",
+    "Représentant en vente automobile",
+    "Vendeur d'automobiles"
+  ],
+  "/../motorises/mecanicien_autos.htm": [
+    "Automobiles, mécanicien d'"
+  ],
+  "/../electrotechnique/ing_automatisation.htm": [
+    "Automatisation, ingénieur en",
+    "Électromécanique, ingénieur en",
+    "Génie de la production automatisée, ingénieur en",
+    "Génie électromécanique, ingénieur en",
+    "Ingénieur-électromécanicien",
+    "Ingénieur en \r\nautomatisation",
+    "Ingénieur en électromécanique",
+    "Ingénieur en production automatisée",
+    "Ingénieur en robotique",
+    "Production automatisée, ingénieur en",
+    "ingénieur en production \r\nautomatisée",
+    "Robotique, \r\ningénieur en"
+  ],
+  "/../arts/dessinateur_anim.htm": [
+    "Bande dessinée, artiste en",
+    "Bédéiste",
+    "Dessinateur d’animation",
+    "Technicien en dessin animé"
+  ],
+  "/../restau_tourisme/mixologue.htm": [
+    "Barman",
+    "Mixologue"
+  ],
+  "/../arts/musicien.html": [
+    "Bassiste",
+    "Batterie, joueur de",
+    "Chanteur",
+    "Chef \r\nd'orchestre",
+    "Choriste",
+    "Clarinettiste",
+    "Compositeur en musique",
+    "Corniste",
+    "Directeur \r\nmusical",
+    "Flûtiste",
+    "Guitariste",
+    "Interprète en chanson",
+    "Interprète en musique",
+    "MUSICIEN",
+    "Musicologue",
+    "Musique, \r\ncompositeur en",
+    "Musique, nterprète en",
+    "Musique, \r\ncritique de",
+    "Orchestre, chef d'",
+    "Parolier",
+    "Percusionniste",
+    "Pianiste",
+    "Producteur \r\nen musique",
+    "Saxophoniste",
+    "musicien",
+    "Tromboniste",
+    "Trompettiste",
+    "Tubiste",
+    "Violoncelliste",
+    "Violoniste",
+    "Xylophoniste"
+  ],
+  "/../motorises/mecanicien_bateaux.html": [
+    "Bateaux, mécanicien de",
+    "Marine, mécanicien de",
+    "Mécanicien de bateaux",
+    "Mécanicien de marine",
+    "Réparateur d'embarcations de \r\nplaisance"
+  ],
+  "/../batiment/tech_mec_batiment.htm": [
+    "technologue en mécanique du bâtiment",
+    "mécanique du bâtiment, technologue en",
+    "Génie de la construction, \r\ntechnologue en",
+    "Génie du bâtiment, technologue en",
+    "Mécanique du bâtiment, technologue en",
+    "technologue en \r\nmécanique du bâtiment",
+    "Régisseur de bâtiment",
+    "Technicien en mécanique du bâtiment",
+    "Techncicien en réfrigération",
+    "Technologue en génie du bâtiment",
+    "Technologue en mécanique du bâtiment"
+  ],
+  "/../batiment/tech_eval_batiment.htm": [
+    "technologue en évaluation et estimation en bâtiment",
+    "Estimation et évaluation en bâtiment, technologue en",
+    "Évaluation immobilière, technologue en",
+    "Technicien en estimation et évaluation en bâtiment",
+    "Technicien en évaluation \r\nimmobilière",
+    "Technologue en évaluation et \r\nestimation en bâtiment"
+  ],
+  "/../arts/bijoutier.htm": [
+    "Bijoutier",
+    "Conseiller en ventes de bijoux",
+    "Joaillier",
+    "Tailleur de pierres précieuses",
+    "Vendeur \r\nde produits en bijouterie"
+  ],
+  "/../chimie/tech_biochimie.htm": [
+    "Biochimie, technologue en",
+    "Biotechnologies, technologue en",
+    "Chimie - biologie, technologie en",
+    "Laboratoire de biochimie, technologue en",
+    "Laboratoire de microbiologie, technologue \r\nen",
+    "Microbiologie, technologue en",
+    "Technicien de laboratoire de biochimie",
+    "Technicien de laboratoire de \r\nmicrobiologie",
+    "Technicien en biochimie",
+    "Technicien en biotechnologies",
+    "technologue en biochimie-biotechnologies",
+    "Technicien en microbiologie",
+    "technologue en biochimie",
+    "Technologue en bactériologie",
+    "Technologue en biochimie-biotechnologies",
+    "technologue en biochimie-biotechnologie",
+    "technologue \r\nen biochimie-microbiologie"
+  ],
+  "/../chimie/biochimiste.htm": [
+    "Biochimiste",
+    "biochimiste"
+  ],
+  "/../chimie/tech_biologie.htm": [
+    "Bioécologie, technicien \r\nen"
+  ],
+  "/../sante/bioinfo.html": [
+    "Bioinformaticien"
+  ],
+  "/../enseignement/prof_secondaire.htm": [
+    "Biologie (au secondaire), professeur en",
+    "Chimie (au secondaire), professeur en",
+    "Culture et société québécoise",
+    "Économique (au secondaire), professeur en",
+    "Éthique et éducation à la \r\ncitoyenneté, professeur de",
+    "Éducation morale (primaire ou secondaire), professeur en",
+    "ENSEIGNANT AU SECONDAIRE",
+    "Français langue maternelle, \r\nprofesseur de",
+    "Géographie (au secondaire), professeur en",
+    "Histoire (au secondaire), \r\nprofesseur d'",
+    "Informatique au secondaire, professeur en",
+    "Mathématiques au secondaire, professeur de",
+    "PROFESSEUR AU SECONDAIRE",
+    "Secondaire, \r\nenseignant au"
+  ],
+  "/../chimie/tech_biologie.html": [
+    "Biologie, technicien en",
+    "Laboratoire de biologie, technicien en",
+    "Technicien de laboratoire de biologie",
+    "technicien en biologie",
+    "Technologue en biologie",
+    "Technologue en laboratoire de biologie",
+    "Technologue en laboratoire de \r\nmicrobiologie",
+    "Technologue en microbiologie"
+  ],
+  "/../chimie/tech_biomasse.htm": [
+    "Biomasse, technologue en transformation de \r\nla"
+  ],
+  "/../electrotechnique/ing_biomedical.html": [
+    "Biomédical, ingénieur en",
+    "Génie biomédical, ingénieur en",
+    "Ingénieur biomédical"
+  ],
+  "/../physique/biophysicien.html": [
+    "Biophysicien"
+  ],
+  "/../physique/statisticien.htm": [
+    "statisticien",
+    "Statisticien"
+  ],
+  "/../chimie/ing_biotechno.html": [
+    "Biotechnologies, ingénieur en",
+    "Génie biotechnologique, ingénieur en",
+    "Ingénieur biotechnologiste",
+    "ingénieur biotechnologiste"
+  ],
+  "/../chimie/biotechno.html": [
+    "Biotechnologiste",
+    "biotechnologiste"
+  ],
+  "/../foresterie/operateur_papier.htm": [
+    "Blanchisseur de pâte à papier",
+    "Machines à fabriquer, façonner ou \r\nfinir le papier, opérateur de",
+    "Opérateur d'une usine de désencrage",
+    "Papier, opérateur de machines à \r\nfabriquer ou à finir le",
+    "Pâtes et papiers, opérateur en"
+  ],
+  "/../foresterie/classeur_bois.htm": [
+    "Bois débités, \r\nclasseur de",
+    "Classeur et mesureur de bois",
+    "Mesureur de bois abattus",
+    "Trieur de billes de bois"
+  ],
+  "/../foresterie/ing_bois.html": [
+    "Bois, ingénieur en",
+    "Ingénieur en bois"
+  ],
+  "/../foresterie/tech_foresterie1.htm": [
+    "Bois, technologue en transformation \r\ndu",
+    "Production forestière, technologue \r\nen",
+    "Technicien en exploitation \r\nforestière",
+    "Technicien en transformation des produis forestiers",
+    "Technologue en génie du bois",
+    "Technologue en transformation des produits forestiers",
+    "Transformation des produits forestiers, technologue en"
+  ],
+  "/../restau_tourisme/boucher.htm": [
+    "Boucher"
+  ],
+  "/../restau_tourisme/boulanger.htm": [
+    "Boulanger"
+  ],
+  "/../mines/dynamiteur.htm": [
+    "Boutefeu"
+  ],
+  "/../mines/operateur_machinerie.html": [
+    "Bouteur",
+    "Conducteur d’engins de chantiers"
+  ],
+  "/../batiment/briqueteur.htm": [
+    "Briqueteur - maçon",
+    "Poseur de pierres"
+  ],
+  "/../mode/mode1.html": [
+    "Buandier",
+    "Teinturier",
+    "Tisser, opérateur de machines à"
+  ],
+  "/../foresterie/ouvrier_foresterie1.htm": [
+    "Bûcheron",
+    "Débardeur forestier",
+    "Forestier (abattage)",
+    "Ouvrier en exploitation forestière",
+    "Producteur forestier",
+    "Production forestière, ouvrier \r\nen"
+  ],
+  "/../administration/commis_comptable.htm": [
+    "commis-comptable"
+  ],
+  "/../batiment/calorifugeur.htm": [
+    "Calorifugeur",
+    "Poseur de matériaux isolants"
+  ],
+  "/../communication/tech_tele.htm": [
+    "Caméraman",
+    "Directeur technique",
+    "Éclairagiste",
+    "Machiniste de plateau",
+    "Médias, technicien en",
+    "Monteur audiovidéo",
+    "Monteur vidéo",
+    "Post-production audiovisuelle et \r\ntélévisuelle, technicien en",
+    "Preneur de son",
+    "Production audiovisuelle, technicien en",
+    "Production télévisuelle, technicien en",
+    "technicien en télévision",
+    "Recherchiste en télévision",
+    "Régisseur en télévision ou cinéma",
+    "Technicien de plateau",
+    "Technicien de post-production",
+    "Technicien de son",
+    "Technicien en diffusion et \r\nenregistrement",
+    "Technicien en médias (télé ou vidéo)",
+    "Technicien en production audiovisuelle \r\net télévisuelle",
+    "Technicien en vidéo",
+    "Télévision, animateur à la",
+    "Télévision, critique en",
+    "Télévision, technicien de plateau de",
+    "Vidéographe",
+    "Vidéo, monteur en"
+  ],
+  "/../transport/chauffeur_camion.htm": [
+    "Camion lourd, conducteur d'un",
+    "Chauffeur d'un camion semi-remorque",
+    "Conducteur d'un camion semi-remorque",
+    "Conducteur de véhicules lourds",
+    "Matériel mobile de soutien, \r\nconducteur de",
+    "Routier",
+    "Transport routier de marchandises, \r\nconducteur de véhicules de",
+    "Véhicule lourd, conducteur d'un"
+  ],
+  "/../transport/chauffeur_camion1.htm": [
+    "Camion moyen, conducteur d'un",
+    "Chauffeur d'un camion à benne \r\nbasculante",
+    "Chauffeur d'un camion citerne",
+    "Chauffeur d'un camion porteur",
+    "Conducteur d'un camion à benne \r\nbasculante",
+    "Conducteur d'un camion citerne",
+    "Conducteur d'un camion de construction",
+    "Conducteur d'un camion porteur",
+    "Conducteur de véhicules moyens \r\n(type porteur ou à benne)"
+  ],
+  "/../fabric_mec/fabric_mecanique1.html": [
+    "Caoutchouc, opérateur de machines \r\nà fabriquer ou à transformer le",
+    "Machines à fabriquer ou à \r\ntransformer le caoutchouc, opérateur de",
+    "Machines à former ou presser le \r\nverre, opérateur de",
+    "Manoeuvre en production \r\nindustrielle",
+    "Manutentionnaire",
+    "Matériel, manutentionnaire de",
+    "Monteur de matériel mécanique",
+    "Opérateur de machines à emballer",
+    "Opérateur de machines à former ou presser le verrre",
+    "Opérateur de machines à travailler les plastiques"
+  ],
+  "/../fabric_mecanique/tech_plastiques.htm": [
+    "Caoutchouc, technologue en transformation du"
+  ],
+  "/../transport/navigateur.htm": [
+    "Capitaine de navire",
+    "Commandant de navire",
+    "Navigateur",
+    "Officier de la Garde Côtière Canadienne",
+    "Officier de navigation",
+    "Officier du Service des communications et du trafic maritime",
+    "officier de navigation"
+  ],
+  "/../batiment/repar_caravanes.htm": [
+    "Caravanes, réparateur de",
+    "Entretien et réparation de caravanes, préposé à l'",
+    "Mécanicien de véhicules récréatifs",
+    "Préposé à l'entretien de caravanes",
+    "Réparateur de caravanes",
+    "Réparateur de véhicules récréatifs"
+  ],
+  "/../sante/tech_electrophysio.htm": [
+    "Cardiologie, technicien en",
+    "Électrophysiologie médicale, technicien en",
+    "Imagerie médicale \r\n(électrophysiologie), technicien en",
+    "Médicale, \r\ntechnicien en électrophysiologie",
+    "Neurologie, technicien en",
+    "Technicien en cardiologie",
+    "Technicien en électrophysiologie médicale",
+    "Technicien en neurologie",
+    "Technologue en électrophysiologie \r\nmédicale"
+  ],
+  "/../batiment/carreleur.htm": [
+    "Carreleur"
+  ],
+  "/../motorises/carrossier.htm": [
+    "Carrossier",
+    "Débosseleur-peintre",
+    "Réparateur de carrosseries de véhicules"
+  ],
+  "/../environnement/tech_cartographie.htm": [
+    "Cartographie, technologue en",
+    "Dessinateur en cartographie",
+    "cartographie, technologue en",
+    "Technicien en cartographie",
+    "Technicien en systèmes \r\nd'information à référence spatiale",
+    "Technicien en télédétection",
+    "Technologue en cartographie",
+    "technologie en cartographie",
+    "Technologue en télédétection"
+  ],
+  "/../environnement/tech_cartographie.html": [
+    "Cartographie, technologie en"
+  ],
+  "/../communication/cascadeur.html": [
+    "Cascadeur",
+    "cascadeur"
+  ],
+  "/../protection/repartiteur_urgences.html": [
+    "Centrale d'urgence 9-1-1, \r\nrépartiteur en",
+    "Préposé aux communications \r\nd'urgence",
+    "Répondant médical d'urgence",
+    "Répartiteur des urgences 9-1-1"
+  ],
+  "/../batiment/mecanicien_fixes.htm": [
+    "mécanicien de \r\nmachines fixes",
+    "Chaudière, conducteur de",
+    "Mécanicien de machines fixes",
+    "Machines fixes, mécanicien de"
+  ],
+  "/../arts/ceramiste.html": [
+    "Céramiste",
+    "Potier - céramiste"
+  ],
+  "/../environnement/cons_amenagement.htm": [
+    "Chargé de projet en aménagement",
+    "Géomaticien"
+  ],
+  "/../environnement/cons_environnement.htm": [
+    "Chargé de projet en \r\nenvironnement",
+    "Environnement, consultant en"
+  ],
+  "/../mines/operateur_machinerie.htm": [
+    "Chargeuse ou chargeuse-pelleteuse, \r\nopérateur de",
+    "Conducteur de machineries lourdes",
+    "Engins de chantiers, opérateur d'",
+    "Machinerie de construction, \r\nopérateur de",
+    "Opérateur d'épandeuse",
+    "Opérateur d'engins lourds de chantier",
+    "Opérateur de bouteur",
+    "Opérateur de buldozer",
+    "Opérateur de chargeuse ou chargeuse-pelleteuse",
+    "Opérateur de machinerie lourde",
+    "Opérateur de niveleuse"
+  ],
+  "/../metallurgie/chaudronnier.htm": [
+    "Chaudronnier"
+  ],
+  "/../transport/chauffeur_minibus.html": [
+    "Chauffeur d’un minibus",
+    "Conducteur d’un minibus",
+    "Conducteur de minibus",
+    "Minibus, conducteur d'un"
+  ],
+  "/../transport/chauffeur_taxi.html": [
+    "Chauffeur de taxi (ou limousine)",
+    "Conducteur d'un taxi (ou une \r\nlimousine)",
+    "Taxi, chauffeur de",
+    "Véhicule taxi, conducteur d'un"
+  ],
+  "/../restau_tour/cuisinier.htm": [
+    "Chef cuisinier",
+    "Maître cuisinier"
+  ],
+  "/../restau_tour/patissier.htm": [
+    "Chef pâtissier",
+    "Pâtissier"
+  ],
+  "/../chercheurs/chercheur.htm": [
+    "Chercheur",
+    "Recherche, scientifique de",
+    "Scientifique"
+  ],
+  "/../nature/entraineur_chevaux.htm": [
+    "Chevaux, éleveur de",
+    "Chevaux, entraîneur de",
+    "Éleveur de chevaux",
+    "Entraîneur de chevaux",
+    "Instructeur en équitation",
+    "Moniteur en randonnée équestre",
+    "Technicien .équin"
+  ],
+  "/../agriculture/ouvrier_agricole8.htm": [
+    "Chèvres, \r\nproducteur de",
+    "Lait, producteur de"
+  ],
+  "/../chimie/tech_chimie.htm": [
+    "Chimie analytique, technologue en",
+    "Laboratoire de chimie analytique, \r\ntechnologue en",
+    "Technicien chimiste",
+    "Technicien de laboratoire de chimie",
+    "Technicien en chimie analytique",
+    "technologue en chimie",
+    "technologue en chimie analytique",
+    "Technologue en chimie analytique",
+    "Technologue en laboratoire de biochimie",
+    "Vendeur - technicien de produits chimiques"
+  ],
+  "/../chimie/chimiste.htm": [
+    "Chimiste",
+    "Chimiste judiciaire",
+    "chimiste"
+  ],
+  "/../chimie/ing_chimiste.htm": [
+    "Chimiste, ingénieur",
+    "Génie chimique, ingénieur en",
+    "Génie des pâtes et papiers, ingénieur en",
+    "ingénieur chimiste",
+    "Génie pétrochimique, ingénieur en",
+    "Ingénieur chimiste",
+    "Ingénieur en pâtes et papiers"
+  ],
+  "/../chimie/tech_genie_chimique.htm": [
+    "Chimique, technologue en génie",
+    "Génie biotechnologique, technologue \r\nen",
+    "Génie chimique, technologue en",
+    "Génie pétrochimique, technologue en",
+    "Procédés industriels, technologue en",
+    "Technicien en génie chimique",
+    "Technicien en procédés industriels",
+    "technologue en génie chimique",
+    "Technologue en génie \r\nbiotechnologique",
+    "Technologue en génie chimique",
+    "Technologue en génie pétrochimique",
+    "Technologue en procédés industriels",
+    "Technologue en production chimique",
+    "Technologue en production papetière"
+  ],
+  "/../sante/chiropraticien.htm": [
+    "Chiropraticien"
+  ],
+  "/../sante/dentiste.html": [
+    "dentiste"
+  ],
+  "/../sante/veterinaire.html": [
+    "vétérinaire"
+  ],
+  "/../arts/danseur.html": [
+    "Chorégraphe",
+    "Danseur \r\nprofessionnel",
+    "Interprète en danse"
+  ],
+  "/../communication/journaliste.htm": [
+    "journaliste",
+    "Éditorialiste",
+    "Journaliste",
+    "Rédacteur - journaliste"
+  ],
+  "/../batiment/cimentier.htm": [
+    "Cimentier - applicateur"
+  ],
+  "/../arts/cinema.html": [
+    "spécialiste en études cinématographiques",
+    "Cinéma, producteur de",
+    "RÉALISATEUR EN CINÉMA"
+  ],
+  "/../environnement/ing_civil.htm": [
+    "Civil, ingénieur",
+    "Génie civil, ingénieur en",
+    "Génie \r\ndes eaux, ingénieur en",
+    "ingénieur civil",
+    "ingénieur en eaux",
+    "Ingénieur civil"
+  ],
+  "/../environnement/tech_genie_civil.htm": [
+    "Civil, technologue en génie",
+    "Dessinateur - concepteur en \r\ngénie civil",
+    "Génie civil, technologue en",
+    "technologue en génie civil",
+    "technologue en \r\ngénie civil",
+    "Technologue en conception en \r\ngénie civil",
+    "Technologue en génie civil"
+  ],
+  "/../batiment/frigoriste.htm": [
+    "Climatisation et ventilation, mécanicien en",
+    "Frigoriste",
+    "Mécanicien en réfrigération",
+    "Réfrigération, mécanicien d'équipements de",
+    "Réparateur d'appareils de réfrigération",
+    "Systèmes de ventilation et climatisation, \r\nmécanicien de"
+  ],
+  "/../humaines/humaines1.htm": [
+    "Club de santé et spa, préposé au",
+    "Croupier",
+    "Loisirs, moniteur en",
+    "Opérateur de remontées mécaniques",
+    "Patrouilleur de pistes de ski",
+    "Remontées mécaniques, opérateur de",
+    "Sauveuteur (piscine ou plage)",
+    "Spa et club de santé, préposé au",
+    "Surveillant sauveteur (piscine ou plage)"
+  ],
+  "/../restau_tourisme/restauration.html": [
+    "Cocher",
+    "Hébergement (touristique), \r\npréposé à l'",
+    "Préposé à l'hébergement",
+    "Styliste culinaire"
+  ],
+  "/../beaute/coiffeur.htm": [
+    "Coiffeur"
+  ],
+  "/../enseignement/prof_profess.html": [
+    "Collégial, professeur au",
+    "Comptabilité (au collégial), professeur en",
+    "Enseignant au collégial (technique)",
+    "Enseignant en formation \r\nprofessionnelle",
+    "Professeur au collégial (technique)",
+    "Professeur en formation professionnelle ou technique"
+  ],
+  "/../administration/marketing.htm": [
+    "Commerce de détail, gérant d'un",
+    "Commerce électronique, agent de",
+    "technicien en marketing",
+    "Cybercommerce, technicien en",
+    "E-commerce, technicien en",
+    "Gérant d’un commerce de détail",
+    "Marketing, technicien en",
+    "Mise en marché, représentant en",
+    "Promotion, agent de",
+    "Publiciste",
+    "Publicité, représentant en",
+    "Représentant en publicité",
+    "Technicien en commerce électronique",
+    "TECHNICIEN EN MARKETING",
+    "technicien en \r\nmarketing"
+  ],
+  "/../administration/tech_informatique.htm": [
+    "Commerce électronique, \r\ntechnicien en",
+    "Concepteur\r\nd’applications informatiques",
+    "Concepteur\r\nde bases de données",
+    "Concepteur de logiciels",
+    "technicien en informatique",
+    "Développement et intégration en commerce électronique, technicien en",
+    "Développeur\r\nde solutions e-business",
+    "Gestion de réseaux informatiques, technicien en",
+    "Gestionnaire de réseaux informatiques",
+    "Informatique,\r\nconcepteur d’applications en",
+    "Informatique, concepteur de bases de données en",
+    "Informatique, gestionnaire de \r\nréseaux en",
+    "Informatique,\r\nspécialiste en assistance technique",
+    "Informatique, technicien en",
+    "Installateur de réseaux informatiques",
+    "Logiciels, développement ou \r\nprogrammeur de",
+    "Micro-informatique, technicien en",
+    "Ordinateurs, concepteur de \r\nlogiciels pour",
+    "Ordinateurs, programmeur d'",
+    "PROGRAMMEUR ANALYSTE",
+    "Programmeur Internet",
+    "Réseaux, gestionnaire de",
+    "Réseaux, installateur de",
+    "Systèmes informatiques, \r\ntechnicien en",
+    "Technicien de réseaux \r\ninformatiques",
+    "Technicien en gestion de \r\nréseaux",
+    "TECHNICIEN EN INFORMATIQUE",
+    "Technicien en réseautique",
+    "Technicien en sécurité \r\ninformatique",
+    "Technicien en systèmes \r\nd'information de gestion",
+    "Technologue en conception de \r\nlogiciels",
+    "Vendeur - technicien de \r\nmatériel informatique",
+    "Vérificateur de logiciels et \r\nd'applications informatiques"
+  ],
+  "/../mode/conseiller_mode.htm": [
+    "Commercialisation de la mode, agent de promotion en",
+    "CONSEILLER EN MODE",
+    "Conseiller en promotion de produits mode",
+    "Étalagiste de commerce de mode au détail",
+    "Gérant d'un commerce de vêtements hauts de \r\ngamme",
+    "Mode, conseiller en",
+    "Mode, gestionnaire d'une entreprise de la",
+    "Mode,\r\nreprésentant des ventes en",
+    "Représentant en mode"
+  ],
+  "/../administration/grh.htm": [
+    "Commis au personnel",
+    "technicien en personnel",
+    "Gestion des ressources humaines, technicien en",
+    "Ressources humaines, technicien en",
+    "Technicien en ressources humaines"
+  ],
+  "/../administration/commerce.html": [
+    "Commis au soutien à l'expédition et \r\nréception",
+    "Commis au service à la clientèle",
+    "Commis aux commandes",
+    "Commis d'entrepôt",
+    "Commis d’épicerie ou de supermarché",
+    "Entrepôt, commis d'",
+    "Expéditeur - réceptionnaire",
+    "Homme de cour",
+    "Manutentionnaire",
+    "Ouvrier d'entrepôt",
+    "Réceptionnaire - expéditeur (entrepôt)"
+  ],
+  "/../administration/gest_ind.htm": [
+    "Commis aux achats",
+    "Commis aux approvisionnements",
+    "Gestion de la production industrielle, technicien en",
+    "Gestion des approvisionnements, technicien en",
+    "Gestion industrielle, technicien en",
+    "Technicien en approvisionnements"
+  ],
+  "/../motorises/vendeur_mecanique.htm": [
+    "Commis aux pièces de véhicules automobiles",
+    "Commis aux pièces de véhicules lourds",
+    "Vendeur de pièces mécaniques et d’accessoires"
+  ],
+  "/../batiment/vendeur_quincaillerie.htm": [
+    "Commis aux produits de \r\nquincaillerie",
+    "Conseiller en ventes de produits de quincaillerie",
+    "Quincaillerie, vendeur de produits en",
+    "Vente de produits de quincaillerie, bois et matériaux de construction"
+  ],
+  "/../administration/commis-comptable.htm": [
+    "Commis - comptable",
+    "Comptabilité, commis en",
+    "Finance, commis en",
+    "Teneur de livres comptables",
+    "Vérificateur de nuit"
+  ],
+  "/../administration/vendeur.htm": [
+    "vendeur",
+    "Conseiller en ventes",
+    "conseiller-vendeur",
+    "Représentant des ventes",
+    "Vendeur - conseiller",
+    "Vendeur d'appareils électroniques domestiques",
+    "Vendeur d'articles de sports",
+    "Vendeur de produits et services en télécommunication",
+    "Vendeur de produits vestimentaires",
+    "Vendeur de publicités",
+    "Vendeur de vêtements",
+    "Vendeur en ameublement"
+  ],
+  "/../communication/relationniste.html": [
+    "Communication, agent en"
+  ],
+  "/../graphique/infographiste.htm": [
+    "Communications graphiques, designer en",
+    "GRAPHISTE",
+    "Illustrateur en graphisme",
+    "Illustrateur médical",
+    "Illustrateur publicitaire",
+    "Infographiste",
+    "Maquettiste",
+    "Producteur en communications graphiques",
+    "Technicien en arts graphiques",
+    "Technicien en graphisme",
+    "Technicien infographiste",
+    "Technologue en conception graphique"
+  ],
+  "/../fabric_mec/ouvrier_composites.htm": [
+    "Composites, opérateur de machines \r\nà fabriquer ou transformer les",
+    "Composites, ouvrier spécialisé en matériaux",
+    "Fibre de verre, ouvrier en \r\nfabrication de",
+    "Matériaux composites, opérateur \r\nde machines à fabriquer ou transformer les",
+    "Matériaux composites, ouvrier spécialisé en",
+    "Ouvrier spécialisé en matériaux composites",
+    "Transforamtion des matériaux \r\ncomposites, opérateur de machines de"
+  ],
+  "/../fabric_mec/tech_composites.htm": [
+    "Composites, technicien en matériaux",
+    "Fibre de verre, technologue en",
+    "Matériaux composites, technicien en",
+    "Technicien en composites",
+    "Technicien en matériaux composites",
+    "Technicien en transformation des matériaux composites",
+    "Technologue en matériaux composites",
+    "Transformation des matériaux composites, technologue en"
+  ],
+  "/../bois/tech_meubles.htm": [
+    "Concepteur de meubles",
+    "Designer de meubles",
+    "Dessinateur - concepteur de meubles",
+    "Dessinateur de meubles",
+    "Meubles, concepteur de",
+    "Meubles, dessinateur de",
+    "Meubles, technicien en production de",
+    "technicien en meubles",
+    "Technicien en ébénisterie",
+    "Technicien en fabrication de meubles",
+    "Technicien en meubles",
+    "Technologue en production de meubles",
+    "Vérificateur de meubles"
+  ],
+  "/../bois/ebeniste.htm": [
+    "ébéniste",
+    "ÉBÉNISTE",
+    "Ébéniste artisan",
+    "Menuisier - ébéniste",
+    "Restaurateur de meubles"
+  ],
+  "/../electrotechnique/ing_electricien.htm": [
+    "Concepteur en électronique",
+    "ingénieur électricien",
+    "Électricité, ingénieur en",
+    "Électronique, ingénieur en",
+    "Génie électrique, ingénieur en",
+    "Génie électronique, ingénieur en",
+    "Génie microélectronique, ingénieur en",
+    "Ingénieur-électricien",
+    "Ingénieur en microélectronique",
+    "ingénieur \r\nélectricien",
+    "Microélectronique, ingénieur \r\nen"
+  ],
+  "/../fabric_mec/ing_mecanicien.htm": [
+    "Concepteur en mécanique",
+    "ingénieur mécanicien",
+    "Génie mécanique, ingénieur en",
+    "ingénieur-mécanicien",
+    "Ingénieur-mécanicien",
+    "ingénieur \r\nmécanicien",
+    "Mécanique, ingénieur en"
+  ],
+  "/../graphique/designer_graph.htm": [
+    "Concepteur graphiste",
+    "Designer en infographie",
+    "Designer graphiste",
+    "Designer publicitaire"
+  ],
+  "/../electrotechnique/tech_ordinique.htm": [
+    "technologue en \r\nsystèmes ordinés",
+    "Dessininateur - concepteur de \r\ncircuits imprimés",
+    "Dessinateur - concepteur en \r\nélectronique ou ordinique",
+    "Électronique, dessinateur - \r\nconcepteur en",
+    "Fabrication électronique, \r\ntechnologue en",
+    "Génie électronique, technologue \r\nen",
+    "Génie informatique, technologue en",
+    "Génie microélectronique, \r\ntechnologue en",
+    "Logiciel, technologue en génie",
+    "Microélectronique, technologue \r\nen génie",
+    "Ordinateurs, dessinateur - \r\nconcepteur d'",
+    "technologue \r\nen systèmes ordinés",
+    "Robotique, technologue en",
+    "Systèmes électroniques, \r\ntechnologue en design de",
+    "Systèmes ordinés, technologue en",
+    "technologue en systèmes ordinés",
+    "Technicien en ordinique",
+    "Technologue en conception électronique",
+    "Technologue en conception \r\ninformatique",
+    "Technologue en génie informatique",
+    "Technologue en systèmes ordinés"
+  ],
+  "/../fabric_mec/techno_maritime.html": [
+    "Conception maritime, technologue en",
+    "Dessinateur - concepteur de \r\nsystèmes maritimes",
+    "Génie maritime, technologue en",
+    "Maritime, technologue en génie",
+    "Maritimes, dessinateur - concepteur \r\nde systèmes",
+    "Océanique, technologue en \r\ninstrumentation",
+    "Systèmes maritimes, technologue en \r\ndesign de",
+    "Technicien en électronique maritime",
+    "technologue en systèmes \r\nmaritimes",
+    "Technologue en  génie maritime"
+  ],
+  "/../fabric_mecanique/tech_genie_mecanique.htm": [
+    "Conception mécanique, technologue en"
+  ],
+  "/../restau_tourisme/concierge_hotel.html": [
+    "Concierge d'entreprise ou d'hôtel",
+    "hôtellerie, concierge en"
+  ],
+  "/../chimie/tech_procedes_chim.htm": [
+    "technicien en procédés chimiques",
+    "Technologue en traitement des \r\nproduits chimiques",
+    "Technologue en transformation de \r\nproduits chimiques",
+    "Traitement des produits chimiques, \r\ntechnologue en procédés de",
+    "Transformation des produits \r\nchimiques, technologue en"
+  ],
+  "/../mines/grutier.htm": [
+    "Conducteur d'une grue",
+    "Grues, \r\nopérateur de",
+    "Opérateur de pompe à béton"
+  ],
+  "/../batiment/tailleur_pierres.html": [
+    "Conducteur d'une machine à tailler le granit",
+    "Finisseur de pierres",
+    "Opérateur de machines à façonner le béton",
+    "Sculpteur sur pierres",
+    "Tailleur de pierres"
+  ],
+  "/../metallurgie/fondeur.htm": [
+    "Conducteur d'une machine à couler sous pression",
+    "Fondeur de métaux",
+    "Machines à transformer les métaux, \r\nopérateur de",
+    "Opérateur de machines à mouler les métaux",
+    "Opérateur de machines de transformation des métaux",
+    "Transformation des métaux, opérateur de \r\nmachines de"
+  ],
+  "/../foresterie/oper_mach_for.htm": [
+    "Conducteur de machineries forestières",
+    "Machinerie forestière, opérateur de",
+    "Opérateur de machinerie forestière"
+  ],
+  "/../graphique/operateur_imprimerie.htm": [
+    "Conducteur de machines ou de presses d’imprimerie",
+    "Imprimerie, opérateur de \r\nmachines ou presses d'",
+    "Imprimeur",
+    "Opérateur de machines à imprimer",
+    "Opérateur de machines d’imprimerie",
+    "Opérateur de presse d’imprimerie",
+    "Presse d'imprimerie, opérateur \r\nde",
+    "Régleur - conducteur de presses \r\nd'imprimerie"
+  ],
+  "/../fabric_mec/oper_mach_ind.htm": [
+    "Conducteur de machines de \r\nproduction industrielle",
+    "Fabrication industrielle, opérateur \r\nd'équipements de",
+    "Fabrication mécanique, opérateur de \r\nmachines de",
+    "Machines automatisées, opérateur de",
+    "Machines de production industrielle, \r\nopérateur de",
+    "Opérateur de machines automatisées",
+    "Opérateur de machines industrielles",
+    "Programmeur de machines industrielles",
+    "opérateur de machines \r\nindustrielles"
+  ],
+  "/../environnement/oper_eaux.htm": [
+    "Conducteur des procédés de traitement des eaux"
+  ],
+  "/../fabric_mecanique/conducteur_machines_plast.htm": [
+    "Conducteur-régleur de machines à mouler les plastiques"
+  ],
+  "/../mines/mines1.html": [
+    "Conducteur \r\nsur une équipe d’essais de puits de pétrole",
+    "Machines à raffiner le pétrole, opérateur de",
+    "Manœuvre de \r\npipeline",
+    "Opérateur de machines à raffiner le pétrole"
+  ],
+  "/../mode/ouvrier_cuir.htm": [
+    "Confectionneur d’articles et vêtements de cuir",
+    "Ouvrier en fabrication de chaussures"
+  ],
+  "/../mode/couturier.htm": [
+    "Confectionneur de vêtements",
+    "Couturier",
+    "Mode, couturier de vêtements de"
+  ],
+  "/../administration/assurances1.htm": [
+    "Conseiller en assurances",
+    "Conseiller en gestion des risques",
+    "Épargne, conseiller en",
+    "Fonds communs de placement, conseiller en"
+  ],
+  "/../sociaux/cons_consommation.html": [
+    "Conseiller en consommation",
+    "Consommation, conseiller en",
+    "Familiales, conseiller en affaires"
+  ],
+  "/../restau_tourisme/gest_tour-hotel.htm": [
+    "Conseiller en gestion touristique"
+  ],
+  "/../administration/immobilier1.html": [
+    "Conseiller en immobilier",
+    "Évaluateur agréé",
+    "Gestionnaire en immobilier",
+    "Immobilier, analyste ou conseiller",
+    "Immobilier, gestionnaire en"
+  ],
+  "/../administration/info_gestion.htm": [
+    "gestionnaire en \r\ntechnologies de l'information",
+    "Gestionnaire en technologies de \r\nl'information",
+    "Information (technologies de l'), \r\ngestionnaire en",
+    "Information, gestionnaire des \r\ntechnologies de l'"
+  ],
+  "/../sociaux/cons_travail.htm": [
+    "Conseiller en relations de travail",
+    "Relations de travail, conseiller en",
+    "Travail, conseiller en relations de"
+  ],
+  "/../mecanique_entretien/tech_sports.htm": [
+    "Conseiller en ventes d’articles de sport"
+  ],
+  "/../nature/horticulteur.htm": [
+    "Conseiller en ventes de produits en horticulture ornementale",
+    "Horticulteur",
+    "Jardinier-paysagiste",
+    "Producteur de plantes ornementales",
+    "Vendeur de produits en horticulture"
+  ],
+  "/../administration/soutien_info.html": [
+    "Conseiller en ventes de produits informatiques",
+    "Informatique, conseiller vente de \r\nproduits en",
+    "Informatique, soutien aux utilisateurs en",
+    "Opérateur d'ordinateur",
+    "Ordinateurs, conseiller en vente \r\nd'",
+    "Ordinateurs, opérateur d'",
+    "Représentant en produits \r\ninformatiques",
+    "Soutien technique en informatique",
+    "Spécialiste\r\nen assistance technique",
+    "Vendeur de produits informatiques"
+  ],
+  "/../mode/tailleur.htm": [
+    "Conseiller en ventes de vêtements hauts de gamme",
+    "Fourreur",
+    "Mode, tailleur de vêtements de",
+    "Tailleur de vêtements"
+  ],
+  "/../batiment/ing_construction.htm": [
+    "Construction, ingénieur en",
+    "Génie de la construction, ingénieur en",
+    "Génie du bâtiment, ingénieur en",
+    "Ingénieur en bâtiment",
+    "Ingénieur en construction",
+    "Mécanique du bâtiment, ingénieur en"
+  ],
+  "/../mode/tisserand.html": [
+    "Construction textile, artisan en",
+    "Tisserand",
+    "Tisseur",
+    "Tricoteur à la machine"
+  ],
+  "/../mode/oper_textile.html": [
+    "Construction textile, opérateur de machines \r\nen",
+    "Machines à transformer les textiles, \r\nopérateur de",
+    "Machines de production textile, opérateur de",
+    "Opérateur de machines à tricoter",
+    "Opérateur de machines de production textile",
+    "Production textile, opérateur de machines de",
+    "Transformation des matières textiles, \r\nopérateur de machines de"
+  ],
+  "/../mode/tech_textiles.htm": [
+    "Construction textile, technologue en",
+    "Production textile, technologue en",
+    "Technicien en matières textiles",
+    "technologue en textiles",
+    "Technologue en design de matériaux souples",
+    "Technologue en finition des textiles",
+    "Technologue en matières textiles",
+    "Technologue en production textile",
+    "Transformation des matières textiles, technologue en"
+  ],
+  "/../administration/economie.html": [
+    "Consultant en économie",
+    "Économie, consultant en",
+    "consultant en économie"
+  ],
+  "/../metallurgie/tech_metallurgie.htm": [
+    "Contrôle de la qualité des matériaux, technologue en",
+    "Fabrication métallique, \r\ntechnologue en",
+    "Fabrication mécano-soudée, technologue en",
+    "Génie des matériaux, technologue en",
+    "Génie métallurgique, technologue en",
+    "Matériaux, technologue en génie des",
+    "Métallurgie, technologue en génie de la",
+    "Procédés métallurgiques, technologue en",
+    "Soudage, technologue en",
+    "Technicien en contrôle de la \r\nqualité",
+    "Technicien en soudage",
+    "Technologue en fabrication \r\nmétallique",
+    "Technologue en génie des matériaux",
+    "Technologue en génie métallurgique",
+    "Technologue en métallurgie",
+    "Technologue en procédés métallurgiques",
+    "Technologue en soudage",
+    "Technologue en traitement des \r\nmétaux",
+    "Traitement des métaux, technologue \r\nen procédés de",
+    "Transformation des métaux, \r\ntechnologue en",
+    "Vérificateur en soudure"
+  ],
+  "/../foresterie/tech_papier.htm": [
+    "Contrôle de la qualité des pâtes et \r\npapiers, technicien en",
+    "Génie des pâtes et papiers, technologue en",
+    "Papier, technologue en fabrication du",
+    "Pâtes et papiers, technologue en",
+    "Technicien en contrôle de la qualité",
+    "Technicien en papier",
+    "technologue en pâtes et papiers",
+    "Technologue en génie papetier",
+    "Technologue en pâtes et papiers",
+    "Vérificateur de papiers"
+  ],
+  "/../transport/controleur_maritime.html": [
+    "Contrôleur maritime",
+    "Transport maritime, contrôleur \r\ndu"
+  ],
+  "/../lettres/linguiste.html": [
+    "Correcteur linguistique",
+    "Langue française, rédacteur en",
+    "Linguiste",
+    "Rédacteur professionnel",
+    "Réviseur linguistique"
+  ],
+  "/../beaute/estheticien.htm": [
+    "Cosméticien",
+    "Électrolyste",
+    "Esthéticien",
+    "Maquilleur"
+  ],
+  "/../transport/tech_transport.htm": [
+    "technicien en\r\n\r\nlogistique du transport",
+    "Courtier en transports",
+    "Logistique du transport, technicien en",
+    "Représentant en transport",
+    "Technicien en logistique du transport",
+    "Transport, courtier en",
+    "Transport, technicien en logistique du"
+  ],
+  "/../chimie/tech_identite.html": [
+    "Criminalistique, technicien en",
+    "Dessinateur judiciaire",
+    "Identité judiciaire, technicien en",
+    "Investigations judiciaires, technicien en",
+    "Judiciaires (sciences), technicien en",
+    "Laboratoire judiciaire, technicien en",
+    "Légales (sciences), technicien",
+    "Sciences judiciaires, technicien en",
+    "Technicien de laboratoire judiciaire",
+    "Technicien en identité judiciaire",
+    "Technologue en laboratoire judiciaire"
+  ],
+  "/../sociaux/criminologue.htm": [
+    "Criminologue",
+    "Réinsertion sociale, conseiller en",
+    "Sociothérapeute"
+  ],
+  "/../restau_tourisme/cuisinier.htm": [
+    "Cuisinier",
+    "Traiteur"
+  ],
+  "/../enseignement/prof_danse.htm": [
+    "Danse (au primaire ou secondaire), professeur de"
+  ],
+  "/../agriculture/agriculture3.htm": [
+    "Découpeur de viandes"
+  ],
+  "/../batiment/oper_verre.html": [
+    "Découpeur de verre"
+  ],
+  "/../humaines/geographe.htm": [
+    "Démographe",
+    "Géographe"
+  ],
+  "/../sante/hygieniste.htm": [
+    "Dentaire, hygiéniste",
+    "HYGIÉNISTE DENTAIRE"
+  ],
+  "/../sante/tech_dentaire.htm": [
+    "Dentaire, technologiste",
+    "Laboratoire dentaire, technologue en",
+    "Prothèses dentaires, technologue en",
+    "Technicien de laboratoire dentaire",
+    "Technicien dentaire",
+    "Technicien en laboratoire dentaire",
+    "Technicien en orthèses dentaires",
+    "Technologiste dentaire",
+    "Technologue en laboratoire dentaire"
+  ],
+  "/../sante/denturologiste.htm": [
+    "Denturologiste"
+  ],
+  "/../graphique/tech_design_ind.htm": [
+    "Design industriel, technicien en",
+    "Industriel, technicien en design",
+    "Technicien en design industriel",
+    "technicien en design \r\nindustriel",
+    "Technologue en design industriel"
+  ],
+  "/../arts/designer_presentation.html": [
+    "Designer de l'environnement",
+    "Designer de présentation visuelle",
+    "Environnement, \r\ndesigner de l'",
+    "Marchandiseur",
+    "Technicien en design de \r\nprésentation"
+  ],
+  "/../mode/designer_mode.htm": [
+    "Designer de mode",
+    "Dessinateur de mode",
+    "Mode, designer de",
+    "Modéliste",
+    "Modiste",
+    "Styliste de mode"
+  ],
+  "/../electrotechnique/ing_informaticien.htm": [
+    "ingénieur informaticien",
+    "Génie informatique, ingénieur en",
+    "Ingénieur informaticien",
+    "ingénieur \r\ninformaticien"
+  ],
+  "/../graphique/designer_ind.htm": [
+    "designer industriel",
+    "Designer industriel",
+    "Industriel, designer"
+  ],
+  "/../arts/designer_presentation.htm": [
+    "Designer en présentation visuelle"
+  ],
+  "/../fabric_mec/tech_arch_naval.htm": [
+    "Dessinateur - concepteur en \r\narchitecture navale",
+    "Génie naval, technologue en",
+    "Navale, \r\ntechnicien en architecture",
+    "Technicien en architecture navale",
+    "Technologue en architecture navale",
+    "technicien en architecture navale",
+    "technicien en \r\narchitecture navale",
+    "Technologue en génie naval"
+  ],
+  "/../fabric_mec/tech_genie_mecanique.htm": [
+    "Dessinateur - concepteur en \r\nmécanique",
+    "Fabrication mécanique, \r\ntechnologue en",
+    "Génie mécanique, technologue en",
+    "Machines, dessinateur - \r\nconcepteur de",
+    "Mécanique, technologue en génie",
+    "technologue en \r\ngénie mécanique",
+    "Systèmes mécaniques, \r\ntechnologue en design de",
+    "Technologue en conception \r\nmécanique",
+    "Technologue en construction \r\nmécanique",
+    "Technologue en fabrication \r\nmécanique",
+    "Technologue en génie mécanique"
+  ],
+  "/../mode/patronnier.html": [
+    "Dessinateur de patrons"
+  ],
+  "/../batiment/dessinateur_batiment.htm": [
+    "Dessinateur en bâtiment"
+  ],
+  "/../fabric_mecanique/dessinateur_industriel.htm": [
+    "Dessinateur en mécanique"
+  ],
+  "/../fabric_mec/dessinateur_industriel.html": [
+    "Dessinateur industriel"
+  ],
+  "/../protection/detective.html": [
+    "Détective privé",
+    "Sécurité privée, enquêteur en"
+  ],
+  "/../restau_tourisme/gest_tour-hotel.html": [
+    "Développement touristique, \r\nconseiller en",
+    "Gestionnaire en hôtellerie et restauration",
+    "Hôtellerie, gestionnaire en",
+    "Promotion touristique, \r\nconseiller en",
+    "Restauration, gestionnaire en",
+    "Tourisme, gestionnaire en"
+  ],
+  "/../sante/tech_dietetique.htm": [
+    "Diététique, technicien en",
+    "Diétothérapeute",
+    "technicien en \r\ndiététique",
+    "Nutrition, technologue en",
+    "Technicien en diététique",
+    "technicien en diététiqu",
+    "Technologue en diététique",
+    "Technologue en nutrition humaine"
+  ],
+  "/../restau_tourisme/gest_tour_hotel.html": [
+    "Directeur d’hôtel",
+    "Directeur de restaurant",
+    "Directeur du service d’hébergement"
+  ],
+  "/../communication/cinema.html": [
+    "Directeur de \r\nproduction",
+    "Producteur \r\nen cinéma"
+  ],
+  "/../communication/realisateur.html": [
+    "Directeur de production",
+    "Gérant de plateaux \r\nde cinéma et de télévision",
+    "Multimédia, réalisateur en",
+    "Producteur en radio",
+    "Réalisateur de sites Internet",
+    "RÉALISATEUR EN JEU VIDÉO",
+    "RÉALISATEUR EN MULTIMÉDIA",
+    "Réalisateur en production audiovisuelle",
+    "RÉALISATEUR EN RADIO",
+    "RÉALISATEUR EN TÉLÉVISION",
+    "Télévision, réalisateur ou producteur en"
+  ],
+  "/../humaines/recreologue.html": [
+    "Directeur des loisirs",
+    "Loisirs, coordonnateur de",
+    "Producteur d'événements sportifs",
+    "Programmation culturelle, coordonnateur \r\nd'activités en",
+    "Programmation sportive, coordonnateur \r\nd'activités en",
+    "Récréologue"
+  ],
+  "/../communication/scenariste.htm": [
+    "Dramaturge"
+  ],
+  "/../mines/dynamiteur.html": [
+    "Dynamiteur",
+    "Foreur et dynamiteur"
+  ],
+  "/../environnement/ing_environnement.htm": [
+    "Eaux, ingénieur des",
+    "Environnement, ingénieur en",
+    "Ingénieur en eaux",
+    "Ingénieur en \r\nenvironnement"
+  ],
+  "/../sante/tech_echographie.htm": [
+    "Échographie, technologue en"
+  ],
+  "/../enseignement/prof_prescol_primaire.htm": [
+    "Éducateur au préscolaire",
+    "ENSEIGNANT AU PRÉSCOLAIRE ET AU PRIMAIRE",
+    "PROFESSEUR AU PRÉSCOLAIRE ET AU PRIMAIRE"
+  ],
+  "/../nature/educateur_canin.html": [
+    "Éducateur canin",
+    "Instructeur en dressage canin"
+  ],
+  "/../enseignement/educateur_garderie.htm": [
+    "ÉDUCATEUR EN GARDERIE",
+    "Technicien en éducation en \r\ngarderie"
+  ],
+  "/../enseignement/prof_educ.htm": [
+    "professeur d'éducation physique",
+    "Éducation physique (au primaire ou secondaire), professeur d'"
+  ],
+  "/../enseignement/education.html": [
+    "Éducation internationale, conseiller en",
+    "Éducation, spécialiste en",
+    "Éducation (technologie de l'), \r\nspécialiste en",
+    "Enseignement au collégial, conseiller \r\nen",
+    "Enseignement au préscolaire et \r\nprimaire, conseiller en",
+    "Enseignement au secondaire, conseiller \r\nen",
+    "Enseignement en adaptation scolaire, \r\nconseiller en",
+    "Enseignement, spécialiste en moyens \r\ntechniques d'",
+    "Évaluation de l'éducation, spécialisé \r\nen mesure et",
+    "Intervention éducative, spécialiste en",
+    "Mesure et évaluation en éducation, \r\nconseiller en"
+  ],
+  "/../humaines/historien.html": [
+    "Égyptologue",
+    "Historien"
+  ],
+  "/../electrotechnique/electromecano.htm": [
+    "Électricien d’entretien industriel",
+    "Électricien de réseaux électriques",
+    "ÉLECTROMÉCANICIEN DE SYSTÈMES AUTOMATISÉS",
+    "Réparateur de commandes \r\nélectroniques",
+    "Vérificateur de panneaux de \r\ncommande"
+  ],
+  "/../electrotechnique/electricien.html": [
+    "ÉLECTRICIEN EN BÂTIMENT",
+    "Maître électricien"
+  ],
+  "/../nature/tech_sante_animale.html": [
+    "Éleveur de chiens, de chats ou oiseaux"
+  ],
+  "/../sante/thanatologue.htm": [
+    "Embaumeur",
+    "thanatologue",
+    "Technicien de salle d'autopsie",
+    "Thanatologue"
+  ],
+  "/../metallurgie/galvaniseur.html": [
+    "Enduiseur - peintre industriel",
+    "Galvaniseur",
+    "machines à traiter les métaux, \r\nopérateur de",
+    "Traitement des métaux, opérateur de \r\nmachines de"
+  ],
+  "/../protection/pompier.htm": [
+    "Enquêteur aux incendies",
+    "POMPIER",
+    "Sapeur - pompier"
+  ],
+  "/../communication/concepteur_son.html": [
+    "Enregistrement de \r\nsons et sonorisation, technicien en",
+    "Musique, concepteur de son en",
+    "Musique, technicien en \r\nenregistrement en",
+    "concepteur de son",
+    "Technicien de son"
+  ],
+  "/../restau_tour/gest_tour-hotel.html": [
+    "Entreprise hôtelière, gestionnaire \r\nd'une",
+    "Entreprise touristique, \r\ngestionnaire d'une",
+    "Gestion et planification du \r\ntourisme, conseiller en",
+    "Gestionnaire en tourisme",
+    "Producteur d'événements \r\ntouristiques",
+    "Voyages, conseiller développement et promotion des produits de"
+  ],
+  "/../batiment/prep_entretien.html": [
+    "Entretien général d’immeubles, préposé à l'",
+    "Ouvrier qualifié ou spécialisé \r\nd'entretien d'immeubles",
+    "Préposé à l'entretien d'immeubles ou bâtiments"
+  ],
+  "/../environnement/tech_environnement.htm": [
+    "Environnement, technicien en"
+  ],
+  "/../sante/ergotherapeute.htm": [
+    "Ergothérapeute",
+    "Réadaptation occupationnelle, thérapeute en"
+  ],
+  "/../graphique/tech_imprimerie.htm": [
+    "Estimateur en imprimerie",
+    "Imprimerie, technicien en",
+    "imprimerie,technicien en",
+    "Projets en communications graphiques, \r\ntechnicien en gestion de",
+    "Relieur industriel",
+    "Représentant en imprimerie",
+    "technicien en imprimerie",
+    "Technicien en imprimerie",
+    "Technologue en impression"
+  ],
+  "/../administration/immobilier1.htm": [
+    "Évaluation foncière, agent d'"
+  ],
+  "/../administration/comm_inter1.html": [
+    "Exportations, agent ou conseiller en",
+    "Gestionnaire en commerce \r\ninternational"
+  ],
+  "/../environnement/exterminateur.html": [
+    "Exterminateur",
+    "Fumigateur",
+    "Gestion parasitaire, technicien en",
+    "Lutte \r\nantiparasitaire, technicien en",
+    "Parasitaire, \r\ntechnicien en gestion",
+    "Vermine, technicien en contrôle de \r\nla"
+  ],
+  "/../bois/bois1.html": [
+    "Fabrication d’armoires de cuisine, ouvrier en",
+    "Fabrication de portes et fenêtres, ouvrier en",
+    "Manœuvre en atelier de fabrication de meubles",
+    "Manœuvre en\r\nfabrication d’armoires de cuisine",
+    "Manœuvre en\r\nfabrication de meubles",
+    "Opérateur de machines à travailler le bois"
+  ],
+  "/../bois/monteur_meubles.htm": [
+    "Fabrication de meubles en série, ouvrier en",
+    "Machines à fabriquer les meubles, \r\nopérateur de",
+    "Meubles en série, monteur de",
+    "Monteur de meubles en série",
+    "Traceur de charpentes de bois"
+  ],
+  "/../fabric_mec/tech_genie_industriel.htm": [
+    "Fabrication industrielle, \r\ntechnologue en",
+    "Génie industriel, technologue en",
+    "Industriel, technologue en \r\ngénie",
+    "Production manufacturière, technologue en",
+    "technologue en \r\ngénie industriel",
+    "Systèmes industriels, \r\ntechnologue en",
+    "Technicien en production manufacturière",
+    "Technologue en conception de \r\nsystèmes industriels",
+    "Technologue en génie de la \r\nproduction industrielle",
+    "Technologue en génie industriel",
+    "Technologue en production manufacturière"
+  ],
+  "/../metallurgie/tolier.htm": [
+    "Fabrication métallique, opérateur de \r\nmachines de",
+    "Finisseur(euse) de pièces métalliques",
+    "Machines à travailler les métaux, opérateur \r\nde",
+    "Opérateur de machines à travailler le métal",
+    "Régleur-conducteur de machines à fabriquer le métal",
+    "Régleur-conducteur de machines à travailler les métaux",
+    "Riveteur",
+    "Tôlier"
+  ],
+  "/../metallurgie/ferblantier.htm": [
+    "Ferblantier"
+  ],
+  "/../bois/finisseur_meubles.htm": [
+    "Finisseur de meubles",
+    "Meubles, finisseur de",
+    "Meubles, restaurateur de",
+    "Réparateur de menuiserie d'assemblage"
+  ],
+  "/../nature/fleuriste.htm": [
+    "Fleuriste",
+    "Vendeur \r\nde produits floraux"
+  ],
+  "/../foresterie/ouvrier_foresterie.htm": [
+    "Foresterie, ouvrier en \r\naménagement en",
+    "Forestier",
+    "Ouvrier en aménagement forestier",
+    "Reboiseur"
+  ],
+  "/../enseignement/prof_francaisLS.htm": [
+    "Français langue seconde, \r\nprofesseur de",
+    "professeur de \r\nfrançais langue seconde"
+  ],
+  "/../agriculture/agriculture2.html": [
+    "Fromager"
+  ],
+  "/../mines/ing_petrole.html": [
+    "Gaz et pétrole, ingénieur en",
+    "Génie \r\npétrolier, ingénieur en",
+    "Ingénieur en pétrole et gaz"
+  ],
+  "/../mines/tech_petrole.html": [
+    "Gaz et pétrole, technologue en",
+    "Génie \r\npétrolier, technologue en",
+    "Technicien en exploitation pétrolière",
+    "Technicien en gaz et pétrole",
+    "Technicien en pétrole et gaz",
+    "Technicien en prospection pétrolière",
+    "Technologue en exploitation pétrolière",
+    "Technologue en génie pétrolier",
+    "Technologue en pétrole et gaz",
+    "Technologue en production pétrolière",
+    "Technologue en transformation des produits \r\npétroliers"
+  ],
+  "/../batiment/tech_gaz.html": [
+    "Gaz naturel, monteur d'installations au",
+    "Installalateur de systèmes au gaz naturel"
+  ],
+  "/../fabric_mec/tech_plastiques.htm": [
+    "Génie de la plasturgie, technologue en",
+    "Matériaux plastiques, technologue en",
+    "Plastiques, technologue en transformation des",
+    "Technicien en matières plastiques",
+    "Technicien en plastiques",
+    "Technicien en transformation des matières plastiques",
+    "Technologue en génie de la plasturgie",
+    "Technologue en matériaux plastiques",
+    "Technologue en plasturgie",
+    "Transformation des plastiques, technologue en",
+    "Transformation du caoutchouc, technologue en"
+  ],
+  "/../metallurgie/ing_metallurgiste.html": [
+    "Génie des matériaux, ingénieur en",
+    "Génie métallurgique, ingénieur en",
+    "Ingénieur en métallurgie",
+    "Matériaux, ingénieur en",
+    "Métallurgie, ingénieur en"
+  ],
+  "/../environnement/ing_geomatique.html": [
+    "Génie géomatique, ingénieur en",
+    "Géomatique, ingénieur en",
+    "Ingénieur en géomatique"
+  ],
+  "/../mines/ing_geologue.html": [
+    "Génie géologique, ingénieur en",
+    "Ingénieur géologue"
+  ],
+  "/../mines/tech_minier.html": [
+    "Génie géologique, technologue en",
+    "Génie minier, technologue en",
+    "Géologie, technologue en",
+    "Minier, technologue",
+    "Technicien des mines",
+    "Technicien en exploitation de gisements miniers",
+    "Technicien en géologie",
+    "Technicien en minéralurgie",
+    "Technicien en prospection minière",
+    "Technicien minier",
+    "Technologiste minier",
+    "Technologue en exploitation minière",
+    "Technologue en génie géologique",
+    "Technologue en génie minéral",
+    "Technologue en géologie",
+    "Technologue en géophysique",
+    "Technologue en minéralurgie",
+    "Technologue en production minière",
+    "Technologue en traitement des minerais",
+    "Technologue en transformation des minerais",
+    "Technologue minier",
+    "Traitement des minerais, technologue en"
+  ],
+  "/../fabric_mec/ing_industriel.htm": [
+    "Génie industriel, ingénieur en",
+    "Industriel, ingénieur",
+    "ingénieur industriel",
+    "Ingénieur industriel"
+  ],
+  "/../mines/ing_mineral.html": [
+    "Génie minier, ingénieur en",
+    "Ingénieur des mines",
+    "Ingénieur en mines",
+    "Ingénieur minier",
+    "Minier, \r\ningénieur"
+  ],
+  "/../physique/ing_physicien.htm": [
+    "Génie physique, ingénieur en",
+    "ingénieur physicien",
+    "Ingénieur en nucléaire",
+    "Ingénieur-physicien",
+    "Physique, ingénieur en"
+  ],
+  "/../physique/tech_physique.htm": [
+    "Génie physique, technologue en",
+    "technologue en physique",
+    "physique, technologue en",
+    "physique technologue en",
+    "technologue en génie physique",
+    "technologue en génie \r\nphysique et robotique",
+    "Technicien en optronique",
+    "Technicien en physique",
+    "Technologue en conception optique et \r\nphotonique",
+    "Technologue en génie nucléaire",
+    "Technologue en génie physique",
+    "Technologue en laboratoire de physique",
+    "Technologue en optique et photonique",
+    "Technologue en physique"
+  ],
+  "/../environnement/tech_geodesie.htm": [
+    "Géodésie, technologue en",
+    "géodésie, technologue en",
+    "Technicien en arpentage",
+    "Technicien en géodésie",
+    "Technicien en géomatique",
+    "Technicien en photogrammétrie",
+    "Technologue en génie géomatique",
+    "Technologue en géodésie",
+    "technologue en géodésie"
+  ],
+  "/../mines/geologue.html": [
+    "Géologue"
+  ],
+  "/../mines/geophysicien.htm": [
+    "Géophysicien"
+  ],
+  "/../arts/gerant_artistes.html": [
+    "Gérant d’artistes",
+    "Organisateur d’événements culturels et corporatifs",
+    "Producteur d’événements culturels et corporatifs",
+    "Producteur en théâtre",
+    "gérant d'artistes"
+  ],
+  "/../restau_tourisme/tech_restauration.htm": [
+    "Gérant de restaurant",
+    "Restaurant, gérant de",
+    "Restauration, technicien en \r\ngestion de la",
+    "Technicien en restauration"
+  ],
+  "/../restau_tour/tech_hotellerie.htm": [
+    "Gestion d’événements et de congrès, coordonnateur en",
+    "technicien \r\nen hôtellerie",
+    "Maître d'hôtel",
+    "technicien en gestion hôtelière",
+    "Résidence en hébergement \r\ntouristique, gestionnaire d'une"
+  ],
+  "/../mode/tech_vetements.htm": [
+    "Gestion de la production de vêtements, technicien en",
+    "Mode, technicien en gestion de la \r\nproduction de la",
+    "Production de vêtements, technicien en gestion de la",
+    "Technicien en production de vêtements",
+    "Technologue en production de vêtements"
+  ],
+  "/../transport/gest_transport.html": [
+    "Gestionnaire en logistique du \r\ntransport",
+    "Logistique du transport, gestionnaire en"
+  ],
+  "/../mecanique_entr/prep_ski_golf.html": [
+    "Golf, préposé à l'entretien de \r\nterrains de",
+    "Montagnes et golf, préposé aux opérations et à l'entretien de",
+    "Préposé à l'entretien de stations \r\nde ski et terrains de golf"
+  ],
+  "/../restau_tour/restauration.html": [
+    "Goûteur",
+    "Service de bar, préposé au"
+  ],
+  "/../nature/tech_cine-halieu.html": [
+    "Guide chasse et pêche",
+    "Moniteur de randonnée en forêt",
+    "technicien en aménagement cynégétique et halieutique",
+    "Technicien en aménagement cynégétique et halieutique"
+  ],
+  "/../restau_tour/agent_voyages.htm": [
+    "agent de voyages",
+    "Organisateur de voyages",
+    "Représentant en voyages"
+  ],
+  "/../sante/med_douces.html": [
+    "Herboriste",
+    "Homéopathe",
+    "Iridologue",
+    "Naturopathe",
+    "Réflexologue"
+  ],
+  "/../mecanique_entr/horloger.html": [
+    "Horloger"
+  ],
+  "/../restau_tour/serveur.htm": [
+    "Hôte de restaurant",
+    "SERVEUR DE RESTAURANT"
+  ],
+  "/../arts/humoriste.html": [
+    "Humoriste"
+  ],
+  "/../arts/gerant_artiste.html": [
+    "Imprésario",
+    "Spectacles, agent de",
+    "Spectacles, producteur de"
+  ],
+  "/../graphique/prep_reprographie.html": [
+    "Impression numérique, opérateur en",
+    "Reprographie, préposé à la"
+  ],
+  "/../mode/imprimeur_text.html": [
+    "Imprimeur textile",
+    "Sérigraphiste"
+  ],
+  "/../sante/infirmier.htm": [
+    "INFIRMIER",
+    "infirmier"
+  ],
+  "/../sante/infirmier_auxiliaire.htm": [
+    "Infirmier auxiliaire",
+    "infirmier auxiliaire"
+  ],
+  "/../transport/regulateur_aerien.html": [
+    "Information de vol, spécialiste en",
+    "Opérateur en communications aériennes",
+    "Régulateur de vol",
+    "Spécialiste en information de vol"
+  ],
+  "/../electrotechnique/ing_aerospatial.htm": [
+    "Ingénieur en avionique"
+  ],
+  "/../sante/inhalotherapeute.htm": [
+    "INHALOTHÉRAPEUTE"
+  ],
+  "/../restau_tour/tech_restauration.htm": [
+    "technicien en \r\nrestauration",
+    "Technicien en gestion de la \r\nrestauration",
+    "technicien en gestion de la restauration"
+  ],
+  "/../protection/douanier.htm": [
+    "Inspecteur des douanes"
+  ],
+  "/../batiment/vitrier.htm": [
+    "Installateur de produits verriers",
+    "Mécanicien - monteur en vitrerie",
+    "Vitrier \r\nen bâtiment"
+  ],
+  "/../batiment/poseur_revetements.htm": [
+    "Installateur de revêtements \r\nd'intérieurs",
+    "Poseur de revêtements d’intérieurs"
+  ],
+  "/../batiment/mecanicien_incendies.htm": [
+    "Installateur de systèmes de \r\nprotection-incendie",
+    "Mécanicien en protection-incendie",
+    "Monteur d’installations de protection-incendie",
+    "Réparateur de systèmes de \r\nprotection incendie"
+  ],
+  "/../batiment/poseur_syst_int.htm": [
+    "Installateur de systèmes d'intérieurs",
+    "Poseur de systèmes d’intérieurs"
+  ],
+  "/../batiment/installateur_securite.htm": [
+    "Installateur de systèmes de sécurité",
+    "Réparateur de systèmes de \r\nsécurité",
+    "Représentant en systèmes de \r\nsécurité"
+  ],
+  "/../motorises/inst_auto.html": [
+    "Installateur de vitres et composantes électroniques automobiles",
+    "Pare-brise, réparateur de",
+    "Réparateur de pare-brises",
+    "Vitres et composantes électroniques \r\nd'automobiles, installateur de"
+  ],
+  "/../electrotechnique/ing_automatisation.html": [
+    "Instrumentation et \r\nautomatisation, ingénieur en"
+  ],
+  "/../sociaux/psychoeduc.htm": [
+    "Intégration sociale, conseiller en",
+    "Psychoéducateur",
+    "psychoéducateur"
+  ],
+  "/../arts/artiste.htm": [
+    "Interdisciplinaire (art), artiste en"
+  ],
+  "/../lettres/traducteur.htm": [
+    "Interprète de conférences",
+    "Terminologue",
+    "Traducteur"
+  ],
+  "/../transport/pilote.html": [
+    "Instructeur en pilotage",
+    "PILOTE D’AÉRONEFS"
+  ],
+  "/../sociaux/zootherapeute.htm": [
+    "Intervenant en zoothérapie",
+    "Intervenant social",
+    "Zoothérapeute"
+  ],
+  "/../administration/steno.html": [
+    "Judiciaire, \r\nsténographe",
+    "Sténographe"
+  ],
+  "/../sante/kinesiologue.htm": [
+    "Kinésiologue"
+  ],
+  "/../sante/orthotherapeute.htm": [
+    "Kinésithérapeute",
+    "Orthothérapeute"
+  ],
+  "/../lettres/LLE.html": [
+    "Langues et littérature étrangères, spécialiste en"
+  ],
+  "/../arts/anim_culturel.htm": [
+    "animateur culturel"
+  ],
+  "/../sociaux/int_sports.htm": [
+    "intervenant en sports"
+  ],
+  "/../humaines/recreologue.htm": [
+    "Loisirs, gestionnaire en"
+  ],
+  "/../sociaux/therapeute_loisir.html": [
+    "Loisir, thérapeute par le",
+    "Thérapeute par le loisir"
+  ],
+  "/../arts/luthier.html": [
+    "Luthier"
+  ],
+  "/../mines/oper_minerais.html": [
+    "Machinerie minière, opérateur de",
+    "Mécanicien de machinerie minière",
+    "Opérateur de machinerie minière",
+    "Opérateur des équipements de traitement du minerai"
+  ],
+  "/../motorises/mecanicien_agricole.html": [
+    "Machineries agricoles, \r\nmécanicien de",
+    "Machines agricoles, mécanicien \r\nde",
+    "Mécanicien de machines agricoles",
+    "Réparateur de machines agricoles"
+  ],
+  "/../motorises/mecanicien_machineries.htm": [
+    "Machineries légères, \r\nmécanicien de",
+    "Machineries lourdes, \r\nmécanicien de",
+    "Mécanicien d'engins de chantier",
+    "Mécanicien de machinerie lourde",
+    "Réparateur de machineries \r\nlourdes"
+  ],
+  "/../mines/operateur_leger.html": [
+    "Machineries légères, opérateur de",
+    "Opérateur d'engins légers de chantier"
+  ],
+  "/../mode/ouvrier_vetements.htm": [
+    "Machines à coudre industrielle, \r\nconducteur de",
+    "Machines de production de vêtements, \r\nopérateur de",
+    "Opérateur de machines à coudre industrielles",
+    "Opérateur de machines de production de \r\nvêtements",
+    "Ouvrier en production industrielle de vêtements",
+    "Pîquer, opérateur de machines à",
+    "Production de vêtements, opérateur de machines de"
+  ],
+  "/../mecanique_entr/mecanicien_mach_coudre.html": [
+    "Machines à coudre \r\nindustrielles, mécanicien de",
+    "Mécanicien de machines à \r\ncoudre industrielles"
+  ],
+  "/../fabric_mec/conducteur_machines_plast.htm": [
+    "Machines à mouler ou \r\ntravailler les plastiques, opérateur de",
+    "Matières plastiques, \r\nopérateur de machines à mouler les",
+    "Opérateur de machines à mouler les plastiques",
+    "Plastiques, conducteur - \r\nrégleur de machines à mouler les",
+    "Régleur-conducteur de machines à mouler les plastiques",
+    "Transformation des \r\nplastiques, opérateur de machines de"
+  ],
+  "/../foresterie/operateur_scierie.html": [
+    "Machines à scier le bois, \r\nopérateur de",
+    "Machines de scierie, opérateur de",
+    "Opérateur de déligneuse automatique en scierie",
+    "Opérateur de machines de scierie",
+    "Régleur - conducteur de machines à bois",
+    "Scieur de bardeaux ou de planches",
+    "Transformation des produits \r\nforestiers, opérateur de machines de"
+  ],
+  "/../mecanique_entr/mecanicien_industriel.htm": [
+    "Machines industrielles, \r\nmécanicien de",
+    "Mécanicien d’entretien industriel",
+    "Réparateur de matériel \r\nhydraulique"
+  ],
+  "/../mecanique_entr/tech_maintenance_ind.htm": [
+    "Maintenance industrielle, technologue en",
+    "Technologue en maintenance industrielle"
+  ],
+  "/../batiment/couvreur.htm": [
+    "Maître couvreur"
+  ],
+  "/../batiment/plombier.htm": [
+    "Maître mécanicien en tuyauterie",
+    "Plombier",
+    "Poseur d'appareils de chauffage",
+    "Réparateur d'appareils de chauffage",
+    "plombier",
+    "Tuyauteur"
+  ],
+  "/../arts/photographe.htm": [
+    "Maître photographe",
+    "Photographe",
+    "Portraitiste, photographe",
+    "Technicien de laboratoire photographique",
+    "Technicien en laboratoire de développement de photographies",
+    "Technicien en photographie"
+  ],
+  "/../beaute/mannequin.html": [
+    "Mannequin"
+  ],
+  "/../bois/bois1.htm": [
+    "Manœuvre en\r\nfabrication de portes et fenêtres",
+    "Menuisier d'atelier"
+  ],
+  "/../transport/mecanicien_marine.htm": [
+    "Marine, officier mécanicien de",
+    "Mécanicien de marine",
+    "Mécanique de marine, technologue en \r\ngénie",
+    "Officier mécanicien de marine",
+    "Technicien en mécanique de marine"
+  ],
+  "/../sante/massotherapeute.htm": [
+    "Massothérapeute"
+  ],
+  "/../transport/matelot.html": [
+    "Matelot qualifié de salle des machines",
+    "Matelot qualifié de pont"
+  ],
+  "/../physique/mathematicien.htm": [
+    "Mathématicien"
+  ],
+  "/../mecanique_entr/mecanicien_ascenseurs.htm": [
+    "Mécanicien d’ascenseurs",
+    "Réparateur d'ascenseurs"
+  ],
+  "/../motorises/mecanicien_auto.htm": [
+    "MÉCANICIEN D’AUTOMOBILES",
+    "Réparateur d'automobiles",
+    "Technicien en mécanique automobile",
+    "Véhicules automobiles, mécanicien de"
+  ],
+  "/../motorises/mecanicien_legers.htm": [
+    "Mécanicien de motocyclettes, \r\nmotoneiges et VTT",
+    "MÉCANICIEN DE VÉHICULES LÉGERS",
+    "Réparateur de motocyclettes",
+    "Réparateur de motoneiges",
+    "Réparateur de véhicules légers et \r\nd'entretien",
+    "Véhicules légers, mécanicien de"
+  ],
+  "/../mecanique_entr/tech_sports.html": [
+    "Mécanicien de vélos",
+    "Réparateur d'articles de sports",
+    "Technicien - vendeur d'articles de sports",
+    "Velos, mécanicien de",
+    "technicien-réparateur d'articles de sports"
+  ],
+  "/../sante/tech_med_nucleaire.htm": [
+    "Médecine nucléaire, technologue en",
+    "technologue en médecine nucléaire",
+    "Technologue en médecine nucléaire",
+    "Technologue en radiologie"
+  ],
+  "/../administration/transcripteur.html": [
+    "Médical, transcripteur",
+    "Transcripteur médical"
+  ],
+  "/../batiment/charpentier.htm": [
+    "Menuisier - charpentier"
+  ],
+  "/../physique/meteorologue.html": [
+    "Météorologue"
+  ],
+  "/../bois/rembourreur.htm": [
+    "Meubles, rembourreur de",
+    "Rembourreur",
+    "Rembourreur d'aéronefs",
+    "Tapissier - réparateur de meubles"
+  ],
+  "/../armee/armee.htm": [
+    "Militaire"
+  ],
+  "/../mines/mineur.html": [
+    "Mineur"
+  ],
+  "/../mode/patroniste.htm": [
+    "Mode, dessinateur de",
+    "Patronnier",
+    "Traceur de patrons"
+  ],
+  "/../bois/modeleur.htm": [
+    "Modeleur"
+  ],
+  "/../mines/plongeur.htm": [
+    "Moniteur de plongée",
+    "Plongeur professionnel",
+    "Scaphandrier"
+  ],
+  "/../transport/moniteur_conduite.html": [
+    "Moniteur en conduite d’une motocyclette",
+    "Moniteur en conduite d’un véhicule de promenade"
+  ],
+  "/../metallurgie/monteur_charpentes.htm": [
+    "Monteur de charpentes métalliques",
+    "Monteur en acier de structure"
+  ],
+  "/../electrotechnique/monteur_lignes.html": [
+    "Monteur de lignes"
+  ],
+  "/../aerospatial/monteur_structures_aero.htm": [
+    "Monteur de structures en aérospatial"
+  ],
+  "/../enseignement/prof_religion.htm": [
+    "Morale, professeur de"
+  ],
+  "/../transport/repartiteur.html": [
+    "Mouvements de transport, répartiteur des",
+    "Répartiteur en transport",
+    "Transport, répartiteur"
+  ],
+  "/../communication/museologue.html": [
+    "Muséologue"
+  ],
+  "/../enseignement/prof_musique.htm": [
+    "Musique au primaire ou secondaire, professeur de"
+  ],
+  "/../sante/naturotherapeute.html": [
+    "Naturothérapeute"
+  ],
+  "/../environnement/enviro3.html": [
+    "Nettoyage industriel, opérateur en",
+    "Opérateur d'un petite station de \r\nfiltration et pompage de l'eau potable",
+    "Opérateur d'une usine d'incinération et de traitement des déchets",
+    "Opérateur d'une usine de recyclage des matières recyclables",
+    "Opérateur en nettoyage industriel",
+    "Station de pompage de l'eau potable, \r\nopérateur d'une",
+    "Systèmes de ventilation, technicien en \r\nassainissement de",
+    "Technicien en assainissement de systèmes \r\nde ventilation"
+  ],
+  "/../mode/nettoyeur.html": [
+    "Nettoyeur de vêtements"
+  ],
+  "/../sante/optometriste.htm": [
+    "optométriste",
+    "OPTOMÉTRISTE"
+  ],
+  "/../sante/oculariste.htm": [
+    "Oculariste"
+  ],
+  "/../armee/sante.htm": [
+    "Officier du travail social"
+  ],
+  "/../metallurgie/galvaniseur.htm": [
+    "Opérateur d'équipements de métallisation et de galvanisation"
+  ],
+  "/../chimie/operateur_papier.htm": [
+    "Opérateur de blanchisseuse à papier",
+    "Opérateur de machines à fabriquer le papier",
+    "Opérateur de machines à finir le papier"
+  ],
+  "/../communication/scene.htm": [
+    "Opérateur de la magnétoscopie",
+    "Sonothécaire"
+  ],
+  "/../mode/oper_textile.htm": [
+    "Opérateur de machines à broder",
+    "Opérateur de machines à transformer les \r\ntextiles"
+  ],
+  "/../fabric_mec/fabric_mecanique1.htm": [
+    "Opérateur(trice) de machines à fabriquer ou à transformer le caoutchouc"
+  ],
+  "/../fabric_mecanique/oper_mach_ind.htm": [
+    "opérateur de machines industrielles",
+    "Opérateur de machines de production industrielle"
+  ],
+  "/../mines/operateur_pelle.htm": [
+    "Opérateur de pelle mécanique",
+    "Pelle mécanique hydraulique, opérateur de"
+  ],
+  "/../foresterie/operateur_scie.html": [
+    "Opérateur de scie principale",
+    "Opérateur de scies multilames pour billes",
+    "Opérateur de séchoir à bois",
+    "Opérateur de scie"
+  ],
+  "/../chimie/oper_eaux.html": [
+    "Opérateur de station de traitement des eaux"
+  ],
+  "/../transport/regulateur_vol.htm": [
+    "Opérateur des communications aériennes"
+  ],
+  "/../sante/opticien.htm": [
+    "Opticien d’ordonnances",
+    "opticien d'ordonnances",
+    "Orthèses visuelles, technicien en",
+    "Technicien en orthèses visuelles"
+  ],
+  "/../sante/tech_optique.html": [
+    "Optique, technologue en laboratoire d'",
+    "Technicien de laboratoire d'optique",
+    "Technicien en laboratoire d'optique"
+  ],
+  "/../sante/tech_ophtalmo.html": [
+    "technologue en ophtalmologie"
+  ],
+  "/../sante/orthoptiste.htm": [
+    "orthoptiste",
+    "Orthoptiste"
+  ],
+  "/../electrotechnique/tech_electronique.htm": [
+    "Ordinateurs, réparateur d'"
+  ],
+  "/../sante/tech_ortheses.htm": [
+    "Orthèses et prothèses orthopédiques, technicien en",
+    "Orthésiste",
+    "Prothèses et orthèses orthopédiques, \r\ntechnicien en",
+    "Prothésiste",
+    "Technicien en orthèses et prothèses"
+  ],
+  "/../enseignement/orthopedagogue.htm": [
+    "Orthopédagogue"
+  ],
+  "/../sante/orthophoniste.htm": [
+    "Orthophoniste"
+  ],
+  "/../sante/osteopathe.html": [
+    "Ostéopathe"
+  ],
+  "/../nature/ouvrier_paysagiste.html": [
+    "Ouvrier en réalisation d’aménagements paysagers",
+    "Paysagers, ouvrier en réalisation d’aménagements",
+    "Réalisation d’aménagements paysagers, ouvrier en"
+  ],
+  "/../nature/naturelle.html": [
+    "Palefrenier professionnel"
+  ],
+  "/../agriculture/tech_poisson.html": [
+    "Pêcheries, technologue en transformation des",
+    "Poissons, technologue en \r\ntransformation de",
+    "Technologue en transformation des \r\nproduits marins",
+    "Transformation des produits marins, technicien en"
+  ],
+  "/../batiment/peintre.htm": [
+    "Peintre en bâtiment"
+  ],
+  "/../metallurgie/peintre_ind.html": [
+    "Peintre - enduiseur industriel"
+  ],
+  "/../sante/perfusionniste.html": [
+    "Perfusionniste"
+  ],
+  "/../chimie/techno_pharmaceutique.html": [
+    "Pharmaceutique, technologue en production",
+    "Production pharmaceutique, technologue en",
+    "Représentant en produits \r\npharmaceutiques",
+    "technologue en production \r\npharmaceutique",
+    "Technologue en production pharmaceutique",
+    "Vendeur - technicien de produits \r\npharmaceutiques"
+  ],
+  "/../sante/tech_pharmacie.htm": [
+    "Pharmacie, technicien en"
+  ],
+  "/../sante/pharmacien.htm": [
+    "Pharmacien",
+    "Pharmacien clinicien"
+  ],
+  "/../sante/physiotherapeute.htm": [
+    "Physiothérapeute",
+    "Réadaptation physique, thérapeute en"
+  ],
+  "/../physique/tech_physicien.htm": [
+    "Physique, technologue en"
+  ],
+  "/../sante/med_douces.htm": [
+    "Phytothérapeute"
+  ],
+  "/../batiment/platrier.htm": [
+    "Plâtrier",
+    "Tireur de joints"
+  ],
+  "/../nature/agent_eco-tour.htm": [
+    "Plein air et tourisme d’aventure, guide \r\n- animateur en"
+  ],
+  "/../sante/podiatre.htm": [
+    "Podiatre"
+  ],
+  "/../restau_tourisme/poissonnier.html": [
+    "Poissonnier"
+  ],
+  "/../sante/prep_beneficiaires.htm": [
+    "PRÉPOSÉ AUX BÉNÉFICIAIRES"
+  ],
+  "/../foresterie/sylviculteur.htm": [
+    "Producteur sylvicole",
+    "Production sylvicole, ouvrier en",
+    "sylviculteur",
+    "Sylviculteur"
+  ],
+  "/../enseignement/prof_universite.html": [
+    "Professeur d'université",
+    "Université, professeur d'"
+  ],
+  "/../sociaux/psychother.htm": [
+    "Psychanalyste",
+    "Psychothérapeute"
+  ],
+  "/../sante/tech_radio_oncologie.htm": [
+    "Radio-oncologie, technologue en",
+    "technicien en radio-oncologie",
+    "Technologue en radio-oncologie"
+  ],
+  "/../autres-pages/scientifique.html": [
+    "carrières scientifiques",
+    "Rédacteur scientifique"
+  ],
+  "/../restau_tourisme/prep_recreotourisme.html": [
+    "Récréotourisme, préposé \r\naux opérations et entretien d'un site de"
+  ],
+  "/../sante/sage_femme.htm": [
+    "SAGE-FEMME"
+  ],
+  "/../sante/kinesiologiste.htm": [
+    "Sciences de l’activité physique, spécialiste en"
+  ],
+  "/../protection/preventionniste.htm": [
+    "Sécurité - incendie, technicien en"
+  ],
+  "/../mecanique_entr/serrurier.htm": [
+    "Serrurier d'entretien"
+  ],
+  "/../sociaux/sexologue.htm": [
+    "Sexologue"
+  ],
+  "/../humaines/sociologue.html": [
+    "Sociologue"
+  ],
+  "/../arts/scenographe.html": [
+    "scénographe"
+  ],
+  "/../restau_tourisme/sommelier.html": [
+    "Sommelier"
+  ],
+  "/../metallurgie/soudeur.htm": [
+    "Soudeur"
+  ],
+  "/../sante/therapeute_sport.htm": [
+    "Sport, thérapeute du",
+    "Thérapeute sportif"
+  ],
+  "/../chimie/tech_sterilisation.html": [
+    "Stérilisation, technicien en",
+    "Technicien en stérilisation"
+  ],
+  "/../restau_tourisme/agent_bord.html": [
+    "agent de bord"
+  ],
+  "/../restau_tourisme/serveur.htm": [
+    "serveur"
+  ],
+  "/../nature/tech_biologiste.html": [
+    "Technicien en biologie"
+  ],
+  "/../graphique/design_ind.html": [
+    "designer industriel"
+  ],
+  "/../sante/techno_ophtalmo.html": [
+    "Technologue en ophtalmologie"
+  ],
+  "/../humaines/theologien.html": [
+    "Théologien"
+  ],
+  "/../nature/toiletteur.html": [
+    "Toiletteur d’animaux"
+  ],
+  "/../arts/decorateur_int.htm": [
+    "Vendeur de produits de \r\ndécoration intérieure"
+  ],
+  "/../restau_tour/poissonnier.html": [
+    "Vendeur de produits de la pêche"
+  ],
+  "/../restau_tour/sommelier.html": [
+    "Vendeur de produits de vins et spiritueux"
+  ],
+  "/../restau_tour/agent_voyages.html": [
+    "Voyages, agent de",
+    "Voyages, organisateur de",
+    "Voyages, représentant en"
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impression numérique, opérateur en — Métiers Québec</title>
+  <meta name="description" content="Métier Impression numérique, opérateur en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/graphique/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Communications graphiques, multimédia et imprimerie
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/graphique/">Communications graphiques, multimédia et imprimerie</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Impression Numérique, Opérateur En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/graphique/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Communications graphiques, multimédia et imprimerie
+        </a>
+        <div class="page-header__tag">Communications graphiques, multimédia et imprimerie</div>
+        <h1 class="page-header__title">Impression Numérique, Opérateur En</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Communications graphiques, multimédia et imprimerie</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'opérateur(trice) en impression numérique; tu auras pour tâches d'opérer des équipements numériques pour effectuer des tâches de préparation à l'impression (prépresse) et pour gérer l'ensemble des fichiers informatiques. Tu effectueras des opérations de numérisation et d'envoi de documents par courriel; ainsi que tu devras diagnostiquer et résoudre des problèmes de gestion de la couleur ou d'impression. Tu pourras également effectuer des impressions grand format sur différents types de support. Enfin, tu devras t'assurer que les projets réalisés et les présentations visuelles respectent des normes et exigences de grande qualité. QUALITÉS ET APTITUDESNÉCESSAIRES : -Aimer travailler avec le public et entregent car tu auras à travailler auprès de la clientèle -Bonne santé et endurance physique car tu devras travailler debout de longues heures -Très bonne vision et très bonne audition -Bon discernement des couleurs et des formes -Bonnes habiletés et bonne dextérité manuelles car tu auras à manipuler diverses machines de reprographie -Bonne coordination oeil-main pour être capable de travailler minutieusement -Souci du détail, minutie et précision car tu auras à effectuer des travaux de reproduction de façon précise et de qualité -Sens de l’organisation pour bien planifier et organiser les travaux de production -Autonomie et débrouillardise car tu auras à travailler seul(e) pour opérer les machines -Sens des responsabilités car tu seras responsable du bon fonctionnement des machines et de la qualité de ton travail -Aimer le travail d’équipe car tu auras à travailler avec la collaboration d’autres préposés à la reprographie -Capacité à maintenir une attention soutenue même en présence du bruit, de la poussière et du stress -Capacité à travailler sous pression surtout lorsque la fin d’échéancier approche -Facilité d’adaptation aux changements, car la technologie des équipements change constamment, les machines sont de plus en plus automatisées PROFESSIONS APPARENTÉES : - Commis au duplicateur - Lamineur(euse) - Opérateur(trice) de copieur laser -Opérateur(trice) de machines à imprimer et au laser -Opérateur(trice) de machines à relier et de production -Opérateur(trice) de machines à couverts -Opérateur(trice) de machines à dorer - Opérateur(trice) de machines à enveloppes -Opérateur(trice) de machines à estamper -Opérateur(trice) de machines à fabriquer les échantillons -Opérateur(trice) de machines à image statique -Opérateur(trice) de machines à imprimer -Opérateur(trice) de machines à indexer - Opérateur(trice) de duplicateur offset - Opérateur(trice) de plieuse - Photocopiste - Préposé(e) à la reprographie -Préposé(e) aux services d’imprimerie - Reprographe EMPLOYEURS POTENTIELS : -Centres de photocopies -Centres de reprographie -centres de services scolaires -Compagnies d’assurances -Gouvernements -Hôpitaux -Imprimeries commerciales - Institutions financières -Maisons d’édition EXIGENCES DES EMPLOYEURS : -Horaires de travail variables (jour/soir et parfois la nuit) -Polyvalence -Facilité d’adaptation aux changements technologiques PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2022 : Le salaire moyen en début de carrière était de : -15,85 $/heure (40 hres/sem) au sein des PME -19,24 $/heure (37,5 ou 40 hres/sem) en moyenne en tant qu'apprenti(e) opérateur(trice) et augmente à 20,07 $/heure après 3 ans en tant qu'opérateur(trice) de machines à imprimer (brocheuse, colleuse, coupeuse, encodeuse, empileuse, enveloppes, etc.) au sein des grandes entreprises de l'imprimerie -19,50 $/heure (37,5 ou 40 hres/sem) en moyenne en tant qu'opérateur(trice) de presse numérique au sein des grandes entreprises de l'imprimerie -21,73 $/heure (35 ou 38,75 hres/sem) en tant qu'opérateur(trice) de systèmes de production braille à l'Institut de réadaptation Nazareth-et-Louis-Braille -21,89 $/heure (35 hres/sem) en tant qu'opérateur(trice) en imprimerie dans les centres de services scolaires -21,89 $/heure (35 ou 38,75 hres/sem) en tant qu'opérateur(trice) de duplicateur offsert dans le les CISSS et CIUSSS (réseau de la santé) -23,06 $/heure (40 hres/sem) en moyenne en tant qu'opérateur(trice) en imprimerie au sein des universités Note : hausse de la moyenne salariale dans le secteur par rapport aux années précédentes (était de 14,60 $ en 2018; 14,35 $ en 2015 et 13,95 $ en 2013). Sources : Ministère de l’Éducation et Conseil du Trésor du Québec PERSPECTIVES D'AVENIR : Les possibilités d'emploi semblent bonnes pour les prochaines années, principalement au sein des entreprises spécialisées en impression numérique et au sein des imprimeries commerciales. LE PROGRAMME D’ÉTUDES : Le Diplôme d’études professionnelles en impression numérique D.E.P. a une durée totale de 840 heures, c’est-à-dire 8 mois offert à temps complet. Il comporte des cours en techniques de façonnage, introduction aux presses numériques, communication en</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>d'une durée de semaines à temps complet. EXIGENCES D’ADMISSION : -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme Les candidats(es) répondant aux</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>sont généralement admis. ENDROITS DE FORMATION: Les admissions sont présentement suspendues</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

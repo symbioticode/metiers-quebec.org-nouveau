@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machines à coudre industrielle, 
+conducteur de — Métiers Québec</title>
+  <meta name="description" content="Métier Machines à coudre industrielle, 
+conducteur de au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/mode/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    Mode et production textile
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/mode/">Mode et production textile</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Machines À Coudre Industrielle, 
+Conducteur De</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/mode/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur Mode et production textile
+        </a>
+        <div class="page-header__tag">Mode et production textile</div>
+        <h1 class="page-header__title">Machines À Coudre Industrielle, 
+Conducteur De</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">Mode et production textile</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’opératrice ou opérateur de machines de production de vêtements; (aussi appelé &quot;opérateur-trice de machines à coudre industrielles&quot;); tu responsable de conduire et d'opérer des machines à coudre industrielle conventionnelles ou automatiques (machines à bord invisible, machines à point chaînette double, sur jeteuses manuelles, surjeteuses automatiques, boutonnières électroniques, machines à une aiguille à point noué, machines à coudre des coutures droites, piqueuses, etc.) servant à coudre des tissus, du cuir, de la fourrure ou des matières synthétiques afin de fabriquer ou de réparer des vêtements et d'autres articles. Tu auras pour tâches de : ·Assembler des pièces de vêtements en associant des patrons et des lots de teinture; ·Utiliser des surjeteuses à une, deux ou plusieurs aiguilles, des piqueuses à plateau, des élastiqueuses ou d'autres machines à coudre pour assembler des sections de vêtements ou d'autres articles pour en faire des produits finis, selon un système de production à la pièce ou en série; ·Joindre, à l'aide de machines à coudre la fourrure, des bandes de fourrure en une peau ayant les dimensions et la forme voulues, et réunir les peaux pour former des parties ou l'esquisse de vêtements; ·Assembler, à l'aide de machines à coudre, des sections et des pièces en cuir pour fabriquer des vêtements, des sacs à main, des chaussures et d'autres articles en cuir; ·Coudre ensemble des lisières de matériel, à l'aide de machines à surfiler et à surjeter; ·Exécuter diverses opérations dans la fabrication de vêtements et d'autres articles, à l'aide de machines à faufiler, à fixer les poches, à faire les boutonnières, à coudre par soudure à thermofusion, à ourler ou d'autres machines; ·Examiner des vêtements et d'autres articles et les réparer à l'aide de machines à coudre, de machines à surjeter et d'autres machines, au cours du processus de confection; ·Régler des machines; ·Rechercher la cause des problèmes, prendre des mesures correctives et effectuer des réparations mineures; ·Nettoyer et lubrifier des machines et assurer leur entretien courant; ·Remplir et tenir à jour des rapports de production. QUALITÉS ET APTITUDESNÉCESSAIRES : -Avoir une bonne vision -Bonne perception des formes -Très bonnes habiletés manuelles car tu auras à opérer les différentes commandes de machines -Minutie, précision et souci du détail car tu auras à effectuer des opérations de production de façon minutieuse -Sens de l’observation pour être capable de déceler des anomalies sur la machine ou des défauts de fabrication -Sens des responsabilités car tu seras responsable des opérations à l’aide de ta machine -Autonomie et débrouillardise pour être en mesure de régler seul(e) les problèmes lors de l’opération d’une machine -Facilité à travailler en équipe car tu auras à travailler avec la collaboration de d’autres ouvriers et avec des techniciens de production PROFESSIONS APPARENTÉES : -Opérateur(trice) de coupeuse automatique ou informatisée -Opérateur(trice) de machine à piquer -Superviseur(e) d’équipe (après expérience) EMPLOYEURS POTENTIELS : -Entreprises de confection de vêtements -Manufacturiers de vêtements EXIGENCES DES EMPLOYEURS : -Polyvalence -Facilité d’adaptation aux changements technologiques PLACEMENT : Aucune donnée disponible SALAIRE : Selon les données de 2022 Le salaire moyen en début de carrière était de : - 14,75 $/heure (40 hres/sem) au sein des PME - 16,28 $/heure (40 hres/sem) au sein des grands manufacturiers du vêtement Sources : Emploi-Québec et conventions collectives des employés de plusieurs grands manufacturiers du vêtement. PORTRAIT DU MÉTIER : Selon Emploi-Québec; il y avait plus de 8 000 opératrices et opérateurs de machines à coudre industrielle en production de vêtements dans l'ensemble du Québec en 2022. Près de 90 % étaient des femmes. Plus de 88 % occupaient un poste à temps complet. Près de 20 % de la main-d'œuvre provient des personnes immigrantes. La répartition selon l'âge était : ·2 % avaient moins de 25 ans ·21 % avaient entre 25 et 44 ans ·31 % étaient âgés entre 45 et 54 ans ·46 % étaient âgés de 55 ans ou plus PERSPECTIVES D’AVENIR : Il est clair que l'industrie nord-américaine du vêtement a subi de nombreux changements au cours des dernières années. La forte concurrence asiatique a contribué à la fermeture de plusieurs usines, principalement celles qui fabriquaient des vêtements prêt-à-porter et de de la lingerie. Il est clair que l'industrie nord-américaine du vêtement a subi de nombreux changements au cours des dernières années. La forte concurrence asiatique a contribué à la fermeture de plusieurs usines, principalement celles qui fabriquaient des vêtements prêt-à-porter et de de la lingerie. La pandémie a accéléré le départ de petits joueurs et d'entreprises sans relève. Le manque de main-d'œuvre a nui aux entreprises qui voulaient répondre aux besoins nationaux en équipement de protection. Les changements d'habitudes de consommation et les difficultés des établissements de vente au détail pourraient aussi fragiliser plusieurs entreprises. Les changements d'habitudes de consommation et les difficultés des établissements de vente au détail pourraient aussi fragiliser plusieurs entreprises. Par contre, l'industrie du vêtement haut de gamme semble mieux se porter puisqu'elle a su résister à cette concurrence puisque les clients recherchent davantage des produits de haute qualité et sur mesure, ce que les entreprises asiatiques n'offrent pas, tout comme celle du vêtement spécialisé (uniformes de travail, combinaisons de sport, etc.). Bien que la formation professionnelle ne soit pas une exigence d'embauche, faute de candidats; lla plupart sont embauchés d'abord comme manœuvres et ensuite, ils sont formés par l'employeur pour opérer leurs machines. Toutefois, les besoins en effectif demeurent toutefois importants, surtout en raison d'une main-d'œuvre vieillissante — près de 40 % des travailleurs ont plus de 55 ans. Fait intéressant et important à mentonner, cette industrie a une grande ouverte pour l'embauche de personnes immigrantes, de personnes présentant un handicap (physique, sensoriel ou intellectuel), les personnes marginalisées ou judiciarisées, ainsi que les personnes dite expérimentées (semi- retraités, retraités et autres séniors de plus de 50 ans en recherche d'emploi). Donc, les perspectives sont plutôt moyennes pour les opérateurs(trices) de machines à coudre industrielle. En 2022, un(e) opérateur(trice) de machines à coudre industrielle ayant 10 années d'expérience au sein d'une PME gagnait en moyenne 30 700 $; et un(e) opérateur(trice) de machines à coudre industrielle ayant 10 années d'expérience au sein d'un grand manufacturier de vêtements gagnait en moyenne 37 200 $. LE PROGRAMME D’ÉTUDES : L'Attestation d’études professionnelles Opérateur(trice) de machines à coudre industrielle A.E.P. a une durée totale de 420 heures, c’est-à-dire de 3 mois à temps complet seulement. Elle comporte des cours en santé et sécurité au travail, types de machines à coudre industrielles, opérations de couture, détails de vêtements, opération d'une machine à coudre les tissus, opération d'une machine à coudre le cuir, opération d'une machine à coudre la fourrure, opération d'une machine à coudre les toiles, opération d'une machine à coudre automatisée, finition de vêtements, ainsi qu'un stage rémunéré en industrie d’une durée de 12 semaines dans entreprise de production de vêtements haut de gamme n'importe où au Québec. Pour plus de détails, consulte la réalisée par Nous.TV. Consulte également le métier de ou de (DEP en confection sur mesure et retouche du vêtement). EXIGENCES D’ADMISSION : -Avoir obtenu au moins les unités de 3e secondaire ou l’équivalent en langue d’enseignement, en langue seconde et en mathématique -OU avoir réussi le test de développement général (TDG) avec ou sans préalable spécifique ET -Avoir interrompu ses études à temps plein pendant au moins douze mois; ou avoir 18 ans au moment de l’entrée en formation -OU avoir obtenu un diplôme d’études secondaires (DES) ou un diplôme d’études professionnelles (DEP) ou leur équivalent -OU satisfaire aux normes d’admissibilité de la Mesure de la formation de la main-d’œuvre d’Emploi-Québec STATISTIQUES D’ADMISSION : Aucun contingentement à ce programme ENDROIT DE FORMATION : - (section foramtion continue), Rivière-du-Loup (C.S.S.Rivière-du-Loup-Kamouraska, région du Bas-St-Laurent) formation offerte en centre de formation et en entreprise - (centre de formation continue de la C.S.S.Région-de-Sherbrooke), Sherbrooke (région de l'Estrie), formation offerte au CFP 24-Juin et en entreprise - (centre de formation continue et des services aux entreprises), Saguenay (région du Saguenay-Lac-St-Jean), formation offerte au CFP de Jonquiere et en entreprise - (C.S.S. des Bois-Francs), Drummondville (région du Centre-du-Québec), formation offerte au CFP Paul-Rousseau et entreprise - , Trois-Rivières (région de la Mauricie) formation offerte au CFP Qualitech et en entreprise - , Saint-Césaire (région Montérégie) formatinoffete à l'École Paul-Germain- Ostiguy à Saint-Césaire (MRC de Rouville) et en entreprise - , , Laval (C.S.S. de Laval, région de Laval) regarde la du programme.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>
