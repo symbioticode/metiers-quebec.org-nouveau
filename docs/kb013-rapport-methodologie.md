@@ -4,6 +4,18 @@
 **Statut** : Phase 1 close. Ce document clôt le Projet #1 et pointe vers
 la Phase 2 (System C), qui démarre comme projet distinct.
 
+**Type de document** : Mixte
+
+### Méthode D/L/C
+
+**État proposé (auteur)** : corroborée
+**État confirmé (relecture indépendante)** : en attente
+
+### Question centrale (Contenu(Site A) = Contenu(Site B), sans perte)
+
+**État proposé (auteur)** : indéterminée
+**État confirmé (relecture indépendante)** : en attente
+
 ---
 
 ## Résumé
@@ -187,3 +199,9 @@ lit rien de ce que Phase 1 a produit comme données.
 Ces questions n'ont pas de déclencheur de réouverture fixé — Phase 1
 reste dans l'état où elle est ici, comme référence méthodologique, pas
 comme projet actif.
+
+**Risque résiduel non couvert par ce protocole** : la méthode D/L/C n'a été
+validée que sur deux bugs structurellement similaires (SECTION_MAP,
+graph_bridge.py) issus du même projet — sa généralité sur des pipelines de
+nature différente (pas de collision de préfixe ou de mapping figé) reste à
+observer avant de la traiter comme acquise au-delà de ce cas d'étude.

@@ -1,5 +1,7 @@
 # kb010 — Résumé du projet, de la genèse à la fin du Jour 3
 
+**Type de document** : KB
+
 ## Genèse
 
 Andrei écrivait un article de blog. Il cherche comment on appelait les

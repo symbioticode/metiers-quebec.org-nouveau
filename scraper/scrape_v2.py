@@ -98,6 +98,8 @@ class SimpleFetcher:
 class ProfessionParserV2(HTMLParser):
     """Parseur amélioré pour les pages de métiers FrontPage."""
 
+    SECTION_MARKER = "\x01"
+
     def __init__(self):
         super().__init__()
         self.text_parts = []
@@ -117,6 +119,16 @@ class ProfessionParserV2(HTMLParser):
         self.in_td = False
         self.bold_text = []
         self.in_bold = False
+        # Détection générique des titres de section : le site source
+        # (export Word/FrontPage) marque chaque titre de section par la
+        # convention typographique gras+souligné (<b><u>TITRE</u></b>,
+        # ordre des balises variable), pas par une balise sémantique.
+        # cf. docs/audit-claude-code-web-structure-site.md §2.1.
+        self.bold_depth = 0
+        self.underline_depth = 0
+        self.in_title = False
+        self.title_buffer = []
+        self.section_titles = []
 
     def handle_starttag(self, tag, attrs):
         self.tag_stack.append(tag)
@@ -141,8 +153,16 @@ class ProfessionParserV2(HTMLParser):
                 self.link_text = ""
         elif tag in ("b", "strong"):
             self.in_bold = True
+            self.bold_depth += 1
+            self._update_title_state()
+        elif tag == "u":
+            self.underline_depth += 1
+            self._update_title_state()
         elif tag == "br":
-            self.text_parts.append("\n")
+            if self.in_title:
+                self.title_buffer.append(" ")
+            else:
+                self.text_parts.append("\n")
         elif tag == "p":
             self.text_parts.append("\n")
         elif tag == "li":
@@ -175,9 +195,43 @@ class ProfessionParserV2(HTMLParser):
                 self.links.append({"href": href, "text": text})
         elif tag in ("b", "strong"):
             self.in_bold = False
+            self.bold_depth = max(0, self.bold_depth - 1)
+            self._update_title_state()
+        elif tag == "u":
+            self.underline_depth = max(0, self.underline_depth - 1)
+            self._update_title_state()
 
         if self.tag_stack and self.tag_stack[-1] == tag:
             self.tag_stack.pop()
+
+    def _update_title_state(self):
+        """Bascule l'état titre selon le nesting gras+souligné courant."""
+        now_in_title = self.bold_depth > 0 and self.underline_depth > 0
+        if now_in_title and not self.in_title:
+            self.in_title = True
+            self.title_buffer = []
+        elif not now_in_title and self.in_title:
+            self.in_title = False
+            title = " ".join("".join(self.title_buffer).split())
+            self.title_buffer = []
+            if self._looks_like_section_title(title):
+                self.section_titles.append(title)
+                self.text_parts.append(self.SECTION_MARKER)
+
+    @staticmethod
+    def _looks_like_section_title(title):
+        """Filtre l'emphase gras+souligné ordinaire des vrais titres.
+
+        Les titres réels du site sont systématiquement en capitales
+        (cf. audit CCW §2.2/§2.3) ; le texte en emphase normale (dates,
+        renvois) contient des minuscules et est écarté ici.
+        """
+        letters = [c for c in title if c.isalpha()]
+        if not letters:
+            return False
+        if len(title) < 3 or len(title) > 120:
+            return False
+        return all(c.isupper() for c in letters)
 
     def handle_data(self, data):
         if self.in_skip > 0:
@@ -187,61 +241,42 @@ class ProfessionParserV2(HTMLParser):
             self.link_text += data
             return
 
+        if self.in_title:
+            self.title_buffer.append(data)
+            return
+
         text = data.strip()
         if text:
             self.text_parts.append(data)
 
     def get_full_text(self):
-        return "\n".join("".join(self.text_parts).split())
+        raw = "".join(self.text_parts).replace(self.SECTION_MARKER, "")
+        return "\n".join(raw.split())
 
     def parse_sections(self):
-        """Parse le texte en sections structurées."""
-        full_text = self.get_full_text()
+        """Parse le texte en sections structurées.
 
-        # Patterns d'en-têtes de sections
-        section_patterns = [
-            r"(TÂCHES\s+ET\s+RESPONSABILITÉS)",
-            r"(MILIEUX?\s+DE\s+TRAVAIL)",
-            r"(QUALITÉS?\s+ET\s+APTITUDES?\s+(?:RE)?QUISES?)",
-            r"(EXIGENCES?\s+DU\s+MARCHÉ\s+DU\s+TRAVAIL)",
-            r"(PROGRAMMES?\s+D['']ÉTUDES?\s+REQUIS?)",
-            r"(EXIGENCES?\s+D['']ADMISSION)",
-            r"(DONNÉES?\s+SALARIALES?)",
-            r"(STATISTIQUES?\S*\s+DE\s+PLACEMENT)",
-            r"(LIENS?\s+RECOMMANDÉS?)",
-            r"(VOIR\s+AUSSI)",
-            r"(DESCRIPTION)",
-            r"(PERSPECTIVES?\s+D['']EMPLOI)",
-            r"(FORMATION\s+REQUISE?)",
-            r"(NIVEAU\s+D['']ÉTUDES?)",
-            r"(EMPLOIS?\s+ET\s+DEMANDES?\s+DE\s+MAIN-D['']ŒUVRE)",
-        ]
+        Détection générique : les titres de section réels sont repérés
+        pendant le parsing HTML par la convention gras+souligné
+        (`_update_title_state`), pas par une liste fermée de regex sur le
+        texte à plat — une liste fermée fusionne silencieusement tout
+        titre réel qu'elle ne connaît pas dans la section précédente
+        (cf. kb024, docs/audit-claude-code-web-structure-site.md §5.1).
+        """
+        raw = "".join(self.text_parts)
+        chunks = raw.split(self.SECTION_MARKER)
 
         sections = {}
-        current_section = "intro"
+        intro = "\n".join(chunks[0].split())
+        if intro:
+            sections["intro"] = [intro]
 
-        # Chercher les sections dans le texte
-        parts = re.split(r"(" + "|".join(section_patterns) + r")", full_text, flags=re.IGNORECASE)
-
-        for part in parts:
-            if part is None:
+        for title, chunk in zip(self.section_titles, chunks[1:]):
+            body = "\n".join(chunk.split())
+            if not body:
                 continue
-            part = part.strip()
-            if not part:
-                continue
-
-            # Vérifier si c'est un en-tête de section
-            matched = False
-            for pattern in section_patterns:
-                if re.match(pattern, part, re.IGNORECASE):
-                    current_section = part.upper().strip()
-                    sections[current_section] = []
-                    matched = True
-                    break
-
-            if not matched and current_section:
-                if part and len(part) > 3:
-                    sections.setdefault(current_section, []).append(part)
+            key = title.upper().strip()
+            sections.setdefault(key, []).append(body)
 
         return sections
 
@@ -266,8 +301,61 @@ class ProfessionParserV2(HTMLParser):
         return relevant
 
 
+class SimpleLinkExtractor(HTMLParser):
+    """Extrait les liens <a href>texte</a> en tolérant les balises
+    imbriquées (ex. <span> autour du texte) — un simple regex
+    `<a href="...">([^<]+)</a>` ne matche pas ce cas et perd le lien
+    (cf. kb024 : ~30% de liens perdus sur au moins une page du site,
+    docs/audit-claude-code-web-structure-site.md §5.2 S2)."""
+
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self.in_link = False
+        self.link_href = ""
+        self.link_text = ""
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            attrs_dict = dict(attrs)
+            href = attrs_dict.get("href", "")
+            if href and not href.startswith("#") and not href.startswith("javascript"):
+                self.in_link = True
+                self.link_href = href
+                self.link_text = ""
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.in_link:
+            self.in_link = False
+            text = self.link_text.strip()
+            if text:
+                self.links.append((self.link_href, text))
+
+    def handle_data(self, data):
+        if self.in_link:
+            self.link_text += data
+
+
+def extract_links_tolerant(html):
+    """Retourne [(href, texte)] pour tous les <a> de `html`, balises
+    imbriquées comprises."""
+    parser = SimpleLinkExtractor()
+    try:
+        parser.feed(html)
+    except Exception:
+        pass
+    return parser.links
+
+
 def scrape_alphabetical_index(fetcher):
-    """Récupère toutes les URLs de métiers depuis les index alphabétiques."""
+    """Récupère toutes les URLs de métiers depuis les index alphabétiques.
+
+    Plusieurs appellations distinctes de l'index peuvent pointer vers la
+    même URL (page groupée, ex. `batiment/occupations.html` : « Aide
+    briqueteur-maçon », « Aide carreleur », « Aide charpentier »... y
+    pointent toutes). On garde donc la LISTE des appellations par URL
+    plutôt que la première seule — cf. kb024 / tâche 3 du brief.
+    """
     letters = [
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "jk",
         "l", "m", "n", "o", "p", "qr", "s", "t", "uv", "wxyz"
@@ -282,9 +370,8 @@ def scrape_alphabetical_index(fetcher):
         if not html:
             continue
 
-        # Parser les liens directement
-        import re
-        links = re.findall(r'<a\s+href="([^"]+)"[^>]*>([^<]+)</a>', html, re.IGNORECASE)
+        # Parser les liens en tolérant les balises imbriquées (<span> etc.)
+        links = extract_links_tolerant(html)
 
         count = 0
         for href, text in links:
@@ -298,13 +385,15 @@ def scrape_alphabetical_index(fetcher):
                 # Normaliser l'URL
                 if not href.startswith("/"):
                     href = f"/{href}"
-                if href not in all_professions:
-                    all_professions[href] = text
+                names = all_professions.setdefault(href, [])
+                if text not in names:
+                    names.append(text)
                     count += 1
 
         print(f"  {letter.upper()}: {count} métiers")
 
-    print(f"\n  Total : {len(all_professions)} métiers uniques\n")
+    total_names = sum(len(v) for v in all_professions.values())
+    print(f"\n  Total : {total_names} appellations sur {len(all_professions)} URLs uniques\n")
     return all_professions
 
 
@@ -313,19 +402,26 @@ def scrape_sectors(fetcher):
     # D'abord, récupérer la liste des secteurs depuis la page d'accueil
     print("=== Étape 2 : Secteurs ===")
 
-    html = fetcher.fetch("/")
+    # Les secteurs et leur URL réelle sont dans le menu déroulant JS de
+    # accueil.html (frame de contenu), pas dans la page d'accueil/frameset.
+    html = fetcher.fetch("/accueil.html")
     if not html:
-        print("  [ERREUR] Impossible de récupérer la page d'accueil")
+        print("  [ERREUR] Impossible de récupérer accueil.html")
         return {}
 
-    # Extraire les secteurs du JavaScript
-    sector_match = re.search(r'LibelleOption\s*=\s*new\s+Array\((.*?)\);', html, re.DOTALL)
-    url_match = re.search(r'CibleURL\s*=\s*new\s+Array\((.*?)\);', html, re.DOTALL)
+    # Extraire les secteurs du JavaScript. Le site utilise
+    # `new CreeTableau(...)`, pas `new Array(...)` — un regex trop
+    # spécifique à "Array" ne matchait jamais et faisait silencieusement
+    # tomber sur le fallback figé ci-dessous (cf. tâche 4 du brief).
+    sector_match = re.search(r'LibelleOption\s*=\s*new\s+\w+\((.*?)\);', html, re.DOTALL)
+    url_match = re.search(r'CibleURL\s*=\s*new\s+\w+\((.*?)\);', html, re.DOTALL)
 
     if not sector_match or not url_match:
         print("  [ERREUR] Impossible de trouver les secteurs dans le JavaScript")
-        # Fallback avec les secteurs connus
-        sectors = {
+        # Fallback avec les secteurs connus. Pas d'URL réelle disponible
+        # ici (elle vient normalement du JS) : le pattern deviné
+        # /{slug}/{slug}.htm(l) ci-dessous sera utilisé.
+        fallback_names = {
             "administration": "Administration, secrétariat et informatique",
             "aerospatial": "Aérospatial",
             "agriculture": "Agriculture, agroalimentaire et pêcheries",
@@ -338,6 +434,7 @@ def scrape_sectors(fetcher):
             "enseignement": "Éducation, enseignement et services de garde",
             "electrotechnique": "Électrotechnique",
             "motorises": "Entretien d'équipements motorisés",
+            "etudes_multi": "Études multidisciplinaires",
             "foresterie": "Foresterie et papier",
             "metallurgie": "Métallurgie",
             "mode": "Mode et production textile",
@@ -349,27 +446,52 @@ def scrape_sectors(fetcher):
             "sociaux": "Services sociaux et juridiques",
             "transport": "Transport",
         }
+        sectors = {slug: {"nom": nom, "url": None} for slug, nom in fallback_names.items()}
     else:
         # Parser les arrays JavaScript
         labels_raw = sector_match.group(1)
         urls_raw = url_match.group(1)
 
-        labels = re.findall(r'"([^"]+)"', labels_raw)
-        urls = re.findall(r'"([^"]+)"', urls_raw)
+        # Le 1er élément de CibleURL est une chaîne vide ("" — placeholder
+        # du menu déroulant, "Sélectionne un secteur" n'a pas de cible).
+        # `[^"]+` (≥1 char obligatoire) ne peut pas matcher un couple de
+        # guillemets adjacents vide : il "glisse" d'un guillemet et
+        # capture ensuite le séparateur `,\r\n` entre deux entrées au
+        # lieu de l'URL, décalant TOUTES les paires label/URL suivantes.
+        # `[^"]*` (0+) capture correctement la chaîne vide et garde
+        # `labels`/`urls` alignés 1:1 sur le même index.
+        labels = re.findall(r'"([^"]*)"', labels_raw)
+        urls = re.findall(r'"([^"]*)"', urls_raw)
 
         sectors = {}
         for label, url in zip(labels, urls):
-            slug = url.strip("/").split("/")[0]
-            sectors[slug] = label
-            print(f"  Secteur trouvé : {label} ({slug})")
+            if not label or not url:
+                continue
+            # `url` est relative à accueil.html, ex. "../batiment/batiment.htm"
+            # ou "../autres-pages/multi.html" — ignorer les segments ".."/"."
+            # pour isoler le vrai premier segment de chemin (le slug).
+            parts = [p for p in url.strip("/").split("/") if p not in ("..", ".")]
+            slug = parts[0] if parts else ""
+            if not slug:
+                continue
+            sectors[slug] = {"nom": label, "url": url}
+            print(f"  Secteur trouvé : {label} ({slug}) -> {url}")
 
     print(f"\n  {len(sectors)} secteurs trouvés\n")
 
     # Récupérer les métiers de chaque secteur
     sector_data = {}
-    for slug, name in sectors.items():
-        # Essayer différents patterns d'URL
-        possible_urls = [
+    for slug, info in sectors.items():
+        name = info["nom"]
+        # Priorité à l'URL réelle capturée dans le menu JS du site
+        # (ex. « Études multidisciplinaires » → /autres-pages/multi.html,
+        # qui ne suit pas le patron /{slug}/{slug}.htm(l) — cf. tâche 4
+        # du brief / kb024 S1). Le pattern deviné reste un filet de
+        # secours pour le cas fallback (JS introuvable).
+        possible_urls = []
+        if info.get("url"):
+            possible_urls.append(info["url"])
+        possible_urls += [
             f"/{slug}/{slug}.htm",
             f"/{slug}/{slug}.html",
         ]
@@ -384,8 +506,8 @@ def scrape_sectors(fetcher):
             print(f"  {name}: SKIP (pas de page)")
             continue
 
-        # Extraire les liens vers les métiers
-        links = re.findall(r'<a\s+href="([^"]+)"[^>]*>([^<]+)</a>', html, re.IGNORECASE)
+        # Extraire les liens vers les métiers (tolérant aux balises imbriquées)
+        links = extract_links_tolerant(html)
         professions = []
         for href, text in links:
             text = text.strip()
@@ -411,20 +533,29 @@ def scrape_sectors(fetcher):
 
 
 def scrape_professions(fetcher, professions_dict, max_count=None):
-    """Scrape les pages de métiers."""
+    """Scrape les pages de métiers.
+
+    `professions_dict` associe une URL à la LISTE des appellations qui y
+    pointent (une page groupée comme `batiment/occupations.html` peut
+    porter plusieurs appellations distinctes). La page n'est fetchée
+    qu'une fois par URL, mais produit une fiche par appellation — cf.
+    kb024 / tâche 3 du brief (avant ce correctif, une seule appellation
+    écrasait les autres).
+    """
     print("=== Étape 3 : Détails des métiers ===")
 
     results = []
     count = 0
+    fetched = 0
     errors = 0
 
-    for url, nom in professions_dict.items():
-        if max_count and count >= max_count:
+    for url, noms in professions_dict.items():
+        if max_count and fetched >= max_count:
             break
 
-        count += 1
-        if count % 100 == 0:
-            print(f"  Progression : {count}/{len(professions_dict)}")
+        fetched += 1
+        if fetched % 100 == 0:
+            print(f"  Progression : {fetched}/{len(professions_dict)}")
 
         html = fetcher.fetch(url)
         if not html:
@@ -454,20 +585,32 @@ def scrape_professions(fetcher, professions_dict, max_count=None):
         parts = url.strip("/").split("/")
         sector = parts[0] if len(parts) >= 2 else "inconnu"
 
+        base_slug = url.split("/")[-1].replace(".htm", "").replace(".html", "")
+
+        # Le contenu (sections/salaires/liens) est parsé une seule fois par
+        # URL et est identique quel que soit le nom d'appellation utilisé
+        # pour y accéder — dupliquer une fiche par appellation dupliquerait
+        # aussi du contenu potentiellement volumineux (ex. sections de
+        # plusieurs centaines de Ko) sans aucune information nouvelle.
+        # Une seule fiche par URL porte donc la LISTE des appellations
+        # (`noms`) ; `nom` reste le premier nom pour compatibilité avec le
+        # code aval qui ne connaît pas encore `noms`.
+        count += 1
         data = {
-            "nom": nom,
-            "slug": url.split("/")[-1].replace(".htm", "").replace(".html", ""),
+            "nom": noms[0],
+            "noms": noms,
+            "slug": base_slug,
             "url_source": url,
             "secteur": sector,
             "titre": title,
             "sections": sections,
             "salaires": salaries,
             "liens": links[:5],  # Max 5 liens
+            "page_groupee": len(noms) > 1,
         }
-
         results.append(data)
 
-    print(f"\n  Terminé : {len(results)} métiers ({errors} erreurs)\n")
+    print(f"\n  Terminé : {count} fiches sur {fetched} pages ({errors} erreurs)\n")
     return results
 
 

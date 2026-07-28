@@ -1,0 +1,25 @@
+{
+  "cnp": "12200",
+  "nom_metier": "Techniciens/techniciennes en comptabilité et teneurs/teneuses de livres",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "imt_en_ligne": {
+      "url": "https://www.quebec.ca/emploi/informer-metier-profession/explorer-metiers-professions/12200-techniciens-techniciennes-en-comptabilite-et-teneurs-teneuses-de-livres",
+      "texte_brut": "Techniciens / techniciennes en comptabilité et teneurs / teneuses de livres\n\nTenir des registres financiers.\nOrganiser, tenir à jour et faire la balance de divers comptes.\nTenir des grands livres généraux, reporter des écritures au journal et faire concorder des comptes.\nPréparer les balances de vérification des comptes et des états financiers.\nFaire des calculs et préparer des chèques de paye et des factures.\nRemplir et soumettre des formulaires et des documents gouvernementaux (versement d'impôts, indemnisation des accidents du travail, prestations de retraite, etc.).\nPréparer des déclarations de revenus et fournir des services de tenue de livres pour des particuliers(-ière)s.\nPréparer des rapports statistiques, financiers et comptables.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "guichet_emplois": {
+      "url": "https://www.guichetemplois.gc.ca/rapportmarche/profession/24500/QC",
+      "texte_brut": "Tâches et fonctions\nVoici les tâches et activités principales que les Techniciens/techniciennes en comptabilité et teneurs/teneuses de livres doivent effectuer, et certaines des exigences physiques que celles-ci impliquent :\n\ntenir des registres financiers et établir, tenir à jour et faire la balance de divers comptes en utilisant des systèmes de tenue de livres manuels ou informatisés;\nreporter des écritures au journal et faire concorder des comptes, préparer les balances de vérification des comptes, tenir des grands livres généraux et préparer des états financiers;\nfaire des calculs et préparer des chèques de paye, des factures de services d'utilité publique, de taxes et d'autres factures;\ncompléter et soumettre des formulaires de versement d'impôts, d'indemnisation des accidents du travail, de prestations de retraite et d'autres documents gouvernementaux;\npréparer des déclarations de revenus et effectuer d'autres services de tenue de livres pour des particuliers;\npréparer d'autres rapports statistiques, financiers et comptables.",
+      "extraction_reussie": true,
+      "notes": ""
+    },
+    "noc_oasis": {
+      "url": "https://www23.statcan.gc.ca/imdb/p3VD_f.pl?Function=getVD&TVD=1322554&CVD=1322870&CPV=12200&CST=01052021&CLV=5&MLV=5",
+      "texte_brut": "Fonctions principales\nCe groupe exerce une partie ou l'ensemble des fonctions suivantes :\n\ntenir des registres financiers et établir, tenir à jour et faire la balance de divers comptes en utilisant des systèmes de tenue de livres manuels ou informatisés;\nreporter des écritures au journal et faire concorder des comptes, préparer les balances de vérification des comptes, tenir des grands livres généraux et préparer des états financiers;\nfaire des calculs et préparer des chèques de paye, des factures de services d'utilité publique, de taxes et d'autres factures;\ncompléter et soumettre des formulaires de versement d'impôts, d'indemnisation des accidents du travail, de prestations de retraite et d'autres documents gouvernementaux;\npréparer des déclarations de revenus et effectuer d'autres services de tenue de livres pour des particuliers;\npréparer d'autres rapports statistiques, financiers et comptables.",
+      "extraction_reussie": true,
+      "notes": "Page StatCan NOC 2021 utilisée car noc.esdc.gc.ca bloquait les requêtes webfetch"
+    }
+  }
+}

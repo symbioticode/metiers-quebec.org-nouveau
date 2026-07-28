@@ -1,0 +1,510 @@
+{
+  "total_entries": 420,
+  "source_file": "data/professions_details.json",
+  "method": "reproduction KB002 — non-empty content per target section / total entries",
+  "coverage": {
+    "description": {
+      "kb002_baseline_pct": 31.0,
+      "current_count": 130,
+      "current_pct": 30.95,
+      "delta_pts": -0.05,
+      "matched_raw_keys": {
+        "'DESCRIPTION'": 128,
+        "'description'": 2
+      }
+    },
+    "taches": {
+      "kb002_baseline_pct": 92.0,
+      "current_count": 393,
+      "current_pct": 93.57,
+      "delta_pts": 1.57,
+      "matched_raw_keys": {
+        "'TÂCHES\\nET\\nRESPONSABILITÉS'": 386,
+        "'taches'": 7
+      }
+    },
+    "milieu": {
+      "kb002_baseline_pct": 60.0,
+      "current_count": 253,
+      "current_pct": 60.24,
+      "delta_pts": 0.24,
+      "matched_raw_keys": {
+        "'MILIEU\\nDE\\nTRAVAIL'": 244,
+        "'MILIEUX\\nDE\\nTRAVAIL'": 44,
+        "'milieu'": 4
+      }
+    },
+    "qualites": {
+      "kb002_baseline_pct": 1.0,
+      "current_count": 11,
+      "current_pct": 2.62,
+      "delta_pts": 1.62,
+      "matched_raw_keys": {
+        "'QUALITÉS\\nET\\nAPTITUDES\\nREQUISES'": 4,
+        "'qualites'": 7
+      }
+    },
+    "marche": {
+      "kb002_baseline_pct": 9.0,
+      "current_count": 41,
+      "current_pct": 9.76,
+      "delta_pts": 0.76,
+      "matched_raw_keys": {
+        "'EXIGENCES\\nDU\\nMARCHÉ\\nDU\\nTRAVAIL'": 36,
+        "'marche'": 5
+      }
+    },
+    "formation": {
+      "kb002_baseline_pct": 6.0,
+      "current_count": 24,
+      "current_pct": 5.71,
+      "delta_pts": -0.29,
+      "matched_raw_keys": {
+        "'FORMATION\\nREQUIS'": 2,
+        "'FORMATION\\nREQUISE'": 15,
+        "'formation'": 7
+      }
+    },
+    "admission": {
+      "kb002_baseline_pct": 45.0,
+      "current_count": 167,
+      "current_pct": 39.76,
+      "delta_pts": -5.24,
+      "matched_raw_keys": {
+        "\"EXIGENCE\\nD'ADMISSION\"": 25,
+        "\"EXIGENCES\\nD'ADMISSION\"": 151,
+        "'admission'": 7
+      }
+    },
+    "salaires": {
+      "kb002_baseline_pct": 4.0,
+      "current_count": 21,
+      "current_pct": 5.0,
+      "delta_pts": 1.0,
+      "matched_raw_keys": {
+        "'DONNÉE\\nSALARIALE'": 1,
+        "'DONNÉES\\nSALARIALES'": 16,
+        "'salaires'": 4
+      }
+    },
+    "placement": {
+      "kb002_baseline_pct": 0.2,
+      "current_count": 8,
+      "current_pct": 1.9,
+      "delta_pts": 1.7,
+      "matched_raw_keys": {
+        "'STATISTIQUES\\nDE\\nPLACEMENT'": 1,
+        "'placement'": 7
+      }
+    },
+    "perspectives": {
+      "kb002_baseline_pct": 39.0,
+      "current_count": 161,
+      "current_pct": 38.33,
+      "delta_pts": -0.67,
+      "matched_raw_keys": {
+        "\"PERSPECTIVES\\nD'EMPLOI\"": 154,
+        "'perspectives'": 7
+      }
+    }
+  },
+  "orphan_raw_keys": {
+    "'LIENS\\nRECOMMANDÉS'": 383,
+    "'VOIR\\nAUSSI'": 309,
+    "'EXIGENCE\\nDU\\nMARCHÉ\\nDU\\nTRAVAIL'": 19,
+    "\"NIVEAU\\nD'ÉTUDES\"": 11,
+    "'DONNÉES\\nSALARIALE'": 1
+  },
+  "within_profession_key_collisions": {
+    "method": "professions where 2+ distinct raw keys map to the same target section — gen_profession() keeps only the first match, silently drops the rest",
+    "by_section": {
+      "milieu": {
+        "count": 36,
+        "examples": [
+          {
+            "slug": "int_sportsl",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_hygiene",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_administration",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "administration1",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "relationniste",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "educateur_spec",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "psychologue",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "comptabilite",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "securite",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "administrateur",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "animateur_tele",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "oper_arpentage",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "comedien",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "artistel",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_electroniquel",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "bioinfol",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "cons_amenagement",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "anim_culturell",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "journaliste",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_genie_civil",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "cons_consommationl",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "medecin",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_delinquance",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "restaurationl",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "ing_industriel",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "tech_serv_social",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "kinesiologue",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "mecanicien_machineries",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "marketing",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "infirmier",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "infirmier_auxiliaire",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "criminologue",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "sociologuel",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "therapeute_sport",
+            "raw_keys": [
+              "MILIEUX\nDE\nTRAVAIL",
+              "MILIEU\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "serveur",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          },
+          {
+            "slug": "educateur_garderie",
+            "raw_keys": [
+              "MILIEU\nDE\nTRAVAIL",
+              "MILIEUX\nDE\nTRAVAIL"
+            ]
+          }
+        ]
+      },
+      "admission": {
+        "count": 16,
+        "examples": [
+          {
+            "slug": "policier",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "administration1",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "oper_aliments",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "prof_anglais",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "comedien",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "mecanicien_fixes",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "oper_mach_ind",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "poseur_revetements",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "poseur_syst_int",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "trav_social",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "psychoeduc",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "plombier",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "prof_musique",
+            "raw_keys": [
+              "EXIGENCES\nD'ADMISSION",
+              "EXIGENCE\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "platrier",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "ergotherapeute",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          },
+          {
+            "slug": "physiotherapeute",
+            "raw_keys": [
+              "EXIGENCE\nD'ADMISSION",
+              "EXIGENCES\nD'ADMISSION"
+            ]
+          }
+        ]
+      },
+      "salaires": {
+        "count": 1,
+        "examples": [
+          {
+            "slug": "danseurl",
+            "raw_keys": [
+              "DONNÉES\nSALARIALES",
+              "DONNÉES\nSALARIALE"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "unused_dead_mapping_note": "scraper/generate.py SECTION_MAP (line 61) + normalize_section() (line 78) populate p['sn'] in Generator.load() but p['sn'] is never read afterward; gen_profession() (line 219) builds its own separate section_key_map (line 227) which is what actually determines rendered output. SECTION_MAP covers 'liens' and 'niveau', section_key_map does not."
+}

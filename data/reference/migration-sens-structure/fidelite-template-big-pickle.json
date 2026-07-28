@@ -1,0 +1,830 @@
+{
+  "n_total": 420,
+  "coverage_raw": {
+    "description": 139,
+    "milieu": 256,
+    "admission": 167,
+    "taches": 393,
+    "perspectives": 161,
+    "marche": 41,
+    "salaires": 21,
+    "formation": 24,
+    "qualites": 11,
+    "placement": 8
+  },
+  "coverage_content": {
+    "description": 139,
+    "milieu": 253,
+    "admission": 167,
+    "taches": 393,
+    "perspectives": 161,
+    "marche": 41,
+    "salaires": 21,
+    "formation": 24,
+    "qualites": 11,
+    "placement": 8
+  },
+  "coverage_raw_pct": {
+    "description": 33.1,
+    "milieu": 61.0,
+    "admission": 39.8,
+    "taches": 93.6,
+    "perspectives": 38.3,
+    "marche": 9.8,
+    "salaires": 5.0,
+    "formation": 5.7,
+    "qualites": 2.6,
+    "placement": 1.9
+  },
+  "coverage_content_pct": {
+    "description": 33.1,
+    "milieu": 60.2,
+    "admission": 39.8,
+    "taches": 93.6,
+    "perspectives": 38.3,
+    "marche": 9.8,
+    "salaires": 5.0,
+    "formation": 5.7,
+    "qualites": 2.6,
+    "placement": 1.9
+  },
+  "matched_actual_key_distribution": {
+    "description": {
+      "DESCRIPTION": 128,
+      "intro(fallback-regex)": 9,
+      "description": 2
+    },
+    "milieu": {
+      "MILIEU\nDE\nTRAVAIL": 244,
+      "MILIEUX\nDE\nTRAVAIL": 8,
+      "milieu": 4
+    },
+    "admission": {
+      "EXIGENCES\nD'ADMISSION": 151,
+      "EXIGENCE\nD'ADMISSION": 9,
+      "admission": 7
+    },
+    "taches": {
+      "TÂCHES\nET\nRESPONSABILITÉS": 386,
+      "taches": 7
+    },
+    "perspectives": {
+      "PERSPECTIVES\nD'EMPLOI": 154,
+      "perspectives": 7
+    },
+    "marche": {
+      "EXIGENCES\nDU\nMARCHÉ\nDU\nTRAVAIL": 36,
+      "marche": 5
+    },
+    "salaires": {
+      "DONNÉES\nSALARIALES": 16,
+      "DONNÉE\nSALARIALE": 1,
+      "salaires": 4
+    },
+    "formation": {
+      "FORMATION\nREQUISE": 15,
+      "FORMATION\nREQUIS": 2,
+      "formation": 7
+    },
+    "qualites": {
+      "QUALITÉS\nET\nAPTITUDES\nREQUISES": 4,
+      "qualites": 7
+    },
+    "placement": {
+      "STATISTIQUES\nDE\nPLACEMENT": 1,
+      "placement": 7
+    }
+  },
+  "orphan_keys": {
+    "LIENS\nRECOMMANDÉS": 383,
+    "VOIR\nAUSSI": 309,
+    "MILIEUX\nDE\nTRAVAIL": 36,
+    "EXIGENCE\nD'ADMISSION": 16,
+    "EXIGENCE\nDU\nMARCHÉ\nDU\nTRAVAIL": 19,
+    "NIVEAU\nD'ÉTUDES": 11,
+    "DONNÉES\nSALARIALE": 1
+  },
+  "all_raw_keys_global": {
+    "intro": 413,
+    "DESCRIPTION": 128,
+    "EXIGENCES\nD'ADMISSION": 151,
+    "MILIEU\nDE\nTRAVAIL": 244,
+    "LIENS\nRECOMMANDÉS": 383,
+    "TÂCHES\nET\nRESPONSABILITÉS": 386,
+    "PERSPECTIVES\nD'EMPLOI": 154,
+    "VOIR\nAUSSI": 309,
+    "MILIEUX\nDE\nTRAVAIL": 44,
+    "EXIGENCES\nDU\nMARCHÉ\nDU\nTRAVAIL": 36,
+    "EXIGENCE\nD'ADMISSION": 25,
+    "DONNÉES\nSALARIALES": 16,
+    "FORMATION\nREQUISE": 15,
+    "QUALITÉS\nET\nAPTITUDES\nREQUISES": 4,
+    "EXIGENCE\nDU\nMARCHÉ\nDU\nTRAVAIL": 19,
+    "NIVEAU\nD'ÉTUDES": 11,
+    "FORMATION\nREQUIS": 2,
+    "DONNÉES\nSALARIALE": 1,
+    "STATISTIQUES\nDE\nPLACEMENT": 1,
+    "DONNÉE\nSALARIALE": 1,
+    "formation": 7,
+    "taches": 7,
+    "qualites": 7,
+    "admission": 7,
+    "placement": 7,
+    "perspectives": 7,
+    "salaires": 4,
+    "milieu": 4,
+    "marche": 5,
+    "description": 2
+  },
+  "collisions": [
+    {
+      "slug": "int_sportsl",
+      "nom": "Activité physique, conseiller en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 20283,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 5990
+      }
+    },
+    {
+      "slug": "policier",
+      "nom": "Accidents de la route, enquêteur aux",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 3193,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 9238
+      }
+    },
+    {
+      "slug": "tech_hygiene",
+      "nom": "Accidents du travail, enquêteur aux",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 453,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 645
+      }
+    },
+    {
+      "slug": "tech_administration",
+      "nom": "Administration, agent en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 6933,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 3918
+      }
+    },
+    {
+      "slug": "administration1",
+      "nom": "Admission, préposé à l'",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 26,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 10062
+      }
+    },
+    {
+      "slug": "administration1",
+      "nom": "Admission, préposé à l'",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 304,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 1297
+      }
+    },
+    {
+      "slug": "relationniste",
+      "nom": "Affaires \r\npubliques, conseiller en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 407,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 21480
+      }
+    },
+    {
+      "slug": "educateur_spec",
+      "nom": "Agent(e) d’intervention",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 2521,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1661
+      }
+    },
+    {
+      "slug": "psychologue",
+      "nom": "psychologue",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 2563,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 22984
+      }
+    },
+    {
+      "slug": "comptabilite",
+      "nom": "Agent de recouvrement",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 3392,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 4674
+      }
+    },
+    {
+      "slug": "securite",
+      "nom": "Agent de sûreté \r\naéroportuaire",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 9176,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 3277
+      }
+    },
+    {
+      "slug": "oper_aliments",
+      "nom": "Aliments, opérateur de machines en \r\ntransformation des",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 265,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 485
+      }
+    },
+    {
+      "slug": "administrateur",
+      "nom": "Analyste en stratégies d'affaires",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 1887,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1057
+      }
+    },
+    {
+      "slug": "prof_anglais",
+      "nom": "Anglais langue seconde, professeur en",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 7884,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 871
+      }
+    },
+    {
+      "slug": "animateur_tele",
+      "nom": "ANIMATEUR EN TÉLÉVISION",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 397,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 3786
+      }
+    },
+    {
+      "slug": "oper_arpentage",
+      "nom": "Arpenteur - topographe",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 1311,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 3644
+      }
+    },
+    {
+      "slug": "comedien",
+      "nom": "acteur ou \r\ncomédien",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 9948,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 12004
+      }
+    },
+    {
+      "slug": "comedien",
+      "nom": "acteur ou \r\ncomédien",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 4487,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 1351
+      }
+    },
+    {
+      "slug": "artistel",
+      "nom": "artiste en arts visuels",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 5045,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1429
+      }
+    },
+    {
+      "slug": "tech_electroniquel",
+      "nom": "Audiovisuels, technologue en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 618,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 11578
+      }
+    },
+    {
+      "slug": "bioinfol",
+      "nom": "Bioinformaticien",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 14547,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 9354
+      }
+    },
+    {
+      "slug": "cons_amenagement",
+      "nom": "Chargé de projet en aménagement",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 23,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 903
+      }
+    },
+    {
+      "slug": "mecanicien_fixes",
+      "nom": "Chaudière, conducteur de",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 3588,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 220
+      }
+    },
+    {
+      "slug": "danseurl",
+      "nom": "Chorégraphe",
+      "target": "salaires",
+      "kept": "DONNÉES\nSALARIALES",
+      "kept_len": 86,
+      "lost": [
+        "DONNÉES\nSALARIALE"
+      ],
+      "lost_lens": {
+        "DONNÉES\nSALARIALE": 40756
+      }
+    },
+    {
+      "slug": "anim_culturell",
+      "nom": "Chroniqueur culturel",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 1683,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 20521
+      }
+    },
+    {
+      "slug": "journaliste",
+      "nom": "journaliste",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 402,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 25359
+      }
+    },
+    {
+      "slug": "tech_genie_civil",
+      "nom": "Civil, technologue en génie",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 2002,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 10219
+      }
+    },
+    {
+      "slug": "oper_mach_ind",
+      "nom": "Conducteur de machines de \r\nproduction industrielle",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 9263,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 230
+      }
+    },
+    {
+      "slug": "cons_consommationl",
+      "nom": "Conseiller en consommation",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 1235,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 5491
+      }
+    },
+    {
+      "slug": "medecin",
+      "nom": "médecin",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 75,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 4258
+      }
+    },
+    {
+      "slug": "tech_delinquance",
+      "nom": "Criminologie, technicien en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 179,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1696
+      }
+    },
+    {
+      "slug": "restaurationl",
+      "nom": "Hébergement (touristique), \r\npréposé à l'",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 19,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 262
+      }
+    },
+    {
+      "slug": "ing_industriel",
+      "nom": "Industriel, ingénieur",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 22524,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 110
+      }
+    },
+    {
+      "slug": "poseur_revetements",
+      "nom": "Installateur de revêtements \r\nd'intérieurs",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 2010,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 228
+      }
+    },
+    {
+      "slug": "poseur_syst_int",
+      "nom": "Installateur de systèmes d'intérieurs",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 2070,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 331
+      }
+    },
+    {
+      "slug": "trav_social",
+      "nom": "Intégration sociale, conseiller en",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 21133,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 2080
+      }
+    },
+    {
+      "slug": "psychoeduc",
+      "nom": "Intégration sociale, conseiller en",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 3617,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 819
+      }
+    },
+    {
+      "slug": "tech_serv_social",
+      "nom": "Intégration sociale, intervenant en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 2598,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1399
+      }
+    },
+    {
+      "slug": "kinesiologue",
+      "nom": "Kinésiologue",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 6273,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 3111
+      }
+    },
+    {
+      "slug": "mecanicien_machineries",
+      "nom": "Machineries légères, \r\nmécanicien de",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 3269,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 4581
+      }
+    },
+    {
+      "slug": "plombier",
+      "nom": "Maître mécanicien en tuyauterie",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 6305,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 1122
+      }
+    },
+    {
+      "slug": "marketing",
+      "nom": "Mise en marché, représentant en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 8502,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 4878
+      }
+    },
+    {
+      "slug": "prof_musique",
+      "nom": "Musique au primaire ou secondaire, professeur de",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 3215,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 2649
+      }
+    },
+    {
+      "slug": "infirmier",
+      "nom": "infirmier",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 9773,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 83469
+      }
+    },
+    {
+      "slug": "infirmier_auxiliaire",
+      "nom": "infirmier auxiliaire",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 7631,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 405
+      }
+    },
+    {
+      "slug": "platrier",
+      "nom": "Plâtrier",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 3430,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 229
+      }
+    },
+    {
+      "slug": "ergotherapeute",
+      "nom": "Réadaptation occupationnelle, thérapeute en",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 947,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 39293
+      }
+    },
+    {
+      "slug": "physiotherapeute",
+      "nom": "Réadaptation physique, thérapeute en",
+      "target": "admission",
+      "kept": "EXIGENCES\nD'ADMISSION",
+      "kept_len": 15544,
+      "lost": [
+        "EXIGENCE\nD'ADMISSION"
+      ],
+      "lost_lens": {
+        "EXIGENCE\nD'ADMISSION": 23193
+      }
+    },
+    {
+      "slug": "criminologue",
+      "nom": "Réinsertion sociale, conseiller en",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 99,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 1616
+      }
+    },
+    {
+      "slug": "sociologuel",
+      "nom": "Sociologue",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 1795,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 8216
+      }
+    },
+    {
+      "slug": "therapeute_sport",
+      "nom": "Sport, thérapeute du",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 11971,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 2636
+      }
+    },
+    {
+      "slug": "serveur",
+      "nom": "serveur",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 6458,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 9079
+      }
+    },
+    {
+      "slug": "educateur_garderie",
+      "nom": "Technicien en éducation en \r\ngarderie",
+      "target": "milieu",
+      "kept": "MILIEU\nDE\nTRAVAIL",
+      "kept_len": 2086,
+      "lost": [
+        "MILIEUX\nDE\nTRAVAIL"
+      ],
+      "lost_lens": {
+        "MILIEUX\nDE\nTRAVAIL": 2145
+      }
+    }
+  ]
+}

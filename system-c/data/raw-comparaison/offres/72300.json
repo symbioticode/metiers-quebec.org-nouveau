@@ -1,0 +1,60 @@
+{
+  "cnp": "72300",
+  "nom_metier": "Plombiers",
+  "extraction_date": "2026-07-24",
+  "sources": {
+    "jobillico": {
+      "offres": [
+        {
+          "id": "16654752",
+          "employeur": "Groupe Noël inc.",
+          "titre": "Plombiers",
+          "ville": "Québec",
+          "url": "https://www.jobillico.com/fr/offre-d-emploi/groupe-noel-inc/plombiers/16654752",
+          "texte_brut": "ATTENTION NOUS N'EMBAUCHONS QUE DES COMPAGNONS PRÉSENTEMENT - CARTES CCQ EXIGÉES\n\nRejoindre Groupe Noël, c'est intégrer:\n- Un leader reconnu en mécanique du bâtiment;\n- L'une des plus grandes entreprises de la région de Québec;\n- Une équipe compétente et des gestionnaires attentifs;\n- Des conditions de travail à la hauteur de vos attentes;\n- Une stabilité d'emploi avec des défis stimulants !\n\nTes principales responsabilités dans notre équipe:\n- Effectuer l'installation des systèmes de tuyauterie, de chauffage et de refroidissement sur les projets ;\n- Effectuer des modifications ou des réparations sur des systèmes déjà installés ;\n- Appliquer les règles de santé et sécurité au travail en tout temps;\n- Effectue toutes autres tâches connexes à la demande de son supérieur immédiat ;\n- Assiste son supérieur immédiat et ses collègues de travail dans l'exercice de leurs fonctions, lorsque requis ;\n- Maintenir une attitude positive et faire régner un climat de travail harmonieux, respectueux et sain ;\n- Assure un lien de collaboration, disponibilité et flexibilité avec les autres services de l'entreprise ;\n- S'assure d'avoir un environnement de travail propre et sécuritaire.\n\nLe/La Tuyauteur(se) devra avoir les compétences suivantes :\n- Carte de la CCQ (compagnon) ;\n- DEP en plomberie/chauffage.",
+          "extraction_reussie": true,
+          "notes": ""
+        }
+      ]
+    },
+    "jobboom": {
+      "offres": [
+        {
+          "id": "3662722",
+          "employeur": "Offre Emploi",
+          "titre": "Commis à la plomberie",
+          "ville": "",
+          "url": "https://www.jobboom.com/fr/offre-emploi/commis-a-la-plomberie_renomax_p3662722",
+          "texte_brut": "Notre succursale de Dolbeau est à la recherche d'un(e) candidat(e) pour combler un poste de commis à la plomberie. Vos tâches: -Accueillir les clients se présentant dans le département de la plomberie et leur offrir un service à la clientèle de qualité. -Évaluer les besoins des clients et les conseiller sur l'utilisation et/ou l'installation des produits. -Facturer et créditer la marchandise. -Monter les différents produits en démonstration, faire le marchandisage. -Gérer les inventaires et réapprovisionner. -Faire des soumissions. Vos compétences: -Aptitude pour la vente et le service à la clientèle. -Connaissances au niveau des produits de plomberie. -Aptitude informatique.",
+          "extraction_reussie": true,
+          "notes": "Extrait de offres/73200.json (CNP 73200)"
+        },
+        {
+          "id": "3662723",
+          "employeur": "Offre Emploi",
+          "titre": "Commis à la plomberie",
+          "ville": "",
+          "url": "https://www.jobboom.com/fr/offre-emploi/commis-a-la-plomberie_renomax_p3662723",
+          "texte_brut": "Notre succursale de Roberval est à la recherche d'un(e) candidat(e) pour combler un poste de commis à la plomberie. Vos tâches: -Accueillir les clients se présentant dans le département de la plomberie et leur offrir un service à la clientèle de qualité. -Évaluer les besoins des clients et les conseiller sur l'utilisation et/ou l'installation des produits. -Facturer et créditer la marchandise. -Monter les différents produits en démonstration, faire le marchandisage. -Gérer les inventaires et réapprovisionner. -Faire des soumissions. Vos compétences: -Aptitude pour la vente et le service à la clientèle. -Connaissances au niveau des produits de plomberie. -Aptitude informatique.",
+          "extraction_reussie": true,
+          "notes": "Extrait de offres/73200.json (CNP 73200)"
+        },
+        {
+          "id": "3662724",
+          "employeur": "Offre Emploi",
+          "titre": "coordonnateur à l'entrepôt / Warehouse coordinator",
+          "ville": "",
+          "url": "https://www.jobboom.com/fr/offre-emploi/coordonnateur-a-lentrepot-warehouse-coordinator_plomberie-levine-bros_p3662724",
+          "texte_brut": "Chaque plombier qui quitte la cour à l'heure, bien approvisionné, prêt à régler le problème plutôt qu'à chercher une pièce, a quelqu'un à remercier. C'est le coordonnateur à l'entrepôt. Levine Bros est une entreprise de plomberie montréalaise depuis plus de 100 ans. On a appris que le travail que voient nos clients ne vaut que ce que vaut le travail que personne ne voit. Ce poste, c'est le deuxième genre. Vous gardez les camions approvisionnés, les commandes en mouvement et les plombiers débloqués, pour que l'équipe puisse se concentrer sur le travail devant elle. Coordonnateur à l'entrepôt Servir les plombiers - Établir le plan de match chaque matin - Répondre aux appels des plombiers tout au long de la journée - Garder l'équipe approvisionnée et débloquée Réception des commandes des fournisseurs - Joindre le packing slip au bon PO - Vérifier que les quantités reçues correspondent à celles commandées - Repérer et corriger les erreurs de réception ou de prix - Effectuer les retours aux fournisseurs Préparation des commandes - Préparer, ou voir à la préparation, des listes de matériel soumises à l'avance - Gérer les commandes de dernière minute et les urgences - Confirmer que le matériel est ou sera disponible à temps - Aviser les plombiers et les autres départements des ruptures de stock avant qu'elles causent un problème - Voir à ce que les commandes préparées soient bien entreposées et organisées - Surveiller le courriel partagé et traiter les demandes rapidement Niveau d'inventaire et commandes - Faire l'inventaire quotidien des produits à commander - Maintenir le niveau d'inventaire de l'entrepôt selon les besoins réels - Placer les commandes chez les fournisseurs appropriés - S'assurer d'obtenir le meilleur taux possible Organisation et entretien des outils - Garder la salle des outils propre et organisée - Envoyer les outils en réparation ou en entretien au besoin - Voir à l'entretien régulier des outils Camions - Approvisionner les nouveaux camions - Vider et nettoyer les camions retournés - Faire le changement d'inventaire selon les saisons Efficacité de l'entrepôt - Respecter les échéances des tâches assignées - Garder l'équipe de l'entrepôt occupée - Discuter des problématiques rencontrées avec la direction avant qu'elles s'aggravent - S'assurer que le travail est fait en accord avec les standards de Levine Bros Ce qu'on recherche - Expérience en entrepôt, gestion d'inventaire ou logistique, un atout si dans le domaine de la plomberie ou des métiers - À l'aise avec un système de gestion d'inventaire de base, Excel au minimum - Organisé sous pression, capable de gérer plusieurs priorités sans en échapper une - Bilingue français et anglais, assez pour communiquer avec les plombiers et les fournisseurs dans les deux langues - Permis de conduire valide - Capable physiquement de soulever et déplacer du matériel régulièrement - Esprit d'équipe, ce poste existe pour faciliter la journée de tout le monde Every plumber who leaves our yard on tim",
+          "extraction_reussie": true,
+          "notes": "Extrait de offres/73200.json (CNP 73200)"
+        }
+      ],
+      "notes": "jobboom.com utilise du JavaScript pour afficher les offres - les pages search retournent 404 ou du HTML sans les offres. Les URLs individuelles d'offres ne sont pas accessibles sans JS."
+    },
+    "emploisdecadres": {
+      "offres": [],
+      "notes": "emploisdecadres.com est un site de cadres/executifs - ne contient pas d'offres pour plombier."
+    }
+  }
+}

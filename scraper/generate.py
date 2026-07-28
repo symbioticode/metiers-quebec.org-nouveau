@@ -223,25 +223,61 @@ class Generator:
         sec_name = SECTOR_NAMES.get(sec, sec)
         raw_sections = p.get("sections", {})
 
-        # Normalize section keys: lowercase, strip newlines, match to our keys
+        # Normalize section keys : le scraper durci (experimental/scrape-v2-hardening)
+        # produit des clés propres sans \n — plus besoin de gérer les variantes de
+        # retour à la ligne. Le vrai obstacle mesuré empiriquement n'était pas le \n
+        # (la normalisation \n->espace existait déjà et suffisait) mais deux choses :
+        # (1) apostrophe courbe ’ (U+2019) vs droite ' dans les titres réels du site
+        #     (ex. "EXIGENCES D’ADMISSION" à 364 occurrences vs "EXIGENCES D'ADMISSION"
+        #     à 26 — l'ancien section_key_map ne matchait que la forme droite) ;
+        # (2) le scraper durci capture le titre exact de chaque page au lieu de le
+        #     forcer dans une liste fermée de 15 regex — donc plusieurs formulations
+        #     réelles distinctes existent pour un même concept (ex. "PERSPECTIVES
+        #     D'AVENIR" à 448 occurrences combinées vs "perspectives d'emploi" que
+        #     l'ancien mapping attendait — mauvaise formulation, jamais présente ici).
         section_key_map = {
-            "description": ["description", "description"],
-            "taches": ["tâches\net\nresponsabilités", "taches"],
-            "milieu": ["milieu\nde\ntravail", "milieux\nde\ntravail", "milieu"],
-            "qualites": ["qualités\net\naptitudes\nrequises", "qualites"],
-            "marche": ["exigences\ndu\nmarché\ndu\ntravail", "marche", "marché"],
-            "formation": ["formation\nrequise", "formation\nrequis", "formation"],
-            "admission": ["exigences\nd'admission", "exigence\nd'admission", "admission"],
-            "salaires": ["données\nsalariales", "donnée\nsalariale", "données\nsalariale", "salaires"],
-            "placement": ["statistiques\nde\nplacement", "placement"],
-            "perspectives": ["perspectives\nd'emploi", "perspectives"],
+            "description": ["description"],
+            "taches": ["tâches et responsabilités", "taches"],
+            "milieu": ["milieu de travail", "milieux de travail", "milieu"],
+            "qualites": [
+                "qualités et aptitudes requises",
+                "qualités et aptitudes nécessaires",
+                "aptitudes et qualités requises",
+                "qualités et apttitudes nécessaires",  # coquille réelle du site (45x)
+                "qualites",
+            ],
+            "marche": [
+                "exigences du marché du travail",
+                "exigence du marché du travail",
+                "marche", "marché",
+            ],
+            "formation": ["formation requise", "formation requis", "formation"],
+            "admission": [
+                "exigences d'admission",
+                "exigence d'admission",
+                "admission",
+            ],
+            "salaires": [
+                "données salariales", "donnée salariale", "données salariale",
+                "salaire", "salaires",
+            ],
+            "placement": ["statistiques de placement", "placement"],
+            "perspectives": [
+                "perspectives d'avenir",
+                "perspectives d'emploi",
+                "perspectives",
+            ],
         }
+
+        def _norm_key(s):
+            # espace multiple -> simple, apostrophe courbe -> droite, casse -> minuscule
+            return " ".join(s.lower().replace("’", "'").split())
 
         sn = {}
         for target_key, source_keys in section_key_map.items():
             for sk in source_keys:
                 for actual_key, val in raw_sections.items():
-                    if actual_key.lower().replace("\n", " ").strip() == sk.replace("\n", " ").strip():
+                    if _norm_key(actual_key) == _norm_key(sk):
                         sn[target_key] = val
                         break
                 if target_key in sn:

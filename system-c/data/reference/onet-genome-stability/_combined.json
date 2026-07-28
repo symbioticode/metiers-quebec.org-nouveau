@@ -1,0 +1,177 @@
+{
+  "source": "O*NET Database releases (onetcenter.org/db_releases.html), CC BY 4.0",
+  "note": "Échantillon espacé de 17 releases 2003-2026 (voir SAMPLE dans le script pour la justification). GWA = Work Activities (~40 fonctions atomiques génériques), proxy testé par kb021 hypothèse 4.",
+  "releases": [
+    {
+      "version": "5.0",
+      "date": "2003-04",
+      "n_gwa": 41,
+      "n_tasks": 932,
+      "n_green_tasks": null,
+      "n_occupations": 1166,
+      "anomalies": [],
+      "file": "5.0.json"
+    },
+    {
+      "version": "6.0",
+      "date": "2004-07",
+      "n_gwa": 41,
+      "n_tasks": 3222,
+      "n_green_tasks": null,
+      "n_occupations": 1167,
+      "anomalies": [],
+      "file": "6.0.json"
+    },
+    {
+      "version": "8.0",
+      "date": "2005-06",
+      "n_gwa": 41,
+      "n_tasks": 7184,
+      "n_green_tasks": null,
+      "n_occupations": 1167,
+      "anomalies": [],
+      "file": "8.0.json"
+    },
+    {
+      "version": "10.0",
+      "date": "2006-06",
+      "n_gwa": 41,
+      "n_tasks": 10809,
+      "n_green_tasks": null,
+      "n_occupations": 949,
+      "anomalies": [],
+      "file": "10.0.json"
+    },
+    {
+      "version": "12.0",
+      "date": "2007-06",
+      "n_gwa": 41,
+      "n_tasks": 14622,
+      "n_green_tasks": null,
+      "n_occupations": 949,
+      "anomalies": [],
+      "file": "12.0.json"
+    },
+    {
+      "version": "14.0",
+      "date": "2009-06",
+      "n_gwa": 41,
+      "n_tasks": 18361,
+      "n_green_tasks": null,
+      "n_occupations": 1102,
+      "anomalies": [],
+      "file": "14.0.json"
+    },
+    {
+      "version": "15.0",
+      "date": "2010-07",
+      "n_gwa": 41,
+      "n_tasks": 18464,
+      "n_green_tasks": null,
+      "n_occupations": 1102,
+      "anomalies": [],
+      "file": "15.0.json"
+    },
+    {
+      "version": "17.0",
+      "date": "2012-07",
+      "n_gwa": 41,
+      "n_tasks": 19393,
+      "n_green_tasks": 1373,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "17.0.json"
+    },
+    {
+      "version": "19.0",
+      "date": "2014-07",
+      "n_gwa": 41,
+      "n_tasks": 19493,
+      "n_green_tasks": 1377,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "19.0.json"
+    },
+    {
+      "version": "20.0",
+      "date": "2015-08",
+      "n_gwa": 41,
+      "n_tasks": 19530,
+      "n_green_tasks": 1384,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "20.0.json"
+    },
+    {
+      "version": "21.0",
+      "date": "2016-08",
+      "n_gwa": 41,
+      "n_tasks": 19566,
+      "n_green_tasks": 1386,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "21.0.json"
+    },
+    {
+      "version": "22.0",
+      "date": "2017-08",
+      "n_gwa": 41,
+      "n_tasks": 19612,
+      "n_green_tasks": 1386,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "22.0.json"
+    },
+    {
+      "version": "23.0",
+      "date": "2018-08",
+      "n_gwa": 41,
+      "n_tasks": 19636,
+      "n_green_tasks": 1386,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "23.0.json"
+    },
+    {
+      "version": "25.0",
+      "date": "2020-08",
+      "n_gwa": 41,
+      "n_tasks": 19735,
+      "n_green_tasks": null,
+      "n_occupations": 1110,
+      "anomalies": [],
+      "file": "25.0.json"
+    },
+    {
+      "version": "27.0",
+      "date": "2022-08",
+      "n_gwa": 41,
+      "n_tasks": 19265,
+      "n_green_tasks": null,
+      "n_occupations": 1016,
+      "anomalies": [],
+      "file": "27.0.json"
+    },
+    {
+      "version": "29.0",
+      "date": "2024-08",
+      "n_gwa": 41,
+      "n_tasks": 18796,
+      "n_green_tasks": null,
+      "n_occupations": 1016,
+      "anomalies": [],
+      "file": "29.0.json"
+    },
+    {
+      "version": "30.3",
+      "date": "2026-05",
+      "n_gwa": 41,
+      "n_tasks": 18796,
+      "n_green_tasks": null,
+      "n_occupations": 1016,
+      "anomalies": [],
+      "file": "30.3.json"
+    }
+  ],
+  "global_anomalies": []
+}
