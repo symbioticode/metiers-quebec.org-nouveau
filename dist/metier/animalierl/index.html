@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animalier — Métiers Québec</title>
+  <meta name="description" content="Métier Animalier au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Animalier</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Animalier</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'assistant(e)-technicien(ne) en santé animale (aussi appelé &quot;aide-technicien-ne&quot; ou &quot;aide-vétérinaire&quot;); tu seras responsable d’assister les technicien.ne.s en santé animale (TSA) dans l’évaluation de l’état de santé des animaux, l’administration des traitements, la préparation des animaux en attente de chirurgie et de s’assurer du bien-être des animaux au sein d'un hôpital vétérinaire ou d'un centre vétérinaire de référence. Tu auras pour tâches de : • Assister le vétérinaire et/ou le technicien en santé dans les procédures mineures; • Assister le technicien en santé animale dans ses différentes tâches (contentions, prélèvements sanguins, poses de cathéters, radiographies, administrations et injections de médications, etc.); • Aider les vétérinaires et les technologues et techniciens(nes) en santé animale à manipuler, vacciner et à soigner les animaux; • Assister le technicien en santé animale lors de la préparation des animaux pour leur chirurgie et durant la chirurgie; • Communiquer avec le technicien en santé animale sur l’état des patients hospitalisés; • Éduquer les chiens aux notions de base en obéissance et à accomplir certaines tâches en réponse à des gestes • Aider à la préparation d’analyses en laboratoire; • Veiller au remplissage du matériel dans les salles de consultations et de tout l’hôpital quotidiennement; • Travailler en collaboration avec les techniciens en santé animale et assistants techniciens pour le bien-être des patients; • Effectuer les tâches d'animalier(ère) ou de préposé(e), au besoin. En tant que préposé(e) aux soins aux animau (aussi appelé &quot;préposé au service à la clientèle&quot; ou &quot;commis-vétérinaire&quot;commis au service à la clientèle&quot; ou &quot;animalier-ère&quot; ou &quot;aide-vétérinaire&quot; ou &quot;assistant-e vétérinaire&quot;); tu seras responsable de prodiguer les soins de base aux animaux domestiques hébergés dans les cliniques vétérinaires, les chenils, les fourrières, les refuges ou les laboratoires de recherche. Tu auras pour tâches de : • Préparer les aliments et nourrir les animauxaux heures prévues; • Observer leur état de général de santé et leur comportement et signaler tout changement ou problème auprès des technologues ou techniciens(nes) en santé animale; • Shampouiner, soigner, tondre et toiletter les animaux(lavage, brossage, tonte, etc.) et t'assurer de leur bien-être; • Accompagner les chiens dans l'enclos de l'établissement et dans les environs afin d'y effectuer leur exercice quotidien; • Aider les vétérinaires et les technologues et techniciens(nes) en santé animale à manipuler, vacciner et à soigner les animaux (en clinique ou hôpital vétérinaire); • Aider les éleveurs d'animaux ou les producteurs agricoles à manipuler et à nourrir les animaux (en entreprise d'élevage ou en entreprise agricole); • Assister à la préparation nécessaire au transport des animaux, s'il y a lieu; dans les refuges et les chenils; • Aider les scientifiques et les chercheurs à mener des expériences de laboratoire sur les animaux (universités, centres de recherches); • Éduquer les chiens aux notions de base en obéissance et à accomplir certaines tâches en réponse à des gestes (refuges, chenils, entreprises d'élevage); • Nettoyer et désinfecter les cages, les enclos, les salles de traitement et les salles de chirurgie; • Surveiller les lieux afin d'assurer la santé, la sécurité et le bien-être des animaux; • Effectuer d'autres tâches de soutien, lorsque nécessaires. En tant que conseillère-animalière ou conseiller-animalier (aussi appelé &quot;commis d'animalerie&quot; ou &quot;préposé-e en animalerie&quot;); tu seras responsable de prodiguer les soins de base des animaux du commerce (chiens, chats, lapins, oiseaux, poissons, petits rongeurs, reptiles, etc.) et leur prodiguer les traitements spécifiques aux différentes espèces animales; ainsi que conseiller la clientèle sur les différentes espèces animales vendues en magasin répondant le mieux à leurs besoins et attentes. Tu les conseilleras sur les soins à apporter à leur animal de compagnie, ainsi que les meilleurs produits nécessaires à son alimentation, à son toilettage et à son divertissement. Tu auras également à recevoir les nouveaux animaux, préparer les cages, les enclos ou les emplacements de son habitat temporaire, leur donner la nourriture, les installer dans le magasin, préparer les étiquettes d'identification et entrer les informations concernant les nouveaux arrivants dans le système informatique; ainsi que de recevoir, vérifier, étaler et étiqueter la marchandise (produits, accessoires, nourriture, etc.) dans le magasin et entrer les nouveaux produits dans le système et enfin, effectuer l’entretien et le nettoyage des cages des animaux. Les boutiques et autres commerces d'animaux de compagnie, ainsi que les boutiques d'aliments et accessoires pour animaux sont les principaux employeurs. En tant que contrôleur(euse) animalier; tu seras responsable de résoudre des problèmes relatifs aux animaux de compagnie pour les citoyens d'une municipalité afin de faire appliquer les règlements relatifs aux animaux de compagnie. Tu pourras entrer dans tout endroit où se trouve un animal blessé, malade, maltraité ou soupçonné de maladie contagieuse. Tu devras le capturer de façon sécuritaire autant pour toi que pour l'animal et le mettre en fourrière et dans un refuge ou l'amener chez un vétérinaire jusqu'à son rétablissement ou jusqu'à ce l'endroit approprié à la garde de l'animal soit disponible. Si l'animal est atteint de maladie contagieuse, il devra être isolé jusqu'à la guérison complète et, à défaut de telle guérison, il devra être soumis à l'euthanasie. Tu pourras travailler au sein d'une municipalité ou d'un refuge pour animaux.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Ne pas avoir d’allergies aux animaux -Souci du bien-être des animaux -Bonne connaissance des différentes espèces animales et des soins à leur apporter -Maturité et autonomie pour être en mesure de faire des tâches sans avoir besoin d’assistance (soins à apporter) -Aimer travailler avec le public et entregent car tu auras de fréquents contacts avec la clientèle</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: 1.Avoir obtenu au moins les unités de 3e secondaire ou l’équivalent en langue d’enseignement, en langue seconde et en mathématique 2.OU avoir réussi le test de développement général (TDG) avec ou sans préalable spécifique ET 3.Avoir interrompu ses études à temps plein pendant au moins douze mois; ou avoir 18 ans au moment de l’entrée en formation 4.OU avoir obtenu un diplôme d’études secondaires (DES) ou un diplôme d’études professionnelles (DEP) ou leur équivalent 5.OU satisfaire aux normes d’admissibilité de la Mesure de la formation de la main-d’œuvre d’Emploi-Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : - 15,75 $/heure (40 hres/sem)en moyenne en tant que toiletteur(euse) ou préposé(e) aux soins d'animaux de compagnies au sein des PME (salon de toilettage, animleries, etc.) ou des organismes sans but lucratif OBNL (chenils, refuges, etc.) -15,75 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à la cuisine animalière au sein des grandes institutions zoologiques -15,75 $/heure (38,75 hres/sem) en tant qu'animalier(ère) à la SÉPAQ (parcs et réserves) -16,09 $/heure (38,75 hres/sem) en tant qu'assistant(e) guide-animalier(ère) à la SÉPAQ (Parc Aquiarium du Québec) - 16,62 $/heure (38,75 hres/sem) en tant que guide-interprète / animateur(trice) à la SEPAQ (parcs et réserves) -17,.15 $/heure (40 hres/sem) en moyenne en tant qu'animalier(ère) ou aide technique vétérinaire ou assistant(e) vétérinaire au sein des PME (cliniques) ou des organismes sans but lucratif OBNL (chenils, refuges, etc.) -17,35 $/heure (40 hres/sem) en moyenne en tant qu'éducateur(trice) canin ou intervenant(e) en comportement canin en pratique privée (salarié-e) -18,06 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à l'entretien des enclos et habitats dans les grandes institutions zoologiques -18,65 $/heure (38,75 hres/sem) en tant que guide-animalier(ère) - aquariste à la SÉPAQ (Parc Aquiarium du Québec) - 21,09 $/heure (36,25 hres/sem) en préposé(e) aux soins aux animaux en milieu hospitalier (animalerie de recherche) - 21,23 $/heure (40 hres/sem) en moyenne en tant que gardien(ne) animalier(ère) ou technicien(ne) en soins animaliers ou naturaliste-interprète au sein des grandes institutions zoologiques -23,74 $/heure (38,75 ou 40 hres/sem) en moyenne en préposé(e) à l'animalerie de recherche ou animalier(ère) au sein des universités -24,29 $/heure (35 hres/sem) en tant que préposé(e) à la patrouille canine (civil) à la Ville de Montréal -26,70 $/heure (40 hres/sem) en tant que préposé(e) aux soins animaliers ou animalier(ère)-guide-interprète à Parcs Canada - 26,77 $/heure (33,45 ou 33,75 ou 35 hres/sem) en moyenne en tant que préposé(e) à patrouille canine ou préposé(e) à la fourrière ou animalier(ère) au sein des grandes municipalités (100 000 habitants et plus) -27,55 $/heure (40 hres/sem) en tant qu'animalier(ère) au Biodôme Sources : Emploi Québec, Conseil du Trésor du Québec, Syndicat des cols bleus de la Ville de Montréal, Syndicat des fonctionnaires municipaux de Montréal (patrouille canine), Syndicat des cols bleus de la Ville de Laval, conventions collectives des employés de soutien de la plupart des universités.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: Aucune donnée disponible</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Les animaux de compagnie ont souvent une place très importante au sein des familles qui leur portent une grande atattention. Avec l’arrivée du télé-travail, nos habitude de vies ont changées. Plusieurs ont ressenti le besoin d’agrandir la famille et d’ajouter un ami poilu à leur cercle familial. Le nombre d’adoptions a explosé dans la dernière année, autant du côté des chats que des chiens Plusieurs services offerts aux animaux de compagnie (incluant ceux en éducation en comportement canin, en toilettage et soins personnels et en gardiennage) ont connu une croissance beaucoup plus élevée que les autres dépenses depuis une vingtaine d'années. Ce qui fait en sorte que les chenils, les refuges, les cliniques et les hôpitaux vétérinaires sont débordés et éprouve des difficultés à recruter de la main-d'œuvre. De bonnes perspectives sont à prévoir au cours des prochaines années. Les régions de la Capitale Nationale, de la Montérégie, de Chaudière-Appalaches, du Cente-du-Québec et du Saguenay-Lac-Saint-Jean offrent les meilleures perspectives d'emploi. La rémunération moyenne après expérience en 2024.. le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) aux soins aniamliers ou aide technique vétérinaire détenant 10 années d'expérience au sein d'une clinique vétérinaire était de 46 800 $ le revenu annuel moyen d'un(e) éducateur(trice) canin ou d'un(e) intervenant(e) en comportement animal ayant 10 années d'expérience au sein d'une PME (école d'éducation canine, clinique vétérinaire) ou d'un OBNL (chenil, refuge) était de 52 000 $ le revenu annuel moyen d'un(e) animalier(ère)-guide-interprète ou préposé(e) aux soins animaliers détenant 10 années d'expérience au sein de Parcs Canada était de 54 700 $ le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) à patrouille cacine détenant 10 années d'expérience au sein d'une grande municipalité était de 55 700 $ le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) à patrouille cacine ou préposé(e) au contrôle des insectes détenant 10 années d'expérience au sein d'une municipalité de taille moyenne était de 56 400 $ le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) aux soins en animalerie de recherche détenant 10 années d'expérience au sein d'un centre de recherche hospitalier était de 57 200 $ le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) à patrouille cacine détenant 10 années d'expérience à la Ville de Montréal était de 58 000 $ et le revenu annuel moyen d'un(e) animalier(ère) ou préposé(e) aux soins en animalerie de recherche détenant 10 années d'expérience au sein d'une université était de 58 400 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

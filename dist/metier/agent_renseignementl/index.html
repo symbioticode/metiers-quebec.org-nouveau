@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent fédéral du 
+renseignement et de sécurité — Métiers Québec</title>
+  <meta name="description" content="Métier Agent fédéral du 
+renseignement et de sécurité au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agent Fédéral Du 
+Renseignement Et De Sécurité</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Agent Fédéral Du 
+Renseignement Et De Sécurité</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>L'agent secret tel que l'on le connaît au cinéma ou à la télévision est fort différent de ce qu'est la réalité des vrais agents du renseignement.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Note : La nature exacte du travail effectué par les agents de renseignements peut varier beaucoup selon les compétences des agents (formations et expériences) et selon les besoins de l'organisation. En tant qu’agente ou agent fédéral du renseignement extérieur; tu auras comme responsabilités de recueillir, analyser et évaluer des informations sur des activités provenant de l'extérieur du Canada qui peuvent constituer une menace à la sécurité du Canada. Elles peuvent provenir de diverses sources telles que les membres du public, les représentants des autorités policières canadiens et étrangers, les représentants des agences de renseignements étrangers, les représentants des gouvernements étrangers (Ministères des affaires étrangères, ambassades étrangères au Canada), sources ouvertes dont les journaux, les périodiques, les revues spécialisées, les émissions de radio et de télévision diffusées au pays et à l’étranger, les documents officiels, d'autre documentation publiée, l'interception technique des télécommunications, etc. Tu peux aussi être appelé(e) à planifier et mener des enquêtes sur les menaces envers la sécurité du Canada telles que : le terrorisme, la prolifération des armes de destruction massive, l’espionnage, le sabotage, la violence politique, activités clandestines, l’ingérence étrangère et le cyber-trafic touchant des infrastructures essentielles. Tu auras à identifier, de dissuader, mettre hors d’état de nuire et de poursuivre les personnes qui participent à des activités qui menacent la sécurité de notre pays. Tu auras notamment à évaluer et interpréter les types de menaces, les informations fournies, procéder à des interrogatoires, recueillir et rassembler tous les indices pouvant mener à l'interception des personnes ou groupes de personnes à l'origine de ces menaces, ainsi qu'à rédiger des rapports d'enquêtes. Tu auras à collaborer avec d'autres représentants du Gouvernement (ex : agents des services frontaliers, agents d'immigration, enquêteurs en matières frauduleuses, agents de sécurité aéroportuaires), avec les agents spéciaux de la G.R.C., des responsables d'enquêtes sur les crimes graves de corps policiers provinciaux et municipaux, des agents du renseignement intérieur de la G.R.C., des agents du renseignement de pays étrangers (USA, Grande-Bretagne, France, Allemagne, Italie, Australie, Pays-Bas, Japon notamment), etc. Précision importante : un(e) agent(e) du renseignement n'a pas de pouvoir d'arrestation et de détention, même s'il s'agit de personnes ayant commis des actes criminels menaçant le pays (ex : terroristes). C'est le travail de l'agent(e) spécial de la G.R.C. qui a les pouvoirs d'arrestation et de poursuite de ces personnes. En tant qu'agent(e) du renseignement intérieur; tu auras comme responsabilités de recueillir, analyser et évaluer des informations sur des activités provenant de l'intérieur du Canada qui peuvent constituer une menace à la sécurité du pays. Elles peuvent provenir de diverses sources telles que les membres du public, les représentants des autorités policières d'un peu partout au pays (GRC, Sûreté du Québec, Police provinciale de l'Ontario, corps policiers municipaux de Toronto, Montréal, Vancouver, Ottawa, Calgary, etc), les responsables de la sûreté aéroportuaire ou portuaire des grandes villes canadiennes (Toronto, Montréal, Vancouver, Ottawa ou Calgary), les superviseurs des services frontaliers, sources ouvertes dont les journaux, les périodiques, les revues spécialisées, les émissions de radio et de télévision diffusées au pays, les documents officiels, d'autre documentation publiée, l'interception technique des télécommunications, etc. Tu peux aussi être appelé(e) à planifier et mener des enquêtes sur les menaces envers la sécurité du Canada provenant de groupes ou d'individus situés au pays ou des résidents canadiens qui résident à l'étranger. Ces menaces peuvent être : le terrorisme, la prolifération des armes de destruction massive, l’espionnage, le sabotage, la violence politique, activités clandestines, le cyber-trafiquage touchant des infrastructures essentielles, etc. Tu auras à identifier, de dissuader, mettre hors d’état de nuire et de poursuivre les personnes qui participent à des activités qui menacent la sécurité de notre pays. Tu auras notamment à évaluer et interpréter les types de menaces, les informations fournies, procéder à des interrogatoires, recueillir et rassembler tous les indices pouvant mener à l'interception des personnes ou groupes de personnes à l'origine de ces menaces, ainsi qu'à rédiger des rapports d'enquêtes. Tu auras à collaborer avec d'autres représentants du Gouvernement (ex : agents des services frontaliers, agents d'immigration, enquêteurs en matières frauduleuses, agents de sécurité aéroportuaires), avec les agents spéciaux de la G.R.C., des responsables d'enquêtes sur les crimes graves de corps policiers provinciaux et municipaux, etc.). En tant qu'Officier du renseignement au sein des Forces canadiennes; en tant que membre du Service du renseignement militaire des Forces canadiennes, tu auras comme responsabilité d'assurer le soutien de l'activité liée au renseignement militaire dans le cadre des opérations, de la planification et du processus décisionnel à tous les échelons du commandement des FC. Tu auras notamment à planifier et mettre en place la collecte, le traitement et la diffusion du renseignement, reconnaître, exploiter et analyser l'information qui pourrait avoir une incidence sur des opérations militaires, des politiques et des objectifs nationaux, fournir des conseils au sujet des systèmes de surveillance et de collecte du renseignement et participer à leur planification, conseiller les commandants supérieurs (souvent en étant le seul conseiller en matière de renseignement au sein de l'unité), ainsi que commander et diriger une unité de renseignement que ce soit en situation de paix ou de déploiement. Tu pourrais travailler dans l'un des domaines suivants après avoir accumulé de l'expérience : analyse tactique, opérationnelle et stratégique, renseignement par imagerie, guerre électronique, renseignement humain, renseignement de sécurité, contre-ingérence/espionnage, opérations psychologiques, etc. Exigences : la plupart des candidats(es) occupent déjà une autre profession d'officier au FC, mais sont aussi acceptées, les titulaires d'un baccalauréat dans une discipline pertinente (ex : économie, en géographie, en sciences de l'imagerie, en technologie de l'information, en études internationales, en études militaires et stratégiques, en science politique, etc), réussite des tests et entrevue d'enrôlement exigées de tous candidats officiers, connaissance d'une langue étrangère étant un atout, expérience civile dans une domaine pertinent étant un atout et réussite de toutes les phases de formation. Pour plus de détails, consulte la . Précision importante : un(e) agent(e) du renseignement n'a pas de pouvoir d'arrestation et de détention, même s'il s'agit de personnes ayant commis des actes criminels menaçant le pays (ex : terroristes). C'est le travail de l'agent(e) spécial de la G.R.C. qui a les pouvoirs d'arrestation et de poursuite de ces personnes.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: - Intérêt pour l'actualité politique, militaire, économique et culturelle étrangère afin d'être à l'affût de tout ce qui se passe dans le monde et mieux comprendre l'implication du Canada à ces événements -Aimer travailler avec public, car les contacts avec les gens sont fréquents -Sens des responsabilités car le Gouvernement canadien te confiera des informations de haut-niveau en matière de sécurité -Esprit d’analyse et Bon jugement car tu la plus grande partie de son travail sera d'analyser et recueillir des informations de toutes sortes -Très bon sens de l’observation et de la mémoire pour réussir à déceler des situations potentiellement dangereuses et à déceler des risques de menaces -Très bon jugement pour être en mesure d’identifierles choses ou événements qui risquent devenir dangereux ou s’aggraver -Jugement sûr et rapide pour être capable d’intervenir rapidement et efficacement lors de situations délicates -Bonne capacité à la résolution de problèmes car tu en auras de toutes sortes à régler - Dynamisme, Motivation et Esprit d'initiative afin de pouvoir efficacement et rapidement prendre des décisions importantes au bon moment -Tact, Empathie et diplomatie car tu auras à faire appliquer des règlements sans être nécessairement apprécié(e) par la clientèle -Sens de l’organisation, pour bien gérer ton travail et les dossiers à traiter -Autonomie et débrouillardise car tu devras être apte à régler seul(e) certains problèmes -Leadership, et esprit d’équipe car tu devras travailler constamment avec d’autres collègues -Être éveillé à tout changementour être prêt à intervenir à tout moment en toute situation -Facilité d’adaptationet bonne à diverses situations, à divers milieux et à divers problèmes -Excellente maîtrise de la langue anglaise car tu auras à travailler principalement dans cette langue -Aimer et facilité à apprendre d’autres langues (notamment l'arabe, le russe, le chinois, l'espagnol ou autre langue étrangère)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : -1 177,31 $/semaine en tant qu'agent(e) - stagiaire aux services de protection ou en collecte de renseignements et augmente à 1 911,39 $/semaine (après le stage) au Service canadien de renseignement de sécurité SCRS - 5 675 $/mois (au grade delieutenant/enseigne de vaisseau 2r classe) et augmente à 7841 $/mois (au grade de capitaine/lieutienant de vaisseau) après 5 ans en tant qu'officier du renseignement au sein des Forces canadiennes (Force régulière) - 186,44 $/jour (au grade de lieutenant/enseigne de vaisseau 1re classe) et augmente à 239,24 $/jour (au grade de capitaine/lieutienant de vaisseau) en tant qu'officier du renseignement au sein des Forces canadiennes (Réserve) Sources : Service canadien du renseignement et de sécurité SCRS et Forces canadiennes.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Malgré des besoins d'agents(es) et d'analystes du renseignement, les perspectives sont difficiles à évaluer compte tenu des exigences sévères d'embauche et des besoins du Gouvernement du Canada. : - Avoir obtenu une cote de sécurité au niveau &quot;très secret&quot; (voir la section &quot;autres exigences d'admission&quot; pour plus de détails - Excellence maîtrise d'au moins l'une des 2 langues officielles, de préférence les 2 - Travail très exigeant et stressant mentalement et parfois, physiquement - Travail souvent réalisé par quarts - Connaissance d'une langue étrangère est un atout (mais non indispensable) - Déplacements fréquents ou périodiques à l'étranger et/ou à travers le pays - Accepter de déménager périodiquement tout au long de leur carrière</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

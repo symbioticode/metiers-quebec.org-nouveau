@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction, ingénieur en — Métiers Québec</title>
+  <meta name="description" content="Métier Construction, ingénieur en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Construction, Ingénieur En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Construction, Ingénieur En</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les donn�es de : Le salaire moyen en d�but de carri�re �tait de : -29,59 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 32,23 $/heure en tant qu'ing�nieur(e) dans la fonction publique qu�b�coise -30,77 $/heure (35 ou 40 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 33,08 $/heure en tant qu'ing�nieur(e) au sein des PME -31,14 $/heure (35 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 35,20 $/heure en tant qu'ing�nieur(e) dans les centres de services scolaires -31,46 $/heure (40 hres/sem) en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 37,75 $/heure en tant qu'ing�nieur(e) au sein des grandes soci�t�s de g�nie conseil -32,13 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 41,20 $/heure en tant qu'ing�nieur(e) � Parcs Canada - 32,46 $/heure (35 hres/sem) en tant que conseiller(�re) en b�timent dans le r�seau de la sant� et des services sociaux -32,92 $/heure (35 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 38,46 $ en tant qu'ing�nieur(e) d'exploitation � la Soci�t� qu�b�coise des infrastructures - 36,30 $/heure (35 hres/sem) en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 40,50 $/heure en tant qu'ing�nieur(e) dans les universit�s - 37,13 $/heure (35 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 39,99 $/heure en tant qu'ing�nieur(e) � la Ville de Qu�bec -38,19 $/heure (35 hres/sem)en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 41,70 $/heure en tant qu'ing�nieur(e) dans les municipalit�s r�gionales de comt� MRC -37,47 $/heure (40 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 41,96 $/heure en tant qu'ing�nieur(e) chez Hydro-Qu�bec -38,56 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 42,02 $/heure en tant qu'ing�nieur(e)dans la fonction publique f�d�rale - 38,56 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 41,03 $/heure en tant qu'ing�nieur(e) � l'A�roports de Montr�al -38,73 $/heure (36,25 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 42,44 $/heure en tant que charg�(e) d'ing�nierie - maintenance d'�quipements � �nergir -40,78 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 44,54 $/heure en tant qu'ing�nieur(e) � l'Administration portuaire de Montr�al - 41,00 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 43,50 $/heure en tant qu'ing�nieur(e) � l'A�roport international Jean-Lesage de Qu�bec - 42,67 $/heure (35 hres/sem)en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 47,39 $ en tant qu'ing�nieur(e) au sein des grandes compagnies mini�res - 45,68 $/heure (33,45 ou 33,75 ou 35 hres/sem selon les municipalit�s) en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 49,41 $/heure en tant qu'ing�nieur(e) au sein des grandes muncipalit�s (100 000 habitants et plus) - 46,35 $/heure (32 ou 32,5 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalit�s) en moyenne en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 51,19 $/heure en tant qu'ing�nieur(e) au sein des muncipalit�s de taille moyenne (25 000 habitants et plus) -46,67 $/heure (37,5 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 52,27 $/heure en tant qu'ing�nieur(e) � l'Administration portuaire de Qu�bec - 48,12 $/heure (35 hres/sem) en tant que candidat(e) � la profession d'ing�nieur(e) et augmente � 50,77 $ en tant qu'ing�nieur(e) � la Soci�t� de transport de Montr�al STM -48,95 $/heure (32,5 ou 33 ou 35 hres/sem selon les municipalit�s) en tant qu'ing�nieur(e) en moyenne au sein des petites municipalit�s (moins de 25 000 habitants, voir note 2 plus bas) -56,21 $/heure (32,5 ou 33 ou 35 hres/sem selon les municipalit�s) en tant que directeur(trice) des travaux publics ou directeur(trice) des services techniques en moyenne au sein des petites municipalit�s (moins de 25 000 habitants, voir note 2 plus bas) - 2301 $/mois en 1re ann�e et augmente � 2440 $/mois en 4e ann�e (grade d'�l�ve-officier pendant tes �tudes universitaires au Coll�ge militaire) - 5 675 $/mois (au grade de lieutenant) et augmente � 7841 $/mois (au grade de capitaine) apr�s 5 ans en tant qu'officier du g�nie construction au sein des Forces canadiennes (Force r�guli�re) - 186,44 $/jour (au grade de lieutenant) et augmente � 239,24 $/jour (au grade de capitaine) en tant qu'officier du g�nie constructionau sein des Forces canadiennes (R�serve) Note 1 : l�g�re hausse de la moyenne salariale dans le secteur priv� par rapport aux ann�es pr�c�dentes (�tait de 30,07 $ en 2024; 29,81 $ en 2022; 28,66 $ en 2019 et 26,76 $ en 2017). Note 2 : dans le secteur public, les augmentations sont �tablies par les conventions collectives. Note 3 : prendre en consid�ration que bien que le salaire horaire est �lev� dans les petites municipalit�s car les avantages sociaux (ex : assurance-sant�, r�gime de retraite, etc) y sont moins nombreux que dans les grandes municipalit�s ou la fonction publique f�d�rale, mais les responsabilit�s sont davantages importantes. Dans plusieurs petites municipalit�s, les ing�nieurs(es) agissent comme gestionnaire municipal et le stage CPI n'est pas possible puisqu'il y a qu'un(e) seul(e) ing�nieur(e) au sein de l'organisation. Sources : Minist�re de l��ducation et de l'Enseignement sup�rieur du Qu�bec, Conseil du Tr�sor du Qu�bec, Commission de la Fonction publique du Canada, Forces canadiennes, Syndicat professionnel des ing�nieurs d�Hydro-Qu�bec, Syndicat des professionnels en pratique exclusive de Montr�al, Alliance des professionnels de la Ville de Qu�bec, Alliance du personnel professionnel et administratif de la Ville de Laval, Syndicat des professionnels de la Soci�t� de transport de Montr�al STM, Syndicat des professionnels du Gouvernement du Qu�bec section locale Soci�t� qu�b�coise des infrastructures, conventions collectives des employ�s municipaux de plusieurs grandes municipalit�s, conventions collectives des employeurs de plusieurs municipalit�s de taille moyenne, conventions collectives des professionnels de la plupart universit�s et Qu�bec municipal.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement estTR�S BON, 80 % des r�pondants(es) qui se sont dirig�s vers le march� du travail ont obtenu un emploi reli� � leurs �tudes dont la totalit� sont � temps complet. Un(e) seul(e) r�pondant(e) a choisi de poursuivre leurs �tudes au niveau de la ma�trise. NOMBRE DE� R�PONDANTS NOMBRE EN EMPLOI RELI� NOMBRE � temps complet NOMBRE AUX �TUDES 1612121 Note 1 : l�g�re baisse du taux de placement aux ann�es pr�c�dentes (�tait de 89 % en 2021; 83 % en 2019 et 78 % en 2017). Note 2 : baisse du nombre de r�pondants(es) poursuivant des �tudes sup�rieures (�tait de 10 % en 2021; 12 % en 2019 et 12 % en 2017). Sources : Minist�re de l'�ducation et de l'Enseignement sup�rieur du Qu�bec et �cole de technologie sup�rieure</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

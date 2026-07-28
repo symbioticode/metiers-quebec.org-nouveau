@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eaux, ingénieur des — Métiers Québec</title>
+  <meta name="description" content="Métier Eaux, ingénieur des au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Eaux, Ingénieur Des</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Eaux, Ingénieur Des</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Les fédérations agricoles, les organismes de gestion agricole, les organismes en agroenvironnement, les firmes d'agronomes, ainsi que les sociétés de génie conseil et les gouvernements ont besoin de techniciens en agroenvironnement.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L'intégration des principes de développement durable devient impérative dans tous les projets d'ingénierie au Québec, selon l'Ordre des ingénieurs du Québec (OIQ), donc des compétences spécifiques en développement durable, voir même une expertise est souvent nécessaire. Portées par les besoins croissants en réfection d'infrastructures municipales, des règlements en matière de qualité de l’eau qui sont devenus plus exigeants et les défis liés aux changements climatique, on a de plus en plus besoin de ces ingénieurs(es). On aura besoin de plus en plus de ces spécialistes dû aux nouveaux règlements en matière de qualité de l’eau devenue plus exigeante, ainsi que la mise à la retraite de plusieurs opérateurs. Les gestionnaires des entreprises et des organisations publiques et parapubliques sont de plus en plus sensibilisées à la protection de l’environnement. Donc, elles font affaires avec des firmes de génie conseils afin d'élaborer des projets qui rencontreront leur nouvelle politique de responsabilité socioenvironnementale et un plan de prévention et d'intervention lors de risques environnementales. Les opportunités se concentrent dans le génie-conseil, les municipalités, la gestion des eaux, le traitement des déchets et les énergies renouvelables. Les universités reçoivent plusieurs centaines d'offres d'emploi provenant d'employeurs de différents secteurs et d'un peu partout au Québec et d'ailleurs au Canada, mais ne peuvent suffir à la demande faute de diplômés(es) disponibles puisque la plupart ont déjà obtenu un emploi dans leur milieu de stage ou ont choisi de poursuivre des études supérieures. Avec près de 6 % de création d’emplois contre 0,3 % pour le secteur minier, l’économie verte est en pleine effervescence au Québec. La mise en place de la Bourse sur le carbone a forcé plusieurs industries à revoir leurs façons de faire, ce qui crée de nouvelles opportunités d’affaires. Selon le Conseil sectoriel canadien des carrières en environnement; plus de 14 % des 157 000 travailleuses et travailleuses du secteur de l'environnement devront prendre leur retraite au cours des prochaines années. De ce nombre, une majorité sont des ingénieurs(es), chargés(es) de projets et consultants(es) en environnement. ingénieurs(es) spécialisés(es) en efficacité énergétique et ingénieurs(es) en eaux : La profession d'ingénieur(e) en environnement bénéficiera des tendances des nombreuses industries dans lesquelles elle se concentre. Les services professionnels, scientifiques et techniques, incluant les services d'architecture et les services de génie, laissent entrevoir des perspectives intéressantes. Ces derniers ne devraient pas être trop ébranlés par un possible ralentissement de l'économie. Les administrations publiques emploient aussi plusieurs de ces ingénieurs. Les nombreux projets d'envergure dans les infrastructures de traitement des eaux usées et de l'eau potable, de gestion des déchets et des matières recyclables, de parcs et d'espaces verts devraient soutenir la demande pour ce groupe professionnel à moyen terme. De plus, de nouvelles tendances qui auront une influence sur la pratique de l'ingénieur(e) civil telles que la lutte contre les changements climatiques, la transitition énergétique, l'électrification des transports auront également des impacts positifs sur cette profession au cours des prochaines années. En effert, l'annonce de plusieurs projets la conversion d'infrastructures publiques en gestion de l'eau et en gestion des déchets par l'utilisation de systèmes bio-énergétiques donneront beaucoup de travail aux ingénieurs(es) en environnement au cours des des prochaines années. La réappropriation des berges et des cours d’eau constitue une tendance de fonds partout dans le monde. La préoccupation à l’égard de la qualité de l’eau des rivières et des lacs du Québec sera grandissante, et des investissements sont àprévoir en ce sens. Des municipalités comme Montréal et Longueuil prévoient par exemple la construction de bassins de rétention pour diminuer le volume des surverses des réseauxd’égout lors de fortes pluies. La mise à niveau des installations d’assainissement des eaux usées afin de mieux traiter les résidus de médicaments, détergents et bactéries sera un chantier important. Les secteurs d'emploi les plus en demande pour les ingénieurs en eaux sont : le génie municipal (conception et gestion des usines de traitement d'eau potable et des réseaux d'eaux usées), l'hydrogéologie (étude et gestion des eaux souterraines, particulièrement pour les projets environnementaux et miniers), l'hydraulique et l'hydrologie (Gestion des barrages chez Hydro-Québec et modélisation des risques d'inondation) et la réhabilitation des sols et gestion des eaux de ruissellement en milieu urbain. Parmi les professions en émergence en environnement, on y retrouve ces spécialités qui font partie des professionnels les plus recherchés dans le domaine de l'environnement notamment par les firmes de génie conseil, les firmes de conusultants en environnement, mais également par certaines municipalités selon le Diagnostic de la main-d'oeuvre d'EnviroCompétences. Selon cette même enquête auprès de plus de 250 employeurs en environnement, près de 24 % d'entre-eux prévoyaient embaucher au moins un(e) ingénieur(e) spécialisé(e) en environnement, pour un total de 127 postes disponibles au cours des prochaines années, principalement pour des raisons de croissance de l'entreprise, mais également pour des départs à la retraite. Le domaine de l'eau recrute activement dans plusieurs secteurs clés, avec plus de 100 offres répertoriées récemment dans la province sur les plateformes d'emploi en mars 2026. ingénieurs(es) biotechnologistes : Tout nouveau domaine d’études au pays, mais très en demande par plusieurs entreprises du secteur des biotechnologies. On prévoit d' perspectives pour les prochaines années. à court et à long terme pour ces dans plusieurs secteurs industriels, notamment dans le domaine des biotechnologies environnementales. Enfin, les domaines des biocarburants et autres bioproduits ou écoproduits sont notamment en expansion. Les offres d'emploi proviennent notamment des municipalités de taille moyenne, des firmes de génie conseil, des grandes industries métallurgiques et des compagnies minières. La rémunération moyenne après expérience selon la fonction occupée en 2024... • 95 600 $ pour un(e) ingénieur(e) en design et conception • 101 300 $ pour un(e) chargé(e) de projet • 101 400 $ pour un(e) ingénieur(e) conseil La rémunération moyenne après expérience selon le type d'employeur en 2026... Note : dans les grandes sociétés de génie conseil, un boni de performance moyen de 5 % à 12 % s'ajoute au salaire selon une formule mixte : la performance financière des projets gérés, le taux de facturation personnel de son équipe, ainsi que la performance globale de la firme. Le revenu annuel moyen d'un(e) ingénieur(e) spécialisé(e) en environnement détenant 10 années d'expérience au sein d'une PME était de 98 700 $; Le revenu annuel moyen d'un(e) ingénieur(e) en environnement détenant 10 années d'expérience au sein d'une grande entreprise de services environnementaux (traitement des matières résiduelles) était de 99 400$. Le revenu annuel moyen d'un(e) ingénieur(e) directeur(trice) des travaux publics détenant 10 années d'expérience au sein d'une petite municipalité était de 99400 $; Le revenu annuel moyen d'un(e) ingénieur(e) en environnement ou en eaux détenant 10 années d'expérience au sein d'une municipalité régionale de comté MRC était de 100 500 $; Le revenu annuel moyen d'un(e) ingénieur(e) spécialisé(e) en environnement détenant 10 années d'expérience au sein d'une grande société de génie conseil était de 105 200 $; Le revenu annuel moyen d'un(e) ingénieur(e) en eaux ou d'un(e) ingénieur(e) en environnement qui détenait 10 ans d'expérience au sein d'une grande industrie papetière était de 106 800 $; Le revenu annuel moyen d'un(e) ingénieur(e) en environnement détenant 10 années d'expérience au sein d'une université était de 107600 $. Le revenu annuel moyen d'un(e) ingénieur(e) en eaux ou d'un(e) ingénieur(e) en environnement qui détenait 10 ans d'expérience au sein d'une grande industrie de première transformation des métaux était de 110 200 $; Le revenu annuel moyen d'un(e) ingénieur(e) spécialisé(e) en environnement détenant 10 années d'expérience au sein de la fonction publique québécoise était de 110 500 $; Le revenu annuel moyen d'un(e) ingénieur(e) en environnement ou en eaux détenant 10 années d'expérience au sein d'une municipalité de taille moyenne était de 111 600 $; Le revenu annuel moyen d'un(e) ingénieur(e) en environnementdétenant 10 années d'expérience au sein de la Société de transport de Montréal STM était de 111700 $ Le revenu annuel moyen d'un(e) ingénieur(e) en environnementdétenant 10 années d'expérience au sein d'Énergirétait de 113200 $; Le revenu annuel moyen pour un(e) officier en génie construction détenant 10 années d'expérience au sein des Forces canadiennes (Force régulière, grade de capitaine) était de 114 900 $; Le revenu annuel moyen d'un(e) ingénieur(e) en eaux ou d'un(e) ingénieur(e) spécialisé(e) en environnement détenant 10 années d'expérience au sein d'une grande compagnie minière était de 118 300 $; le revenu annuel moyen d'un(e) ingénieur(e) spécialisé(e) en environnement détenant 10 années d'expérience au sein de la fonction publique fédérale était de 119 900 $; Le revenu annuel moyen d'un(e) ingénieur(e) civil(e) détenant 10 années d'expérience au sein d'une grande municipalité était de 122400 $; et le revenu annuel moyen d'un(e) ingénieur(e) civil détenant 10 années d'expérience au sein d'Hydro-Québec était de 126 600 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

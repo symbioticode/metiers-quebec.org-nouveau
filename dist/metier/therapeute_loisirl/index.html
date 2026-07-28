@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loisir, thérapeute par le — Métiers Québec</title>
+  <meta name="description" content="Métier Loisir, thérapeute par le au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Loisir, Thérapeute Par Le</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Loisir, Thérapeute Par Le</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant quethérapeute par le loisir (aussi appelé &quot;ludothérapeute&quot;); tu seras responsable de planifier, organiser et diriger des activités récréatives (sociales, culturelles ou sportives) à des fins thérapeutiques auprès de personnes dont les capacités sont réduites en raison de limitations physiques, mentales, cognitives, sociales ou émotionnelles. Tu seras appelé(e) à intervenir dans des suivantes telles que : problèmes de dépendance, troubles de la communication, problèmes de comportement chez les enfants ou adolescents, prévention de la délinquance auprès des jeunes ou des adultes, personnes en processus de réintégration sociale, prévention du suicide, problèmes de solitude rencontrés chez les personnes âgées, déficients intellectuels en réadaptation visant leur intégration sociale, réintégration sociale des délinquants, interventions auprès de personnes ayant subi un choc post-traumatique lors un événement tragique (mortalité, accident, maladie), etc. Tu auras pour tâches de : • Évaluer les habiletés fonctionnels, les intérêts récréatifs, les besoins et souhaits, ainsi que et les attitudes de chaque client relativement aux loisirs • Élaborer des plans de traitement adaptés à la situation du patient en tenant compte des résultats de l'évaluation; • Déterminer et établir des objectifs à court et à long terme permettant de les atteindre; • Réunir les renseignements et les outils nécessaires pour aider les clients à atteindre ces objectifs; • Mettre en œuvre des programmes d'intervention répondant aux objectifs du plan de traitement; • Évaluer le plan de traitement et les objectifs du client ainsi que les programmes; • Assister les clients au niveau de la participation et surveiller leurs progrès; • Passer en revue le plan d’intervention et les objectifs des clients, ainsi que modifier le plan selon les besoins. Plusieurs milieux de travail sont possibles : -Milieux scolaires : écoles primaires, secondaires, spéciales pour handicapés, etc -Milieux de santé : hôpitaux, CHSLD, centres de réadaptation, etc -Milieux correctionnels et réintégration : centres correctionnels communautaire, pénitenciers, etc -Milieux communautaires : organismes d’intervention auprès des délinquants, déficients intellectuels, victimes de violence, personnes âgées, prévention du suicide, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aimer et facilité à travailler avec le public et entregent car tu auras de fréquents contacts avec la clientèle -Facilité à communiquer pour bien animer tes activités -Sens des responsabilités et maturité tu seras responsable des gens de ton groupe (notamment avec des enfants, ados, handicapées) et aussi de leur sécurité -Grande facilité pour le travail en équipe et dynamisme pour être capable de les encourager à participer -Esprit d’initiative et autonomie pour réussir à emmener ta clientèle à participer aux activités -Dynamisme et leadership pour bien encadrer et encourager ta clientèle à participer -Sens de l’organisation pour planifier, organiser et animer différentes activités éducatives et récréatives -Sens de l’observation et vigilance pour être en mesure de détecter les limites de tes clients(es) surtout chez les personnes âgées, handicapées et les enfants -Imagination,débrouillardise, ouverture d’esprit et créativité pour développer de nouvelles approches récréatives -Facilité d’adaptation pour mieux t’intégrer dans divers milieux et avec divers clientèles</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir un D.E.C. ou l’équivalent -Soit avoir complété au moins 15 crédits universitaire au moment de la demande d’admission -Soit être âgé d'au moins 21 ans, posséder des connaissances appropriées et avoir travaillé de façon rémunérée ou bénévole dans un domaine pertinent</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données: Le salaire moyen en début de carrière était de : -22,00 $/heure (20 à 40 hres/sem) en tant qu'intervenant(e) auprès des personnes avec problèmes psychosociaux ou de santé mentale ou d'intégration socialeau sein d'organismes communautaires sans but lucratif OBNL -26,00 $/heure (20 à 35 hres/sem) en tant qu'animateur(trice) en loisirs, animateur(trice) culturel, récréologue ou coordonnateur(trice) des loisirs ou thérapeute par le loisir au sein des organismes communautaires en loisirs OBNL -26,56 $/heure (25 à 40 hres/sem) en tant qu'animateur(trice) en loisirs, animateur(trice) culturel, récréologue ou coordonnateur(trice) des loisirs ou thérapeute par le loisir au sein des PME ou en cabinet privé -27,00 $/heure (40 hres/sem)en moyenne en tant que gestionnaire ou directeur(trice) général(e) au sein d'organismes communautaires de loisirs - 27,30 $/heure (35 hres/sem) en tant qu'art-thérapeute(maîtrise en art-thérapie obligatoire) ou thérapeute par le loisir en cabinet privé ou au sein d'un organisme à but non lucratif OBNL - 27,44 $/heure (35 hres/sem) en moyenne en tant que responsable des activités étudiantes ou animateur(trice) de la vie étudiante dans les établissements privées d'enseignement primaire et/ou secondaire - 27,55 $/heure (35 hres/sem) en moyenne en tant qu'animateur(trice) culturel ou responsable des activités de loisirs ou thérapeute par le loisirdans les grandes résidences privées pour aînées - 30,04 $/heure (35 hres/sem) en tant que génagogue ou thérapeute par le loisir dans réseau de la santé et des services sociaux (hôpitaux, centres de réadaptation en déficience physique, centres de réadaptation en dépendances, centres jeunesse ou CRDITED) - 30,14 $/heure (35 hres/sem) en moyenne en tant qu'animateur(trice) de la vie étudiante ou animateur(trice) d'activités étudiantes au sein des collèges préuniversitaires ou techniques privés -30,14 $/heure (35 hres/sem) en tant qu'animateur(trice) de vie étudiante ou thérapeute par le loisir (écoles spécialisées) au sein des centres de services scolaires - 31,03 $/heure (35 hres/sem) en tant qu'art-thérapeute(maîtrise en art-thérapie obligatoire) dans réseau de la santé et des services sociaux (hôpitaux, centres de réadaptation en déficience physique, centres de réadaptation en dépendances, centres jeunesse ou CRDITED) - 31,14 $/heure (35 hres/sem) en tant qu'art-thérapeute (maîtrise en art-thérapie obligatoire) dans les centres de services scolaires -31,74 $/heure (35 hres/sem) en tant qu'agent(e) d'intervention dans un centre d'aide aux victimes d'actes criminels CAVAC Note 1 : hausse de la moyenne salariale dans le secteur privé par rapport aux années précédentes (était de 24,32 $ en 2022; 21,50 $ en 2019; 20,70 $ en 2017 et 19,60 $ en 2015). Note 2 :dans le secteur public et parapublic, les augmentations sont établies par les conventions collectives. Sources : Conseil du Trésor du Québec, Ministère de l’Éducation et de l'Enseignement supérieur du Québec, conventions collectives des employés de plusieurs résidences privées pour aînées.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Pour les Bacc en loisir : (incluant le Bacc en récréologie, le Bacc en culture, tourisme et loisir et le Bacc en loisir thérapeutique) Le placement est bon, 75 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié dont la presque totalitésont à temps complet. Quelques autres répondants(es), soit 14 % ont poursuivi leurs études au niveau de la maîtrise. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 80525111 Note 1 : légère hausse du taux de placement par rapport aux années précédentes (était de 68 % en 2021; 78 % en 2019 et 75 % en 2017). Note 2 : légère hausse du nombre de répondants(es) poursuivant des études supérieures (était de 11 % en 2021; 9 % en 2019 et 12 % en 2017). Source : Ministère de l’Éducation et de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Avec une population de plus en plus vieillissante, il y a davantage de personnes âgées atteintes d'une déficience physique, cognitive ou psychomotrice qui désirent rester actives dans leur milieu et participent à de nombreuses activités sportives, sociales ou culturelles. Chez les jeunes, même chez ceux présentant une déficience physique, intellectuelle ou psychomotrice; malgré ce qu'on pourrait croire, il y a encore de nombreux enfants et adolescents qui participent à différentes activités sportives, culturelles et sociales de toutes sortes. Pour ce qui est des familles, la tendance des familles de personnes ayant une incapacité (que ce soit un enfant ou un parent), est d'effectuer davantage d'activités récréatives en famille dont les membres peuvent participer et en tenant compte de l'incapacité de l'un d'entre-eux. Les centres communautaires, les organismes communautaires en loisir, les résidences privées pour aînées, les centres correctionnels communautaires, les résidences spécialisées pour personnes atteintes d'une maladie mentale ou d'une déficience intellectuelle, ainsi que les résidences spécialisées pour personnes atteintes d'une maladie neurodégénérative (ex : dystrophie musculaire ou sclérose en plaques) ou d'une déficience cognitive (ex : Alzheimer) offrent de très bonnes perspectives d'emploi pour les thérapeutes par le loisir. La rémunération moyenne après expérience en 2026... le revenu annuel moyen (poste à temps complet) d'un(e) animateur(trice) ou d'un(e) intervenant(e) détenant 10 années d'expérience au sein d'un organisme à but lucratif OBNL était de 48 400 $; le revenu annuel moyen d'un(e) coordonnateur(trice) de programmes adaptés en loisirs ou thérapeute par le loisir ayant 10 années d'expérience au sein d'un organisme communautaire de loisirs ou en en cabinet privé était de 67300 $; le revenu annuel moyen d'un(e) animateur(trice) ou coordonnateur(trice) d'activités ou thérpeute en loisirs ayant 10 années d'expérienceau sein d'une résidence privée pour aînés était de 68 500 $; le revenu annuel moyen d'un(e) agent(e) d'intervention ayant 10 années d'expériencedans un centre d'aide aux victimes d'actes criminels CAVAC était de 83600 $; le revenu annuel moyen d'un(e) thérapeute par le loisir ayant 10 années d'expériencedans le réseau de la santé était de 86 000 $; le revenu annuel moyen d'un(e) animateur(trice) d'activités étudiantes adaptées ou agent(e) de réadaptation ayant 10 années d'expériencedans un centre de services scolaires (école spécialisée) était de 86300 $; le revenu annuel moyen d'un(e) art-thérapeute détenant 10 années d'expérience dans le réseau public de la santé et des services sociaux était de 94100 $ et le revenu annuel moyen d'un(e) art-thérapeute détenant 10 années d'expérience dans un centre de services scolaires était de 94 400 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

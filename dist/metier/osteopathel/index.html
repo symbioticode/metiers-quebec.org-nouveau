@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostéopathe — Métiers Québec</title>
+  <meta name="description" content="Métier Ostéopathe au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Ostéopathe</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Ostéopathe</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’ostéopathe; tu seras responsable d'identifier les troubles et les blessures du système musculosquelettique, circulatoire et nerveux et de prodiguer des soins naturels par une approche manuelle (manipulations) dont l’objectif est de rétablir la fonctionnalité des structures et des systèmes du corps humain afin d’optimiser sa capacité d’autorégulation. Tu seras est en quelque sorte l’horloger du corps humain, responsable de maintenir ou de rétablir l’équilibre des systèmes dans le corps. Tu auras pour tâches de : • Analyser l'état de santé globale du client avec l'aide d'un questionnaire détaillé sur son état de santé et sur le problème qui l'amène à consulter qui aura complété; • Identifier les causes de douleur en effectuant une évaluation complète et globale de la posture, l’observation des zones de tension, des lignes de gravité permettant d’investiguer la cause des dysfonctions neuro-musculo-squelettiques, viscérales et crâniennes; • Planifier, élaborer et appliquer un plan d'intervention thérapeutique ostéopathique permettant de restaurer l’état des parties négligées, notamment le dos, la tête (les nerfs), les membres, le système digestif; • Utiliser et appliquer des techniques précises d’ajustement manuel afin de redonner la mobilité optimale aux os, aux muscles, aux fascias, aux nerfs et aux organes afin de t’assurer du bon fonctionnement global du corps et de ses systèmes; • Faire un suivi de l'état de santé globale du client; • Fournir des conseils et des recommandations visant à promouvoir une meilleure santé globale et de saines habitudes de vie; • Référer les clients auprès d'un médecin ou d'un autre professionnel de la santé (chiropraticien, physiothérapeute, etc.) dans le cas de problemes plus complexes ou ne pouvant pas être traités par l'ostéopathie; • Administrer et gérer, s'il y a lieu, les activités et les ressources d'une clinique ostéopathique. Par exemple : chez les personnes âgées 64 ans et + : en utilisant les techniques ostéopathiques, tu permettras au corps de ralentir le processus d'usure des différents systèmes causant des maux ou autres problèmes tels que : articulations, mauvaise circulation dans les membres, fatigue, douleurs aux vertèbres, douleurs reliés à la ménopause ou l'andropause, la faiblesse du système immunitaire contre les grippes, bronchites et autres maux plus fréquents; chez les adultes 18-64 ans : tu les aideras de surveiller, soulager et soigner l’état des parties négligées du corps telles que : le dos, la tête (les nerfs), les membres, le système digestif, etc. Ensuite, tu pourras ajuster le rythme pour que le corps s’autoguérisse; chez les jeunes manmans : tu pourras proposer des soins, avant et après, servant à assurer la souplesse et le bien-être du bassin, de la colonne, l’amélioration de la respiration et pour répondre aux inquiétudes liées aux répercussions de la grossesse sur le corps de la femme; chez les adolescents 13-18 ans : tu utiliseras les techniques ostéopathiques afin de surveiller l’état des systèmes du corps (circulatoire, nerveux, hormonal), il facilite les échanges en évitant les excès de douleur, de fatigue, de stress, d’hormones ou de colère et ainsi, leur permettre une saine croissance vers l'âge adulte; chez les enfants d'âge préscolaire 3-8 ans : tu pourras utiliser différentes techniques ostéopathiques qui permettent d'assister et veiller à leur saine croissance de leur corps; chez les enfants 8-12 ans : tu utiliseras des techniques manuelles spécifiques afin de corriger des dééquilibres permettant d'encourager leur corps à trouver un rythme sain et adapté et ainsi, plus de facilité à se calmer, à se concentrer, à dormir et… à s’amuser! chez les nouveaux-nés et les bébés 0-2 ans : tu utiliseras des techniques manuelles spécifiques afin d'agir sur les contraintes que le bébé a subies durant le travail et la délivrance. Il aide ainsi le poupon à vaincre les difficultés à avaler ou à respirer, les maux de ventre, les crises de pleurs, les maux d’oreilles, les problèmes de tête plate ou qui tourne toujours du même côté; En tout temps, lorsque la condition du client le requiert, tu devras le référer à un autre professionnel de la santé.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bonne santé -Aptitudes pour les sciences physiques et biologiques : la formation est exigenante, elle demande de très bonnes connaissances en chimie, physique, biologie, anatomie et physiologie humaines -Aimer et facilité à travailler avec le publiccar tu auras à établir des contacts avec les clients(es) -Facilité à communiqueret entregent car tu auras à établir une certaine relation de confiance avec ta clientèle -Capacité d’écoute et équilibre émotif pour bien soutenir en encourager tes clients(es) et à travailler auprès de clientèles rencontrant divers problèmes de santé qui les affectent tant sur plan physique que moral -Bon discernement et bon jugement pour être capable de cerner et d’établir les besoins thérapeutiques de tes clients(es) -Minutie et précision car tu auras à faire des traitements sur des endroits précis sans causer d’autres blessures -Sens des responsabilités car tu seras responsable de la qualité du travail que tu effectueras et tu auras à travailler seul(e) -Autonomieet débrouillardise car tu auras travailleras généralement seul(e) -Facilité à travailler en équipe et professionnalisme car tu auras à travailler avec collaboration de d'autres thérapeutes en médecines alternatives (massothérapeutes, naturothérapeutes, orthothérapeutes, etc.), mais également avec d'autres professionnels de la santé (médecins de famille, chiropraticiens, physiothérapeutes, kinésiologues, infirmiers, sages-femmes, etc.) -Sens de l’organisation pour bien planifier ton horaire (surtout si tu travailles à ton compte) -Aimer te perfectionner constamment -Facilité d'adaptation à divers milieux -Aptitudes pour la gestion et l’entrepreneurship sont nécessaires si tu désires ouvrir ta propre clinique ostéopathique car tu auras à superviser le personnel, coordonner toutes les activités cliniques, gérer les approvisionnements et gérer les opérations financières -Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité -Très bonne connaissance de la langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité et de plus, la plupart des manuels de référence dans ce domaine sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Note : les exigences peuvent varier selon les établissements. Bien que non obligatoire, il est préférable de détenir l'une formation suivante : - Soit détenir un D.E.C. préuniversitaire ou technique ou un baccalauréat autre que dans le domaine de la santé -Soit détenir un Diplôme de 1er cycle universitaire dans une spécialité des sciences de la santé ou un domaine connexe sans autre exigence : Médecine, chiropratique, pharmacie, médecine vétérinaire, physiothérapie, ergothérapie, kinésiologie, thérapie du sport, pratique sage-femme, sciences infirmières, etc. Soit détenir un D.E.C. professionnel en techniques de physiothérapie (ou techniques de réadaptation physique) ou du D.E.C. en techniques d'acupuncture ou l’équivalent ET avoir suivi une formation préalable en sciences de la santé de 450 heures (informe-toi auprès de l’école choisie) Note : Il faudra prévoir des frais d’études de quelques milliers de dollars excluant le matériel, les fournitures et les livres.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: En 2026, le salaire hebdomadaire moyen en début de carrière d'un(e) ostéopathe était 942,00 $. Note : hausse de la moyenne salariale par rapport aux années précédentes (était de 850 $ en 2024; 740 $ en 2022 et 636 $ en 2019). La rémunération est difficile à évaluer car plusieurs diplômés(es) combinent leur formation en ostéopathie avec la pratique d'une autre profession comme physiothérapeute ou chiropraticien.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: De plus en plus de personnes font confiance aux médecines douces et font appel aux services des ces spécialistes. Plus de 2 millions de traitements en ostéopathie sont donnés annuellement au Québec. Au-delà du cabinet libéral, les ostéopathes s'intègrent de plus en plus dans des structures pluridisciplinaires (maisons de santé), des CHSLSD privés, des résidences privées pour aînées, des centres de réadaptation privés ou encore en entreprise pour la prévention des TMS (troubles musculosquelettiques). Les perspectives d'avenir pour les ostéopathes sont prometteuses, portées par une demande accrue pour les thérapies manuelles et le bien-être, notamment en pédiatrie, périnatalité, et sport. On prévoit de très bonnes perspectives d'avenir pour cette profession. En juin 2022, l'Office des professions du Québec a émis un avis afin de recommander la création d'un ordre professionnel spécialement pour les ostéopathes. En 2026, le salaire annuel moyen d'un(e) ostéopathe détenant environ 10 années d'expérience était de 84 900 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

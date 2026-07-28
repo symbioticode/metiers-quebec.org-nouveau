@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denturologiste — Métiers Québec</title>
+  <meta name="description" content="Métier Denturologiste au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Denturologiste</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Denturologiste</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que denturologiste; tu seras responsable de poser, ajuster, modifier et réparer des prothèses dentaires (fixes ou amovibles) auprès des clients et patientes de tous âges (de l’enfant ayant perdu ses dents dans un accident et ayant besoin d’une prothèse partielle; allant jusqu’à la personne âgée qui a besoin de faire ajuster, réparer ou changer sa prothèse). On peut le comparer à l'opticien qui pose et ajuste les montures, mais ne les fabrique pas. Cette étape est effectuée dans un laboratoire spécialisé. C'est un peu la même façon de faire chez le denturologiste. C'est la responsabilité du technicien(ne) dentaire d'un laboratoire spécialisé qui est chargé(e) de la conception et de la fabrication des prothèses dentaires, alors que le denturologiste est la responsabilité de les poser et les ajuster. Tu auras pour tâches de : • Effectuer un examen denturologique qui consiste à analyser et évaluer les besoins du patient et évaluer l'état des gencives; • Élaborer un plan de traitement approprié en tenant compte de l'examen denturologique; • Effectuer la prise d'empreintes de la bouche; • Effectuer la prises de mesures nécessaires à la confection des prothèses (enregistrement de la position du maxillaire supérieur et de la mandibule, conseil sur le choix des dents, tant au niveau de la forme, de la grosseur et de la couleur en se basant sur le centre du visage, les commissures des lèvres, la longueur de la lèvre supérieure, la ligne du sourire, etc.); • Préparer les commandes auprès du laboratoire dentaire pour la conception et la fabrication des prothèses; • Effectuer des essayages des nouvelles prothèses sur patient et vérifier leurs aspect fonctionnel et esthétique afin de l'assurer de l'efficacité et du confort du patient; • Réaliser et adapter le plan de traitement denturologique élaboré précédemment par la mise en bouche et l'ajustement de la prothèse sur le patient; • Valider et contrôler le plan de traitement afin de t'assurer de son efficacité et du confort du patient après une certaine période d'utilisation; • Effectuer des ajustements, des modifications ou des réparations occasionnelles des prothèses complètes ou partielles des clients. Enfin, puisque la plupart des denturologistes travaillent à leur propre compte, tu devras également effectuer toutes les tâches nécessaires au fonctionnement et à la gestion de ton cabinet.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aimer et facilité à travailler avec le public et entregent car tu auras de fréquents contacts avec la clientèle - Capacité d’écoute, respect, patience et empathie car tu auras à faire face à clients(es) ayant plusieurs problèmes qui les affectent tant au plan physiologique que psychologique -Capacité d'analyse et de synthèse afin de bien analyser et cerner les problèmes de dentition et les besoins des clients -Logique, sens critique et jugement afin de bien conseiller le produit le plus approprié selon les besoins et les problèmes dentaires des clients -Bonnes habiletés et déxtérité manuelle car tu auras à manipuler et fabriquer des pièces délicates des prothèses -Minutie, précision et souci du détail pour concevoir, réparer et ajuster de façon précise les prothèses -Sens des responsabilités car tu seras responsable de la qualité de ton travail -Sens de l’organisation et de la gestion car tu auras à mettre à jour, vérifier et classer les dossiers des clients(es), également pour bien gérer toutes les activités administratives de ton cabinet si tu travailles à ton compte -Facilité à travailler en équipe et professionnalisme car tu devras travailler avec la collaboration de d'autres professionnels (dentistes généralistes, dentistes spécialistes tels que les orthodontistes et les chirurgiens buccaux, techniciens en prothèses dentaires) -Dynamisme et sens de l’entrepreneurship car tu seras probablement appelé(e) à ouvrir ton propre cabinet -Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité -Bonne connaissance de la langue anglaise afin de bien communiquer avec la clientele anglophone, mais aussi parce que la plupart des manuels spécialisés sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir un D.E.S. et avoir réussi les cours suivants ou leurs équivalents : Physique 5e(anciennement physique 534 ou 584) - Mathématiques CST 4e(anciennement mathématiques 416) Note : pour connaître les cours équivalents en éducation aux adultes, consulte la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : -Le salaire moyen en début de carrière était de 30,60 $/heure (35 à 40 hres/sem) Note : hausse de la moyenne salariale par rapport aux années précédentes (était de 25,82 $ en 2022; 22,15 $ en 2020 et 20,65 $ en 2019). Source : Ministère de l’Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 92 % des répondants(es) ont obtenu un emploi comme denturologiste dont la presque totalité sont à temps complet. Près de la moitié d'entre-eux, soit 48 % ont ouvert leur propre cabinet ou se sont associés à un(e) denturologiste déjà actif. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE À LEUR COMPTE NOMBRE AUX ÉTUDES 151310121 Note 1 : taux de placement comparable aux années précédentes (était de 83 % en 2022; 92 % en 2021; 92 % en 2020 et 93 % en 2018). Note 2 : hausse du nombre de postes à temps complet (était de 74 % en 2022; 83 % en 2020 et 71 % en 2018). Note 3 : hausse du nombre de répondants(es) travaillant à leur propre compte (était de 60 % en 2022; 48 % en 2021 et 57 % en 2018) Sources : Cégep Édouard-Montpetit et Ministère de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L’accroissement de la population vieillissante permet de faire augmenter la demande de denturologistes et de plus, de nombreux denturologistes sont âgés et devront prendre leur retraite au cours des prochaines années Puisqu'il y aura toujours un besoin pour la pose et l'entretien de prothèses dentaires, le taux de croissance de l'emploi de denturologiste est supérieur à la moyenne.. De plus, le vieillissement des praticiens et le manque de relève, rendant l'accès aux prothèses dentaires difficile, avec des listes d'attente s'allongeant à plusieurs années. Les prochaines années s'annoncent critiques pour cette profession, puisque 34 % des denturologistes sont actuellement âgés de 50 ans et plus (dont 3 % ont 70 ans ou plus), prendront leur retraite au cours des prochaines années et devront être remplacés. Dans plusieurs régions de l'extérieur des grands centres, les patients doivent se déplacer sur de longues distances our obtenir des soins, les listes d'attente peuvent atteindre de 2-3 ans pour les prothèses, ce qui fait en sorte qu'il y a des populations laissées pour compte. On estime qu'une centaine de denturologistes supplémentaires seraient nécessaires afin de combler cette pénurie seulement, sans compter les nombreux départs à la retraite qui devront également être comblés. Une pénurie de denturologistes est observée dans plusieurs régions, notamment : Côte-Nord : fait face à une grave pénurie de denturologistes et de dentistes Pour une grande région, perdre un seul denturologiste n'est généralement pas si grave. Mais, pour une région éloignée comme cette région, c'est obliger les clients à parcourir des centaines de kilomètres afin de rencontrer un professionnel. En 2019, elle comptait 6 denturologistes qui ne manquaient pas de travail, alors qu'il n'est restait que 3 en 2025. Aucun denturologiste n'est présent sur les territoires de Caniapiscau (Fermont) et de la Basse-Côte-Nord (Blanc-Sablon). Plusieurs patients doivent se déplacer à Saguenay, Québec, ou d'autres villes, ce qui représente de longues distances. Centre-du-Québec : fait face à une pénurie de denturologistes et de professionnels dentaires, rendant l'accès aux prothèses dentaires difficile, avec des patients devant se déplacer loin ou attendre longtemps, car les départs à la retraite ne sont pas compensés par de nouveaux diplômés, aggravant la situation malgré des efforts d'attraction en région. Les listes d'attente s'allongent, avec des patients devant voyager pour obtenir des soins dentaires, surtout pour des services comme les prothèses. Elle a perdu 8 denturologistes depuis 2019. La population de Drummondville est pourtant passée de plus de 64 300 habitants en 2015 à 79 300 en 2025. À Victoriaville, elle est passée de 45 200 habitants en 2015 à 47 800 en 2025. À Bécancour, elle est passée de 12 800 habitants à près de 14 600 en 2025. Quant à Plessisville, est passée de 4 500 habitants en 2025 à 6 400 en 2025. Parmi les régions de l'extérieur du Grand Montréal et de Québec, cette région figure au 2e rang (derrière l'Estrie) ayant connu la plus grande expansion de sa population au cours des 10 dernières années. Gaspésie : fait face à une grave pénurie de denturologistes et de dentistes. Plusieurs patients doivent se déplacer à Rimouski, Québec, ou d'autres villes, ce qui représente de longues distances. Quelques denturologistes supplémentaires pourraient aider la clientèle de la région à répondre à leurs besoins, notamment en Haute-Gaspésie (Sainte-Anne-des-Monts). Bas-St-Laurent : fait face à une pénurie significative de denturologistes, entraînant des difficultés d'accès aux soins pour les résidents, qui doivent parfois parcourir de longues distances pour obtenir des prothèses dentaires. De plus, les résidents de la Gaspésie se déplacent afin d'y obtenir des soins dans les cabinets de la région déjà débordés. Des patients parcourent des heures de route (notamment vers Lévis ou Québec) pour une obtenir une prothèse. Beaucoup de denturologistes partent à la retraite sans relève suffisante. Au cours des dernières années, elle perdu 5 denturologistes qui ont pris leur retraite, alors que sa population est vieillissante. Afin de remédier à la pénurie, près d'une dizaine de denturologistes seraient nécessaires. Abitibi-Témiscamingue : fait face à une grave pénurie de denturologistes, avec de longues listes d'attente, des cabinets qui ferment faute de repreneurs et des professionnels débordés, aggravée par la difficulté de recruter en région et l'augmentation de la demande due aux nouveaux programmes d'assurance dentaire, forçant certains patients à voyager de longues distance pour obtenir des soins. Plusieurs mois d'attente pour un rendez-vous, et même des semaines pour des urgences. Certains patients doivent se rendre en Ontario ou dans d'autres régions du Québec. Depuis 2019, elle a perdu 3 denturogistes, alors que les demandes de la clientèle augmentent. Mauricie : connaît une pénurie de denturologistes comme plusieurs autres régions. Depuis 2019, elle a perdu 4 denturologistes qui ont quitté pour la retraite et aucune relève n'a pu les remplacer, principalement à l'extérieur de Trois-Rivières. Les cabinets reçoivent beaucoup plus de demandes de nouveaux patients qu'elles ne peuvent en accepter, entraînant des listes d'attente pour des mois, voire des années, pour des prothèses dentaires. Les patients doivent parfois se rendre dans d'autres régions, comme Québec, pour des soins urgents, car les cliniques locales sont débordées Saguenay-Lac-St-Jean : au cours des dernières années, elle a perdu 3 denturologistes qui ont pris leur retraite, alors que sa population est vieillissante. Afin de combler les besoins de la clientèle, près d'une dizaine de denturologistes seraient nécessaires. Chaudière-Appalaches : a perdu 4 denturologistes au cours des dernières années, alors que sa population est en expansion. De nombreux clients provenant notamment du Bas-Saint-Laurent et de la Gaspésie se déplacement jusqu'à Lévis afin d'obtenir un rendez-vous avec un denturologiste, faute de places disponibles dans leur région, ce qui engendre une hausse des demandes dans les cabinets déjà débordés. Afin de combler les besoins de la clientèle, près d'une dizaine de denturologistes seraient nécessaires. Laval : a connu une forte expansion de sa population, ce qui nécessiterait quelques denturologistes supplémentaires afin de combler les besoins de la clientèle. Lanaudière : a aussi connu une forte expansion de sa population, ce qui nécessiterait quelques denturologistes supplémentaires afin de combler les besoins de la clientèle. Pour toutes ces raisons, les perspectives s’annoncent excellentes. En 2024, le revenu annuel moyen d'un(e) denturologiste ayant 10 années d'expérience en cabinet privé était de 99 400 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaudronnier — Métiers Québec</title>
+  <meta name="description" content="Métier Chaudronnier au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Chaudronnier</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Chaudronnier</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que chaudronnier ou chaudronnière; tu seras responsable de fabriquer, construire, assembler, monter ou démolir toute une gamme de vaisseaux, réservoirs, tours et de chaudières sur des chantiers de construciton industrielle. Tu auras pour tâches de : • Lire, interpréter et étudier des dessins ou des spécifications techniques pour planifier le déroulement des opérations; • Tracer sur de la tôle forte, de la tôle d'acier ou toute autre pièce de métal lourd, des lignes de cintrage et de découpage à l'aide de rapporteurs, de compas, de gabarits et d'autres instruments; • Développer un dessin/patron d'implantation et planifier la séquence du travail à être accompli; • Régler et utiliser des machines à travailler le métal, notamment des cintreuses, des laminoirs, des cisailles, des chalumeaux découpeurs et des perceuses à colonne, pour découper, façonner et former des pièces; • Ajuster et souder les pièces métalliques pour former des chaudières, réservoirs, cuves, échangeurs de chaleur, tuyauteries et autres produits métalliques lourds; • Façonner le métal en utilisant des machines métallurgiques (telles que : cisaille, plieuse, rouleuse, grignoteuse, etc.); réaliser des opérations de tuyautage (utiliser une cintreuse, préparer les bords, positionner les éléments…); • Construire et installer des chaudières et d'autres produits métalliques lourds, conformément aux prescriptions données, à l'aide d'outils manuels et mécaniques; • Réaliser l’assemblage des éléments par soudage notamment; • Réparer et entretenir des chaudières et d'autres produits métalliques lourds; • Diriger des grutiers ou des conducteurs de palans et d'autres travailleurs au cours du façonnage, de l'assemblage, de l'installation ou de la réparation d'ouvrages métalliques; • Contrôler des structures achevées en utilisant diverses méthodes de contrôle. Sur les chantiers en construction industrielle; tu auras pour tâches de fabriquer, construire, monter, assembler, démonter, mettre en place et entretenir toute une gamme de vaisseaux, grues, chaudières, générateurs de vapeur, réservoirs sphériques sous pression, tours, systèmes de récupération et d’évacuation, ainsi que tous les genres de travaux d'ossature et de grosse tôlerie sur des contenants étanches à la poussière, à l'air, au gaz, à la vapeur, à l'huile, à l'eau ou à d'autres liquides pour des travaux industriels. Tu érigeras et installeras également des chaudières, travaillant régulièrement sur des échafaudages et il répare et entretient les chaudières existantes et les produits métalliques connexes. Tu devras appliquer les procédés de gréage, de boulonnage, de soudage et d’assemblage des matériaux composites nécessaires pour exécuter les tâches précédentes. Tu pourras travailler au sein d'entrepreneurs en construction spécialisées dans la construction industrielle lourde (complexes industriels, mines, centrales d'énergie autres que hydroélectriques, oléoducs et gazoducs, infrastructures pour raffineries, etc.). Dansun atelier de chaudronnerie ou dans une usine; tu auras pour tâches de dessiner, ajuster, mettre en forme, souder et assembler des tôles, tubes et profilés de différentes dimensions afin de réaliser divers éléments de chaudières, de réservoirs et d'autres contenants sous pression. Tu pourras travailler au sein des industries chimiques, pétrochimiques, métallurgiques (fonderies, aciéries, alumineries), de raffineries de pétrole, de fabricants de chaudières, de réservoirs, d’échangeurs, de générateurs de vapeur et autres équipements connexes, dans les usines de ciment, de chaux ou de gypse, ainsi que dans les ateliers de chaudronnerie. Dans un chantier naval; tu auras pour tâches de dessiner, ajuster et souder toute sorte de pièces structurale et de tôle forte pour la construction, la réparation ou la préparation de navires de toutes sortes telles que : patrouilleurs, traversiers, remorqueurs, navires de pêche, brise-glace, navires de recherche et sauvetage, navires de combat des incendies,navires côtiers, navires de pêche en haute mer, frégates de patrouille maritime, navires de défense côtière, navires de défense extracôtière, cargos généraux, vraquiers, autres navires marchands, yachts, barges, plates-formes de forage ou toute autre structure flottante fixe ou mobile). Au sein des manufacturiers de chaudières et de contenants sous pression; en tant que chaudronnier spécialisé en inspection non destructive, tu auras pour tâches d'inspecter les chaudières et les contenants sous pression, en utilisant des équipements et des techniques sophistiquées les processus de fabrication et de raccordement et évaluer l'intégrité des structures soudées dans les nouvelles réparations afin d'évaluer les endroits difficiles ou impossibles à examiner à l'œil nu. et pour assurer une opération efficace et sécuritaire conforme aux normes et aux codes gouvernementaux et industriels les plus strictes.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: - Aimer le travailler à l'extérieur en toutes saisons -Avoir une excellente santé -Avoir une bonne vision - Ne pas avoir le vertige et capacité de travailler en hauteur -Posséder une très bonne condition et endurance physique car tu devras rester de longues heures debout, dans des conditions inconfortables et soulever des charges assez lourdes - Capacité de lire des plans de construction -Bonnes habiletés et dextérité manuelle pour manipuler efficacement les composants et pièces d’assemblage -Minutie, précision, souci du détail pour assembler de façon précise les différentes structures -Bon sens logique et esprit analytique car tu auras à résoudre des problème reliés à l’assemblage -Sens des responsabilités car tu seras responsable du bon état des structures que tu auras assemblées (la sécurité de tes collègues dépendra de toi) -Facilité à travailler en équipe car tu devras collaborer avec d’autres collègues (ferblantiers, soudeurs, grutiers, monteurs de charpentes métalliques, techniciens en génie civil, etc)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: -Détenir ta carte de compétence est obligatoire pour travailler sur les chantiers de construction, en début de carrière tu travailleras en tant qu’apprenti et tu n’obtiendras ta carte de compagnon seulement après avoir accumulé un minimum de 6 000 heures de travail comme apprenti (environ 3 ans). Voici les détails auprès de la . -Travail souvent actif en période estivale, mais il y a du travail pendant toute l'année</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : -30,47 $/heure (40 à 50 hres/sem) en tant qu’apprenti(e) et augmente à 50,79 $/heure en tant que compagnon dans le secteur de la construction industrielle conventionnelle (usines, ateliers de fabrication) -30,47 $/heure (40 à 50 hres/sem) en tant qu’apprenti(e) et augmente à 50,79 $/heure en tant que compagnon dans le secteur de la construction de génie civil -32,68 $/heure (40 à 50 hres/sem) en tant qu’apprenti(e) et augmente à 54,46 $/heure en tant que compagnon dans le secteur de la construction industrielle lourde (mines, oléoducs, gazoducs, infrastructures de raffineries, centrales d'énergie sauf hydroélectriques, etc.) - 29,14 $/heure (40 hres/sem) en moyenne en tant qu'apprenti(e) et augmente à 36,43 $/heure par la suite au sein des grandes industries pétrolières - 29,35 $/heure (40 hres/sem) en moyenne en tant qu'apprenti(e) et augmente à 30,71 $/heure par la suite au sein des grandes industries de première transformation des métaux (aciéries, affineries, fonderies et alumineries) Note : Cependant, le salaire annuel moyen pour un(e) apprenti(e) au cours de sa première année dans l'industrie de la construction était de 48 800 $ (baisse par rapport aux années précédentes : était de 44 900 $ en 2024; 47 500 $ en 2022 et 52 800 $ en 2019). Sources : Ministère de l’Éducation du Québec, Commission de la construction du Québec et conventions collectives des employés de certaines grandes industries pétrolières.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est très bon, 80 % des répondants(es) qui se sont dirigés vers le marché du travail sont en emploi relié don la totalité sont à temps complet. Les conditions de travail sont également excellentes. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 10870 Note 1 : le taux de placement est tout aussi excellent depuis plusieurs années Note 2 : prendre note que seulement 46 % des diplômés ont répondu à cette enquête. Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Dans le secteur de la construction : Les perspectives d’emploi pour ce métier sont très bonnes. Même si la demande pour ce métier est en légère baisse, le vieillissement important des travailleurs et le nombre de nouveaux diplômés insuffisants créent des besoins de travailleurs sur le marché. En effet, plus de 38 % des chaudronniers sont âgés de 45 ans et plus Un(e) apprenti(e) travaille en moyenne 1 200 à 1 800 heures par année. En 2026, le salaire annuel moyen d'un(e) apprenti(e) était de 48 800 $. Une fois devenu compagnon, son salaire annuel peut cependant atteindre 92 000 $ dont 58 % ont travaillé 500 heure ou plus dans l'année (était de 54 % en 2022 et 72 % en 2019). Plus de 95 % du volume de travail des chaudronniers est fait dans le secteur industriel. Ce secteur devrait demeurer stable au cours des prochaines années. On retrouve également quelques chaudronniers dans le secteur génie civil et voirie, qui, lui aussi, devraient continuer d’offrir un volume de travail élevé. Les perspectives du secteur industriel se sont un peu assombries. Le projet le plus important en valeur, celui de Northvolt, s’est arrêté. De même, le projet qui était financé par Ford et EcoPro CAM a été suspendu l’automne 2025. Ces 2 projets ne pourront redémarrer que si de nouveaux investisseurs sont trouvés. Toujours dans la filière de batteries, l’autre projet phare par Ultium CAM à Bécancour se poursuit et se terminera en 2025. Dans un autre registre, Rio Tinto possède quelques projets en cours, dont la construction de l’usine AP60, à Jonquière ainsi que des travaux liés à la décarbonation de ses activités à Sorel-Tracy. Sources : Commission de la construction du Québec Dans le secteur industriel : Ce sont les industries de première transformation des métaux qui embauchent le plus grand nombre de chaudronniers au Québec, notamment les alumineries et les aciéries. Mais, les industries pétrochimiques, les chantiers navals, les fabricants de chaudières et de contenants sous pression, les ateliers de chaudronnerie et plus rarement, les raffineries de pétrole; embauchent également des chaudronniers (d'ailleurs ils sont très recherchés par les employeurs de l'industrie pétrolière en Alberta). Les employeurs industriels les plus importants qui emploient la plus grande majorité des chaudronniers hors-construction sont et .</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

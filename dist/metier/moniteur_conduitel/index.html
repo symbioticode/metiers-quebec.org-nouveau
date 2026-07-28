@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moniteur en conduite d’une motocyclette — Métiers Québec</title>
+  <meta name="description" content="Métier Moniteur en conduite d’une motocyclette au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Moniteur En Conduite D’Une Motocyclette</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Moniteur En Conduite D’Une Motocyclette</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'instructrice ou instructeur en sécurité routière; tu seras responsable d’enseigner en classe les modules théoriques du Programme d’éducation à la sécurité routière (PESR) de la SAAQ auprès d'apprentis-conducteurs d'une école de conduite. Tu leur enseigneras la matière contenue dans douze (12) modules théoriques comme les lois et règlements relatifs à la sécurité routière, les comportements d’un(e) automobiliste ou d’un(e) motocycliste sur la route et autres notions nécessaires en utilisant les techniques, méthodes d'enseignement et outils pédagogiques élaborés par la SAAQ, l'AQTR, ainsi que ceux réalisés par l'école. Chacun de ces modules permet à l’élève d’acquérir des compétences visées par le cours de conduite. L’enseignement se fait en classe, dans les locaux de l’école de conduite avec un groupe d’élèves. Tu les notions de base de la sécurité routière enn. Tout d’abord, avant de faire connaître ta matière aux étudiants(es), tu devras planifier et élaborer le contenu de tes cours; planifier, élaborer, organiser et mettre en œuvre des activités pédagogiques selon le rythme d'apprentissage de tes étudiants(es) tout en respectant le programme établi par la SAAQ et celui de l'école Tu devras aider ceux et celles présentant des difficultés à comprendre la matière et t’assurer que l’ensemble de la classe a pu assimiler toute la matière que tu leur auras appris. En tant que formatrce ou formateur en conduite d’une automobile ou en conduite d’une motocyclette; tu auras responsable d’enseigner à des apprentis les notions de base nécessaires pour la conduite d’un tel véhicule sur la voie publique. Tu leur enseigneras les techniques pratiques de conduite du véhicule sur la route et les comportements à adopter en tant que conductrice ou conducteur. Enfin, tu devras également évaluer les acquis théoriques et les acquis pratiques de tes étudiants(es) par divers tests et examens, ainsi que les préparer à subir l’examen pratique de la SAAQ. Tu devras d'abord, préparer ton cours et planifier les trajets de route qui seront empruntés lors de la leçon; procéder à l’inspection sommaire de son véhicule à chaque utilisation : s’assurer que les phares sont fonctionnels, effectuer le plein d’essence, garder la voiture propre, etc.; enseigner les techniques pratiques de la conduite du véhicule lors des exercices sur la route; donner de la rétroaction à tes élèves, des exercices à pratiquer et assurer le suivi lors de la prochaine leçon en complétant le guide de l’apprenti-conducteur; effectuer et compléter les évaluations formatives selon les exigences du programme de formation de l'entreprise et de l’AQTR et enfin, préparer les élèves à subir leur examen de conduite auprès d'un agent-évaluateur de la SAAQ.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Avoir une très bonne vision (aucune restriction médicale ou autre sur ton permis) - Avoir une bonne condition physique : non recommandé aux personnes souffrant de maux de dos ou de cou - Ne pas souffrir de malaise relié au transport - Excellentes habiletés relationnelles et aptitudes à enseigner : afin de bien expliquer et vulgariser efficacement les notions et les bonnes techniques de conduite -Grande capacité d'écoute et démontrer une attitude positive et d’encouragement : afin de bien cerner les difficultés ou les interrogations de l'étudiant et l'aider à s'améliorer -Autonomie et débrouillardise : car tu devras être en mesure de régler seul(e) certains problèmes sur la route -Aimer et aptitudes à travailler avec public : car tu seras constamment en contact avec toutes sortes de personnes dans un souci de qualité du service à la clientèle -Discipline, discrétion, calme, et patience : car tu devras rassurer les apprentis qui sont nerveux ou craintifs sur la route -Sens des responsabilités : tu devras assurer la sécurité tant celle de l'élève, de la tienne et des autres usagers de la route -Sens de l'organisation : pour planifier et organiser tes cours et activités d’enseignement -Facilité à travailler en équipe : puisque l'enseignement individualisé nécessite davantage qu'une bonne relation élève-enseignant, mais également une très bonne collaboration -Bonne maîtrise de la langue française parlée -Bonne connaissance de la langue anglaise parlée: souvent nécessaire pour travailler avec une clientèle anglophone</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: : Le salaire moyen en début de carrière était : - 18,40 $/heure (15 à 25 hres/sem à temps partiel ou 30 à 40 hres/sem à temps complet) en moyenne au sein des PME - 21,50 $/heure (15 à 25 hres/sem à temps partiel ou 30 à 40 hres/sem à temps complet)) en moyenne comme moniteur(trice) ou instructeur(trice) en conduite d'une automobile au sein des grandes écoles de conduite - 23,00 $/heure (15 à 25 hres/sem à temps partiel ou 30 à 40 hres/sem à temps complet)) en moyenne comme moniteur(trice) ou instructeur(trice) en conduite d'une motocyclette au sein des grandes écoles de conduite Note : hausse de la moyenne salariale par rapport aux années précédentes au sein des PME (était de 18,00 $ en 2024; 17,50 $ en 2022 et 16,88 $ en 2019).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Au Québec, notre climat et l’état de nos routes rendent l’apprentissage de la conduite automobile plus laborieuse. Il est donc primordial d’apprendre entre bonnes mains. Ces professionnels sont répartis au sein d'un peu plus de 600 prestataires de formation agréés (écoles) à travers la province dont près de 86 % ont affiliés à l'un des 5 grandes bannièeres d'écoles. Les cours de conduite devenus obligatoires a fait augmenté considérablement le nombre de demandes dans les écoles de conduite de partout au Québec. Le métier de moniteur(trice) ou d'instructeur(trice) d'auto-école connaît d'excellentes perspectives d'emploi au Québec et offre une stabilité professionnelle très recherchée. En raison du besoin constant de former de nouveaux conducteurs et du vieillissement de la main-d'œuvre, les grandes écoles de conduite et les PME locales recrutent activement. Le marché est en forte croissance. Les besoins sont particulièrement criants dans les grands centres urbains. Il y a actuellement une pénurie importante de moniteurs(trices) et d'instructeurs(trices) en conduite d'une automobile partout au Québec. Plusieurs possibilités d'emploi que ce soit à temps partiel (15 à 25 heures/semaine) ou à temps complet (30 à 40 heures/semaine). Il est très fréquent de travailler selon des horaires flexibles, incluant les soirs et les fins de semaine, pour s'adapter aux disponibilités des étudiants et des travailleurs. Bien évidemment, pour les moniteurs(trices) en conduite d'une motocyclette, l'emploi est saisonnier. Donc, les perspectives semblent excellentes pour les prochaines années. La rémunération moyenne après expérience en 2026... le revenu annuel moyen d'un(e) moniteur(trice) ou instructeur(trice) en conduite automobile (emploi à temps complet) détenant 10 années d'expérience au sein d'une PME était de 45 900 $; et le revenu annuel moyen d'un(e) moniteur(trice) ou instructeur(trice) en conduite automobile (emploi à temps complet) détenant 10 années d'expérience au sein d'une grande école de conduite était de 54 400 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide chasse et pêche — Métiers Québec</title>
+  <meta name="description" content="Métier Guide chasse et pêche au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Guide Chasse Et Pêche</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Guide Chasse Et Pêche</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technicien ou technicienne en Aménagement Cynégétique et Halieutique (TACH); tu auras pour tâches de participer la gestion et l’organisation des services, des ressources et des activités reliées à l’aménagement de la faune et au tourisme et sports de plein air (excursions en forêt, camping en forêt, pêche et chasse). Tes tâches varieront selon le type d’organisation où tu travailleras : En tourisme et activités récréatives de plein air : tu participeras à des projets d’aménagement et d’exploitations de territoires fauniques à des fins récréatives, tu auras à inventorier les espèces animales et évaluer le potentiel récréatif du territoire, organiser et animer diverses activités de chasse, de pêche et d’excursions en forêt auprès de toutes sortes de clientèles (membres de clubs, clients de pourvoiries, groupes scolaires, etc). Enfin, tu seras également responsable de coordonner et de gérer toutes les ressources au sein de l’entreprise ou de l’organisation y comprit superviser le personnel de cette dernière. Tu travailleras pour une pourvoirie, une ZEC, une association touristique, une entreprise d’animation en plein air, etc. En aménagement et protection de la faune : tu seras chargé(e) d’effectuer l’inventaire des espèces animales et de leur population (mammifères, oiseaux ou poissons) se retrouvant dans une réserve faunique afin que le ou la biologiste puisse évaluer la population et le potentiel faunique accessibles aux activités sportives (chasse et pêche). Avec la collaboration d’un(e) biologiste, tu coordonneras les travaux d’aménagement des habitats, d’aménagement des sols et des cours d’eau dans le cadre d’un projet d’aménagement de la faune et de la flore ou d’aménagement d’un territoire à fin des récréatives. Tu travailleras généralement au sein des gouvernements (Parcs Canada, Parcs Québec, etc). En interprétation de la nature et éducation à l’environnement : tu planifieras et élaboreras des programmes d’interprétation des ressources naturelles et d’éducation à l’environnement. Tu animeras différentes activités d’interprétation et de sensibilisation à la protection de la nature et de l’environnement auprès de clientèles diverses (touristes, groupes scolaires, chasseurs et pêcheurs et autres). Tu les initieras à comprendre la nature, à identifier les espèces végétales et animales, à survivre en forêt et les sensibiliser à protéger notre nature. Tu pourras travailler au sein des centres d’interprétation de la nature, dans les centres éducatifs forestiers, dans les parcs et réserves pour la Société des parcs et réserves du Québec ou le Service canadien de la faune.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes et intérêts pour les sciences biologiques et naturelles -Intérêts pour les végétaux, l’environnement et le travail en plein air -Bonne condition en endurance physique car tu auras à parcourir de longues distances en forêt -Curiosité scientifique pour être appelé(e) à chercher la solution à un problème scientifique relié aux sciences naturelles -Bonnes habiletés et dextérité manuelles car tu auras à effectuer notamment des prélèvements d’eau, de sols, de poils ou de plumes, etc pour en faire des analyses -Sens de l’observation pour détecter un problème, une maladie ou autre chez une espèce animale, mais aussi pour observer le comportement des animaux -Souci du détail et minutie car tu auras à prendre le plus d’informations détaillées possibles lors d’inventaire d’espèces animales -Capacité d’analyse et de synthèse pour être en mesure d’analyse et de résoudre divers problèmes d’aménagement des habitats, d’environnement ou autre problème en conservation de la faune ou aménagements pour la chasse et la pêche -Sens des responsabilités car tu seras responsable de coordonner des projets -Sens de l’initiative et facilité à communiquer pour proposer tes idées lors de l’élaboration de projet, mais aussi pour animer des activités d’interprétation de la nature - Sens de l’organisation pour planifier et organiser des projets techniques en aménagement de la faune, pour organiser diverses activités et forfaits de chasse et pêche, mais aussi pour planifier l’inventaire d’espèces animales dans une réserve -Facilité à travailler en équipe car tu auras à collaborer avec des agents de conservation de la faune, garde-forestiers, de gardes chasse et pêche, d’autres techniciens en aménagement cinétique et halieutique, biologistes, etc. -Facilité d’adaptation à divers milieux -Aptitudes en gestion car tu pourrais être appelé(e) à gérer les ressources fauniques et à superviser du personnel</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: aménagement durable des ressources fauniques : -Détenir un D.E.S. ou un D.E.P. et avoir réussi le cours suivants ou leurs équivalents : mathématiques CST 5e ou TS 4eou SN 4e ou 426 ou son équivalent Tech du milieu naturel : -Détenir un D.E.S. ou un D.E.P. et avoir réussi le cours suivants ou leurs équivalents : mathématiques CST 5e ou TS 4e ou SN 4e ou 426 ou son équivalent -Soit détenir un D.E.P. en aménagement de la faune ou en protection de territoires fauniques ou l’équivalent Note : pour connaître les équivalences des préalables à l’éducation aux adultes, consulte la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données en : Le salaire moyen en début de carrière était de : • 18,61 $/heure (40 hres/sem) en moyenne en tant que gérant(e) de pourvoierie ou coordonnateur(trice) de programmes et activitéspendant la période estivale seulement dans le secteur privé • 18,65 $/heure (40 hres/sem) en tant que guide-animalier(ère) - aquariste ou guide-animalier(ère) - animation au Parc aquarium du Québec • 18,65 $/heure (38,75 hres/sem) en tant que garde-parc ou guide-naturaliste ou guide-interprète ou patrouilleur(euse) ou préposé(e) à la collection ou animateur(trice) en sciences naturelles à la SEPAQ (parcs et réserves) • 21,89 $/heure (38,75 hres/sem) en tant que garde-parc/technicien(ne) en milieu naturel ou technicien(ne) de la faune ou technicien(ne) en milieu naturel à la SEPAQ (parcs nationaux et réserves fauniques) • 22,56 $/heure (40 hres/sem) en tant qu’agent(e) de protection de la faune dans la fonction publique québécoise (parcs et réserves) • 26,70 $/heure (37,5 hres/sem) en tant qu'animateur(trice)-guide en sciences naturelles ou interprète de la nature à Parcs Canada • 30,16 $/heure (40 hres/sem) en tant qu’agent(e) de protection de la faune (appelé &quot;garde de parc&quot;) à Parcs Canada • 30,41 $/heure (40 hres/sem) en tant que technicien(ne) en aménagement de la faune ou technicien(ne) en milieu naturel ou assistant(e) de recherche en biologie à Parcs Canada Note 1 : baissede la moyenne salariale pour toutes les spécialisations dans le secteur privé par rapport aux années précédentes. Note 2 : dans le secteur public, les augmentations sont établies par les conventions collectives. Sources : Ministère de l’Enseignement supérieur du Québec, Conseil du Trésor du Québec, Commission de la Fonction Publique du Canada, Syndicat de la fonction publique du Québec - division SEPAQ et division Parc aquarium du Québec, conventions collectives des employés de soutien de plusieurs collèges privés et conventions collectives des employés de soutien de plusieurs universités.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Pour le DEC en TACH Le placement est TRÈS BON, 84 % des répondants(es) qui se sont dirigés vers le marché du travail-eux ont obtenu un emploi relié dont la totalitésont à temps complet. Quelques répondants(es), soit 13 % ont poursuivi vers des universitaires en biologie. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 1511112 Note 1 : baisse du taux de placement par rapport aux années précédentes (était de 53 % en 2022; 50 % en 2021 et 65 % en 2019). Note 2 : baisse du nombre de répondants(es) poursuivant des études universitaires (était de 19 % en 2022; 60 % en 2021 et 0 % en 2019). Source : Ministère de l’Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

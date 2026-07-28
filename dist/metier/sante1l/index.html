@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aide perfusionniste — Métiers Québec</title>
+  <meta name="description" content="Métier Aide perfusionniste au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Aide Perfusionniste</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Aide Perfusionniste</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Les assistants en optométrie ne remplaceront en aucun cas les opticiens resteront des spécialistes reconnus des ortheses visuelles.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bonne santé -Aptitudes et facilité à travailler avec le public car tu seras constamment en contact avec de la clientèle -Bon équilibre émotif pour certains emplois, tu seras en contact des clients ayant des problèmes graves de santé -Être à l’écoute du patient (calme, patience et discrétion) est nécessaire pour être en mesure de soutenir et rassurer les clients (certains emplois) -Sens des responsabilités et bon jugement car tu seras responsable d’effectuer des tâches dont les erreurs peuvent apporter des conséquences graves -Capacité à travailler en équipe car tu travailleras constamment avec d’autres collègues (autres assistants et préposés en santé, techniciens et technologues en santé, infirmiers auxiliaires et infirmiers, etc) -Très bonne résistance au stress et à la fatigue, car dans plusieurs cas tu devras être alerte et prêt(e) à intervenir même après de longues heures de travail</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : Dans le secteur privé : - 16,60 $/heure (40 hres/sem) en tant qu'accompagnateur(trice) de personnes agées ou accompagnateur(trice) de personnes handicapées pour des particuliers ou des organismes communautaires - 16,60 $/heure (20 à 30 hres/sem)en moyenne en tant que surveillante-sauveteur(euse)au sein des centres sportifs privés ou de parcs aquatiques ou plages privées ou de campings - 16,60 $/heure (35 ou 36,25 ou 37,5 ou 38,75 hres/sem selon les milieux) en moyenne en tant que préposé(e) à la salle à manger au sein desétablissements privés d'hébergement pour aînés (PME) - 16,91 $/heure (40 hres/sem)en moyenne en tant quesurveillante-sauveteur(euse) dans les grandes institutions zoologiques ou les grands parcs aquatiques privés -18,00 $/heure (35 hres/sem)en moyenne en tant qu’assistant(e) technique en laboratoire au sein d'un laboratoire médical privé -18,00 $/heure (35 hres/sem)en moyenne en tant qu’assistant(e) en chiropratique en clinique privée -18,00 $/heure (35 hres/sem) en moyenne en tant qu’assistant(e) en optométrie ou assistant(e) tecchnique en santé oculaire en clinique privée ou en centre de lunetterie -18,27 $/heure (40 à 50 hres/sem)en moyenne en tant qu'assistant(e) technique en santé au sein des petites et moyennes entreprises PME ou au sein des organismes sans but lucratif OBNL - 18,41 $/heure (36,25 ou 37,5 ou 38,75 hres/sem selon les milieux) en moyenne en tant qu'aide en alimentation ou préposé(e) à salle à manger (anciennement appelé &quot;aide aux diètes&quot;) au sein des grands établissements privés d'hébergement pour aînés - 18,55 $/heure (35 hres/sem) en tant qu'assistant(e) technique de laboratoire à Héma-Québec - 18,63 $/heure (35 hres/sem) en tant que préposé(e) à l'inscription des donneurs à Héma-Québec - 20,52 $/heure (35 ou 36,25 ou 37,5 ou 38,75 hres/sem selon les milieux) en moyenne en tant qu'aide en réadaptation ou préposé(e) en réadaptation au sein des grands établissements privés d'hébergement pour aînés - 22,79 $/heure (35 hres/sem) en moyenne en tant que surveillant(e)-sauveteur(euse) au sein des grands établissements d'enseignement primaire et/ou secondaire privées Dans le secteur public : - 17,35 $/heure (35 hres/sem) en tant que surveillante-sauveteur(euse)au sein des universités - 19,62 $/heure (20 à 30 hres/sem)en moyenne en tant qu'assistant(e) surveillante-sauveteur(euse) au sein d'une municipalité de taille moyenne (25 000 à 99 999 habitants) - 20,46 $/heure (20 à 30 hres/sem)n moyenne en tant qu'assistant(e) surveillante-sauveteur(euse) au sein d'une grande municipalité (100 000 habitants et plus) - 21,09 $/heure (35 hres/sem)en moyenne en tant qu'aide technique de laboratoire dans un centre de recherche hospitalier - 21,13 $/heure (20 à 30 hres/sem) en moyenne en tant que surveillante-sauveteur(euse)au sein d'une grande municipalité (100 000 habitants et plus) - 21,32 $/heure (20 à 30 hres/sem)en moyenne en tant quesurveillante-sauveteur(euse) au sein d'une municipalité de taille moyenne (25 000 à 99 999 habitants) - 22,41 $/heure (15 à 20 hres/sem)en moyenne en tant quesurveillante-sauveteur(euse) au sein d'une municipalité de petite taille (5 000 à 24 999 habitants) - 22,67 $/heure (35 hres/sem) en moyenne en tant appariteur(trice) en laboratoire médical ou en laboratoire dentaire ou en laboratoire vétérinaire au sein des universités - 24,37 $/heure (35 hres/sem) en moyenne en tant qu'assistant(e) technique ou commis aux affaires cliniques ou commis d'une clinique universitaire ou aide de clinique au sein des universités - 24,68 $/heure (36,25 hres/sem) en tant que brancardier(ère) dans le réseau hospitalier - 24,90 $/heure (35 hres/sem) en tant que préposé(e) à l'accueildans un établissement public de santé (hôpital, CHSLD ou centre de réadaptation) - 24,90 $/heure (36,25 hres/sem) en tant qu'assistant(e) technique en soins de santé ou assistant(e) technique en radiologie ou assistant(e) technique en laboratoire médical dans le réseau hospitalier - 25,08 $/heure (36,25 hres/sem) en tant que préposé(e) aux autopsies dans le réseau hospitalier - 25,08 $/heure (35 hres/sem) en tant que préposé(e) en ophtalmologie dans un hôpital - 25,08 $/heure (36,25 hres/sem) en tant que préposé(e) à la salle d'opération(entretien du matériel et équipement) dans le réseau hospitalier - 25,08 $/heure (35 hres/sem) en tant que surveillante-sauveteur(euse)dans les centres de services scolaires et dans les cégeps - 25,32 $/heure (36,25 hres/sem) en tant que surveillante-sauveteur(euse) dans le réseau de la santé (hôpitaux, centres de réadaptation) - 25,42 $/heure (32,5 ou 35 hres/sem) en tant qu'agent(e) administratif - classe 3 (préposé à l’admission ou commis de bureau ou d'administration dans une unité de soins)) dans le le réseau de la santé et des services sociaux - 25,42 $/heure (36,25 hres/sem) en tant que préposé(e) au matériel et équipement thérapeutique dans le réseau hospitalier ou dans les centres de réadaptation - 25,42 $/heure (35 hres/sem) en tant que préposé(e) en physiothérapie ou en ergothérapie dans un hôpital, CHSLD ou centre de réadaptation - 25,42 $/heure (36,25 hres/sem) en tant que préposé(e) en orthopédie dans un hôpital - 25,58 $/heure (35 hres/sem)en moyenne en tant qu'assistant(e) de recherche médicale dans un centre de recherche hospitalier - 25,83 $/heure (36,25 hres/sem) en tant qu’assistant(e) en réadaptation dans un centre de réadaptation + prime de psychiatrie dans les établissements psychiatriques - 28,80 $/heure (40 hres/sem) en tant que surveillante-sauveteur(euse) à Parcs Canada (plages des parcs nationaux) Sources : Conseil du Trésor du Québec, Emploi-Québec, Syndicat des assistants techniques de laboratoire d'Héma-Québec, conventions collectives des employés de soutien de la plupart des universités, conventions collectives des fonctionnaires municipaux de la plupart des grandes municipalités, conventions collectives des employés municipaux de plusieurs municipalités de taille moyenne, conventions collectives des employés municipaux de plusieurs petites municipalités, conventions collectives des employés de plusieurs établissements privés d'enseignement secondaires privées,</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Difficile à prévoir. Depuis quelques années, les hôpitaux ont coupé des postes du personnel d’assistance technique. Toutefois, plus de 46 % des assistants(es) techniques du réseau de la santé prendront leur retraite au cours des prochaines années et devront être remplacés. De nombreux emplois sont également offerts dans le privé (cliniques médicales, chiropratique, optométriques, dentaires, etc.), mais également dans les centres de réadaptation, les résidences privées pour aînés et les centres de santé. On prévoit de bonnes perspectives d'emploi au cours des prochaines années. La rémunération moyenne après expérience en 2026... le revenu annuel moyen à temps partiel d'un(e) surveillant(e)-sauveteur(euse) détenant 10 années d'expérience au sein d'une municipalité de taille moyenne était de 23 300 $; le revenu annuel moyen d'un(e )aide en alimentation ou d'un(e) préposé(e) à salle à manger (anciennement appelé &quot;aide aux diètes&quot;) ayant 10 années d'expérience au sein des grands établissements privés d'hébergement pour aînés était de 38 300 $ le revenu annuel moyen (à temps complet) d'un(e) surveillant(e)-sauveteur(euse) (piscine intérieure) détenant 10 années d'expérienceau sein d'une municipalité de taille moyenne était de 39 000 $; le revenu annuel moyen d'un(e) surveillant(e)-sauveteur(euse) détenant 10 années d'expérience au sein d'une université était de 39 500 $; le revenu annuel moyen d'un(e) surveillant(e)-sauveteur(euse) détenant 10 années d'expérience au sein d'un établissement privé d'enseignement primaire et/ou secondaire était de 41 500 $; le revenu annuel moyen d'un(e) assistant(e) en chiropratique ou d'un(e) assistant(e) en santé oculaire détenant 10 années d'expérience au sein d'une clinique privée en chiropratique était de 44 200 $; le revenu annuel moyen (à temps complet) d'un(e) surveillant(e)-sauveteur(euse) (piscine intérieure) détenant 10 années d'expérienceau sein d'une grande municipalité était de 47 800 $; le revenu annuel moyen d'un(e) assistant(e) en optométrie ou d'un(e) assistant(e) en santé oculaire détenant 10 années d'expérience au sein d'une clinique privée en optométrie ou au sein d'une clinique de lunetterie était de 45 200 $; le revenu annuel moyen d'un(e) surveillant(e)-sauveteur(euse) détenant 10 années d'expérience au sein d'un établissement de santé était de 46 100 $; le revenu annuel moyen d'un(e) brancardier(ère) détenant 10 années d'expérience au sein d'un hôpital était de 47 600 $; le revenu annuel moyen d'un(e) préposé(e) à l'accueil détenant 10 années d'expérience au sein d'un hôpital ou d'un CHSLD était de 47 200 $; le revenu annuel moyen d'un(e) surveillant(e)-sauveteur(euse) détenant 10 années d'expérience au sein d'un centre de services scolaires était de 48 700 $; le revenu annuel moyen d'un(e) assistant(e) technique en soins de santé ou d'un(e) assistant(e) technique en laboratoire médical ou d'un(e) assistant(e) technique en radiologie détenant 10 années d'expérience au sein d'un hôpital était de 48 900 $; le revenu annuel moyen d'un(e) préposé(e) en salle d'opération détenant 10 années d'expérience au sein d'un hôpital était de 50 400 $; le revenu annuel moyen d'un(e) assistant(e) technique de recherche en santé détenant 10 années d'expérience au sein d'un centre de recherche hospitalier était de 51 600 $; le revenu annuel moyen d'un(e) préposé(e) en orthopédie ou d'un(e) assistant(e) en réadaptation ou d'un(e) préposé(e) en physiothérapie ou en ergothérapie détenant 10 années d'expérience au sein d'un hôpital ou d'un centre de réadaptation était de 52 100 $; et le revenu annuel moyen d'un(e) aide en réadaptation ou d'un(e) préposé(e) en réadaptation ayant 10 années d'expérience au sein d'un hôpital ou d'un CHSLD était de 56 200 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

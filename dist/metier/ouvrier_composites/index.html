@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composites, opérateur de machines 
+à fabriquer ou transformer les — Métiers Québec</title>
+  <meta name="description" content="Métier Composites, opérateur de machines 
+à fabriquer ou transformer les au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Composites, Opérateur De Machines 
+À Fabriquer Ou Transformer Les</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Composites, Opérateur De Machines 
+À Fabriquer Ou Transformer Les</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'assembleuse ou assembleur de matériaux composites (aussi appelé &quot;stratifieur ou stratifieuse&quot;); tu auras pour tâches d'opérer et de régler des machines servant fabriquer des moules industriels pour la fabrication de pièces composites selon la technique de moulage appropriée ou le procédé de moulage approprié. Tu auras pour tâches de : • Lire des plans, des diagrammes et des schémas pour déterminer la façon de procéder; • Effectuer l'assemblage de composantes d'un produit en matériaux composites; • Utiliser des machines, de l'équipement ou des outils manuels pour couper, profiler, découper et ajuster des éléments en composites afin de former des pièces et des assemblages; • Fabriqueret usiner à l'aide de machines conventionnelles ou à commande numérique des pièces ou objets simples en matériaux composites; • Assembler des matériaux composites sur des modèles pour former des pièces et des assemblages au moyen de matériaux de liaison; • Concevoir et fabriquer des gabarits d'un produit en vue de son assemblage en série. • Assembler et coller des pièces métalliques recouvertes d’un matériau composite afin de les rendre plus résistantes; • Utiliser de l'équipement de finition afin de détourer, de meuler ou de polir les produits et leur donner une forme finale; • Inspecter des pièces en plastique manufacturées afin de déceler leurs défauts et de vérifier leur conformité aux spécifications et aux normes de qualité, soit visuellement soit à l'aide d'instruments; • Apporter des modifications aux produits et effectuer des réparations mineures; • Préparer des rapports sur les produits vérifiés. Plusieurs produits sont fabriqués en matériaux composites, surtout ceux où la résistance et la souplesse des matériaux sont nécessaires (ex : bateaux, avions, automobiles, motoneiges, articles de sport, jouets, matériaux de construction, etc.). On retrouve les assembleurs(euses) en matériaux composites dans les grandes entreprises industrielles (aéronautiques, matériel de transport, plasturgie, matériaux de construction, etc), mais également plusieurs PME manufacturières qui sont pour la plupart fournisseurs des grands manufacturiers, comme par exemple dans la fabrication de pièces composites pour l'aéronautique, de pièces composites pour du matériel de transport (autobus, camions, automobiles, VTT, etc), de pièces composites pour des équipements de sports, etc. En tant que lamineur ou lamineuse de fibre de verre; tu auras pour tâches de superposer des couches de fibre de verre ou de résine sur des moules de plastique, d'acier ou de bois dans le but de fabriquer des objets en plastique ou des éléments de plastique entrant dans la fabrication d'autres objets (canots, yachts, bouées, meubles de bureau ou de jardin, carrosseries de moto, de motoneige, de voiture, etc.).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bonne santé : ne pas avoir d'allergies, bonne résistance au bruit, à la chaleur et à la poussière -Avoir une bonne vision -Bonne perception des formes -Bonne condition et endurance physique : car tu devras de longues heures debout ou dans des positions inconfortables -Bonnes habiletés manuelles et dextérité manuelles car tu auras à opérer les commandes de diverses machines -Minutie, précisionsouci du détail et facilité de concentration car tu devras opérer avec précision pour réaliser des moules de qualité -Capacité d'analyse car tu devras résoudre seul(e) certains problèmes reliés aux machines -Sens des responsabilités car tu seras responsable du bon état de fonctionnement des machines -Facilité à travailler en équipe car tu auras à travailler en collaboration avec des ouvriers, techniciens et ingénieurs -Connaissance de l’anglais car la documentation technique est généralement dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : - 16,88 $/heure (40 hres/sem) au sein des PME - 18,81 $/heure (37,5 ou 40 hres/sem) en moyenne au sein des grands manufacturiers de matériel électronique - 20,15 $/heure (40 hres/sem) en moyenne en tant que lamineur(euse) au sein des grandes industries de la plasturgie, du caoutchouc et des composites - 20,51 $/heure (40 hres/sem) en moyenne en tant qu'assembleur(euse) de matériaux composites au sein des grands manufacturiers de la plasturgie, du caoutchouc, du fibre de verre et des composites - 21,14 $/heure (40 hres/sem) en moyenne en tant qu'opérateur(trice) de machines au sein des grands manufacturiers de la plasturgie, du caoutchouc et des composites - 21,30 $/heure (40 hres/sem) en moyenne en tant qu'assembleur(euse) au sein des grands manufacturiers de matériel de transport terrestre (routier ou ferroviaire) - 22,20 $/heure (40 hres/sem) en moyenne en tant qu'assembleur(euse) de composantes ou de pièces en composites au sein des grands manufacturiersde produits aérospatiaux - 23,32 $/heure (40 hres/sem) en moyenne en tant qu'assembleur(euse) de composantes ou de pièces en composites au sein des grands chantiers navals Note 1 : légère hausse de la moyenne salariale par rapport aux années précédentes (était de 18,17 $ en 2022; 15,95 $ en 2018 et 17,85 $ en 2015). Note 2 : chez les grands manufacturiers, tu débuteras au niveau apprenti pendant les 18 ou 24 premiers mois Sources : Ministère de l’Éducation du Québec, conventions collectives des employés de plusieurs grands manufacturiers de machines et équipements industriels, conventions collectives des employés de plusieurs grands manufacturiers de matériel de transport, conventions collectives des employés de plusieurs grandes industries du matériel électronique, conventions collectives des employés de plusieurs grandes industries du matériel de transport, conventions collectives des employés de plusieurs grandes industries aérospatiales et conventions collectives des employés de plusieurs grandes industries de la plasturgie.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est moyen, seulement 50 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Quelques répondants(es) ont décidé de poursuivre leurs études au collégial en technologie de la transformation des matériaux composites. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI EN TEMPS COMPLET NOMBRE AUX ÉTUDES 5221 Note : légère hausse du taux de placement par rapport aux années précédentes (était de 43 % en 2017; 49 % en 2015 et 65 % en 2013). Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: De plus en plus de secteurs industriels font appel à l'utilisation des matériaux composites dans leurs procédés de fabrication ou d'assemblage de leurs produits. En fait, l'industrie aérospatiale, l'industrie automobile, l'industrie navale, l'industrie ferroviaire, l'industrie biomédicale, l'industrie de la fibre de verre, l'industrie de la plasturgie, l'industrie des télécommunications, l'industrie métallurgique, l'industrie de l'optique et de la photonique, les manufacturiers de matériaux de construction, les fabricants d'équipements de sports, les fabricants d'équipements de sécurité ou de protection, l'industrie militaire, l'industrie chimique utilisent des applications des matériaux composites. L'utilisation de ces matériaux est en croissance depuis 20 ans, à un rythme de 15 à 20 % par an. Plus de 40 % des entreprises se sont tournés vers la réalisation de projets d'écoconception motivées par leurs valeurs environnementales. Avec la pénurie de main-d'œuvre que l'on observe, il est de plus en plus difficile de recruter du personnel spécialisé en production manufacturière. D'ailleurs, selon une étude réalisée en 2021 par leComité sectoriel de la main-d'oeuvre de l'industrie de la plasturgie; les métiers d'opérateur(trice) et de mouleur(euse) sont les postes les plus difficiles à recruter compte des compétences spécialisées exigées et du faible nombre de candidats(es) disponibles. Plus de 26 % des travailleurs(euses) de cette industrie sont âgés de 55 ans et plus qui prendront leur retraite au cours des prochaines annnées et devront être remplacés. De plus, près du trois-quarts des entreprises entrevoient que l'avenir sera synonyme de croissance du chiffer d'affaires et qu'elles devront embaucher du personnel afin d'y parvenir. Les entreprises de cette industrie démontrent également une plus grande ouverture pour la diversification de leur recrutement (handicapés, immigrants, autochtones, jeunes, femmes, retraités, etc.) plus élevée que la moyeonne de l'ensemble des secteurs manufacturiers. Enfin, les entreprises de cette industrie (principalement les PME) sont reconnues pour offrir des tâches diversifiées, une grande dynamique d'équipe, des valeurs environnementales vers l'écoconception et des salaires concurrentiels. Donc, les perspectives pour ce métier sont très bonnes pour les prochaines années. La rémunération moyenne après expérience en 2024... le revenu annuel moyen d'un(e) assembleur(euse) de matériaux composites ou d'un(e) lamineur(euse) de fibre de verre ou d'un(e) stratifieur(euse) ayant 10 années d'expérience au sein d'une PME était de 43 500 $; le revenu annuel moyen d'un(e) assembleur(euse) de matériaux ou de pièces en composites ayant 10 années d'expérience au sein d'un grand manufacturier de produits en composites était de 48 800 $; le revenu annuel moyen d'un(e) opérateur(trice) de machines à transformer les composites ayant 10 années d'expérience au sein d'un grand manufacturier de produits en composites était de 50 300 $; le revenu annuel moyen d'un(e) assembleur(euse) de matériaux ou de pièces en composites ayant 10 années d'expérience au sein d'un grand manufacturier de matériel de transport terrestre était de 52 000 $; le revenu annuel moyen d'un(e) assembleur(euse) de matériaux ou de pièces en composites ayant 10 années d'expérience au sein d'un grand chantier naval était de 56 000 $; et le revenu annuel moyen d'un(e) assembleur(euse) de matériaux ou de pièces en composites ayant 10 années d'expérience au sein d'un grand manufacturier de produits aérospatiauxz était de 57 600 $. Sources : Comité sectoriel de la main-d'œuvre de l'industrie des plastiques et des composites et Emploi-Québec</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

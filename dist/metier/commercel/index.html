@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commis au soutien à l'expédition et 
+réception — Métiers Québec</title>
+  <meta name="description" content="Métier Commis au soutien à l'expédition et 
+réception au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Commis Au Soutien À L'Expédition Et 
+Réception</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Commis Au Soutien À L'Expédition Et 
+Réception</h1>
+        <p class="page-header__meta">Secondaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Secondaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>L'industrie canadienne du commerce au détail est incontestablement le secteur économique LE plus important au pays.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: Pour les emplois en magasin : -Bien connaître les produits ou services:le client ne veut pas qu’acheter il veut qu’on le conseille, alors tu devras savoir tout ce que tu offres -Aimer travailler avec le public et facilité à communiquer:tu seras constamment en contact avec le public -Sociable, sourire agréable:la façon de réagir du vendeur peut avoir un impact sur le client ou la cliente -Entregent et sens de la persuasion pour réussir à obtenir des résultats de ventes -Connaître l’anglais est nécessaire parfois lorsqu’on a à vendre à toutes clientèles Pour les emplois en entrepôt : -Bonne santé, bonne audition, bonne vision : les allergies (poussière, humidité) sont contre-indiqués pour ces métiers et une bonne audition et une bonne vision sont nécessaires puisqu'il y a de nombreux déplacements de véhicules et de marchandises qui nécessitent d'être à l'affut des risques de dangers -Bonne condition et endurance physiquecar tu devras travailler de longues heures debout ou dans des positions inconfortables -Bonne force physique car tu devras soulever et déplacer des charges relativement lourdes -Bonne tolérance au stress car tu devras exécuter tes tâches assez rapidement afin de toujours rester les délais de livraison -Soucieux et respectueux des consignes de sécurité car il y a de nombreux risques pour ta santé et sécurité au travail dans un entrepôt -Sens de l'organisation, minutie et précision afin d'effectuer un travail de qualité respectant les règles et normes établies par l'entreprise</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: : Le salaire moyen en début de carrière était de : Commerce au détail : Voir aussi la page de - 15,75 $/heure (40 hres/sem) en tant que préposé(e) aux boutiques et à la billetterie dans les centres récréotouristiques à la SÉPAQ - 15,75 $/heure(40 hres/sem) en moyenne en tant que caissier(ère) ou commis à la clientèle ou commis de magasin au sein des grandes entreprises de commerce au détail (magasins) -15,75 $/heure selon Décret (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des concessionnaires de véhicules neufs (PME) de la Rive-Nord de Montréal -15,75 $/heure selon Décret (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des concessionnaires de véhicules neufs (PME) des régions de la Mauricie et du Centre-du-Québec -15,75 $/heure selon Décret (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des concessionnaires de véhicules neufs (PME) de Montréal-Laval-Longueuil - 15,82 $/heure (40 hres/sem) en tant que préposé(e) à l'accueil, aux ventes et à l'expérience client dans les centres récréotouristiques à la SÉPAQ - 15,98 $/heure (40 hres/sem) et peut augmenter jusqu'à 22,60 $/heure en moyenne en tant que conseiller(ère)-vendeur(euse) ou caissier(ère) ou commis à la clientèle ou commis de magasin au sein des grands détaillants de produits de quincaillerie et de rénovation note : il y a des augmentations salariales à chaque année et il faut ajouter des avantages sociaux (ex : congés de maladies, congés familiaux, régime d'assurance-santé, régime de retraite, rabais en magasin, parfois des bonis aux ventes, etc.) - 16,23 $/heure (40 hres/sem) et peut augmenter jusqu'à 22,60 $/heureen moyenne en tant que manutentionnaire ou préposé(e) à la cour au sein des grands détaillants de produits de quincaillerie et de rénovation - 16,32 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à la boutique au sein des grands clubs de golf -16,67 $/heure selon Décret (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des concessionnaires de véhicules neufs (PME) de la région des Cantons de l'Est - 16,95 $/heure(40 hres/sem) en moyenne en tant que conseiller(ère)-vendeur(euse) au sein des grandes entreprises de commerce au détail (magasins) note : il y a des augmentations salariales à chaque année et il faut ajouter des avantages sociaux (ex : congés de maladies, congés familiaux, régime d'assurance-santé, régime de retraite, rabais en magasin, parfois des bonis aux ventes, etc.) -17,03 $/heure selon Décret (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des concessionnaires de véhicules neufs (PME) des régions de la Capitale Naionale et Chaudière-Appalaches - 17,73 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à la boutique (vente ou location) au sein des grandes stations de ski - 18,44 $/heure (40 hres/sem, toutefois, la plupart des postes disponibles sont sur appel) en tant qu'adjoint(e) d'un bureau de poste (vente des produits et services postaux et tri et traitement du courrier) au sein de Postes Canada - 18,50 $/heure (40 hres/sem) en moyenne en tant que commis - service aux consommateurs dans les grandes entreprises de commerce au détail (siège sociall) - 18,63 $/heure(40 hres/sem) en moyenne en tant que conseiller(ère) en service après-vente au sein des grandes entreprises de commerce au détail (magasins) - 18,96 $/heure (40 hres/sem) en moyenne en tant qu'étalagiste ou marchandiseur(euse) dans les grandes entreprises de commerce au détail (siège sociall) - 19,13 $/heure (40 hres/sem) en moyenne en tant que commis - soutien aux marchands dans les grandes entreprises de commerce au détail (siège sociall) -21,29 $/heure (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des grands concessionnaires automobiles de véhicules neufs de l'extérieur de Montréal -21,46 $/heure (40 hres/sem) en moyenne en tant que commissinnaire au sein des grands concessionnaires de véhicules lourds -21,50 $/heure (37 hres/sem) en tant que caissier(ère)- vendeur(euse) en succursale au sein de la SAQ -22,04 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à la cour ou chasseur(euse) au sein des grands concessionnaires automobiles de véhicules neufs de l'extérieur Montréal - 22,18 $/heure (40 hres/sem) en moyenne en tant que livreur(euse) avec permis de conduire - classe 5 au sein des grandes entreprises de commerce au détail -23,32 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à l'entrepôt ou manutentionnaire au sein des grands concessionnaires automobiles de véhicules neufs de l'extérieur de l'extérieur de Montréal - 23,52 $/heure (35 hres/sem) en tant que télévendeur(euse)(auprès des commerçants) à Loto-Québec -23,68 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à la cour ou chasseur(euse) au sein des grands concessionnaires automobiles de véhicules neufs du Grand Montréal - 24,67 $/heure (40 hres/sem) en moyenne en tant que préposé(e) à l'entrepôt ou manutentionnaire au sein des grands concessionnaires automobiles de véhicules neufs du Grand Montréal -24,85 $/heure (40 hres/sem) en moyenne en tant que commis de service ou commissionnaire au sein des grands concessionnaires automobiles de véhicules neufs du Grand Montéral - 26,86 $/heure (40 hres/sem) en tant que préposé(e) au service aux visiteurs ou préposé(e) à la billetterie à Parcs Canada Commerce de gros : (entrepôts, centres de distribution) - 16,00 $/heure (40 hres/sem) en moyenne en tant que cariste ou manutentionnaire ou commis ou préposé(e) à l'entrepôt au sein des PME - 19,72 $/heure (40 hres/sem) en moyenne en tant que commis ou préposé(e) aux commandesau sein des centres de distribution des grandes entreprises (détail, gros et manufacturières) - 20,94 $/heure (40 hres/sem) en moyenne en tant qu'opérateur(trice) de chariot élévateur (lift) ou préposé(e) au monte-charge au sein des centres de distribution des grandes entreprises (détail, gros et manufacturières) - 20,99 $/heure (40 hres/sem) en moyenne en tant qu''expéditeur(trice) ou commis à l'expédition ou réceptionnaire ou commis à la réception ou préposé(e) à la clientèle au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros - 21,55 $/heure (40 hres/sem) en moyenne en tant que commis ou préposé(e) à l'inventaire ou commis ou préposé(e) aux retours au sein des centres de distribution des grandes entreprises (détail, gros et manufacturières) - 21,58 $/heure (40 hres/sem) en moyenne en tant que manutentionnaire aux produits surgelés ou manutentionnaire aux produits périssables au sein des centres de distribution des grandes entreprises de commerce au détail - 21,63 $/heure (40 hres/sem) en moyenne en tant qu'aide-magasinier(ère) au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros - 21,91 $/heure (40 hres/sem) en moyenne en tant qu'aide-livreur(euse) au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros -23,90 $/heure (38,75 hres/sem) en tant que préposé(e) à l'entrepôt A ou préposé(e) aux commandes au sein de la SAQ - 24,19 $/heure (40 hres/sem) en moyenne en tant que magasinier(ère) ou préposé(e) au magasin (entrepôt) au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros - 24,48 $/heure (40 hres/sem) en moyenne en tant qu'aiguilleur(euse), gareur(euse) ou jockey ou répartiteur(trice) pour le déplacement des remorques ou homme de cour au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros - 24,69 $/heure (38,75 hres/sem) en tant que préposé(e) à la réception ou préposé(e) à l'inventaire ou préposé(e) à l'entrepôt B au sein de la SAQ - 25,55 $/heure (40 hres/sem) en moyenne en tant qu'inspecteur(trice) ou vérificateur(trice) de la marchandise au sein des centres de distribution des grandes entreprises de commerce au détail ou de gros Sources : Emploi Québec, Conseil québécois du commerce au détail, conventions collectives des employés de plusieurs grands concessionnaires automobiles de véhicules neufs, conventions collectives des employés de plusieurs grandes entreprises de commerce au détail et conventions collectives des employés de plusieurs grandes industries (div. entrepôt).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

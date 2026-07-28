@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assembleur de structures métalliques — Métiers Québec</title>
+  <meta name="description" content="Métier Assembleur de structures métalliques au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Assembleur De Structures Métalliques</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Assembleur De Structures Métalliques</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: Si tu deviens un assembleur ou une assembleuse de charpentes métalliques; tu auras comme tâches d'assembler, ajuster et à positionner par soudage, par assemblage thermique ou par assemblage mécanique des pièces métalliques préalablement découpées et formées afin de produire un élément de structures métalliques (poutre, colonne, membrure) ou de métaux ouvrés (escalier, garde-corps, main courante, marquise, etc.). Tu exécuteras et réaliseras la plupart des travaux nécessaires à la fabrication d'une pièce métallique pour des éléments de structures comme le traçage, le coupage, la préparation, le meulage, le poinçonnage, le perçage, le soudage et la manutention des Tu auras pour tâches de : • Étudier les dessins et les plans techniques, déterminer les matériaux requis, planifier la séquence des tâches qui devront être exécutées pour couper le métal de la façon la plus efficace possible; • Élaborer des modèles ou des gabarits qui serviront de guides d'assemblage; • Tracer des points de référence et des motifs sur des pièces de métal, selon les devis descriptifs; • Èxécuteras des assemblages d'essai de pièces de structures; • Utiliser des plans, des machines-outils, des équipements d'oxycoupage et de soudage pour fabriquer des pièces de structures métalliques ou de métaux ouvrés; • Installer, lever et déplacer les matériaux dans l'usine e dans les entrepôts; • Assembler et ajuster des sections métalliques et des plaques pour constituer des unités ou des sous-unités complètes à l'aide de soudure par points, de boulons, de rivets ou autres méthodes; • Régler et utiliser diverses machines à haut rendement pour façonner le métal, notamment presses à emboutir, cisailles, chalumeaux à découper, meules à rectifier, perceuses et matériel à commande numérique assistée par ordinateur pour plier, couper, former, poinçonner, percer ou façonner des éléments de métal robuste; • Redresser des profilés et t'assure du bon fonctionnement des outils et équipements • Installer les composants achevés dans le produit final. Tu travailleras pour un manufacturier d'éléments de charpentes métalliques qui ont comme des clients : des entrepreneurs en construction, des chantiers navals, des entreprises industrielles (fabricants de tours, de cheminées industrielles, etc.). Avec une formation complémentaire en soudage-montage; tu pourras également réaliser des projets de montage et de soudage d'éléments de structures, des projets de montages industriels et de structures métalliques avec différents procédés de soudage Tu veux plus de détails sur ce métier, alors regarde le vidéo suivant décrivant le travail d' réalisée par le CFP de Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Avoir une bonne santé -Avoir une bonne vision - Ne pas avoir le vertige et capacité de travailler en hauteur -Avoir une bonne de base en mathématiques et en géométrie -Posséder une très bonne condition et endurance physique car tu devras rester de longues heures debout, dans des conditions inconfortables et soulever des charges assez lourdes -Capacité de lire des plans d'assemblage -Bonnes habiletés et dextérité manuelles pour manipuler efficacement les composants et pièces d’assemblage -Minutie, précision, souci du détail car tu devras souder avec exactitude les pièces nécessai -Bon sens logique et esprit analytiquecar tu auras à résoudre des problème reliés à l’assemblage -Sens des responsabilités car tu seras responsable de la solidité et de la sécurité des charpentes -Facilité à travailler en équipe car tu devras collaborer avec d’autres collègues (autres assembleurs, opérateurs de machines, manœuvres, etc.)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : -18,00 $/heure (40 hres/sem)en moyenne au sein des PME -20,86 $/heure (40 hres/sem) en moyenne que monteur(euse)-assembleur(euse) de pièces ou produits métalliques au sein des grands manufacturiers de produits métalliques -21,18 $/heure (40 hres/sem) en moyenne au sein des grands manufacturiers de structures métalliques -21,57 $/heure (40 hres/sem) en moyenne en tant qu'assembleur(euse) de pièces ou composantes métalliques au sein des grandes industries aérospatiales - 26,24 $/heure (40 hres/sem) en moyenne en tant qu'apprenti(e) et augmente à 28,08 $/heure par la suite au sein des grands chantiers navals Note : hausse de la moyenne salariale par rapport aux années précédentes (était de 19,00 $ en 2022; 18,13 $ en 2018; 18,13 $ en 2015 et 18,25 $ en 2013). Sources : Ministère de l’Éducation du Québec, conventions collectives des employés de plusieurs grandes industries de fabrication métallique industrielle et conventions collectives des employés de plusieurs grandes industries aérospatiales.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est moyen, 57 % des répondants(es) ont obtenu un emploi relié dont la presque totalité sont à temps complet. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES8441 Note 1 : baisse importante du taux de placement par rapport aux années précédentes (était de 40 % en 2017; 73 % en 2015 et 74 % en 2013). Note 2 : prendre en considération que seulement 40 % des diplômés ont répondu à cette enquête. Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Les débouchés proviendront principalement des postes qui seront libérés par des travailleurs(euses) qui prendront leur retraite ou qui obtiendront des promotions à des postes de supervision, mais aussi de l'augmentation de l'emploi. Ces débouchés seront accessibles en premier lieu à des ouvriers du secteur de la métallurgie formés par l'entreprise, par exemple des manœuvres en traitement des métaux et des minerais et des mouleurs, noyauteurs et des fondeurs en chômage. Mais, les perspectives demeurent moyennes et le stage rémunéré en entreprise permet souvent d'être embauché par l'entreprise qui a accueilli le diplômé. Les entreprises appartenant à la fabrication métallique industrielle (matériel de transport terrestre, machines et équipements industriels, produits métalliques) tirent relativement bien leurs épingles du jeu. Les livraisons manufacturières continuent de croître à un très bon rythme. Plus de 46 % des ouvriers(ères) de plaques et de charpentes métalliques sont âgésde 45 ans et plus qui prendront leur retraite au cours des prochaines années et devront être remplacés. L'industrie de la fabrication de produits métalliques est un employeur important, mais pourrait rencontrer certains problèmes avec la baisse des activités dans l'industrie de la construction. Le recrutement d’ouvriers spécialisés et expérimentés demeu- rera un des grands défis que devra relever l’industrie au cours des prochaines années. D'ailleurs, les mécaniciens(nes) industriels figurent au 4e rang des métiers les plus difficiles à recruter au sein de cette industrie. Comme la main-d’œuvre spécialisée n’abonde pas sur le marché du travail, les entreprises devront offrir des conditions de travail encore plus attrayantes pour attirer les meilleurs de la profession. L'industrie de la première transformation des métaux sera favorisée par la reprise des activités dans l'industrie automobile et en aéronautique ainsi que par les projets d'infrastructures publiques. Au sein de l'industrie aérospatiale, il faut savoir que dans ce domaine, la croissance économique est cyclique car il peut arriver qu'une entreprise obtienne un important contrat qui fournira du travail pendant plusieurs mois, sinon quelques années, mais par la suite les activités ralentissent pendant plusieurs mois. De façon générale, les perspectives dépendent du nombre et de l’importance des contrats qu’obtiennent les grands manufacturiers de l'aérospatial surtout ceux présents au Québec (Bombardier, Airbus, Bell Helicopter, Pratt &amp; Whitney, Rolls Royce, GE Aviation), puisque Les conséquences se répercutent alors aussi sur les nombreux sous-contractants d'ici Mais également les autres grands joueurs de industrie dans le monde (Boeing, Airbus, Lockhead Martin, General Dynamics, etc.) dont plusieurs entreprises québécoises y sont des sous-traitants. Enfin, les chantiers navals ont obtenu des contrats importants leur permettant de réaliser des projets de construction de navires pour plusieurs années à venir et devront embaucher du personnel spécialsié dont les tôlers. On prévoit de bonnes possibilités d’emploi pour les prochaines années. La rémunération moyenne après expérience en 2024... le revenu annuel moyen d'un(e) assembleur(euse) de plaques ou de charpentes métalliques détenant 10 années d'expérience au sein d'une PME était de 46 800 $; et le revenu annuel moyen d'un(e) assembleur(euse) de plaques ou de charpentes métalliques détenant 10 années d'expérience au sein d'une PME était de 55 100 $. Source : Emploi Québec</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

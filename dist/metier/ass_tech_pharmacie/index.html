@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant en pharmacie — Métiers Québec</title>
+  <meta name="description" content="Métier Assistant en pharmacie au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Assistant En Pharmacie</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Assistant En Pharmacie</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'assistante ou assistant technique en pharmacie; tu seras responsable d'assister le pharmacien ou la pharmacienne à préparer les ordonnances, à constituer et à mettre à jour les dossiers des clients et en effectuer la vente ou la distribution auprès de la clientèle. Tu auras pour tâches de : • Vérifier l'exactitude des renseignements consignés sur les ordonnances; • Assister les pharmaciens à faire l'inventaire des médicaments et des dossiers pour les ordonnances des produits pharmaceutiques; • Saisir des renseignements sur les clients dans des bases de données et préparer leurs médicaments; • Mélanger des solutions orales, des onguents et des crèmes; • Préparer des factures pour les tiers assureurs; • Expédier les demandes de renouvellement de médicaments auprès des médecins pour les clients. Plus spécifiquement, tu auras les tâches suivantes selon le type de milieu : En pharmacie communautaire(privée) : tu auras aussi à recevoir la clientèle et s'informer de leurs besoins que ce soit au téléphone ou en personne. Tu auras à recueillir les informations nécessaires afin de compléter les prescriptions, les dossiers et les demandes de paiement auprès des assureurs. Tu auras à préparer, exécuter les ordonnances de médicaments selon les prescriptions de médecins ou de dentistes et sous la supervision de la pharmacienne ou du pharmacien. Tu auras à conditionner les médicaments, effectuer le comptage des comprimés et des capsules, préparer et mélanger les onguents, solutions, lotions, mettre de l’insuline en seringue et effectuer des préparations stériles. Tu auras vendre des médicaments sans ordonnance en donnant des renseignements d’ordre général (et non médical) sur ces derniers. Tu auras à mettre à jour les dossiers des clients et tenir à jour l’inventaire des médicaments et des narcotiques au sein de l'établissement. Tu auras à travailler avec une clientèle diversifiée, allant des bébés à la personne âgée en passant par des besoins pour des maux légers jusqu’aux maladies graves dont les clients(es) ont été retournés(es) à la maison. En pharmacie d’hôpital ou de CHSLD : Ton travail sera quelque peu différent à celui au sein d'une pharmacie communautaire. Tout d'abord, tu auras vérifier les médicaments de la réserve de nuit, les coffrets d’urgence retournés à la pharmacie pour échange, les retours de médicaments à la pharmacie (produits à jeter, produits à conserver, emballages unitaires, injectables, etc.). Tu auras à recevoir les clients, le personnel infirmier, le personnel de l’urgence et autres au guichet externe afin de recueillir les demandes et effectuer la distribution des médicaments et narcotiques. u auras à effectuer différentes tâches administratives telles que : répondre aux réquisitions des unités de soins, commander la papeterie, les étiquettes, les bouteilles, les pots et autres fournitures nécessaires à l'officine, maintenir des réserves de médicaments, préparer les commandes, les vérifier et les classer, etc. Au niveau plus technique, Tu auras à préparer et exécuter les ordonnances de médicaments selon les prescriptions de médecins (souvent des spécialistes) pour les clients et patientes hospitalisées souffrant de différentes sortes de maladies (cancer, maladies cardio-vasculaires, maladies pulmonaires, maladies neurologiques, maladies mentales, etc), préparer des solutions parentérales et des substances antinéoplasiques, conditionner les médicaments, effectuer le comptage des comprimés et des capsules, préparer et mélanger les onguents, solutions, lotions, mettre de l’insuline en seringue et effectuer des préparations stériles. Toutes ces tâches sont sous la supervision d'une pharmacienne clinicienne ou d'un pharmacien clinicien car les risques d'erreurs peuvent entraîner des conséquences graves dans la prestation des soins aux clients. Tu assisteras le pharmacien à effectuer l'inventaire des médicaments, narcotiques et autres produits pharmaceutiques de l'officine. En milieu hospitalier, tu participeras aux soins de clients diversifiés, en CHSLD tu travailleras avec des personnes âgées et en centre de soins en psychiatrie, tu travailleras auprès de déficients mentaux de différents niveaux. En industrie pharmaceutique : Tu auras à préparer le matériel et les fournitures stériles nécessaires aux procédés et aux opérations de transformation ou de fabrication et à préparer les produits nécessaires à la fabrication de différents types de médicaments. Tu pourras être appelé à opérer certaines machines simples de la chaîne d'encapsulation, d'emballage et en mise en état stérile des produits fabriqués. Tu peux aussi travailler en tant que représentant(e) en produits pharmaceutiques auprès des établissements de santé, des pharmacies privées et des chaînes de pharmacies.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: - Bonne santé - Bonne vision - Bonne distinction des couleurs et des formes - Aimer et facilité à travailler avec le public et entregent car tu auras à établir des contacts avec les clients(es) - Minutie et précision pour manipuler et préparer de façon exacte les médicaments selon des procédures précises(des erreurs de préparation peuvent engendrer des risques pour la santé des clients...) - Sens des responsabilités car tu seras responsable de préparer adéquatement les médicaments et les ordonnances - Capacité d’écoute, respect, patience et empathie car tu auras des contacts des personnes ayant de graves problèmes de santé (surtout en pharmacie clinique) - Sens de l’organisation pour organiser efficacement l’inventaire des produits pharmaceutiques - Facilité à travailler en équipe car tu auras à collaborer avec d’autres collègues (pharmaciens, autres assistants techniques en pharmacie, infirmiers et médecins, etc)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. -Soit avoir 16 ans et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoir 18 ans et posséder des connaissances équivalentes Note : il recommandé d’avoir suivi le cours SN 4e (ou sciences physiques 436 ou son équivalent)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : -21,00 $/heure (40 hres/sem) dans le secteur privé -25,08 $/heure (36,25 hres/sem) en milieu hospitalier Note : hausse de la moyenne salariale dans le secteur privé par rapport aux années précédentes(était de 17,96 $ en 2024; 16,10 $ en 2022 et 16,00 $ en 2019). Sources : Ministère de l’Éducation du Québec, Conseil du Trésor du Québec et Commission de la fonction publique du Canada</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est TRÈS BON, 84 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études, dont la presque totalité sont à temps complet. Quelques répondants(es), soit 10 % ont poursuivi leurs études au collégial en techniques de pharmacie. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI A TEMPS COMPLET NOMBRE AUX ÉTUDES 36127325236 Note : taux de placement est tout aussi bon que dans les années précédentes (était de 82 % en 2017;86 % en 2015 et 88 % en 2013). Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Avec le vieillissement de la population, l'augmentation de l'espérance de vie et les investissements en recherche pour développer de nouveaux médicaments, le nombre de prescriptions devrait continuer à s'accroître. De plus, plus de 46 % des assistants(es) en pharmacie sont âgés de 45 ans et plus qui prendront leur retraite au cours des prochaines années et devront être remplacés. Au cours des prochaines années, la tendance à déléguer plus de tâches aux membres de cette profession devrait s'accentuer en pharmacie et dans les établissements de santé. Il y a présentement une pénurie d’assistantes et d’assistants techniques en pharmacie tant en milieu hospitalier en pharmacie privée. Pour pallier le manque de main-d’œuvre, les pharmacies font appel en plus à des agences de placement qui proposent leurs services pour combler les trous dans les horaires de travail des pharmacies. Actuellement, certaines pharmacies doivent réduire leurs heures d'ouverture par manque d’assistants techniques dans les laboratoires de préparation des médicaments. Bien qu'il soit préférable de détenir un diplôme en assistance technique en pharmacie (D.E.P.), de nombreux employeurs privés embauchent des candidats(es) sans formation faute de diplômés(es) disponibles. Avec l’expérience, un(e) diplômé(e) peut gravir les échelons jusqu’à devenir chef d’équipe. Dans le réseau public, principalement dans les centres hospitaliers et les CHSLD, l’assistant(e) technique en pharmacie a la possibilité de pousser ses compétences plus loin en préparant, par exemple, des traitements spécialisés à l’intérieur d’environnements stériles et contrôlés. Un D.E.P. en assistance technique en pharmacie est obligatoire afin d'occuper un poste dans le réseau public Selon les données de l'Association des assistants(es) techniques en pharmacie du Québec, il manquerait de 2 000 à 3 000 assistants(es) autant dans le réseau public que dans le secteur privé afin de combler tous les besoins. Toutes les régions éprouvent des difficultés à recruter ces spécialistes, mais certaines régions ont des besoins davantage importants, notamment en Gaspésie, au Saguenay-Lac-Saint-Jean, dasn le Bas-Saint-Laurent, en Chaudière-Appalaches et dans Lanaudière. Selon les informations fournies par les différents centres de formation, ils reçoivent plus de 3 à 4 fois plus d'offres qu'il y a de diplômés(es) disponibles et qui proviennent de tous les coins de la province. Certains obtiennent même une offre d'emploi intéressante avant de terminer leurs études (surtout dans le cas des étudiants des établissements en dehors des grands centres). De plus, la plupart des diplômés(es) ont obtenu un emploi dans leur milieu de stage. Les perspectives d’avenir pour ces diplômés(es) sontEXCELLENTES La rémunération moyenne après expérience en 2026 : le revenu annuel moyen d'un(e) assistant(e) technique en pharmacie dans le secteur privé ayant environ 10 années d'expérience était de 52 700 $. et le revenu annuel moyen d'un(e) assistant(e) technique en pharmacie dans le réseau public public ayant environ 10 années d'expérience était de 56 200 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

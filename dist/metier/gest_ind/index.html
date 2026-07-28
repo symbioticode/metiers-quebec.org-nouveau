@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commis aux achats — Métiers Québec</title>
+  <meta name="description" content="Métier Commis aux achats au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Commis Aux Achats</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Commis Aux Achats</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que coordonnatrice ou coordonnateur de la logistique de la production; tu seras responsable de coordonner et de répartir les tâches, les travaux, les matières premières et des produits finis au sein de l'usine et de l'entrepôt d'une entreprise manufacturière. Tu auras pour tâches de : • Compiler des feuilles de travail détaillées à l'aide des commandes et des instructions reçues des clients; • Évaluer la quantité et les caractéristiques des matériaux et la main-d'oeuvre nécessaire pour la production, la construction ou des projets semblables; • S'entretenir avec les contremaîtres de la production pour établir l'horaire des phases de production au meilleur coût et dans les meilleurs délais possibles; • Consulter les commis à la production, des contremaîtres d'entrepôt, de la production ou de la construction et des commis aux achats et à l'inventaire pour coordonner les activités entre l'entrepôt et les lieux de production ou le chantier de construction; • Coordonner et surveiller la logistique de l'utilisation des pièces, des approvisionnements et des matériaux à l'intérieur de l'établissement pour en assurer la disponibilité et la livraison selon le calendrier prévu; • Rédiger et mettre à jour des rapports sur l'avancement des travaux, les matériaux utilisés, les taux de production et autres renseignements sur la production, à l'aide d'un système manuel ou informatisé; • Participer à l'élaboration et la mise en œuvre de nouvelles stratégies et processus de chaîne de production plus efficaces; • Etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes pour les mathématiques; car tu auras besoin d’une formation assez poussée dans cette discipline -Sens des responsabilités et bon jugement, car il y en a certaines qui sont importantes à assumer -Sens de l’organisation, pour bien gérer ton travail et les dossiers à traiter -Bonne capacité à la résolution de problèmes car tu en auras de toutes sortes à régler -Esprit d’analyse, car les décisions devront être bien étudiées avant d’être exécutées -Facilité à travailler en équipe car tu devras travailler constamment avec d’autres collègues -Autonomie et débrouillardise car tu seras responsable du bon déroulement de toutes les activités de la production -Bonne méthode de travail car tu auras à planifier des tâches et méthodes de production -Capacité de travailler sous pression car tu auras à gérer des délais de production souvent courts -Esprit d’initiative et Capacité à prendre des décisions rapidement car tu auras à prendre seul(e) certaines décisions -Sens de l’organisation; pour bien gérer les inventaires, les horaires de travail, etc. -Dynamisme et leadership car tu auras plusieurs défis à relever -Adaptation aux changements technologiques pour être à l’affût des nouveaux développements en production industrielle -Excellente maîtrise de la langue française parlée et écrite afin de t'exprimer de facon claire et professionnelle au cours des réunions avec les différents responsables de la production et avec les membres de la direction et pour rédiger des rapports de qualité -Bonne connaissance de l’anglais : afin de t'exprimer de facon claire et professionnelle au cours des réunions avec les différents responsables de la production et avec les membres de la direction et pour rédiger des rapports de qualité (certaines entreprises ont des usines un peu partout dans le monde)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir un D.E.S. ou l'équivalent</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : Secteur privé : - 23,00 $/heure (40 hres/sem) en moyenneau sein des PME -23,66 $/heure (37,5 hres/sem) en moyenne en tant que technicien(ne) en logistique des opérations au sein des grandes entreprises de télécommunications - 23,75 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en logistique de la distribution au sein des grandes entreprises de commerce au détail - 27,21 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) en logistique de la distribution ou technicien(ne) en gestion des opérations au sein des grandes entreprises de camionnage - 29,31 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) en logistique au sein des grandes entreprises de messagerie Note 1: hausse de la moyenne salariale au sein des PME par rapportaux années précédentes (était de26,46 $ en 2022; 20,00 $ en 2022; 19,65 $ en 2021; 18,06 $ en 2019 et 16,28 $ en 2017). Note 2 : chez les grands employeurs privés, les augmentations sont établies selon les conventions collectives. Secteur public et parapublic : - 24,41 $/heure (35 hres/sem) en tant que technicien(ne) de soutien aux opérations à la Société québécoise des infrastructures (anciennement &quot;la Société immobilière du Québec&quot;) -26,74 $/heure (37,5 hres/sem) en tant que commis aux projetsà Aéroports de Montréal -28,16 $ (37,5 hres/sem) en tant que technicien(ne) en administration - gestion opérationnelledans la fonction publique fédérale -28,62 $/heure (35 hres/sem) en tant que technicien(ne) en gestion des opérations à la Société des alcools du Québec SAQ - 31,89 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en gestion opérationnelle au sein des grandes entreprises publiques de transport en commun -32,37 $/heure (37,5 hres/sem) en tant que planificateuu(trice) aux opérationsà Aéroports de Montréal -33,76 $/heure (35 ou 36 ou 38,5 heures/sem) en tant que technicien(ne) en gestion des opérations à Hydro-Québec - 33,88 $/heure (37,5 hres/sem) en tant que coordonnateur(trice) de la planification opérationnelleà l'Aéroport international de Québec Jean-Lesage - 34,70 $/heure (35 hres/sem) en tant que technicien(ne) en gestion des opérations à la Société de transport de Montréal STM - 35,50 $/heure (32,5 ou 33,75 ou 35 ou 40 hres/sem selon les organisations)en moyenne en tant que technicien(ne) en gestion au sein des grandes entreprises publiques de transport urbain - 38,99 $/heure (36,25 hres/sem) en tant que technicien(ne) en gestion des opérations à Énergir (anciennement &quot;Gaz métro&quot;) Note 1 : dans le secteur public et parapublic, les augmentations sont établies selon les conventions collectives. Note 2 : prendre en considération que bien que le salaire horaire soit élevé dans les petites et municipalités de taille moyenne, il ne comporte peu ou pas d'échelons et les avantages sociaux (ex : assurance-santé, régime de retraite, etc) y sont moins nombreux que dans les grandes municipalités ou la fonction publique fédérale, mais les responsabilités sont davantages importantes. Sources : Ministère de l’Enseignement supérieur du Québec, Conseil du trésor du Québec, Commission de la Fonction publique du Canada, Forces canadiennes, Syndicat national des employés de bureau du Port de Montréal, Alliance de la fonction publique du Canada - section locale Aéroport de Québec et section locale Aéroports de Montréal, Guilde canadienne des médias - section locale CBC, Syndicat canadien de la fonction publique - section locale 675 (employés de bureau et professionnels de la SRC), Syndicat des travailleuses et travailleurs de Loto-Québec, Syndicat de la fonction publique du Québec - section locale Investissements Québec, Syndicat des employés de la Société immobilière du Québec, Syndicat du personnel technique et professionnel de la SAQ, Syndicat du personnel administratif, technique et professionnel de la Société de transport de Montréal STM, Syndicat des fonctionnaires municipaux de Montréal, Syndicat des fonctionnaires municipaux de Québec, Syndicat des employés professionnels et de bureau - section locale 463 (Gaz métro) et section locale 2000 (Hydro-Québec), conventions collectives des employés de soutien de plusieurs universités, conventions collectives des employés municipaux de plusieurs grandes municipalités, conventions collectives des employés municipaux de plusieurs moyennes municipaux, conventions collectives des employés de plusieurs petites municipalalités, conventions collectives des employés de plusieurs entreprises publiques de transport urbain, conventions collectives des employés de plusieurs grandes entreprises de commerce au détail (sièges sociaux), conventions collectives des employés de plusieurs grandes industries, conventions collectives des employés de plusieurs entreprises de télécommunications et conventions collectives des employés de plusieurs grandes compagnies d'assurances.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est bon, 75 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Plusieurs autres répondants(es), soit 23 % ont choisi de poursuivre leurs études à l'université en administration. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À temps complet NOMBRE AUX ÉTUDES 26151561 Note 1:légère hausse du taux de placement par rapport aux années précédentes (était de 72 % en 2022; 79 % en 2021; 75 % en 2019 et64 % en 2017). Note 2 : légère hausse du nombre de répondants(es) poursuivant des études universitaires (était que 17 % en 2022; 22 % en 2021; 20 % en 2019 et 33 % en 2017). Source:Ministère de l’Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

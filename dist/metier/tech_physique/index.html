@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Génie physique, technologue en — Métiers Québec</title>
+  <meta name="description" content="Métier Génie physique, technologue en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Génie Physique, Technologue En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Génie Physique, Technologue En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technologue en génie physique; tu seras appelé(e) à appliquer et utiliser la physique, l'électronique et la programmation pour réaliser des produits de haute technologie, participer à des projets de recherche et développement ou pour fournir des services techniques de haute précision pour des domaines tels que l'inspection de la qualité industrielle, les télécommunications, l'acoustique, etc. Chez un fournisseur d'équipements de laboratoire; tu seras responsable d’installer, inspecter, tester, entretenir, diagnostiquer, régler, réparer et remettre en état des équipements électriques, électroniques, électromécaniques, mécatroniques et optoélectroniques et instruments spécialisés utilisées dans les laboratoires de physique ou dans les industries tels que : des appareils et instruments de mesure, équipements d'essais non destructifs des matériaux, spectromètres de masse, densitomètres, gaschromatographes, détecteurs de gaz, analyseurs de gaz, microscopes électroniques, homogénéisateurs, photomètres, appareils d'extraction de solvants, décanteurs et appareils de sédimentation, appareils d'électrolyse, appareils d'hydrolyse, fermenteurs, autoclaves, stérilisateurs, échantillonneurs de liquides, échantillonneurs de solides, appareils de dosage de liquides, appareils de dosage de gaz, appareils de remplissage pour liquides stériles, appareils distributeurs de liquides, générateurs d'aérosols, dialyseurs, goniomètres, systèmes laser, etc. Chez un manufacturier d'un produit de haute technologie; tu participeras aux projets de conception et de fabrication d’équipements de haute-technologie tels que : capteurs électroniques, capteurs optiques, microscopes électroniques, appareils et instruments de meure pour laboratoires, équipements d'essais non destructifs pour laboratoires ou industries, détecteurs de gaz, autres appareils et instruments pour laboratoires, etc. Tu seras responsable d'assister l'ingénieur(e) dans les étapes de conception et de fabrication des produits; programmer, adapter et entretenir les équipements spécialisés électromécaniques et optoélectroniques pour la fabrication; entretenir, tester, régler et réparer les équipements d'essais; superviser les opérations de fabrication et participer aux études faisabilité et de fiabilité en production. Dans un centre de recherche d'une université, d'un gouvernement ou d'une entreprise; tu seras appelé(e) à assister des ingénieurs(es) et des chercheurs(es) dans la réalisation de leurs travaux de recherches dans le domaine de la physique dans des domaines aussi variés que : l'acoustique, les techniques sous vide, la fibre optique, les technologies laser, essais sur les matériaux, les applications de l'hydrogène, les technologies d'énergie éolienne ou solaire, le développement de piles à combustible, le développement ou la recherche de nouvelles applications de micromatériaux ou de nanomatériaux, etc. En tant que technicienne ou technicien en électronique et optronique au sein des Forces armées (Armée de terre canadienne); tu seras responsable d’installer, inspecter, tester, entretenir, diagnostiquer, régler, réparer, remettre en état ou modifier des systèmes de surveillance, les dispositifs d’observation à imagerie thermique, les systèmes de navigation par satellite des véhicules (tels que les chars d'assaut), les systèmes de conduite du tirs (armes et missiles), les radars, les systèmes laser, les instruments météorologiques, les appareils d'essais optiques, électriques et électroniques, les équipements de guerre électronique, etc</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes pour les mathématiques et les sciences ... non seulement la physique, mais les sciences sous toutes ses formes -Intérêts pour les sciences, la recherche et les technologies -Bonnes habiletés manuelles, dextérité et minutie car tu devras manipuler différents types d'instruments et d'appareils sophistiqués et très coûteux, des lasers délicats et dangereux et des pièces délicates -Esprit analytique et de synthèse pour réussir à bien analyser les problèmes ou défectuosités des appareils -Sens des responsabilités et initiative car tu seras responsable du bon état de fonctionnement d'instruments d’appareils très sophistiqués et très coûteux -Curiosité, créativité et imagination afin de réaliser des projets ou travaux de recherches en physique originaux et créatifs -Autonomie et débrouillardise pour être en mesure de régler seul(e) certains problèmes de nature technique -Sens de l’observation pour détecter rapidement les anomalies des appareils en cours d’utilisation -Facilité à travailler en équipe est primordial à réussir à réaliser à terme de façon efficace un projet avec une équipe composée de d'autres technologues en génie physique, de programmeurs en informatique industrielle, de physiciens, d'ingénieurs physiciens, d'ingénieurs électriciens, d'ingénieurs informaticiens, d'ingénieurs en logiciel, d'ingénieurs mécaniciens, d'ingénieurs en automatisation, etc. -Bonne connaissance de l’anglais oral et écrit notamment pour comprendre les manuels et autres documentations spécialisés rédigés dans cette langue pour la plupart du temps</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir un D.E.S. et avoir réussi les cours suivants du secondaire ou leurs équivalents : TS ou SN 5e (anciennement mathématiques 526) STE ou SE 4e (anciennement physique 584) Note : pour connaître les équivalences de préalables à l’éducation aux adultes, consulte la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de - 25,00 $/heure (40 hres/sem)en moyenne en tant que technologue en optique ou technologue en physique ou techicien(ne) en recherche &amp; développement au sein des PME - 26,00 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) en génie biomédical au sein des PME - 26,38 $/heure (35 hres/sem) en tant que technicien(ne) en travaux pratiques en laboratoire de physique dans les cégeps et les centres de services scolaires - 26,54 $/heure (38,75 hres/sem) en tant que technicien(ne) en génie biomédical (ex : appareils de radiologie, radio-oncologie ou de médecine nucléaire) en milieu hospitalier - 24,63 $/heure (35 hres/sem) en tant que technicien(ne) en criminalistique (balistique) au sein de la fonctoin publique québécoise (Laboratoire des sciences judiciaires et de médecine légale du Québec) -26,59 $/heure (32 ou 33,5 ou 35 hres/sem) en tant que technologue junior et augmente à 34,37 $/heure (après 3 ans environ) en tant que technologue en génie énergétique ou technologue en optique-photonique à Hydro-Québec - 28,02 $/heure (40 hres/sem) en moyenne en tant que technologue junior et augmente à 31,93 $/heure (après 3 ans env.) au sein des grandes sociétés de génie conseil - 28,35 $/heure (40 hres/sem) en moyenne en tant que technologue en fabrication au sein des grands manufacturiers de matériel électronique ou optique - 28,69 $/heure (40 hres/sem) en moyenne en tant que technologue en conception optique au sein des grands manufacturiers de matériel électronique ou optique - 29,54 $/heure (35 hres/sem) en moyenneen tant que technicien(ne) en travaux d'enseignement et de recherche ou technicien(ne) en physique ou en microscopie électroniqueau sein des universités -29,97 $/heure (37,5 hres/sem) en tant que technologue en recherche &amp; développement au sein du Conseil national de recherches du Canada CNRC - 30,41 $/heure (37,5 hres/sem) en tant que technologue en électronique biomédicale dans la fonction publique fédérale (postes civils dans les hôpitaux militaires) - 31,09 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) aux opérations - niveau apprenti(e) et augmente à 35,09 $/heure en tant que technicien(ne) aux opérations ou technicien(ne) aux procédés ou technicien(ne) en contrôle de la qualité - niveau débutant sein des grandes entreprises en raffinage pétrolier (Québec et hors-Québec) - 37,69 $/heure (36,25 hres/sem) en tant que technicien(ne) en acquisition et exploitation du réseau - stagiaire et augmente à 38,74 $/heure en tant que technicien(ne) en acquisition 1 à Énergir (anciennement &quot;Gaz métro&quot;) - 38,99 $/heure (36,25 hres/sem) en tant que technicien(ne) de projets ou technicien(ne) en gestion et design du réseau ou technicien(ne) d'ingénierie à Énergir (anciennement &quot;Gaz métro&quot;) - 39,99 $/heure (36,25 hres/sem) en tant que technicien(ne) en instrumentation - stagiaire et augmente à 42,42 $/heure en tant que technicien(ne) à Énergir (anciennement &quot;Gaz métro&quot;) - 40,48 $/heure (35 hres/sem) en tant que technicien(ne) en soutien technique en électronique (systèmes du métro) à la Société de transport de Montréal STM - 40,65 $/heure (40 hres/sem) en moyenneen tant que technicien(ne) en électrolyse ou technicien(ne) en génie physique au sein des grandes industries chimiques et pétrochimiques - 40,84 $/heure (40 hres/sem) en moyenne en tant que technicien pré-vol au sein des grands manufacturiers de produits aérospatiaux - 43,51 $/heure (40 hres/sem) en moyenne en tant que technologue en génie physique au sein des grandes compagnies minières - 3 614 $/mois (grade de &quot;soldat/matelot 2e classe&quot;) au cours de la 1re année et augmente à6731 $/mois (grade de &quot;caporal/matelot 1re classe - spécialiste&quot;) en tant que technicien(ne) en électronique et optronique ou technicien(ne) en systèmes d'armement aérien ou technicien(ne) en génie des armes navales au sein des Forces canadiennes (Force régulière) - 6 731 $/mois (grade de &quot;caporal - spécialiste&quot;) en tant qu technologue en électronique biomédicale au sein des Forces canadiennes (Force régulière) - 205,40 $/jour (grade de &quot;caporal/matelot 1ere classe&quot; - spécialiste) au sein des Forces canadiennes (Réserve) Sources : Ministère de l'Enseignement supérieur du Québec, Syndicat des technologues d'Hydro-Québec, Syndicat général des employés d'Énergir, Syndicat des fonctionnaires municipaux de Québec, conventions collectives des employés de soutien de plusieurs universités, conventions collectives des employés de plusieurs grandes industries du matériel électronique et optique et conventions collectives des employés de certaines grandes industries pétrolières.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Plus du deux-tiers des répondants(es), soit 65 % ont poursuivi leurs études à l’université (principalement en physique, mais aussi en génie physique, génie électrique, génie de la production automatisée), notamment en bénéficiant d'un DEC-BAC ou d'une passerelle. Malgré cela, 75 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 23 6 6 15 Note : la plupart des répondants(es) utilisent ce programme comme tremplin afin d'accéder aux études universitaires en physique ou en génie. Source : Ministère de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>La plupart des diplomés(es) de ce programme l'utilisent comme tremplin afin d'accéder aux études universitaires en physique ou en génie. L'acquisition de bonnes connaissances de base en physique, en électronique et sur les technologies facilitent la réussite des premiers cours universitaires en physique ou en génie et de plus, certains cours sont reconnus et exemptés grâce aux passerelles. Si tu veux obtenir plus d’informations sur les carrières possibles et le profils des entreprises dans le domaine de la photonique, consulte le site. Toutefois, plusieurs carrières avec des perspectives forts intéressantes sont offertes aux titulaires de ce D.E.C. La rémunération moyenne après expérience en 2026... Le revenu annuel moyen d'un(e) technologue en optique ou d'un(e) technologue en génie physique ayant 10 années d'expérience dans le secteur privé était de 75 700 $; Le revenu annuel moyen d'un(e) technicien(ne) fen génie biomédical ayant 10 années d'expérience dans le réseau de la santé était de 76 400 $; Le revenu annuel moyen d'un(e) technicien(ne) de projets ayant 10 années d'expérience à Énergir était de 84 800 $; Le revenu annuel moyen d'un(e) technicien(ne) en optique et optronique (grade de &quot;caporal-chef&quot;) au sein des Forces canadiennes était de 85 800 $; Le revenu annuel moyen d'un(e) technicien(ne) en instrumentation ayant 10 années d'expérience à Énergir était de 88 200 $; Le revenu annuel moyen d'un(e) technologue en génie électronique biomédicale ou d'un(e) technicien(ne) en systèmes d'armement aérien ou d'un(e) technicien(ne) en génie des armes navales ou d'un(e) technicien(ne) en électronique et optronique ayant 10 années d'expérience (grade de &quot;caporal-chef&quot; ou &quot;matelot-chef&quot;) au sein des Forces canadiennes était de 88 800 $; Le revenu annuel moyen d'un(e) technologue en génie électronique détenant 10 ans d'expérience au sein d'une grande société de génie conseil était de 89 200 $; Le revenu annuel moyen d'un(e) technicien(ne) en génie biomédical ayant 10 années d'expérience dans le secteur privé était de 94 600 $; et le revenu annuel moyen d'un(e) technologue sénior en génie physique ou un(e) technologue en génie énergétique ayant 10 années d'expérience à Hydro-Québec était de 101 000 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

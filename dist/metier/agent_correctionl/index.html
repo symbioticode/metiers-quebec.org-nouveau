@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent des services correctionnels — Métiers Québec</title>
+  <meta name="description" content="Métier Agent des services correctionnels au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agent Des Services Correctionnels</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Agent Des Services Correctionnels</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’agente ou agent des services correctionnels, tu seras responsable de surveiller les contrevenants et les détenus et maintenir l’ordre à l’intérieur d’un établissement pénitentiaire ou un autre lieu de détention (unités cellulaires des palais de justice para exemple), mais également lors de leur sorties. Par contre, ton travail ne s’arrêtera pas qu’au point de vue « gardien de prisonniers » car ton travail exigera des habiletés et compétences sociales aigues, puisque tu participeras également au processus de réinsertion sociale des contrevenants. Tu auras pour tâches de : • Surveiller la conduite et le comportement des contrevenants et des détenus afin de prévenir les émeutes et les évasions; • Surveiller les contrevenants durant leurs périodes de travail, les repas et les périodes de loisirs; • Faire des rondes dans les secteurs qui leur sont dévolus et signaler les problèmes à leur supérieur; • Effectuer des recommandations sur certaines activités d’évaluation appropriées afin de participer à un plan d’intervention visant la réinsertion sociale; • Accompagner et faire un suivi du plan d’intervention avec le détenu; • Observer et noter le comportement des contrevenants, ce qui permettra d’accroître la sécurité au sein de l’établissement et de prévenir les problèmes; • Escorter les détenus pendant les déplacements ou durant une absence temporaire (hôpital, palais de justice, etc.); • Participer au programme de gestion de crises afin d’être efficace lors de toutes situations d’urgence; • Rédiger les rapports d'admission, de programmes, de libération et de transfert ainsi que d'autres rapports; • Surveiller et coordonner, s'il y a lieu, le travail d'autres agents de services correctionnels. On en retrouve dans les relevant du Ministère de la Sécurité publique du Québec pour détenus (personnes condamnées à des peines de moins de deux ans ou 2 ans moins 1 jour); Voici quelques exemples d'infractions passibles d'une telle peine : entrave à la justice, résistance à un agent de la paix, violation d'une ordonnance du Tribunal, méfait public, action indécente, vol de moins de 5 000 $, vol d'un véhicule motorisé, escroquerie de 5 000 $ ou moins, fraude de 5 000 $ ou moins, distribution de choses obscènes, prostitution, cruauté animale, conduite avec facultés affaiblies, possession de stupéfiants sans but d'en faire le trafic, menaces, exhibition devant un enfant de moins de 16 ans, corruption d'enfants, contacts sexuels si sentence minimale accordée, etc.; ainsi que les prévenus (personnes en attente de procès ou de sentence peu importe la gravité du délit dont elles sont soupçonnées). Tu pourras être affecté(e) au sein de l'un des 17 établissements pour les hommes, soit : Bordeaux, Rivière-des-Prairies, Québec, Laval, Sherbrooke, St-Jérôme, Trois-Rivières, Sorel-Tracy, Roberval, Rimouski, Hull, Amos, Baie-Comeau, Sept-Îles, New Carlisle, Percé pour délinquants sexuels, et Îles-de-la-Madeleine; ainsi que 2 établissements pour les femmes, soit : la Maison Tanguay et le Centre de détention de Québec. On les retrouve également les unités cellulaires des palais de justice qui relèvent aussi du Ministère de la Sécurité publique. On retrouve des agents des services correctionnels dans les relevant du Service correctionnel Canada pour les détenus condamnées à une ou des sentences criminelles de 2 ans et plus (ex : vol de plus de 5 000 $, escroquerie de plus de 5 000 $, fraude de plus de 5 000 $, port illégal d'une arme, conduite dangereuse d'un véhicule motorisé, fuite d'un agent de la paix dans un véhicule motorisé, évasion d'une garde légale, délit de fuite d'un accident, récidive en conduite avec facultés affaiblies, négligence criminelle, braquage avec une arme à feu, possession de pornographie juvénile, voies de faits contre un agent de la paix, usurpation d'identité, trafic de stupéfiants, importation et culture de stupéfiants, obtention des services sexuels d'un mineur, prostitution d'un mineur,agression armée, inceste, contacts sexuels, agression sexuelle, abandon d'enfant, enlèvement et/ou séquestration, extorsion, harcèlement, vol qualifié, viol, tentative de meurtre, homicide involontaire 3e degré, meurtre, etc.). (les établissements à sécurité maximale comme Donnacona et Port-Cartier, à sécurité moyenne comme Archambault, les pénitenciers à sécurité minimale pour la réinsertion, ainsi que les pénitenciers pour femmes tel que celui de Joliette). Pour plus d’informations, consulte la page concernant les et les sur les sites Internet des Services correctionnels.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Excellente santé -Aimer travailler avec public et entregent car tu auras à établir des contacts avec gens en difficultés -Grande facilité à communiquer et à écouter qui te permettra d’établir un lien de confiance avec les détenus -Autonomie, initiative et débrouillardise pour être en mesure d’intervenir seul(e) dans certaines situations -Facilité pour le travail en équipe car tu devras non seulement travailler avec cette personne mais aussi d’autres collègues (criminologues, travailleurs sociaux, psychologues, , psychiatres, etc) -Bon contrôle et très bonne confiance en soi pour intervenir efficacement dans les situations d’urgences -Bonne connaissance en langue anglaise parlée et écrite -Bonne coordination œil-main pour avoir de bons réflexes et agir rapidement mais efficacement -Capacité d’analyse et de synthèse pour bien analyser efficacement une situation avant d’intervenir -Capacité de travailler sous stress pour être capable d’agir professionnellement même dans les situations difficiles -Civisme, honnêteté et leadership pour agir avec professionnalisme -Discipline, respect et discrétion également pour agir de façon professionnelle -Très bon sens de l’observation et de la mémoire pour réussir à déceler des situations qui risques de troubler l’ordre à l’intérieur de l’établissement -Sens des responsabilités car tu seras responsable des approches d’intervention auprès de cette personne -Esprit d’initiative et autonomie pour réussir à emmener la personne à faire face à ses problèmes et d’en trouver une solution -Esprit d’analyse et bon jugement pour comprendre les problèmes rencontrés par cette personne -Sens de l’observation et vigilance car tu devras connaître non seulement les faiblesses mais aussi les forces de cette personne pour mieux l’aider à régler son ou ses problèmes -Grande capacité d’adaptation à tout type de milieux et à tous types de clientèles -Imagination et créativité pour développer de nouvelles approches innovatrices et efficaces -Sens de l’organisation pour planifier, organiser et animer différentes activités sociales et animation de groupes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Pour l'AEC en techniques d'intervention en milieu correctionnel (ou carcéral) : Détenir un Diplôme d'études secondaires D.E.S. ou l'équivalent ET : - Soit avoir interrompu tes études postsecondaires pendant au moins 2 sessions consécutives ou une année scolaire. - Soit être titutlaire d'un diplôme d'études professionnelles D.E.P. - Soit avoir terminé au moins 1 année d'études postsecondaires (collégial ou universitaire) échelonnée sur 1 année ou plus - Soit détenir une expérience jugé pertinente et satisfaite par le collège en lien avec le domaine d'études - Soit bénéficier d'un programme gouvernemental (consulte un agent(e) d'Emploi-Québec) Pour le D.E.C. en techniques d’intervention en délinquance : -Détenir un D.E.S. ou son équivalent sans cours préalable exigé Note : Pour connaître les équivalences des préalables à l’éducation aux adultes, consulte la Pour le D.E.C. en techniques policières : - Détenir un D.E.S. ou l’équivalent et avoir réussi le cours préalable suivant ou son équivalent : CST 4e ou mathématiques 514 ou l'équivalent Pour les Baccalauréats : -Soit détenir un DEC en sciences-arts-lettres, sciences de la nature ou sciences humaines ou l’équivalent - Soit détenir un D.E.C. technique en : techniques d’intervention en délinquance techniques de travail social techniques policières -Soit avoir acquis un minimum de 45 crédits universitaires -Soit être âgé d’au moins 21 ans, des connaissances équivalentes et une expérience jugé pertinente dans un domaine pertinent</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : - 22,21 $/heure (40 hres/sem) en tant que constable spécial(e) à la sécurité dans un palais de justice - 24,81 $/heure (35 hres/sem) en tant que surveillant(e) en unité de détention à la Ville de Montréal -25,98 $/heure (40 hres/sem) en tant qu’agent(e) des Services correctionnels du Québec (centres de détention provinciaux) - 27,44 $/heure incluant prime pour clientèle avec troubles graves de comportement de 3,5 %(40 hres/sem) en tant qu'intervenant(e) spécialisé(e) en pacification et en sécurité en centre jeunesse pour jeunes contrevenants - 27,44 $/heure incluant prime de psychiatrie de 3,5 %(40 hres/sem) en tant qu'intervenant(e) spécialisé(e) en pacification et en sécurité dans un établissement de soins psychiatriques -27,44 $/heure incluant prime de psychiatrie de 3,5 %+ prime spécifique Pinel de 1 697 $/an(36.25 hres/sem) incluantprime de psychiatrie en tant qu' intervenant(e) spécialisé(e) en pacification et en sécurité à l'Institut Philippe-Pinel (délinquants dangereux) -32,20 $/heure (40 hres/sem) en tant qu’agent(e) des Services correctionnels du Canada (pénitenciers fédéraux) Sources : Conseil du Trésor du Québec, Commission de la Fonction publique du Canada et Syndicat des fonctionnaires municipaux de Montréal</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est bon, 70 % des répondants(es) qui se sont dirigés sur le marché du travail ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Quelques répondants(es), soit 12 % ont poursuivi leurs études dans un programme collégial ou à l'université. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À temps complet NOMBRE AUX ÉTUDES 65 40 40 8 Note : baisse du taux de placement par rapport aux années précédentes (était de 56 % en 2019). Sources : Emploi Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Un(e) agent(e) des services correctionnels peut travailler autant dans un milieu fermé que dans un milieu ouvert ce qui fait en sorte qu'il y a plusieurs domaines et facettes du travail. Une importante pénurie d’agents correctionnels touche actuellement plusieurs établissements au Québec tant fédéraux que provinciaux. En effet, selon des estimations, plus de 250 agents(es) des services correctionnels (150 au provincial et une centaine au fédéral) seront nécessaires au cours des prochaines années afin de combler les départs à la retraite, la rétention de personnel, ainsi que la hausse du nombre de détenus. Les départs à la retraite principalement, mais également les départs volontaires, la diminution des cohortes étudiantes dans les programmes de formation et la hausse des populations carcérales sont les principales raisons de cette pénurie importante. Le taux de placement est pratiquement de 100 % autant au niveau provincial, fédéral qu’au sein des centres jeunesse. Fait important à préciser, on a un grand besoin d’intervenantes féminines, notamment dans les centres correctionnels pour femmes. Consulte également le site du qui a fait un portrait sur les milieux correctionnels québécois; Ainsi que le site du , qui a fait un portrait des services correctionnels fédéraux. La rémunération moyenne après expérience en 2024... le revenu annuel moyen d'un(e) agent(e) des services correctionnels du Québec ayant 10 années d'expérience était de 74 100 $. et le revenu annuel moyen d'un(e) agent(e) des services correctionnels du Canada ayant 10 années d'expérience était de 96 700 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajusteur de comptes de devises étrangères — Métiers Québec</title>
+  <meta name="description" content="Métier Ajusteur de comptes de devises étrangères au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Ajusteur De Comptes De Devises Étrangères</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Ajusteur De Comptes De Devises Étrangères</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technicien ou technicienne en commerce international; tu seras responsable de planifier et coordonner les activitésreliées au commerce international au sein de l'entreprise en collaboration avec les autres départements. Tu auras pour tâches de : • Rechercher et analyser les particularités légales et administratives relatives au commerce international pour chacun des pays dont l'entreprise fait affaires (conventions commerciales et accords de libre-échange, conventions fiscales, lois commerciales intérieures et internationales, etc.); • Analyser les particularités sociales et culturelles des communautés d'affaires étrangères ayant des implications sur les négociations et les ententes (ex : langues, les conduites diplomatiques, le respect de la hiérarchie dans les entreprises asiatiques, etc.); • Analyser les marchés et déterminer les prix des fournitures et des matières premières à l’étranger; • Calculer des coûts à l'exportation et l’importation des produits et services de l'entreprise; • Planifier et coordonner les achats en provenance de l’étranger; • Gérer la logistique d'acheminement des marchandises et de prestation de services à l’international; • Déterminer des modes de paiement et de financement en contexte de transactions internationales; • Effectuer les procédures de dédouanage en collaboration avec les services frontaliers canadiens et étrangers; • Effectuer les paiements appropriés à l’étranger (douanes, taxes, etc.); • Participer à la gestion des risques dont celui relié au taux de change; • Participer à l'élaboration et au développement de nouveaux marchés et mettre en œuvre divers programmes d’échanges commerciaux internationaux avec l’entreprise; • Gérer les différences culturelles au sein de l'entreprise; • Etc. En tant que courtière ou courtier en douanes; tu seras responsable de prendre en charge pour le compte de ses clients (exportateurs, importateurs, grossistes, entreprises manufacturières, etc.) les formalités de dédouanement des marchandises à leur arrivée au pays ou au départ. Tu auras pour tâches de : • Préparer des documents de dédouanement et remplir d'autres formulaires au nom de leurs clients conformément aux règlements, aux lois et aux formalités douanières; • Signer des documents de dédouanement, au nom des clients, en utilisant des procurations; • Assurer le règlement des droits d'entrée, l'entreposage, le transport des marchandises importées, et les acquits-à-caution pour les marchandises imposables; • Indiquer aux clients les taux des droits et de douanes des différents articles; • Aviser les clients quant aux restrictions sur les importations et les exportations, les tarifs douaniers, les lettres de crédit, les assurances et toute autre exigence reliée aux douanes; • Représenter, s'il y a lieu, les clients devant des tribunaux administratifs ou dans des négociations avec d'autres officiels gouvernementaux. • Etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Intérêts pour le contexte international -Aimer travailler avec public, car les contacts avec les gens sont fréquents -Ouverture à d’autres cultures car tu auras à rencontrer des gens ayant des cultures très différentes aux nôtres (ex :les chinois, les japonais, les arabes, les russes, etc) -Aimer travailler avec public et entregent car tu seras constamment en contact avec toutes sortes de personnes -Esprit d’initiative et autonomie pour être capable d’approcher des gens n’ayant pas nécessairement le même langage, la même culture que nous -Esprit d’analyse et bon jugement pour bien comprendre et analyser les problèmes de gestion dans un contexte de mondialisation des marchés -Sens des responsabilités car il y en a certaines qui sont importantes à assumer -Sens de l’organisation, pour planifier et organiser des stratégies de promotion et de développer des marchés -Bonne capacité à la résolution de problèmes car tu devras résoudre des problemes de toutes sortes en lien avec le développement du marché au niveau international tant sur les plans du marketing, des achats, des ressources humaines, des affaires juridiques, etc. -Facilité pour le travail en équipe car tu auras à travailler avec la collaboration avec des collègues et représentants externes provenant ou situés partout dans le monde -Être prêt à relever des défis car tu auras plusieurs intéressants à relever -Grande facilité d’adaptation aux changements : le milieu des marchés internationaux change constamment -Excellente maîtrise de la langue française parlée et écrite afin de t'exprimer de façon claire et professionnelle au cours des réunions avec les différents responsables et employés du département et avec les membres de la direction et pour rédiger des rapports de qualité -Bonne connaissance de l’anglais : afin de t'exprimer de façon claire et professionnelle au cours des réunions avec les différents responsables et employés du département et avec les membres de la direction situés ou provenant de partout dans le monde et pour rédiger des rapports de qualité -Capacité à apprendre des langues étrangères car tu seras appelé(e) à communiquer dans différentes langues(notamment l’espagnol, l’allemand ou le portugais, mais aussi les langues asiatiques)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Pour le D.E.C. en gestion commerciale : -Soit détenir un D.E.S. et avoir réussi le cours CST 4e (anciennement mathématiques 436) ou son équivalent -Détenir un D.E.S. et avoir réussi le cours TS ou SN 5e (anciennement mathématiques 536) ou son équivalent pour ceux qui veulent poursuivre les études jusqu’à l’université au Baccalauréat en administration des affaires. Pour le nouveau D.E.C. en techniques de l'administration et de gestion : -Détenir un D.E.S. SANS cours préalable spécifique</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : -18,99 $/heure (40 hres/sem) en commerce international au sein des PME -21,51 $/heure (40 hres/sem) en moyenne en tant qu'agent(e) des ventes dans les grands hôtels (extérieur de Montréal) -22,56 $/heure (35 hres/sem) en tant que technicien(ne) en administration (développement du commerce international) dans la fonction publique québécoise -24,18 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) aux importations dans les grandes entreprises de commerce au détail (sièges sociaux) -24,75 $/heure (40 hres/sem) en moyenne en tant qu'agent(e) des ventes dans les grands hôtels (Île de Montréal) - 26,60 $/heure (40 hres/sem) en moyenne (+ commissions et parfois, des bonis)en moyenne en tant que représentant(e) des ventes au seingrands manufacturiers de la plasturgie, du caoutchouc et des composites -26,95 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) dans les grandes industries de fabrication métallique industrielle - 26,95 $/heure (40 hres/sem) en moyenne (+ commissions et parfois, des bonis)en moyenne en tant que représentant(e) des ventes au seingrands manufacturiers de produits métalliques -27,09 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) au sein des grands manufacturiers de produits métalliques -28,16 $/heure (35 hres/sem) en tant que technicien(ne) en administration (développement du commerce international) dans la fonction publique fédérale - 29,52 $/heure (37,5 hres/sem) en moyenne(+ commissions et parfois, des bonis) en tant que représentant(e) des ventes au sein des grandes entreprises pharmaceutiques -29,92 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) au sein des grands manufacturiers de matériel de transport terrestre - 30,11 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) dans les grandes industries de fabrication des aliments et boissons - 30,65 $/heure (35 ou 40 hres/sem) en moyenne(+ commissions et parfois, des bonis) en tant que représentant(e) des ventes au sein des grands fabricants d'aliments et boissons -32,75 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) au sein des grands manufacturiers de l'aérospatiale - 32,91 $/heure (37,5 ou 40 hres/sem) en moyenne(+ commissions et parfois, des bonis) en tant que représentant(e) des ventes au sein des grandes industries papetières -34,9 $/heure (40 hres/sem) en moyenne en tant qu'acheteur(euse) au sein des grandes entreprises papetières - 36,58 $/heure (37,5 ou 40 hres/sem) en moyenne(+ commissions et parfois, des bonis)en moyenne en tant que représentant(e) des ventes au sein des grands manufacturiers de matériel de transport terrestre -37,73 $/heure (37,5 hres/sem) en tant qu'agent(e) stagiaire et augmente à 32,94 $ (après le stage) en tant qu'agent(e) des services frontaliers -720,00 $/semaine (pour plusieurs postes, la rémunération n'est établie que par un % des commissions, alors que d'autres il y a un salaire de base + commissions) en tant que représentant(e) en commerce international au sein des PME - 1 032,50 $/semaine (+ commissions + bonis aux ventes) en moyenne en tant que représentant(e) en commerce international (territoire pré-établi) aux des grandes entreprises manufacturières (tous secteurs confondus) Note : baisse de la moyenne salariale au sein des PME par rapport aux années précédentes (était de 22,88 $ en 2022; 20,65 $ en 2021; 18,06 $ en 2019 et 17,00 $ en 2018). Sources : Ministère de l’Éducation et de l'Enseignement supérieur du Québec, Emploi Québec, Commission de la Fonction publique du Canada, conventions collectives des employés de plusieurs grandes entreprises de commerce au détail, conventions collectives des employés de plusieurs grands hôtels, conventions collectives des employés de plusieurs grandes entreprises manufacturières.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : (comprend les anciens programmes en techniques de comptabilité et de gestion et gestion de commerces combinés) Plus de la moitié des répondants(es), soit 52 % ont poursuivi leurs études à l'université en administration (notamment en bénéficiant du DEC-BAC). Parmi les répondants(es) qui se sont dirigés vers le marché du travail, le placement est bon, 67 % d'entre-eux ont obtenu un emploi relié à leurs études dont la presque totalité, soit 85 % sont à temps complet. Quelques répondants(es) en emploi relié, soit 6 % ont choisi de travailler à leur propre compte. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE À LEUR COMPTE NOMBRE AUX ÉTUDES 1 15936733435614 Note 1 : légère hausse du taux de placement en comparaison avec les années précédentes (était de 67 % en 2022; 60 % en 2021; 64 % en 2019 et 60 % en 2017). Note 2 :baisse du nombre de répondants(es) poursuivant des études universitaires par rapport aux années précédentes (était de 53 % en 2022; 55 % en 2019 et 64 % en 2017). Source : Ministère de l’Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

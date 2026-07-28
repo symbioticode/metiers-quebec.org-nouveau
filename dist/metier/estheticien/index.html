@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosméticien — Métiers Québec</title>
+  <meta name="description" content="Métier Cosméticien au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Cosméticien</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Cosméticien</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: Si tu deviens esthéticienne; tu seras responsable de prodiguer des soins faciaux et corporels destinés à améliorer l'apparence physique. Tu auras pour tâches de : ·Prodiguer des soins esthétiques pour le visage et le corps en utilisant des techniques et des produits spécialisés. ·Soigner le visage par traitement facial et par des massages manuels; ·Maquiller les clients selon leur physionomie, leur qualité de peau et leurs goûts; ·Prodiguer des soins esthétiques de la peau; ·Donner des soins esthétiques des mains et des pieds; ·Nettoyer, tailler et vernir les ongles des mains et des pieds et dispenser des soins connexes; ·Conseiller les clients sur l'utilisation du maquillage et d'autres produits de beauté et appliquer du maquillage aux clients; ·Former et superviser, s'il y a lieu, les autres esthéticiennes, les apprenties et les aides; ·Effectuer des différentes tâches administratives (faire la réception, prendre et des donner des rendez-vous, commander des fournitures, etc.). Si détiens une formation complémentaire en soins du corps; tu offriras des soins du corps et des services pouvant être de nature préventive à différentes clientèles, dans le but d’améliorer et de maintenir l’apparence de la personne, de veiller à son bien-être physique et psychologique telles que : raffermir les tissus, remodeler la silhouette, améliorer la circulation, d’hydrater la peau, d’aider une remise en forme, de favoriser la relaxation, etc. par l'utilisation de différentes techniques. Enfin, si tu es travailleuse autonome; tu devras accomplir des tâches de gestion et différentes tâches du métier dans le but de répondre aux besoins de la clientèle. Si tu deviens électrolyste; tu seras responsable de planifier des soins et exécuter diverses techniques d’épilation à l’électricité telle celle des courants combinés; conseiller la clientèle les effets des techniques utilisées et les risques de l'épilation;prodiguer des soins d’épilation à l’électricité en respectant les normes établies les limites de la profession;</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Ne pas avoir d’allergies à des produits cosmétiques -Bonne perception des couleurs -Bonne endurance physique car tu auras à travailler de longues heures physiques -Bonnes habiletés et dextérité manuelles pour maquiller et épiler de façon délicate -Minutie, précision et souci du détail car tu auras à effectuer des tâches délicates -Aimer travailler avec le public tu auras de fréquents avec différentes personnes -Avoir une facilité à communiquer avec les gens et entregent car tu auras à établir une certaine relation de confiance avec ta clientèle -Aptitudes pour la vente est un atout pour conseiller et vendre à ta clientèle des produits cosmétiques et de soins personnels</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoiréussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents ET poursuivra sa formation générale en concomitance avec sa formation professionnelle pour obtenir les unités de 4e secondaire qui lui manquent en langue d’enseignement, en langue seconde et en mathématiques -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données: Le salaire moyen en début de carrière était de : -16,60 $/heure (40 hres/sem) plus les pourboires (dans certains milieux) en esthétique -17,38 $/heure (40 hres/sem) plus les pourboires (dans certains milieux) en épilation -19,83 $/heure + pourboires (40 hres/sem) en tant qu'esthéticienne salarié(e) au sein des grands hôtels (extérieur de Montréal) -21,00 $/heure (40 hres/sem) en tant qu'assistant(e)-maquilleur(euse) dans les entreprises de production cinématographique -21,05 $/heure + pourboires (40 hres/sem) en tant qu'esthéticienne salarié(e) au sein des grands hôtels (l'Île de Montréal) -25,00 $/heure (40 hres/sem) en tant qu'assistant(e)-maquilleur(euse) pour une émission dramatique dans les entreprises de production télévisuelle -25,00 $/heure (40 hres/sem) en tant qu'assistant(e)-maquilleur(euse) pour une émission NON dramatique dans les entreprises de production télévisuelle Note 1 : au salaire horaire, il faut ajouter les pourboires pour 72% des esthéticiennes et électrolystes, ainsi que des commissions aux ventes de produits pour 51 % d'entre-elles. Note 2 : hausse de la moyenne salariale en esthétique par rapport aux années précédentes (était de 15,75 $ en 2024; 14,30 $ en 2022 et 13,00 $ en 2019). Note 3 : hausse de la moyenne salariale en épilation (était de 15,75 $ en 2024; 13,65 $ en 2022 et 12,30 $ en 2019). Note 4 : les données salariales dans le secteur de la télé et du cinéma sont à titre indicatifs seulement, puisque rares sont les emplois disponibles dans ce milieu Sources : Ministère de l’Éducation du Québec et Alliance québécoise des techniciens de l'image et du son.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Pour le D.E.P. en esthétique : Le placement est très faible, seulement 38 % des répondantes qui se sont dirigées vers le marché du travail ont obtenu un emploi relié à leurs études dont la majorité sont à temps complet. Quelques répondantes, soit 9 % ont décidé de poursuivre leurs études au A.S.P. en épilation en électricité ou au D.E.P. en coiffure. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI À TEMPS COMPLET NOMBRE AUX ÉTUDES 397 136 84 36 Note 1 : baisse importante du taux placement par rapport aux années précédentes (était de 50 % en 2017; 51 % en 2015 et 58 % en 2013). Note 2 : prendre en considération que seulement 55 % des diplômés(es) ont répondu à cette enquête. Pour l’A.S.P. en épilation à l’électricité : Le placement est bon, 57 % des répondantes ont obtenu un emploi relié dont la majorité sont à temps complet. Quelques répondantes, soit 8 % ont décidé de poursuivre leurs études au D.E.P. en coiffure ou dans un autre domaine. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI À TEMPS COMPLET NOMBRE AUX ÉTUDES 169 88 64 14 Note : légère baisse du taux placement par rapport aux années précédentes (était de 58 % en 2017; 59 % en 2015 et 64 % en 2013). Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L’émergence et la consolidation de nouvelles technologies a transformé considérablement la pratique des esthéticiennes. La photoépilation s’est imposée comme une pratique incontournable et le photorajeunissement gagne en popularité. Le métier d'esthéticienne affiche des perspectives d'avenir très positives, portées par un marché de la beauté dynamique et une demande croissante en soins personnalisés et en bien-être. La profession se transforme rapidement pour intégrer la haute technologie et des approches globales de la santé de la peau. Ne t'attend pas à travailler dans le milieu de la haute esthétique ou dans le milieu du spectacle, puisque rares sont les esthéticiennes et les maquilleuses dans ces milieux très restreints. La presque totalité travaillent dans les salons de beauté pour le grand public. Les perspectives d’emploi pour le métier d’esthéticien/esthéticienne, d’électrolyste et de personnel assimilé sont généralement « bonnes » à l’échelle de la province, mais plus limitées dans la région de Montréal. Les opportunités d'emploi dépassent largement le cadre des salons de beauté classiques : secteur médical (collaboration au sein de cliniques de médecine esthétique ou de chirurgie plastique); milieu médico-social (développement de la socio-esthétique en milieu hospitalier ou dans les résidences pour personnes âgées pour apporter du confort aux personnes vulnérables); ainsi que le tourisme et bien-être ( Recrutement actif dans les centres de cure thermale, les spas de luxe et les complexes hôteliers). En salon, bon nombre d'esthéticienne salariée obtient quelques avantages sociaux tels que : 78 % obtiennent un rabais sur les produits, 64 % des rabais sur les soins, 64 % des formations continues gratuites, 41 % des services gratuits de partenaires, 12 % d'autres avantages (régime volontaire d'épargne retraite, assurancce collective, etc.). Plus de 77 % des esthéticiennes ont une rémunération comprenant un salaire à l'heure plus des pourboires + des commissions aux ventes de produits de beauté (représentant en moyenne, près de 27 % du revenu annuel). Les prestations traditionnelles laissent de plus en plus de place aux technologies avancées qui offrent des résultats immédiats et durables telles que : l'appareillage de pointe : aîtrise du photorajeunissement, de la radiofréquence, des ultrasons et du microneedling; l'épilation définitive : forte demande pour la photoépilation et le laser, souvent encadrés par de nouvelles formations obligatoires; la dermopigmentation : les techniques de maquillage semi-permanent (sourcils, lèvres) s'imposent comme les prestations les plus rentables du secteur. La rémunération moyenne après expérience en 2026... le revenu annuel moyen d'une esthéticienne détenant 10 années d'expérience au sein d'un grand hôtel (extérieur de Montréal) était de 41 200 $ (incluant les pourboires) + nombreux avantages sociaux; le revenu annuel moyen d'une esthéticienne détenant 10 années d'expérience au sein d'un grand hôtel (Île de Montréal) était de 43 800 $ (incluant les pourboires) + nombreux avantages sociaux; et le revenu annuel moyen d'une esthéticienne, d'une manquilleuse ou d'une électrolyste détenant 10 années d'expérience au sein d'une PME ou à son compte était de 44 200 $ (incluant les pourboires et commissions aux ventes). Source : Comité sectoriel de la main-d'œuvre en soins personnels du Québec</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

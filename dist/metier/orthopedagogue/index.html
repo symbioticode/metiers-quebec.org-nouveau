@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orthopédagogue — Métiers Québec</title>
+  <meta name="description" content="Métier Orthopédagogue au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Orthopédagogue</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Orthopédagogue</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>L'ÉDUCATIONNIVEAU D’ÉTUDES : ENSEIGNEMENT UNIVERSITAIRE ORTHOPÉDAGOGUE MAITRISE M.Éd.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’orthopédagogue; tu seras responsable d'évaluer dD'intervenir auprès des apprenants qui sont susceptibles de présenter, ou qui présentent, des difficultés d'apprentissage scolaire, en lecture, en écriture ou en mathématique, incluant les troubles d'apprentissage. Tu devras notamment : • dépister, identifier et évaluer les difficultés et les troubles d’apprentissage scolaire dans le domaine du langage parlé et écrit, du raisonnement logico-mathématique et du développement psychomoteur; • assister et conseiller l’enseignant ou l’enseignante dans ses interventions pédagogiques auprès des élèves manifestant des difficultés d’apprentissage; • apprendre aux élèves, en groupe ou en individuel, à lire, à écrire et à raisonner au moyen de techniques de l’orthopédagogie; • établir des programmes d’études adaptés aux besoins individuels des élèves; • intervenir en milieu familial auprès des parents, en les encadrant et en leur fournissant un support éducatif; • conseille sur l’achat de l’équipement et du matériel didactique, ainsi que sur l’aménagement des locaux; • tenir des dossiers détaillés des progrès de chacun des élèves; • etc. Tu seras également appelé(e) à fournir de l’aide et des conseils auprès des enseignants des classes régulières, ainsi qu’à collaborer avec divers professionnels du milieu scolaire lorsque nécessaire (psychologues, psychoéducateurs, audiologistes, orthophonistes, ergothérapeutes, éducateurs spécialisés, etc).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Très bonne santé (morale et psychologique) : car tu auras à travailler avec certaines clientèles difficiles -Aimer travailler avec les enfants ou adolescents et entregent car tu seras constamment en contact avec eux -Grande facilité à communiquer et écouter qui te permettra d’établir une coopération avec les jeunes -Sens des responsabilités car tu seras responsable des enfants de ta classe pendant toutes les heures de cours -Esprit d’initiative et autonomie pour réussir à emmener les jeunes à avoir un intérêt à se développer -Sens de l’observation et vigilance car tu devras avoir la capacité de détecter les points faibles, mais aussi les points forts de tes élèves -Imagination,débrouillardise, ouverture d’esprit et créativité pour développer de nouvelles approches éducatives -Sens de l’organisation pour planifier tes heures d’intervention et de planifier, animer et organiser les activités d'évaluation et d'intervention -Facilité pour le travail en équipe et dynamisme car tu auras à collaborer avec tes collègues (psychologues, psychoéducateurs, audiologistes, orthophonistes, ergothérapeutes, éducateurs spécialisés et les parents des jeunes)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: • Soit détenir un baccalauréat en enseignement en adaptation scolaire (toutes les universités) • Soit détenir un baccalauréat en éducation au préscolaire et enseignement au primaire (toutes les universités) • Soit détenir un baccalauréat en enseignement du français langue première (toutes les universités) • Soit détenir un baccalauréat en enseignement du français langue seconde (toutes les universités) • Soit détenir un baccalauréat en enseignement des mathématiques au secondaire toutes les universités) • Soit détenir un baccalauréat en enseignement secondaire dans une autre discipline (Sherbrooke, UQTR, UQO et Laval) • Soit détenir un baccalauréat bidisciplinaire en psychologie et linguistique (Laval) • Soit détenir un baccalauréat en psychoéducation (Laval) • Soit détenir un baccalauréat en psychologie (Laval) • Soit détenir un baccalauréat en linguistique ou en sciences du language (Laval)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données: Le salaire moyen en début de carrière était de : • 31,03 $/heure (35 hres/sem) en tant qu'orthopédagogue (maitrise nécessaire) dans un hôpital pour enfants ou dans un centre de réadaptation public en déficience intellectuelle et TED • 31,14 $/heure (35 ou 40 hres/sem) en moyenne en tant qu'orthopédagogue ou psychopédagogue (maitrise nécessaire) dans un établissement privé d'enseignement primaire et/ou secondaire • 31,14 $/heure (35 hres/sem) en tant qu'orthopédagogue ou psychopédagogue (maitrise nécessaire) dans un centre de services scolaires • 33,30 $/heure (35 hres/sem) en tant qu'orthopédagogue ou psychopédagogue (maitrise nécessaire)en cabinet conseil ou en clinique privée • 35,62 $/heure (37,5 hres/sem) en tant qu'orthopédagogue (maitrise nécessaire) dans une université Note 1 : hausse de la moyenne salariale en pratique privée par rapport aux années précédentes (était de 33,30 $ en 2024; 31,84 $ en 2022 et 34,50 $ en 2019). Note 2 : dans le secteur public et parapublic, les augmentations sont établies par les conventions collectives. Sources : Conseil du Trésor du Québec, Ministère de l’Éducation et de l'Enseignement supérieur du Québec, Comité patronal de négociation pour les centres de services scolaires francophones du Québec et conventions collectives des enseignants de plusieurs établissements privés d'enseignement primaire et/ou secondaire.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 91 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Une seule répondante a choisi de poursuivre leurs études au niveau du doctorat. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À temps complet NOMBRE AUX ÉTUDES 7063581 Note : hausse de placement par rapport aux années précédentes (était de 94 % en 2021; 88 % en 2019 et 86 % en 2017). Sources : Ministère de l’Éducation et de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Dû au nombre grandissant d’élèves du primaire et du secondaire éprouvant des difficultés d'apprentissage, principalement en langue maternelle, mais également en mathématiques, les besoins d'orthopédagogues se font davantage ressentir. De plus, puisque les enseignants(es) ont davantage d'élèves présentant des difficultés dans leur classe, ce qui engendre moins de temps consacré pour eux, les orthopédagogues sont davantage mis à contribution dans l'évaluation et l'intervention auprès de ces jeunes. La pandémie n'a fait qu'aggraver cette situation avec les nombreuses exigences variées d'adaptation qu'ont dû faire face les jeunes (fermeture d'écoles, apprentissage en ligne, manque de socialisation, etc); ce qui a entraîné des impacts importants pour les plus fragiles, comme de l’anxiété, des problèmes de santé mentale ou de la détresse psychologique. Environ 10 % des élèves présenteraient des troubles d'apprentissage spécifiques, en plus des difficultés d'adaptation. Selon les plus récents chiffres du Ministère de l'Éducation, le nombre d'élèves handicapés ou en difficulté d'adaptation ou d'apprentissage (EHDAA) a atteint environ 281 000 pour l'année 2024-2025, représentant près d'un élève sur quatre (environ 24 %) dans le réseau scolaire public, alors qu'on en comptait 207 000 en 2015-2026. Les élèves HDAA représentaient 4 % au préscolaire, 21 % au primaire, et atteignent 34 % au secondaire. Le réseau collégial ne figure pas mieux avec 25 % des étudiants(es) du collégial présentant des difficultés, principalement en lecture et écriture. La pénurie d'orthopédagogues au Québec est critique et s'accentue, affectant le dépistage et le suivi des élèves en difficulté. En fait, les orthopédagogues figurent au 3e rang des professoinnels(les) non enseignant les plus recherchés dans le réseau de l'éducation (derrière les psychologues et les orthophonistes). Selon les données du Ministère de l'Éducation, on retrouve en moyenne un(e) orthopédagogue pour 5 écoles au niveau primaire et un(e) orthopédagogue pour 2,5 écoles au niveau secondaire. Or, la moyenne acceptable serait d'un(e) orthopédagogue pour 2,5 écoles au primaire et un(e) orthopédagogue pour 1,5 écoles au secondaire. Donc, il manquerait près de 500 orthopédaogues au primaire et près d'une centaine au secondaire afin de combler les besoins auprès de l'ensemble des élèves en difficultés d'apprentissage. Les besoins sont mêmes plus forts en régions que dans les grandes villes. Donc, les perspectives sont EXCELLENTES au cours des prochaines années. La rémunération moyenne après expérience en 2026 : le revenu annuel moyen d'un(e) orthopédagogue ayant 10 années d'expérience dans un centre jeunesse ou un centre de réadaptation pour enfants et adolescents était de 94 100 $; le revenu annuel moyen d'un(e) orthopédagogue ayant 10 années d'expérience dans un établissement privé d'enseignement primaire et/ou secondaire était de 94 400 $; le revenu annuel moyen d'un(e) orthopédagogue ayant 10 années d'expérience dans un centre de services scolaires était de 94 400 $; et le revenu annuel moyen d'un(e) orthopédagogue ayant 10 années d'expérience en cabinet conseil ou en clinique privée était de 97 000 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

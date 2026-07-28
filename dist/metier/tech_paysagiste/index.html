@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aménagement paysager, technicien en — Métiers Québec</title>
+  <meta name="description" content="Métier Aménagement paysager, technicien en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Aménagement Paysager, Technicien En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Aménagement Paysager, Technicien En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technicienne ou technicien en aménagement paysager; tu seras responsable de concevoir, planifier, réaliser et superviser des projets d’aménagement paysager, des espaces verts, des paysages aquatiques et des espaces urbains de l'étude du site jusqu'à la conception d'un plan technique en passant par l'estimation des coûts tels que : parcs, terrains de golf, jardins publics, jardins privés, centres horticoles, etc. Spécialisation en aménagement paysager Tu auras pour tâches de : • concevoir et planifier un projet d’aménagement paysager (résidentiel, commercial, complexe hôtelier, complexe récréotouristique, école, musée, parc, terrain de golf, etc.) tels que : plates-bandes, des massifs, des mosaïcultures, toitures et murs végétalisés, ruelles vertes, bandes riveraines, etc.; • réaliser un projet d’aménagement à l’aide de végétaux et de matériaux inertes (bois, pierre naturelle, produits de béton, etc.); • élaborer et produire des devis et effectuer des estimations des coûts du projet; • préparer et planifier un calendrier des activités de production; • effectuer des calculs techniques à la mise en plan; • superviser, coordonner et diriger une équipe de travail affectée aux travaux; • corriger les problématiques environnementales en milieux urbains; • entretenir un aménagement paysager : utilisation des végétaux, fertilisation et amendement, irrigation, méthodes de contrôle des organismes nuisibles; • etc. Spécialisation en espaces verts Tu auras pour tâches de : • préparer, compléter, élaborer et dessiner les plans et devis de projets d’embellissement, de verdissement, de réfection et de construction de parcs, de terrains de golf, d’espaces verts et de milieu naturel; • élaborer et produire des devis et effectuer des estimations des coûts du projet; • surveiller les chantiers et l’exécution des travaux; • superviser, coordonner et diriger une équipe de travail affectée aux travaux; • établir les calendriers des travaux d'entretien en fonction des saisons, des priorités établies et des budgets alloués • corriger les problématiques environnementales en milieux urbains; • entretenir les végétaux, espaces gazonnées, les arbres, arbustes et assurer la qualité des sols et la gestion de l'eau; • mettre en place des politiques afin d’offrir au public un patrimoine vert et paysager de qualité; • participer à la gestion des activités des parcs et à la réalisation des travaux reliés aux événements de loisirs; • etc. Spécialisation en commercialisation de produits ou services horticoles Tu auras pour tâches de : • coordonner et gérer l'exécution des activités quotidiennes du centre de jardin ou d'une entreprise de services horticoles; • veiller à l’embauche, à la formation et aux horaires des employés; • conseiller la clientèle (autant le grand public que les professionnels de l'horticulture) sur la sélection, l’aménagement et l’entretien des plantes; • coordonner, gérer et contrôle les inventaires et effectuer des achats auprès des fournisseurs; • planifier, élaborer et mettre en œuvre des plans et des programmes de promotion de produits et services horticoles; • etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes en sciences -Aptitudes pour le dessin -Intérêts pour les végétaux, l’environnement et le travail en plein air -Bonnes habiletés manuelles car tu auras à effectuer certaines tâches manuelles (entretien et fertilisation des plantes, réalisation de constructions de bois, etc) -Curiosité et créativité pour réaliser des aménagements jolis et originaux -Sens de l’esthétique pour rendre un aménagement agréable à regarder -Minutie et précision pour réaliser des aménagements de façon précise -Sens de l’observation pour pouvoir détecter les insectes nuisibles, une anomalie ou une maladie à une plante ou un arbre -Capacité d’analyse et de synthèse pour analyser et résoudre divers problèmes relatifs aux végétaux ou à l’environnement -Sens des responsabilités car tu seras responsable du bon déroulement des travaux d’aménagement d’un projet -Sens de l’initiative et facilité à communiquer pour être capable de proposer tes idées à un projet -Sens de l’organisation car tu auras à planifier et à organiser divers projets d’aménagement -Facilité à travailler en équipe car tu auras à travailler avec la collaboration d’horticulteurs, de pépiniéristes, d’autres techniciens paysagistes, d’architectes paysagistes, d’agronomes, d’ingénieurs forestiers, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir un D.E.S. ou D.E.P. et avoir réussi le cours CST 4e (anciennement maths 426 ou son équivalent) Note : pour connaître les équivalences des préalables à l’éducation aux adultes, consulte la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données en : Le salaire moyen en début de carrière était de : - 23,00 $/heure (40 à 50 hres/sem)en moyenne dans le secteur privéau sein des PME - 25,85 $/heure (38,75 hres/sem) en tant que technicien(ne) en aménagement paysager à la SEPAQ (parcs nationaux, réserves fauniques et centres récréotouristiques) - 28,24 $/heure (35 hres/sem) en tant qu'animateur(trice) en sciences naturelles ou assistant(e) botaniste ou inspecteur(trice) en horticulture à la Ville de Montréal (Biodôme ou Jardin Botanique) - 29,54 $/heure (40 hres/sem) en moyenne en tant que technicien(ne) en travaux d'enseignement et de recherche en horticulture et botanique au sein des universités -30,61 $/heure (37,5 hres/sem) en tant que technicien(e) en aménagement paysager à Parcs Canada - 33,76 $/heure (32,5 ou 35 hres/sem selon les municipalités) en moyenne en tant que technicien(ne) en horticulture ou technicien(ne) en aménagement paysager au sein des petites municipalités (5 000 à 24 999 habitants) - 34,95 $/heure (33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en moyenne en tant que technicien(ne) en horticulture ou technicien(ne) en aménagement paysager au sein des grandes municipalités (100 000 habitants et plus) - 35,02 $/heure (32,5 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en moyenne en tant que technicien(ne) en horticulture ou technicien(ne) en aménagement paysager au sein des municipalités de taille moyenne (25 000 à 99 999 habitants) - 35,50 $/heure (35 hres/sem) technicien(ne) en horticulture ou technicien(ne) en aménagement paysager à la Ville de Montréal (incluant Biodôme ou Jardin Botanique) Note : légère hausse de la moyenne salariale au sein des PME par rapport aux années précédentes (était de 24,00 $ en 2024; 23,00 $ en 2022; 20,00 $ en 2021 et 16,48 $ en 2019). Sources : Ministère de l’Enseignement supérieur du Québec, Syndicat des fonctionnaires municipaux de Montréal, Syndicat des fonctionnaires municipaux de Québec, Syndicat des employés de bureau, techniques et professionnels de la Ville de Québec, Syndicat de la fonction publique du Québec - division SEPAQ, Commission de la Fonction publique du Canada, conventions collectives des employés de soutien de la plupart des universités, conventions collectives des fonctionnaires municipaux de la plupart des grandes municipalités et conventions collectives des employés municipaux de plusieurs municipalités de taille moyenne.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est TRÈS BON, 86 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 7442 Note : hausse du taux de placement par rapport aux années précédentes (était de 80 % en 2022; 86 % en 2021 et 78 % en 2019). Sources : Ministère de l'Enseignement supérieur du Québec, Cégep Montmorency et ITAQ</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: La demande pour des services en aménagement paysager est influencée positivement par plusieurs facteurs : • la croissance du tourisme (mise en valeur du paysage); • la pression des citoyens pour des aménagements verts; • la volonté de protection du patrimoine et de préservation de l’environnement; • le réaménagement des sites industriels contaminés. » Le secteur bénéficie d'une demande constante pour la création et l'entretien d'espaces verts, tant en milieu urbain que rural. Par contre, les départs à la retraite de plus de 25 % des techniciens(nes) et superviseurs(es) en aménagement paysager constitueront la composante le plus élevée de la demande au sein de l’industrie. Les entreprises ont besoin de personnel qualifié pour combler les postes créés par leur croissance et pour remplacer les départs à la retraite. Le métier offre une belle mobilité. Un technicien peut commencer par des tâches d'exécution (terrassement, plantation, maçonnerie paysagère) avant d'évoluer vers la gestion de chantiers ou la conception de plans détaillés pour des clients résidentiels ou commerciaux. Les emplois seront principalement orientés vers les entreprises d'aménagement paysager, les firmes d'architectes paysagistes, les producteurs agricoles en horticulture ornementale, ainsi qu'au sein de municipalités de taille moyenne. Donc, de bonne perspectives d'emploi sont à prévoir au cours des prochaines années. La rémunération moyenne après expérience en 2026... le revenu annuel moyen (environ 36 semaines) d'un(e) technicien(ne) en aménagement paysager ou d'un(e) technicien(ne) en horticulture détenant 10 années d'expérience au sein d'une PME était de 45 000 $; le revenu annuel moyen (environ 36 semaines) d'un(e) technicien(ne) en aménagement paysager détenant 10 années d'expérience au sein de la SÉPAQ était de 47 400 $; le revenu annuel moyen (environ 36 semaines) d'un(e) inspecteur(trice) ou technicien(ne) en horticulturedétenant 10 années d'expérience au sein d'une municipalité de taille moyenne était de 54 300 $; le revenu annuel moyen (environ 36 semaines) d'un(e) technicien(ne) en aménagement paysager détenant 10 années d'expérience au sein de Parcs Canada était de 52 400 $; le revenu annuel moyen (environ 36 semaines) d'un(e) inspecteur(trice) ou technicien(ne) en horticulture détenant 10 années d'expérience à la Ville de Montréal (incluant Biodôme et Jardin botanique) était de 56 400 $; et le revenu annuel moyen (environ 36 semaines) d'un(e) inspecteur(trice) ou technicien(ne) en horticulture détenant 10 années d'expérience au sein d'une grande municipalité était de 57 700 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

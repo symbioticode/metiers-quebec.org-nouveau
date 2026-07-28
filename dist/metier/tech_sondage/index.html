@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent de sondages — Métiers Québec</title>
+  <meta name="description" content="Métier Agent de sondages au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agent De Sondages</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Agent De Sondages</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technicienne ou technicien en recherche sociale et en gestion de données ou technicien(ne) en statistiques; tu seras responsable de cueillir, traiter, analyser et transmettre des informations sur des enquêtes ou sondages pour des études de marché, des sondages d'opinion publique, des recensements de population ou des recensements électoraux. Tu pouras travailler en collaboration avec des statisticiens, des démographes, des sociologues, des politicologues, des spécialistes en mise en marché, des épidémiologistes ou des professionnels de recherche. Tu auras pour tâches de : • Définir et établir les objectifs de la recherche selon les intentions et les buts du client; • Rechercher dans la documentation les enquêtes antérieures qui ont été réalisées qui serviront à faire des comparaisons; • Établir la population-cible et l’échantillon (nombre de personnes) qui participeront à l’enquête (étudiants, personnes âgées, personnes sans emploi, consommateurs d'un type de produit ou service, résidents d'un quartier ou d'un secteur spécifique, etc.); • Concevoir et rédiger les questionnaires, formulaires, tests et autres documents qui seront utilisés pour le sondage (comportements des consommateurs, situations sociales et économiques des gens, opinions en matière de politique, de sport, de culture, etc.); • Réaliser les entrevues et faire remplir les tests et questionnaires; • Compiler et organiser dans des bases de données les informations recueillies; • Analyser les résultats obtenus et les statistiques; • Effectuer les comparaisons avec des enquêtes antérieures et monter les dossiers d’enquêtes; • Transmettre les résultats obtenus de différentes façons : en créer des tableaux et graphiques, en rédigeant des rapports de recherches, en réalisant des présentations multimédia, etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes pour les calculs -Intérêts pour la recherche car ce sera une grande partie de travail -Intérêts pour l’informatique car tu auras à utiliser constamment divers logiciels (chiffriers, traitement de texte, de bases de données, de statistiques, etc) -Curiosité et sens de l’initiative pour être capable d’approcher les gens afin qu’ils répondent aux sondages -Souci du détail, minutie et précision pour effectuer des collectes d’informations de façon minutieuse -Capacité d’analyse et de synthèse pour analyser les données et les résultats obtenus -Esprit logique et méthodique pour effectuer une cueillette d’information se rapprochant le plus près possible de la réalité -Rigueur scientifique pour pouvoir définir et établir des objectifs de recherche les plus appropriés -Sens de l’organisation pour bien planifier et organiser tes recherches -Sens de l’observation pour être en mesure de détecter les comportements et réactions de groupes-cibles lors d’enquêtes -Facilité d’écoute et de communication afin de réaliser de bonnes entrevues -Facilité à travailler en équipe car tu auras à collaborer avec d’autres collègues (sociologues, statisticiens, etc) -Excellente maîtrise de langue française pour communiquer clairement et pour rédiger des rapports de recherche de qualité -Très bonne connaissance de langue anglaise pour communiquer adéquatement et rédiger des rapports dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir un D.E.S. et avoir réussi le cours suivant ou son équivalent : CST 4e (anciennement mathématiques 426 ou 514) Note : pour connaître les équivalences de l'éducation aux adultes, consulte le</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : - 21,87 $/heure (35 ou 37,5 hres/sem) en moyenne en tant que recherchiste ou technicien(ne) en statistiques au sein des grands quotidiens - 22,00 $/heure (20 à 40 hres/sem) en tant qu'intervenant(e) sociocommunautaire au sein d'organismes communautaires sans but lucratif OBNL -23,49 $/heure (35 hres/sem) en tant que technicien(ne) en soutien opérationnel (statistiques - programmes sociofiscaux) à Revenu Québec -22,49 $/heure (35 hres/sem) en tant que technicien(ne) en recherche chez Urgences Santé - 23,04 $/heure (40 hres/sem) au sein des PME - 23,80 $/heure (37,5 hres/sem) en moyenne en tant que technicien(ne) en enquêtes et sondages au sein des grandes entreprises de télécommunications -24,14 $/heure (35 hres/sem) en tant que technicien(ne) en statistiques à l'Autorité des marchés financiers - 24,86 $/heure (35 hres/sem)en moyenne en tant que technicien(ne) en administration (admissibilité à l'aide juridique) au sein des centres communautaires juridiques (aide juridique) - 25,86 $/heure (35 hres/sem) en tant que technicien(ne) en information (recherche, enquêtes et sondages) pour l'Institut de la statistique du Québec -25,36 $/heure (32 ou 32,5 ou 35 hres/sem selon les organisations) en tant que technicien(ne) en recherche sociale ou technicien(ne) en statistiques au sein des grandes organisations philanthropiques - 25,43 $/heure (35 ou 40 hres/sem) en tant que technicien(ne) en inforamtion à Loto-Québec et à la Société des casinos du Québec - 25,81 $/heure (35 hres/sem) en tant qu'assistant(e) de recherche (élaboration d'enquêtes et données statistiques pour des projets de recherche) au sein des centres de recherche hospitaliers - 26,61 $/heure (37,5 hres/sem) en tant que technicien(ne) en statistiques dans la fonction publique fédérale (incluant Statistiques Canada) -26,62 $/heure (35 hres/sem) en tant que technicien(ne) en gestion des données industrielles outechnicien(ne) en support à la prospection d'investissements à Investissements Québec - 27,30 $/heure (35 hres/sem) en tant que technicien(ne) en information (recherches et enquêtes) dans les cégeps - 27,30 $/heure (35 hres/sem) en tant que technicien(ne) en psychométrie dans les centres de services scolaires - 27,30 $/heure (35 hres/sem) en tant que technicien(ne) en recherche sociale dans le réseau de la santé et des services sociaux - 27,54 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en information au sein des universités - 29,37 $/heure (35 hres/sem) en tant que technicien(ne) en montage de données ou technicien(ne) en information et gestion de données de vente à la SEPAQ -29,59 $/heure (33,45 ou 33,75 ou 35 hres/sem) en moyenneen tant technicien(ne) en recherche sociale ou technicien(ne) en statistiques ou technicien(ne) en recherche sociale au sein des grandes municipalités (100 000 habitants et plus) - 30,20 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en enquêtes et sondages au sein des grandes compagnies d'assurances -30,82 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en recherche sociale ou technicien(ne) en statistiques au sein des ordres professionnels -31,61 $/heure (33,45 ou 33,75 ou 35 hres/sem)en moyenne en tant technicien(ne) en recherche sociale ou technicien(ne) en statistiques au sein des municipalités de taille moyenne(25 000 à 99 999 habitants) - 33,76 $/heure (36 ou 37,5 hres/sem) en moyenne en tant que technicien(ne) en information à Hydro-Québec - 34,45 $/heure (32 ou 32,5 ou 35 hres/sem selon les organisations) en tant que technicien(ne) en recherche sociale ou technicien(ne) en statistiques au sein des grandes organisations syndicales (fédérations, regroupements ou centrales) Note : hausse de la moyenne salariale dans le secteur privé par rapport aux années précédentes (était de 23,04 $ en 2024; 22,18 $ en 2022 et 19,88 $ en 2019). Sources : Cégep de Rosemont, Ministère de l’Enseignement supérieur du Québec, Conseil du Trésor du Québec, Commission de la Fonction Publique du Canada, conventions collectives des employés de soutien de la plupart des universités, conventions collectives des fonctionnaires municipaux de la plupart des grandes municipalités, conventions collectives des employés municipaux de plusieurs municipalités de taille moyenne, conventions collectives des employés de plusieurs grandes compagnies d'assurances, conventions collectives des employés de plusieurs grands quotidiens, conventions collectives des employés de plusieurs organisations syndicales et conventions collectives des employés de plusieurs ordres professionnels.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 100 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Un(e) seul(e)répondant(e), a choisi de poursuivre ses études à l’université en sociologie. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 7661 Note : taux de placement comparable aux années précédentes (était de 100 % en 2021 et 100 % en 2019). Source : Ministère de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Les entreprises sont de plus en plus à la recherche de financement, d'investissements et de gestion optimale de leur rendement afin de développer de nouveaux marchés et être plus concurrentiel face à un marché international très compétitif. Les études démographiques fondées sur des données et des analyses statistiques prennent une place de plus en plus importante dans les études de planification. Les techniciens(nes) en gestion de données et en statistiques peuvent œuvrer dans le domaine de l'intelligence d'affaires peuvent aider les analystes et conseillers dans l'élaboration de modèles de gestion de position sur les marchés financiers et le développement d'outils intelligents favorisant l’accès à d’importantes bases de données, l’analyse de ces données et l’orientation pour la prise de décision. Donc, les perspectives sont excellentes dans ce créneau. Dans le domaine de la recherche sociale, les perspectives sont bonnespour les prochaines années, principalement dans le secteur privé (maisons de sondage, centres de rercherche, entreprises de recherche clinique, compagnies d'assurances, agences de communication-marketing, organisations syndicales, etc.), mais également dans le secteur (fonction publique fédérale et provinciale, municipalités , MRC, etc.). La rémunération moyenne après expérience en 2026... le revenu annuel moyen (poste à temps complet) d'un(e) animateur(trice) ou d'un(e) intervenant(e) ou d'un(e) travailleur(euse) communautaire détenant environ 10 ans d'expérience au sein d'un organisme à but non lucratif OBNL était de 48 400 $. le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale, en sondage ou recherche de données détenant 10 années d'expérience au sein d'une PME était de 57 100 $; le revenu annuel moyen d'un(e) technicien(ne) en statistiques détenant 10 années d'expérience au sein de l'Autorité des marchés financiers était de 61 300 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale détenant 10 années d'expérience au sein d'une grande organisation philanthropique était de 61 500 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale détenant 10 années d'expérience au sein d'une université était de 61 700 $; le revenu annuel moyen d'un(e) technicien(ne) en soutien opérationnel (statistiques - programmes sociofiscaux) détenant 10 années d'expérience à Revenu Québec était de 62 200 $; le revenu annuel moyen d'un(e) technicien(ne) en psychométrie détenant 10 années d'expérience au sein d'un centre de services scolaires était de 64 300 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale détenant 10 années d'expérience dans le réseau de la santé et des services sociaux était de 64 300 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale et gestion de données détenant 10 années d'expérience au sein d'une municipalité de taille moyenne était de 69 700 $; le revenu annuel moyen d'un(e) assistant(e) technique de recherche détenant 10 années d'expérience au sein d'un centre de recherche hospitalier tait de 70 000 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale et gestion de données détenant 10 années d'expérience au sein d'une grande compagnie d'assurances était de 70 000 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale et gestion de données détenant 10 années d'expérience au sein d'une grande municipalité était de 70 600 $; le revenu annuel moyen d'un(e) technicien(ne) en montage de données ou technicien(ne) en information et en gestion de données de vente détenant 10 années d'expérience au sein de la SÉPAQ était de 71 200 $; le revenu annuel moyen d'un(e) technicien(ne) en gestion des données industrielles ou technicien(ne) au support à la prospection d'investissements et gestion de données détenant 10 années d'expérience au sein d'Investissement Québec était de 73 300 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche et gestion de données détenant 10 années d'expérience au sein d'une grande société d'avocats était de 76 500 $; le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale et gestion de données détenant 10 années d'expérience au sein d'une grande organisation syndicale était de 80 300 $; et le revenu annuel moyen d'un(e) technicien(ne) en recherche sociale détenant 10 années d'expérience au sein d'un grand ordre professionnel était de 80 800 $</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

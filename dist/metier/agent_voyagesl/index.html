@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyages, agent de — Métiers Québec</title>
+  <meta name="description" content="Métier Voyages, agent de au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/restau_tour/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    restau_tour
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/restau_tour/">restau_tour</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Voyages, Agent De</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/restau_tour/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur restau_tour
+        </a>
+        <div class="page-header__tag">restau_tour</div>
+        <h1 class="page-header__title">Voyages, Agent De</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">restau_tour</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que conseillère ou conseiller de voyages; tu seras responsable de présenter, de renseigner et de conseiller les clients sur diverses destinations, en vue de leur vendre des prestations de voyages répondant à leurs besoins et à leurs attentes. Tu auras pour tâches de : • Accueillir les clients, leur ouvrir un dossier et établir leur profil de consommateur; • répondre aux demandes de renseignements des clients au sujet des destinations, des moyens de transport, de l'hébergement et des coûts des voyages, et leur recommander des produits qui conviennent à leurs besoins; • Donner des renseignements sur des lieux de destination, des attractions touristiques, des devises étrangères, des coutumes et des langues locales, des modes de transport, de l’hébergement, de la sécurité et des coûts des voyages; • Conseiller les clients sur les choix de voyages, les forfaits, • Informer les clients sur les mesures qui devront être prises (passeport, vaccins, assurances, etc.) et leur offrir des produits et services complémentaires en lien avec le forfait choisi; les produits et services offerts; • Planifier et organiser les itinéraires pour des particuliers ou des groupes; • Réserver des passages de transport et des chambres d'hôtel et confirmer les réservations à l'aide d'un système informatisé de réservation et de billetterie; • Vendre et émettre des billets et des voyages à forfait et percevoir les paiements; • Se renseigner sur les nouveautés, notamment les destinations, les hôtels et d'autres installations et points d'intérêt; • Effectuer des tâches administratives connexes telles que remplir des rapports et des formulaires d’assurance, remplir et remettre des documents et faire le suivi des dossiers; • Faire de la sollicitation auprès de clients potentiels; • Promouvoir des destinations particulières, des voyages à forfait et d'autres services offerts par l'agence; • Etc.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Intérêts pour les voyages et le tourisme en général -Intérêts pour l'histoire, la géographie et le mode de vie des gens -Aptitudes pour la vente et bien connaître les produits et services:le client ne veut pas qu’acheter il veut qu’on le conseille, alors tu devras savoir tout ce que tu offres -Aimer travailler avec le public et facilité à communiquer:tu seras constamment en contact avec la clientèle -Bonnes aptitudes et facilité à la communication orale et écrite car tu devras t'exprimer clairement autant dans ta langue maternelle qu'en langue seconde - Sens des responsabilités et débrouillardise car tu seras d’organiser des voyages « sans souci » à tes clients(es) -Entregent, facilité d’expression et sens de la persuasion car tu auras à renseigner et guider efficacement les clients et pour réussir à obtenir des résultats de ventes -Sens de l’organisation car tu auras àplanifier et organiser efficacement voyages des clients(es) -Aptitudes et facilité pour apprendre des langues</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: Depuis juillet 2012, les professionnels des agences de voyages du Québec doivent réussir un examen de l'Office de la protection du consommateur du Québec OPC pour pouvoir travailler dans ce domaine.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoiréussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents ET poursuivra sa formation générale en concomitance avec sa formation professionnelle pour obtenir les unités de 4e secondaire qui lui manquent en langue d’enseignement, en langue seconde et en mathématiques -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données en : Le salaire moyen en début de carrière était de 17,88 $/heure (40 hres/sem) Note 1: légère hausse de la moyenne salariale par rapport aux années précédentes (était de 17,31 $ en 2024; 16,35 $ en 2022 et 14,21 $ en 2019). Note 2:dans certaines agences de voyages, il faut ajouter au salaire des commissions aux ventes. Sources: Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est moyen, 57 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la majorité sont à temps complet. Quelques autres répondants(es), soit 11 % ont décidé de poursuivre leurs études au collégial en techniques de tourisme. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI À TEMPS COMPLET NOMBRE AUX ÉTUDES 4724195 Note 1 : hausse du taux de placement par rapport aux années précédentes (était de 29 % en 2017; 44 % en 2015 et 69 % en 2013). Note 2 : le placement est cyclique et varie en fonction des saisons et des années. Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Les professions dans l’industrie du tourisme sont aussi variées que les types de personnalités des individus qui les ont choisies. Le cheminement d’une carrière dans ce domaine varie en effet selon les intérêts de chacun et offre de multiples possibilités. Il est important de spécifier que si les horaires et les salaires peuvent être très différents selon les secteurs d’activité, il n’en demeure pas moins que lorsque les techniciens en tourisme travaillent, la moyenne des gens sont en vacances! Effectivement, l'année 2025, l’emploi dans le secteur du tourisme a dépassé les niveaux d’avant la pandémie, augmentant de 2,5 % par rapport au niveau d’emploi de 2019 ». Travailler dans l’industrie de la restauration, de l'hôtellerie et du tourisme offre la possibilité d’avoir des horaires flexibles, d’évoluer dans des environnements magnifiques, de rencontrer des gens des quatre coins du globe et de découvrir d’autres cultures. Et surtout, ce sont des métiers exportables partout dans le monde. L'industrie touristique propose des centaines d'emplois différents dont plusieurs offrent plusieurs d’excellentes conditions salariales. Que ce soit en restauration, en service à la clientèle, en vent Une pénurie de main-d'œuvre persiste, créant des opportunités notamment pour les postes de coordonnateurs de groupe, délégués commerciaux et agents de promotion La numérisation accélérée du secteur exige de nouvelles compétences en segmentation des marchés et en outils numériques Une demande accrue de main-d'œuvre qualifiée pour planifier, promouvoir et gérer des projets touristiques régionaux, permettant de prévoir de bonnes perspectives d'emploi pour les prochaines années. Dans l'industrie du voyage La recherche de profils capables d'analyser le potentiel touristique et d'attirer des investisseurs est en croissance. Le métier évolue vers un mélange de marketing, de représentation et de gestion de produits touristiques. Portées par le besoin de renouveler l'offre touristique vers plus de durabilité et d'expérience locale, les perspectives pour les prochaines années sont favorables. Un nombre important de postes restés vacants avant la pandémie chez les délégués commerciaux, les forfaitistes/acheteurs, les coordonnateurs de groupe et les préposés à l’accueil et au renseignement touristique et la situation s'est aggravée par la suite. La difficulté à combler les emplois disponibles pourrait limiter la croissance de ce secteur, d’autant plus que le développement numérique accéléré aura des impacts significatifs sur les professions représentées au sein de ce secteur. En effet, le développement numérique contribuera à la complexification des compétences requises relatives entre autres aux connaissances, à la segmentation des marchés et à la qualité des services à dispenser. En 2025, la rémunération annuelle moyenne d'un(e) conseiller(ère) en voyages ayant 10 années d'expérience était de 45 000 $ (excluant les commissions ou bonis s'il y a lieu). Sources : Conseil québécois des ressources humaines en tourisme et Emploi-Québec</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

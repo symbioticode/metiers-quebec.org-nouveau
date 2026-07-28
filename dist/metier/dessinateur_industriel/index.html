@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessinateur en mécanique — Métiers Québec</title>
+  <meta name="description" content="Métier Dessinateur en mécanique au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/fabric_mecanique/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    fabric_mecanique
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/fabric_mecanique/">fabric_mecanique</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Dessinateur En Mécanique</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/fabric_mecanique/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur fabric_mecanique
+        </a>
+        <div class="page-header__tag">fabric_mecanique</div>
+        <h1 class="page-header__title">Dessinateur En Mécanique</h1>
+        <p class="page-header__meta">Formation professionnelle</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">fabric_mecanique</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Formation professionnelle</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: Si tu deviens dessinatrice-conceptrice ou dessinateur-concepteur industriel; turéaliseras à l’aide d’un ordinateur des dessins ayant des applications industrielles notamment les dessins de fabrication de produits fabriqués, des dessins d'ensemble de machines, de moteurs, des outils ou équipements, des pièces de mécanique, ainsi que des dessins des systèmes de pneumatique, d'hydraulique et de canalisations industrielles. Tu auras pour tâches de : • Élaborer et préparer des modèles et des dessins d'ingénierie à partir de concepts préliminaires, d'esquisses, de calculs d'ingénierie, de devis descriptifs et autres données; • Faire fonctionner des postes de conception et de dessin assistés par ordinateur (CAO); • Élaborer et préparer des esquisses; • Dessinater les plans de détails ou de pièces; • Remplir la documentation et produire des jeux de dessins; • Vérifier les dessins afin qu'ils soient conformes aux cahiers des charges et aux données de conception; • Préparer le cahier des charges et l'évaluation des coûts et du matériel de construction; • Élaborer et préparer des dessins, des plans, des diagrammes ou des tracés d'ingénierie à partir d'esquisses; • Etc. En fait, tu assisteras les ingénieurs dans la conception de machines, appareils ou autres objets qui nous entourent en prenant l'idée élaboré par l'ingénieur et le mettre sous plans. Par exemple, chez un manufacturier de freins d'automobiles, tu seras en charge de dessiner les plans d'assemblage des freins que fabriquent cette entreprise et la mise en plans des guides d'entretien pour les garagistes. Par la suite, l'équipe de production pourra produire de façon concrète et précise l'objet en série en utilisant les plans et dessins que tu auras réalisé. Au sein des entreprises spécialisées en mécanique industrielle, tu seras chargé de dessiner les plans et les détails des systèmes industriels servant à l'hydraulique, à la pneumatique et aux canalisations industrielles des usines. Dans certaines petites et moyennes entreprises PME, tu participeras même à la conception de prototypes en plus de réaliser les dessins et les plans d'assemblage du produit ou de l'objet concerné et ce, avec l'étroite collaboration de l'ingénieur. Au sein des plus grandes entreprises, tu seras chargé de tâches spécifiques comme par exemple : dessiner les détails particuliers du produit, dessiner les plans d'assemblage d'un prototype conçu par un designer industriel, réaliser des dessins d'assemblage d'une composante ou d'une partie spécifique du produit, réaliser des plans d'assemblage pour les guides d'assemblage ou d'entretien du produit, etc. Donc, la plupart des entreprises qui fabriquent une machine, un appareil, un objet utilitaire ou tout autre produit de consommation a besoin d'un dessinateur industriel. Qu'on y fabrique des composantes d'un aéronef, des freins d'automobiles, une souffleuse à neige, un moteur électrique, un appareil de chauffage, un jouet mécanique, un outil de coupe du métal, un tapis roulant d'exercice, etc.).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Être attiré(e) par les technologies - Intérêts et aptitudes pour les mathématiques, la géomérie et le dessin technique -Facilité à imaginer les choses en trois dimensions -Minutie, précision, souci du détail car tes dessins devront être très détaillés et précis -Créativité, imagination et ingéniosité pour participer à la conception d’un projet -Sens de l'organisation et Bonne méthode de travail car tu auras à planifier la conception, respecter les échéanciers -Autonomie et débrouillardise car tu travailleras de longues heures seul(e) dans un bureau ou un atelier de design -Facilité à travailler en équipe car tu auras à collaborer avec des techniciens en conception et des ingénieurs et tu seras invité(e) à participer à la réalisation des projets -Très bonnes connaissances en informatique car tu auras à utiliser des logiciels spécialisés en D.A.O. et C.A.O. - Bonne connaissance de la langue langue anglaiscar la plupart des publications spécialisées sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le D.E.S. ou d'un D.E.P. -Soit avoir 16 ans au 30 septembre et avoir réussi les cours de français, anglais et mathématiques de 4e secondaire ou leurs équivalents -Soit avoiréussi les cours de français, anglais et mathématiques de 3e secondaire ou leurs équivalents ET poursuivra sa formation générale en concomitance avec sa formation professionnelle pour obtenir les unités de 4e secondaire qui lui manquent en langue d’enseignement, en langue seconde et en mathématiques -Soit avoir 18 ans et posséder des connaissances équivalentes</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : • 21,00 $/heure (40 hres/sem) en moyenne au sein des PME • 23,17 $/heure (40 hres/sem) en moyenne au sein des grandes sociétés de génie conseil • 23,75 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de meubles • 25,33 $/heure (40 hres/sem) en moyenne au sein des grands manufacturiersde la plasturgie, du caoutchouc et des composites • 25,56 $/heure (40 hres/sem) en moyenne au sein des grands manufacturiers de produits métalliques industriels • 27,08 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de produits en bois (sauf meubles) • 27,70 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de matériel de transport terrestre (routier ou ferroviaire) • 27,71 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de machines et équipements industriels • 30,40 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de produits métalliques industriels (ex : charpentes métalliques, tubes et tuyaux, tôles fortes, produits pour la construction, etc.) • 30,71 $/heure (40 hres/sem) en moyenne au sein des grands manufacturiers de matériel électrique • 31,49 $/heure (40 hres/sem)en moyenne au sein des grands manufacturiers de produits aérospatiaux (pièces, outils de fabrication, etc.) • 33,44 $/heure (40 hres/sem) en moyenne au sein des grandes industries papetières • 30,27 $/heure (40 hres/sem) en moyenne en tant que dessinateur(trice) de détails au sein des grandes industries de transformation des métaux (alumineries, aciéries) • 30,62 $/heure (40 hres/sem)en moyenne en tant que dessinateur(trice) de pièces au sein des grands manufacturiers de produits aérospatiaux Note 1 : légère hausse de la moyenne salariale par rapport aux années précédentes (était de 20,00 $ en 2024; 19,63 $ en 2022 et 16,55 $ en 2019). Note 2 : chez plusieurs grands employeurs privés, les augmentations sont établies selon les conventions collectives. Sources : Ministère de l’Éducation du Québec, Emploi-Québec, conventions collectives des employés de plusieurs grandes industries de fabrication métallique industrielle, conventions collectives des employés de plusieurs grandes industries du matériel électronique, conventions collectives des employés de plusieurs grands manufacturiers de machines et équipements industriels, conventions collectives des employés de plusieurs grands manufacturiers de matériel de transport, conventions collectives des employés de plusieurs grands manufacturiers de meubles, conventions collectives des employés de plusieurs grandes industries du matériel électrique, conventions collectives des employés de plusieurs grandes industries du matériel électronique, conventions collectives des employés de plusieurs grandes industries de la plasturgie, du caoutchouc et des composites, conventions collectives des employés de plusieurs grandes industries de fabrication métallique industrielle, conventions collectives des employés de plusieurs grandes industries aérospatiales et conventions collectives des employés de plusieurs grandes industries de transformation des métaux.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est moyen, 57 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques autres répondants(es), soit 12 % ont choisi de poursuivre leurs études au collégial en techniques de design industriel, technologie du génie mécanique, en technologie de la construction aéronautique ou en technologie du génie industriel. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI A TEMPS COMPLET NOMBRE AUX ÉTUDES 2051039325 Note 1 : légère hausse du taux de placement par rapport aux années précédentes (était de 57 % en 2017; 53 % en 2015 et 69 % en 2013). Note 2 : nombre de répondants(es) poursuivant des études au collégial comparable aux années précédentes (était de 12 % en 2017; 12 % en 2015 et 4 % en 2013). Note 3 : prendre en considération que seulement 36 % des diplômés(es) ont répondu à cette enquête. Source : Ministère de l’Éducation du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Avec la concurrence de plus en plus féroce avec une ampleur au niveau international, il est primordial que les manufacturiers québécois puissent innover en se démarquant de ses concurrents. Pour cela, ils ont besoin d'une équipe de design dynamique pouvant concevoir des produits attrayants, innovateurs et à moindre coût. Les dessinateurs industriels réalisent des schémas et des plans afin de permettre à l'équipe de production de concrétiser les conceptions des designers et ingénieurs. Chez plusieurs petits manufacturiers, le ou la dessinateur(trice) industriel conçoit des plans de conception de modèles et prototypes de produits qui seront fabriqués par l'entreprise. Les départs à la retraite, la modernisation des usines et les nombreux projets d'infrastructure soutiennent une excellente insertion professionnelle. L'obtention d'un Diplôme d'études professionnelles (DEP) en dessin industriel permet de débuter rapidement comme technicien ou dessinateur technique. Avec l'expérience ou une formation continue, les opportunités d'avancement incluent : dessinateur(trice)-concepteur(trice), dessinateur(trice)-projeteur(euse), chargé(e) de projet, superviseur(euse) d'un bureau d'études, etc. Les perspectives d'emploi sont très bonnes pour les prochaines années. La rémunération moyenne après expérience en 2026 : le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'une PME était de 52 800 $; le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'un grand manufacturier de produits en bois (sauf meubles) était de 59 100 $; le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'un grand manufacturier de produits en plastique, en caoutchouc ou en composites était de 60 300 $; le revenu annuel d'un(e) dessinateur(trice) technique ayant 10 années d'expérience au sein d'une grande société de génie conseil était de 64 600 $; le revenu annuel moyen d'un(e) dessinateur(trice) de détails ayant 10 années d'expérience au sein d'un grand manufacturier de matériel de transport terrestre était de 68 000 $. le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'un grand manufacturier de produits métalliques industriels (charpentes, tôles fortes, portes &amp; fenêtres, etc.) était de 69 200 $; le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'un grand manufacturier de machines et d'équipements industriels était de 70 100 $; le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'un grand manufacturier de produits aérospatiauux était de 71 500 $; et le revenu annuel moyen d'un(e) dessinateur(trice) industriel ayant 10 années d'expérience au sein d'une grande entreprise papetière était de 79 300 $;</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

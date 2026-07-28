@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabrication d’armoires de cuisine, ouvrier en — Métiers Québec</title>
+  <meta name="description" content="Métier Fabrication d’armoires de cuisine, ouvrier en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Fabrication D’Armoires De Cuisine, Ouvrier En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Fabrication D’Armoires De Cuisine, Ouvrier En</h1>
+        <p class="page-header__meta">Secondaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Secondaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Le cas échéant, raboter le bois pour que les armoires soient de niveau.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Avoir une bonne vision -Bonne endurance physique : tu auras à rester de longues heures de debout et à soulever certaines charges -Bonnes habiletés et dextérité manuelles : car tu auras à manipuler des commandes de machines -Minutie, précisionet souci du détail car tu devras opérer les machines avec précision afin de réaliser des tâches de qualité -Sens des responsabilités car tu seras responsable du bon état de fonctionnement des machines -Facilité à travailler en équipe car tu auras à travailler en collaboration avec d’autres ouvriers, techniciens et ingénieurs</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données : Le salaire moyen en début de carrière était de : - 15,75$/heure (40 hres/sem)en moyenneen tant que manœuvre ou journalierde menuisieries architecturales au sein des PME - 15,75$/heure (40 hres/sem)en moyenneen tant que manœuvre ou journalierou aide-assembleur(euse)de meubles au sein des PME -15,75$/heure (40 hres/sem)en moyenneen tant que monteur(euse)-assembleur(euse) de meubles ou de composants de meubles ou de matelasau sein des PME - 16,40$/heure (40 hres/sem)en moyenneen tant qu'assembleur(euse) de portes et fenêtresau sein des PME - 17,47$/heure (40 hres/sem)en moyenneen tant que manœuvre ou journalierou aide-assembleur(euse)au sein des grands manufacturiers de meubles - 18,54$/heure (40 hres/sem)en moyenneen tant qu'emballeur(euse) de meubles, de matelas ou de composants de meublesau sein des grands manufacturiers de meubles - 18,62$/heure (40 hres/sem)en moyenneen tant qu'assenbleur(euse) de meubles ou assembleur(euse) de composants de meubles ou assembleur(euse) de matelasau sein des grands manufacturiers de meubles - 18,67$/heure (40 hres/sem)en moyenneen tant qu'aide-opérateur(trice) de machines ou opérateur(trice) de pont roulant au sein des grands manufacturiers de meubles - 18,86 $/heure (40 hres/sem)en moyenneen tant que cariste ou manutentionnaire au sein des grands manufacturiers de meubles - 18,99$/heure (40 hres/sem)en moyenneen tantqu'expéditeur(trice)-réceptionnaireau sein des grands manufacturiers de meubles - 18,74$/heure (40 hres/sem)en moyenneen tant qu'aide assembleur(euse) au sein des grands manufacturiers de menuiseries architecturales -19,12$/heure (40 hres/sem)en moyenneen tant que peintre ou finisseur(euse)au sein des grands manufacturiers de meubles - 19,35$/heure (40 hres/sem)en moyenneen tant que magasinier(ère) (responsable du magasin de pièces et outillage) au sein des grands manufacturiers de meubles - 18,98 $/heure (40 hres/sem)en moyenneen tant que cariste ou manutentionnaire au sein des grands manufacturiers deportes et fenêtres - 19,46$/heure (40 hres/sem)en moyenneen tant qu'opérateur(trice) de machines au sein des grands manufacturiers de meubles -19,18$/heure (40 hres/sem)en moyenneen tant qu'aide-assembleur(euse) chez les grands manufacturiers de portes et fenêtres - 19,18 $/heure (40 hres/sem)en moyenneen tant qu'emballeur(euse) ou opérateur(trice) de machines d'emballage au sein des grands manufacturiers de menuiseries architecturales - 20,00$/heure (40 hres/sem)en moyenneen tantque peintre ou finisseur(euse)au sein des grands manufacturiers demenuiseries architecturales - 20,04$/heure (40 hres/sem)en moyenneen tant qu'assembleur(euse) au sein des grands manufacturiers de menuiseries architecturales -20,07$/heure (40 hres/sem)en moyenneen tant qu'assembleur(euse) ou opérateur(trice) de machines chez les grands manufacturiers deportes et fenêtres - 20,22$/heure (40 hres/sem)en moyenneen tant que manœuvre ou journalier au sein des grands manufacturiers de menuiseries architecturales - 21,03$/heure (40 hres/sem)en moyenneen tant qu'aide-opérateur(trice) de machines au sein des grands manufacturiers de menuiseries architecturales - 21,61$/heure (40 hres/sem)en moyenneen tant que réceptionnaire-expéditeur(trice) au sein des grands manufacturiers de menuiseries architecturales - 21,73$/heure (40 hres/sem)en moyenneen tant que cariste ou manutentionnaireau sein des grands manufacturiers de menuiseries architecturales - 22,31$/heure (40 hres/sem)en moyenneen tant que magasinier(ère) (responsable du magasin de pièces et outillage) au sein des grands manufacturiers demenuisieries architecturales - 22,54$/heure (40 hres/sem)en moyenneen tant qu'inspecteur(trice) ou contrôleur(euse) de la qualité au sein des grands manufacturiers demenuisieries architecturales Sources : Emploi Québec, conventions collectives des employés de plusieurs grands manufacturiers de meubles</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L'industrie du meuble : L'industrie de la fabrication de meubles est fortement influencée par la conjoncture économique puisqu'elle est très liée aux activités dans les industries de la construction, du commerce de détail et de la fabrication dans son ensemble. Les dépenses en rénovation au Québec ont fortement augmenté en 2021. Bien que ces dépenses et le niveau de mises en chantier se soient ralenties en 2022, elles demeurent élevées et pourraient favoriser la demande de meubles, car il existe souvent un décalage entre l'acquisition et les rénovations. Le secteur des meubles pourrait ainsi continuer de bénéficier de l'expansion des mises en chantier des dernières années. Le retour progressif au travail dans les espaces de bureau constitue un autre facteur qui pourrait augmenter la demande auprès des fabricants de meubles de bureau. Aussi, le nouveau style de bureau plus modulaire et hybride où les espaces sont partagés nécessitera de revoir l'environnement de travail, donc de commander de nouveaux bureaux. Selon une enquête réalisée par le Comité sectoriel de la main-d'œuvre de l'industrie du meuble, des armoires de cuisine et des portes et fenêtres du Québec en 2018; 42 % des entreprises répondantes prévoient une hausse de leurs effectifs au cours des prochaines années et 49 % prévoient une stabilité, alors que seulement 9 % prévoient une baisse de leurs effectifs. La demande de main-d’oeuvre n’est pas généralisée. Elle varie beaucoup d’une région à l’autre. La Mauricie, le Bas-Saint-Laurent, le Centre-du-Québec et l’Abitibi-Témiscamingue affichent des résultats nettement plus élevés. À l’opposé, le Saguenay, l’Outaouais et les Laurentides affichent un bilan plus faible. Environ 20 % des entreprises interrogées affirment même de leur difficulté à recruter des ébénistes et des cuisinistes, principalement au sein de l'industrie de l'ameublement commercial et du mobilier de bureau. Plus de 23 % des manoeuvres et autres ouvriers(ères) peu ou non spécialisés au sein des industries sont âgés de 55 ans et plus et devront être remplacés puisqu'ils prendront leur retraite au cours des prochaines années. Les perspectives dans le secteur de fabrication de meubles et de produits connexes s'annoncent favorables. L'industrie des menuiseries architecturales et autres produits en bois : L'industrie de la fabrication de menuiseries architecturales et autres produits en bois est fortement influencée par la conjoncture économique puisqu'elle est très liée aux activités dans les industries de la construction, du commerce de détail et de la fabrication dans son ensemble. Les dépenses en rénovation au Québec ont fortement augmenté en 2021. Bien que ces dépenses et le niveau de mises en chantier se soient ralenties en 2022, elles demeurent élevées et pourraient favoriser la demande de produits de la construction en bois comme les panneaux agglomérés, les escaliers préfabriqués, les portes et fenêtres et autres menuiseries architecturales. De plus, plus de 45 % des travailleurs(euses) de cette industrie sont âgés de 45 ans et plus et prendront leur retraite au cours des prochaines années et devront être remplacés. Toutefois, une basse des activités dans l'industrie de la construction commerciale et institutionnelle pourrait freiner les prévisions. Sources : Ministère de l'Économie, de l'Innovation et de l'Exportation du Québec et Comité sectoriel de la main-d’œuvre de l’industrie du meuble, des portes et fenêtres et des armoires de cuisine.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

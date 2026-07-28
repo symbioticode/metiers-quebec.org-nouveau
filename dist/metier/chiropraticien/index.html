@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiropraticien — Métiers Québec</title>
+  <meta name="description" content="Métier Chiropraticien au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Chiropraticien</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Chiropraticien</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que chiropraticienne ou chiropraticien; tu seras responsable d’intervenir auprès des patientes et les patientes afin de diagnostiquer, traiter et de prévenir des troubles neuromusculosquelettiques tels que : des troubles de la colonne vertébrale, des autres articulations, du système nerveux (nervosité excessive, migraines, etc.) et, ainsi que des effets de ces troubles sur l’état de santé général de la personne. Tu pourras travailler auprès de clientèles diversifiées ou auprès de clientèles spécifiques (personnes handicapées, personnes âgées, enfants, femmes enceintes, athlètes professionnels ou amateurs, travailleurs d'un ou plusieurs secteurs en particulier, accidentés cérébro-vasculaires, accidentés du travail, accidentés de la route, personnes souffrant de problèmes neurologiques, etc.). Ou te perfectionner dans des approches complémentaires telles que la nutrition, l’exercice physique, l’ergonomie et la santé des travailleurs. La grande majorité des docteurs en chiropratique ont une pratique « générale » et voient des gens de tous les âges et de tous les milieux. Tu auras pour tâches de : • Vérifier les antécédents médicaux et familiaux du patient et examiner et observer le patient; • Évaluer la nature, les causes et l’étendue de la blessure ou du problème par une entrevue clinique, des examens, des tests, des analyses et des radiographies afin d'évaluer la posture, les mouvements des articulations, une évaluation orthopédique et neurologique, ainsi que la recherche subluxations vertébrales et articulaires (problèmes de mobilité ou d’alignement articulaire); • Diagnostiquer les troubles neuromusculosquelettiques de la colonne vertébrale, du bassin, des membres et des tissus connexes; • Planifier, élaborer et appliquer un plan de traitement ou d'intervention chiropratique, en prêtant une attention particulière à la colonne vertébrale à l’intérieur d’un plan de soins et services intégré ou dans le cadre d’une approche multidisciplinaire par l'utilisation de différentes techniques manuelles telles que : massages, manipulations, tractions, exercices d’assouplissement et autres exercices appropriés ou des techniques propres à la chiropratique et autres techniques connexes telles que : mécanothérapie (avec l’aide d’une machine spéciale), cryothérapie (froid), thermothérapie (chaleur), ultrasonothérapie (ultrasons), électrothérapie (courants électriques), actinothérapie (manipulations spécifiques), hydrothérapie (eau), thérapie méridienne, exercices correctifs et certaines techniques utilisées pour un problème spécifique; • Conseiller les patients sur des modes de traitement alternatifs, tels que les exercices correctifs, la posture, le mode de vie et l'alimentation, qui ont un effet positif sur la colonne vertébrale, les articulations, les muscles et le système nerveux; • Faire un suivi de l’état de santé de tes clients et patientes pour pouvoir observer les améliorations et t’assurer de sonrétablissement; • Contribuer à la responsabilisation et à l’autonomisation du patient. • Prodiguer des soins préventifs et des ajustements chiropratiques; • Travailler dans un contexte interdisciplinaire en collaboration avec d'autres professionnels de la santé (médecins spécialistes, médecins de famille, physiothérapeutes, ergothérapeutes, psychologues cliniciens, neuropsychologues, podiatres, pharmaciens, dentistes, kinésiologues, thérapeutes du sport, etc.); • Référer tes patients auprès d'un médecin spécialiste approprié (orthopédiste, ORL, rhumatologue, néphrologue, neurologue, etc.)dans le cas de problemes plus complexes ou ne pouvant pas être traités par la chiropratique; • Former, s'il y a lieu, des stagiaires en chiropratique et d'autres chiropraticiens; • Administrer et gérer, s'il y a lieu, les activités et les ressources d'une clinique de chiropratique. Voici quelques exemples de problèmes neuro-musculo-squelettiques que tu pourras traiter : • douleurs cervicales (dont le torticoli) • douleurs lombaires et du bassin • douleurs sciatiques • douleurs aux articulations : cou, genoux, épaules, hanches, chevilles, pieds (telles que : tendinites, bursites, capsulites, épicondylites, etc.) • entorses ligamentaires • hernies discales • maux de tête et migraines • arthrite et arthrose • problèmes posturaux • scolioses • maux aux oreilles • syndrome du cou texto • anomalies de la mâchoire liées aux difficultés d'allaitement • troubles du développement moteur • Etc. Petite précision : Le chiropraticien n’est pas un médecin, mais plutôt un professionnel de la santé de première ligne reconnu qui applique des tâches qui lui sont réservées (tout comme le physiothérapeute, l’ergothérapeute, etc).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bonne santé -Aptitudes pour les sciences physiques et biologiques : la formation est très exigeante, elle demande de très bonnes connaissances en chimie, physique, biologie, anatomie et physiologie humaines. -Aimer et facilité à travailler avec le publicet entregent car tu auras à établir des contacts avec les clients(es) -Facilité à communiqueret entregent car tu auras à établir une certaine relation de confiance avec ta clientèle -Capacité d’écoute, respect, patience et empathie pour bien soutenir en encourager tes clients(es) et à travailler auprès de clientèles rencontrant divers problèmes de santé qui les affectent tant sur plan physique que moral -Capacité d’analyse et de synthèse pour être mesure de d’analyse efficacement les problèmes musculaires ou nerveux du patient ou de la patiente et de le résoudre -Bon jugement et esprit d’initiative pour mieux comprendre le problème de la personne afin de mieux l’aider -Bonne condition et résistance physique car tu auras à travailler à différentes positions -Minutie et précision car tu auras à faire des traitements sur des endroits précis sans causer d’autres blessures -Sens des responsabilités car tu seras responsable de la réadaptation du patient ou de la patiente et de l’amélioration de son état de santé -Sens de l’organisation pour bien planifier et élaborer les programmes de réadaptation et les plans de traitement -Facilité à travailler en équipe et professionnalisme car tu auras à collaborer avec d’autres professionnels (médecins de famille, médecins spécialistes tels que physiatres ou orthopédistes ou neurologues, physiothérapeutes, kinésiologues, etc.) -Aptitudes pour la gestion et l’entrepreneurship sont nécessaires si tu désires ouvrir ta propre clinique chiropratique car tu auras à superviser le personnel, coordonner toutes les activités cliniques, gérer les approvisionnements et gérer les opérations financières -Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité -Très bonne connaissance de la langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité et de plus, la plupart des manuels de référence dans ce domaine sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Soit détenir le Baccalauréat international B.I. en sciences de la nature -Soit détenir un D.E.C. intégré en sciences-arts-lettres -Soit détenir un D.E.C. en sciences de la nature ou en sciences pures et appliquées ET avoir réussi les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00XU (biologie 401) ET 00XV (chimie 202) -Soit détenir un D.E.C. dans une autre discipline ou un diplôme jugé équivalent ET avoir réussi les cours suivants ou leurs équivalents : 00UN et 00UP (maths 103 et 203); 00UR, 00US et 00UT (physique 101, 201 et 301) ou (102, 202, 302); 00UL, 00UM et 00XV (chimie 101, 201 et 202); 00UK et 00XU (biologie 301 et 401) -Soit détenir un diplôme de 1er cycle universitaire dans une discipline connexe (biologie médicale, biologie, biophysique, sciences biomédicales, biochimie, sciences infirmières, physique, etc), pour plus de détails, consulte la page Note : non accessible non résidents hors-Québec à l’U.Q.T.R.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : -Le salaire moyen était de 1 343 $/semaine (40 à 50 heures/sem) en clinique privée Note 1 :un associé débutant dans une clinique existante reçoit souvent un pourcentage des honoraires (souvent entre 40 % et 60 %), tandis qu'un propriétaire de clinique garde la totalité mais assume tous les frais d'exploitation Note 2 : baisse de la moyenne salariale en comparaison avec les années précédentes (était de 965 $ en 2024; 1 194 $ en 2022; 1 097 $ en 2019 et 1 084 $ en 2017). Note 3 : la profession est peut-être un peu victime de son succès, puisqu'il y a de plus en plus de chiropraticiens qui se partagent la clientèle Note 4 : par contre, les premières années sont plus difficiles puisque tu devras t'établir une clientèle avant de commencer à obtenir cette rémunération moyenne. Source : Ministère de l’Éducation et de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 96 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un À tant que chiropraticien(ne) dont la majorité, soit 66 % étaient à temps complet. Plus de 60 % des répondants(es) travaillaient à leur compte (souvent comme partenaire dans une clinique déjà existante). Quelques répondants(es), soit 13 % ont poursuivi leurs études au niveau de la maîtrise en sciences de la réadaptation ou en sciences de l'activité physique ou en sciences biomédicales. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE A LEUR COMPTE NOMBRE AUX ÉTUDES 302518154 Note 1 : taux de placement tout aussi excellent et semblable aux années précédentes (était de 96 % en 2021; 97 % en 2019 et 100 % en 2017). Note 2 : baisse du nombre de répondants(es) ayant obtenu un poste à temps complet.Plusieurs répondants(es) désiraient concilier travail et famille, ce qui explique cette baisse. Source : Ministère de l’Éducation et de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Certaines régions pourraient accueillir davantage de chiropraticiens(nes), notamment en Montérégie, les Laurentides, Lanaudière, l'Estrie et l'Outaouais. Parmi ces derniers, on ne retrouve aucun chiropraticien(ne) spécialiste, puisque la reconnaissance des spécialités chiropratiques n'est pas encore en vigueur au Québec, mais risque de l'être dans les prochaines années. Il y a de plus en plus de gens qui consultent les chiropraticiens(nes), alors le besoin de nouveaux chiropraticiens(nes) se fait ressentir. De plus, malgré la méconnaissance des compétences de ces professionnels qui subsiste dans la population et dans le milieu médical, davantage de professionnels (notamment les physiothérapeutes, les ergothérapeutes et les médecins de famille) collaborent avec les chiropraticiens afin d'offrir des soins optimaux aux clients. En 2025, on y comptait près de 820 cliniques chiropratiques un peu partout au Québec selon l'Association des chiropraticiens du Québec. Ce n'est plus une profession dite en pénurie, mais en forte demande. Par contre, quelques régions ayant connu une croissance importante de leur population auraient besoin davantage de chiropraticiens. Par exemple : Laval : sa population a connu une forte expansion au cours des dernières années avec de nombreuses familles qui s'y ont installées. Alors que la moyenne provinciale est d'un chiropraticien par tranche de 6 800 habitants, Laval compte un chiropraticien par tranche de 9 400 habitants, alors que sa population augmente depuis plusieurs années. Il faudrait une vingtaine de chiropraticiens(nes) supplémentaires afin de répondre aux nombreuses demandes de la clientèle. la Montérégie : bien que l'agglomération de Longueuil soit très bien desservie par ces professionnels, certains territoires ont vu leur population augmenter considérablement, parfois jusqu'au double en comparaison avec 20 dernières années. Or, aucun chiropraticien ne s'est ajouté depuis 2019. Les besoins sont grandissants notamment dans les territoires de la MRC Marguerite-d'Youville (Chambly, Sainte-Julie et Varennes) et de la MRC de Vaudreuil-Soulanges (Vaudreuil-Dorion). Près d'une vingtaine de chiropraticiens(nes) seraient nécessaires afin de répondre aux nombreuses demandes de la clientèle de la région. Chaudière-Appalaches : alors que la majorité des chiropraticiens sont installés dans la Ville de Lévis, plusieurs autres territoires auraient besoin, notamment dans la MRC de Lotbinière et la MRC de la Nouvelle-Beauce. De plus, elle a perdu 3 chiropraticiens(nes) depuis quelques années, alors que 5 ou 6 chiropraticiens(nes) pourraient facilement s'ajouter afin de combler les besoins de la clientèle. Les perspectives d’avenir pour ces diplômés(es) sont donc EXCELLENTES. La rémunération moyenne après expérience en 2026... Le revenu annuel moyen d'un(e) chiropraticien(ne) ayant environ 10 années d'expérience en clinique privée était de 102 200 $. Plusieurs facteurs peuvent influencer le revenu d'un(e) chiropraticien(ne) : La localisation est un élément clé; travailler dans des zones urbaines ou dans des régions où la demande pour les services chiropratiques est élevée peut entraîner un salaire plus élevé. De plus, la spécialisation, la formation continue, la réputation et les compétences en marketing peuvent également jouer un rôle dans la détermination du salaire.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

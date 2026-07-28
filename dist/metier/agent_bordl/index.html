@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agent de bord — Métiers Québec</title>
+  <meta name="description" content="Métier agent de bord au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agent De Bord</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Agent De Bord</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’agent(e) ou agent de bord (transport aérien); tu seras responsable de veiller à la sécurité et au confort des passagers à bord d'un avion. Tu auras pour tâches de : • Accueillir les passagers à bord de l’avion, vérifier leur carte d’accès et leur indiquer leur place; • T’assurer qu’ils respectent les consignes de sécurité (ceintures de sécurité, bagages, etc.), de leur confort et leur expliquer les consignes en cas d'urgence et en faire la démonstration; • Contrôler l'état général de la cabine de l'aéronef, s'assurer que toutes les fournitures nécessaires se trouvent à bord; • Veiller à la sécurité des passagers au cours du décollage, de l'atterrissage et en cas d'urgence; • Servir les repas et les boissons aux passagers et diffuser les messages en cours de vol; • T’assurer de tout le confort nécessaire auprès des passagers et des membres de l’équipage tout au long du vol; • Intervenir lors de situations d’urgence afin de tous les passagers puissent appliquer les consignes mentionnés et sortir de l'avion en toute sécurité. La plupart des carrières sont au sein des entreprises de transport régional. En effet, il est nécessaire d'avoir accumulé plusieurs heures de vol avant de se porter candidat et être sélectionné(e) pour un vol international. En tant qu'agente ou agent du service à bord d'un train (transport ferroviaire); tu seras responsable de veiller à la sécurité et au confort des passagers à bord d'un train de passagers pour des voyages de moyenne ou longue distance. Tu auras pour tâches de : • Voir à la gestion des provisions à bord du train avant l'embarquement; • Accueillir les passagers à bord du train, vérifier leur billetet leur indiquer leur place; • Indiquer certaines consignes de sécurité à respecter; • T’assurer qu’ils respectent les consignes de sécurité (ceintures de sécurité, bagages, etc.); • Veiller à la sécurité, à la sûreté et au confort des passagers au cours du voyage et en cas d'urgence; • Servir les repas et les boissons aux passagers tout au long du voyage; • Intervenir lors de situations d’urgence afin de tous les passagers puissent appliquer les consignes. En tant que directrice ou directeur des activités de croisière (transport maritime) (anciennement appelé &quot;commissaire de bord&quot;); tu seras responsable de veiller à la sécurité et au confort des passagers à bord d'un navire de croisière ou parfois, de certains traversiers. Tu auras pour tâches de : • Voir à la gestion des provisions à bord du train avant l'embarquement; • Superviser l'arrimage des bagages; • Planifier, organiser et animer différentes activités destinés aux passagers; • Accueillir les passagers à bord du navire, vérifier leur carte d’accès et leur indiquer leur cabine; • Aider les passagers à préparer leurs déclarations pour les douanes; • Informer les passagers sur les différents services offerts à bord, des activités proposées et ainsi que leur indiquer certaines consignes de sécurité à respecter; • T’assurer qu’ils respectent les consignes de sécurité (gilets de sécurité, matériel de sauvetage, bagages, etc.); • Veiller à la sécurité, à la sûreté et au confort des passagers au cours du voyage et en cas d'urgence; • Servir les repas et les boissons aux passagers tout au long du voyage; • Intervenir lors de situations d’urgence afin de tous les passagers puissent appliquer les consignes. Après avoir acquis quelques années d’expérience, tu pourras devenir coordonnateur du service aux passagers où tu seras appelé(e) à planifier et organiser les activités et les divertissements des passagers lors des croisières. Note : la plupart des carrières offertes sont au sein de l'industrie des croisières dans les aux eaux intérieures canadiennes. En effet, les carrières au sein des croisières outre-mer sont quasi-impossibles aux canadiens(nes).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aimer travailler avec le public et facilité à communiquer:tu seras constamment en contact avec la clientèle -Sens des responsabilités et autonomie : car tu seras responsable du confort des passagers et de leur sécurité en cas d’urgence -Sociable, courtois et accueillant pour avoir de meilleurs contacts avec la clientèle -Entregent, tact et facilité d’expression:également pour avoir de meilleurs contacts avec la clientèle -Sens de l’initiative et débrouillardise pour être en mesure de résoudre seul(e) des problèmes -Résistance au stress et attitude calme lors de situations d’urgences -Sens de l’organisation : car tu devras être capable de gérer ton temps efficacement (tu auras des horaires variés) -Aptitudes pour le travail en équipe et leadership car tu auras à collaborer avec d’autres agents de bord -Bonnes aptitudes à la communication orale et écrite dans la langue maternelle et en langue seconde et même en langue étrangère -Aptitudes pour apprendre des langues (principalement l’anglais, mais également l’espagnol, l’allemand, le portugais, etc)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: -Polyvalence -Grande disponibilité -Facilité d’adaptation -Travail parfois temporaire ou à temps partiel (surtout en hiver) -Travail souvent saisonnier -Travail à horaires variables (surtout dans l’industrie du transport) -Travail exigeant de travailler de longues heures debout (industries du transport) -Être prêt à faire de nombreux déplacements et de longs séjours à l’extérieur - Chez les transporteurs transnationaux : présenter un passeport canadien en cours de validité qui permet de se rendre dans tous les pays desservis par l'entreprise</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Être âgé d’au moins 18 ans -Être de citoyenneté canadienne ou avoir le statut de résident permanent -Détenir le D.E.S. ou l’équivalent -Être en bonne santé (subir un examen médical répondant aux exigences de la compagnie) -Subir une enquête de sécurité et de fiabilité -Être bilingue -Avoir accumulé de l’expérience dans le domaine du service à la clientèle (surtout pour les agents de bord en transport aérien)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données en : Le salaire moyen en début de carrière était de : Transport aérien : -20,11 $/heure (40 hres/sem) + indemnités quotidiennes d'éloignementen moyenne en tant qu'agent(e) de bord dans les entreprises de transport aérien régional - 30,02 $/heure (75 à 78 heures par mois en début de carrière) + indemnités quotidiennes d'éloignement en tant qu'agent(e) de bord chez Air Canada -31,33 $/heure (75 à 78 heures par mois en début de carrière) + indemnités quotidiennes d'éloignement en tant qu'agent(e) de bord chez Air Transat Note 1 : un(e) agent(e) de bord n'est payé(e) que pour les heures de vol effectuées, alors que les préparatifs avant vol, les déplacements à l'aéroport et le temps d'attente ne sont pas rémunérés Note 2 : la plupart des agents(es) de bord travaillent à temps partiel et effectuent des vols régionaux Note 3 :la rémunération hebdomadaire moyenne peut varier d'une semaine à l'autre car le nombre d'heures est accordé au moins. Toutefois, on peut l'estimer à environ 528,00 $/semaine. Transport ferroviaire : -31,73 $/heure (40 hres/sem) en moyenne au sein des entreprises ferroviaires régionales -34,02 $/heure (40 hres/sem) en tant que coordonnateur(trice)-adjoint(e) des services chez Via Rail Transport maritime : -16,24 $/heure (40 à 42 hres/sem - saisonnier) + indeminités quotidiennesen moyenne au sein des entreprises canadiennes de croisières dans les eaux intérieures -24,42 $/heure (40 hres/sem) + indeminités quotidiennesen moyenne au sein des entreprises publiques de traversiers (hors-Québec) -26,04 $/heure (40 hres/sem) + indeminités quotidiennesen moyenne au sein des entreprises privées de traversiers (Québec et ailleurs au Canada) Note : au sein des entreprises de croisières, le travail est entièrement saisonnier, alors qu'au sein des entreprises de traversiers, les agents(es) de bord travaillent à temps complet en saison estivale et à temps partiel le reste de l'année. Sources : Développement des ressources humaines Canada, Syndicat canadien de la fonction publique SCFP - Division du transport aérien (section locale Air Transat section locale Canjet et section locale Cathay Pacific), Syndicat indépendant des employés d'Air Creebec, TCA Canada (section locale unité services des trains Via Rail, section locale 2202 équipage de vol Air Canada, First Air et Jazz Air) et Syndicat des Teamsters (section locale 1999 Air Inuit).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: Généralement, lorsque les compagnies de transport recrutement des nouveaux étudiants à leur cours, un promesse d’embauche est offerte lors de la réussite de la formation. Par contre, elles ne garantissent pas nécessairement un emploi à temps plein en début de carrière (notamment dans le cas des entreprises d'aviation). Tu obtiendras généralement un poste sur appel pour du remplacement que ce soit de jour, de soir ou de nuit ou lors de congés fériés ou pour des remplacements de vacances, de congés de maladie, de congés de maternité ou lors d'un besoin de surplus de personnel en période achalandée (ex : temps des fêtes ou période estivale). Ce sont généralement des liaisons régionales un peu partout au Canada que tu obtiendras puisque ce sont principalement les entreprises de transport régional qui sont les plus importants employeurs. Dans le cas des grands employeurs, les postes sont rares et la priorité des postes longue distance sont accordées par ancienneté.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Bien que plusieurs compagnies aériennes régionales soient en croissance et qu'elles soient à la recherche de pilotes et de techniciens(nes) en maintenance d'aéronefs, la situation est complètement différente du côté des agents(es) de bord. Maintenant, les compagnies peuvent diminuer le nombre d'agents sur leurs vols et plusieurs grands transporteurs reçoivent nettement plus de candidatures que de postes à combler. De plus, avec la crise que subit l'industrie aérienne suite à la pandémie, plusieurs ont dû effectuer des coupures de postes. Donc, les perspectives semblent plutôt faibles pour les prochaines années. L'industrie canadienne des croisières connaît des moments difficiles depuis quelques années. Donc, les perspectives semblent pas très bonnes pour les prochaines années. Via Rail connaît une crise et subit des pertes financières. Donc, les perspectives d'avenir ne sont pas bonnes.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrôleur maritime — Métiers Québec</title>
+  <meta name="description" content="Métier Contrôleur maritime au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Contrôleur Maritime</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Contrôleur Maritime</h1>
+        
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Non spécifié</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'officier du Service des communications et du trafic maritime pour la Garde Côtière canadienne; tu seras responsabilités de superviser la sécurité des voies navigables du Canada en communiquant avec les navires, en diffusant des bulletins météorologiques, en surveillant le trafic maritime afin d'éviter les accidents et en veillant à ce que les navires respectent les lois canadiennes et agir en tant qu'intervenant de première ligne pour les navires en détresse. Tu pourras assurer des services de communication et de trafic maritime à la Garde Côtière canadienne, bien sûr, mais également à l'industrie du transport maritime, aux divers ministères fédéraux et provinciaux, aux plaisanciers et aux pêcheurs. Tu auras pour tâches de : • Coordonner le trafic maritime en tout temps dans les voies navigables canadiennes afin de réduire les risques d'accidents; • Effectuer des interventions afin d'empêcher les collisions, les échouements et les heurts; • Surveiller de façon continue toutes les fréquences maritimes; • Répondre aux appels de détresse en mer et les transmettre à la Garde côtière et aux autres services d'urgence concernés; • Intervenir à titre d'intermédiaire entre les services de recherche et sauvetage et les navires en danger; • Assurer le lien de communication entre les navires de la Garde côtière avec les équipes à terre pour tous beAoins opérationnels. En tant que répartitrice ou répartiteur en transport maritime; tu serasresponsable de coordonner de façon efficace et sécuritaire la circulation des navires de marchandises (cargo, vraquiers, porte-conteneurs, autochargeurs, etc.)dans les voies navigables commerciales du pays (Saint-Laurent, Grands lacs, océan Arctique, etc.). Tu auras pour tâches de : • Planifier les cueillettes et les livraison; • Organiser les horaires et les déplacements et établir les itinéraires et les cédules de travail; • Répartir les chauffeurs (camions de livraison, autobus, taxis, etc.) et surveiller les parcours afin d'assurer le respect des horaires et de résoudre les problèmes opérationnels; • Recueillir toutes les données nécessaires (glaces et autres données météo, accidents et déversements, bouées de circulation défectueux, circulation dense, etc.) et deles transmettre en temps réel aux personnels navigants et de leur trouver un itinéraire alternatif afin d'optimiser la sécurité, la qualité et la rapidité du service de transport de l'entreprise; • Régler et à contrôler les mouvements, de la position, la route, la vitesse et la progression des navires de transport èa l'aide d'un système de positionnement GPS, de systèmes de gestion et répartition du trafic maritime et des informations fournies par la Garde Côtière, Transports Canada et les autres navires; • Tenir à jour un registre sur les renseignements concernant la circulation et les incidents qui sont arrivés et toutes informations pertinentes; • Tenir à jour des registres manuels et informatisés de la distance parcourue, de la consommation de carburant, des réparations et des autres dépenses, et préparer des rapports.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Intérêt pour le milieu narin -Très bonne vision -Très bonne ouïe -Très bonne diction : pour communiquer clairement pour tes indications aux navires -Facilité à travailler avec les ordinateurs : car ils seront des principaux outils de travail -Sens de l’organisation : pour être en mesure de planifier et de programmer efficacement les horaires et les mouvements de circulation -Sens des responsabilités car tu seras responsable de fournir les informations les plus précises et les plus pertinentes nécessaires aux navires -Bon contrôle et très bonne confiance en soi pour intervenir efficacement dans les situations d’urgences -Excellent jugement (sûr et rapide) car tes décisions devront être même temps : les meilleures, les plus sécuritaires et les plus rapides -Esprit d’analyse et synthèse car tu auras à analyser toutes les situations pour être intervenir s’il y a un problème ou une urgence -Capacité à la résolution des problèmes tu auras à résoudre divers problèmes efficacement et rapidement -Autonomie et débrouillardise pour être capable de prendre des décisions seul(e) -Être éveillé à tout changement pour être prêt à intervenir à tout moment à toute situation -Facilité à travailler sous pression et avec le stress : tu devras être capable de travailler efficacement même dans ces conditions -Facilité au travail en équipe car tu auras à collaborer constamment avec d’autres collègues (autres contrôleurs, officiers de communication à bord des navires, des représentants des services d’urgence comme la Garde Côtière) -Très bonne maîtrise de langue anglaise car la plupart des communications dans l’industrie maritime s’effectuent dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: : Le salaire moyen en début de carrière était de : - 22,50 $/heure (42 hres/sem) au sein des PME - 23,90 $/heure (42 hres/sem) en tant que stagiaire et augmente à 30,61 $/heure en tant qu'officier(ère) duService de communication et du trafic maritime au sein de la Garde Côtière Canadienne - 25,00 $/heure (42 hres/sem) au sein des gandes entreprises de transport maritime - 27,58 $/heure (40 hres/sem) en tant que répartiteur(trice) à l'Administration de pilotage de l'Atlantique - 28,49 $/heure (40 hres/sem) en tant que répartiteur(trice) à l'Administration de pilotage des Laurentides -3 614 $/mois(grade de matelot 2eclasse) et augmente à 6069,00 $/moisaprès 3 ans avec le grade de matelot 1teclasse) en tant que spéciaiste en communications navales ou opérateur(trice) des équipements d'information de combat naval dans la Marine royale du Canada au sein des Forces canadiennes (Force régulière) -127,22 $/jour avec le grade de matelot 2e classeet augmente à 85,20 $/jour après 3 ans avec le grade de matelot 1ère classe) en tant que spéciaiste en communications navales ou opérateur(trice) des équipements d'information de combat naval au sein des Forces canadiennes (Réserve navale) Sources : Ministère de l’Éducation du Québec, Commission de la Fonction publique du Canada, Alliance de la fonction publique du Canada (section locale Administration de pilotage des Laurentides) et Forces canadiennes.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: Aucune donnée disponible</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L'industrie du transport maritime a constamment besoin de main-d'œuvre dont des répartiteurs. Bien que la demande soit beaucoup moins forte que pour les officiers de navigation et les officiers mécaniciens, les perspectives d'emploi restent bonnes pour les prochaines années. L'industrie maritime canadienne et québécoise offre d'excellentes perspectives d'emploi pour la relève en raison de la croissance des activités et du vieillissement de la main-d'œuvre. On éprouve des difficultés à recruter des matelots et le marché est en pénurie. À bord des 130 navires des Armateurs du Saint-Laurent qui transportent chaque année près de 30 millions de tonnes métriques de marchandises diverses et permettent à près de 5 millions de passagers de traverser d’une rive à une autre, les possibilités d’avancement sont nombreuses incluant les répartiteurs(trices) en transport maritime. La Garde côtière canadienne estime qu'un minimum de 10 % du personnel en mer sera à remplacer d'ici trois à cinq ans en raison de départs à la retraite. Sa nouvelle station de recherche et de sauvetage sera située près du chemin Dallas, sur la base de la Garde côtière de Victoria est notamment équipée d'équipements les plus récents de l'industrie. La Marine royale canadienne quant à elle, affirme qu'elle aurait besoin de plus d'un milier de marins dont près d'une centaine de spécialistes en communications navales, des opérateurs(trices) d'information de combat naval, mais aussi des technicien(nes) de mouvements afin de répondre à besoins. Elle envisage également de changer la façon dont elle affecte les équipages aux navires pour éviter l'épuisement et le stress supplémentaires, en particulier lorsqu'il s'agit de déploiements à court terme Avec sa nouvelle flotte de frégates et de navires de soutien, présentement en eonstruction, lui permettra d'attirer de nouvelles candidates et nouveaux candidats prêts à travailler à bord de navires ultramodernes. La rémunération moyenne après expérience en 2024... le revenu annuel moyen d'un(e) répartiteur(trice) en transport maritime ayant 10 années d'expérience au sein d'une PME était de 54 600 $; le revenu annuel moyen d'un(e) répartiteur(trice) en transport maritime ayant 10 années d'expérience au sein d'une grande entreprise de transport maritime était de 64 500 $; le revenu annuel moyen d'un(e) répartiteur(trice) en transport maritime ayant 10 années d'expérience au sein d'une grande entreprise privée de traversiers était de 66 500 $; le revenu annuel moyen d'un(e) répartiteur(trice) en transport maritime ayant 10 années d'expérience au sein d'une grande entreprise publique de traversiers (hors-Québec) était de 67 400 $; le revenu annuel moyen d'un(e) officier du Service des communications et du trafic maritime ayant 10 années d'expérience de la Garde Côtière canadienne était de 70 700 $; et le revenu annuel moyen d'un(e) spécialiste en communications navales ou d'un technicien(ne) des mouvements ou d'un(e) opérateur(trice) d'équipements d'information de combat maritime (grade de matelot-chef) dans la Marine royale canadienne au sein des Forces canadiennes (Force régulère) ayant 10 années d'expérience était de 77 900 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

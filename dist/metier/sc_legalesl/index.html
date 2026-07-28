@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthropologue judiciaire — Métiers Québec</title>
+  <meta name="description" content="Métier Anthropologue judiciaire au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Anthropologue Judiciaire</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Anthropologue Judiciaire</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Les experts(es) en criminalistique ne travaillent qu'en laboratoire (au sein du Laboratoire des sciences judiciaires et de médecine légale), bien qu'exceptionnellement, il peut être appelé sur des scènes de crimes ou d'accidents importants.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que spécialiste en expertises en criminalistique; tu seras responsable détecter, analyser et interpréter des traces chimiques, physiques, biologiques et numériques à des fins d'investigation et d’expertise scientifique, ce qui permettra d’y trouver un indice qui aiderait les policiers à établir un lien scientifique entre l’acte criminel et la personne présumée avoir commis l’acte ou pour aider à retracer celle-ci. Tu auras notamment pour tâches de : • Déterminer les règles d’utilisation des analyses et en contrôler en laboratoire; • Sélectionner et déterminer les méthodes analytiques de même que l’instrumentation et les fournitures; • Planifier, organiser et contrôler la mise au point des techniques d’analyses; • Exécuter les programmes d'échantillonnage, de collecte et d'analyse des données afin d'identifier des substances biologiques, chimiques ou physiques obtenus sur une scène d'accident ou de crime et de les dénombrer; • Procéder à des analyses d'ADN afin d'établir un profil d'identification génétique à partir d'échantillons de traces biologiques (sang, sperme, usine, etc.) prélevés par les techniciens en identité judiciaire; • Procéder à l'analyse de traces non biologiques (résidus de tir, peinture, accélérateurs d'incendie, matières plastiques, matériaux de construction, matière isolante pour coffre-fort, produits commerciaux, etc.) permettant de situer un individu à un lieu précis lors d'un événement criminel (ex : chantier de construction ou atelier de carrosserie) ou déterminer un type d'accélérant d'un incendie ou un type d'explosif et les substances utilisées dans un attentat ou déterminer un lieu d'impact lors d'un accident, etc; • Procéder à des analyses toxicologiques et au dépistage d'une vaste gamme de drogues, de médicaments et de poisons, dont l'alcool et les cannabinoïdes dans des échantillons biologiques ou autres éléments prélevés comme éléments de preuve; • Procéder à des analyses physicochimiques de produits de contrefaçon (contrats, documents légaux, documents d'identité comme les passeports, billets de banque, des chèques, des timbres, des cartes de paiement, etc.) afin d'y rechercher les identifications de sécurité imprimées, le type d'encre utilisé pour la rédaction ou la signature ou tout élément permettant de confirmer la contrefaçon du document; • Procéder à des analyses numériques de documents électroniques ou informatiques (ordinateurs personnels ou professionnels, téléphones, tablettes, appareils photo, disques durs, etc.) afin d'y retracer des fichiers illégaux (pornographie juvénile, plans de bâtiment en vue d'un attentat, documents secrets en espionnage industriel ou autres documents compromettants) permettant d'étayer la preuve de l'acte criminel commis; • Procéder à l'examen d'armes à feu, d'outils et autres articles connexes afin d'y déceler des marques sur la scène de crime et/ou sur la victime, évaluer les dommages causés par l'impact; • Contrôler la qualité des analyses et des tests; • Élaborer les procédures de prélèvement d’échantillons; • Superviser l’exécution des analyse par le personnel technique du laboratoire et par le pers et s’assurer de la fiabilité de leur travail; • Contribuer à la formation du personnel technique et des stagiaires; • Contribuer au développement de nouvelles méthodes et techniques d'analyses en criminalistique; • Rédiger des rapports d'expertise scientifique; • Témoigner en cour en tant qu'expert(e) lors de procès criminels, de procès civils, d'enquêtes du coroner ou autres enquêtes en matière d'accident.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Aptitudes pour les sciences et la recherche -Capacité d’analyse et de synthèse car tu auras à analyser en laboratoire différents types d’objets ou de substances utilisées comme pièces à conviction -Curiosité scientifique, sens logique et capacité de déduction afin de pouvoir comprendre le lien entre la pièce à conviction et la scène de crime (aider à faire une reconstitution d’événements) -Très bon sens de l’observation afin de déceler toutes traces ou détails qui pourraient être utiles lors des analyses (ex : une infime petite trace de sang sur une paire de jeans) -Bon jugement et esprit d’initiative pour être capable de prendre les initiatives à faire divers essais ou tests qui pourraient t’éclairer, mais n’ont pas nécessairement été prévus -Minutie, précision, souci du détail et bonne méthode de travail pour effectuer des analyses de façon très précise et avec soin en te souciant de tous les petits détails qui pourraient s’avérer importants -Sens des responsabilités car tu seras responsable de la véracité et de la qualité de tes tests et analyses -Facilité à travailler en équipe car tu seras constamment appelé(e) à travailler avec d’autres collèges en sciences légales (de diverses disciplines), avec les enquêteurs aux crimes et aux accidents, etc. -Être capable de travailler sous pression car on te demandera souvent d’obtenir les résultats de tes analyses le plus rapidement possible (surtout dans les cas d’agressions sexuelles ou d’homicides) -Bonne connaissance de la langue anglaise car la plupart des manuels et publications spécialisés sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>: -Ne pas avoir de casier judiciaire -La réalisation un stage de formation dans le domaine de la criminalistique est exigée -Un permis de pratique est obligatoire pour plusieurs emplois (chimiste, psychologue, dentiste, médecin psychiatre, médecin pathologiste)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Pour les Baccalauréats en science forensique : • détenir un D.E.C. en sciences de la nature OU en sciences-arts-lettres OU le B.I. en sciences de la nature ou l’équivalent • Soit détenir un D.E.C. technique dans une spécialité appropriée (ex : technologie de laboratoire - chimie analytique, technologie de laboratoire - biotechnologies, technolgoie des analyses biomédicales, etc) et posséder des connaissances suffisantes en mathématiques, chimie et biologie • Soit avoir acquis au moins 30 crédits universitaires en sciences pures, appliquées ou de la santé</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données: Le salaire moyen en début de carrière était de : - 28,15 $/heure (32,5 ou 33 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en moyenne en tant que technicien(ne) en identité judiciaire au sein des municipalités de taille moyenne ou de régies intermunicipales de police de taille moyenne (40 000 à 99 999 habitants) ou des régies intermunicipales de police -29,53 $/heure (37,5 hres/sem) en tant que technicien(ne) en criminalistique- stagiaire et augmente à 33,21 $/heure en tant que technicien(ne) en criminalistique (après 3 ans) dans la fonction publique fédérale (G.R.C.) - 31,73 $/heure (35 hres/sem) en tant que spécialiste en expertises judiciaires dans la fonction publique québécoise -34,63 $/heure (35 hres/sem) en tant qu'agent(e) technique de laboratoire de chimie à la Ville de Montréal (technicien en identité judiciaire au SPVM) - 35,63 $/heure (37,5 hres/sem) en tant que spécialiste en criminalistifque ou scientifique judiciaire (avec une maîtrise) dans la fonction publique fédérale (analyste judiciaire pour la GRC ou une autre agence fédérale) Sources : Conseil du Trésor du Québec et Commission de la fonction publique du Canada</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: Aucune donnée disponible Toutefois, on estime à près du quart des étudiants(es) du programme terminent leur formation et obtiennent un diplôme. Ce faible taux de diplomation peut être expliqué en partie par la lourde charge de travail (nécessitant notamment de maîtriser la chimie, la physique, la biologie et même ce qu’on appelle les &quot;sciences molles&quot;, dont des cours de criminologie) pour réussir le baccalauréat.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Malheureusement, il n'y a que peu d'emplois disponibles dans le domaine. Le principal employeur au pays, la G.R.C. a fermé certains laboratoires afin de centraliser ses activités et l'embauche a été suspendue. Le seul employeur au Québec, le Laboratoire des sciences judiciaires et de médecine légale n'emploie que rarement du nouveau personnel et de plus, le gel d'embauche dans la fonction publique québécoise s'applique également à ce laboratoire. Toutefois, les possibilités d'emploi qui s'offrent aux finissants du baccalauréat en science forensique débordent le seul domaine de la sécurité et de la justice pour être aussi pertinents à de nombreux secteurs de la vie économique, dont l'environnement, la biotechnologie, la pharmacologie, la santé, l'hygiène, l'alimentation, la pétrochimie, les textiles, les pâtes et papiers, la métallurgie, etc. L'expertise acquise pourrait être un atout, notamment pour oeuvrer à la gestion des processus d'assurance qualité ainsi qu'à l'identification et à la prévention des risques, à l'application des mesures de contrôle pour détecter ou prévenir la contamination des produits, la contrefaçon, la fraude et le vol de propriété intellectuelle. En 2019, le salaire annuel moyen d'un(e) expert(e) en criminalistique ayant 10 années d'expérience dans la fonction publique québécoise était de 78 000 $. Le salaire annuel moyen d'un(e) expert(e) en criminalistique ayant 10 années d'expérience (détenant une maîtrise) dans la fonction publique fédérale était de 95 900 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

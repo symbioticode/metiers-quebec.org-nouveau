@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent d’immeubles — Métiers Québec</title>
+  <meta name="description" content="Métier Agent d’immeubles au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Agent D’Immeubles</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Agent D’Immeubles</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu'agent(e) de gestion immobilière; tu seras responsable de gérer l'ensemble des opérations et des ressources immobilières résidentielles, commerciales, institutionnelles ou industrielles au sein d'une entreprise immobilière ou d'une organisation publique. Tu pourrais être responsable d'immeubles à logements, d'un immeuble à bureaux, d'un immeuble multi commercial, d'un centre commercial, d'un immeuble institutionnel (école, hôpital, résidence pour personnes âgées, immeuble gouvernemental, etc) ou de bâtiments industriels. Tu auras pour tâches de : • Effectuer la gérance des opérations courantes de l'immeuble (sécurité, entretien, problèmes divers auprès des locataires); • Coordonner les opérations de location et des baux; • Coordonner, superviser et gérer le personnel affectés à l'entretien des bâtiments (préposés à l'entretien, ouvriers d'entretien général, ouvriers certifiés d'entretien, menuisiers, plombiers, électriciens, mécaniciens de machines fixes, etc.); • Effectuer la comptabilité et la gestion des budgets des ressources immobilières; • Effectuer la promotion des locations; • Rédiger des rapports de gestion; • Participer à la réalisation de projets immobiliers. En tant que courtier(ère) en prêts hypothécaires; tu seras responsable de négocier les prêts hypothécaires auprès des institutions financières afin d'obtenir le meilleur taux répondant aux besoins, au budget et à la situation financière de ses clients. Il peut effectuer une pré-autorisation, l'achat, le renouvellement, le refinancement pour investir ou rembourser des emprunts ou le transfert d'une résidence, d'un immeuble à revenus ou d'immeuble commercial, tu auras les compétences nécessaires pour obtenir le meilleur produit hypothécaire de tes clients. En tant que courtier(ère) en immobilier résidentiel; tu seras responsable d’agir comme intermédiaire entre le vendeur et l’acheteur ou le locateur d’une propriété résidentielle (maison unifamiliale, duplex, triplex, multifamilial, condominium) dans le cadre de transactions immobilières relatives à l'achat, à la vente, à la location ou à l'échange d'un immeuble, la promesse d'achat ou de vente d'une propriété et le prêt garanti par une hypothécaire immobilière. Tu auras pour tâches de : • Conseiller tes clients acheteurs sur les types de bâtiments qui répondront le mieux à leurs goûts, à leurs besoins et à leurs attentes; • Renseigner les clients sur les conditions du marché, les prix, les hypothèques, les exigences d'ordre juridique et les questions connexes; • Établir une liste de bâtiments qui répondent au budget qu’ils ont établi et à leurs besoins • Effectuer les recherches appropriées dans une banque de données immobilières (ex : Edgar pour les résidences du Grand Montréal) afin de trouver la bâtisse idéale pour le client ou la cliente et de prendre contact avec le courtier oul’agent qui représente le propriétaire ou avec ce dernier; • Effectuer des recherches sur la valeur marchande des propriétés auprès de différentes sources afin de déterminer le prix d'achat ou de vente correspondant le mieux à la valeur actuelle; • Contacter avec d’autres intervenants du milieu de l’immobilier afin de mieux évaluer la valeur de la propriété convoitée et autres informations nécessaires à l’achat (évaluateurs agréés, inspecteurs en bâtiment, notaires, arpenteurs-géomètres, etc.); • Faire visiter des propriétés qui répondront le mieux à leurs besoins auprès des clients; • Conseiller tes clients vendeurs sur les moyens à prendre pour réussir à vendre leur propriété (ex : recommander un prix de vente). Tu devras prendre tous les moyens nécessaires afin de faire connaître la propriété : l’installer dans les banques de données, publicités dans les journaux et revues immobilières, l’afficher dans un catalogue immobilier dans le cas de résidences particulières, d’immeubles et de commerces, etc.); • Prendre avec contact le courtier ou l’agent qui représente l’acheteur ou directement avec ce dernier; • Préparer des actes de vente et les soumettre à l'approbation des acheteurs et des vendeurs; • Informer et conseiller ton client sur la transaction et lui fournir toutes les explications nécessaires pour mieux comprendre les étapes et les modalités de la transaction; • Solliciter des mandats de vente auprès des vendeurs éventuels. En tant que courtier(ère) en immobilier commercial et industriel; tu seras responsable d’agir comme intermédiaire entre le vendeur et l’acheteur ou le locateur d’une propriété commerciale ou industrielle (terrain commercial, magasin, restaurant, hôtel, édifice à bureaux, immeuble multicommercial, entrepôt, usine, etc.) dans le cadre de transactions immobilières relatives à l'achat, à la vente, à la location ou à l'échange d'un immeuble, la promesse d'achat ou de vente d'une propriété et le prêt garanti par une hypothécaire immobilière. Tes tâches seront les mêmes qu'un(e) courtier(ère) immobilier résidentiel mentionnées ci-haut. Quelle est la différence entre courtier(ère) agréé(e) et courtier(ère) ? Un(e) courtier(ère) immobilier (anciennement connu sous &quot;agent immobilier&quot;) : Est une personne qui a obtenu son certificat d’exercice de courtier immobilier auprès de l'OACIQ (voir section « certificat de pratique ») ou qui as décidée de rester à ce titre. Elle est à l'emploi d'un courtier immobilier au sein d'une agence immobilière indépendante ou affiliée à une bannière. Donc, si tu désires travailler à ton propre compte en tant qu'intermédiaire entre vendeurs et acheteurs en immobilier et n'agir pour le compte qu'une seule agence; deviens courtier(ère) en immobilier. Un(e) courtier(ère) immobilier agréé(e) : Est une personne ayant obtenu son certificat d’exercice de courtier immobilier auprès de l'AOCIQ et qui travaille à son propre compte détenant sa propre agence immobilière indépendante ou associée à une franchise (REMAX, La Capitale, Royal Lepage, Sutton, etc). C'est la personne qui aura l’entière responsabilité des actes professionnels posés par les courtiers qui le représentent. Donc, si tu désires avoir ta propre agence avec des employés afin d'y effectuer des opérations de transactions immobilières, deviens courtier ou courtier en immobilier agréé(e). Dans la plupart des cas, il est nécessaire d'avoir acquis de l'expérience comme courtier immobilier avant de pouvoir devenir courtier(ère) agréé(e) en immobilier.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Bien connaître tes produits ou services pour bien conseiller conseiller ta clientèle sur les propriétés qui répondront à leurs besoins et attentes -Aimer relever des défis -Aimer travailler avec le public et facilité à communiquer:tu seras constamment en contact avec le public -Entregent et sens de la persuasion pour réussir à obtenir des résultats de ventes -Détermination, Dynamiste et ambition pour aller de plus en plus loin dans le métier -Excellente maîtrise de la langue française parlée et écrite pour communiquer efficacement et expliquer adéquatement les informations sur les modalités de la transaction, mais aussi pour rédiger certains documents immobiliers -Connaître l’anglais est nécessaire parfois lorsqu’on a à vendre à toutes clientèles, mais aussi pour rédiger certains documents immobiliers dans cette langue -Connaissance de base de l’informatique car tu auras à utiliser des banques de données immobilières, des logiciels de gestion (Word, Excel, etc) pour la rédaction de documents et Internet -Esprit entrepreneurial car tu seras ton propre patron, le succès dans ta carrière dépendera de la bonne gestion de ton travail</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Pour l'AEC en courtage immobilier résidentiel : et pour l'AEC en techniques de gestion immobilière : Détenir un Diplôme d'études secondaires D.E.S. ou l'équivalent ET : - Soit avoir interrompu tes études postsecondaires pendant au moins 2 sessions consécutives ou une année scolaire. - Soit être titutlaire d'un diplôme d'études professionnelles D.E.P. - Soit avoir terminé au moins 1 année d'études postsecondaires (collégial ou universitaire) échelonnée sur 1 année ou plus - Soit détenir une expérience jugé pertinente et satisfaite par le collège en lien avec le domaine d'études - Soit bénéficier d'un programme gouvernemental (consulte un agent(e) d'Emploi-Québec)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est faible, 44 % des répondants(es) qui se sont dirigés sur le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Quelques répondants(es), soit 11 % ont poursuivi leurs études dans un programme collégial ou à l'université. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À temps complet NOMBRE AUX ÉTUDES 665 263 221 73 Note 1 : baisse du taux de placement par rapport aux années précédentes (était de 49 % en 2019). Note 2 : nombre de répondants(es) poursuivant leurs études comparable aux années précédentes (était de 12 % en 2019). Sources : Emploi Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Plus du tiers des courtiers en immobilier sont âgés de 55 ans et + et prendront leur retraite au cours des prochaines années et devront être remplacés en bonne partie (bien que pas en totalité, selon les besoins du marché). Par contre, certains courtiers choisissent de poursuivre leur carrière au delà de 65 ans. Le métier d'agent immobilier est particulièrement difficile car il faut jongler avec de très nombreux aspects, juridiques, commerciaux, techniques, administratifs, marketing, etc. mais c'est aussi ce qui en fait son charme. Donc, les perspectives pour les prochaines années sont modérées. Est-ce qu'un agent immobilier gagne bien sa vie ? Voilà une question à laquelle il n’est pas facile de répondre. Plusieurs facteurs peuvent faire varier la rémunération d’un courtier immobilier. On pense notamment : • Au taux de commission; • Selon le territoire desservi; • Selon l'expérience; • Au réseau de contacts; • Aux heures par semaine consacrées au travail (temps plein, temps partiel, heures supplémentaires); • Et bien d'autres facteurs qui peuvent influencer la rémunération. Quel est le salaire annuel moyen d'un(e) courtier(ère) immobilier résidentiel au Québec en 2026 ? Environ 20 % des courtiers(ère) génèrent 80 % des revenus de ventes dans la province. Sur une base hebdomadaire estimée à 40 à 60 heures par semaine, la rémunération moyenne en début de carrière était environ à 1 345 $ à 2 250 $. La rémunération annuelle moyenne était de 124 000 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

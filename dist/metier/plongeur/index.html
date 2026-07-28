@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moniteur de plongée — Métiers Québec</title>
+  <meta name="description" content="Métier Moniteur de plongée au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Moniteur De Plongée</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Moniteur De Plongée</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que scaphandrière-inspectrice ou scaphandrier-inspecteur (aussi appelé &quot;plongeur soudeur ou plongeuse soudeuse&quot;); tu auras pour tâches d'exécuter en immersion, des interventions de construction, d'installation, d'entretien, de décontamination, de démolition ou d'inspection sur des structures ou équipements immergés. Tu seras équipé(e) d’un appareil respiratoire autonome ou non autonome, limité ou non limité. Tu pourras également réaliser en immersion, des travaux de soudage, d'oxycoupage, de charpenterie, de bétonnage, d'électricité, de plomberie ou de dynamitage sur des structures maritimes telles que : quais de ports ou de marinas, quais flottants industriels, ponts, chenaux empruntés par les navires, réseaux électriques souterrains, etc. La réussite de l'A.E.C. en plongée professionnelle de l'Institut maritime du Québec ou l'équivalent suivie au Québec est exigée par la Commission de la construction du Québec. En tant que plongeur(euse) professionnel(le); tu devras exécuter en immersion différentes tâches de nature professionnelle, telles que la prise de photographies sous-marines pour des applications scientifiques, pour un magazine spécialisée ou autres; effectuer la recherche d'épaves pour le compte d'organismes historiques ou d'organismes scientifiques; effectuer des manœuvres de récupération d'objets divers (excluant ceux provenant d'épaves) par exemple sur les abords d'un quai portuaire ou d'un lac privé accueillant des plaisanciers, etc; effectuer l'inventaire sous-marin de la faune aquatique; effectuer la surveillance d'animaux aquatiques et l'entretien de bassins d'eau (dans un aquariuim ou une pisciculture par exemple), etc. Tu pourrais également être appelé(e) à effectuer des opérations de recherche et sauvetage en eau profonde pour le compte d'organismes privés. La qualification de plongeur(euse) - niveau 4 (aussi appelé &quot;plongeur 4 étoiles&quot;) de la CMAS et parfois, la qualification moniteur(trice) - niveau 1 de la CMAS est exigée. Pour les plongeurs(euses)-sauveteurs(euses); la qualification moniteur(trice) - niveau 2 + la certification spécialiste en sauvetage de la CMAS sont exigées. NOTE 1 : Si tu veux devenir scaphandrier(ère) pour la police, tu devras tout d’abord suivre une et ensuite acquérir quelques années d’expérience au sein d’un corps policier. Ce n’est que par la suite que tu pourras suivre un programme de formation des policiers-plongeurs offert à l’Institut maritime du Québec. Pour plus de détails, consulte la page d'infos sur les plongeurs au sein de la NOTE 2 : Si tu veux devenir sauveteur(euse)-plongeur(euse) pour une unité de recherche et sauvetage; tu devras tout d’abord d'enrôler dans la Force régulière des Forces canadiennes dans un métier du rang (fantassin, manœuvrier, technicien de coque, policier, pompier d'aéroport, technicien médical, etc.) et y acquérir quelques années d'expérience. Par la suite, tu pourras proposer ta candidature pour la formation de technicien en recherche et sauvetage Tech SAR (sélection très serrée et limitée) et ce n'est qu'après terminé ta formation (offerte à l'École de recherche et sauvetage des Forces canadiennes à Comox en BC) que tu pourras être affecté(e) au sein d'unité de recherche et sauvetage des Forces canadiennes (Comox BC, Halifax N-É ou Gander T-N). Pour plus de détails, consulte la page d'infos sur les Tech SAR des . En tant que monitrice ou moniteur en plongée; tu auras pour tâches d’enseigner et encadrer des étudiants et étudiantes de différents niveaux (débutant à avancé) les notions à la pratique de la plongée sous-marine sportive. Tu leur enseigneras les notions théoriques (physiologie de base en plongée, premiers soins et RCR, sécurité en plongée, règles et normes en plongée, techniques de décompression etc); les notions pratiques en piscine (manipulation et utilisation des appareils et équipements, techniques de plongée en eau peu profonde, etc); ainsi que la pratique de plongée sous supervision dans divers cours d’eau. La qualification plongeur(euse) - niveau 4 (aussi appelé &quot;plongeur 4 étoiles&quot; de la CMAS est exigée pour devenir assistant(e)-moniteur(trice). La qualification moniteur(trice) - niveau 1 de la CMAS est exigé(e) afin de devenir moniteur(trice) en plongée.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Excellente santé -Excellente forme et endurance physiques -Aptitudes pour les sciences et les techniques -Très bonnes habiletés et dextérité manuelles car manipuler efficacement divers instruments et outils sous l’eau -Bonne coordination œil-main -Souci du détail, minutie et précision car tu devras effectuer des travaux avec grande précision et dextérité -Bon jugement et bons réflexes pour être capable de réagir rapidement et efficacement lors de situations d’urgences -Sens des responsabilités car tu seras responsable de la bonne exécution des travaux, de ta sécurité et de celle des collègues plongeurs -Facilité à travailler en équipe car tu auras à travailler en étroite collaboration avec d’autres plongeurs -Aimer relever des défis car tu seras appelé(e) à travailler dans des conditions parfois très difficiles -Sens de l’initiative pour être en mesure de prendre seul(e) et rapidement des décisions lors de problèmes, complications ou urgences -Bonne discipline personnelle car tu devras respecter à la lettre les règles de conduite, les normes de plongée et les consignes qui t’auront été données afin d’assurer le bon déroulement des travaux et sécurité de tous les plongeurs</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Être âgé d’au moins 18 ans -Détenir un D.E.S. ou un D.E.P.ou l’équivalent - Détenir la certification de plongée récréative de classe A</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : -31,00 $/heure en dehors du secteur de la construction (dont les chantiers navals et les entrepreneurs en travaux maritimes) -37,99 $/heure (37 hres/sem) à Hydro-Québec -45,20 $/heure avec la classe 2 (40 à 50 hres/sem) et augmente à 53,18 $/heure avec la classe 1 (après 2 000 heures de travail sur chantier) dans le secteur de la construction de génie civil (infrastructures routières ou infrastructures électriques ou infrastructures maritimes ou portuaires) - 45,20 $/heure avec la classe 2 (40 à 50 hres/sem) et augmente à 59,88 $/heure avec la classe 1 (après 2 000 heures de travail sur chantier) dans le secteur de la construction de génie civil (infrastructures électriques souterraines ou infrastructures de pipeline pétrolier ou gazier) - 3 614 $/mois (grade de soldat/matelot 2eclasse)lors de la 1re année et ensuite, augmente à 6069,00 $/mois (au grade de&quot; caporal/matelot 1teclasse - spécialiste)en tant que sapeur de combat - plongeur ou technicien(ne) de coque - plongeur-inspecteur ou pliongeur-démineur au sein des Forces canadiennes (Force régulière) -185,20 $/jour avec le grade de caporal/matelot 1ère classe) au sein Forces canadiennes (Réserve) Note : Cependant le revenu annuel moyen dans le secteur de la construction pour un(e) débutant(e) était de 58 300 $ (était de 46 600 $ en 2024; 37 600 $ en 2022 et 27 300 $ en 2019). Sources : Institut maritime du Québec, Commission de la Construction du Québec et Syndicat des employés de métiers d'Hydro-Québec.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: Selon l'Institut maritime du Québec, il y a eu 11 diplômés à ce programme. Le placement est EXCELLENT, 100 % des répondants(es) ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Par ceux-ci, 9 travaillent sur les chantiers de construction et 2 pour des chantiers navals. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE EMPLOI A TEMPS PLEIN NOMBRE AUX ÉTUDES 11990 Sources : Institut Maritime du Québec et Commission de la construction du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Dans le secteur de la construction : Ce métier est étroitement lié à l’industrie de la construction. Les perspectives d’avenir pour tous les métiers de la construction, varient beaucoup selon la santé économique de l’industrie de la construction. Certaines années peuvent être excellentes pour les emplois avec de nombreux projets, alors que pour d’autres années sont moins bonnes. 100 % du volume de travail des scaphandriers est fait dans le secteur génie civil et voirie. Ce secteur devrait demeurer élevé au cours des prochaines années. Les perspectives d’emploi pour ce métier sont très bonnes. Malgré la demande en légère baisse pour ce métier, le nombre insuffisant de nouveaux diplômés créent des besoins de travailleurs sur le marché. En 2024, un(e) plongeur(euse) classe 2 (débutant) gagnait en moyenne 58 300 $ par année. Plus de 67 % des plongeurs(euses) avaient effectué 500 heures ou plus. Alors qu'un(e) plongeur(euse) d'expérience détenant la classe 1 gagnait en moyenne 80 900 $ par année. Depuis quelques années, plusieurs projets tant publics que privés, ainsi que les programmes de réhabilitation des infrastructures urbaines et autres projets de génie civil comme : de nouveaux projets de construction ou d'agrandissement d'autoroutes, la réfection ou le remplacement de nombreux viaducs et autres infrastructures connexes, de grands projets de construction de réseaux d'éoliennes, de projets de construction ou d'aménagement de réseaux électriques souterrains et de possibles nouveaux projets de barrages hydroélectriques. Par contre, il semble que la tendance à long terme est qu'il y aura moins de grands projets (construction d'autoroutes, de ponts, de petites centrales électriques, construction de mines, etc.) et une absence de mégaprojets (ex : complexes hydroélectriques, réseaux de pipeline, etc.) pour les prochaines années. On ne retrouve que quelques grands projets qui se termineront dans quelques années comme le complexe hydroélectrique Grande Baleine. Actuellement, peu de grands projets sont annoncés par Transports Québec nécessitant des investissements de plus de 100 millions $ et qui pourraient s'échelonner sur plusieurs années, ainsi que quelques dizaines de projets d'une valeur d'environ 50 millions $ chacun qui s'échelonnent sur 2 ou 3 ans en moyenne. Malgré cela, de nombreux projets de taille moyenne annoncés ou à l'étude procureront du boulot au cours des prochaines années, notamment la réfection ou l'agrandissement de routes, la construction de bâtiments commerciaux, institutionnels ou industriels, la réfection d'infrastructures municipales (tels que les réseaux d'aqueduc et d'égout, usines de traitement des eaux, etc.). Le ecteur des routes et des infrastructures s’annonce encore fort occupé pour les prochaines années à court et moyen terme avec de nombreux projets d’importance à venir. La fin des travaux des grands projets électriques et l'absence de nouveaux projets de centrales électriques amènera un ralentissement dans le sous-secteur des infrastructures électriques et de communications. Enfin, le secteur de l'éolien, peu de projets sont actuellement annoncées. (Source : Commission de la construction du Québec). Autres secteurs : Dans les autres secteurs, la demande est croissante au sein des compagnies minières. Les chantiers navals autant ceux au Canada, aux USA ou ailleurs dans monde sont également des employeurs potentiels, ainsi que les administrations portuaires. Par contre, actuellement l'ensemble des diplômés(es) de ce programme sont embauchés(es) par des entrepreneurs en travaux sous-marins dans l'industrie de la construction.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

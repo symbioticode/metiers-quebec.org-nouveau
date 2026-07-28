@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audiologiste — Métiers Québec</title>
+  <meta name="description" content="Métier Audiologiste au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Audiologiste</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Audiologiste</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’audiologiste; tu seras responsable de prévenir, évaluer et traiter des personnes (nouveaux-nés, enfants, adolescents, adultes et aînés) ayant des troubles auditifs légers ou sévères (ex : surdité, acouphènes) et du système vestibulaire (ex : vertiges) en tenant compte de leurs capacités et leurs limites auditives afin de les aider à mieux vivre avec ses difficultés auditives ou vestibulaires tout en favorisant son autonomie et son intégration dans ses activités sociales, scolaires ou professionnelles. Tu auras pour tâches de : • Évaluer les troubles de l'audition dans le but de déterminer le plan de traitement et d'intervention audiologiques; • Élaborer et administrer, à l'aide d'instruments et d'équipement électronique spécialisés, des épreuves et des examens audiométriques pour diagnostiquer et évaluer le type et les conséquences de la déficience auditive du patient; • Planifier, élaborer et mettre en œuvre un plan de traitement, d'intervention ou de rééducation auditive (appelé &quot;plan d'intervention audiologique&quot;) afin de régler ou réduire les effets engendrés par le trouble ou l'handicap; • Effectuer des interventions à partir du plan d'intervention audiologique pour les patients, notamment en déterminant le choix, le montage et le réglage des appareils d'amplification, comme les appareils auditifs et en enseignant la lecture labiale et consigner les observations au dossier du patient; • Ajuster une aide auditive dans le cadre d'une intervention audiologique; • Rédiger des rapports d'intervention et compléter des formulaires divers en lien avec l'handicap auditif de la personne; • Effectuer un suivi et une évaluation du traitement ou de l'intervention afin d'adapter ou modifier le plan et ainsi, augmenter les possibilités de réussite du programme permettant d'améliorer la qualité de l'audition de la patiente ou du patient; • Fournir de l'information aux patients et à leurs familles quant à la nature, au degré, à l'impact et aux conséquences de la déficience auditive et du traitement de celle-ci; • Travailler dans un contexte d'interdisciplinarité avec d'autres professionnels (médecins ORL, médecins de famille, orthophonistes, ergothérapeutes, neuropsychologues, psychoéducateurs, orthopédagogues, audioprothésistes, enseignants en adaptation scolaire, conseillers en rééducation, agents de formation en déficience auditive, agents de correction de l'audition, etc.) en vue d'établir des plans d'intervention; • Former, au besoin, des techniciens en audiométrie, aux stagiaires en audiologie, d'autres audiologistes et autre personnel des soins de santé. En tant qu'agente ou agent de formation en déficience auditive; tu seras responsable de concevoir, actualiser et évaluer des programmes de formation pratique et théorique sur les moyens de communication utilisés en déficience auditive. Tu auras pour tâches de : • Évaluer et établir les besoins et adapter les activités de formation selon la clientèle cible • Planifier, concevoir, élaborer et mettre en application des programmes de formation auditive destinés aux sourdes ou malentendantes, les parents d'enfants déficients auditifs, les personnes ayant des problèmes auditifs et le public en général; • Planifier, élaborer et mettre en oeuvre des programmes et activités de formation continue destinés aux différents intervenants en réadaptation en déficience auditive (enseignants, psychoéducateurs, éducateurs spécialisés, éducateurs à la petite enfance, etc.); • Fournir des conseils et des recommandations auprès des intervenants en réadaptation en déficience auditive sur les méthodes d'intervention éducative. Tu pourras travailler au sein d'un centre de réadaptation en déficience physique et sensorielle ou d'un centre de réadaptation spécialisé en déficience auditive (l'Institut Raymond Dewar). Les organismes d'aide aux personnes ayant une déficience auditive emploient également ces spécialistes.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Audition claire et normale -Aptitudes pour les sciences physiques et biologiques : la formation est très exigeante, elle demande de bonnes connaissances en physique, biologie, anatomie et physiologie humaines. -Aimer et facilité à travailler avec le publicet entregent car tu auras à établir des contacts avec les clients(es) - Grande capacité d’écoute, respect, patience et empathie car tu auras à faire face aux problèmes psychologiques que peuvent avoir tes clients(es) ayant un handicap ou une déficience auditive -Capacité d’analyse et de synthèse et bon jugement pour être mesure d’analyser et déceler les problèmes auditifs -Sens des responsabilités car tu seras responsable de l’amélioration de la l’audition de tes clients(es) -Sens de l’organisation pour bien planifier et élaborer des plans de traitement et de rééducation -Facilité à travailler en équipe et professionnalisme car tu auras à collaborer avec d’autres professionnels (médecins spécialiste en ORL, audioprothésistes, orthophonistes, ergothérapeutes, etc) -Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité -Très bonne connaissance de la langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec tes clients et les autres professionnels et pour rédiger des rapports de qualité et de plus, la plupart des manuels de référence dans ce domaine sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: Pour les baccalauréats : Voir la page sur les aux études médicales, dentaires, pharmacie ou sciences de la santé. Pour la maîtrise en audiologie : -Soit détenir l'ancienBaccalauréat en audiologie -Soit détenir l'ancienBaccalauréat en orthophonie -Soit détenir un Baccalauréat en sciences biomédicales (de préférence avec orientation en audiologie ou en sciences de l'audition) -Soit détenir un Baccalauréat bidisciplinaire en psychologie et linguistique -Soit détenir un Baccalauréat en neurosciences cognitives -Soit détenir un Baccalauréat en neurosciences -Soit détenir un Baccalauréat en physiologie -Soit détenir un Baccalauréat en ergothérapie -Soit détenir un Baccalauréat en sciences infirmières -Soit détenir un Baccalauréat en sciences de la santé -Soit détenir un Baccalauréat avec majeure en psychologie + mineure en sciences cogntives -Soit détenir un Baccalauréat avec majeure en psychologie + mineure en linguistique -Soit détenir un Baccalauréat avec majeure en linguistique + mineure en sciences cognitives -Soit détenir un Baccalauréat avec majeure en linguistique + mineure en psychologie -Soit détenir un autre Baccalauréat jugé équivalent</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : -31,48 $/heure (35 hres/sem) en tant qu'audiologiste dans réseau de la santé -35,82 $/heure (35 hres/sem) en tant qu'audiologiste en clinique privée Note 1 : hausse de la moyenne salariale dans le secteur privé (était de 34,83 $ en 2024; 31,26 $ en 2022; 28,71 $ en 2019; 25,60 $ en 2017 et 23,08 $ en 2015). Note 2 : dans le secteur public, les augmentations sont établies par les conventions collectives. Sources : Ministère de l’Éducation et de l'Enseignement supérieur du Québec et Emploi Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 100 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié dont la presque totalité sont à temps complet. Un(e) répondant(e) a poursuivi des études au niveau du doctorat. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 4440 Note : la situation est tout aussi excellent et comparable aux années précédentes (était de 97 % en 2021; 96 % en 2019 et 96 % en 2017). Sources : Ministère de l’Éducation et de l'Enseignement supérieur du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: La perte auditive liée à l'âge, ou presbyacousie, est un phénomène naturel qui touche une proportion importante des personnes de plus de 65 ans. Au Québec, cette réalité s'accentue avec le vieillissement démographique. Pourtant, les troubles de l'audition demeurent souvent sous-diagnostiqués ou pris en charge tardivement. Cette négligence n'est pas anodine : elle peut entraîner un isolement social, une diminution des capacités cognitives et même un risque accru de dépression. Avec la croissance rapide du nombre de personnes âgées au Québec, la demande en services d'audioprothèse ne cessera d'augmenter. Selon une étude réalisée par l'Institut national de la santé publique du Québec; plus de 50 % des personnes de 75 ans et plus souffrent d’un problème auditif, plus de 33 % des personnes de 65 ans et plus souffre d’un problème auditif, ainsi que 10 % de la population en général est touchée Enfin, de 1 à 5 nourrissons sur 1000 naissent avec une déficience auditive ou acquièrent celle-ci au cours de la petite enfance La perte d’audition due à l’exposition professionnelle au bruit est devenue le principal risque professionnel donnant droit à une indemnisation. Au Québec, on estime que près de 700 000 personnes souffrent de troubles auditifs dont 60 % d'entre-elles sont des personnes âgées de 60 ans et plus. Au Québec, de 2 à 7 % des enfants, et 2 à 3 fois plus de garçons que de filles présentent un trouble auditif, dont notamment le trouble du traitement auditif TTA. Donc, les besoins d'audiologistes seront en progression au cours des prochaines années. Toutefois, l'âge moyen des audiologistes était de 34 ans et seulement 26 % sont âgés de 45 ou plus, donc peu de départs à la retraite sont prévus au cours des prochaines années. Dans les réseaux publics de la santé et de l'éducation; les besoins sont si importants, que bon nombre de personnes sur liste d'attente tentent d'obtenir des services en clinique privée malgré les coûts très onéreux. En clinique privée, les perspectives d’emploi sont également excellentes puisque les besoins de la population sont croissants et plusieurs personnes choisissent le privé compte tenu des délais d'attente avant d'obtenir les services d'un(e) audiologiste sont souvent longs dans le réseau public. Donc, les perspectives d’avenir pour ces diplômés(es) sont EXCELLENTES. Profession identifiée en pénurie puisque plusieurs régions éprouvent des difficultés à recruter les quelques rares diplômés(es) disponibles annuellement, notamment : la Côte-Nord : parcourir 200 à 300 km avant de pouvoir se rendre à la clinique d'audiologie la plus près de chez soi. C'est ce que les résidents de la Mingamie et de la Haute-Côte-Nord doivent faire s'ils sont devenus au haut d'une liste d'attente puisqu'il y a n'y a aucun audiologiste sur leur territoire. la Gaspésie : le nombre d'audiologistes n'a pas augmenté depuis 5 ans, alors que certains territoires n'aucun audiologiste pouvant répondre aux besoins de la clientèle (dont la MRC de la Haute-Gaspésie et la MRC du Rocher-Percé). Les clients doivent parcourir des centaines de kilomètres afin d'obtenir les services en audiologie. Outaouais : aggravée par des départs vers Ottawa et une forte demande, la région fait face à des délais d'attente importants pour les patients. En effet, près d'une dizaine d'audiologistes (principalement à l'extérieur de la Ville de Gatineau) serait nécessaire afin de combler les nombreux besoins dont les listes d'attente ne cessent de s'allonger; Saguenay-Lac-Saint-Jean: les besoins sont grandissants et les listes d'attente s'allongent. En effet, certains territoires sont en déficit d'audiologistes dont la MRC du Lac-Saint-Jean (Alma) et la MRC du Domaine-du-Roy (Saint-Félicien et Roberval); Laval: sa population est de plus en plus vieillissante et on y observe une forte hausse des demandes de consultations en audiologie, mais les professionnels en place ne suffisent pas à la demande et les listes d'attente s'allongent. Montérégie : avec l'accroissement fulgurente de sa population au cours des dernières années dont certaines municipalités ont presque doublé leur population, les besoins de la clientèle sont grandissants et les listes d'attente s'allongent. Malgré l'arrivée de nouveaux audiologistes, près d'une quinzaine d'audiologistes serait nécessaire afin de combler tous les besoins de la région. La rémunération moyenne après expérience en 2026.. le revenu annuel moyen d'un(e) audiologiste ayant environ 10 années d'expérience dans le réseau de la santé était de 98 400 $; et le revenu annuel moyen d'un(e) audiologiste ayant environ 10 années d'expérience dans le secteur privé était de 101 400 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

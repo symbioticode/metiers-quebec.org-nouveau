@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ingénieur alimentaire — Métiers Québec</title>
+  <meta name="description" content="Métier ingénieur alimentaire au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Ingénieur Alimentaire</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Ingénieur Alimentaire</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’ingénieure ou ingénieur alimentaire; tu seras responsable de coordonner, superviser et gérer les procédés de fabrication de produits alimentaires (pâtes alimentaires, pâtisseries, produits de boulangerie, boissons gazeuses, bière ou autres boissons alcooliques, produits laitiers comme le fromage, la crème glacée ou le yogourt, jus ou autres boissons aux fruits ou aux légumes, aliments pour animaux de compagnie, etc.) ou les procédés de transformation de produits alimentaires (viandes, volailles, poissons et autres produits de la mer, lait de consommation, fruits et légumes de consommation ou de transformation, moulées ou autres aliments pour animaux de de ferme). Tu auras pour tâches de : oEffectuer des recherches visant à élaborer ou à améliorer les procédés, les réactions et les ingrédients alimentaires; oÉvaluer le matériel et les techniques de transformation alimentaire et déterminer les spécifications de production; oConcevoir et mettre à l'essai des installations et du matériel de transformation alimentaire et processus connexes; oSurveiller la construction, la modification, l'exploitation et l'entretien d'installations pilotes, d'unités ou d'installations de traitement; oMettre sur pied et diriger des programmes de contrôle de la qualité, des procédures d'optimisation et des stratégies de contrôle pour assurer l'uniformité et la conformité aux normes; oGérer toutes les étapes d'emballage, de manutention, d'entreposage, d'approvisionnement en matières premières; oGérer les opérations de maintenance et assurer le bon état de fonctionnement des machines, appareils, instruments et autres équipements utilisés dans l'usine; oSuperviser des manœuvres, des opérateurs, des techniciens et des technologues; oParticiper aux activités de recherche, de mise au point et développement de nouveaux produits ou de nouveaux procédés industriels; oRédiger des rapports de production.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Intérêts pour le milieu agroalimentaire -Intérêts et aptitudes pour les sciences (biologiques, chimiques et physiques) -Aptitudes pour les technologies -Curiosité scientifique et sens logique pour être amené(e) à chercher comment un produit est fait -Très bon sens de l’observation pour observer attentivement les réactions chimiques -Capacité d’analyse et de synthèse et sens logique pour analyser les différents problèmes en production -bonne méthode de travail et gestion du temps car tu auras à planifier les activités de production -Sens de l’observation pour observer et détecter des anomalies dans le processus de production -Minutie et précision car tu auras à manipuler des produits dangereux -Sens des responsabilités car tu seras responsable des opérations de transformation ou du laboratoire d’analyse -Sens de l’initiative car tu seras être de prendre des décisions seul(e) lorsqu’il y a des problèmes -Sens de l’organisation car tu auras à entreposer de manière ordonnée les produits selon les niveaux de danger et particularité de ces produits -Facilité à travailler en équipe car tu auras à collaborer avec des agronomes, ingénieurs, techniciens en transformation des aliments et des ouvriers en tranformation des aliments -Facilité d’adaptation aux changements technologiques car la technologie des équipements évolue constamment -Connaissance de l’anglais car la plupart des publications spécialisées sont dans cette langue</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: ·Soit détenir le Baccalauréat international en sciences de la nature et avoir réussi un cours équivalent à PHY 203-NYB ou l'objectif 00US ou suivre un cours équivalent au premier trimestre d'inscription à l'université (Polytechnique) aucun cours supplémentaire exigé (Laval et Mcgill) ·Soit détenir un D.E.C. intégré en sciences, lettres et arts et avoir réussi un cours équivalent à PHY 203-NYB ou l'objectif 00US ou suivre un cours équivalent au premier trimestre d'inscription à l'université (Polytechnique) aucun cours supplémentaire exigé (Laval et Mcgill) ·Soit détenir un D.E.C. en sciences de la nature ou en sciences pures et appliquées aucun cours préalable supplémentaire exigé (toutes les universités) ·Soit détenir un D.E.C. en technologie des procédés et qualité des aliments et avoir complété les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00UN, 00UQ et 00UP (maths 103, 105 et 203); 00UR et 00US (physique 101 et 201); OU suivre une formation préparatoire à l'université pour les cours manquants (Laval pour génie alimentaire) 00UN et 00UP (maths 103 et 203) (Laval pour sciences et technologie des aliments) ·Soit détenir un D.E.C. en technologie du génie agromécaniqueet avoir complété les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00UN et 00UP (maths 103 et 203); 00UR et 00US (physique 101 et 201); 00UL et 00UM (chimie 101 et 201); OU suivre une formation préparatoire à l'université pour les cours manquants (Laval pour génie alimentaire) ·Soit détenir un D.E.C. en technologie des productions horticoles(153.B0) et avoir complété les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00UN et 00UP (maths 103 et 203); 00UR et 00US (physique 101 et 201); OU suivre une formation préparatoire à l'université pour les cours manquants (Laval pour sciences et technologie des aliments) ·Soit détenir un D.E.C. en technologie de laboratoire - chimie analytique (210.AA) ou en technologie du génie chimique(210.AB) et avoir complété les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00UR (physique 101); 00UK (biologie 301); OU suivre une formation préparatoire à l'université pour les cours manquants (Laval pour sciences et technologie des aliments) ·Soit détenir tout autre D.E.C. et avoir complété les cours ou avoir atteint les objectifs suivants ou leurs équivalents : 00UN, 00UQ et 00UP (maths 103, 105 et 203); 00UR, 00US et 00UT (physique 101, 201 et 301); 00UL et 00UM (chimie 101 et 201); 00UK (biologie 301); OU suivre une formation préparatoire à l'université pour les cours manquants (Laval pour les 2 programmes) 00UN, 00UQ et 00UP (maths 103, 105 et 203); 00UR, 00US et 00UT (physique 101, 201 et 301); 00UL et 00UM (chimie 101 et 201) OU suivre une formation préparatoire à l'université pour les cours manquants (Mcgill et Polytechnique) ·Soit être âgé d’au moins 21 ans, avoir quitté les études à temps plein depuis au moins 2 ans, posséder des connaissances équivalentes et avoir une expérience pertinente sur le marché du travail 1 cours de calcul différentiel, 1 cours de calcul intégral, un cours d'algèbre vectorielle; 1 cours de dynamique (ou physique mécanique), 1 cours d'électricité et magnétisme; 1 cours de chimie générale; OU suivre une formation préparatoire à l'université (Laval seulement)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de : • 29,81 $/heure (40 hres/sem) en tant que candidat(e) à la profession d'ingénieur(e) et augmente à 34,62 $/heure en tant qu'ingénieur(e) au sein des PME • 32,69 $/heure (40 hres/sem) en moyenne en tant que candidat(e) à la profession d'ingénieur(e) et augmente à 38,46 $/heure en tant qu'ingénieur(e) au sein des grands fabricants d'aliments et boissons Note : hausse de la moyenne salariale par rapport aux années précédentes (était de 27,09 $ en 2024; 26,90 $ en 2021 et 24,84 $ en 2019). Sources : Ministère de l’Éducation et Enseignement supérieur du Québec, Génium 360 et Université Laval</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Pour le Bacc en génie alimentaire : Le placement est EXCELLENT, 100 % des répondants(es) ont obtenu un emploi relié et TOUS sont à temps ptemps complet. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 8 8 8 0 Note : taux de placement tout aussi excellent que dans les années précédentes. Source : Service de placement de l'Université Laval</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: Le Québec est bien positionné pour surmonter les défis actuels et futurs étant donné l’étendue des terres qu’il possède, les ressources naturelles existantes et l’expertise disponible. Des choix restent à faire, notamment en ce qui a trait aux énergies alternatives à utiliser, et des nouvelles façons de faire sont à mettre en place pour soutenir le secteur agroalimentaire québécois face à la compétitivité internationale. L’ingénieur agroalimentaire est donc le professionnel le mieux placé pour permettre à l’agroalimentaire du Québec de demeurer au sommet de sa production dans le respect des normes sur l’hygiène et la salubrité, le bien-être animal et l’environnement pour ne nommer que celles-là. Les finissants(es) en génie alimentaire se placent habituellement très bien. Chaque année, l'Université Laval reçoit habituellement plus d'offres d'emploi qu'il n'y a de diplômés(es). L'Université Laval affirme qu'elle pourrait accueillir le double de diplômés(es) et ils obtiendraient tous un emploi. En 2015, le Service de placement de l'Université Laval a reçu près d'une cinquantaine d'offres d'emploi pour ses 9 diplômés(es) en génie alimentaire, soit plus de 6 fois supérieur au nombre de postes disponibles. Il faut ajouter que de nombreux employeurs ont courtisé les étudiants(es) pendant leurs études sans avoir affiché une offre d'emploi. De plus, la plupart des diplômés(es) ont obtenu un emploi dans leur milieu de stage. Vu le peu de diplômés(es), les entreprises embauchent des ingénieurs industriels, des ingénieurs chimistes, de même que des spécialistes en sciences et technologie des aliments pour pourvoir les postes destinés aux ingénieurs en génie alimentaire. L'industrie agroalimentair a un grand besoin d'ingénieurs afin de participer à la fabrication d'aliments de qualité et répondant aux besoins de plus en plus exigeants de la population. Les changements dans les procédés de fabrication ou de transformation pour produire des aliments appelés nutraceutiques (ayant des ingrédients spécifiques comportant des bienfaits contre certaines maladies chroniques, ex : sans allergène ou pour diabétiques), l'incorporation d'aliments biologiques dans la fabrication d'aliments préparés ou autres font maintenant partie des préoccuprations des transformateurs aliments dont l'expertise de l'ingénieur(e) alimentaire sera mise à contribution Bien que les premiers emplois sont plutôt techniques (ingénieur en contrôle des procédés de transformation), mais évoluent rapidement vers les postes de coordination, de gestion, de recherche et développement ou de consultation. Selon les données du Ministère de l’Éducation, le métier d’ingénieur(e) alimentaire est l’une des 15 professions de niveau universitaire présentant les meilleures perspectives d’avenir. Il y a un grand besoin de ces ingénieurs(es), alors les perspectives sont excellentes pour les prochaines années. La rémunération moyenne après expérience en 2026... Note : chez les grands fabricants d'aliments ou boissoins, un bonis annuel de performance variant de 10 % à 20% s'ajoute généralement au salaire selon les performances de l'entreprise et de l'employé. Le revenu annuel moyen d'un(e) ingénieur(e) alimentaire détenant 10 années d'expérience au sein d'une PME en fabrication alimentaire était de 95 000 $. et le revenu annuel moyen d'un(e) ingénieur(e) alimentaire détenant 10 années d'expérience au sein d'une grande entreprise de fabrication d'aliments ou boissons était de 115 000 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animateur d'activités en tourisme 
+d'aventure — Métiers Québec</title>
+  <meta name="description" content="Métier animateur d'activités en tourisme 
+d'aventure au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/../" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    ..
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/../">..</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Animateur D'Activités En Tourisme 
+D'Aventure</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/../" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur ..
+        </a>
+        <div class="page-header__tag">..</div>
+        <h1 class="page-header__title">Animateur D'Activités En Tourisme 
+D'Aventure</h1>
+        <p class="page-header__meta">Universitaire</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">..</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Universitaire</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant qu’animatrice ou animateur en plein air d’aventure; tu seras responsable de planifier, organiser, coordonner, diriger, animer des activités sportives en plein air d’aventure d’été ou d’hiver de toutes sortes auprès d’une clientèle spécifique ou auprès de clientèles diversifiées. Tu auras pour tâches de : • Planifier et mettre en oeuvre des activités de loisirs de plein air et de sports d'aventure; • Préparer et entrenir les équipements; • Montrer ou enseigner les techniques relatives à la pratique de sports d'aventure; • Superviser et coordonner les activités de plein air et de sport d'aventure afin d'en assurer la sécurité et administrer des premiers soins ou des soins d'urgence en cas de besoin; • Sensibiliser les gens aux bonnes habitudes et à la qualité de la vie, au respect de la nature et à la participation sociale et collective par les loisirs; • Participer à la planification, la réalisation, la promotion et le financement d'un événement ou d'un projet tourisme de plein air ou d'aventure; • Recruter, former et superviser des employés et des bénévoles accompagnateurs lors des activités; • Concevoir et élaborer de nouveaux programmes sportifs en plein air d’aventure adaptés aux besoins de la clientèle desservie; • Planifier, coordonner et de gérer l’ensemble des programmes, activités, services et ressources (humaines, financières et matérielles) en loisirs au sein de l’entreprise ou de l’organisation; • Assurer le bon déroulement de la programmation des activités, ainsi que du bon fonctionnement au niveau administratif dans l’organisation.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Intérêts pour les voyages et le tourisme en général -Intérêts pour la géographie et le mode de vie des gens -Intérêts pour le plein air et la nature -Intérêts pour les langues -Avoir une excellente santé -Avoir une très bonne condition physique -Aimer travailler avec le public et facilité à communiquer:tu seras constamment en contact avec la clientèle -Capacité de faire face aux imprévus et certaine tolérance aux conditions difficiles car tu auras à travailler dans toutes sortes de conditions et parfois avec des risques d’accidents -Entregent, facilité d’expression car tu auras à renseigner et guider efficacement les touristes -Bonnes aptitudes et facilité à la communication orale et écrite car tu devras t'exprimer clairement autant dans ta langue maternelle qu'en langue seconde - Sens des responsabilités et maturité tu seras responsable des gens de ton groupe (notamment avec des enfants, ados, handicapées) et aussi de leur sécurité -Sens de l’initiative, débrouillardise et dynamisme pour bien encadrer et inviter ta clientèle à participer aux diverses activités -Dynamisme et leadership pour bien encadrer et encourager ta clientèle à participer -Sens de l’organisation pour planifier, organiser et animer différentes activités éducatives et récréatives -Facilité pour le travail en équipe et dynamisme pour être capable de les encourager à participer -Facilité d’adaptation pour bien t’adapter à toutes clientèles, tous contextes et tous milieux -Imagination, ouverture d’esprit et créativité pour réaliser et élaborer de nouveaux produits ou services touristiques originaux qui répondront aux besoins de la clientèle</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: (voir aussi la section &quot;autres exigences&quot;) Note : pour les équivalences de l'éducation aux adultes, consulte la A.E.C. en tourisme d’aventure : (sauf le programme offert par le Cégep de Baie-Comeau) - Détenir un D.E.S. ou l'équivalent - Avoir interrompu tes études pendant au moins 2 sessions consécutives ou une année scolaire OU - Avoir complété une année d'études post-secondaires échelonnée sur une période d'1 an ou plus DEC en tourisme d’aventure : - Détenir le D.E.S. sans exigence de cours préalable Pour le D.E.C. en techniques du milieu naturel : - Détenir le D.E.S. ou l'équivalent avec les cours préalables suivants ou leurs équivalents : mathématiques CST 4e (anciennement maths 426) sciences STE ou ST 4e(anciennement sciences physiques 436) Bacc en plein air et tourisme d’aventure : -Soit détenir un D.E.C. ou l'équivalent -Soit avoir complété 15 crédits universitaires -Soit être âgé d’au moins 21 ans, posséder des connaissances équivalentes au collégial et posséder une expérience pertinente d’au moins 2 ans à temps complet (intervenant et/ou de praticien dans un secteur du plein air ou du tourisme)</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données: Pour l'enseignement de l'éducation physique au primaire ou au secondaire, voir la . Avec une formation collégiale ou universitaire : Le salaire moyen en début de carrière était de : Dans le secteur privé : -16,00 $/heure (40 hres/sem) en tantt que guide-accompagnateur(trice) en tourisme d'aventure au sein des PME -16,53 $/heure (40 hres/sem) en animation et interprétation du milieu naturel au sein des PME -19,48 $/heure (40 hres/sem) en tant que technicien(ne) ou coordonnateur(trice) en loisirs au sein des PME ou OBNL - 20,04 $/hre (40 hres/sem) en tant que guide d'activités extérieures au sein des grands hôtels et centres de villégiature (extérieur du Grand Montréal) -19,52 $/heure (40 hres/sem) en tant qu'organisateur(trice) ou coordonnateur(trice) d'activités en tourisme d'aventure au sein des PME -23,30 $/heure (40 hres/sem) en moyenne en tant que guide d'activités extérieures dans les grands hôtels (Grand Montréal) -27,44 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en loisirs au sein des établissements privés d'enseignement secondaire -28,67 $/heure (35 hres/sem) en moyenne en tant que technicien(ne) en loisirs au sein des collèges préuniversitaires ou techniques privés Dans le secteur public et parapublic : - 20,68 $/heure (38,75 hres/sem) en tant que technicien(ne) en loisirs de plein air à la SEPAQ (parcs nationaux du Québec) - 23,59 $/heure (33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en tant qu'animateur(trice) en loisirs dans les grandes municipalités(100 000 habitants et plus) - 24,64 $/heure (32 ou 32,5 ou 33 ou 35 hres/sem selon les municipalités) en moyenne en tant qu'animateur(trice) en loisirs ou préposé(e) aux loisirs dans les petites municipalités(5 000 à 24 999 habitants, voir note 2) - 24,74 $/heure (32,5 ou 33 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en tant qu'animateur(trice) en loisirs dans les municipalités de taille moyenne(25 000 à 99 999 habitants, voir note 2) - 24,86 $/heure (35 hres/sem) en tant qu'animateur(trice) d’activitéssportives ou de plein air dans les cégeps -25,96 $/heure (35 hres/sem) en tant que technicien(ne) en loisirs dans les centres de services scolaires -25,96 $/heure (35 hres/sem) en tant que technicien(ne) en loisirs dans les cégeps - 26,22 $/heure (32 ou 32,5 ou 34 ou 35 hres/sem selon les municipalités) en tant que coordonnateur(trice) des loisirs dans les très petites municipalités(moins de 5 000 habitants, voir note 2) - 26,61 $/heure (40 hres/sem) en tant qu'animateur(trice)sportives ou de plein air à Parcs Canada -27,59 $/heure (35 hres/sem) en moyenne en que technicien(ne) en loisirs au sein des universités - 28,83 $/heure (32 ou 32,5 ou 34 ou 35 hres/sem selon les municipalités) en tant que coordonnateur(trice) des loisirs dans les petites municipalités(5 000 à 24 999 habitants, voir note 2) - 30,25 $/heure (33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en tant que technicien(ne) en loisirs dans les grandes municipalités(100 000 habitants et plus) - 30,80 $/heure (32,5 ou 33 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en tant que technicien(ne) en loisirs ou coordonnateur(trice) des loisirs dans les municipalités de taille moyenne(20 000 à 99 999 habitants, voir note 2) - 186,44 $/jour (au grade de lieutenant/enseigne de vaisseau 1re classe) et augmente à 239,24 $/jour (au grade de capitaine/lieutenant de vaisseau) en tant qu'officier du développement de l'instruction ou officier d'infanterie ou officier d'artillerie ou instructeur(trice) des cadetsau sein des Forces canadiennes (Réserve) Avec une formation universitaire seulement : - 27,72 $/heure (35 hres/sem) en tant qu'agent(e) de développement écotouristique ou coordonnateur(trice) des activités récréatives à la SÉPAQ(gestion des loisirs dans les parcs nationaux et centres récréotouristiques du Québec) - 28,67 $/heure (35 hres/sem) en tant qu'animateur(trice) de vie étudiante au sein des centres de services scolaires -28,67 $/heure (35 hres/sem) en tant qu'animateur(trice) d'activités étudiantes au sein des cégeps - 31,09 $/heure (35 hres/sem) en moyenne en tant qu'animateur(trice) de la vie étudiante ou coordonnateur(trice) d’activités sportives au sein des universités - 33,10 $/heure (40 hres/sem) en tant qu'agent(e) de développement écotouristique à Parcs Canada(gestion des loisirs dans les parcs nationaux et sites historiques nationaux) - 33,46 $/heure (32,5 ou 33 ou 33,45 ou 33,75 ou 35 hres/sem selon les municipalités) en tant que conseiller(ère) en loisirs ou récréologue ou directeur(trice) adjoint(e) des loisirs dans les municipalités de taille moyenne(25 000 à 99 999 habitants) - 38,63 $/heure (32,5 hres/sem) en moyenne en tant que directeur(trice) des loisirs dans les très petites municipalités (moins de 5 000 habitants) - 44,80 $/heure (32,5 ou 35 hres/sem) en moyenne en tant que coordonnateur(trice) des loisirs ou directeur(trice) des loisirs dans les petites municipalités (5 000 à 24 999 habitants) - 5 675 $/mois en tant qu’instructeur(trice) de cadets (grade de sous-lieutenant) lors de la 1re année et ensuite, augmente jusqu'à 6 185 $/mois (grade de lieutenent) après 3 ans au sein des Forces canadiennes (Force régulière) Note : prendre en considération que bien que le salaire horaire est élevé dans les petites et municipalités de taille moyenne, les avantages sociaux (ex : assurance-santé, régime de retraite, etc) y sont moins nombreux que dans les grandes municipalités ou la fonction publique fédérale, mais les responsabilités sont davantages importantes. Dans plusieurs petites municipalités, les techniciens(nes) en loisirs agissement comme coordonnateurs des loisirs En enseignement collégial : (Bacc nécessaire) • 1 112,46 $/semaine en moyenne en tant qu'enseignant(e) régulier dans une collège préuniversitaire privé(avec 17 ans de scolarité) • 1 119,25 $/semaine en tant qu'enseignant(e) régulier dans un cégep (avec 17 ans de scolarité) • 1 183,48 $/semaine en moyenne en tant qu'enseignant(e) régulier dans une collège préuniversitaire privé(avec 18 ans de scolarité : titulaires d'une maîtrise) • 1 192,02 $/semaine en tant qu'enseignant(e) régulier dans un cégep (avec 18 ans de scolarité : titulaires d'une maîtrise) • 1 278,59 $/semaine en tant qu'enseignant(e) régulier dans un collège préuniversitaire privé (avec 19 ans de scolarité : scolarité de doctorat) • 1 290,52 $/semaine en tant qu'enseignant(e) régulier dans un cégep (avec 19 ans de scolarité : scolarité de doctorat) • 1 360,39 $/semaine en tant qu'enseignant(e) régulier dans un collège préuniversitaire privé (avec 19 ans ou plus de scolarité : titulaires d'un doctorat) • 1 373,08 $/semaine en tant qu'enseignant(e) régulier dans un cégep (avec 19 ans ou plus de scolarité : titulaires d'un doctorat) Sources : Ministère de l’Enseignement supérieur du Québec, Emploi Québec, Conseil du Trésor du Québec, Commission de la fonction publique du Québec, Syndicat de la fonction publique du Québec - division SEPAQ, Syndicat des fonctionnaires municipaux de Montréal, Syndicat des fonctionnaires municipaux de Québec, Syndicat des employés de bureau, techniqeus et professionnels de la Ville de Laval, Alliance des professionnels de la Ville de Québec, Alliance du personnel professionnel et administratif de la Ville de Laval, conventions collectives des employés de plusieurs grandes municipalités, conventions collectives des employés municipaux de plusieurs municipalités de taille moyenne, conventions collectives des employés de soutien de plusieurs universités, conventions collectives des professionnels de plusieurs universités, Institut de la statistique du Québec (guide sur la rémunération moyenne dans les municipalités 2011) et Québec municipal.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Pour le D.E.C. en tourisme d'aventure : Le placement est TRÈS BON, 81 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié à leurs études dont la presque totalité sont à temps complet. Plus du tiers des répondants(es), soit 39 % ont poursuivi leurs études à l'université au baccalauréat en intervention plein air. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 18 977 Note : forte amélioration du taux de placement par rapport aux années précédentes (était de 30 % en 2021 et 38 % en 2016). Pour les Baccalauréats en activité physique : (incluant le Bacc intervention sportive, le Bacc en sciences de l'activité physique et le Bacc en intervention plein air) Le placement est bon, 78 % des répondants(es) qui se sont dirigés vers le marché du travail ont obtenu un emploi relié dont la majorité, soit 64 % sont à temps complet. Quelques répondants(es), soit 5 % ont choisi de travailler à leur compte (en démarrant leur centre de mise en forme ou leur entreprise en organisations de loisirs ou entraîneur personnel autonome) Plusieurs autres répondants(es), soit 40 % ont décidé de poursuivre leurs études au niveau de la maîtrise. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE À LEUR COMPTE NOMBRE AUX ÉTUDES 315148958126 Note 1 : hausse du taux de placement par rapport aux années précédentes (était 60 % en 2021; 75 % en 2019 et 71 % en 2017). Note 2 : hausse du nombre de répondants(es) poursuivant des études supérieures (était de 43 % en 2021; 37 % en 2019 et 34 % en 2017).</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>Information non disponible.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>

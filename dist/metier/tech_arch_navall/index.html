@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture navale, technicien en — Métiers Québec</title>
+  <meta name="description" content="Métier Architecture navale, technicien en au Québec">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(255,255,255,0.15)"/><path d="M18 6c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z" stroke="white" stroke-width="2" fill="none"/><path d="M18 28v-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      Métiers Québec
+    </a>
+    <div class="header__search">
+      <svg class="header__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="headerSearch" placeholder="Recherche un métier, un secteur..." autocomplete="off">
+      <div class="search-results" id="headerSearchResults"></div>
+    </div>
+    <nav class="header__nav" aria-label="Navigation principale">
+      <a href="/secteurs/" class="header__nav-link">Secteurs</a>
+      <a href="/alpha/" class="header__nav-link">Index A-Z</a>
+      <a href="/stats/" class="header__nav-link">Stats</a>
+    </nav>
+    <button class="header__menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><nav class="sidebar__nav" aria-label="Navigation latérale">
+<div class="sidebar__section">
+  <div class="sidebar__title">Navigation</div>
+  <a href="/" class="sidebar__link sidebar__link--active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    Accueil
+  </a>
+  <a href="/alpha/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    Index alphabétique
+  </a>
+  <a href="/stats/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+    Statistiques
+  </a>
+</div>
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteurs d'emploi</div>
+  <a href="/secteur/sante/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Santé</a>
+  <a href="/secteur/administration/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Administration & Informatique</a>
+  <a href="/secteur/batiment/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 20h20M5 20V8l7-5 7 5v12"/></svg>Bâtiment & Construction</a>
+  <a href="/secteur/electrotechnique/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Électrotechnique</a>
+  <a href="/secteur/aerospatial/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Aérospatial</a>
+  <a href="/secteur/mecanique_entr/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Mécanique d'entretien</a>
+  <a href="/secteur/enseignement/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Éducation & Enseignement</a>
+  <a href="/secteur/chimie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Chimie & Biologie</a>
+  <a href="/secteur/metallurgie/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Métallurgie</a>
+  <a href="/secteur/protection/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Protection publique</a>
+  <a href="/secteur/transport/" class="sidebar__link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Transport</a>
+</div>
+
+<div class="sidebar__section">
+  <div class="sidebar__title">Secteur</div>
+  <a href="/secteur/fabric_mecanique/" class="sidebar__link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    fabric_mecanique
+  </a>
+</div></nav></aside>
+    <main class="main">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="breadcrumb__sep">/</span>
+        <a href="/secteur/fabric_mecanique/">fabric_mecanique</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>Architecture Navale, Technicien En</span>
+      </div>
+
+      <div class="page-header">
+        <a href="/secteur/fabric_mecanique/" class="page-header__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour au secteur fabric_mecanique
+        </a>
+        <div class="page-header__tag">fabric_mecanique</div>
+        <h1 class="page-header__title">Architecture Navale, Technicien En</h1>
+        <p class="page-header__meta">Collégial</p>
+      </div>
+
+      
+      <div class="prof-meta">
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Secteur</div>
+          <div class="prof-meta__card-value">fabric_mecanique</div>
+        </div>
+        <div class="prof-meta__card">
+          <div class="prof-meta__card-label">Niveau d'études</div>
+          <div class="prof-meta__card-value">Collégial</div>
+        </div>
+      </div>
+      
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Description</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Tâches et responsabilités</h2><p>: En tant que technologue en architecture navale; tu seras responsable de participer aux différentes étapes de conception, de modification et de réparation de différents types de structures flottantes, fixes ou mobiles (navires, bateaux, plateformes de forage, etc.), notamment en ce qui concerne la structure, lastabilité, la dynamique et les systèmes mécaniques et électriques d'une structure flottante en collaboration avec un(e) ingénieur(e) maritime ou un(e) architecte naval. Tu pourras participer non seulement à la réparation et à la construction de tous types de navires et de toutes dimensions (les patrouilleurs, les remorqueurs, les navires pilotes, les navires de pêche commerciale, les navires à passagers comme les traversiers, les petits navires de croisières et les yachts, les navires-cargo comme les vraquiers, les navires citernes, les porte-conteneurs et les cargos polyvalents, les navires de service tels que les brise-glaces, les âbliers et les dragues, les navires militaires tels que des frégates de patrouille, navires de recherche scientifique, etc.); mais aussi d’autres structures flottantes (comme les quais, installations d'accostage et autres ouvrages portuaires, les plates-formes de forage, etc,); ainsi que les embarcations nautiques (bateaux de plaisance, bateaux utilitaires, motomarines, kayaks, etc.). Sur le chantier, tu seras appelé(e) à travailler en étroite collaboration avec de nombreux corps de métiers tels que : des ingénieurs, d'autres technologues en architecture navale, des technologues en systèmes maritimes, des techniciens en mécanique marine, des machinistes, des ferblantiers, des soudeurs, des tôliers, des monteurs-assembleurs, des charpentiers-menuisiers, des tuyauteurs, des électriciens, opérateurs de machinerie lourde, des grutiers, des mécaniciens industriels et autres ouvriers sur chantier. Tu auras pour tâches de : • Effectuer les divers calculs nécessaires pour la conception ou la réparation des structures des navires à l’aide de logiciels spécialisés en architecture navale; • Dessiner des plans de structure et de mécanique à partir de spécifications et de normes, et déterminer leur conformité; • Réaliser des dessins de détails à partir de schémas d’aménagement de la salle des machines; • Dessiner les plans de conception des différents systèmes et équipements (hydrauliques, pneumatiques, mécaniques et électriques) d'un navire; • Évaluer la stabilité et le comportement dynamique d’une structure flottante; • Développer les installations d’équipements mécaniques et électriques selon les contraintes architecturales de la structure flottante; • Planifier les différentes étapes de construction ou de réparation, et superviser les travaux sur le chantier; • Estimer les coûts et effectuer divers suivis sur les chantiers; • Vérifier la qualité des systèmes installés par des essais et déterminer leur conformité.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Milieu de travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Qualités et aptitudes requises</h2><p>: -Être attiré(e) par les technologies maritimes - Intérêts et aptitudes pour les mathématiques, la géomérie, les sciences et le dessin technique -Facilité à imaginer les choses en trois dimensions -Capacité de bien comprend des plans et devis puisque tu devras en dessiner, en expliquer aux ouvriers et superviser les opérations sur chantier -Capacité d’analyse et de synthèse pour résoudre différents problèmes de conception -Minutie, précision, souci du détail car tu auras à effectuer des calculs et réaliser des plans de façon précise -Sens des responsabilités car tu auras responsable des travaux sur le chantier -Sens de l’observation et curiosité scientifique pour être à l'affût des nouveaux développements scientifiques et technologiques -Bonne méthode de travail car tu auras à préparer des projets -Créativité, imagination et ingéniosité pour pouvoir proposer tes idées et participer la conception et réalisation des projets -Sens de l'organisation car tu auras à planifier des travaux, gérer des priorités et des échéanciers -Facilité à travailler en équipe et leadership car tu auras à collaborer avec des architectes navals et des ingénieurs maritimes -Très bonnes connaissances en informatique car tu auras à utiliser des logiciels spécialisés en D.A.O. et C.A.O. - Très bonne connaissance maîtrise de la langue langue française parlée et écrite afin d'expliquer et communiquer clairement et de façon professionnelle avec les membres d'une équipe de conception ou de production, ainsi que pour rédiger des rapports techniques et d'expertise - Bonne connaissance de la langue langue anglaise afin d'expliquer et communiquer clairement et de façon professionnelle avec les membres d'une équipe de conception ou de production, ainsi que pour rédiger des rapports techniques et d'expertise</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Marché du travail</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Formation requise</h2><p>Information non disponible.</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Admission</h2><p>: -Détenir le D.E.S. et avoir réussi le cours suivant ou son équivalent : TS ou SN 4eOU CST 5e -Soit avoir complété des études équivalentes hors du Québec Note : pour connaître les équivalences des préalables à l’éducation aux adultes, consulte la</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Données salariales</h2><p>: Selon les données de : Le salaire moyen en début de carrière était de -21,50 $/heure (40 hres/sem) au sein des PME - 34,38 $/heure (40 hres/sem) au sein des grandes entreprises Note : hausse de la moyenne salariale par rapport aux années précédentes (était de 24,91 $ en 2022; 20,67 $ en 2018 et 20,60 $ en 2016). Sources : Ministère de l'Enseignement supérieur du Québec et Institut maritime du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Placement</h2><p>: : Le placement est EXCELLENT, 80 % des répondants(es) ont obtenu un emploi relié à leurs études dont la totalité sont à temps complet. Quelques répondants(es) ont poursuivi des études universitaires en génie maritime. NOMBRE DERÉPONDANTS NOMBRE EN EMPLOI RELIÉ NOMBRE À TEMPS COMPLET NOMBRE AUX ÉTUDES 7442 Note : selon l'Institut maritime, le taux de placement depuis 10 ans est tout aussi excellent, soit de 100 %. Source : Ministère de l'Enseignement supérieur du Québec et Institut maritime du Québec</p></div>
+      <div class="content-section"><h2 class="content-section__title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> Perspectives d'emploi</h2><p>: L'industrie navale canadienne, tout comme ailleurs dans le monde a subi des années tumultueuses. Le marché dépend de la valeur et du nombre de contrats qu'obtiennent les chantiers navals. Tout comme son cousin l'industrie aérospatiale, l'industrie maritime et navale est cyclique. En effet, un chantier naval peut obtenir un important contrat pour la construction du navire qui procurera du travail pour les 3 prochaines années. Ensuite, lorsque la construction du navire est terminée, il y a un certaine période &quot;morte&quot; puisque l'entreprise est en négociation pour obtenir un nouveau contrat ou a obtenu un contrat moins important. Donc, pendant ce temps, les employés n'ont peu ou pas de boulot. Lorsque le contrat est signé, les activités reprennent. Or, il semble que pour les prochaines années, on prévoit de meilleures perspectives que dans les dernières années, puisque plusieurs chantiers navals obtiennent des contrats d'importance et certains sont en cours d'agrandissement. Le placement est très bon avec d'excellentes conditions de travail au sein des chantiers navals partout au Canada dont le le Chantier Davie Yard au Québec, le Chantier naval Verreault au Québec, le Chantier naval Forillon au Québec, le Chantier de réparation navale Mount Royal Walsh au Québec, Irving Shipbuilding en Nouvelle-Écosse, Allied Shipbuilding en BC, Vancouver Shipyards en BC, Victoria Shipyards en BC. Alors que le salaire moyen dans les chantiers navals canadiens est 30 % plus élevé que la moyenne du secteur manufacturier, l’industrie maritime canadienne est globalement novatrice et soutient les travailleurs qualifiés. De plus, des emplois sont également possibles aux États-Unis (ex : American Overseas au Massachussetts, Bath Iron Works au Maine, American Shipbuild en Pennsylvanie, le chantier de la Portsmouth US Navy Shipyard au New Hampshire, le chantier de la US Navy Norfolk Navy Shipyard en Virginie) Et même ailleurs dans le monde (ex : Damen Shipyards à Cuba, Belgique, Royaume-Uni et Pays-Bas; Fincatieri en Italie, Constructions mécaniques de Normandie en France, SOCAREM en France, STX Europe en France, Allemagne et Finlande, Groupe DCNS dans divers chantiers en Europe et en Asie, etc). Voici quelques exemples de contrats récents obtenus par les chantiers navals canadiens (en date du printemps 2023) : • Un crevetier pour une entreprise de pêches en construction par les Entreprises maritimes Bouchard • Un crabier pour une entreprise de pêches de la Gaspésie en construction par Conception navale FMP • Un navire de pêches en composites pour une entreprise de pêches du N-B en construction par Chantier maritime Atlantique au N-B • Des bateaux de recherche &amp; sauvetage pour la Garde côtière canadienne en construction par le Chantier maritime Forillon • Des traversiers pour la Société des traversiers du Québec en construction par le Groupe Océan à son chantier de Les Méchins (auparavant, Verreault) • Un brise-glace pour la Garde côtière canadienne en construction par Meridien Maritime • Des remorqueurs pour la Marine royale Canadienne en construction pour le Groupe Océan • Des brise-glace pour la Garde côtière canadienne en construction par le Davie Industries • La construction d'une barge de transport de tuyaux d'une compagnie maritime albertaine par Kiewit Offshore à Terre-Neuve • 15 frégates pour la Marine royale canadienne en construction en construction par Irving Shipbuilding en N-É • 6 navires de patrouille extracôtiers pour la Garde côtière canadienne en construction en construction par Irving Shipbuilding en N-É • 16 navires polyvalents pour la Garde côtière canadienne en construction en construction par Vancouver Seaspan Shipbuilding en BC • 2 navires de recherche scientifique pour Pêches et Océans Canada en construction par Vancouver Seaspan Shipbuilding en BC • 2 navires de soutien interarmées pour la Marine royale canadienne en constructoin par Vancouver Seaspan Shipbuilding en BC • L'obtention d'une nouvelle certification internationale pour la la réparation de navires de sauvetage par Navmar réparations navales qui lui permettra d'obtenir des contrats avec les gardes côtières de nombreux pays • Le contrat d'installation et d'entretien du système IPMS (Integrated Platform Management System) de gestion intégrée des systèmes à bord des 2 navires de soutien interarmées de la Marine royale canadienne octroyé par Seaspan Shipbuilding à l'entreprise L3 MAPPS située à Montréal La rémunération moyenne après expérience en 2024... le revenu annuel moyen pour un(e) technologue en architecture navale détenant environ 10 ans d'expérience au sein d'une PME était de 57 700 $; et le revenu annuel moyen pour un(e) technologue en architecture navale détenant environ 10 ans d'expérience au sein d'un grand chantier naval était de 82 200 $.</p></div>
+      <footer class="footer">
+        <p>Métiers Québec — Source: <a href="https://www.metiers-quebec.org" target="_blank" rel="noopener">metiers-quebec.org</a></p>
+      </footer>
+    </main>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="/js/search.js"></script>
+</body>
+</html>
