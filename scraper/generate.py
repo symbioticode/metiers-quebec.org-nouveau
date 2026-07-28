@@ -205,6 +205,8 @@ class Generator:
             parts = url.strip("/").split("/")
             if len(parts) >= 2 and parts[0] != "..":
                 p["secteur"] = parts[0]
+            elif len(parts) >= 3 and parts[0] == "..":
+                p["secteur"] = parts[1]
 
         # Build slug->prof map
         self.slug_map = {p.get("slug", ""): p for p in self.professions}
