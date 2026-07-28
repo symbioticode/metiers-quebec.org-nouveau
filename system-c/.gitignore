@@ -32,4 +32,3 @@ dist/graphify-out/*.sig
 data/embeddings/
 claudemem_log/
 data/reference/esco/*.zip
-data/reference/esco/*.zip
